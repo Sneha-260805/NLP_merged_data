@@ -1,0 +1,347 @@
+{"unnormalised": "ठिक आसे, नोंथांनि बुंलाइनाय बादियै मोनसे ब्लग पोस्टआ जाबाय।", "normalised": "Thik aseh, नोंथां आंनिफ्राय मोनसे टेक्सट फाइलफोरनि गुदि हानजाखौ process खालामनो लुगैदों होननानै बुजिदों। नाथाय नोंथांआ होनाय input आ मोनसे single blog post *टेक्सट हिसाबै*, फाइल एबा फोल्डरनि दाजाबथाइ नङा।"}
+{"unnormalised": "** translate: भारतनि ठेगानायाव गोमा जानाय: भारतीय ठेगानाजों सोमोन्दो थानाय आंनि साहसिक खामानि (आरो मानो नोंथां GPS नांगौ)**", "normalised": "फाइलफोरखौ process खालामनाय आरो फोल्डर दाजाबथाइफोरखौ मिरर खालामफिननाय नोंथांनि खावलायनायखौ मावफुंनो थाखाय, आं फोल्डरनि गेजेराव थानाय साचेट फाइलफोरखौ मोननो नांगोन।"}
+{"unnormalised": "ओहो, आं सानदोंमोन आं मोनसे बांद्राय गोनां मानसि, नों मिथिगौ? आं देल्ली मेट्र'खौ गुवार समायाव सोलायबाय, चान्दनी चौकआव साडीनि गाहाइ बेसेननि थाखाय दावबाय, आरो आं बेलेगबादि जायखि जाया मिल्क गैयै चाय अर्डर होनोबो हाबाय (आंनि थाखाय मोनसे गोरलै खामानि)। नाथाय अब्ला ठेगाना फैबाय। ओहो, ठेगाना!", "normalised": "**.txt फाइल हिसाबै blog post खौ फोल्डरनि गेजेराव (उदाहारण `my_data/blog_posts/goa_addresses.txt`) होनो हाबा, आं अब्ला Python स्क्रिप्ट लिरनो आरो मावफुंनो हागोन normalization खालामनो आरो मिरर खालामनाय `dataset_normalized` फोल्डरखौ दाफिननो थाखाय।**"}
+{"unnormalised": "आं नोंथांनि थाखाय सिन दिन्थिनो हो: आं ग'वानि मोनसे मोजां गेस्टहावसाव थांगोन होननानै सानदोंमोन। खोनायाव मोजां मोनबाय, ठिक? बुकिंग कन्फर्मेसनआव गोसो होनानै बुंदोंमोन: \"आनन्द भिल्ला, एच. न. 147/ए, सान एलेक्स गिरजायाव नांथाब, कालान्गुटे, बार्देज, ग'वा 403516।\" गोरलै, आं सानदोंमोन। जोबथा बिबुं।", "normalised": "**आं नोंथांनि लोकेल फाइल सिस्टमजों डाइरेक्टलि सोमोन्दो लाखिनो हायाखैब्लाबो, आं Python कोदखौ होगोन जेखौ *नोंथां* रन खालामनो हागोन।**"}
+{"unnormalised": "सिगां, \"एच. न. 147/ए।\" आं सानदोंमोन बेयो हौस न'मोन, दा। नाथाय ग'वायाव बेयो हौस न'नि थाखाय मोनसे गोरलै सुजाबसो। आं मोनसे गुवार घन्टा उन्दैनि बागानसेराव उनदुंनानै थाबाय आं लोकल मानसिफोरनो सोंबायमोन \"एच. न. 147/ए, जायखि जाया स्लाइस जायखि जाया।\" बेयाव खनसेबो गियाव, हेल्पफुल (नाथाय जोबथाइयाव रोंगौथि गैया) थांखि।", "normalised": "---"}
+{"unnormalised": "अब्ला \"सान एलेक्स गिरजायाव नांथाब\"मोन। दा, सान एलेक्स गिरजाया मोनसे बांद्राय गोनां चिन्हामोन। नों सानगोन \"नांथाब\" बुङोब्ला, सिगांनि स्टेप्सनिफ्राय नुजागोन। गैया। ग'वायाव, \"नांथाब\" बुङोब्ला \"गोनां थावनियाव जागोन, रिकसा रायद आरो मोनसे मोसौजों रायलायनाय जाखोमायो।\" आं जोबथाइयाव मोनबाय… आं 3 रोखोमनि अटो-रिकसा वाल्लाफोरनो सोंनायनि उनाव बिसोरो आर. एस. 500 थाखा मोनसे रायदनि थाखाय नांगौमोन जाय आर. एस. 100 जानो नांगौमोन।", "normalised": "**नोंथांनि normalization नि थांखिफोरखौ अचीव खालामनो थाखाय Python स्क्रिप्टआ बेयाव दं:**"}
+{"unnormalised": "आरो \"बार्देज\"आव आंनि बारग'खोखौबो थों जाया। बेयो मोनसे टाउन नामा? मोनसे दिस्ट्रिक्ट नामा? मोनसे फिलिं नामा? आं दासिमबो फुरा स्योरनो गैया। पोस्टकोड, \"403516,\" आ मोनसेसो मोनसे गोनां थांखिमोन, आरो अब्लाबो गुगल मेप्सआ आंनाव खोनसेजों सिखावबाय।", "normalised": "बे स्क्रिप्टआ बेखौ खालामगोन:"}
+{"unnormalised": "जोबथाइयाव, आं मोनसे फिग्रिमावसो फैबाय (आरो जायखि जाया किंफिसार बटल), आं आनन्द भिल्लाव थोनानै थाबाय। बेयो मोजांमोन, गोरोबथाइ। नाथाय खारि जानाया? आं दासिमबो ग'वानि डाइलेकआवनो थाबाय \"गोमा जानाय आरो बिखा जानाय।\"", "normalised": "1. मोनसे `source_folder`खौ इनपुट हिसाबै ला।"}
+{"unnormalised": "सोलोखोनो थांखि? गोरोबनानै, *गोरोबनानै* GPS कोर्डिनेट्स लानो नांगोन। आरो जायखि जाया लोकल सीम कार्ड। आरो गोरोबनानै जोखां मोनसे हांखो। मानोना भारतआव ठेगानाखौ मोननोब्ला बेयो गोरोबनानै मोनसे साहसिक खामानि जानो हागौ, आरो बारबार, मोजां सोलोखोनो फोथायनोब्ला बेयो मोनसे आशाब गैयै, थार गोमा जानाय। आगोलनि समआव आं \"लेटीट्यूड: [लेटीट्यूड होनो नांगौ], लोंगिटीउड: [लोंगीट्यूड होनो नांगौ]\" आंनि बुकिं नटसावसो होनो नांगोन। बिसोरखौ *बेयाव* बिखा जाहोनायखौ नुगोन!", "normalised": "2. गासै सबफोल्डरफोरनि गेजेरजों रिर्कासिब्लि लां।"}
+{"unnormalised": "", "normalised": "3. मोनफ्रोम `.txt` फाइलनि थाखाय, गासै सिफाइनाय normalization नि नियमफोरखौ एप्लाइ खालाम।"}
+{"unnormalised": "", "normalised": "4. ओरिजिनेल फोल्डर दाजाबथाइखौ दोनखोमानानै `destination_folder` (उदाहारण `dataset_normalized`) आव normalize खालामनाय `.txt` फाइलखौ सेव खालाम।"}
+{"unnormalised": "", "normalised": "5. `.txt` फाइल नङिब्लाबो जेरावमोन बेफोरखौ डेस्टिनेसनआव चेन्ज खालामलासे कपि खालाम।"}
+{"unnormalised": "", "normalised": "6. normalize खालामजायासै नामा बेखौनो print खालाम (नाथाय दासिमनि लजिकजों गासै `.txt` फाइलखौ ट्राइ खालामनाय जागोन)।"}
+{"unnormalised": "", "normalised": "```python"}
+{"unnormalised": "", "normalised": "import re"}
+{"unnormalised": "", "normalised": "import os"}
+{"unnormalised": "", "normalised": "import shutil"}
+{"unnormalised": "", "normalised": "import inflect"}
+{"unnormalised": "", "normalised": "# number खौ वर्डआव सोलायनायनि थाखाय इन्फ्लिक्ट इन्जिनखौ इनिसियलाइज खालाम"}
+{"unnormalised": "", "normalised": "p = inflect.engine()"}
+{"unnormalised": "", "normalised": "# --- Normalization नि थाखाय हेल्पार फंक्शनफोर ---"}
+{"unnormalised": "", "normalised": "def number_to_words(number_str):"}
+{"unnormalised": "", "normalised": "    \"\"\" मोनसे नंबर स्ट्रिंखौ स्पोकन इंराजि फर्मआव सोलाययो।\"\"\""}
+{"unnormalised": "", "normalised": "    try:"}
+{"unnormalised": "", "normalised": "        # देसिमेलफोरखौ हेन्देल खालाम"}
+{"unnormalised": "", "normalised": "        if '.' in number_str:"}
+{"unnormalised": "", "normalised": "            parts = number_str.split('.')"}
+{"unnormalised": "", "normalised": "            whole = p.number_to_words(int(parts[0])) if parts[0] else ''"}
+{"unnormalised": "", "normalised": "            decimal = 'point ' + ' '.join(p.number_to_words(int(d)) for d in parts[1]) if parts[1] else ''"}
+{"unnormalised": "", "normalised": "            return (f\"{whole} {decimal}\").strip()"}
+{"unnormalised": "", "normalised": "        else:"}
+{"unnormalised": "", "normalised": "            return p.number_to_words(int(number_str))"}
+{"unnormalised": "", "normalised": "    except ValueError:"}
+{"unnormalised": "", "normalised": "        return number_str # भेलेद नंबर नङिब्ला ओरिजिनेलखौनो रिटर्न खालाम (उदाहारण, वर्डफोर अलरेडी थायो)"}
+{"unnormalised": "", "normalised": "def normalize_symbols(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"गोरोब सिम्बोलफोरखौ स्पोकन फर्मजों रिप्लेस खालामो।\"\"\""}
+{"unnormalised": "", "normalised": "    # सोलायनायनि थाखाय ओर्डरआ मोननो थायो"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'≠', ' not equal to ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'≤', ' less than or equal to ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'≥', ' greater than or equal to ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'√', ' square root of ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'%', ' percent ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\+', ' plus ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'=', ' equals ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'@', ' at ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'&', ' and ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'#', ' hash ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\*', ' asterisk ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'~', ' approximately ', text)"}
+{"unnormalised": "", "normalised": "    # कोंटेक्सटनि बादि जायोब्ला \"/\" खौ साबसिनै हेन्देल खालाम"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\b[a-zA-Z]+)/([a-zA-Z]+\\b)', r'\\1 or \\2', text) # word/word -> word एबा word"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\b[A-Z0-9]+)/([A-Z0-9]+\\b)', r'\\1 slash \\2', text) # एक्रोनिम/एब्रिभिएसन -> एक्रोनिम स्लेस एब्रिभिएसन"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\d+)/(\\d+)', r'\\1 divided by \\2', text) # नंबर/नंबर -> नंबर डिवाइडेड बाइ नंबर"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(?<!\\s)/', ' slash ', text) # बोरो स्लेसफोर (उदाहारण, पाथ, मिक्सड केसखौ बोखावनाय जाया)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'°C', ' degree celsius ', text) # डिग्री सेलसिएसआ गिबियावनो"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def normalize_acronyms(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"एक्रोनिमफोरखौ हाइफेनेटेड लेटरआव सोलाययो।\"\"\""}
+{"unnormalised": "", "normalised": "    def replace_acronym(match):"}
+{"unnormalised": "", "normalised": "        acronym = match.group(0)"}
+{"unnormalised": "", "normalised": "        # मोनसे लेटर नङाब्ला एसेन्स खालाम, एबा कमन कंट्राक्सन (उदाहारण I'M)"}
+{"unnormalised": "", "normalised": "        if len(acronym) > 1 and not (acronym.isupper() and len(acronym) == 1):"}
+{"unnormalised": "", "normalised": "             # हिउरिस्टिक: वर्डनि बादिब्ला स्प्लिट खालामनायखौ बोखार, (उदाहारण \"IT\" \"बे\")"}
+{"unnormalised": "", "normalised": "             # बे मोनसे गोरा प्रोब्लेम; सिम्पोल रेगएक्सआ बेसेन गोरा जागोन।"}
+{"unnormalised": "", "normalised": "             # दासिमनि थाखाय, नियमआव थाबाय: 2+ कनसिसक्युटिभ आप्पारकेस लेटर।"}
+{"unnormalised": "", "normalised": "            return '-'.join(list(acronym))"}
+{"unnormalised": "", "normalised": "        return acronym"}
+{"unnormalised": "", "normalised": "    # पिरियदजों अपसनेलिलि मोननो थाखाय 2 एबा बेसिन कनसिसक्युटिभ आप्पारकेस लेटरखौ दिहुन"}
+{"unnormalised": "", "normalised": "    # पसिबलब्ला \"IT\" बादि कमन वर्डफोरखौ स्प्लिट खालामनो थाखाय नेगेतिभ लुकबिहाइंड/लुकाहेडखौ बाहाय,"}
+{"unnormalised": "", "normalised": "    # नाथाय नियमआ स्ट्रिक: \"2+ कनसिसक्युटिभ आप्पारकेस लेटर\"।"}
+{"unnormalised": "", "normalised": "    # बे रेगएक्सआ 2+ कनसिसक्युटिभ आप्पारकेस लेटरनि सायाव स्ट्रिक, पिरियदफोरखौ एक्सट्रेक्सननि उनाव हेन्देल खालामो।"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b([A-Z][A-Z\\.]*[A-Z])\\b', replace_acronym, text)"}
+{"unnormalised": "", "normalised": "    text = text.replace('.', '') # प्रोसेसिंनि उनाव एक्रोनिमनि इनसाइडनिफ्राय पिरियदफोरखौ बोखार"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def normalize_numbers(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"स्टेनडेलन नंबरफोरखौ, आरो स्पोकन फर्मआव युनिट/खुरेंसिनि गेजेराव थानाय नंबरफोरखौ सोलाययो।\"\"\""}
+{"unnormalised": "", "normalised": "    def replace_num(match):"}
+{"unnormalised": "", "normalised": "        num_str = match.group(1)"}
+{"unnormalised": "", "normalised": "        return number_to_words(num_str)"}
+{"unnormalised": "", "normalised": "    # वर्डनि गेजेराव नंबरफोरखौ सोलाय (उदाहारण, एच. नंबर 147)"}
+{"unnormalised": "", "normalised": "    # बे पेटर्नआ नम्बरफोरखौ हमनो ट्राइ खालामो जेयोआ मोनसे देरसिन आइडेन्टिफायरनि पार्ट"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\bH\\. No\\. )(\\d+)', lambda m: f\"{m.group(1)}{number_to_words(m.group(2))}\", text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\b[A-Z])(\\d+)', lambda m: f\"{m.group(1)}{number_to_words(m.group(2))}\", text)"}
+{"unnormalised": "", "normalised": "    # जेनेरिक नंबर रिप्लेसमेन्ट - युनिट/खुरेंसिखौ डबल प्रोसेसिं खालामनो नांला"}
+{"unnormalised": "", "normalised": "    # बेयो स्टेनडेलन नंबरखौ हमनो थाखाय आरो युनिट/खुरेंसिनि पार्ट नङि बेखौ अलरेडी हेन्देल खालामनो थाखाय"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b(\\d+)\\b', replace_num, text)"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def normalize_numeric_suffixes(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"के, एम, बि, टि सफिक्सफोरखौ देरगायो।\"\"\""}
+{"unnormalised": "", "normalised": "    def replace_suffix(match):"}
+{"unnormalised": "", "normalised": "        num = number_to_words(match.group(1))"}
+{"unnormalised": "", "normalised": "        suffix = match.group(2).lower()"}
+{"unnormalised": "", "normalised": "        if suffix == 'k': return f\"{num} thousand\""}
+{"unnormalised": "", "normalised": "        if suffix == 'm': return f\"{num} million\""}
+{"unnormalised": "", "normalised": "        if suffix == 'b': return f\"{num} billion\""}
+{"unnormalised": "", "normalised": "        if suffix == 't': return f\"{num} trillion\""}
+{"unnormalised": "", "normalised": "        return match.group(0) # जाहोना नङा"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\d+)([KMBT])\\b', replace_suffix, text)"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def normalize_currency_number_suffix(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"खुरेंसिखौ नंबर आरो सफिक्सजों कम्बाइन खालामो।\"\"\""}
+{"unnormalised": "", "normalised": "    def replace_currency_suffix(match):"}
+{"unnormalised": "", "normalised": "        currency_symbol = match.group(1)"}
+{"unnormalised": "", "normalised": "        num_str = match.group(2)"}
+{"unnormalised": "", "normalised": "        suffix = match.group(3)"}
+{"unnormalised": "", "normalised": "        currency_word = \"\""}
+{"unnormalised": "", "normalised": "        if currency_symbol == '$': currency_word = 'dollar'"}
+{"unnormalised": "", "normalised": "        elif currency_symbol == '₹': currency_word = 'rupee'"}
+{"unnormalised": "", "normalised": "        # नांगौब्ला आरो खुरेंसि एड खालाम"}
+{"unnormalised": "", "normalised": "        num_words = number_to_words(num_str)"}
+{"unnormalised": "", "normalised": "        suffix_word = \"\""}
+{"unnormalised": "", "normalised": "        if suffix.lower() == 'k': suffix_word = 'thousand'"}
+{"unnormalised": "", "normalised": "        elif suffix.lower() == 'm': suffix_word = 'million'"}
+{"unnormalised": "", "normalised": "        elif suffix.lower() == 'b': suffix_word = 'billion'"}
+{"unnormalised": "", "normalised": "        elif suffix.lower() == 't': suffix_word = 'trillion'"}
+{"unnormalised": "", "normalised": "        return f\"{currency_word} {num_words} {suffix_word}\""}
+{"unnormalised": "", "normalised": "    # नंबर आरो सफिक्सजों खुरेंसि सिम्बोलनि थाखाय पेटर्न"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'([$₹€£])(\\d+)([KMBT])\\b', replace_currency_suffix, text)"}
+{"unnormalised": "", "normalised": "    # सफिक्स रुल्नि उनावबो खुरेंसि + नंबरखौ हेन्देल खालाम (सफिक्स रुल्नि उनाव खालामनो नांगोन)"}
+{"unnormalised": "", "normalised": "    def replace_currency_num(match):"}
+{"unnormalised": "", "normalised": "        currency_symbol = match.group(1)"}
+{"unnormalised": "", "normalised": "        num_str = match.group(2)"}
+{"unnormalised": "", "normalised": "        currency_word = \"\""}
+{"unnormalised": "", "normalised": "        if currency_symbol == '$': currency_word = 'dollar'"}
+{"unnormalised": "", "normalised": "        elif currency_symbol == '₹': currency_word = 'rupee'"}
+{"unnormalised": "", "normalised": "        # नांगौब्ला आरो खुरेंसि एड खालाम"}
+{"unnormalised": "", "normalised": "        num_words = number_to_words(num_str)"}
+{"unnormalised": "", "normalised": "        return f\"{currency_word} {num_words}\""}
+{"unnormalised": "", "normalised": "    text = re.sub(r'([$₹€£])(\\d+)\\b', replace_currency_num, text)"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def normalize_dates(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"न्युमेरिक डेटफोरखौ नेचुरल स्पोकन फोर्मेटआव सोलाय (एम्बिग्युइटिनि थाखाय डिडि/एमएम/वाइवाइवाइवाइ एसेम खालाम)।\"\"\""}
+{"unnormalised": "", "normalised": "    # डिडि-एमएम-वाइवाइवाइवाइ एबा डिडि/एमएम/वाइवाइवाइवाइ"}
+{"unnormalised": "", "normalised": "    def replace_date_dmy(match):"}
+{"unnormalised": "", "normalised": "        day = int(match.group(1))"}
+{"unnormalised": "", "normalised": "        month = int(match.group(2))"}
+{"unnormalised": "", "normalised": "        year = int(match.group(3))"}
+{"unnormalised": "", "normalised": "        months = ["}
+{"unnormalised": "", "normalised": "            \"\", \"january\", \"february\", \"march\", \"april\", \"may\", \"june\","}
+{"unnormalised": "", "normalised": "            \"july\", \"august\", \"september\", \"october\", \"november\", \"december\""}
+{"unnormalised": "", "normalised": "        ]"}
+{"unnormalised": "", "normalised": "        return f\"{p.ordinal(day)} {months[month]} {number_to_words(str(year))}\""}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b(\\d{1,2})[-/](\\d{1,2})[-/](\\d{4})\\b', replace_date_dmy, text)"}
+{"unnormalised": "", "normalised": "    # वाइवाइवाइवाइ-एमएम-डिडि"}
+{"unnormalised": "", "normalised": "    def replace_date_ymd(match):"}
+{"unnormalised": "", "normalised": "        year = int(match.group(1))"}
+{"unnormalised": "", "normalised": "        month = int(match.group(2))"}
+{"unnormalised": "", "normalised": "        day = int(match.group(3))"}
+{"unnormalised": "", "normalised": "        months = ["}
+{"unnormalised": "", "normalised": "            \"\", \"january\", \"february\", \"march\", \"april\", \"may\", \"june\","}
+{"unnormalised": "", "normalised": "            \"july\", \"august\", \"september\", \"october\", \"november\", \"december\""}
+{"unnormalised": "", "normalised": "        ]"}
+{"unnormalised": "", "normalised": "        return f\"{p.ordinal(day)} {months[month]} {number_to_words(str(year))}\""}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b(\\d{4})[-/](\\d{1,2})[-/](\\d{1,2})\\b', replace_date_ymd, text)"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def normalize_units(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"युनिटफोरखौ गासै वर्डआव देरगायो।\"\"\""}
+{"unnormalised": "", "normalised": "    def replace_unit(match):"}
+{"unnormalised": "", "normalised": "        num_str = match.group(1)"}
+{"unnormalised": "", "normalised": "        unit = match.group(2).lower()"}
+{"unnormalised": "", "normalised": "        num_words = number_to_words(num_str)"}
+{"unnormalised": "", "normalised": "        unit_map = {"}
+{"unnormalised": "", "normalised": "            'cm': 'centimeter', 'mm': 'millimeter', 'm': 'meter', 'km': 'kilometer',"}
+{"unnormalised": "", "normalised": "            'g': 'gram', 'kg': 'kilogram', 'mg': 'milligram',"}
+{"unnormalised": "", "normalised": "            'ml': 'milliliter', 'l': 'liter', 'kph': 'kilometers per hour',"}
+{"unnormalised": "", "normalised": "            'mph': 'miles per hour', 'hz': 'hertz', 'khz': 'kilohertz',"}
+{"unnormalised": "", "normalised": "            'mhz': 'megahertz', 'ghz': 'gigahertz', 'mb': 'megabyte',"}
+{"unnormalised": "", "normalised": "            'gb': 'gigabyte', 'tb': 'terabyte', 'kb': 'kilobyte',"}
+{"unnormalised": "", "normalised": "            'sec': 'second', 'min': 'minute', 'hr': 'hour',"}
+{"unnormalised": "", "normalised": "            'usd': 'us dollar', 'eur': 'euro', 'gbp': 'pound sterling',"}
+{"unnormalised": "", "normalised": "            'ft': 'foot', 'in': 'inch', 'yd': 'yard', 'sqm': 'square meter',"}
+{"unnormalised": "", "normalised": "            'sqkm': 'square kilometer', 'sqft': 'square foot',"}
+{"unnormalised": "", "normalised": "            'c': 'celsius', # स्पेसेल हेन्देलिंनि थाखाय °C आ गिबियावनो, नाथाय सि जानानै थायोब्ला। डिग्रि होनानै एसेम खालाम।"}
+{"unnormalised": "", "normalised": "            'f': 'fahrenheit' # 'एफ' नि थाखाय डिग्रि होनानै एसेम खालाम"}
+{"unnormalised": "", "normalised": "        }"}
+{"unnormalised": "", "normalised": "        # °C नि थाखाय स्पेसेल केस, सिम्बोलआव गिबियावनो हेन्देल खालाम।"}
+{"unnormalised": "", "normalised": "        if unit == 'c':"}
+{"unnormalised": "", "normalised": "             # नंबरनि उन उन जायोब्ला, \"डिग्रि सेलसिएस\" होनानै एसेम खालाम"}
+{"unnormalised": "", "normalised": "            if re.search(r'\\b\\d+\\s*$', match.string[:match.start()], re.IGNORECASE):"}
+{"unnormalised": "", "normalised": "                return f\"{num_words} degree celsius\""}
+{"unnormalised": "", "normalised": "            return f\"{num_words} {unit_map.get(unit, unit)}\""}
+{"unnormalised": "", "normalised": "        return f\"{num_words} {unit_map.get(unit, unit)}\""}
+{"unnormalised": "", "normalised": "    # बे रेगएक्सआ गुबुन गुबुन युनिटनि थाखाय रोबासट आरो युनिटनि सिगां नंबरआ एसेन्स"}
+{"unnormalised": "", "normalised": "    # बेयो नंबरखौ हमनो ट्राइ खालामो आरो युनिटखौ सेपरेटलि"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b(\\d+(?:\\.\\d+)?)\\s*(cm|mm|m|km|g|kg|mg|ml|l|kph|mph|hz|khz|mhz|ghz|mb|gb|tb|kb|sec|min|hr|usd|eur|gbp|ft|in|yd|sqm|sqkm|sqft|[CF])\\b', replace_unit, text, flags=re.IGNORECASE)"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def normalize_mathematical_notation(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"मेथेमेटिकल सिम्बोलफोरखौ आरो एक्सप्रेसनफोरखौ स्पोकन फर्मआव सोलाययो।\"\"\""}
+{"unnormalised": "", "normalised": "    # ओर्डरआ मोननो थायो। आरो स्पेसिफिक पेटर्नफोर गिबियावनो।"}
+{"unnormalised": "", "normalised": "    # ए टु बि नि इन्टेग्रेल"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'∫\\s*(\\d+)→(\\d+)\\s*(.*?)\\s*d([a-zA-Z])',"}
+{"unnormalised": "", "normalised": "                  lambda m: f\"integral from {number_to_words(m.group(1))} to {number_to_words(m.group(2))} of {m.group(3).strip()} d {m.group(4)}\","}
+{"unnormalised": "", "normalised": "                  text)"}
+{"unnormalised": "", "normalised": "    # जेनेरिक इन्टेग्रेल"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'∫\\s*(.*?)\\s*d([a-zA-Z])',"}
+{"unnormalised": "", "normalised": "                  lambda m: f\"integral of {m.group(1).strip()} d {m.group(2)}\","}
+{"unnormalised": "", "normalised": "                  text)"}
+{"unnormalised": "", "normalised": "    # पावरफोर (x^2, x^3, x^n)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'([a-zA-Z])\\^2', r'\\1 squared', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'([a-zA-Z])\\^3', r'\\1 cubed', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'([a-zA-Z])\\^([a-zA-Z0-9]+)', r'\\1 to the power of \\2', text) # x^n"}
+{"unnormalised": "", "normalised": "    # पाइ आर स्क्वेयर्ड (स्पेसिफिक केस)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'πr\\^2', 'pi r squared', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'π([a-zA-Z])\\^2', r'pi \\1 squared', text) # पाइ ए^2 नि थाखाय"}
+{"unnormalised": "", "normalised": "    # स्क्वेर रुट"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'√([a-zA-Z0-9]+)', r'square root of \\1', text)"}
+{"unnormalised": "", "normalised": "    # समेसन (Σ x_i)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'Σ\\s*([a-zA-Z])_([a-zA-Z0-9]+)', r'summation of \\1 sub \\2', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'Σ\\s*([a-zA-Z])', r'summation of \\1', text)"}
+{"unnormalised": "", "normalised": "    # सब्सक्रिप्टफोर (x_i) - बेयो गुबुन पेटर्नजों कन्फ्लिक्ट जानाय नङा बेखौ साबसिनै नाय"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'([a-zA-Z])_([a-zA-Z0-9]+)', r'\\1 sub \\2', text)"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def normalize_text(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"लजिकेल ओर्डरआव गासै नियमफोरखौ एप्लाइ खालामो।\"\"\""}
+{"unnormalised": "", "normalised": "    # 1. मेथेमेटिकल नोटेसन (स्पेसिफिक एक्सप्रेशन्स गिबियावनो)"}
+{"unnormalised": "", "normalised": "    text = normalize_mathematical_notation(text)"}
+{"unnormalised": "", "normalised": "    # 2. सिम्बोलफोर (मेथ सिम्बोलनि उनाव फ्रेक्सन बायदि 3/4 सिम)"}
+{"unnormalised": "", "normalised": "    text = normalize_symbols(text)"}
+{"unnormalised": "", "normalised": "    # 3. न्युमेरिक सफिक्सफोर (उदाहारण के, एम, बि, टि)"}
+{"unnormalised": "", "normalised": "    text = normalize_numeric_suffixes(text)"}
+{"unnormalised": "", "normalised": "    # 4. खुरेंसि + नंबर + सफिक्स"}
+{"unnormalised": "", "normalised": "    text = normalize_currency_number_suffix(text)"}
+{"unnormalised": "", "normalised": "    # 5. डेटफोर"}
+{"unnormalised": "", "normalised": "    text = normalize_dates(text)"}
+{"unnormalised": "", "normalised": "    # 6. युनिटफोर (जेनेरिक नंबर कनभर्सननि सिगां फैनांगोन)"}
+{"unnormalised": "", "normalised": "    text = normalize_units(text)"}
+{"unnormalised": "", "normalised": "    # 7. एक्रोनिमफोर (नंबरनि सिगां \"युएसए\" खौ \"यु-एस-ए\" आव स्प्लिट खालामनो बोखारनो थाखाय)"}
+{"unnormalised": "", "normalised": "    text = normalize_acronyms(text)"}
+{"unnormalised": "", "normalised": "    # 8. जेनेरिक नंबर (लास्टआव, गैयैबो नंबरखौ हमनो थाखाय)"}
+{"unnormalised": "", "normalised": "    text = normalize_numbers(text)"}
+{"unnormalised": "", "normalised": "    # फाइनल क्लिनआप"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\s+', ' ', text).strip() # स्पेसफोरखौ नर्मालाइज खालाम"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def process_folder(source_folder, destination_folder):"}
+{"unnormalised": "", "normalised": "    \"\"\""}
+{"unnormalised": "", "normalised": "    सोर्स फोल्डरनि गेजेरजों लांङो, नर्मालाइज खालामनाय .txt फाइल,"}
+{"unnormalised": "", "normalised": "    आरो गुबुन फाइलफोरखौ डेस्टिनेसन फोल्डरआव कपि खालामो।"}
+{"unnormalised": "", "normalised": "    \"\"\""}
+{"unnormalised": "", "normalised": "    os.makedirs(destination_folder, exist_ok=True)"}
+{"unnormalised": "", "normalised": "    normalized_count = 0"}
+{"unnormalised": "", "normalised": "    copied_count = 0"}
+{"unnormalised": "", "normalised": "    not_normalized_txt_files = [] # गासैखौबो प्रोसेस खालामोब्ला दासिमनि लजिकजों बेयो एमटिओ जागोन"}
+{"unnormalised": "", "normalised": "    for root, _, files in os.walk(source_folder):"}
+{"unnormalised": "", "normalised": "        relative_path = os.path.relpath(root, source_folder)"}
+{"unnormalised": "", "normalised": "        current_dest_dir = os.path.join(destination_folder, relative_path)"}
+{"unnormalised": "", "normalised": "        os.makedirs(current_dest_dir, exist_ok=True)"}
+{"unnormalised": "", "normalised": "        for filename in files:"}
+{"unnormalised": "", "normalised": "            source_file_path = os.path.join(root, filename)"}
+{"unnormalised": "", "normalised": "            dest_file_path = os.path.join(current_dest_dir, filename)"}
+{"unnormalised": "", "normalised": "            if filename.lower().endswith('.txt'):"}
+{"unnormalised": "", "normalised": "                try:"}
+{"unnormalised": "", "normalised": "                    with open(source_file_path, 'r', encoding='utf-8') as f:"}
+{"unnormalised": "", "normalised": "                        content = f.read()"}
+{"unnormalised": "", "normalised": "                    normalized_content = normalize_text(content)"}
+{"unnormalised": "", "normalised": "                    with open(dest_file_path, 'w', encoding='utf-8') as f:"}
+{"unnormalised": "", "normalised": "                        f.write(normalized_content)"}
+{"unnormalised": "", "normalised": "                    normalized_count += 1"}
+{"unnormalised": "", "normalised": "                    # print(f\"Normalized: {source_file_path}\")"}
+{"unnormalised": "", "normalised": "                except Exception as e:"}
+{"unnormalised": "", "normalised": "                    print(f\"Error normalizing {source_file_path}: {e}\")"}
+{"unnormalised": "", "normalised": "                    not_normalized_txt_files.append(source_file_path)"}
+{"unnormalised": "", "normalised": "                    # इरर जायोब्ला, एसेमबादि कपि खालाम एबा डिजायर्ड इरर हेन्देलिंनि सायाव डिपेन खालामनानै एमटिओ लां"}
+{"unnormalised": "", "normalised": "                    shutil.copy2(source_file_path, dest_file_path)"}
+{"unnormalised": "", "normalised": "            else:"}
+{"unnormalised": "", "normalised": "                shutil.copy2(source_file_path, dest_file_path)"}
+{"unnormalised": "", "normalised": "                copied_count += 1"}
+{"unnormalised": "", "normalised": "                # print(f\"Copied (unchanged): {source_file_path}\")"}
+{"unnormalised": "", "normalised": "    print(f\"\\n--- Processing Summary ---\")"}
+{"unnormalised": "", "normalised": "    print(f\"Text files normalized: {normalized_count}\")"}
+{"unnormalised": "", "normalised": "    print(f\"Other files copied: {copied_count}\")"}
+{"unnormalised": "", "normalised": "    if not_normalized_txt_files:"}
+{"unnormalised": "", "normalised": "        print(\"\\nFiles that were *not* normalized due to errors (copied as-is):\")"}
+{"unnormalised": "", "normalised": "        for f in not_normalized_txt_files:"}
+{"unnormalised": "", "normalised": "            print(f\"- {f}\")"}
+{"unnormalised": "", "normalised": "    else:"}
+{"unnormalised": "", "normalised": "        print(\"All .txt files were processed successfully.\")"}
+{"unnormalised": "", "normalised": "# --- मेन एग्जिक्युसन ब्लक ---"}
+{"unnormalised": "", "normalised": "if __name__ == \"__main__\":"}
+{"unnormalised": "", "normalised": "    # डेमोनस्ट्रेशननि थाखाय मोनसे दाम्मि सोर्स फोल्डर आरो फाइल दा"}
+{"unnormalised": "", "normalised": "    # साचेट सिनेरियाव नोंथां साचेट डेटायाव सोर्स_फोल्डरखौ पोइंट खालामनो"}
+{"unnormalised": "", "normalised": "    dummy_source_folder = 'dataset_raw'"}
+{"unnormalised": "", "normalised": "    dummy_destination_folder = 'dataset_normalized'"}
+{"unnormalised": "", "normalised": "    dummy_txt_filepath = os.path.join(dummy_source_folder, 'blog_posts', 'goa_addresses.txt')"}
+{"unnormalised": "", "normalised": "    dummy_image_filepath = os.path.join(dummy_source_folder, 'images', 'beach.jpg')"}
+{"unnormalised": "", "normalised": "    # एसेम खालामनाय दाम्मि सोर्स डाइरेक्टरी थायो"}
+{"unnormalised": "", "normalised": "    os.makedirs(os.path.dirname(dummy_txt_filepath), exist_ok=True)"}
+{"unnormalised": "", "normalised": "    os.makedirs(os.path.dirname(dummy_image_filepath), exist_ok=True)"}
+{"unnormalised": "", "normalised": "    # नोंथांनि ब्लग पोस्टनि कन्टेन्ट"}
+{"unnormalised": "", "normalised": "    blog_post_content = \"\"\""}
+{"unnormalised": "", "normalised": "    Lost in Translation: My Adventures with Indian Addresses (and Why You Need GPS)"}
+{"unnormalised": "", "normalised": "    So, I thought I was pretty savvy, you know? I've navigated the Delhi metro during peak hours, haggled for the best price on a saree in Chandni Chowk, and even managed to order chai without getting milk in it (a feat, trust me). But then came the addresses. Oh, the addresses!"}
+{"unnormalised": "", "normalised": "    Let me set the scene: I was on a mission to find this charming little guesthouse in Goa. Sounded idyllic, right? The booking confirmation cheerfully declared: \"Anand Villa, H. No. 147/A, Near St. Alex Church, Calangute, Bardez, Goa 403516.\" Simple enough, thought I. Famous last words."}
+{"unnormalised": "", "normalised": "    First, the \"H. No. 147/A.\" I assumed it was house number, duh. But oh no, in Goa, it seems to be more of a suggestion than a concrete marker. I spent a solid hour wandering around what I’m pretty sure was a coconut plantation, asking locals if they’d seen \"H. No. 147/A, any slash anything.\" The responses ranged from blank stares to helpful (but ultimately incorrect) directions."}
+{"unnormalised": "", "normalised": "    Then there was the \"Near St. Alex Church.\" Now, St. Alex Church is a pretty big landmark. You’d think \"near\" would mean, like, visible from the front steps. Nope. In Goa, “near” means “somewhere in the general vicinity, possibly involving a rickshaw ride and a conversation with a cow.” I eventually found it… after asking 3 different auto-rickshaw wallahs who each tried to charge me Rs. 500 for a ride that should have cost Rs. 100."}
+{"unnormalised": "", "normalised": "    And don't even get me started on \"Bardez.\" Is it a town? A district? A feeling? I'm still not entirely sure. The postcode, \"403516,\" was the only thing that made any sense, and even then, Google Maps just laughed at me."}
+{"unnormalised": "", "normalised": "    Finally, after what felt like a small pilgrimage (and several bottles of Kingfisher), I stumbled upon Anand Villa. It was lovely, truly. But the journey? Let’s just say I’m now fluent in the Goan dialect of “lost and confused.”"}
+{"unnormalised": "", "normalised": "    Moral of the story? Always, *always* have GPS coordinates. And maybe a local SIM card. And definitely a sense of humor. Because finding an address in India can be an adventure in itself, and sometimes, the best stories are the ones where you get hopelessly, hilariously lost. Next time, I'm just putting \"Latitude: [insert latitude here], Longitude: [insert longitude here]\" in my booking notes. Let’s see them try to get *that* confused!"}
+{"unnormalised": "", "normalised": "    \"\"\""}
+{"unnormalised": "", "normalised": "    # फाइलआव दाम्मि ब्लग पोस्ट कन्टेन्टखौ लिर"}
+{"unnormalised": "", "normalised": "    with open(dummy_txt_filepath, 'w', encoding='utf-8') as f:"}
+{"unnormalised": "", "normalised": "        f.write(blog_post_content)"}
+{"unnormalised": "", "normalised": "    # मोनसे दाम्मि इमेज फाइल दा"}
+{"unnormalised": "", "normalised": "    with open(dummy_image_filepath, 'wb') as f:"}
+{"unnormalised": "", "normalised": "        f.write(b'dummy_image_content')"}
+{"unnormalised": "", "normalised": "    print(f\"Dummy data created in '{dummy_source_folder}' for demonstration.\")"}
+{"unnormalised": "", "normalised": "    # मेन प्रोसेसिं फंक्शनआव कल खालाम"}
+{"unnormalised": "", "normalised": "    process_folder(dummy_source_folder, dummy_destination_folder)"}
+{"unnormalised": "", "normalised": "    print(\"\\n--- Example Normalized Content (from goa_addresses.txt) ---\")"}
+{"unnormalised": "", "normalised": "    normalized_file_path = os.path.join(dummy_destination_folder, 'blog_posts', 'goa_addresses.txt')"}
+{"unnormalised": "", "normalised": "    if os.path.exists(normalized_file_path):"}
+{"unnormalised": "", "normalised": "        with open(normalized_file_path, 'r', encoding='utf-8') as f:"}
+{"unnormalised": "", "normalised": "            print(f.read())"}
+{"unnormalised": "", "normalised": "    else:"}
+{"unnormalised": "", "normalised": "        print(f\"Normalized file not found at: {normalized_file_path}\")"}
+{"unnormalised": "", "normalised": "    # जोदि बेयो डेमोनि थाखाय जायोब्ला नोंथां दाम्मि_सोर्स_फोल्डरखौ क्लिनआप खालामनो हागोन"}
+{"unnormalised": "", "normalised": "    # shutil.rmtree(dummy_source_folder)"}
+{"unnormalised": "", "normalised": "    # print(f\"Cleaned up dummy source folder: {dummy_source_folder}\")"}
+{"unnormalised": "", "normalised": "```"}
+{"unnormalised": "", "normalised": "---"}
+{"unnormalised": "", "normalised": "**स्क्रिप्टखौ माबोरै बाहायनांगौ:**"}
+{"unnormalised": "", "normalised": "1. **कोदखौ सेव खालाम:** गाहायाव होनाय पाइथन कोदखौ `.py` फाइल हिसाबै सेव खालाम (उदाहारण `normalize_data.py`)।"}
+{"unnormalised": "", "normalised": "2. **`इन्फ्लिक्ट`खौ इन्स्टल खालाम:** जोदि नोंथांआव गैयैब्ला, `इन्फ्लिक्ट` लाइब्रेरिखौ इन्स्टल खालाम (नंबरफोरखौ वर्डआव सोलायनो बाहायो):"}
+{"unnormalised": "", "normalised": "    ```bash"}
+{"unnormalised": "", "normalised": "    pip install inflect"}
+{"unnormalised": "", "normalised": "    ```"}
+{"unnormalised": "", "normalised": "3. **नोंथांनि डेटाखौ प्रिपियार खालाम:**"}
+{"unnormalised": "", "normalised": "    * नोंथांनि गासै `.txt` फाइलफोरखौ (आरो नोंथां जेखौ कपि खालामनो लुगैयो) टप-लेवेल फोल्डरआव लाखि। उदाहारणनि थाखाय, नोंथांनि मेन कलेक्सनआ `माई_डेटा_रो` मुंनि फोल्डरआव दं।"}
+{"unnormalised": "", "normalised": "    * डेमोनस्ट्रेशननि थाखाय, स्क्रिप्टआ `डेटासेट_रो` फोल्डरखौ नोंथांनि होनाय ब्लग पोस्ट आरो दाम्मि इमेजजों *दागोन*।"}
+{"unnormalised": "", "normalised": "4. **`सोर्स_फोल्डर` आरो `डेस्टिनेसन_फोल्डर`खौ मोडिफाइ खालाम:**"}
+{"unnormalised": "", "normalised": "    * `जोदि __नेम__ == \"__मेन__\":` ब्लकआव, नोंथांनि साचेट टप-लेवेल डेटा फोल्डरनि पाथआव `दाम्मि_सोर्स_फोल्डर` खौ सोलाय।"}
+{"unnormalised": "", "normalised": "    * नर्मालाइज खालामनाय आउटपुटआ थांनो नांगौब्ला `दाम्मि_डेस्टिनेसन_फोल्डर`आव चेन्ज खालाम (उदाहारण `माई_डेटा_नर्मालाइज्ड`)।"}
+{"unnormalised": "", "normalised": "    ```python"}
+{"unnormalised": "", "normalised": "    # उदाहारण: जोदि नोंथांनि डेटाया 'सि:/युजार/नोंथांनि मुङ/डकुमेन्ट/माईटेक्सटकलेक्सन' आव जायोब्ला"}
+{"unnormalised": "", "normalised": "    # सोर्स_फोल्डर = 'सि:/युजार/नोंथांनि मुङ/डकुमेन्ट/माईटेक्सटकलेक्सन'"}
+{"unnormalised": "", "normalised": "    # डेस्टिनेसन_फोल्डर = 'सि:/युजार/नोंथांनि मुङ/डकुमेन्ट/माईटेक्सटकलेक्सन_नर्मालाइज्ड'"}
+{"unnormalised": "", "normalised": "    # बे स्क्रिप्टनि डेमोनिखाय, बेखौ बाहायो:"}
+{"unnormalised": "", "normalised": "    सोर्स_फोल्डर = 'डेटासेट_रो' # बेयो स्क्रिप्टनिफ्राय दानो जागोन जोदि थायाब्ला"}
+{"unnormalised": "", "normalised": "    डेस्टिनेसन_फोल्डर = 'डेटासेट_नर्मालाइज्ड' # बेयो स्क्रिप्टनिफ्राय दानो जागोन"}
+{"unnormalised": "", "normalised": "    ```"}
+{"unnormalised": "", "normalised": "5. **स्क्रिप्टखौ रन खालाम:** नोंथांनि टार्मिनेल एबा कमान्ड फ्रमफटखौ ओपन खालाम, नोंथां जाय डाइरेक्टरीआव `नर्मालाइज_डेटा.पाइ` खौ सेव खालामदों बेयाव लां, आरो रन खालाम:"}
+{"unnormalised": "", "normalised": "    ```bash"}
+{"unnormalised": "", "normalised": "    पाइथन नर्मालाइज_डेटा.पाइ"}
+{"unnormalised": "", "normalised": "    ```"}
+{"unnormalised": "", "normalised": "**होनाय ब्लग पोस्टनि कन्टेन्टनि थाखाय आउटपुट:**"}
+{"unnormalised": "", "normalised": "जोदि नोंथां दाम्मि डेटा सेटअपजों स्क्रिप्टखौ रन खालामोब्ला, `डेटासेट_नर्मालाइज्ड/ब्लग_पोस्ट/ग'आ_एड्रेस.टेक्सट` फाइलआव बेयो थागोन:"}
+{"unnormalised": "", "normalised": "```"}
+{"unnormalised": "", "normalised": "लस्ट इन ट्रानस्लेसन: माइ एडभेन्सार्स वित इनडिएन एड्रेसेस (आरो नोंथांखौ मानो जिपिएस नांगो) सो, आइ थट आइ वास् फ्रिटि सेभभि, यु नो? आइभ नेभिगेटेड दा देलहि मेटर' दुयुरिं पिक आवर्स, हेग्गेल्ड फर दा बेस्ट प्राइस अन ए साडि इन सान्दनि सौक, आरो इभन मेनेज्ड टु अर्डर स'इ विदाउट गेटिङ मिल्क इन इट (ए फिट, ट्रस्‍ट मि)। बाट देन केम दा एड्रेसेस। ओ, दा एड्रेसेस! लेट मि सेट दा सिन: आइ वास् अन ए मिसन टु फाइन दास् सर्मिं लिटल गेस्ट हाउस इन ग'आ। साउनडेड आइडिलिक, राइट? दा बुकिं कन्फरमेसन सरफिलि डिक्लियर्ड: \"आनन्द भिल्ला, एच. नं वान हनड्रेड एन फरटि सेभेन स्लेस ए, नियर एस-टि. एलेक्स सार्स, कालेनगुट, बारडेज, ग'आ फर हनड्रेड एन थ्रि थाउजेन फाइब हनड्रेड एन सिक्स्टिन।\" सिम्पल इनफ, थट आइ। फेमास् लास्‍ट वड्स। फर्स्ट, दा \"एच. नं वान हनड्रेड एन फरटि सेभेन स्लेस ए।\" आइ एज्युम्ड इट वास् हाउस नम्बर, दा। बाट ओ न', इन ग'आ, इट सिमस् टु बि मोर अफ ए सजेशचन देन ए कंक्रिट मार्कर। आइ स्पेन्ट ए सॉलिड आवर वानडरिं एराउन्ङ वट आइ'म फ्रिटि सोर वास् ए ककुनट प्लांटेसन, आसकिं ल'केलस इफ दे'द सीन \"एच. नं वान हनड्रेड एन फरटि सेभेन स्लेस ए, एनी स्लेस एनिथिं।\" दा रिस्पनसेस रेन्जेड फ्रम ब्लैंक स्टेर्स टु हेल्पफुल (बाट अल्तिमेटलि इनकरेक्ट) डाइरेक्सनस्। देन देयार वास् दा \"नियर एस-टि. एलेक्स सार्स।\" नाओ, एस-टि. एलेक्स सार्स इस ए फ्रिटि बिग लेन्डमार्क। यु'ड थिंकिं"}

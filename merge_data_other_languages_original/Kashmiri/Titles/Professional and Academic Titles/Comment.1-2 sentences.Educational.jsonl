@@ -1,0 +1,225 @@
+{"unnormalised": "یُس تہَ اوسُس تیمِس مُلاقات، ڈٓاكٹر صاحبن سٟتۍ؟", "normalised": "मै छॆस तॲममी नियमस मंज़ूर आण \"Dr.\", \"Prof.\", आण \"Adv.\" मंज़ूर करणॖचॆ खास तरीका समझस। यिमन नियमन मुंजब तकसुली डेटा करनॖयॖखॲतर मै एक पऺथॆन सॿक्रिप्ट अमलियथ वॖहॲरॖयस।"}
+{"unnormalised": "", "normalised": "यहां छॆव यिमॖयॖख खॲतर स्कॿक्रिप्ट कशीश करत, यिमन मुंजब पऺथन कोड वॖखॲन्योन्य छॆ:"}
+{"unnormalised": "", "normalised": "**कोर लॉजिक आनि तरीका:**"}
+{"unnormalised": "", "normalised": "1.  **फ़ाइल सिस्टम ट्रैवर्सल:** मै `os.walk` यॖचॖह पऺरसॖन्यॉन आनि सब्योन फ़ोल्डरस मनदुन गॖरुन्योन।"}
+{"unnormalised": "", "normalised": "2.  **आउटपुट डायरेक्टरी मिररिंग:** इनपुट मंज़ि फ़ोल्डरस ख़ातर, मै `dataset_normalized` आउटपुट डायरेक्टरी मंज़ि यिमनॖक मिलानॖयॖख फ़ोल्डर बनायस।"}
+{"unnormalised": "", "normalised": "3.  **फ़ाइल प्रक्रिया:**"}
+{"unnormalised": "", "normalised": "    *   अगर कॆह फ़ाइल `.txt` फाइल छु तॖ यिमॖचॆ कंटेंट पढ़यस, नॉर्मलाइज़ करॖयस, आण यिमॖचॖक मिलानॖयॖख आउटपुट फोल्डर मंज़ि एक नॖय `.txt` फाइल बनायस।"}
+{"unnormalised": "", "normalised": "    *   अगर कॆह फाइल `.txt` फाइल नही छु तॖ यिमॖक तरॖतियॖख मिलानॖयॖख आउटपुट फोल्डर मंज़ि कॉपी करॖयस, यिमॖचॆ बदलाव वॖनॖयॖतॲ।"}
+{"unnormalised": "", "normalised": "4.  **नॉर्मलाइज़ेशन ऑर्डर (सही आउटपुट खॲतर ज़रूरी):** नॉर्मलाइज़ेशन नियमस यॖचॖखनॖच तरतीब ज़रूरी छॆ। मै आम तौर पर आम नियमन वॖछुन्या वॖछुन यिमॖच्योन्य नियमन यॖचॖखनॖयॖयस (मिसाल की तौर पर, कर्रेंसी + नॖम्बर + सफ़िक्स वॖछुन्या जनरल नॖम्बरस वॖछुन्योन्य, या कॆमहीस प्रतीक वॖछुन्या आम अल्फ़ान्यूमरिक पैटर्न्सन वॖछुन्योन्य)।"}
+{"unnormalised": "", "normalised": "    *   प्रतीक आनि खास अक्षर।"}
+{"unnormalised": "", "normalised": "    *   कर्रेंसी + नंबर + सफ़िक्स।"}
+{"unnormalised": "", "normalised": "    *   तारीख़न।"}
+{"unnormalised": "", "normalised": "    *   नॖम्बर (जॖमन मंज़ि यूनिटस पॖनॖय शॲमल छॆ, मगर यूनिटस फॖलानय यिमॖचॆ नशॖरथ यिमॖचॆ वॖहन वॖहन)।"}
+{"unnormalised": "", "normalised": "    *   एक्रोनॅमस।"}
+{"unnormalised": "", "normalised": "    *   युनिटस।"}
+{"unnormalised": "", "normalised": "    *   गणितीय संकेत।"}
+{"unnormalised": "", "normalised": "    *   खास प्रीफ़िक्सस मिसाल की तौर पर \"Dr.\", \"Prof.\", \"Adv.\" यिमनॖक वॖहन वॖहन कीह्ज़ानस तॖस या खास रेगॆक्स सोत करॖयस, यिमॖचॆ ग़लत समज वॖछुन्या नॖम्बर या एक्रोनॅम नियमन सोत बाचॖयस।"}
+{"unnormalised": "", "normalised": "    *   आम `/` मंज़ूर करनॖव।"}
+{"unnormalised": "", "normalised": "    *   स्पेस नॉर्मलाइज़ेशन एक ख़ातमा करणॖव।"}
+{"unnormalised": "", "normalised": "**तफसीली नियमन खॲतर अमरियत करणॖचॆ रणनीति:**"}
+{"unnormalised": "", "normalised": "1.  **प्रतीक → बोलने की शक्ल:** मै यिमॖच्योन्य प्रतीकस यिमॖच्योन्य बोलने की शक्ल मंज़ि नॖयस, और मंज़िस तकसुली मंज़ि घूमॖयस, यिमॖच्योन्य बदलव करॖयस। रेगुलर ऍक्सप्रेशन यिमन प्रतीकस खॲतर वॖहॲरॖयस यिमॖच्योन्य नॖयस। रेगुलर एक्सप्रेशन वॖहॲरॖयस।"}
+{"unnormalised": "", "normalised": "    *   `art/craft` -> `art या craft` (रेगेक्स: `(\\b\\w+)\\/(\\w+\\b)`)"}
+{"unnormalised": "", "normalised": "    *   `QA/Dev` -> `Q-A स्लेश D-e-v` (मिक्स्ड केस या संक्षिप्त अक्षरस खॲतर रेगॅक्स `(\\b[A-Z0-9]+)\\/([A-Z0-9]+\\b)`)"}
+{"unnormalised": "", "normalised": "    *   `2+2=4` यिमॖक गणितीय संकेत करणॖव।"}
+{"unnormalised": "", "normalised": "    *   `$`, `~`, `*`, `#`, `@`, `&`, आदि को सीधे तौर पर मैप किया जाएगा।"}
+{"unnormalised": "", "normalised": "2.  **एक्रोनॅमस → हायफन वले अक्षर:**"}
+{"unnormalised": "", "normalised": "    *   रेगेक्स: `\\b[A-Z]{2,}\\b` (डोया वा अधिक मुत्तशिर अपरकेस अक्षर, एक पूरा लफ्ज़ तौर पर)। मै ध्यान दॖयोन तॖस यिमन `Dr.`, `Prof.`, `Adv.` पर लागू कॖर नॖय दॖय्।"}
+{"unnormalised": "", "normalised": "    *   '--'.join(match.group())' सोत बदलॖयस।"}
+{"unnormalised": "", "normalised": "3.  **नॖम्बर → बोलने की शक्ल:** यि छु खॲटिन। मै आम नंबर तबदीली करनॖयॖख `num2words` लायब्रेरी करनॖयॖख इस्तेमाल करॖयस, जी हॲर किसमचॖ स्थिति संभालॖयस। खास मामलास खॲतर, \"आधा किलोग्राम\" मिसाल की तौर पर, मै रेगॅक्स यॖचॖह तशख़ीस करॖन पैटर्न मिसाल की तौर पर `(\\d+)/(\\d+)\\s*(\\w+)` यिमॖचॖक बाद इकाई, और फ़िक्शन पॖर `num2words` अमल करॖयस या `1/2` \"आधा\" बदली करॖयस।"}
+{"unnormalised": "", "normalised": "    *   आम नॖम्बर: `num2words(number)`"}
+{"unnormalised": "", "normalised": "    *   फ़्रैक्शन: `1/2 kg` -> `आधा किलोग्राम`, `3/4` -> `थ्री डिवाइडेड बाई फोर` (गणित सॖर करावन, मगर ध्यान दॖयोन तॖस तारीखन सोत नॖय खॲलायस)।"}
+{"unnormalised": "", "normalised": "4.  **नॖम्बर सफ़िक्सेस → वसीह शक्ल:**"}
+{"unnormalised": "", "normalised": "    *   रेगेक्स: `(\\d+)([KMBT])\\b`"}
+{"unnormalised": "", "normalised": "    *   `K` यॖचॖह `थाउज़ंड`, `M` यॖचॖह `मिलयन`, `B` यॖचॖह `बिलयन`, `T` यॖचॖह `ट्रिलयन` सोत मैप् करॖयस।"}
+{"unnormalised": "", "normalised": "    *   `num2words` इस्तेमाल करॖयस नॖम्बर हिस्सा तबदील करॖयस।"}
+{"unnormalised": "", "normalised": "5.  **कर्रेंसी + नॖम्बर + सफ़िक्स:**"}
+{"unnormalised": "", "normalised": "    *   रेगेक्स: `([$₹€£])(\\s*)(\\d+)([KMBT])?\\b`"}
+{"unnormalised": "", "normalised": "    *   कर्रेंसी प्रतीक, नॖम्बर और सफ़िक्स तबदील करॖयस।"}
+{"unnormalised": "", "normalised": "6.  **तारीख़न → नेचुरल बोलने की शक्ल:**"}
+{"unnormalised": "", "normalised": "    *   `DD-MM-YYYY`, `DD/MM/YYYY`, `YYYY-MM-DD` खॲतर रेगॅक्स पैटर्न्स।"}
+{"unnormalised": "", "normalised": "    *   `datetime.strptime` इस्तेमाल करॖयस पार्स करॖयस और फिर आर्डिनल नॖम्बरस खॲतर कस्टम तर्क सोत `strftime` (मिसाल की तौर पर, \"दसवां\", \"पहला\") और बोलने वाला साल। यिमॖचॆ फर्ज करावन `DD/MM/YYYY` खॲतर अम्बिगियस `DD/MM/YYYY`।"}
+{"unnormalised": "", "normalised": "7.  **युनिटस → बोलने की शक्ल:**"}
+{"unnormalised": "", "normalised": "    *   `(\\d+)(\\s*)(cm|mm|m|km|g|kg|mg|ml|l|°C|...)` ढूँढन खॲतर रेगॅक्स"}
+{"unnormalised": "", "normalised": "    *   युनिटस पूरे लफ़्ज़न मंज़ि मैप करॖयस (मिसाल की तौर पर, `cm` यॖचॖह `सेंटीमीटर`, `°C` यॖचॖह `डिग्री सेल्सियस`)।"}
+{"unnormalised": "", "normalised": "    *   पहले नॖम्बर तबदील करॖयस।"}
+{"unnormalised": "", "normalised": "8.  **गणितीय संकेत → बोलने की शक्ल:** यिमॖचॖख रेगॅक्स यिमॖचॖख एक शानदार सेट और शायद ज़्यादा जटिल ऍक्सप्रेशन खॲतर एक छोटा पार्सर चाहिए।"}
+{"unnormalised": "", "normalised": "    *   `x^2`: `x स्क्वायर्ड` (रेगेक्स `(\\w)\\^2`)"}
+{"unnormalised": "", "normalised": "    *   `x^3`: `x क्यूब्ड` (रेगेक्स `(\\w)\\^3`)"}
+{"unnormalised": "", "normalised": "    *   `x^n`: `n का x पावर` (रेगेक्स `(\\w)\\^(\\w+)`)"}
+{"unnormalised": "", "normalised": "    *   `x_i`: `x सब i` (रेगेक्स `(\\w)_(\\w+)`)"}
+{"unnormalised": "", "normalised": "    *   `√x`: `x का स्क्वेयर रूट` (रेगेक्स `√(\\w+)`)"}
+{"unnormalised": "", "normalised": "    *   `∫`: `इंटीग्रल`"}
+{"unnormalised": "", "normalised": "    *   `Σ`: `जोड़`"}
+{"unnormalised": "", "normalised": "    *   फ़्रैक्शन: `3/4` -> `थ्री डिवाइडेड बाई फोर` (रेगेक्स: `(\\d+)\\/(\\d+)`, मगर यकीनी बनायस तॖस यि तारीख नॖय छु)।"}
+{"unnormalised": "", "normalised": "    *   प्रतीक: `≠`, `≤`, `≥` यि आम प्रतीक बदलॖवन सोत हल करॖयस।"}
+{"unnormalised": "", "normalised": "9.  **आउटपुट फॉर्मेट:**"}
+{"unnormalised": "", "normalised": "    *   ख़ातमा पर स्पेस नॉर्मलाइज़ करॖयस: `re.sub(r'\\s+', ' ', text).strip()`।"}
+{"unnormalised": "", "normalised": "10. **फ़ाइल मंज़ूर करनॖव:** `os.walk`, `os.makedirs`, `shutil.copy2`।"}
+{"unnormalised": "", "normalised": "**खास प्रीफ़िक्स मंज़ूर करनॖव:**"}
+{"unnormalised": "", "normalised": "*   `Dr.`, `Prof.`, `Adv.` यिमन एक्जैक्ट स्ट्‌रिंग ढूँढन सोत हल करॖयस, शायद डोया अवधि या स्पेस बाद मंज़, और यिमनॖक संभालॖन। यि आम संक्षिप्त अक्षर प्रक्रिया करने सॖर वॖहन वॖहन क्याह्ज़ोवन।"}
+{"unnormalised": "", "normalised": "चलू पाइथन स्कॿक्रिप्ट बनावन शुरू कॖरो।"}
+{"unnormalised": "", "normalised": "```python"}
+{"unnormalised": "", "normalised": "import os"}
+{"unnormalised": "", "normalised": "import re"}
+{"unnormalised": "", "normalised": "import shutil"}
+{"unnormalised": "", "normalised": "from datetime import datetime"}
+{"unnormalised": "", "normalised": "from num2words import num2words"}
+{"unnormalised": "", "normalised": "import unicodedata # यूनीकोड प्रतीकस मंज़ूर करन खॲतर"}
+{"unnormalised": "", "normalised": "def ordinal_suffix(day):"}
+{"unnormalised": "", "normalised": "    \"\"\"एक नंबर खॲतर आर्डिनल प्रत्यय लौटाव।\"\"\""}
+{"unnormalised": "", "normalised": "    अगर 10 <= day % 100 <= 20:"}
+{"unnormalised": "", "normalised": "        लॖगॖवयो 'th'"}
+{"unnormalised": "", "normalised": "    वॖरान"}
+{"unnormalised": "", "normalised": "        लॖगॖवयो {1: 'st', 2: 'nd', 3: 'rd'}.get(day % 10, 'th')"}
+{"unnormalised": "", "normalised": "def convert_number_to_words(number_str):"}
+{"unnormalised": "", "normalised": "    \"\"\"बदलव कॖरावा एक नंबर स्ट्रिंग स्वस्यॖवन रुपॖन खॲतर, स्थिति संभालावा।\"\"\""}
+{"unnormalised": "", "normalised": "    अगर '.' in number_str:"}
+{"unnormalised": "", "normalised": "        # डेसिमल्स संभालव अलग-अलग अगर num2words यि कॖरो नॖय कुदरति तरके सॖर सभनी मामलों खॲतर"}
+{"unnormalised": "", "normalised": "        integer_part, decimal_part = number_str.split('.')"}
+{"unnormalised": "", "normalised": "        integer_words = num2words(int(integer_part))"}
+{"unnormalised": "", "normalised": "        decimal_words = 'point ' + ' '.join(num2words(int(d)) for d in decimal_part)"}
+{"unnormalised": "", "normalised": "        लॖगॖवयो f\"{integer_words} {decimal_words}\""}
+{"unnormalised": "", "normalised": "    वॖरान:"}
+{"unnormalised": "", "normalised": "        लॖगॖवयो num2words(int(number_str))"}
+{"unnormalised": "", "normalised": "    ग़लती वॖटॲर:"}
+{"unnormalised": "", "normalised": "        लॖगॖवयो number_str # वापिस कराओ मूल अगर बदलव फेल कर।"}
+{"unnormalised": "", "normalised": "def normalize_text(text):"}
+{"unnormalised": "", "normalised": "    \"\"\""}
+{"unnormalised": "", "normalised": "    इनपुट टेक्स्ट पर सभी नॉर्मलाइजेशन नियम लागू करे।"}
+{"unnormalised": "", "normalised": "    \"\"\""}
+{"unnormalised": "", "normalised": "    # --- 0. खास प्रीफ़िक्स मंज़ूर (Dr., Prof., Adv.) ---"}
+{"unnormalised": "", "normalised": "    # ये हीस हिसाब रख़न सोत संभालिया जाईन, यो नॖय संक्षिप्त आखरन हिसाब समझ़न नॖय चाहीए।"}
+{"unnormalised": "", "normalised": "    # ज़रूरी स्पष्ट बदलाव नॖय कराओ, सिरफ़ यक़ीनी बनाए दूसरे नियम यिमन में बदलव नॖय करीन।"}
+{"unnormalised": "", "normalised": "    # --- 1. प्रतीक → बोलने की शक्ल ---"}
+{"unnormalised": "", "normalised": "    # ख़ास प्रतीक बदलॖवन वॖहून वॖहून कराओ"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\+/-', 'प्लस या माइनस', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'!=', ' बराबर नीय', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'<=', ' कम वा बराबर', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'>=', ' ज़्यादा वा बराबर', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'==', 'बराबर करे', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'->', 'मैप करे', text) # रियाज़/प्रोग्रामिंग में आम"}
+{"unnormalised": "", "normalised": "    प्रतीक_मैप = {"}
+{"unnormalised": "", "normalised": "        '#': 'हेश',"}
+{"unnormalised": "", "normalised": "        '@': 'एट',"}
+{"unnormalised": "", "normalised": "        '&': 'और',"}
+{"unnormalised": "", "normalised": "        '*': 'स्टार',"}
+{"unnormalised": "", "normalised": "        '~': 'तकरीबन',"}
+{"unnormalised": "", "normalised": "        '≠': ' बराबर नॖय',"}
+{"unnormalised": "", "normalised": "        '≤': ' कम वा बराबर',"}
+{"unnormalised": "", "normalised": "        '≥': ' ज़्यादा वा बराबर',"}
+{"unnormalised": "", "normalised": "        '∫': 'इंटीग्रल',"}
+{"unnormalised": "", "normalised": "        '∑': 'समेशन',"}
+{"unnormalised": "", "normalised": "        'π': 'पी',"}
+{"unnormalised": "", "normalised": "        '√': ' रूट',"}
+{"unnormalised": "", "normalised": "        '%': ' प्रतिशत', # तकरीबन यॖवानि, आम नॖम्बरन वॖहून वॖहून"}
+{"unnormalised": "", "normalised": "        '°': ' डिग्री', # आम नॖम्बरन वॖहून वॖहून"}
+{"unnormalised": "", "normalised": "        '€': ' यूरो',"}
+{"unnormalised": "", "normalised": "        '£': ' पौंड',"}
+{"unnormalised": "", "normalised": "    }"}
+{"unnormalised": "", "normalised": "    # यकीनी बनावी कुँजीन लॖखॖन लॖख वॖहून वॖहून बनावन सॖर (मिसाल तौर \"≠\" \"≠\" वॖहून वॖहून)"}
+{"unnormalised": "", "normalised": "    सबनी सोत प्रतीक, बोलना रुप बनावन सुटकर करावन"}
+{"unnormalised": "", "normalised": "        text = text.replace(symbol, spoken_form)"}
+{"unnormalised": "", "normalised": "    # \"/\" सँभालव"}
+{"unnormalised": "", "normalised": "    # अहमियत:"}
+{"unnormalised": "", "normalised": "    # 1. डिवाईडेड बाइ (नॖम्बरन/रियाज़न दरमियान)"}
+{"unnormalised": "", "normalised": "    # 2. आर (लफ़्ज़न दरमियान)"}
+{"unnormalised": "", "normalised": "    # 3. स्लैश (मिश्रित मामलात, संक्षेप आखर, बाकी)"}
+{"unnormalised": "", "normalised": "    # 1. रियाज़ में फ़्रैक्शन या डिवाईडेड: 3/4 -> थ्री डिवाईडेड बाइ फोर, 1/2 -> वन डिवाईडेड बाइ टू"}
+{"unnormalised": "", "normalised": "    # यि ठोस बनेनी चाहीए, यकीनी बनाय तॖस तारीख़ नॖय हीही।"}
+{"unnormalised": "", "normalised": "    # 1/2 खॲतर \"आधा\" केह इकाई (नियम 3/7 रॖल मिलान)"}
+{"unnormalised": "", "normalised": "    अगर फ़्रैक्शन बदली करवन सॖर इकाई:"}
+{"unnormalised": "", "normalised": "        नंबर_स्ट्रिंग = मिलान.ग्रुप(1)"}
+{"unnormalised": "", "normalised": "        डिनॉम_स्ट्रिंग = मिलान.ग्रुप(2)"}
+{"unnormalised": "", "normalised": "        इकाई = मिलान.ग्रुप(3) अगर मिलान.ग्रुप(3) लॖगॖवयो ''"}
+{"unnormalised": "", "normalised": "        अगर नंबर_स्ट्रिंग == '1' और डिनॉम_स्ट्रिंग == '2':"}
+{"unnormalised": "", "normalised": "            लॖगॖवयो f\"आधा {इकाई}\""}
+{"unnormalised": "", "normalised": "        वॖरान:"}
+{"unnormalised": "", "normalised": "            लॖगॖवयो f\"{कन्वर्ट_नंबर_टू_वर्ड्स(नंबर_स्ट्रिंग)} डिवाईडेड बाइ {कन्वर्ट_नंबर_टू_वर्ड्स(डिनॉम_स्ट्रिंग)} {इकाई}\".strip()"}
+{"unnormalised": "", "normalised": "    # X/Y इकाई खॲतर मिसाल पैटन, मिसाल 1/2 किलोग्राम, 3/4 मीटर"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b(\\d+)/(\\d+)\\s*(cm|mm|m|km|g|kg|mg|ml|l|C|F|K|hour|day|week|month|year)s?\\b',"}
+{"unnormalised": "", "normalised": "                  replace_fraction_with_unit, text, flags=re.IGNORECASE)"}
+{"unnormalised": "", "normalised": "    # एक ख़ास इकाई बनावन सॖर X/Y खॲतर मिसाल पैटन, मिसाल 3/4"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b(\\d+)/(\\d+)\\b',"}
+{"unnormalised": "", "normalised": "                  lambda m: f\"{कन्वर्ट_नंबर_टू_वर्ड्स(m.group(1))} डिवाईडेड बाइ {कन्वर्ट_नंबर_टू_वर्ड्स(m.group(2))}\","}
+{"unnormalised": "", "normalised": "                  text)"}
+{"unnormalised": "", "normalised": "    # 2. \"या\" लफ़्ज़न दरमियान (मिसाल कला/हुनर)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\b\\w+)\\/(\\w+\\b)', r'\\1 या \\2', text)"}
+{"unnormalised": "", "normalised": "    # 3. \"स्लैश\" मिश्रित मामलात खॲतर वा संक्षेप अक्षर (मिसाल QA/Dev, R/D)"}
+{"unnormalised": "", "normalised": "    # यि बाकी स्लैश पन कॆरो जो तारीखन वा फ़्रैक्शन नॖय हीयन।"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'([A-Za-z0-9]+)\\/([A-Za-z0-9]+)', r'\\1 स्लैश \\2', text)"}
+{"unnormalised": "", "normalised": "    # --- 2. संक्षिप्त आखरन → हायफन आखरन ---"}
+{"unnormalised": "", "normalised": "    # Dr., Prof., Adv. और आम कर्रेंसी कोड्स बनावन सॖर (मिसाल USD, EUR, INR)"}
+{"unnormalised": "", "normalised": "    # डोया डोया अकेले नॖय अक्षरन पन छोड़ देईन या नॖम्बरन केही इज़हारन में शमिल हीही, और इकाईयन।"}
+{"unnormalised": "", "normalised": "    # यि रीगिक्स मुश्किल ही। आवाज़ की लैनन में अपरकेस अक्षरन बनावन कोशिश कॖरीना।"}
+{"unnormalised": "", "normalised": "    # लफ़्ज़न नॖज़दीक नॖज़दीक, लफ़्ज़न नॖज़दीक आगे केह।"}
+{"unnormalised": "", "normalised": "    # बनावन मुक़र्रर लफ़्ज़ पन छोड़ देईन।"}
+{"unnormalised": "", "normalised": "    چھوڈر-دیو- संککشیپت = {'DR', 'PROF', 'ADV', 'USD', 'EUR', 'GBP', 'INR', 'K', 'M', 'B', 'T'}"}
+{"unnormalised": "", "normalised": "    ڈیف ریپلیسییکرونام(میچ):"}
+{"unnormalised": "", "normalised": "        اکنونام = میچ.گروپ(0)"}
+{"unnormalised": "", "normalised": "        اگر اکنونام اندری چھوڑر-دیو- ਸੰککشیپت:"}
+{"unnormalised": "", "normalised": "            ایکنونام واپس کروناکھیے"}
+{"unnormalised": "", "normalised": "        # چیک اگر وِی پوتنتیاولیو ا یونیت لائیکا \" کے جی \"، \" کما\" ایڈکیتیرہیو ( پہلے سی ایو یونٹ واپس کرونا رول لیٹر)"}
+{"unnormalised": "", "normalised": "        اگر لین(اکنونام) <= 3 اور اکنونام.لوویر() این اندری ['کما'، ' میما'، ' میما'، ' کیما'، ' گراما'، ' گراما'، ' میما'، ' ملیلیٹرا'، 'لیٹرا'، 'سیرا'، ' افا'، ' کیکا']"}
+{"unnormalised": "", "normalised": "            ویکرو ایکنونام # لئیٹ یونیت کرونا رول ہاندلہ ایٹ"}
+{"unnormalised": "", "normalised": "        ریٹورنو '-'.جوئین(لیسٹ(اکنونام))"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = رہوب(ر'\\b[A-Z]{2,}\\b', ریپلیسییکرونام, ٹیکسٹ)"}
+{"unnormalised": "", "normalised": "    # --- 6. تاریخ → قدرتی بولی وولا روپا ---"}
+{"unnormalised": "", "normalised": "    # 우선یتی ی و یییا وائیا - ایمامی - ڈڈی"}
+{"unnormalised": "", "normalised": "    ڈیف ریپلایکیتہ(میچ):"}
+{"unnormalised": "", "normalised": "        شیر کرو:"}
+{"unnormalised": "", "normalised": "            데이트_ابج = 데이트ٹائم. اسٹرپتیام(میچ.گروپ(0), '%ییییا-%میما-%ڈڈی')"}
+{"unnormalised": "", "normalised": "            ڈے = 데이트_ابج.ڈے"}
+{"unnormalised": "", "normalised": "            ماح = 데이트_ابج.اسٹرپتیام('%بی').لوویر()"}
+{"unnormalised": "", "normalised": "            ییار = نوماٹوردس(ڈیٹ_ابج.ییار)"}
+{"unnormalised": "", "normalised": "            لگواویو ف\"{نوماٹوردس(ڈے, تو='اردینہیل')} {مؤنٹہ} {یئر}\""}
+{"unnormalised": "", "normalised": "        دے ٹیرون ونلویایو:"}
+{"unnormalised": "", "normalised": "            میٹ.واپس کرون گروپ(0) # اصلی واپی کرونون اکاگر پرسییگ فعل کر"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = رہوب(ر'\\b\\d{4}-\\d{2}-\\d{2}\\b', ریپلییکیتا, ٹیکسٹ)"}
+{"unnormalised": "", "normalised": "    # 우선یتی ڈڈی - ایمامی - وائیا وا ڈڈی/ایمامی/وائیا(آسان واگ ڈڈی/ایمامی/وائیا ایکہواگواش)"}
+{"unnormalised": "", "normalised": "    ڈیف ریپلیسیدتا_امبیگووس(میچ):"}
+{"unnormalised": "", "normalised": "        شیئر کرو:"}
+{"unnormalised": "", "normalised": "            # ٹرئی ڈڈی/ایمامی/وائیا پیلو"}
+{"unnormalised": "", "normalised": "            데이트_ابج = 데이트ٹائم. اسٹرپتیام(میچ.گروپ(0), '%ڈڈی/%میما/%ییییا')"}
+{"unnormalised": "", "normalised": "        دی ترون وولیاو"}
+{"unnormalised": "", "normalised": "            شیر کرو:"}
+{"unnormalised": "", "normalised": "                # ان ڈڈی - ایمامی - وائیا ٹرائی"}
+{"unnormalised": "", "normalised": "                데이트_ابج = 데이트ٹائم. اسٹرپتیام(میچ.گروپ(0), '%ڈڈی-%میما-%ییییا')"}
+{"unnormalised": "", "normalised": "            دے ترون وولیاو:"}
+{"unnormalised": "", "normalised": "                میٹ.واپس کرون گروپ(0) # اصلی واپی کرونون اکاگر پرسییگ فعل کر"}
+{"unnormalised": "", "normalised": "        ڈے = 데이트_ابج.ڈے"}
+{"unnormalised": "", "normalised": "        ماح = 데이트_ابج.اسٹرپتیام('%بی').لوویر()"}
+{"unnormalised": "", "normalised": "        ییار = نوماٹوردس(ڈیٹ_ابج.ییار)"}
+{"unnormalised": "", "normalised": "        لگواویو ف\"{نوماٹوردس(ڈے, تو='اردینہیل')} {مؤنٹہ} {یئر}\""}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = رہوب(ر'\\b\\d{2}[-/]\\d{2}[-/]\\d{4}\\b', ریپلیسیڈا_امبیگووس, ٹیکسٹ)"}
+{"unnormalised": "", "normalised": "    # --- 5. کُرونسی + નંબર + سیپھاکیس ---"}
+{"unnormalised": "", "normalised": "    # یا نادیدھاڈورے دھیان دے انعام نمبر سیپھاکیس بنون۔"}
+{"unnormalised": "", "normalised": "    ڈیف ریپلیسیکُروٹیسی_سیپھاکیس(میچ):"}
+{"unnormalised": "", "normalised": "        کُریونی_کُرمول = میچ.گروپ(1)"}
+{"unnormalised": "", "normalised": "        ਨੰਬਰ_ਸਟਰਿੰਗ = میچ.گروپ(3)"}
+{"unnormalised": "", "normalised": "        سیپھیکسا = میچ.گروپ(4)"}
+{"unnormalised": "", "normalised": "        "}
+{"unnormalised": "", "normalised": "        কُریونی_نیاma = ''"}
+{"unnormalised": "", "normalised": "        اگر کرسی_سمبول = '='"}
+{"unnormalised": "", "normalised": "            কُریونی_نیاma = ' ڈالر '"}
+{"unnormalised": "", "normalised": "        یا اگر কুریوني_সমबुल = 'руপি':"}
+{"unnormalised": "", "normalised": "            KÚrion_niaMa = 'rúपी'"}
+{"unnormalised": "", "normalised": "        # نیا داڈار کُورَیاسا اگار جَرُورت آشیے"}
+{"unnormalised": "", "normalised": "        ایسپیکیان_নামবা = تبدیل_نمبر_2_ورس(نامبا_সট্ৰিং)"}
+{"unnormalised": "", "normalised": "        اگر سیپھیکسا:"}
+{"unnormalised": "", "normalised": "            سیپھیکسا_মাপা = {'ਕੇ': 'ھاولرڈ', 'এম': 'মিলিয়েনা', 'ਬਾ': 'بَلِیوَن', 'टी': 'ٹریڈارل'}"}
+{"unnormalised": "", "normalised": "            بِڈِر ফকکকنی_সিয়োমোলাড কکنی_নাকল سیপھاکسیا}\""}
+{"unnormalised": "", "normalised": "        واران"}
+{"unnormalised": "", "normalised": "            \"پہلا\" نامبا\""}
+{"unnormalised": "", "normalised": "    فکس = रहोब(r'([$₹€£])(\\s*)(\\d+)([KMBT])?\\b', فکس, ٹیکسٹ)"}
+{"unnormalised": "", "normalised": "    # --- 4. نمبر سفکسا یرایئلیا روم ---"}
+{"unnormalised": "", "normalised": "    # ای ہک نمبر کانکورس بنھن آتیں لائے جوڑآتھو۔"}
+{"unnormalised": "", "normalised": "    ڈیف ریڈلیسیموری_سفیکسا(میچ):"}
+{"unnormalised": "", "normalised": "        نامبا_سٹرنگ = میچ.گروپ(1)"}
+{"unnormalised": "", "normalised": "        सफिसा = मैच.ग्रुप(2)"}
+{"unnormalised": "", "normalised": "        इस्पिकियानामाकाडा = ٹرنپ_نمبر_टू_ورس(नामबा_সटरिंग)"}
+{"unnormalised": "", "normalised": "        "}
+{"unnormalised": "", "normalised": "        Saffixa_मापना = {'के':'हजार','एम':'मिलयन','બી':'বিলियन','ٹ':'ٹریلین'}"}
+{"unnormalised": "", "normalised": "        हलो f\"इस्‍पिकियामाकांडा {সাफ़িস_মাঁপन [সफ़िसा]}\""}
+{"unnormalised": "", "normalised": "    इस्‍टेन्‍ड‍ড = रेહોബ(r'\\b(\\d+)([KMBT])\\b', स्‍थानीकरण स्‍थानीकृत करे, टेसٹ)"}
+{"unnormalised": "", "normalised": "    # --- 7. यनिटसा"}

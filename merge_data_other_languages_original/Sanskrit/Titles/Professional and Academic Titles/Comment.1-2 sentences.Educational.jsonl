@@ -1,0 +1,343 @@
+{"unnormalised": "डॉ. रमेशः नमस्ते।", "normalised": "अवगम्य मम सर्वाणि साधारणीकरणनियमाः, विशेषतः \"Dr.\", \"Prof.\", \"Adv.\" इत्येतेषां विषये नियमाः। अहम् एतादृश आवश्यकतानुसारं पाठ्यदत्तसंसाधनं कर्तुं Python-भाषायां लिपिं रचयिष्यामि।"}
+{"unnormalised": "प्रो. शर्माः नमस्ते, डॉ. रमेश। कथं असि?", "normalised": "अत्र लिपिकया प्रत्येकस्य नियमस्य विषये कथं कार्यं करिष्यते इति विवरणम्, तदनन्तरं Python-भाषायाः कोडः:"}
+{"unnormalised": "डॉ. रमेशः कुशलं। भवान् कथम्?", "normalised": "**मूलतर्कः तथा उपायः:**"}
+{"unnormalised": "प्रो. शर्माः अहम् अपि कुशलं। अद्य आगामने कारणं किम्?", "normalised": "१.  **सञ्चिका-प्रणाली-परिभ्रमणम्:** निवेशनिर्देशिकायां विद्यमानान् सर्वान् फोल्डरान् सञ्चिकाश्च क्रमात् गन्तुम् अहम् `os.walk` उपयोगं करिष्यामि।"}
+{"unnormalised": "डॉ. रमेशः अहं भवन्तं आयुर्वेदस्य विषये किञ्चित् प्रष्टुम् इच्छामि।", "normalised": "२.  **निर्गम-निर्देशिका-प्रतिबिम्बनम्:** निवेशे विद्यमानस्य प्रत्येकस्य फोल्डरस्य कृते, अहम् `dataset_normalized` निर्गम-निर्देशिकायां तत्सदृशं फोल्डरं सृजामि।"}
+{"unnormalised": "प्रो. शर्माः निश्चितं। वदतु।", "normalised": "३.  **सञ्चिका-प्रसंस्करणम्:**"}
+{"unnormalised": "डॉ. रमेशः आयुर्वेदस्य आधुनिकविज्ञानस्य च मध्ये सम्बन्धः कीदृशः?", "normalised": "    *   यदि सञ्चिका `.txt` सञ्चिका अस्ति, तर्हि तस्याः अन्तर्वस्तु पठित्वा, साधारणीकृत्य, ततः प्रतिबिम्बित-निर्गम-फोल्डरे नूतनायां `.txt` सञ्चिकायां लिखितं भविष्यति।"}
+{"unnormalised": "प्रो. शर्माः एतयोः समन्वयः आवश्यकः। आयुर्वेदः प्राचीनः, परन्तु वैज्ञानिकः अपि।", "normalised": "    *   यदि सञ्चिका `.txt` सञ्चिका नास्ति, तर्हि सा विना परिवर्तनेन प्रतिबिम्बित-निर्गम-फोल्डरे प्रत्यक्षं प्रतिलिपि करिष्यते।"}
+{"unnormalised": "डॉ. रमेशः सत्यं। धन्यवादः, प्रो. शर्मा।", "normalised": "४.  **साधारणीकरणक्रमः (सम्यक् निर्गमस्य कृते महत्त्वपूर्णः):** साधारणीकरणनियमानाम् अनुप्रयोगस्य क्रमः महत्त्वपूर्णः अस्ति। सामान्यतः अधिक-सामान्य-नियमेभ्यः पूर्वम् अधिक-विशिष्ट-नियमान् अहं योजयिष्यामि (उदा., सामान्य-संख्यानां पूर्वं मुद्रा + संख्या + प्रत्ययः, वा सामान्य-अक्षराङ्कीय-पैटर्नात् पूर्वं विशिष्ट-चिह्नानि)।"}
+{"unnormalised": "प्रो. शर्माः स्वागतम्, डॉ. रमेश।", "normalised": "    *   चिह्नानि तथा विशेष-अक्षराणि।"}
+{"unnormalised": "", "normalised": "    *   मुद्रा + संख्या + प्रत्ययः।"}
+{"unnormalised": "", "normalised": "    *   तिथयः।"}
+{"unnormalised": "", "normalised": "    *   संख्याः (एककेषु विद्यमानाः अपि, परन्तु एकक-विस्तारः स्वयमेव पश्चात् आगच्छति)।"}
+{"unnormalised": "", "normalised": "    *   संक्षेपाक्षराणि।"}
+{"unnormalised": "", "normalised": "    *   एककानि।"}
+{"unnormalised": "", "normalised": "    *   गणितीय-अभिज्ञानम्।"}
+{"unnormalised": "", "normalised": "    *   \"Dr.\", \"Prof.\", \"Adv.\" इत्येतादृशाः विशेष-उपसर्गाः संख्या-संक्षेपाक्षर-नियमान् विरूपयितुं पूर्वमेव वा विशिष्ट-रेजेक्सद्वारा वा निर्वाह्यन्ते।"}
+{"unnormalised": "", "normalised": "    *   सामान्य `/` निर्वाहणम्।"}
+{"unnormalised": "", "normalised": "    *   अन्तिमचरणत्वेन स्थान-साधारणीकरणम्।"}
+{"unnormalised": "", "normalised": "**विस्तृत-नियम-कार्यान्वयन-रणनीतिः:**"}
+{"unnormalised": "", "normalised": "१.  **चिह्नानि → कथित-रूपम्:** सामान्य-चिह्नानां कथित-रूपाणां मानचित्रणार्थम् अहम् एकां शब्दकोषं (dictionary) उपयोक्ष्यामि तथा पाठ्ये पुनरावृत्तिं कृत्वा प्रतिस्थापनानि करिष्यामि। नियमित-अभिव्यक्तयः (Regular expressions) विभिन्नेषु सन्दर्भेषु दृश्यमानानां चिह्नानां कृते उपयोक्ष्यन्ते (उदा., `+/-`)।"}
+{"unnormalised": "", "normalised": "    *   `art/craft` -> `art or craft` (रेजेक्स: `(\\b\\w+)\\/(\\w+\\b)`)"}
+{"unnormalised": "", "normalised": "    *   `QA/Dev` -> `Q-A slash D-e-v` (मिश्रित-अक्षराणां वा संक्षेपाक्षराणां कृते रेजेक्स `(\\b[A-Z0-9]+)\\/([A-Z0-9]+\\b)`)"}
+{"unnormalised": "", "normalised": "    *   `2+2=4` गणितीय-अभिज्ञान-नियमेन निर्वाह्यते।"}
+{"unnormalised": "", "normalised": "    *   `$`, `~`, `*`, `#`, `@`, `&`, इत्यादीनि प्रत्यक्षं मानचित्रितानि भविष्यन्ति।"}
+{"unnormalised": "", "normalised": "२.  **संक्षेपाक्षराणि → हाइफन-युक्तानि अक्षराणि:**"}
+{"unnormalised": "", "normalised": "    *   रेजेक्स: `\\b[A-Z]{2,}\\b` (द्वे अधिका वा क्रमागत-उपरि-अक्षराणि, पूर्णशब्दरूपेण)। `Dr.`, `Prof.`, `Adv.` इत्येतेषु एतत् न योजनीयम्।"}
+{"unnormalised": "", "normalised": "    *   `'-'.join(match.group())` इत्यनेन प्रतिस्थापयतु।"}
+{"unnormalised": "", "normalised": "३.  **संख्याः → कथित-रूपम्:** एतत् जटिलम् अस्ति। सामान्य-संख्या-परिवर्तनस्य कृते अहम् `num2words` पुस्तकालयं (library) उपयोक्ष्यामि, यः विभिन्नान् सन्दर्भान् निर्वाहयति। \"अर्धकिलोग्राम्\" इत्येतादृशानां विशिष्ट-प्रकरणानां कृते, अहम् `(\\d+)/(\\d+)\\s*(\\w+)` इत्येतादृशान् पैटर्न् अभिज्ञातुं रेजेक्स उपयोक्ष्यामि, तदनन्तरम् एककं (unit), तथा च `num2words` अंशाय योजयिष्यामि वा `1/2` इत्यस्य \"अर्ध\" इति परिवर्तनं करिष्यामि।"}
+{"unnormalised": "", "normalised": "    *   सामान्य-संख्याः: `num2words(number)`"}
+{"unnormalised": "", "normalised": "    *   अंशाः: `1/2 kg` -> `half kilogram`, `3/4` -> `three divided by four` (गणितशास्त्रेण निर्वाह्यते, परन्तु तिथिभिः सह भ्रमं न कर्तव्यम्)।"}
+{"unnormalised": "", "normalised": "४.  **अङ्कीय-प्रत्ययाः → विस्तारित-रूपम्:**"}
+{"unnormalised": "", "normalised": "    *   रेजेक्स: `(\\d+)([KMBT])\\b`"}
+{"unnormalised": "", "normalised": "    *   `K` इत्यस्य `thousand` इति, `M` इत्यस्य `million` इति, `B` इत्यस्य `billion` इति, `T` इत्यस्य `trillion` इति मानचित्रं करोतु।"}
+{"unnormalised": "", "normalised": "    *   `num2words` उपयोगेन संख्याभागं परिवर्तयतु।"}
+{"unnormalised": "", "normalised": "५.  **मुद्रा + संख्या + प्रत्ययः:**"}
+{"unnormalised": "", "normalised": "    *   रेजेक्स: `([$₹€£])(\\s*)(\\d+)([KMBT])?\\b`"}
+{"unnormalised": "", "normalised": "    *   मुद्रा-चिह्नं, संख्यां, प्रत्ययं च परिवर्तयतु।"}
+{"unnormalised": "", "normalised": "६.  **तिथयः → स्वाभाविक-कथित-रूपम्:**"}
+{"unnormalised": "", "normalised": "    *   `DD-MM-YYYY`, `DD/MM/YYYY`, `YYYY-MM-DD` इत्येतेषां कृते रेजेक्स-पैटर्नानि।"}
+{"unnormalised": "", "normalised": "    *   विश्लेषणार्थम् `datetime.strptime` उपयोगं कृत्वा ततः क्रमवाचक-संख्यानां (ordinal numbers) कृते कस्टम-तर्कण (custom logic) सह `strftime` (उदा., \"tenth\", \"first\") तथा कथित-वर्षम्। अस्पष्टस्य `DD/MM/YYYY` कृते `DD/MM/YYYY` इति स्वीकृतम्।"}
+{"unnormalised": "", "normalised": "७.  **एककानि → कथित-रूपम्:**"}
+{"unnormalised": "", "normalised": "    *   `(\\d+)(\\s*)(cm|mm|m|km|g|kg|mg|ml|l|°C|...)` अन्वेष्टुं रेजेक्स।"}
+{"unnormalised": "", "normalised": "    *   एककान् पूर्ण-शब्देषु मानचित्रयतु (उदा., `cm` इत्यस्य `centimeter` इति, `°C` इत्यस्य `degree celsius` इति)।"}
+{"unnormalised": "", "normalised": "    *   पूर्ववर्ती-संख्यायां संख्या-परिवर्तनम् योजयतु।"}
+{"unnormalised": "", "normalised": "८.  **गणितीय-अभिज्ञानम् → कथित-रूपम्:** एतदर्थं रेजेक्स-समुच्चयः तथा अधिकानां जटिल-अभिव्यक्तीनां कृते सम्भाव्यतया लघु-विश्लेषकः (small parser) आवश्यकः।"}
+{"unnormalised": "", "normalised": "    *   `x^2`: `x squared` (रेजेक्स `(\\w)\\^2`)"}
+{"unnormalised": "", "normalised": "    *   `x^3`: `x cubed` (रेजेक्स `(\\w)\\^3`)"}
+{"unnormalised": "", "normalised": "    *   `x^n`: `x to the power of n` (रेजेक्स `(\\w)\\^(\\w+)`)"}
+{"unnormalised": "", "normalised": "    *   `x_i`: `x sub i` (रेजेक्स `(\\w)_(\\w+)`)"}
+{"unnormalised": "", "normalised": "    *   `√x`: `square root of x` (रेजेक्स `√(\\w+)`)"}
+{"unnormalised": "", "normalised": "    *   `∫`: `integral`"}
+{"unnormalised": "", "normalised": "    *   `Σ`: `summation`"}
+{"unnormalised": "", "normalised": "    *   अंशाः: `3/4` -> `three divided by four` (रेजेक्स: `(\\d+)\\/(\\d+)`, परन्तु एतत् सुनिश्चितं करोतु यत् एषा तिथिः नास्ति)।"}
+{"unnormalised": "", "normalised": "    *   चिह्नानि: `≠`, `≤`, `≥` सामान्य-चिह्न-प्रतिस्थापनेन निर्वाह्यन्ते।"}
+{"unnormalised": "", "normalised": "९.  **निर्गम-प्रारूपम्:**"}
+{"unnormalised": "", "normalised": "    *   अन्ते रिक्तिस्थानानि साधारणीकरोतु: `re.sub(r'\\s+', ' ', text).strip()`।"}
+{"unnormalised": "", "normalised": "१०. **सञ्चिका-निर्वाहणम्:** `os.walk`, `os.makedirs`, `shutil.copy2`।"}
+{"unnormalised": "", "normalised": "**विशिष्ट-उपसर्ग-निर्वाहणम्:**"}
+{"unnormalised": "", "normalised": "*   `Dr.`, `Prof.`, `Adv.` इत्येतानि एतादृशान् सटीक-स्ट्रिङ्ग्स् (strings) अन्वेषणेन निर्वाह्यन्ते, सम्भाव्यतया अनुसरणं कुर्वता बिन्दुना वा रिक्तिस्थानेन सह, तथा तान् सुरक्षितं स्थापयित्वा। एतत् सामान्य-संक्षेपाक्षर-प्रक्रियायाः पूर्वं भवितुम् अर्हति।"}
+{"unnormalised": "", "normalised": "आगच्छन्तु, Python-भाषायां लिपिं निर्मातुं आरभामहे।"}
+{"unnormalised": "", "normalised": "```python"}
+{"unnormalised": "", "normalised": "import os"}
+{"unnormalised": "", "normalised": "import re"}
+{"unnormalised": "", "normalised": "import shutil"}
+{"unnormalised": "", "normalised": "from datetime import datetime"}
+{"unnormalised": "", "normalised": "from num2words import num2words"}
+{"unnormalised": "", "normalised": "import unicodedata # युनिकोड-चिह्नानां निर्वाहणाय"}
+{"unnormalised": "", "normalised": "def ordinal_suffix(day):"}
+{"unnormalised": "", "normalised": "    \"\"\"संख्यायाः कृते क्रमवाचक-प्रत्ययः प्रतिपादयति।\"\"\""}
+{"unnormalised": "", "normalised": "    यदि 10 <= day % 100 <= 20:"}
+{"unnormalised": "", "normalised": "        return 'th'"}
+{"unnormalised": "", "normalised": "    else:"}
+{"unnormalised": "", "normalised": "        return {1: 'st', 2: 'nd', 3: 'rd'}.get(day % 10, 'th')"}
+{"unnormalised": "", "normalised": "def convert_number_to_words(number_str):"}
+{"unnormalised": "", "normalised": "    \"\"\"एकाम् संख्या-स्ट्रिङ्ग् कथिताकारे परिवर्तयति, धार-प्रकरणानां निर्वाहणं करोति।\"\"\""}
+{"unnormalised": "", "normalised": "    try:"}
+{"unnormalised": "", "normalised": "        यदि '.' number_str इत्यस्मिन् अस्ति:"}
+{"unnormalised": "", "normalised": "            # यदि num2words सर्वप्रकरणानां कृते स्वाभाविकरूपेण न करोति तर्हि दशमलवान् पृथक् निर्वाह्यन्तु"}
+{"unnormalised": "", "normalised": "            integer_part, decimal_part = number_str.split('.')"}
+{"unnormalised": "", "normalised": "            integer_words = num2words(int(integer_part))"}
+{"unnormalised": "", "normalised": "            decimal_words = 'point ' + ' '.join(num2words(int(d)) for d in decimal_part)"}
+{"unnormalised": "", "normalised": "            return f\"{integer_words} {decimal_words}\""}
+{"unnormalised": "", "normalised": "        else:"}
+{"unnormalised": "", "normalised": "            return num2words(int(number_str))"}
+{"unnormalised": "", "normalised": "    except ValueError:"}
+{"unnormalised": "", "normalised": "        return number_str # यदि परिवर्तनं विफलम् भवति तर्हि मूलं प्रतिपादयतु"}
+{"unnormalised": "", "normalised": "def normalize_text(text):"}
+{"unnormalised": "", "normalised": "    \"\"\""}
+{"unnormalised": "", "normalised": "    सर्वे साधारणीकरणनियमाः निवेश-पाठ्ये योजयति।"}
+{"unnormalised": "", "normalised": "    \"\"\""}
+{"unnormalised": "", "normalised": "    # --- 0. विशेष-उपसर्ग-निर्वाहणम् (Dr., Prof., Adv.) ---"}
+{"unnormalised": "", "normalised": "    # एतानि यथा सन्ति तथैव स्थापयित्वा निर्वाह्यन्ते, एतानि संक्षेपाक्षराणि इति न मन्यन्ते।"}
+{"unnormalised": "", "normalised": "    # स्पष्ट-प्रतिस्थापनस्य आवश्यकता नास्ति, केवलम् एतत् सुनिश्चितं करोति यत् अन्यनियमाः एतान् न परिवर्तयन्ति।"}
+{"unnormalised": "", "normalised": "    # --- १. चिह्नानि → कथित-रूपम् ---"}
+{"unnormalised": "", "normalised": "    # अधिक-विशिष्ट-चिह्न-प्रतिस्थापनानि प्रथमम्"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\+/-', 'plus or minus', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'!=', 'not equal to', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'<=', 'less than or equal to', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'>=', 'greater than or equal to', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'==', 'equals', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'->', 'maps to', text) # गणित-प्रोग्रामिंग-सन्दर्भे सामान्यम्"}
+{"unnormalised": "", "normalised": "    symbol_map = {"}
+{"unnormalised": "", "normalised": "        '#': 'hash',"}
+{"unnormalised": "", "normalised": "        '@': 'at',"}
+{"unnormalised": "", "normalised": "        '&': 'and',"}
+{"unnormalised": "", "normalised": "        '*': 'asterisk',"}
+{"unnormalised": "", "normalised": "        '~': 'approximately',"}
+{"unnormalised": "", "normalised": "        '≠': 'not equal to',"}
+{"unnormalised": "", "normalised": "        '≤': 'less than or equal to',"}
+{"unnormalised": "", "normalised": "        '≥': 'greater than or equal to',"}
+{"unnormalised": "", "normalised": "        '∫': 'integral',"}
+{"unnormalised": "", "normalised": "        '∑': 'summation',"}
+{"unnormalised": "", "normalised": "        'π': 'pi',"}
+{"unnormalised": "", "normalised": "        '√': 'square root of',"}
+{"unnormalised": "", "normalised": "        '%': 'percent', # ~ approximately इत्यस्य पश्चात्, सामान्य-संख्यानां पूर्वम्"}
+{"unnormalised": "", "normalised": "        '°': 'degree', # सामान्य-संख्यानां पूर्वम्"}
+{"unnormalised": "", "normalised": "        '€': 'euro',"}
+{"unnormalised": "", "normalised": "        '£': 'pound',"}
+{"unnormalised": "", "normalised": "    }"}
+{"unnormalised": "", "normalised": "    # आंशिक-मेलनात् (partial matches) परिहरितुं अवतरते क्रमेण दीर्घत्वेन कुञ्चिकाः छाँटतु (उदा., '≠' before '≠')"}
+{"unnormalised": "", "normalised": "    for symbol, spoken_form in sorted(symbol_map.items(), key=lambda item: len(item[0]), reverse=True):"}
+{"unnormalised": "", "normalised": "        text = text.replace(symbol, spoken_form)"}
+{"unnormalised": "", "normalised": "    # '/' इत्यस्य निर्वाहणम्"}
+{"unnormalised": "", "normalised": "    # प्राथमिकता:"}
+{"unnormalised": "", "normalised": "    # 1. Divided by (संख्यासु/गणितशास्त्रे मध्ये)"}
+{"unnormalised": "", "normalised": "    # 2. Or (शब्देषु मध्ये)"}
+{"unnormalised": "", "normalised": "    # 3. Slash (मिश्रित-प्रकरणेषु, संक्षेपाक्षरेषु, अवशिष्टेषु)"}
+{"unnormalised": "", "normalised": "    # 1. अंशाः वा गणितशास्त्रे विभाजनम्: 3/4 -> three divided by four, 1/2 -> one divided by two"}
+{"unnormalised": "", "normalised": "    # एतत् दृढं भवितुम् अर्हति, एतत् सुनिश्चितं करोतु यत् एषा तिथिः नास्ति।"}
+{"unnormalised": "", "normalised": "    # यदा एककः अनुसरति (Rule 3/7 interplay) तदा विशिष्टरूपेण 1/2 \"अर्ध\"रूपेण"}
+{"unnormalised": "", "normalised": "    def replace_fraction_with_unit(match):"}
+{"unnormalised": "", "normalised": "        num_str = match.group(1)"}
+{"unnormalised": "", "normalised": "        denom_str = match.group(2)"}
+{"unnormalised": "", "normalised": "        unit = match.group(3) यदि match.group(3) else ''"}
+{"unnormalised": "", "normalised": "        यदि num_str == '1' तथा denom_str == '2':"}
+{"unnormalised": "", "normalised": "            return f\"half {unit}\""}
+{"unnormalised": "", "normalised": "        else:"}
+{"unnormalised": "", "normalised": "            return f\"{convert_number_to_words(num_str)} divided by {convert_number_to_words(denom_str)} {unit}\".strip()"}
+{"unnormalised": "", "normalised": "    # X/Y unit इत्यस्य कृते पैटर्न्, उदा., 1/2 kg, 3/4 meter"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b(\\d+)/(\\d+)\\s*(cm|mm|m|km|g|kg|mg|ml|l|C|F|K|hour|day|week|month|year)s?\\b',"}
+{"unnormalised": "", "normalised": "                  replace_fraction_with_unit, text, flags=re.IGNORECASE)"}
+{"unnormalised": "", "normalised": "    # विशिष्ट-एककं विना X/Y इत्यस्य कृते पैटर्न्, उदा., 3/4"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b(\\d+)/(\\d+)\\b',"}
+{"unnormalised": "", "normalised": "                  lambda m: f\"{convert_number_to_words(m.group(1))} divided by {convert_number_to_words(m.group(2))}\","}
+{"unnormalised": "", "normalised": "                  text)"}
+{"unnormalised": "", "normalised": "    # 2. शब्देषु मध्ये \"or\" (उदा., art/craft)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\b\\w+)\\/(\\w+\\b)', r'\\1 or \\2', text)"}
+{"unnormalised": "", "normalised": "    # 3. मिश्रित-प्रकरणेभ्यः वा संक्षेपाक्षरेभ्यः \"slash\" (उदा., QA/Dev, R/D)"}
+{"unnormalised": "", "normalised": "    # एतत् काश्चन अवशिष्टान् स्लेशन् अपि गृह्णाति (catches), याः तिथयः वा अंशाः नास्ति"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'([A-Za-z0-9]+)\\/([A-Za-z0-9]+)', r'\\1 slash \\2', text)"}
+{"unnormalised": "", "normalised": "    # --- २. संक्षेपाक्षराणि → हाइफन-युक्तानि अक्षराणि ---"}
+{"unnormalised": "", "normalised": "    # Dr., Prof., Adv. तथा सामान्य-मुद्रा-कोडान् अपि बहिष्करोतु (उदा., USD, EUR, INR)"}
+{"unnormalised": "", "normalised": "    # अभिव्यक्तेः भागः भवितुम् अर्हन्ति एतादृशान् एकल-अक्षरान् सङ्ख्याश्च अपि बहिष्करोतु, तथा मिश्रित-अक्षराङ्कीय-स्ट्रिङ्गस् (strings) याः संख्याः इव न दृश्यन्ते। एककानि च।"}
+{"unnormalised": "", "normalised": "    # एषः रेजेक्स जटिलः अस्ति। आगच्छन्तु उपरि-अक्षराणां क्रमान् मेलयामः।"}
+{"unnormalised": "", "normalised": "    # एकस्य शब्द-सीमा (word boundary) कृते लुकबिहाइन्ड (lookbehind), एकस्य शब्द-सीमा कृते लुकाहेड (lookahead)।"}
+{"unnormalised": "", "normalised": "    # सामान्य-पूर्वपरिभाषितान् शब्दान् बहिष्करोतु।"}
+{"unnormalised": "", "normalised": "    excluded_acronyms = {'DR', 'PROF', 'ADV', 'USD', 'EUR', 'GBP', 'INR', 'K', 'M', 'B', 'T'}"}
+{"unnormalised": "", "normalised": "    def replace_acronym(match):"}
+{"unnormalised": "", "normalised": "        acronym = match.group(0)"}
+{"unnormalised": "", "normalised": "        यदि acronym excluded_acronyms इत्यस्मिन् अस्ति:"}
+{"unnormalised": "", "normalised": "            return acronym"}
+{"unnormalised": "", "normalised": "        # 'KG', 'CM' इत्यादिवत् एककः भवितुम् अर्हति वा (पश्चात् एकक-नियमेन पूर्वमेव निर्व्यूढम्) इति परीक्ष्यताम्।"}
+{"unnormalised": "", "normalised": "        यदि len(acronym) <= 3 तथा acronym.lower() in ['cm', 'mm', 'm', 'km', 'g', 'kg', 'mg', 'ml', 'l', 'c', 'f', 'k']:"}
+{"unnormalised": "", "normalised": "            return acronym # एकक-नियमेन तस्य निर्वाहणं क्रियताम्"}
+{"unnormalised": "", "normalised": "        return '-'.join(list(acronym))"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b[A-Z]{2,}\\b', replace_acronym, text)"}
+{"unnormalised": "", "normalised": "    # --- ६. तिथयः → स्वाभाविक-कथित-रूपम् ---"}
+{"unnormalised": "", "normalised": "    # YYYY-MM-DD इत्यस्य प्राथम्यम्"}
+{"unnormalised": "", "normalised": "    def replace_date(match):"}
+{"unnormalised": "", "normalised": "        try:"}
+{"unnormalised": "", "normalised": "            date_obj = datetime.strptime(match.group(0), '%Y-%m-%d')"}
+{"unnormalised": "", "normalised": "            दिनः = date_obj.day"}
+{"unnormalised": "", "normalised": "            मासः = date_obj.strftime('%B').lower()"}
+{"unnormalised": "", "normalised": "            वर्षः = num2words(date_obj.year)"}
+{"unnormalised": "", "normalised": "            return f\"{num2words(day, to='ordinal')} {मासः} {वर्षः}\""}
+{"unnormalised": "", "normalised": "        except ValueError:"}
+{"unnormalised": "", "normalised": "            return match.group(0) # यदि विश्लेषणं विफलम् भवति तर्हि मूलं प्रतिपादयतु"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b\\d{4}-\\d{2}-\\d{2}\\b', replace_date, text)"}
+{"unnormalised": "", "normalised": "    # DD-MM-YYYY वा DD/MM/YYYY इत्यस्य प्राथम्यम् (यदा अस्पष्टं भवति तदा DD/MM/YYYY इति मन्यते)"}
+{"unnormalised": "", "normalised": "    def replace_date_ambiguous(match):"}
+{"unnormalised": "", "normalised": "        try:"}
+{"unnormalised": "", "normalised": "            # प्रथमं DD/MM/YYYY प्रयतेत"}
+{"unnormalised": "", "normalised": "            date_obj = datetime.strptime(match.group(0), '%d/%m/%Y')"}
+{"unnormalised": "", "normalised": "        except ValueError:"}
+{"unnormalised": "", "normalised": "            try:"}
+{"unnormalised": "", "normalised": "                # ततः DD-MM-YYYY प्रयतेत"}
+{"unnormalised": "", "normalised": "                date_obj = datetime.strptime(match.group(0), '%d-%m-%Y')"}
+{"unnormalised": "", "normalised": "            except ValueError:"}
+{"unnormalised": "", "normalised": "                return match.group(0) # यदि विश्लेषणं विफलम् भवति तर्हि मूलं प्रतिपादयतु"}
+{"unnormalised": "", "normalised": "        दिनः = date_obj.day"}
+{"unnormalised": "", "normalised": "        मासः = date_obj.strftime('%B').lower()"}
+{"unnormalised": "", "normalised": "        वर्षः = num2words(date_obj.year)"}
+{"unnormalised": "", "normalised": "        return f\"{num2words(day, to='ordinal')} {मासः} {वर्षः}\""}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b\\d{2}[-/]\\d{2}[-/]\\d{4}\\b', replace_date_ambiguous, text)"}
+{"unnormalised": "", "normalised": "    # --- ५. मुद्रा + संख्या + प्रत्ययः ---"}
+{"unnormalised": "", "normalised": "    # एतत् सामान्य-अङ्कीय-प्रत्ययात् तथा सामान्य-संख्या-परिवर्तनात् पूर्वं अवश्यम् आगच्छति।"}
+{"unnormalised": "", "normalised": "    def replace_currency_suffix(match):"}
+{"unnormalised": "", "normalised": "        मुद्रा-चिह्नम् = match.group(1)"}
+{"unnormalised": "", "normalised": "        संख्या-स्ट्रिङ्ग् = match.group(3)"}
+{"unnormalised": "", "normalised": "        प्रत्ययः = match.group(4)"}
+{"unnormalised": "", "normalised": "        "}
+{"unnormalised": "", "normalised": "        मुद्रा-नाम = ''"}
+{"unnormalised": "", "normalised": "        यदि मुद्रा-चिह्नम् == '$':"}
+{"unnormalised": "", "normalised": "            मुद्रा-नाम = 'dollar'"}
+{"unnormalised": "", "normalised": "        elif मुद्रा-चिह्नम् == '₹':"}
+{"unnormalised": "", "normalised": "            मुद्रा-नाम = 'rupee'"}
+{"unnormalised": "", "normalised": "        # यदि आवश्यकता अस्ति तर्हि अन्याः मुद्राः योजयन्तु"}
+{"unnormalised": "", "normalised": "        कथित-संख्या = convert_number_to_words(संख्या-स्ट्रिङ्ग्)"}
+{"unnormalised": "", "normalised": "        यदि प्रत्ययः:"}
+{"unnormalised": "", "normalised": "            suffix_map = {'K': 'thousand', 'M': 'million', 'B': 'billion', 'T': 'trillion'}"}
+{"unnormalised": "", "normalised": "            return f\"{मुद्रा-नाम} {कथित-संख्या} {suffix_map[प्रत्ययः]}\""}
+{"unnormalised": "", "normalised": "        else:"}
+{"unnormalised": "", "normalised": "            return f\"{मुद्रा-नाम} {कथित-संख्या}\""}
+{"unnormalised": "", "normalised": "    text = re.sub(r'([$₹€£])(\\s*)(\\d+)([KMBT])?\\b', replace_currency_suffix, text)"}
+{"unnormalised": "", "normalised": "    # --- ४. अङ्कीय-प्रत्ययाः → विस्तारित-रूपम् ---"}
+{"unnormalised": "", "normalised": "    # एतत् सामान्य-संख्या-परिवर्तनात् पूर्वम् अवश्यम् आगच्छति।"}
+{"unnormalised": "", "normalised": "    def replace_numeric_suffix(match):"}
+{"unnormalised": "", "normalised": "        संख्या-स्ट्रिङ्ग् = match.group(1)"}
+{"unnormalised": "", "normalised": "        प्रत्ययः = match.group(2)"}
+{"unnormalised": "", "normalised": "        कथित-संख्या = convert_number_to_words(संख्या-स्ट्रिङ्ग्)"}
+{"unnormalised": "", "normalised": "        "}
+{"unnormalised": "", "normalised": "        suffix_map = {'K': 'thousand', 'M': 'million', 'B': 'billion', 'T': 'trillion'}"}
+{"unnormalised": "", "normalised": "        return f\"{कथित-संख्या} {suffix_map[प्रत्ययः]}\""}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b(\\d+)([KMBT])\\b', replace_numeric_suffix, text)"}
+{"unnormalised": "", "normalised": "    # --- ७. एककानि → कथित-रूपम् ---"}
+{"unnormalised": "", "normalised": "    # एतत् सामान्य-संख्या-परिवर्तनात् पूर्वम् अवश्यम् आगच्छति।"}
+{"unnormalised": "", "normalised": "    unit_map = {"}
+{"unnormalised": "", "normalised": "        'cm': 'centimeter', 'mm': 'millimeter', 'm': 'meter', 'km': 'kilometer',"}
+{"unnormalised": "", "normalised": "        'g': 'gram', 'kg': 'kilogram', 'mg': 'milligram',"}
+{"unnormalised": "", "normalised": "        'ml': 'milliliter', 'l': 'liter',"}
+{"unnormalised": "", "normalised": "        'C': 'celsius', 'F': 'fahrenheit', 'K': 'kelvin', # परिमाण-एककानां कृते"}
+{"unnormalised": "", "normalised": "        'hrs': 'hours', 'hr': 'hour',"}
+{"unnormalised": "", "normalised": "        'min': 'minute', 'mins': 'minutes',"}
+{"unnormalised": "", "normalised": "        'sec': 'second', 'secs': 'seconds',"}
+{"unnormalised": "", "normalised": "        'volt': 'volt', 'volts': 'volts', 'v': 'volt',"}
+{"unnormalised": "", "normalised": "        'amp': 'ampere', 'amps': 'amperes', 'a': 'ampere',"}
+{"unnormalised": "", "normalised": "        'watt': 'watt', 'watts': 'watts', 'w': 'watt',"}
+{"unnormalised": "", "normalised": "        'hz': 'hertz', 'khz': 'kilohertz', 'mhz': 'megahertz', 'ghz': 'gigahertz'"}
+{"unnormalised": "", "normalised": "    }"}
+{"unnormalised": "", "normalised": "    def replace_unit(match):"}
+{"unnormalised": "", "normalised": "        संख्या-स्ट्रिङ्ग् = match.group(1)"}
+{"unnormalised": "", "normalised": "        एककः = match.group(2).lower()"}
+{"unnormalised": "", "normalised": "        कथित-संख्या = convert_number_to_words(संख्या-स्ट्रिङ्ग्)"}
+{"unnormalised": "", "normalised": "        कथित-एककः = unit_map.get(एककः, एककः)"}
+{"unnormalised": "", "normalised": "        # एककानां कृते बहुवचनं निर्वाह्यन्तु"}
+{"unnormalised": "", "normalised": "        if int(संख्या-स्ट्रिङ्ग्) > 1 तथा कथित-एककः 's' इत्यनेन न अन्त्येत् (ends) तथा कथित-एककः ['celsius', 'fahrenheit', 'kelvin'] इत्यत्र न अस्ति:"}
+{"unnormalised": "", "normalised": "            कथित-एककः += 's'"}
+{"unnormalised": "", "normalised": "        elif int(संख्या-स्ट्रिङ्ग्) == 1 तथा कथित-एककः 's' इत्यनेन अन्त्येत् (ends) तथा कथित-एककः ['celsius', 'fahrenheit', 'kelvin'] इत्यत्र न अस्ति:"}
+{"unnormalised": "", "normalised": "            कथित-एककः = कथित-एककः[:-1] # यदि संख्या 1 अस्ति तथा एककः बहुवचनम् अस्ति तर्हि 's' निष्कासयन्तु"}
+{"unnormalised": "", "normalised": "        return f\"{कथित-संख्या} {कथित-एककः}\""}
+{"unnormalised": "", "normalised": "    # संख्यानां कृते पैटर्न्, यत् प्रत्यक्षम् एककेन अनुसृतं भवति (उदा., 10cm, 5kg)"}
+{"unnormalised": "", "normalised": "    # आंशिक-मेलनात् परिहरितुं एककानां कृते \\b इत्यस्य उपयोगः (उदा., 'm' इत्यत्र 'meter')"}
+{"unnormalised": "", "normalised": "    unit_pattern = r'\\b(\\d+(?:\\.\\d+)?)\\s*(%s)\\b' % '|'.join(re.escape(u) for u in unit_map.keys())"}
+{"unnormalised": "", "normalised": "    text = re.sub(unit_pattern, replace_unit, text, flags=re.IGNORECASE)"}
+{"unnormalised": "", "normalised": "    # सेल्सियस/फारेनहाइट-परिमाणान् विशिष्टरूपेण निर्वाह्यन्तु, प्रायः 25°C इति लिखितम्"}
+{"unnormalised": "", "normalised": "    def replace_degree_unit(match):"}
+{"unnormalised": "", "normalised": "        संख्या-स्ट्रिङ्ग् = match.group(1)"}
+{"unnormalised": "", "normalised": "        एककः = match.group(2).upper() # 'C', 'F'"}
+{"unnormalised": "", "normalised": "        कथित-संख्या = convert_number_to_words(संख्या-स्ट्रिङ्ग्)"}
+{"unnormalised": "", "normalised": "        एकक-नाम = 'celsius' यदि एककः == 'C' else 'fahrenheit' यदि एककः == 'F' else 'kelvin' यदि एककः == 'K' else ''"}
+{"unnormalised": "", "normalised": "        return f\"{कथित-संख्या} degree {एकक-नाम}\""}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b(\\d+(?:\\.\\d+)?)\\s*degree\\s*([CFK])\\b', replace_degree_unit, text, flags=re.IGNORECASE) # 'degree' चिह्ने प्रतिस्थापिते सति"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b(\\d+(?:\\.\\d+)?)\\s*degree\\s*(celsius|fahrenheit|kelvin)\\b', lambda m: f\"{convert_number_to_words(m.group(1))} degree {m.group(2)}\", text, flags=re.IGNORECASE)"}
+{"unnormalised": "", "normalised": "    # --- ३. संख्याः → कथित-रूपम् (सामान्यम्) ---"}
+{"unnormalised": "", "normalised": "    # काश्चन अवशिष्टाः पृथक् संख्याः योजयन्तु। एतत् अन्ते भवेत्।"}
+{"unnormalised": "", "normalised": "    # सञ्चिका-नामस्य भागः भवन्ति वा एतादृशान् संख्याः बहिष्करोतु वा मिश्रित-अक्षराङ्कीय-स्ट्रिङ्गस् (strings) याः संख्याः इव न दृश्यन्ते।"}
+{"unnormalised": "", "normalised": "    def replace_general_number(match):"}
+{"unnormalised": "", "normalised": "        संख्या-स्ट्रिङ्ग् = match.group(0)"}
+{"unnormalised": "", "normalised": "        # अन्य-अभिज्ञापकानां भागः सन्ति वा एतादृशान् संख्याः परिवर्तयितुं परिहरन्तु (उदा., H2O, ID123)"}
+{"unnormalised": "", "normalised": "        यदि re.match(r'^[A-Za-z]+$', संख्या-स्ट्रिङ्ग्): # यदि एतत् शुद्धम् वर्णमाला अस्ति, उपेक्षां कुरुत"}
+{"unnormalised": "", "normalised": "            return संख्या-स्ट्रिङ्ग्"}
+{"unnormalised": "", "normalised": "        "}
+{"unnormalised": "", "normalised": "        # यदि दशमलवस्य पश्चात् केवलं शून्यम् अस्ति तथा num2words पूर्णविरामं ददाति तर्हि परिवर्तनं परिहरन्तु"}
+{"unnormalised": "", "normalised": "        if '.' in संख्या-स्ट्रिङ्ग् तथा float(संख्या-स्ट्रिङ्ग्) == int(float(संख्या-स्ट्रिङ्ग्)):"}
+{"unnormalised": "", "normalised": "            return convert_number_to_words(str(int(float(संख्या-स्ट्रिङ्ग्))))"}
+{"unnormalised": "", "normalised": "            "}
+{"unnormalised": "", "normalised": "        return convert_number_to_words(संख्या-स्ट्रिङ्ग्)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b\\d+(?:\\.\\d+)?\\b', replace_general_number, text)"}
+{"unnormalised": "", "normalised": "    # --- ८. गणितीय-अभिज्ञानम् → कथित-रूपम् ---"}
+{"unnormalised": "", "normalised": "    # एतत् सुनिश्चितं करोतु यत् सामान्य-चिह्न/संख्या-परिवर्तनात् पश्चात् एतत् भवति, विरोधात् परिहरितुम्"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\w)\\^2', r'\\1 squared', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\w)\\^3', r'\\1 cubed', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\w)\\^(\\w+)', r'\\1 to the power of \\2', text) # सामान्य-शक्तिः"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\w)_(\\w+)', r'\\1 sub \\2', text) # अधोलेखः"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'summation\\s*x\\s*sub\\s*i', 'summation of x sub i', text) # सामान्य-संकलन-रूपम्"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'integral\\s*(\\d+)\\s*to\\s*(\\d+)\\s*of\\s*(\\w)\\s*d\\s*(\\w)',"}
+{"unnormalised": "", "normalised": "                  lambda m: f\"integral from {convert_number_to_words(m.group(1))} to {convert_number_to_words(m.group(2))} of {m.group(3)} d {m.group(4)}\","}
+{"unnormalised": "", "normalised": "                  text) # विशिष्ट-संकलन-रूपम् ∫ 0→1 x dx"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'integral\\s*(\\w)\\s*d\\s*(\\w)', r'integral of \\1 d \\2', text) # सामान्य-संकलन-रूपम् ∫ x dx"}
+{"unnormalised": "", "normalised": "    # --- अन्तिम-स्थान-साधारणीकरणम् ---"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\s+', ' ', text).strip()"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def process_folder(input_folder, output_folder):"}
+{"unnormalised": "", "normalised": "    \"\"\""}
+{"unnormalised": "", "normalised": "    निवेश-फोल्डरस्य गमनं करोति, .txt सञ्चिकानां साधारणीकरणं करोति, तथा अन्याः प्रतिलिपिं करोति।"}
+{"unnormalised": "", "normalised": "    \"\"\""}
+{"unnormalised": "", "normalised": "    os.makedirs(output_folder, exist_ok=True)"}
+{"unnormalised": "", "normalised": "    असाधारणीकृताः .txt-सञ्चिकाः = []"}
+{"unnormalised": "", "normalised": "    for root, dirs, files in os.walk(input_folder):"}
+{"unnormalised": "", "normalised": "        सापेक्ष-पथः = os.path.relpath(root, input_folder)"}
+{"unnormalised": "", "normalised": "        वर्तमान-निर्गम-निर्देशिका = os.path.join(output_folder, सापेक्ष-पथः)"}
+{"unnormalised": "", "normalised": "        os.makedirs(वर्तमान-निर्गम-निर्देशिका, exist_ok=True)"}
+{"unnormalised": "", "normalised": "        for सञ्चिका-नाम in files:"}
+{"unnormalised": "", "normalised": "            निवेश-सञ्चिका-पथः = os.path.join(root, सञ्चिका-नाम)"}
+{"unnormalised": "", "normalised": "            निर्गम-सञ्चिका-पथः = os.path.join(वर्तमान-निर्गम-निर्देशिका, सञ्चिका-नाम)"}
+{"unnormalised": "", "normalised": "            यदि सञ्चिका-नाम.lower().endswith('.txt'):"}
+{"unnormalised": "", "normalised": "                try:"}
+{"unnormalised": "", "normalised": "                    with open(निवेश-सञ्चिका-पथः, 'r', encoding='utf-8') as f_in:"}
+{"unnormalised": "", "normalised": "                        content = f_in.read()"}
+{"unnormalised": "", "normalised": "                    "}
+{"unnormalised": "", "normalised": "                    साधारणीकृत-अन्तर्वस्तु = normalize_text(content)"}
+{"unnormalised": "", "normalised": "                    with open(निर्गम-सञ्चिका-पथः, 'w', encoding='utf-8') as f_out:"}
+{"unnormalised": "", "normalised": "                        f_out.write(साधारणीकृत-अन्तर्वस्तु)"}
+{"unnormalised": "", "normalised": "                except Exception as e:"}
+{"unnormalised": "", "normalised": "                    print(f\"प्रसंस्करणे त्रुटिः {निवेश-सञ्चिका-पथः}: {e}\")"}
+{"unnormalised": "", "normalised": "                    असाधारणीकृताः .txt-सञ्चिकाः.append(निवेश-सञ्चिका-पथः)"}
+{"unnormalised": "", "normalised": "                    # यदि त्रुटिः अस्ति, मूल-सञ्चिकां निर्गमं प्रति प्रतिलिपिं कुरुत"}
+{"unnormalised": "", "normalised": "                    shutil.copy2(निवेश-सञ्चिका-पथः, निर्गम-सञ्चिका-पथः)"}
+{"unnormalised": "", "normalised": "            else:"}
+{"unnormalised": "", "normalised": "                shutil.copy2(निवेश-सञ्चिका-पथः, निर्गम-सञ्चिका-पथः)"}
+{"unnormalised": "", "normalised": "    "}
+{"unnormalised": "", "normalised": "    यदि असाधारणीकृताः .txt-सञ्चिकाः:"}
+{"unnormalised": "", "normalised": "        print(\"\\n--- .txt सञ्चिकानां सूची, याः साधारणीकर्तुम् अशक्यन्ते (मूलं प्रतिलिपितम्) ---\")"}
+{"unnormalised": "", "normalised": "        for f in असाधारणीकृताः .txt-सञ्चिकाः:"}
+{"unnormalised": "", "normalised": "            print(f)"}
+{"unnormalised": "", "normalised": "if __name__ == \"__main__\":"}
+{"unnormalised": "", "normalised": "    # उदाहरणार्थम् उपयोगः:"}
+{"unnormalised": "", "normalised": "    # परीक्षणार्थं डमी-दत्तसमूह-संरचनां सृजत"}
+{"unnormalised": "", "normalised": "    if not os.path.exists(\"dataset\"):"}
+{"unnormalised": "", "normalised": "        os.makedirs(\"dataset/subfolder1\", exist_ok=True)"}
+{"unnormalised": "", "normalised": "        os.makedirs(\"dataset/subfolder2\", exist_ok=True)"}
+{"unnormalised": "", "normalised": "        with open(\"dataset/test1.txt\", \"w\", encoding=\"utf-8\") as f:"}
+{"unnormalised": "", "normalised": "            f.write(\"मूल्यं $20B अस्ति। NASA 1958 तमे वर्षे प्रक्षेपितम्। Approx ~5% लाभः।\\n\")"}
+{"unnormalised": "", "normalised": "            f.write(\"अद्यतन-तिथिः 10/09/2024 अस्ति। Dr. Smith U.S.A. शासनस्य कृते कार्यं करोति।\\n\")"}
+{"unnormalised": "", "normalised": "            f.write(\"तापमानं 25°C अस्ति। जलं 100°C उष्णे उष्णीकृतम्। कुलम् 5km धावनम्।\\n\")"}
+{"unnormalised": "", "normalised": "            f.write(\"समीकरणं 2+2=4 अस्ति। क्षेत्रं πr^2 अस्ति। योगः Σ x_i अस्ति। x^2 तथा x^3 विचार्यताम्। अपि च x^n।\\n\")"}
+{"unnormalised": "", "normalised": "            f.write(\"अंशः 3/4 अस्ति। अस्माकं 1/2 kg शर्करायाः आवश्यकता अस्ति। प्रतिवेदने QA/Dev तथा कला/शिल्प समाविष्टम् अस्ति। GDP विकासः प्रबलः अस्ति। Adv. Ram अत्र अस्ति।\\n\")"}
+{"unnormalised": "", "normalised": "            f.write(\"गणितम्: ∫ x^2 dx। अथवा ∫ 0→1 x dx। यदि x != y, तर्हि x <= z अथवा z >= x। सः 100M वेगं धावति।\\n\")"}
+{"unnormalised": "", "normalised": "            f.write(\"सः 45 min मध्ये 10km धावितवान्। तस्य गतिः 100km/hr आसीत्। बैटरी 12V तथा 50A अस्ति।\\n\")"}
+{"unnormalised": "", "normalised": "            f.write(\"उत्पाद-ID: PROD123, PROD456।\\n\")"}
+{"unnormalised": "", "normalised": "            f.write(\"₹500M निवेशितम्। मूल्यं 99 अस्ति। संख्या 7 अस्ति।\\n\")"}
+{"unnormalised": "", "normalised": "            f.write(\"अस्मिन् दशमलवः 12.5"}

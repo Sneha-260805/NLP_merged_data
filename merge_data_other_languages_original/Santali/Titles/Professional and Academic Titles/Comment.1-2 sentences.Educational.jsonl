@@ -1,0 +1,212 @@
+{"unnormalised": "ᱥᱟᱹᱨᱤ ᱜᱮ, ᱤᱧ ᱫᱚ ᱱᱚᱣᱟ ᱢᱟᱲᱟᱝ ᱠᱷᱚᱱ ᱵᱟᱹᱧ ᱵᱟᱰᱟᱭ ᱛᱟᱦᱮᱸᱱᱟ᱾ ᱰᱨᱹ ᱦᱮᱢᱨᱚᱢ ᱢᱮᱱ ᱠᱮᱫᱟ ᱡᱮ ᱱᱚᱣᱟ ᱫᱚ ᱢᱤᱫ ᱟᱹᱰᱤ ᱱᱟᱯᱟᱭ ᱩᱭᱦᱟᱹᱨ ᱠᱟᱱᱟ᱾ ᱯᱨᱚᱯᱷᱮᱥᱚᱨ ᱥᱚᱨᱮᱱ ᱫᱚ ᱚᱱᱟ ᱵᱟᱵᱚᱛ ᱛᱮ ᱟᱹᱰᱤ ᱵᱟᱹᱲᱛᱤ ᱵᱟᱰᱟᱭ ᱢᱮᱱᱟᱜ ᱛᱟᱭᱟ, ᱟᱨ ᱮᱰᱵᱷ ᱪᱚᱸᱫᱽᱨᱟ ᱦᱚᱸ ᱚᱱᱟ ᱨᱮ ᱜᱚᱲᱚ ᱮᱢ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ᱾", "normalised": "ᱵᱟᱰᱟᱭ ᱧᱟᱢ ᱮᱱᱟ, ᱥᱚᱢᱯᱩᱨᱱᱚ ᱥᱟᱫᱷᱟᱨᱚᱱ ᱱᱤᱭᱚᱢ ᱟᱨ \"Dr.\", \"Prof.\", ᱟᱨ \"Adv.\" ᱨᱮᱭᱟᱜ ᱵᱤᱥᱮᱥ ᱪᱟᱞᱟᱣ ᱵᱟᱵᱚᱫ ᱛᱮ᱾ ᱱᱚᱶᱟ ᱞᱟᱹᱜᱤᱫ ᱢᱤᱫ ᱯᱟᱭᱛᱷᱚᱱ ᱥᱠᱨᱤᱯᱴ ᱵᱮᱱᱟᱣ ᱦᱩᱭᱩᱜᱼᱟ, ᱡᱟᱦᱟᱸ ᱱᱚᱶᱟ ᱡᱚᱛᱚ ᱞᱟᱹᱠᱛᱤᱭᱟᱱ ᱠᱟᱹᱢᱤ ᱠᱚ ᱯᱩᱨᱟᱹᱣ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ᱾"}
+{"unnormalised": "", "normalised": "ᱱᱚᱰᱮ ᱥᱠᱨᱤᱯᱴ ᱪᱮᱫ ᱞᱮᱠᱟ ᱛᱮ ᱡᱚᱛᱚ ᱱᱤᱭᱚᱢ ᱠᱚ ᱵᱩᱡᱷᱟᱹᱣ ᱠᱟᱛᱮ ᱠᱟᱹᱢᱤ ᱨᱮ ᱞᱟᱜᱟᱣ ᱟᱭ, ᱚᱱᱟ ᱨᱮᱭᱟᱜ ᱥᱟᱨᱟᱝᱥ ᱮᱢ ᱮᱱᱟ, ᱚᱱᱟ ᱛᱟᱭᱚᱢ ᱯᱟᱭᱛᱷᱚᱱ ᱠᱚᱰ ᱮᱢ ᱮᱱᱟ:"}
+{"unnormalised": "", "normalised": "**ᱢᱩᱬ ᱞᱚᱡᱤᱠ ᱟᱨ ᱩᱯᱟᱹᱭ:**"}
+{"unnormalised": "", "normalised": "᱑.  **ᱯᱷᱟᱭᱤᱞ ᱥᱤᱥᱴᱮᱢ ᱯᱟᱨᱚᱢ:** ᱤᱧ ᱫᱚ `os.walk` ᱵᱮᱵᱷᱟᱨ ᱠᱟᱛᱮ ᱤᱱᱯᱩᱴ ᱰᱟᱭᱨᱮᱠᱴᱚᱨᱤ ᱨᱮᱭᱟᱜ ᱡᱚᱛᱚ ᱯᱷᱚᱞᱰᱟᱨ ᱟᱨ ᱯᱷᱟᱭᱤᱞ ᱨᱮ ᱨᱤᱠᱟᱨᱥᱤᱵᱷ ᱞᱮᱠᱟᱛᱮ ᱥᱮᱱᱚᱜᱼᱟ᱾"}
+{"unnormalised": "", "normalised": "᱒.  **ᱟᱣᱩᱴᱯᱩᱴ ᱰᱟᱭᱨᱮᱠᱴᱚᱨᱤ ᱢᱤᱨᱚᱨᱤᱝ:** ᱤᱱᱯᱩᱴ ᱨᱮᱭᱟᱜ ᱡᱚᱛᱚ ᱯᱷᱚᱞᱰᱟᱨ ᱞᱟᱹᱜᱤᱫ, ᱤᱧ `dataset_normalized` ᱟᱣᱩᱴᱯᱩᱴ ᱰᱟᱭᱨᱮᱠᱴᱚᱨᱤ ᱨᱮ ᱚᱱᱟ ᱞᱮᱠᱟᱱ ᱯᱷᱚᱞᱰᱟᱨ ᱵᱮᱱᱟᱣᱟ᱾"}
+{"unnormalised": "", "normalised": "᱓.  **ᱯᱷᱟᱭᱤᱞ ᱯᱨᱚᱥᱮᱥᱤᱝ:**"}
+{"unnormalised": "", "normalised": "    *   ᱡᱩᱫᱤ ᱢᱤᱫ ᱯᱷᱟᱭᱤᱞ `.txt` ᱯᱷᱟᱭᱤᱞ ᱠᱟᱱᱟ, ᱮᱱᱠᱷᱟᱱ ᱚᱱᱟ ᱨᱮᱭᱟᱜ ᱵᱷᱤᱛᱨᱤ ᱠᱟᱛᱷᱟ ᱯᱟᱲᱦᱟᱣ ᱦᱩᱭᱩᱜᱼᱟ, ᱱᱚᱨᱢᱟᱞᱟᱭᱤᱡᱽ ᱦᱩᱭᱩᱜᱼᱟ ᱟᱨ ᱚᱱᱟ ᱛᱟᱭᱚᱢ ᱢᱤᱫ ᱱᱟᱣᱟ `.txt` ᱯᱷᱟᱭᱤᱞ ᱨᱮ ᱚᱞ ᱦᱩᱭᱩᱜᱼᱟ, ᱡᱟᱦᱟᱸ ᱢᱤᱨᱚᱨ ᱟᱣᱩᱴᱯᱩᱴ ᱯᱷᱚᱞᱰᱟᱨ ᱨᱮ ᱛᱟᱦᱮᱱᱟ᱾"}
+{"unnormalised": "", "normalised": "    *   ᱡᱩᱫᱤ ᱢᱤᱫ ᱯᱷᱟᱭᱤᱞ `.txt` ᱯᱷᱟᱭᱤᱞ ᱵᱟᱝ ᱠᱟᱱᱟ, ᱮᱱᱠᱷᱟᱱ ᱱᱚᱶᱟ ᱫᱚ ᱵᱟᱝ ᱵᱚᱫᱚᱞ ᱠᱟᱛᱮ ᱥᱚᱡᱷᱮ ᱜᱮ ᱢᱤᱨᱚᱨ ᱟᱣᱩᱴᱯᱩᱴ ᱯᱷᱚᱞᱰᱟᱨ ᱨᱮ ᱠᱚᱯᱤ ᱦᱩᱭᱩᱜᱼᱟ᱾"}
+{"unnormalised": "", "normalised": "᱔.  **ᱱᱚᱨᱢᱟᱞᱟᱭᱡᱮᱥᱚᱱ ᱚᱨᱰᱟᱨ (ᱥᱟᱹᱦᱤ ᱟᱣᱩᱴᱯᱩᱴ ᱞᱟᱹᱜᱤᱫ ᱞᱟᱹᱠᱛᱤᱭᱟᱱ):** ᱱᱚᱨᱢᱟᱞᱟᱭᱡᱮᱥᱚᱱ ᱱᱤᱭᱚᱢ ᱞᱟᱜᱟᱣ ᱨᱮᱭᱟᱜ ᱚᱨᱰᱟᱨ ᱞᱟᱹᱠᱛᱤ ᱜᱮᱭᱟ᱾ ᱤᱧ ᱫᱚ ᱥᱟᱫᱷᱟᱨᱚᱱ ᱞᱮᱠᱟᱛᱮ ᱢᱟᱲᱟᱝ ᱵᱤᱥᱮᱥ ᱱᱤᱭᱚᱢ ᱠᱚ ᱞᱟᱜᱟᱣᱟ, ᱚᱱᱟ ᱛᱟᱭᱚᱢ ᱥᱟᱫᱷᱟᱨᱚᱱ ᱱᱤᱭᱚᱢ (ᱡᱮᱞᱮᱠᱟ, ᱴᱟᱠᱟ + ᱮᱞ + ᱥᱚᱯᱷᱤᱠᱥ ᱥᱟᱫᱷᱟᱨᱚᱱ ᱮᱞ ᱢᱟᱲᱟᱝ, ᱥᱮ ᱵᱤᱥᱮᱥ ᱪᱤᱱᱦᱟᱹ ᱥᱟᱫᱷᱟᱨᱚᱱ ᱟᱞᱯᱷᱟᱱᱩᱢᱮᱨᱤᱠ ᱯᱮᱴᱟᱨᱱ ᱢᱟᱲᱟᱝ)᱾"}
+{"unnormalised": "", "normalised": "    *   ᱪᱤᱱᱦᱟᱹ ᱟᱨ ᱵᱤᱥᱮᱥ ᱪᱟᱨᱤᱛᱟᱹᱨ᱾"}
+{"unnormalised": "", "normalised": "    *   ᱴᱟᱠᱟ + ᱮᱞ + ᱥᱚᱯᱷᱤᱠᱥ᱾"}
+{"unnormalised": "", "normalised": "    *   ᱢᱟᱹᱦᱤᱛ᱾"}
+{"unnormalised": "", "normalised": "    *   ᱮᱞ (ᱡᱟᱦᱟᱸ ᱤᱭᱩᱱᱤᱴ ᱨᱮ ᱢᱮᱱᱟᱜᱼᱟ, ᱢᱮᱱᱠᱷᱟᱱ ᱤᱭᱩᱱᱤᱴ ᱯᱟᱥᱱᱟᱣ ᱛᱟᱭᱚᱢ ᱦᱩᱭᱩᱜᱼᱟ)᱾"}
+{"unnormalised": "", "normalised": "    *   ᱮᱠᱨᱚᱱᱤᱢ᱾"}
+{"unnormalised": "", "normalised": "    *   ᱤᱭᱩᱱᱤᱴ᱾"}
+{"unnormalised": "", "normalised": "    *   ᱜᱟᱹᱱᱤᱛ ᱱᱚᱴᱮᱥᱚᱱ᱾"}
+{"unnormalised": "", "normalised": "    *   ᱵᱤᱥᱮᱥ ᱯᱨᱤᱯᱷᱤᱠᱥ ᱡᱮᱞᱮᱠᱟ \"Dr.\", \"Prof.\", \"Adv.\" ᱮᱢᱟᱱ ᱠᱚ ᱟᱹᱰᱤ ᱞᱚᱜᱚᱱ ᱥᱮ ᱵᱤᱥᱮᱥ ᱨᱮᱜᱮᱠᱥ ᱥᱟᱶᱛᱮ ᱪᱟᱞᱟᱣ ᱦᱩᱭᱩᱜᱼᱟ, ᱡᱟᱛᱮ ᱮᱞ ᱥᱮ ᱮᱠᱨᱚᱱᱤᱢ ᱱᱤᱭᱚᱢ ᱠᱷᱚᱱ ᱵᱷᱩᱞ ᱵᱩᱡᱷᱟᱹᱣ ᱠᱷᱚᱱ ᱵᱟᱧᱪᱟᱣ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ᱾"}
+{"unnormalised": "", "normalised": "    *   ᱥᱟᱫᱷᱟᱨᱚᱱ `/` ᱪᱟᱞᱟᱣ᱾"}
+{"unnormalised": "", "normalised": "    *   ᱡᱟᱭᱜᱟ ᱱᱚᱨᱢᱟᱞᱟᱭᱤᱡᱮᱥᱚᱱ ᱢᱩᱪᱟᱹᱫ ᱠᱟᱹᱢᱤ ᱞᱮᱠᱟᱛᱮ᱾"}
+{"unnormalised": "", "normalised": "**ᱵᱤᱥᱛᱟᱨ ᱛᱮ ᱱᱤᱭᱚᱢ ᱞᱟᱜᱟᱣ ᱨᱮᱭᱟᱜ ᱩᱯᱟᱹᱭ:**"}
+{"unnormalised": "", "normalised": "᱑.  **ᱪᱤᱱᱦᱟᱹ → ᱨᱚᱲ ᱛᱮ:** ᱤᱧ ᱢᱤᱫ ᱰᱤᱠᱥᱚᱱᱟᱨᱤ ᱵᱮᱵᱷᱟᱨᱟ, ᱡᱟᱦᱟᱸ ᱥᱟᱫᱷᱟᱨᱚᱱ ᱪᱤᱱᱦᱟᱹ ᱠᱚ ᱨᱚᱲ ᱛᱮ ᱵᱚᱫᱚᱞᱟ ᱟᱨ ᱴᱮᱠᱥᱴ ᱨᱮ ᱫᱟᱲᱟᱱ ᱠᱟᱛᱮ ᱵᱚᱫᱚᱞ ᱮᱫᱼᱟ᱾ ᱨᱮᱜᱩᱞᱟᱨ ᱮᱠᱥᱯᱨᱮᱥᱚᱱ ᱪᱤᱱᱦᱟᱹ ᱞᱟᱹᱜᱤᱫ ᱵᱮᱵᱷᱟᱨᱚᱜᱼᱟ, ᱡᱟᱦᱟᱸ ᱵᱷᱮᱜᱟᱨ ᱵᱷᱮᱜᱟᱨ ᱦᱟᱞᱚᱛ ᱨᱮ ᱦᱮᱡ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ (ᱡᱮᱞᱮᱠᱟ, `+/-`)᱾"}
+{"unnormalised": "", "normalised": "    *   `art/craft` -> `art or craft` (regex: `(\\b\\w+)\\/(\\w+\\b)`)"}
+{"unnormalised": "", "normalised": "    *   `QA/Dev` -> `Q-A slash D-e-v` (regex ᱢᱮᱥᱟᱣ ᱠᱮᱥ ᱥᱮ ᱮᱵᱷᱤᱨᱤᱵᱤᱭᱮᱥᱚᱱ ᱞᱟᱹᱜᱤᱫ `(\\b[A-Z0-9]+)\\/([A-Z0-9]+\\b)`)"}
+{"unnormalised": "", "normalised": "    *   `2+2=4` ᱫᱚ ᱜᱟᱹᱱᱤᱛ ᱱᱚᱴᱮᱥᱚᱱ ᱱᱤᱭᱚᱢ ᱛᱮ ᱪᱟᱞᱟᱣ ᱦᱩᱭᱩᱜᱼᱟ᱾"}
+{"unnormalised": "", "normalised": "    *   `$`, `~`, `*`, `#`, `@`, `&`, ᱮᱢᱟᱱ ᱠᱚ ᱥᱚᱡᱷᱮ ᱜᱮ ᱪᱤᱛᱟᱹᱨ ᱦᱩᱭᱩᱜᱼᱟ᱾"}
+{"unnormalised": "", "normalised": "᱒.  **ᱮᱠᱨᱚᱱᱤᱢ → ᱦᱟᱭᱯᱷᱮᱱ ᱟᱠᱟᱱ ᱪᱤᱠᱤ:**"}
+{"unnormalised": "", "normalised": "    *   ᱨᱮᱜᱮᱠᱥ: `\\b[A-Z]{2,}\\b` (ᱵᱟᱨ ᱥᱮ ᱵᱟᱹᱲᱛᱤ ᱞᱮᱛᱟᱲ ᱢᱟᱨᱟᱝ ᱪᱤᱠᱤ, ᱯᱩᱨᱟᱹ ᱟᱹᱲᱟᱹ ᱞᱮᱠᱟᱛᱮ)᱾ ᱤᱧ ᱫᱚ ᱫᱷᱭᱟᱱ ᱮᱢ ᱞᱟᱹᱠᱛᱤᱜᱼᱟ ᱡᱮ ᱱᱚᱶᱟ `Dr.`, `Prof.`, `Adv.` ᱮᱢᱟᱱ ᱠᱚ ᱨᱮ ᱵᱟᱝ ᱞᱟᱜᱟᱣ ᱦᱩᱭᱩᱜᱼᱟ᱾"}
+{"unnormalised": "", "normalised": "    *   `'-'.join(match.group())` ᱛᱮ ᱵᱚᱫᱚᱞ ᱢᱮ᱾"}
+{"unnormalised": "", "normalised": "᱓.  **ᱮᱞ → ᱨᱚᱲ ᱛᱮ:** ᱱᱚᱶᱟ ᱫᱚ ᱠᱚᱢᱯᱞᱮᱠᱥ ᱜᱮᱭᱟ᱾ ᱤᱧ ᱫᱚ `num2words` ᱞᱟᱭᱵᱽᱨᱮᱨᱤ ᱵᱮᱵᱷᱟᱨᱟ, ᱡᱟᱦᱟᱸ ᱥᱟᱫᱷᱟᱨᱚᱱ ᱮᱞ ᱵᱚᱫᱚᱞᱟ ᱟᱨ ᱵᱷᱮᱜᱟᱨ ᱦᱟᱞᱚᱛ ᱪᱟᱞᱟᱣ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ᱾ ᱵᱤᱥᱮᱥ ᱦᱟᱞᱚᱛ ᱞᱮᱠᱟᱛᱮ \"half kilogram\", ᱤᱧ ᱨᱮᱜᱮᱠᱥ ᱵᱮᱵᱷᱟᱨᱟ ᱡᱟᱛᱮ `(\\d+)/(\\d+)\\s*(\\w+)` ᱞᱮᱠᱟᱱ ᱯᱮᱴᱟᱨᱱ ᱧᱟᱢ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ, ᱚᱱᱟ ᱛᱟᱭᱚᱢ ᱤᱭᱩᱱᱤᱴ, ᱟᱨ `num2words` ᱞᱟᱜᱟᱣ ᱠᱟᱛᱮ ᱯᱷᱨᱮᱠᱥᱚᱱ ᱵᱮᱱᱟᱣ ᱥᱮ `1/2` ᱫᱚ \"half\" ᱨᱮ ᱵᱚᱫᱚᱞ ᱢᱮ᱾"}
+{"unnormalised": "", "normalised": "    *   ᱥᱟᱫᱷᱟᱨᱚᱱ ᱮᱞ: `num2words(number)`"}
+{"unnormalised": "", "normalised": "    *   ᱯᱷᱨᱮᱠᱥᱚᱱ: `1/2 kg` -> `half kilogram`, `3/4` -> `three divided by four` (ᱜᱟᱹᱱᱤᱛ ᱛᱮ ᱪᱟᱞᱟᱣ ᱦᱩᱭᱩᱜᱼᱟ, ᱢᱮᱱᱠᱷᱟᱱ ᱢᱟᱹᱦᱤᱛ ᱠᱷᱚᱱ ᱵᱷᱩᱞ ᱵᱟᱝ ᱦᱩᱭ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ)᱾"}
+{"unnormalised": "", "normalised": "᱔.  **ᱱᱩᱢᱮᱨᱤᱠ ᱥᱚᱯᱷᱤᱠᱥ → ᱯᱟᱥᱱᱟᱣ ᱟᱠᱟᱱ ᱨᱩᱯ:**"}
+{"unnormalised": "", "normalised": "    *   ᱨᱮᱜᱮᱠᱥ: `(\\d+)([KMBT])\\b`"}
+{"unnormalised": "", "normalised": "    *   `K` ᱫᱚ `thousand` ᱨᱮ, `M` ᱫᱚ `million` ᱨᱮ, `B` ᱫᱚ `billion` ᱨᱮ, `T` ᱫᱚ `trillion` ᱨᱮ ᱢᱮᱯ ᱢᱮ᱾"}
+{"unnormalised": "", "normalised": "    *   `num2words` ᱵᱮᱵᱷᱟᱨ ᱠᱟᱛᱮ ᱮᱞ ᱦᱤᱸᱥ ᱵᱚᱫᱚᱞ ᱢᱮ᱾"}
+{"unnormalised": "", "normalised": "᱕.  **ᱴᱟᱠᱟ + ᱮᱞ + ᱥᱚᱯᱷᱤᱠᱥ:**"}
+{"unnormalised": "", "normalised": "    *   ᱨᱮᱜᱮᱠᱥ: `([$₹€£])(\\s*)(\\d+)([KMBT])?\\b`"}
+{"unnormalised": "", "normalised": "    *   ᱴᱟᱠᱟ ᱪᱤᱱᱦᱟᱹ, ᱮᱞ ᱟᱨ ᱥᱚᱯᱷᱤᱠᱥ ᱵᱚᱫᱚᱞ ᱢᱮ᱾"}
+{"unnormalised": "", "normalised": "᱖.  **ᱢᱟᱹᱦᱤᱛ → ᱥᱟᱨᱦᱟᱣ ᱨᱚᱲ ᱛᱮ:**"}
+{"unnormalised": "", "normalised": "    *   `DD-MM-YYYY`, `DD/MM/YYYY`, `YYYY-MM-DD` ᱞᱟᱹᱜᱤᱫ ᱨᱮᱜᱮᱠᱥ ᱯᱮᱴᱟᱨᱱ᱾"}
+{"unnormalised": "", "normalised": "    *   `datetime.strptime` ᱵᱮᱵᱷᱟᱨ ᱠᱟᱛᱮ ᱯᱟᱨᱥ ᱢᱮ ᱟᱨ ᱚᱱᱟ ᱛᱟᱭᱚᱢ `strftime` ᱚᱨᱰᱤᱱᱟᱞ ᱮᱞ (ᱡᱮᱞᱮᱠᱟ, \"tenth\", \"first\") ᱟᱨ ᱨᱚᱲ ᱛᱮ ᱥᱮᱨᱢᱟ ᱞᱟᱹᱜᱤᱫ ᱠᱚᱥᱴᱚᱢ ᱞᱚᱡᱤᱠ ᱥᱟᱶᱛᱮ ᱵᱮᱵᱷᱟᱨ ᱢᱮ᱾ `DD/MM/YYYY` ᱫᱚ ᱵᱷᱩᱞ ᱟᱠᱟᱱ `DD/MM/YYYY` ᱞᱟᱹᱜᱤᱫ ᱰᱤᱯᱷᱚᱞᱴ ᱢᱮᱱᱛᱮ ᱢᱟᱱᱟᱣ ᱢᱮ᱾"}
+{"unnormalised": "", "normalised": "᱗.  **ᱤᱭᱩᱱᱤᱴ → ᱨᱚᱲ ᱛᱮ:**"}
+{"unnormalised": "", "normalised": "    *   `(\\d+)(\\s*)(cm|mm|m|km|g|kg|mg|ml|l|°C|...)` ᱧᱟᱢ ᱞᱟᱹᱜᱤᱫ ᱨᱮᱜᱮᱠᱥ᱾"}
+{"unnormalised": "", "normalised": "    *   ᱤᱭᱩᱱᱤᱴ ᱫᱚ ᱯᱩᱨᱟᱹ ᱟᱹᱲᱟᱹ ᱨᱮ ᱢᱮᱯ ᱢᱮ (ᱡᱮᱞᱮᱠᱟ, `cm` ᱫᱚ `centimeter` ᱨᱮ, `°C` ᱫᱚ `degree celsius` ᱨᱮ)᱾"}
+{"unnormalised": "", "normalised": "    *   ᱞᱟᱦᱟ ᱨᱮ ᱮᱞ ᱵᱚᱫᱚᱞ ᱞᱟᱜᱟᱣ ᱢᱮ᱾"}
+{"unnormalised": "", "normalised": "᱘.  **ᱜᱟᱹᱱᱤᱛ ᱱᱚᱴᱮᱥᱚᱱ → ᱨᱚᱲ ᱛᱮ:** ᱱᱚᱶᱟ ᱫᱚ ᱨᱮᱜᱮᱠᱥ ᱨᱮᱭᱟᱜ ᱱᱟᱯᱟᱭ ᱥᱮᱴ ᱟᱨ ᱵᱟᱹᱲᱛᱤ ᱠᱚᱢᱯᱞᱮᱠᱥ ᱮᱠᱥᱯᱨᱮᱥᱚᱱ ᱞᱟᱹᱜᱤᱫ ᱢᱤᱫ ᱠᱟᱹᱴᱤᱡ ᱯᱟᱨᱥᱟᱨ ᱦᱩᱭ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ᱾"}
+{"unnormalised": "", "normalised": "    *   `x^2`: `x squared` (ᱨᱮᱜᱮᱠᱥ `(\\w)\\^2`)"}
+{"unnormalised": "", "normalised": "    *   `x^3`: `x cubed` (ᱨᱮᱜᱮᱠᱥ `(\\w)\\^3`)"}
+{"unnormalised": "", "normalised": "    *   `x^n`: `x to the power of n` (ᱨᱮᱜᱮᱠᱥ `(\\w)\\^(\\w+)`)"}
+{"unnormalised": "", "normalised": "    *   `x_i`: `x sub i` (ᱨᱮᱜᱮᱠᱥ `(\\w)_(\\w+)`)"}
+{"unnormalised": "", "normalised": "    *   `√x`: `square root of x` (ᱨᱮᱜᱮᱠᱥ `√(\\w+)`)"}
+{"unnormalised": "", "normalised": "    *   `∫`: `integral`"}
+{"unnormalised": "", "normalised": "    *   `Σ`: `summation`"}
+{"unnormalised": "", "normalised": "    *   ᱯᱷᱨᱮᱠᱥᱚᱱ: `3/4` -> `three divided by four` (ᱨᱮᱜᱮᱠᱥ: `(\\d+)\\/(\\d+)`, ᱢᱮᱱᱠᱷᱟᱱ ᱱᱚᱶᱟ ᱫᱚ ᱢᱟᱹᱦᱤᱛ ᱵᱟᱝ ᱠᱟᱱᱟ, ᱚᱱᱟ ᱫᱷᱭᱟᱱ ᱮᱢ ᱞᱟᱹᱠᱛᱤᱜᱼᱟ)᱾"}
+{"unnormalised": "", "normalised": "    *   ᱪᱤᱱᱦᱟᱹ: `≠`, `≤`, `≥` ᱫᱚ ᱥᱟᱫᱷᱟᱨᱚᱱ ᱪᱤᱱᱦᱟᱹ ᱵᱚᱫᱚᱞ ᱛᱮ ᱪᱟᱞᱟᱣ ᱦᱩᱭᱩᱜᱼᱟ᱾"}
+{"unnormalised": "", "normalised": "᱙.  **ᱟᱣᱩᱴᱯᱩᱴ ᱯᱷᱚᱨᱢᱮᱴ:**"}
+{"unnormalised": "", "normalised": "    *   ᱢᱩᱪᱟᱹᱫ ᱨᱮ ᱡᱟᱭᱜᱟ ᱥᱟᱫᱷᱟᱨᱚᱱ ᱢᱮ: `re.sub(r'\\s+', ' ', text).strip()`᱾"}
+{"unnormalised": "", "normalised": "᱑᱐. **ᱯᱷᱟᱭᱤᱞ ᱪᱟᱞᱟᱣ:** `os.walk`, `os.makedirs`, `shutil.copy2`᱾"}
+{"unnormalised": "", "normalised": "**ᱵᱤᱥᱮᱥ ᱯᱨᱤᱯᱷᱤᱠᱥ ᱪᱟᱞᱟᱣ:**"}
+{"unnormalised": "", "normalised": "*   `Dr.`, `Prof.`, `Adv.` ᱫᱚ ᱱᱚᱶᱟ ᱮᱠᱥᱮᱠᱴ ᱥᱴᱨᱤᱝ ᱧᱟᱢ ᱠᱟᱛᱮ ᱪᱟᱞᱟᱣ ᱦᱩᱭᱩᱜᱼᱟ, ᱚᱱᱟ ᱛᱟᱭᱚᱢ ᱯᱤᱨᱤᱭᱚᱰ ᱥᱮ ᱡᱟᱭᱜᱟ ᱛᱟᱦᱮᱸ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ, ᱟᱨ ᱱᱚᱶᱟ ᱫᱚ ᱥᱟᱵ ᱫᱚᱦᱚ ᱞᱟᱹᱠᱛᱤᱜᱼᱟ᱾ ᱱᱚᱶᱟ ᱫᱚ ᱥᱟᱫᱷᱟᱨᱚᱱ ᱮᱠᱨᱚᱱᱤᱢ ᱯᱨᱚᱥᱮᱥᱤᱝ ᱢᱟᱲᱟᱝ ᱦᱩᱭᱩᱜᱼᱟ᱾"}
+{"unnormalised": "", "normalised": "ᱫᱮᱞᱟ ᱯᱟᱭᱛᱷᱚᱱ ᱥᱠᱨᱤᱯᱴ ᱵᱮᱱᱟᱣ ᱮᱛᱚᱦᱚᱵ ᱞᱮᱜᱮ᱾"}
+{"unnormalised": "", "normalised": "```python"}
+{"unnormalised": "", "normalised": "import os"}
+{"unnormalised": "", "normalised": "import re"}
+{"unnormalised": "", "normalised": "import shutil"}
+{"unnormalised": "", "normalised": "from datetime import datetime"}
+{"unnormalised": "", "normalised": "from num2words import num2words"}
+{"unnormalised": "", "normalised": "import unicodedata # ᱭᱩᱱᱤᱠᱚᱰ ᱪᱤᱱᱦᱟᱹ ᱪᱟᱞᱟᱣ ᱞᱟᱹᱜᱤᱫ"}
+{"unnormalised": "", "normalised": "def ordinal_suffix(day):"}
+{"unnormalised": "", "normalised": "    \"\"\"ᱮᱞ ᱞᱟᱹᱜᱤᱫ ᱚᱨᱰᱤᱱᱟᱞ ᱥᱚᱯᱷᱤᱠᱥ ᱨᱤᱴᱚᱨᱱ ᱮᱫᱼᱟ᱾\"\"\""}
+{"unnormalised": "", "normalised": "    if ᱑᱐ <= day % ᱑᱐᱐ <= ᱒᱐:"}
+{"unnormalised": "", "normalised": "        return 'th'"}
+{"unnormalised": "", "normalised": "    else:"}
+{"unnormalised": "", "normalised": "        return {1: 'st', 2: 'nd', 3: 'rd'}.get(day % ᱑᱐, 'th')"}
+{"unnormalised": "", "normalised": "def convert_number_to_words(number_str):"}
+{"unnormalised": "", "normalised": "    \"\"\"ᱢᱤᱫ ᱮᱞ ᱥᱴᱨᱤᱝ ᱫᱚ ᱨᱚᱲ ᱛᱮ ᱵᱚᱫᱚᱞ ᱮᱫᱼᱟ, ᱢᱩᱬ ᱦᱟᱞᱚᱛ ᱪᱟᱞᱟᱣ ᱠᱟᱛᱮ᱾\"\"\""}
+{"unnormalised": "", "normalised": "    try:"}
+{"unnormalised": "", "normalised": "        if '.' in number_str:"}
+{"unnormalised": "", "normalised": "            # ᱰᱮᱥᱤᱢᱚᱞ ᱫᱚ ᱵᱷᱮᱜᱟᱨ ᱛᱮ ᱪᱟᱞᱟᱣ ᱢᱮ, ᱡᱩᱫᱤ num2words ᱡᱚᱛᱚ ᱦᱟᱞᱚᱛ ᱨᱮ ᱥᱟᱦᱟᱡ ᱵᱟᱝ ᱮᱫᱼᱟ"}
+{"unnormalised": "", "normalised": "            integer_part, decimal_part = number_str.split('.')"}
+{"unnormalised": "", "normalised": "            integer_words = num2words(int(integer_part))"}
+{"unnormalised": "", "normalised": "            decimal_words = 'point ' + ' '.join(num2words(int(d)) for d in decimal_part)"}
+{"unnormalised": "", "normalised": "            return f\"{integer_words} {decimal_words}\""}
+{"unnormalised": "", "normalised": "        else:"}
+{"unnormalised": "", "normalised": "            return num2words(int(number_str))"}
+{"unnormalised": "", "normalised": "    except ValueError:"}
+{"unnormalised": "", "normalised": "        return number_str # ᱡᱩᱫᱤ ᱵᱚᱫᱚᱞ ᱵᱟᱝ ᱥᱟᱹᱦᱤ ᱮᱱᱟ ᱮᱱᱠᱷᱟᱱ ᱚᱨᱤᱡᱤᱱᱟᱞ ᱨᱤᱴᱚᱨᱱ ᱢᱮ"}
+{"unnormalised": "", "normalised": "def normalize_text(text):"}
+{"unnormalised": "", "normalised": "    \"\"\""}
+{"unnormalised": "", "normalised": "    ᱤᱱᱯᱩᱴ ᱴᱮᱠᱥᱴ ᱨᱮ ᱡᱚᱛᱚ ᱱᱚᱨᱢᱟᱞᱟᱭᱤᱡᱮᱥᱚᱱ ᱱᱤᱭᱚᱢ ᱞᱟᱜᱟᱣ ᱢᱮ᱾"}
+{"unnormalised": "", "normalised": "    \"\"\""}
+{"unnormalised": "", "normalised": "    # --- ᱐. ᱵᱤᱥᱮᱥ ᱯᱨᱤᱯᱷᱤᱠᱥ ᱪᱟᱞᱟᱣ (Dr., Prof., Adv.) ---"}
+{"unnormalised": "", "normalised": "    # ᱱᱚᱶᱟ ᱫᱚ ᱱᱚᱝᱠᱟ ᱜᱮ ᱫᱚᱦᱚᱭ ᱢᱮ, ᱱᱚᱶᱟ ᱫᱚ ᱮᱠᱨᱚᱱᱤᱢ ᱞᱮᱠᱟᱛᱮ ᱵᱟᱝ ᱜᱮ ᱵᱩᱡᱷᱟᱹᱣ ᱞᱟᱹᱠᱛᱤᱜᱼᱟ᱾"}
+{"unnormalised": "", "normalised": "    # ᱵᱟᱝ ᱮᱠᱥᱯᱞᱤᱥᱤᱴ ᱵᱚᱫᱚᱞ ᱞᱟᱹᱠᱛᱤᱜᱼᱟ, ᱱᱚᱶᱟ ᱫᱚ ᱮᱴᱟᱜ ᱱᱤᱭᱚᱢ ᱱᱚᱶᱟ ᱵᱟᱝ ᱵᱚᱫᱚᱞ ᱢᱟ, ᱚᱱᱟ ᱧᱮᱞ ᱢᱮ᱾"}
+{"unnormalised": "", "normalised": "    # --- ᱑. ᱪᱤᱱᱦᱟᱹ → ᱨᱚᱲ ᱛᱮ ---"}
+{"unnormalised": "", "normalised": "    # ᱢᱟᱲᱟᱝ ᱵᱤᱥᱮᱥ ᱪᱤᱱᱦᱟᱹ ᱵᱚᱫᱚᱞ ᱢᱮ"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\+/-', 'plus or minus', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'!=', 'not equal to', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'<=', 'less than or equal to', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'>=', 'greater than or equal to', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'==', 'equals', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'->', 'maps to', text) # ᱜᱟᱹᱱᱤᱛ/ᱯᱨᱚᱜᱨᱟᱢᱤᱝ ᱦᱟᱞᱚᱛ ᱨᱮ ᱥᱟᱫᱷᱟᱨᱚᱱ"}
+{"unnormalised": "", "normalised": "    symbol_map = {"}
+{"unnormalised": "", "normalised": "        '#': 'hash',"}
+{"unnormalised": "", "normalised": "        '@': 'at',"}
+{"unnormalised": "", "normalised": "        '&': 'and',"}
+{"unnormalised": "", "normalised": "        '*': 'asterisk',"}
+{"unnormalised": "", "normalised": "        '~': 'approximately',"}
+{"unnormalised": "", "normalised": "        '≠': 'not equal to',"}
+{"unnormalised": "", "normalised": "        '≤': 'less than or equal to',"}
+{"unnormalised": "", "normalised": "        '≥': 'greater than or equal to',"}
+{"unnormalised": "", "normalised": "        '∫': 'integral',"}
+{"unnormalised": "", "normalised": "        '∑': 'summation',"}
+{"unnormalised": "", "normalised": "        'π': 'pi',"}
+{"unnormalised": "", "normalised": "        '√': 'square root of',"}
+{"unnormalised": "", "normalised": "        '%': 'percent', # ~ ᱮᱯᱨᱚᱠᱥᱤᱢᱮᱴᱞᱤ ᱛᱟᱭᱚᱢ, ᱥᱟᱫᱷᱟᱨᱚᱱ ᱮᱞ ᱢᱟᱲᱟᱝ"}
+{"unnormalised": "", "normalised": "        '°': 'degree', # ᱥᱟᱫᱷᱟᱨᱚᱱ ᱮᱞ ᱢᱟᱲᱟᱝ"}
+{"unnormalised": "", "normalised": "        '€': 'euro',"}
+{"unnormalised": "", "normalised": "        '£': 'pound',"}
+{"unnormalised": "", "normalised": "    }"}
+{"unnormalised": "", "normalised": "    # ᱡᱚᱛᱚ ᱠᱷᱚᱱ ᱡᱤᱞᱤᱧ ᱠᱷᱚᱱ ᱠᱟᱹᱴᱤᱡ ᱠᱷᱚᱱ ᱠᱤ ᱥᱚᱨᱴ ᱢᱮ, ᱡᱟᱛᱮ ᱯᱟᱨᱥᱮᱞ ᱢᱮᱪ ᱵᱟᱝ ᱦᱩᱭᱩᱜ (ᱡᱮᱞᱮᱠᱟ, '≠' '≠' ᱢᱟᱲᱟᱝ)"}
+{"unnormalised": "", "normalised": "    for symbol, spoken_form in sorted(symbol_map.items(), key=lambda item: len(item[0]), reverse=True):"}
+{"unnormalised": "", "normalised": "        text = text.replace(symbol, spoken_form)"}
+{"unnormalised": "", "normalised": "    # '/' ᱪᱟᱞᱟᱣ"}
+{"unnormalised": "", "normalised": "    # ᱯᱨᱟᱭᱚᱨᱤᱴᱤ:"}
+{"unnormalised": "", "normalised": "    # ᱑. ᱮᱞ/ᱜᱟᱹᱱᱤᱛ (ᱮᱞ ᱛᱟᱞᱟ ᱨᱮ)"}
+{"unnormalised": "", "normalised": "    # ᱒. ᱥᱮ (ᱟᱹᱲᱟᱹ ᱛᱟᱞᱟ ᱨᱮ)"}
+{"unnormalised": "", "normalised": "    # ᱓. ᱥᱞᱮᱥ (ᱢᱮᱥᱟᱣ ᱠᱮᱥ, ᱮᱵᱷᱤᱨᱤᱵᱤᱭᱮᱥᱚᱱ, ᱵᱟᱹᱠᱤ)"}
+{"unnormalised": "", "normalised": "    # ᱑. ᱯᱷᱨᱮᱠᱥᱚᱱ ᱥᱮ ᱜᱟᱹᱱᱤᱛ ᱨᱮ ᱵᱷᱟᱜ: 3/4 -> three divided by four, 1/2 -> one divided by two"}
+{"unnormalised": "", "normalised": "    # ᱱᱚᱶᱟ ᱫᱚ ᱨᱚᱵᱚᱥᱴ ᱞᱟᱹᱠᱛᱤᱜᱼᱟ, ᱱᱚᱶᱟ ᱫᱚ ᱢᱟᱹᱦᱤᱛ ᱵᱟᱝ ᱠᱟᱱᱟ, ᱱᱚᱶᱟ ᱱᱤᱥᱪᱤᱛ ᱢᱮ᱾"}
+{"unnormalised": "", "normalised": "    # 1/2 ᱞᱟᱹᱜᱤᱫ ᱵᱤᱥᱮᱥ, ᱡᱚᱠᱷᱚᱱ ᱤᱭᱩᱱᱤᱴ ᱦᱮᱡᱩᱜᱼᱟ (ᱱᱤᱭᱚᱢ ᱓/᱗)"}
+{"unnormalised": "", "normalised": "    def replace_fraction_with_unit(match):"}
+{"unnormalised": "", "normalised": "        num_str = match.group(1)"}
+{"unnormalised": "", "normalised": "        denom_str = match.group(2)"}
+{"unnormalised": "", "normalised": "        unit = match.group(3) if match.group(3) else ''"}
+{"unnormalised": "", "normalised": "        if num_str == '1' and denom_str == '2':"}
+{"unnormalised": "", "normalised": "            return f\"half {unit}\""}
+{"unnormalised": "", "normalised": "        else:"}
+{"unnormalised": "", "normalised": "            return f\"{convert_number_to_words(num_str)} divided by {convert_number_to_words(denom_str)} {unit}\".strip()"}
+{"unnormalised": "", "normalised": "    # ᱮᱠᱥ/ᱣᱟᱭ ᱤᱭᱩᱱᱤᱴ ᱞᱟᱹᱜᱤᱫ ᱯᱮᱴᱟᱨᱱ, ᱡᱮᱞᱮᱠᱟ, ᱑/᱒ ᱠᱮᱡᱤ, ᱓/᱔ ᱢᱤᱴᱟᱨ"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b(\\d+)/(\\d+)\\s*(cm|mm|m|km|g|kg|mg|ml|l|C|F|K|hour|day|week|month|year)s?\\b',"}
+{"unnormalised": "", "normalised": "                  replace_fraction_with_unit, text, flags=re.IGNORECASE)"}
+{"unnormalised": "", "normalised": "    # ᱮᱠᱥ/ᱣᱟᱭ ᱞᱟᱹᱜᱤᱫ ᱯᱮᱴᱟᱨᱱ ᱡᱟᱦᱟᱸ ᱨᱮ ᱵᱤᱥᱮᱥ ᱤᱭᱩᱱᱤᱴ ᱵᱟᱹᱱᱩᱜᱼᱟ, ᱡᱮᱞᱮᱠᱟ, ᱓/᱔"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b(\\d+)/(\\d+)\\b',"}
+{"unnormalised": "", "normalised": "                  lambda m: f\"{convert_number_to_words(m.group(1))} divided by {convert_number_to_words(m.group(2))}\","}
+{"unnormalised": "", "normalised": "                  text)"}
+{"unnormalised": "", "normalised": "    # ᱒. ᱟᱹᱲᱟᱹ ᱛᱟᱞᱟ ᱨᱮ \"ᱥᱮ\" (ᱡᱮᱞᱮᱠᱟ, ᱟᱨᱴ/ᱠᱨᱟᱯᱷᱴ)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\b\\w+)\\/(\\w+\\b)', r'\\1 or \\2', text)"}
+{"unnormalised": "", "normalised": "    # ᱓. ᱢᱮᱥᱟᱣ ᱠᱮᱥ ᱥᱮ ᱮᱵᱷᱤᱨᱤᱵᱤᱭᱮᱥᱚᱱ ᱞᱟᱹᱜᱤᱫ \"ᱥᱞᱮᱥ\" (ᱡᱮᱞᱮᱠᱟ, ᱠᱭᱩᱮ/ᱰᱮᱵᱷ, ᱟᱨ/ᱰᱤ)"}
+{"unnormalised": "", "normalised": "    # ᱱᱚᱶᱟ ᱫᱚ ᱵᱟᱹᱠᱤ ᱥᱞᱮᱥ ᱦᱚᱸ ᱥᱟᱵ ᱮᱫᱼᱟ, ᱡᱟᱦᱟᱸ ᱢᱟᱹᱦᱤᱛ ᱥᱮ ᱯᱷᱨᱮᱠᱥᱚᱱ ᱵᱟᱝ ᱠᱟᱱᱟ"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'([A-Za-z0-9]+)\\/([A-Za-z0-9]+)', r'\\1 slash \\2', text)"}
+{"unnormalised": "", "normalised": "    # --- ᱒. ᱮᱠᱨᱚᱱᱤᱢ → ᱦᱟᱭᱯᱷᱮᱱ ᱟᱠᱟᱱ ᱪᱤᱠᱤ ---"}
+{"unnormalised": "", "normalised": "    # ᱰᱟᱠᱛᱟᱨ, ᱯᱨᱚᱯᱷᱮᱥᱚᱨ, ᱮᱰᱵᱷᱚᱠᱮᱴ ᱟᱨ ᱥᱟᱫᱷᱟᱨᱚᱱ ᱴᱟᱠᱟ ᱠᱚᱰ ᱵᱟᱹᱜᱤ ᱠᱟᱛᱮ (ᱡᱮᱞᱮᱠᱟ, ᱭᱩᱮᱥᱰᱤ, ᱤᱭᱩᱟᱨ, ᱟᱭᱮᱱᱟᱨ)"}
+{"unnormalised": "", "normalised": "    # ᱟᱨ ᱥᱤᱝᱜᱚᱞ ᱪᱤᱠᱤ ᱥᱮ ᱮᱞ ᱦᱚᱸ ᱵᱟᱹᱜᱤ ᱠᱟᱛᱮ, ᱡᱟᱦᱟᱸ ᱮᱠᱥᱯᱨᱮᱥᱚᱱ ᱨᱮᱭᱟᱜ ᱦᱤᱸᱥ ᱦᱩᱭ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ, ᱟᱨ ᱤᱭᱩᱱᱤᱴ ᱦᱚᱸ᱾"}
+{"unnormalised": "", "normalised": "    # ᱱᱚᱶᱟ ᱨᱮᱜᱮᱠᱥ ᱫᱚ ᱟᱹᱰᱤ ᱠᱟᱹᱴᱷᱤᱱ ᱜᱮᱭᱟ᱾ ᱫᱮᱞᱟ ᱢᱟᱨᱟᱝ ᱪᱤᱠᱤ ᱠᱨᱚᱢ ᱧᱟᱢ ᱨᱮᱭᱟᱜ ᱪᱮᱥᱴᱟ ᱞᱮᱜᱮ᱾"}
+{"unnormalised": "", "normalised": "    # ᱟᱹᱲᱟᱹ ᱵᱟᱣᱩᱱᱰᱟᱨᱤ ᱞᱟᱹᱜᱤᱫ ᱛᱟᱭᱚᱢ ᱧᱮᱞ ᱢᱮ, ᱟᱹᱲᱟᱹ ᱵᱟᱣᱩᱱᱰᱟᱨᱤ ᱞᱟᱹᱜᱤᱫ ᱞᱟᱦᱟ ᱧᱮᱞ ᱢᱮ᱾"}
+{"unnormalised": "", "normalised": "    # ᱥᱟᱫᱷᱟᱨᱚᱱ ᱴᱚᱨᱢ ᱫᱚ ᱚᱪᱚᱜ ᱢᱮ᱾"}
+{"unnormalised": "", "normalised": "    excluded_acronyms = {'DR', 'PROF', 'ADV', 'USD', 'EUR', 'GBP', 'INR', 'K', 'M', 'B', 'T'}"}
+{"unnormalised": "", "normalised": "    def replace_acronym(match):"}
+{"unnormalised": "", "normalised": "        acronym = match.group(0)"}
+{"unnormalised": "", "normalised": "        if acronym in excluded_acronyms:"}
+{"unnormalised": "", "normalised": "            return acronym"}
+{"unnormalised": "", "normalised": "        # ᱧᱮᱞ ᱢᱮ ᱱᱚᱶᱟ ᱫᱚ 'KG', 'CM' ᱞᱮᱠᱟᱱ ᱤᱭᱩᱱᱤᱴ ᱠᱟᱱᱟ (ᱤᱭᱩᱱᱤᱴ ᱱᱤᱭᱚᱢ ᱛᱮ ᱯᱚᱪᱷᱤᱞ ᱛᱮ ᱪᱟᱞᱟᱣ ᱦᱩᱭᱩᱜᱼᱟ)"}
+{"unnormalised": "", "normalised": "        if len(acronym) <= 3 and acronym.lower() in ['cm', 'mm', 'm', 'km', 'g', 'kg', 'mg', 'ml', 'l', 'c', 'f', 'k']:"}
+{"unnormalised": "", "normalised": "            return acronym # ᱱᱚᱶᱟ ᱫᱚ ᱤᱭᱩᱱᱤᱴ ᱱᱤᱭᱚᱢ ᱛᱮ ᱪᱟᱞᱟᱣ ᱦᱩᱭᱩᱜᱼᱟ"}
+{"unnormalised": "", "normalised": "        return '-'.join(list(acronym))"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b[A-Z]{2,}\\b', replace_acronym, text)"}
+{"unnormalised": "", "normalised": "    # --- ᱖. ᱢᱟᱹᱦᱤᱛ → ᱥᱟᱨᱦᱟᱣ ᱨᱚᱲ ᱛᱮ ---"}
+{"unnormalised": "", "normalised": "    # ᱭᱤᱭᱤᱭᱤᱣᱟᱭ-ᱮᱢᱮᱢ-ᱰᱤᱰᱤ ᱯᱨᱟᱭᱚᱨᱤᱴᱤ ᱮᱢ ᱢᱮ"}
+{"unnormalised": "", "normalised": "    def replace_date(match):"}
+{"unnormalised": "", "normalised": "        try:"}
+{"unnormalised": "", "normalised": "            date_obj = datetime.strptime(match.group(0), '%Y-%m-%d')"}
+{"unnormalised": "", "normalised": "            day = date_obj.day"}
+{"unnormalised": "", "normalised": "            month = date_obj.strftime('%B').lower()"}
+{"unnormalised": "", "normalised": "            year = num2words(date_obj.year)"}
+{"unnormalised": "", "normalised": "            return f\"{num2words(day, to='ordinal')} {month} {year}\""}
+{"unnormalised": "", "normalised": "        except ValueError:"}
+{"unnormalised": "", "normalised": "            return match.group(0) # ᱯᱟᱨᱥᱤᱝ ᱵᱟᱝ ᱥᱟᱹᱦᱤ ᱮᱱᱟ ᱚᱨᱤᱡᱤᱱᱟᱞ ᱨᱤᱴᱚᱨᱱ ᱢᱮ"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b\\d{4}-\\d{2}-\\d{2}\\b', replace_date, text)"}
+{"unnormalised": "", "normalised": "    # ᱰᱤᱰᱤ-ᱮᱢᱮᱢ-ᱭᱤᱭᱤᱭᱤᱣᱟᱭ ᱥᱮ ᱰᱤᱰᱤ/ᱮᱢᱮᱢ/ᱭᱤᱭᱤᱭᱤᱣᱟᱭ ᱯᱨᱟᱭᱚᱨᱤᱴᱤ ᱮᱢ ᱢᱮ (ᱰᱤᱰᱤ/ᱮᱢᱮᱢ/ᱭᱤᱭᱤᱭᱤᱣᱟᱭ ᱵᱷᱩᱞ ᱟᱠᱟᱱ ᱚᱠᱛᱮ)"}
+{"unnormalised": "", "normalised": "    def replace_date_ambiguous(match):"}
+{"unnormalised": "", "normalised": "        try:"}
+{"unnormalised": "", "normalised": "            # ᱯᱩᱭᱞᱩ ᱨᱮ ᱰᱤᱰᱤ/ᱮᱢᱮᱢ/ᱭᱤᱭᱤᱭᱤᱣᱟᱭ ᱪᱮᱥᱴᱟ ᱢᱮ"}
+{"unnormalised": "", "normalised": "            date_obj = datetime.strptime(match.group(0), '%d/%m/%Y')"}
+{"unnormalised": "", "normalised": "        except ValueError:"}
+{"unnormalised": "", "normalised": "            try:"}
+{"unnormalised": "", "normalised": "                # ᱚᱱᱟ ᱛᱟᱭᱚᱢ ᱰᱤᱰᱤ-ᱮᱢᱮᱢ-ᱭᱤᱭᱤᱭᱤᱣᱟᱭ ᱪᱮᱥᱴᱟ ᱢᱮ"}
+{"unnormalised": "", "normalised": "                date_obj = datetime.strptime(match.group(0), '%d-%m-%Y')"}
+{"unnormalised": "", "normalised": "            except ValueError:"}
+{"unnormalised": "", "normalised": "                return match.group(0) # ᱯᱟᱨᱥᱤᱝ ᱵᱟᱝ ᱥᱟᱹᱦᱤ ᱮᱱᱟ ᱚᱨᱤᱡᱤᱱᱟᱞ ᱨᱤᱴᱚᱨᱱ ᱢᱮ"}
+{"unnormalised": "", "normalised": "        day = date_obj.day"}
+{"unnormalised": "", "normalised": "        month = date_obj.strftime('%B').lower()"}
+{"unnormalised": "", "normalised": "        year = num2words(date_obj.year)"}
+{"unnormalised": "", "normalised": "        return f\"{num2words(day, to='ordinal')} {month} {year}\""}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b\\d{2}[-/]\\d{2}[-/]\\d{4}\\b', replace_date_ambiguous, text)"}
+{"unnormalised": "", "normalised": "    # --- ᱕. ᱴᱟᱠᱟ + ᱮᱞ + ᱥᱚᱯᱷᱤᱠᱥ ---"}
+{"unnormalised": "", "normalised": "    # ᱱᱚᱶᱟ ᱫᱚ ᱥᱟᱫᱷᱟᱨᱚᱱ ᱱᱩᱢᱮᱨᱤᱠ ᱥᱚᱯᱷᱤᱠᱥ ᱟᱨ ᱥᱟᱫᱷᱟᱨᱚᱱ ᱮᱞ ᱵᱚᱫᱚᱞ ᱢᱟᱲᱟᱝ ᱦᱮᱡ ᱞᱟᱹᱠᱛᱤᱜᱼᱟ᱾"}
+{"unnormalised": "", "normalised": "    def replace_currency_suffix(match):"}
+{"unnormalised": "", "normalised": "        currency_symbol = match.group(1)"}
+{"unnormalised": "", "normalised": "        number_str = match.group(3)"}
+{"unnormalised": "", "normalised": "        suffix = match.group(4)"}
+{"unnormalised": "", "normalised": "        "}
+{"unnormalised": "", "normalised": "        currency_name = ''"}
+{"unnormalised": "", "normalised": "        if currency_symbol == '$':"}
+{"unnormalised": "", "normalised": "            currency_name = 'dollar'"}
+{"unnormalised": "", "normalised": "        elif currency_symbol == '₹':"}
+{"unnormalised": "", "normalised": "            currency_name = 'rupee'"}
+{"unnormalised": "", "normalised": "        # ᱡᱩᱫᱤ ᱞᱟᱹᱠᱛᱤᱜᱼᱟ ᱮᱱᱠᱷᱟᱱ ᱮᱴᱟᱜ ᱴᱟᱠᱟ ᱮᱰ ᱢᱮ"}
+{"unnormalised": "", "normalised": "        spoken_number = convert_number_to_words(number_str)"}
+{"unnormalised": "", "normalised": "        if suffix:"}
+{"unnormalised": "", "normalised": "            suffix_map = {'K': 'thousand', 'M': 'million', 'B': 'billion', 'T': 'trillion'}"}
+{"unnormalised": "", "normalised": "            return f\"{currency_name} {spoken_number} {suffix_map[suffix]}\""}

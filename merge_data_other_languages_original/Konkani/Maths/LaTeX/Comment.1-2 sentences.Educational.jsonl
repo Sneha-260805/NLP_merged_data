@@ -1,0 +1,246 @@
+{"unnormalised": "एकूण मागणी = खाजगी उपभोग + गुंतवणूक + सरकारी खर्च + (निर्यात – आयात)", "normalised": "इंपोर्ट os"}
+{"unnormalised": "$AD = C + I + G + (X – M)$", "normalised": "इंपोर्ट re"}
+{"unnormalised": "", "normalised": "फ्रॉम num2words इंपोर्ट num2words"}
+{"unnormalised": "", "normalised": "def convert_number_to_words(number_str):"}
+{"unnormalised": "", "normalised": "    try:"}
+{"unnormalised": "", "normalised": "        if '.' in number_str:"}
+{"unnormalised": "", "normalised": "            integer_part, decimal_part = number_str.split('.')"}
+{"unnormalised": "", "normalised": "            if integer_part:"}
+{"unnormalised": "", "normalised": "                integer_words = num2words(int(integer_part))"}
+{"unnormalised": "", "normalised": "            else:"}
+{"unnormalised": "", "normalised": "                integer_words = ''"}
+{"unnormalised": "", "normalised": "            decimal_words = 'point ' + ' '.join(num2words(int(d)) for d in decimal_part)"}
+{"unnormalised": "", "normalised": "            if integer_words:"}
+{"unnormalised": "", "normalised": "                return f\"{integer_words} {decimal_words}\""}
+{"unnormalised": "", "normalised": "            else:"}
+{"unnormalised": "", "normalised": "                return decimal_words"}
+{"unnormalised": "", "normalised": "        else:"}
+{"unnormalised": "", "normalised": "            return num2words(int(number_str))"}
+{"unnormalised": "", "normalised": "    except ValueError:"}
+{"unnormalised": "", "normalised": "        return number_str # रिटर्न ओरिजिनल इफ कन्वर्जन फेल्स"}
+{"unnormalised": "", "normalised": "def normalize_text(text):"}
+{"unnormalised": "", "normalised": "    # रूल 1: सिंबल्स → स्पोकन फॉर्म"}
+{"unnormalised": "", "normalised": "    # नोट: ऑर्डर मैटर्स फॉर सिंबल रिप्लेसमेंट टू अवॉइड इश्यूज लाइक '$' बीइंग रिप्लेस्ड बिफोर '$20B' इज हेंडल्ड."}
+{"unnormalised": "", "normalised": "    # प्रायोरिटाइज मल्टी-केरेक्टर सिंबल्स एंड दोज दैट इंटरेक्ट विद नंबर्स."}
+{"unnormalised": "", "normalised": "    # कंबाइंड करंसी + नंबर + सफिक्स (रूल 5) - मस्ट कम बिफोर इंडिविजुअल सिंबल ऑर नंबर रूल्स"}
+{"unnormalised": "", "normalised": "    def replace_currency_number_suffix(match):"}
+{"unnormalised": "", "normalised": "        currency_symbol = match.group(1)"}
+{"unnormalised": "", "normalised": "        number_val = match.group(2)"}
+{"unnormalised": "", "normalised": "        suffix = match.group(3)"}
+{"unnormalised": "", "normalised": "        "}
+{"unnormalised": "", "normalised": "        currency_map = {"}
+{"unnormalised": "", "normalised": "            '$': 'डॉलर', '₹': 'रुपी', '€': 'यूरो', '£': 'पाउंड', '¥': 'येन'"}
+{"unnormalised": "", "normalised": "        }"}
+{"unnormalised": "", "normalised": "        currency_word = currency_map.get(currency_symbol, currency_symbol) # फॉलबैक इफ नॉट इन मैप"}
+{"unnormalised": "", "normalised": "        number_words = convert_number_to_words(number_val)"}
+{"unnormalised": "", "normalised": "        suffix_map = {"}
+{"unnormalised": "", "normalised": "            'K': 'थाउजंड', 'M': 'मिलियन', 'B': 'बिलियन', 'T': 'ट्रिलियन'"}
+{"unnormalised": "", "normalised": "        }"}
+{"unnormalised": "", "normalised": "        suffix_word = suffix_map.get(suffix.upper(), suffix) # डिफॉल्ट टू ओरिजिनल इफ नॉट इन मैप"}
+{"unnormalised": "", "normalised": "        return f\"{currency_word} {number_words} {suffix_word}\""}
+{"unnormalised": "", "normalised": "    "}
+{"unnormalised": "", "normalised": "    text = re.sub(r'([$₹€£¥])(\\d+)([KMBTkmbt])\\b', replace_currency_number_suffix, text)"}
+{"unnormalised": "", "normalised": "    # रूल 4: न्यूमेरिक सफिक्सेस (K, M, B, T) - आफ्टर कंबाइंड करंसी बट बिफोर जनरल नंबर रूल"}
+{"unnormalised": "", "normalised": "    def replace_numeric_suffix(match):"}
+{"unnormalised": "", "normalised": "        number_val = match.group(1)"}
+{"unnormalised": "", "normalised": "        suffix = match.group(2)"}
+{"unnormalised": "", "normalised": "        number_words = convert_number_to_words(number_val)"}
+{"unnormalised": "", "normalised": "        suffix_map = {"}
+{"unnormalised": "", "normalised": "            'K': 'थाउजंड', 'M': 'मिलियन', 'B': 'बिलियन', 'T': 'ट्रिलियन'"}
+{"unnormalised": "", "normalised": "        }"}
+{"unnormalised": "", "normalised": "        return f\"{number_words} {suffix_map.get(suffix.upper(), suffix)}\""}
+{"unnormalised": "", "normalised": "    "}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\d+)([KMBTkmbt])\\b', replace_numeric_suffix, text)"}
+{"unnormalised": "", "normalised": "    # रूल 1 & 8: मैथमेटिकल नोटेशन एंड कॉम्प्लेक्स सिंबल्स"}
+{"unnormalised": "", "normalised": "    # फ्रेक्शंस: x/y -> x डिवाइडेड बाय y (ओनली फॉर प्योर नंबर्स)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\d+)/(\\d+)', r'\\1 डिवाइडेड बाय \\2', text)"}
+{"unnormalised": "", "normalised": "    "}
+{"unnormalised": "", "normalised": "    # मैथमेटिकल सिंबल्स"}
+{"unnormalised": "", "normalised": "    text = text.replace('∫', 'इंटीग्रल ऑफ')"}
+{"unnormalised": "", "normalised": "    text = text.replace('→', 'टू') # फॉर इंटीग्रल लिमिट्स"}
+{"unnormalised": "", "normalised": "    text = text.replace('√', 'स्क्वेयर रूट ऑफ')"}
+{"unnormalised": "", "normalised": "    text = text.replace('π', 'पाय')"}
+{"unnormalised": "", "normalised": "    text = text.replace('Σ', 'समेशन ऑफ')"}
+{"unnormalised": "", "normalised": "    text = text.replace('≠', 'नॉट इक्वल टू')"}
+{"unnormalised": "", "normalised": "    text = text.replace('≤', 'लेस देन ऑर इक्वल टू')"}
+{"unnormalised": "", "normalised": "    text = text.replace('≥', 'ग्रेटर देन ऑर इक्वल टू')"}
+{"unnormalised": "", "normalised": "    text = text.replace('≈', 'एप्रोक्सिमेटली इक्वल टू')"}
+{"unnormalised": "", "normalised": "    text = text.replace('≅', 'एप्रोक्सिमेटली कांग्रुएंट टू')"}
+{"unnormalised": "", "normalised": "    text = text.replace('≡', 'आइडेंटिकली इक्वल टू')"}
+{"unnormalised": "", "normalised": "    text = text.replace('∀', 'फॉर ऑल')"}
+{"unnormalised": "", "normalised": "    text = text.replace('∃', 'देयर एक्जिस्ट्स')"}
+{"unnormalised": "", "normalised": "    text = text.replace('∉', 'नॉट एन एलिमेंट ऑफ')"}
+{"unnormalised": "", "normalised": "    text = text.replace('∈', 'इज एन एलिमेंट ऑफ')"}
+{"unnormalised": "", "normalised": "    text = text.replace('⊂', 'इज ए सबसेट ऑफ')"}
+{"unnormalised": "", "normalised": "    text = text.replace('⊃', 'इज ए सुपरसेट ऑफ')"}
+{"unnormalised": "", "normalised": "    text = text.replace('∪', 'यूनियन')"}
+{"unnormalised": "", "normalised": "    text = text.replace('∩', 'इंटरसेक्शन')"}
+{"unnormalised": "", "normalised": "    text = text.replace('∅', 'एम्प्टी सेट')"}
+{"unnormalised": "", "normalised": "    text = text.replace('∝', 'इज प्रोपोर्शनल टू')"}
+{"unnormalised": "", "normalised": "    text = text.replace('∞', 'इंफिनिटी')"}
+{"unnormalised": "", "normalised": "    text = text.replace('±', 'प्लस ऑर माइनस')"}
+{"unnormalised": "", "normalised": "    text = text.replace('∇', 'नाब्ला')"}
+{"unnormalised": "", "normalised": "    text = text.replace('∂', 'पार्शियल डेरिवेटिव')"}
+{"unnormalised": "", "normalised": "    text = text.replace('⊕', 'डायरेक्ट सम')"}
+{"unnormalised": "", "normalised": "    text = text.replace('⊗', 'टेंसर प्रोडक्ट')"}
+{"unnormalised": "", "normalised": "    text = text.replace('∘', 'कंपोजिशन')"}
+{"unnormalised": "", "normalised": "    text = text.replace('⋅', 'डॉट प्रोडक्ट') # ऑर टाइम्स, डिपेंडिंग ऑन कॉन्टेक्स्ट. डिफॉल्ट टू 'डॉट प्रोडक्ट'"}
+{"unnormalised": "", "normalised": "    text = text.replace('°', 'डिग्री') # फॉर यूनिट्स, हेंडल्ड सेपरेटली"}
+{"unnormalised": "", "normalised": "    # पावर्स एंड सबस्क्रिप्ट्स"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\w)\\^2\\b', r'\\1 स्क्वेयर्ड', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\w)\\^3\\b', r'\\1 क्यूबड', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\w)\\^(\\d+)\\b', r'\\1 टू द पावर ऑफ \\2', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\w)_(\\w+)\\b', r'\\1 सब \\2', text) # x_i -> x सब i"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\w)_(\\{\\w+\\})\\b', r'\\1 सब \\2', text) # x_{max} -> x सब max"}
+{"unnormalised": "", "normalised": "    # अदर सिंबल्स"}
+{"unnormalised": "", "normalised": "    text = text.replace('$', 'डॉलर')"}
+{"unnormalised": "", "normalised": "    text = text.replace('€', 'यूरो')"}
+{"unnormalised": "", "normalised": "    text = text.replace('£', 'पाउंड')"}
+{"unnormalised": "", "normalised": "    text = text.replace('¥', 'येन')"}
+{"unnormalised": "", "normalised": "    text = text.replace('₹', 'रुपी')"}
+{"unnormalised": "", "normalised": "    text = text.replace('%', 'परसेंट')"}
+{"unnormalised": "", "normalised": "    text = text.replace('@', 'एट')"}
+{"unnormalised": "", "normalised": "    text = text.replace('&', 'एंड')"}
+{"unnormalised": "", "normalised": "    text = text.replace('#', 'हैश')"}
+{"unnormalised": "", "normalised": "    text = text.replace('*', 'एस्ट्रिस्क')"}
+{"unnormalised": "", "normalised": "    text = text.replace('+', 'प्लस')"}
+{"unnormalised": "", "normalised": "    text = text.replace('=', 'इक्वल्स')"}
+{"unnormalised": "", "normalised": "    text = text.replace('-', 'माइनस') # बी केयरफुल विथ हायफनेटेड वर्ड्स vs मैथ माइनस"}
+{"unnormalised": "", "normalised": "    text = text.replace('~', 'एप्रोक्सिमेटली')"}
+{"unnormalised": "", "normalised": "    # रूल 2: एक्रोनिम्स → हायफनेटेड लेटर्स"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b([A-Z]{2,})\\b', lambda m: '-'.join(list(m.group(1))), text)"}
+{"unnormalised": "", "normalised": "    "}
+{"unnormalised": "", "normalised": "    # रूल 6: डेट्स → नेचुरल स्पोकन फॉर्म (DD/MM/YYYY ऑर YYYY-MM-DD अज्यूम्ड)"}
+{"unnormalised": "", "normalised": "    def replace_date(match):"}
+{"unnormalised": "", "normalised": "        day, month, year = '', '', ''"}
+{"unnormalised": "", "normalised": "        if match.group(1): # DD-MM-YYYY ऑर DD/MM/YYYY"}
+{"unnormalised": "", "normalised": "            day = int(match.group(2))"}
+{"unnormalised": "", "normalised": "            month = int(match.group(3))"}
+{"unnormalised": "", "normalised": "            year = int(match.group(4))"}
+{"unnormalised": "", "normalised": "        elif match.group(5): # YYYY-MM-DD"}
+{"unnormalised": "", "normalised": "            year = int(match.group(6))"}
+{"unnormalised": "", "normalised": "            month = int(match.group(7))"}
+{"unnormalised": "", "normalised": "            day = int(match.group(8))"}
+{"unnormalised": "", "normalised": "        if not (day and month and year):"}
+{"unnormalised": "", "normalised": "            return match.group(0) # रिटर्न ओरिजिनल इफ डेट पार्सिंग फेल्ड"}
+{"unnormalised": "", "normalised": "        months = [\"\", \"जनवरी\", \"फेब्रुवारी\", \"मार्च\", \"एप्रिल\", \"मे\", \"जून\","}
+{"unnormalised": "", "normalised": "                  \"जुलै\", \"ऑगस्ट\", \"सप्टेंबर\", \"ऑक्टोबर\", \"नोव्हेंबर\", \"डिसेंबर\"]"}
+{"unnormalised": "", "normalised": "        "}
+{"unnormalised": "", "normalised": "        day_suffix = {1: 'फर्स्ट', 2: 'सेकंड', 3: 'थर्ड', 4: 'फोर्थ', 5: 'फिफ्थ', 6: 'सिक्स्थ', 7: 'सेवंथ', 8: 'एथ्थ', 9: 'नाइंथ', 10: 'टेन्थ', 11: 'इलेवंथ', 12: 'ट्वेल्फ्थ', 13: 'थर्टीनथ', 14: 'फोर्टीन्थ', 15: 'फिफ्टीन्थ', 16: 'सिक्स्टीन्थ', 17: 'सेवेंटीन्थ', 18: 'एटीन्थ', 19: 'नाइंटीन्थ', 20: 'ट्वेंटीथ', 21: 'ट्वेंटी फर्स्ट', 22: 'ट्वेंटी सेकंड', 23: 'ट्वेंटी थर्ड', 24: 'ट्वेंटी फोर्थ', 25: 'ट्वेंटी फिफ्थ', 26: 'ट्वेंटी सिक्स्थ', 27: 'ट्वेंटी सेवंथ', 28: 'ट्वेंटी एथ्थ', 29: 'ट्वेंटी नाइंथ', 30: 'थर्टीएथ', 31: 'थर्टी फर्स्ट'}"}
+{"unnormalised": "", "normalised": "        "}
+{"unnormalised": "", "normalised": "        spoken_day = day_suffix.get(day, num2words(day, to='ordinal'))"}
+{"unnormalised": "", "normalised": "        spoken_month = months[month]"}
+{"unnormalised": "", "normalised": "        spoken_year = convert_number_to_words(str(year))"}
+{"unnormalised": "", "normalised": "        "}
+{"unnormalised": "", "normalised": "        return f\"{spoken_day} {spoken_month} {spoken_year}\""}
+{"unnormalised": "", "normalised": "    # DD/MM/YYYY ऑर DD-MM-YYYY"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b((\\d{1,2})[/-](\\d{1,2})[/-](\\d{4}))\\b', replace_date, text)"}
+{"unnormalised": "", "normalised": "    # YYYY-MM-DD"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b((\\d{4})[/-](\\d{1,2})[/-](\\d{1,2}))\\b', replace_date, text)"}
+{"unnormalised": "", "normalised": "    # रूल 7: यूनिट्स → स्पोकन फॉर्म"}
+{"unnormalised": "", "normalised": "    def replace_units(match):"}
+{"unnormalised": "", "normalised": "        number = convert_number_to_words(match.group(1))"}
+{"unnormalised": "", "normalised": "        unit = match.group(2).lower()"}
+{"unnormalised": "", "normalised": "        unit_map = {"}
+{"unnormalised": "", "normalised": "            'cm': 'सेंटीमीटर', 'mm': 'मिलीमीटर', 'm': 'मीटर', 'km': 'किलोमीटर',"}
+{"unnormalised": "", "normalised": "            'g': 'ग्राम', 'kg': 'किलोग्राम', 'mg': 'मिलीग्राम',"}
+{"unnormalised": "", "normalised": "            'ml': 'मिलीलीटर', 'l': 'लीटर',"}
+{"unnormalised": "", "normalised": "            '°c': 'डिग्री सेल्सियस', 'kph': 'किलोमीटर पर अवर',"}
+{"unnormalised": "", "normalised": "            'mph': 'माइल पर अवर', 'psi': 'पाउंड पर स्क्वेयर इंच',"}
+{"unnormalised": "", "normalised": "            'sqm': 'स्क्वेयर मीटर', 'sqkm': 'स्क्वेयर किलोमीटर',"}
+{"unnormalised": "", "normalised": "            'ha': 'हेक्टर', 'ft': 'फूट', 'in': 'इंच', 'yd': 'यार्ड',"}
+{"unnormalised": "", "normalised": "            'oz': 'औंस', 'lb': 'पाउंड', 'hr': 'अवर', 'min': 'मिनिट', 'sec': 'सेकंड',"}
+{"unnormalised": "", "normalised": "            'mb': 'मेगाबाइट', 'gb': 'गीगाबाइट', 'tb': 'टेराबाइट', 'kb': 'किलोबाइट',"}
+{"unnormalised": "", "normalised": "            'hz': 'हर्ट्ज', 'khz': 'किलोहर्ट्ज', 'mhz': 'मेगाहर्ट्ज', 'ghz': 'गीगाहर्ट्ज',"}
+{"unnormalised": "", "normalised": "            'v': 'वोल्ट', 'a': 'अँपियर', 'w': 'वॉट', 'kw': 'किलोवॉट', 'mw': 'मेगावॉट'"}
+{"unnormalised": "", "normalised": "        }"}
+{"unnormalised": "", "normalised": "        # हैंडल प्लुरलायझेशन इफ नेसेसरी (सिंपल ह्युरिस्टिक)"}
+{"unnormalised": "", "normalised": "        if int(match.group(1)) > 1 and unit_map.get(unit) and not unit_map.get(unit).endswith('s'):"}
+{"unnormalised": "", "normalised": "            return f\"{number} {unit_map.get(unit)}s\""}
+{"unnormalised": "", "normalised": "        return f\"{number} {unit_map.get(unit, unit)}\""}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\d+(?:\\.\\d+)?)\\s*(cm|mm|m|km|g|kg|mg|ml|l|°C|°c|kph|mph|psi|sqm|sqkm|ha|ft|in|yd|oz|lb|hr|min|sec|mb|gb|tb|kb|hz|khz|mhz|ghz|v|a|w|kw|mw)\\b', replace_units, text, flags=re.IGNORECASE)"}
+{"unnormalised": "", "normalised": "    # रूल 3: नंबर्स → स्पोकन फॉर्म (आफ्टर करंसी, सफिक्सेस, एंड यूनिट्स)"}
+{"unnormalised": "", "normalised": "    # दिस मस्ट कम आफ्टर ऑल अदर नंबर-रिलेटेड रूल्स"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b(\\d+(?:\\.\\d+)?)\\b', lambda m: convert_number_to_words(m.group(1)), text)"}
+{"unnormalised": "", "normalised": "    # रूल 1 (कंट.): सिंबल रिप्लेसमेंट्स दैट माइट कॉन्फ्लिक्ट विद अदर रूल्स इफ प्लेस्ड अर्लियर"}
+{"unnormalised": "", "normalised": "    # हैंडल / केअरफुली: \"डिवाइडेड बाय\" बिटवीन नंबर्स, \"ऑर\" बिटवीन वर्ड्स, \"स्लॅश\" फॉर अदर्स"}
+{"unnormalised": "", "normalised": "    def replace_slash(match):"}
+{"unnormalised": "", "normalised": "        pre = match.group(1)"}
+{"unnormalised": "", "normalised": "        post = match.group(2)"}
+{"unnormalised": "", "normalised": "        if re.match(r'\\b\\w+\\b', pre) and re.match(r'\\b\\w+\\b', post):"}
+{"unnormalised": "", "normalised": "            return f\"{pre} ऑर {post}\""}
+{"unnormalised": "", "normalised": "        elif (re.match(r'\\b[A-Z-]+\\b', pre) or re.match(r'\\b[a-z-]+\\b', pre)) and \\"}
+{"unnormalised": "", "normalised": "             (re.match(r'\\b[A-Z-]+\\b', post) or re.match(r'\\b[a-z-]+\\b', post)) and \\"}
+{"unnormalised": "", "normalised": "             (pre.isupper() != post.isupper()): # मिक्स्ड केस फॉर एक्झाम्पल QA/Dev"}
+{"unnormalised": "", "normalised": "            return f\"{pre} स्लॅश {post}\""}
+{"unnormalised": "", "normalised": "        else:"}
+{"unnormalised": "", "normalised": "            return f\"{pre} स्लॅश {post}\" # डिफॉल्ट टू स्लॅश फॉर अदर केसेस"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\S)\\s*/\\s*(\\S)', replace_slash, text) # रिप्लेस्ड विथ रेगॅक्स दैट कंसीडर्स सराउंडिंग"}
+{"unnormalised": "", "normalised": "    "}
+{"unnormalised": "", "normalised": "    # रूल 9: नॉर्मलाइज स्पेसेस"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\s+', ' ', text).strip()"}
+{"unnormalised": "", "normalised": "    "}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def process_folder(input_folder, output_folder):"}
+{"unnormalised": "", "normalised": "    unnormalized_files = []"}
+{"unnormalised": "", "normalised": "    "}
+{"unnormalised": "", "normalised": "    for root, dirs, files in os.walk(input_folder):"}
+{"unnormalised": "", "normalised": "        relative_path = os.path.relpath(root, input_folder)"}
+{"unnormalised": "", "normalised": "        output_root = os.path.join(output_folder, relative_path)"}
+{"unnormalised": "", "normalised": "        os.makedirs(output_root, exist_ok=True)"}
+{"unnormalised": "", "normalised": "        for file_name in files:"}
+{"unnormalised": "", "normalised": "            input_file_path = os.path.join(root, file_name)"}
+{"unnormalised": "", "normalised": "            output_file_path = os.path.join(output_root, file_name)"}
+{"unnormalised": "", "normalised": "            if file_name.endswith('.txt'):"}
+{"unnormalised": "", "normalised": "                try:"}
+{"unnormalised": "", "normalised": "                    with open(input_file_path, 'r', encoding='utf-8') as f_in:"}
+{"unnormalised": "", "normalised": "                        content = f_in.read()"}
+{"unnormalised": "", "normalised": "                    "}
+{"unnormalised": "", "normalised": "                    normalized_content = normalize_text(content)"}
+{"unnormalised": "", "normalised": "                    "}
+{"unnormalised": "", "normalised": "                    with open(output_file_path, 'w', encoding='utf-8') as f_out:"}
+{"unnormalised": "", "normalised": "                        f_out.write(normalized_content)"}
+{"unnormalised": "", "normalised": "                except Exception as e:"}
+{"unnormalised": "", "normalised": "                    print(f\"एरर प्रोसेसिंग {input_file_path}: {e}\")"}
+{"unnormalised": "", "normalised": "                    unnormalized_files.append(input_file_path)"}
+{"unnormalised": "", "normalised": "                    # कॉपी ओरिजिनल फाइल इफ नॉर्मलायझेशन फेल्स"}
+{"unnormalised": "", "normalised": "                    with open(output_file_path, 'w', encoding='utf-8') as f_out:"}
+{"unnormalised": "", "normalised": "                        f_out.write(content)"}
+{"unnormalised": "", "normalised": "            else:"}
+{"unnormalised": "", "normalised": "                # कॉपी नॉन-.txt फाइल्स अनचेंज्ड"}
+{"unnormalised": "", "normalised": "                try:"}
+{"unnormalised": "", "normalised": "                    with open(input_file_path, 'rb') as f_in, open(output_file_path, 'wb') as f_out:"}
+{"unnormalised": "", "normalised": "                        f_out.write(f_in.read())"}
+{"unnormalised": "", "normalised": "                except Exception as e:"}
+{"unnormalised": "", "normalised": "                    print(f\"एरर कॉपीइंग नॉन-txt फाइल {input_file_path}: {e}\")"}
+{"unnormalised": "", "normalised": "                    unnormalized_files.append(input_file_path)"}
+{"unnormalised": "", "normalised": "    if unnormalized_files:"}
+{"unnormalised": "", "normalised": "        print(\"\\nफाइल्स दैट कुड नॉट बी फुली नॉर्मलाइज्ड ऑर कॉपीड ड्यू टू एरर्स:\")"}
+{"unnormalised": "", "normalised": "        for f in unnormalized_files:"}
+{"unnormalised": "", "normalised": "            print(f)"}
+{"unnormalised": "", "normalised": "# एक्झाम्पल यूसेज:"}
+{"unnormalised": "", "normalised": "# क्रिएट सम डमी डेटा फॉर डेमॉन्स्ट्रेशन"}
+{"unnormalised": "", "normalised": "if __name__ == \"__main__\":"}
+{"unnormalised": "", "normalised": "    # क्रिएट ए डमी डेटासेट"}
+{"unnormalised": "", "normalised": "    os.makedirs('dataset/subfolder1', exist_ok=True)"}
+{"unnormalised": "", "normalised": "    os.makedirs('dataset/subfolder2', exist_ok=True)"}
+{"unnormalised": "", "normalised": "    with open('dataset/file1.txt', 'w') as f:"}
+{"unnormalised": "", "normalised": "        f.write(\"द NASA प्रोजेक्ट रिसीव्ड $20B फंडिंग. इट स्टार्टेड ऑन 10/09/2024. द GDP ग्रोथ वॉज ~5%. ही नीड्स 2.5kg ऑफ राइस. $20.50 इज द प्राइस. ए 2+2=4. आर्ट/क्राफ्ट इज गुड. QA/Dev टीम.\\n\")"}
+{"unnormalised": "", "normalised": "        f.write(\"द इंटीग्रल ∫ x^2 dx फ्रॉम 0 टू 1. द वैल्यू इज πr^2. x^n एंड x_i आर इम्पॉर्टन्ट. 3/4 ऑफ द पॉप्युलेशन. 25°C आउटसाइड. द स्पीड वॉज 100km/hr. GDP इज 10M. 1/2 kg.\\n\")"}
+{"unnormalised": "", "normalised": "        f.write(\"स्पेशल सिंबल्स: @ # & * ≠ ≤ ≥. दिस इज 99 प्रॉब्लम्स. U.S.A. इज ग्रेट. 7th डे. 2024-09-10 रिपोर्ट. 10cm, 100ml. ही वॉक्ड 5km. √9 इज थ्री. द एरिया इज 100sqm. दिस इज एन एक्झाम्पल ऑफ x^3. द टेंपरेचर इज 10 डिग्रीज. माय कंप्यूटर हैज 1TB स्टोरेज. द फ्रिक्वेन्सी इज 50Hz.\")"}
+{"unnormalised": "", "normalised": "    "}
+{"unnormalised": "", "normalised": "    with open('dataset/subfolder1/file2.txt', 'w') as f:"}
+{"unnormalised": "", "normalised": "        f.write(\"अनादर टेस्ट: 12345 डॉलर्स. द डेट इज 01-01-2023. वी नीड 500 mg. द अँगल इज 45°. दिस शुड बी नॉर्मलाइज्ड प्रॉपर्ली. व्हॉट अबाउट 9999999999.99?\\n\")"}
+{"unnormalised": "", "normalised": "        f.write(\"दिस इज एन X-Y-Z टेस्ट. दिस इज ए.बी.सी. टेक्स्ट. 200V, 10A, 5KW. x_max एंड y_min आर इम्पॉर्टन्ट व्हेरिएबल्स.\")"}
+{"unnormalised": "", "normalised": "    with open('dataset/subfolder2/image.jpg', 'w') as f: # डमी नॉन-टेक्स्ट फाइल"}
+{"unnormalised": "", "normalised": "        f.write(\"दिस इज नॉट ए टेक्स्ट फाइल.\")"}
+{"unnormalised": "", "normalised": "    input_folder = 'dataset'"}
+{"unnormalised": "", "normalised": "    output_folder = 'dataset_normalized'"}
+{"unnormalised": "", "normalised": "    process_folder(input_folder, output_folder)"}
+{"unnormalised": "", "normalised": "    print(f\"\\nनॉर्मलायझेशन कंप्लीट. चेक '{output_folder}' फॉर रिजल्ट्स.\")"}
+{"unnormalised": "", "normalised": "    print(\"एक्झाम्पल ऑफ नॉर्मलाइज्ड फाइल कंटेंट (file1.txt):\")"}
+{"unnormalised": "", "normalised": "    try:"}
+{"unnormalised": "", "normalised": "        with open(os.path.join(output_folder, 'file1.txt'), 'r', encoding='utf-8') as f:"}
+{"unnormalised": "", "normalised": "            print(f.read())"}
+{"unnormalised": "", "normalised": "    except FileNotFoundError:"}
+{"unnormalised": "", "normalised": "        print(\"नॉर्मलाइज्ड file1.txt नॉट फाउंड.\")"}

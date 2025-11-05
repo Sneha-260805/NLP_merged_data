@@ -1,0 +1,288 @@
+{"unnormalised": "ଓକେ, ଏଠାରେ ଆପଣଙ୍କ ନିର୍ଦ୍ଦିଷ୍ଟତା ଆଧାରରେ ଏକ ବ୍ଲଗ୍ ପୋଷ୍ଟ୍।", "normalised": "ଓକେ, ମୁଁ ବୁଝିପାରୁଛି ଯେ ତୁମେ ଚାହୁଁଛ ମୁଁ ଏକାଧିକ ଟେକ୍ସଟ୍ ଫାଇଲ୍ ପ୍ରକ୍ରିୟାକରଣ କରିବି। ତଥାପି, ତୁମେ ଯେଉଁ ଇନପୁଟ୍ ଦେଇଛ, ତାହା ଏକ ଫାଇଲ୍ କିମ୍ବା ଫୋଲ୍ଡର ଷ୍ଟ୍ରକଚର୍ ନୁହେଁ ବରଂ ଏକ ସିଙ୍ଗଲ୍ ବ୍ଲଗ୍ ପୋଷ୍ଟ *ଟେକ୍ସଟ୍ ଆକାରରେ* ଅଛି।"}
+{"unnormalised": "**ଅନୁବାଦରେ ହଜିଯିବା: ଭାରତୀୟ ଠିକଣା ସହିତ ମୋର ଦୁଃସାହସିକ କାର୍ଯ୍ୟ (ଏବଂ ଆପଣଙ୍କୁ GPS କାହିଁକି ଦରକାର)**", "normalised": "ଫାଇଲଗୁଡ଼ିକୁ ପ୍ରକ୍ରିୟାକରଣ କରିବା ଏବଂ ଫୋଲ୍ଡର ଷ୍ଟ୍ରକଚର୍ଗୁଡ଼ିକୁ ମିରର୍ କରିବା ପାଇଁ ତୁମର ଅନୁରୋଧକୁ ପୂରଣ କରିବାକୁ, ମୋତେ ଏକ ଫୋଲ୍ଡର ଭିତରେ ପ୍ରକୃତ ଫାଇଲ୍ ଗ୍ରହଣ କରିବାକୁ ପଡିବ।"}
+{"unnormalised": "ତେଣୁ, ମୁଁ ଭାବିଲି ମୁଁ ବହୁତ ବୁଦ୍ଧିମାନ, ଆପଣ ଜାଣନ୍ତି? ମୁଁ ଦିଲ୍ଲୀ ମେଟ୍ରୋରେ ସର୍ବାଧିକ ଭିଡ଼ ସମୟରେ ଯାତ୍ରା କରିଛି, ଚାନ୍ଦିନୀ ଚୌକରେ ଏକ ଶାଢ଼ୀର ସର୍ବୋତ୍ତମ ମୂଲ୍ୟ ପାଇଁ ବୁଝାମଣା କରିଛି, ଏବଂ ଏପରିକି କ୍ଷୀର ବିନା ଚାହା ମଧ୍ୟ ଅର୍ଡର କରିବାକୁ ପରିଚାଳନା କରିଛି (ମୋତେ ବିଶ୍ୱାସ କରନ୍ତୁ, ଏହା ଏକ ବଡ଼ କଥା)। କିନ୍ତୁ ତା’ପରେ ଠିକଣା ଆସିଲା। ଓହୋ, ସେହି ଠିକଣାଗୁଡ଼ିକ!", "normalised": "**ଯଦି ତୁମେ ବ୍ଲଗ୍ ପୋଷ୍ଟକୁ ଏକ ଫୋଲ୍ଡର ଭିତରେ `.txt` ଫାଇଲ୍ ଭାବରେ ଦେଇପାରିବ (ଯେପରିକି, `my_data/blog_posts/goa_addresses.txt`), ତେବେ ମୁଁ ନର୍ମାଲାଇଜେସନ୍ କରିବା ଏବଂ ମିରର୍ ହୋଇଥିବା `dataset_normalized` ଫୋଲ୍ଡର ତିଆରି କରିବା ପାଇଁ ପାଇଥନ୍ ସ୍କ୍ରିପ୍ଟ ଲେଖି ଏବଂ କାର୍ଯ୍ୟକାରୀ କରିପାରିବି।**"}
+{"unnormalised": "ମୋତେ ପରିସ୍ଥିତି ବୁଝାଇବାକୁ ଦିଅନ୍ତୁ: ମୁଁ ଗୋଆରେ ଏହି ସୁନ୍ଦର ଛୋଟ ଅତିଥି ଭବନ ଖୋଜିବା ପାଇଁ ଏକ ମିଶନରେ ଥିଲି। ଶୁଣିବାକୁ ସୁନ୍ଦର ଲାଗୁଛି, ଠିକ୍? ବୁକିଂ ନିଶ୍ଚିତକରଣ ଖୁସିରେ ଘୋଷଣା କଲା: \"ଆନନ୍ଦ ଭିଲ୍ଲା, ଏଚ୍. ନଂ. 147/ଏ, ସେଣ୍ଟ ଆଲେକ୍ସ ଚର୍ଚ୍ଚ ନିକଟରେ, କାଲାଙ୍ଗୁଟେ, ବାରଡେଜ୍, ଗୋଆ 403516।\" ସହଜ ଅଛି, ମୁଁ ଭାବିଲି। ଏହା ଥିଲା ମୋର ଶେଷ କଥା।", "normalised": "**ଯେହେତୁ ମୁଁ ସିଧାସଳଖ ତୁମର ଲୋକାଲ୍ ଫାଇଲ୍ ସିଷ୍ଟମ ସହିତ କଥାବାର୍ତ୍ତା କରିପାରିବି ନାହିଁ, ତେଣୁ ମୁଁ ପାଇଥନ୍ କୋଡ୍ ଯୋଗାଇବି ଯାହାକୁ *ତୁମେ* ଚଲାଇପାରିବ।**"}
+{"unnormalised": "ପ୍ରଥମେ, \"ଏଚ୍. ନଂ. 147/ଏ।\" ମୁଁ ଭାବିଲି ଏହା ଘର ନମ୍ବର, ହଁ। କିନ୍ତୁ ଓହୋ ନୁହେଁ, ଗୋଆରେ ଏହା ଏକ ନିର୍ଦ୍ଦିଷ୍ଟ ମାର୍ଗଦର୍ଶନ ଅପେକ୍ଷା ଏକ ପରାମର୍ଶ ପରି ମନେହୁଏ। ମୁଁ ଏକ ଘଣ୍ଟାରୁ ଅଧିକ ସମୟ ସେହି ସ୍ଥାନରେ ବୁଲିଲି ଯେଉଁଠାରେ ନଡ଼ିଆ ବଗିଚା ଥିଲା ବୋଲି ମୋର ଦୃଢ଼ ବିଶ୍ୱାସ ଥିଲା, ସ୍ଥାନୀୟ ଲୋକଙ୍କୁ ପଚାରିଲି ଯଦି ସେମାନେ \"ଏଚ୍. ନଂ. 147/ଏ, କୌଣସି ସ୍ଲାସ୍ କିଛି\" ଦେଖିଛନ୍ତି କି? ଉତ୍ତରଗୁଡ଼ିକ ଖାଲି ଚାହାଣୀରୁ ଆରମ୍ଭ କରି ସାହାଯ୍ୟକାରୀ (କିନ୍ତୁ ଶେଷରେ ଭୁଲ) ଦିଗ ପର୍ଯ୍ୟନ୍ତ ଥିଲା।", "normalised": "---"}
+{"unnormalised": "ତା’ପରେ ସେଠାରେ \"ସେଣ୍ଟ ଆଲେକ୍ସ ଚର୍ଚ୍ଚ ନିକଟରେ\" ଥିଲା। ବର୍ତ୍ତମାନ, ସେଣ୍ଟ ଆଲେକ୍ସ ଚର୍ଚ୍ଚ ଏକ ବଡ଼ ସ୍ଥାନ। ଆପଣ ଭାବିବେ ଯେ \"ନିକଟରେ\" ଅର୍ଥ ସାମ୍ନା ପାହାଚରୁ ଦେଖାଯିବା ଭଳି ହେବ। ନା। ଗୋଆରେ, \"ନିକଟରେ\" ଅର୍ଥ \"ସାଧାରଣ ଆଖପାଖରେ କେଉଁଠାରେ, ବୋଧହୁଏ ଏକ ରିକ୍ସା ଯାତ୍ରା ଏବଂ ଏକ ଗାଈ ସହିତ କଥାବାର୍ତ୍ତା ଅନ୍ତର୍ଭୁକ୍ତ।\" ମୁଁ ଶେଷରେ ଏହାକୁ ପାଇଲି... 3 ଟି ଭିନ୍ନ ଅଟୋ-ରିକ୍ସା ୱାଲାଙ୍କୁ ପଚାରିବା ପରେ ଯେଉଁମାନେ ପ୍ରତ୍ୟେକେ ମୋତେ 500 ଟଙ୍କା ନେବାକୁ ଚେଷ୍ଟା କରୁଥିଲେ ଯାହା 100 ଟଙ୍କା ହେବା ଉଚିତ୍ ଥିଲା।", "normalised": "**ତୁମର ନର୍ମାଲାଇଜେସନ୍ ଲକ୍ଷ୍ୟ ହାସଲ କରିବା ପାଇଁ ଏଠାରେ ପାଇଥନ୍ ସ୍କ୍ରିପ୍ଟ ଅଛି:**"}
+{"unnormalised": "ଏବଂ \"ବାରଡେଜ୍\" ବିଷୟରେ ମୋତେ ଆରମ୍ଭ କରିବାକୁ କୁହନ୍ତୁ ନାହିଁ। ଏହା ଏକ ସହର କି? ଏକ ଜିଲ୍ଲା? ଏକ ଭାବନା? ମୁଁ ଏପର୍ଯ୍ୟନ୍ତ ସମ୍ପୂର୍ଣ୍ଣ ନିଶ୍ଚିତ ନୁହେଁ। ପୋଷ୍ଟକୋଡ୍, \"403516,\" ଏକମାତ୍ର ଜିନିଷ ଥିଲା ଯାହା କିଛି ଅର୍ଥ ପ୍ରକାଶ କଲା, ଏବଂ ତା’ପରେ ମଧ୍ୟ ଗୁଗୁଲ୍ ମ୍ୟାପ୍ସ ମୋତେ ହସିଲା।", "normalised": "ଏହି ସ୍କ୍ରିପ୍ଟଟି:"}
+{"unnormalised": "ଅବଶେଷରେ, ଯାହା ଏକ ଛୋଟ ତୀର୍ଥଯାତ୍ରା ପରି ଲାଗୁଥିଲା (ଏବଂ କିଙ୍ଗ୍ ଫିସରର ଅନେକ ବୋତଲ), ମୁଁ ଆନନ୍ଦ ଭିଲ୍ଲାରେ ପହଞ୍ଚିଲି। ଏହା ସୁନ୍ଦର ଥିଲା, ପ୍ରକୃତରେ। କିନ୍ତୁ ଯାତ୍ରା? ଆସନ୍ତୁ କେବଳ କହିବା ଯେ ମୁଁ ବର୍ତ୍ତମାନ ଗୋଆର \"ହଜିଯାଇଥିବା ଏବଂ ଦ୍ୱନ୍ଦ୍ୱରେ ପଡ଼ିଥିବା\" ଭାଷାରେ ସ୍ପଷ୍ଟ ଭାବରେ କଥା କହିପାରେ।", "normalised": "1.  ଏକ `source_folder` କୁ ଇନପୁଟ୍ ଭାବରେ ଗ୍ରହଣ କରିବ।"}
+{"unnormalised": "କାହାଣୀର ନୈତିକତା? ସର୍ବଦା, *ସର୍ବଦା* GPS କୋର୍ଡିନେଟ୍ ରଖନ୍ତୁ। ଏବଂ ବୋଧହୁଏ ଏକ ସ୍ଥାନୀୟ ସିମ୍ କାର୍ଡ। ଏବଂ ନିଶ୍ଚିତ ଭାବରେ ହାସ୍ୟରସର ଭାବନା। କାରଣ ଭାରତରେ ଏକ ଠିକଣା ଖୋଜିବା ନିଜେ ଏକ ଦୁଃସାହସିକ କାର୍ଯ୍ୟ ହୋଇପାରେ, ଏବଂ ବେଳେବେଳେ, ସର୍ବୋତ୍ତମ କାହାଣୀଗୁଡ଼ିକ ହେଉଛି ଯେଉଁଠାରେ ଆପଣ ନିରାଶ ହୋଇ, ହସାଉଥିବା ଭଳି ହଜିଯାଆନ୍ତି। ପରବର୍ତ୍ତୀ ସମୟରେ, ମୁଁ ମୋର ବୁକିଂ ନୋଟ୍ସରେ କେବଳ \"ଅକ୍ଷାଂଶ: [ଏଠାରେ ଅକ୍ଷାଂଶ ଲେଖନ୍ତୁ], ଦ୍ରାଘିମା: [ଏଠାରେ ଦ୍ରାଘିମା ଲେଖନ୍ତୁ]\" ଲେଖିବି। ଆସନ୍ତୁ ଦେଖିବା ସେମାନେ *ତାହାକୁ* ଦ୍ୱନ୍ଦ୍ୱରେ ପକାଇବାକୁ ଚେଷ୍ଟା କରନ୍ତି!", "normalised": "2.  ସମସ୍ତ ସବଫୋଲ୍ଡର ମାଧ୍ୟମରେ ପୁନରାବୃତ୍ତି କରିବ।"}
+{"unnormalised": "", "normalised": "3.  ପ୍ରତ୍ୟେକ `.txt` ଫାଇଲ୍ ପାଇଁ, ନିର୍ଦ୍ଦିଷ୍ଟ ନର୍ମାଲାଇଜେସନ୍ ନିୟମଗୁଡ଼ିକୁ ପ୍ରୟୋଗ କରିବ।"}
+{"unnormalised": "", "normalised": "4.  ମୂଳ ଫୋଲ୍ଡର ଷ୍ଟ୍ରକଚର୍ ବଜାୟ ରଖି ଏକ `destination_folder` (ଯେପରିକି, `dataset_normalized`) କୁ ନର୍ମାଲାଇଜ୍ ହୋଇଥିବା `.txt` ଫାଇଲ୍ ସେଭ୍ କରିବ।"}
+{"unnormalised": "", "normalised": "5.  ଅପରିବର୍ତ୍ତିତ ଅବସ୍ଥାରେ ନନ୍-`.txt` ଫାଇଲଗୁଡ଼ିକୁ ଡେଷ୍ଟିନେସନ୍‌କୁ କପି କରିବ।"}
+{"unnormalised": "", "normalised": "6.  ନର୍ମାଲାଇଜ୍ ହୋଇନଥିବା `.txt` ଫାଇଲଗୁଡ଼ିକର ନାମ ପ୍ରିଣ୍ଟ୍ କରିବ (ଯଦିଓ ବର୍ତ୍ତମାନର ଲଜିକ୍ ସହିତ, ସମସ୍ତ `.txt` ଫାଇଲ୍ ଚେଷ୍ଟା କରାଯିବ)।"}
+{"unnormalised": "", "normalised": "```python"}
+{"unnormalised": "", "normalised": "import re"}
+{"unnormalised": "", "normalised": "import os"}
+{"unnormalised": "", "normalised": "import shutil"}
+{"unnormalised": "", "normalised": "import inflect"}
+{"unnormalised": "", "normalised": "# ସଂଖ୍ୟାକୁ ଶବ୍ଦରେ ପରିବର୍ତ୍ତନ କରିବା ପାଇଁ ଇନଫ୍ଲେକ୍ଟ ଇଞ୍ଜିନ୍ ଆରମ୍ଭ କରନ୍ତୁ |"}
+{"unnormalised": "", "normalised": "p = inflect.engine()"}
+{"unnormalised": "", "normalised": "# --- ନର୍ମାଲାଇଜେସନ୍ ପାଇଁ ସହାୟକ ଫଙ୍କସନ୍ ---"}
+{"unnormalised": "", "normalised": "def number_to_words(number_str):"}
+{"unnormalised": "", "normalised": "    \"\"\"ଏକ ସଂଖ୍ୟା ଷ୍ଟ୍ରିଙ୍ଗକୁ ଏହାର କଥିତ ଇଂରାଜୀ ରୂପରେ ପରିଣତ କରେ |\"\"\""}
+{"unnormalised": "", "normalised": "    try:"}
+{"unnormalised": "", "normalised": "        # ଡେସିମାଲ୍ଗୁଡ଼ିକୁ ହ୍ୟାଣ୍ଡେଲ୍ କରନ୍ତୁ |"}
+{"unnormalised": "", "normalised": "        if '.' in number_str:"}
+{"unnormalised": "", "normalised": "            parts = number_str.split('.')"}
+{"unnormalised": "", "normalised": "            whole = p.number_to_words(int(parts[0])) if parts[0] else ''"}
+{"unnormalised": "", "normalised": "            decimal = 'point ' + ' '.join(p.number_to_words(int(d)) for d in parts[1]) if parts[1] else ''"}
+{"unnormalised": "", "normalised": "            return (f\"{whole} {decimal}\").strip()"}
+{"unnormalised": "", "normalised": "        else:"}
+{"unnormalised": "", "normalised": "            return p.number_to_words(int(number_str))"}
+{"unnormalised": "", "normalised": "    except ValueError:"}
+{"unnormalised": "", "normalised": "        return number_str # ଯଦି ଏକ ବୈଧ ସଂଖ୍ୟା ନୁହେଁ ତେବେ ମୂଳ ଫେରସ୍ତ କରନ୍ତୁ (ଉଦାହରଣ ସ୍ୱରୂପ, ପୂର୍ବରୁ ଶବ୍ଦ ଧାରଣ କରିଛି)"}
+{"unnormalised": "", "normalised": "def normalize_symbols(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"ସାଧାରଣ ସଙ୍କେତଗୁଡ଼ିକୁ ସେମାନଙ୍କର କଥିତ ଫର୍ମ ସହିତ ବଦଳାଏ |\"\"\""}
+{"unnormalised": "", "normalised": "    # କେତେକ ସ୍ଥାନାନ୍ତରଣ ପାଇଁ କ୍ରମ ଗୁରୁତ୍ୱପୂର୍ଣ୍ଣ |"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'≠', ' not equal to ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'≤', ' less than or equal to ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'≥', ' greater than or equal to ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'√', ' square root of ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'%', ' percent ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\+', ' plus ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'=', ' equals ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'@', ' at ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'&', ' and ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'#', ' hash ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\*', ' asterisk ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'~', ' approximately ', text)"}
+{"unnormalised": "", "normalised": "    # ପ୍ରସଙ୍ଗ ଉପରେ ଆଧାର କରି \"/\" କୁ ଯତ୍ନର ସହିତ ହ୍ୟାଣ୍ଡେଲ୍ କରନ୍ତୁ |"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\b[a-zA-Z]+)/([a-zA-Z]+\\b)', r'\\1 or \\2', text) # ଶବ୍ଦ/ଶବ୍ଦ -> ଶବ୍ଦ କିମ୍ବା ଶବ୍ଦ"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\b[A-Z0-9]+)/([A-Z0-9]+\\b)', r'\\1 slash \\2', text) # ସଂକ୍ଷେପ/ସଂକ୍ଷିପ୍ତ -> ସଂକ୍ଷେପ ସ୍ଲାସ୍ ସଂକ୍ଷିପ୍ତ"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\d+)/(\\d+)', r'\\1 divided by \\2', text) # ସଂଖ୍ୟା/ସଂଖ୍ୟା -> ସଂଖ୍ୟାକୁ ସଂଖ୍ୟା ଦ୍ୱାରା ବିଭକ୍ତ କରାଯାଇଛି"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(?<!\\s)/', ' slash ', text) # ଅବଶିଷ୍ଟ ସ୍ଲାସ୍‌ଗୁଡ଼ିକୁ ଧରନ୍ତୁ (ଉଦାହରଣ ସ୍ୱରୂପ, ପାଥ୍, ମିଶ୍ରିତ କେସ୍ ଉପରେ କ୍ୟାଚ୍ ହୋଇନାହିଁ)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'°C', ' degree celsius ', text) # ଡିଗ୍ରୀ ସେଲସିୟସ୍ ପ୍ରଥମ"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def normalize_acronyms(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"ସଂକ୍ଷେପଗୁଡ଼ିକୁ ହାଇଫେନ୍‌ଯୁକ୍ତ ଅକ୍ଷରରେ ପରିଣତ କରେ |\"\"\""}
+{"unnormalised": "", "normalised": "    def replace_acronym(match):"}
+{"unnormalised": "", "normalised": "        acronym = match.group(0)"}
+{"unnormalised": "", "normalised": "        # ଏହା ନିଶ୍ଚିତ କରନ୍ତୁ ଯେ ଏହା ଏକ ସିଙ୍ଗଲ୍ ଅକ୍ଷର ନୁହେଁ, କିମ୍ବା ଏକ ସାଧାରଣ ସଙ୍କୋଚନ (ଉଦାହରଣ ସ୍ୱରୂପ, I'M)"}
+{"unnormalised": "", "normalised": "        if len(acronym) > 1 and not (acronym.isupper() and len(acronym) == 1):"}
+{"unnormalised": "", "normalised": "             # ହିଉରିଷ୍ଟିକ୍: ଯଦି ଏହା ଏକ ଶବ୍ଦ ହେବାର ସମ୍ଭାବନା ଥାଏ ତେବେ ବିଭାଜନ କରିବା ଠାରୁ ଦୂରେଇ ରୁହନ୍ତୁ (ଉଦାହରଣ ସ୍ୱରୂପ, \"IT\" ଯେପରି \"ଏହା ଅଟେ\")"}
+{"unnormalised": "", "normalised": "             # ଏହା ଏକ କଠିନ ସମସ୍ୟା; ସରଳ ରେଜେକ୍ସ ଅତ୍ୟଧିକ ଆକ୍ରମଣାତ୍ମକ ହୋଇପାରେ |"}
+{"unnormalised": "", "normalised": "             # ବର୍ତ୍ତମାନ ପାଇଁ, ନିୟମରେ ଲାଗି ରୁହନ୍ତୁ: ୨+ କ୍ରମାଗତ ବଡ ଅକ୍ଷର |"}
+{"unnormalised": "", "normalised": "            return '-'.join(list(acronym))"}
+{"unnormalised": "", "normalised": "        return acronym"}
+{"unnormalised": "", "normalised": "    # ଅପ୍‌ସନାଲି ପିରିୟଡ ସହିତ ୨ କିମ୍ବା ଅଧିକ କ୍ରମାଗତ ବଡ ଅକ୍ଷର ଖୋଜନ୍ତୁ"}
+{"unnormalised": "", "normalised": "    # ସମ୍ଭବ ହେଲେ \"IT\" ପରି ସାଧାରଣ ଶବ୍ଦଗୁଡ଼ିକୁ ଭାଙ୍ଗିବାକୁ ଏଡ଼ାଇବା ପାଇଁ ନେଗେଟିଭ୍ ଲୁକ୍‌ବିହାଇଣ୍ଡ/ଲୁକ୍‌ଏହେଡ୍ ବ୍ୟବହାର କରିବା, କିନ୍ତୁ ନିୟମ କଠୋର ଅଟେ: \"୨+ କ୍ରମାଗତ ବଡ ଅକ୍ଷର\" |"}
+{"unnormalised": "", "normalised": "    # ଏହି ରେଜେକ୍ସ ୨+ କ୍ରମାଗତ ବଡ ଅକ୍ଷର ବିଷୟରେ କଠୋର, ପିରିୟଡଗୁଡ଼ିକ ଉତ୍ତୋଳନ ପରେ ହ୍ୟାଣ୍ଡେଲ୍ କରାଯାଏ |"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b([A-Z][A-Z\\.]*[A-Z])\\b', replace_acronym, text)"}
+{"unnormalised": "", "normalised": "    text = text.replace('.', '') # ପ୍ରକ୍ରିୟାକରଣ ପରେ ସଂକ୍ଷେପ ଭିତରୁ ପିରିୟଡଗୁଡ଼ିକୁ ହଟାନ୍ତୁ |"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def normalize_numbers(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"ଷ୍ଟାଣ୍ଡଆଲୋନ୍ ନମ୍ବର ଏବଂ ୟୁନିଟ୍/କରେନ୍ସି ମଧ୍ୟରେ ସଂଖ୍ୟାଗୁଡ଼ିକୁ କଥିତ ଫର୍ମରେ ପରିଣତ କରେ |\"\"\""}
+{"unnormalised": "", "normalised": "    def replace_num(match):"}
+{"unnormalised": "", "normalised": "        num_str = match.group(1)"}
+{"unnormalised": "", "normalised": "        return number_to_words(num_str)"}
+{"unnormalised": "", "normalised": "    # ଶବ୍ଦ ମଧ୍ୟରେ ସଂଖ୍ୟା ପରିବର୍ତ୍ତନ କରନ୍ତୁ (ଉଦାହରଣ ସ୍ୱରୂପ, H. No. 147)"}
+{"unnormalised": "", "normalised": "    # ଏହି ପାଟର୍ନ ଏକ ବଡ ପରିଚୟର ଅଂଶ ହୋଇଥିବା ସଂଖ୍ୟାଗୁଡ଼ିକୁ ଧରିବାକୁ ଚେଷ୍ଟା କରେ |"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\bH\\. No\\. )(\\d+)', lambda m: f\"{m.group(1)}{number_to_words(m.group(2))}\", text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\b[A-Z])(\\d+)', lambda m: f\"{m.group(1)}{number_to_words(m.group(2))}\", text)"}
+{"unnormalised": "", "normalised": "    # ଜେନେରିକ୍ ନମ୍ବର ରିପ୍ଲେସମେଣ୍ଟ - ୟୁନିଟ୍/କରେନ୍ସିକୁ ଡବଲ୍ ପ୍ରୋସେସିଂରୁ ବଞ୍ଚାଇବା ପାଇଁ ଯତ୍ନର ସହିତ ହ୍ୟାଣ୍ଡେଲ୍ କରିବାକୁ ପଡିବ |"}
+{"unnormalised": "", "normalised": "    # ଏହା ଷ୍ଟାଣ୍ଡଆଲୋନ୍ ସଂଖ୍ୟା କିମ୍ବା ଏକ ୟୁନିଟ୍/କରେନ୍ସିର ଅଂଶ ନୁହେଁ ଯାହା ପୂର୍ବରୁ ହ୍ୟାଣ୍ଡେଲ୍ ହୋଇଛି |"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b(\\d+)\\b', replace_num, text)"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def normalize_numeric_suffixes(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"K, M, B, T ସଫିକ୍ସଗୁଡ଼ିକୁ ବିସ୍ତାର କରେ |\"\"\""}
+{"unnormalised": "", "normalised": "    def replace_suffix(match):"}
+{"unnormalised": "", "normalised": "        num = number_to_words(match.group(1))"}
+{"unnormalised": "", "normalised": "        suffix = match.group(2).lower()"}
+{"unnormalised": "", "normalised": "        if suffix == 'k': return f\"{num} thousand\""}
+{"unnormalised": "", "normalised": "        if suffix == 'm': return f\"{num} million\""}
+{"unnormalised": "", "normalised": "        if suffix == 'b': return f\"{num} billion\""}
+{"unnormalised": "", "normalised": "        if suffix == 't': return f\"{num} trillion\""}
+{"unnormalised": "", "normalised": "        return match.group(0) # ଘଟିବା ଉଚିତ୍ ନୁହେଁ |"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\d+)([KMBT])\\b', replace_suffix, text)"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def normalize_currency_number_suffix(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"କରେନ୍ସିକୁ ସଂଖ୍ୟା ଏବଂ ସଫିକ୍ସ ସହିତ ମିଶ୍ରଣ କରେ |\"\"\""}
+{"unnormalised": "", "normalised": "    def replace_currency_suffix(match):"}
+{"unnormalised": "", "normalised": "        currency_symbol = match.group(1)"}
+{"unnormalised": "", "normalised": "        num_str = match.group(2)"}
+{"unnormalised": "", "normalised": "        suffix = match.group(3)"}
+{"unnormalised": "", "normalised": "        currency_word = \"\""}
+{"unnormalised": "", "normalised": "        if currency_symbol == '$': currency_word = 'dollar'"}
+{"unnormalised": "", "normalised": "        elif currency_symbol == '₹': currency_word = 'rupee'"}
+{"unnormalised": "", "normalised": "        # ଆବଶ୍ୟକ ଅନୁସାରେ ଅଧିକ କରେନ୍ସି ଯୋଡନ୍ତୁ |"}
+{"unnormalised": "", "normalised": "        num_words = number_to_words(num_str)"}
+{"unnormalised": "", "normalised": "        suffix_word = \"\""}
+{"unnormalised": "", "normalised": "        if suffix.lower() == 'k': suffix_word = 'thousand'"}
+{"unnormalised": "", "normalised": "        elif suffix.lower() == 'm': suffix_word = 'million'"}
+{"unnormalised": "", "normalised": "        elif suffix.lower() == 'b': suffix_word = 'billion'"}
+{"unnormalised": "", "normalised": "        elif suffix.lower() == 't': suffix_word = 'trillion'"}
+{"unnormalised": "", "normalised": "        return f\"{currency_word} {num_words} {suffix_word}\""}
+{"unnormalised": "", "normalised": "    # ସଂଖ୍ୟା ଏବଂ ସଫିକ୍ସ ପରେ କରେନ୍ସି ସଙ୍କେତ ପାଇଁ ପାଟର୍ନ |"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'([$₹€£])(\\d+)([KMBT])\\b', replace_currency_suffix, text)"}
+{"unnormalised": "", "normalised": "    # ସଫିକ୍ସ ନିୟମ ପରେ କରିବାକୁ ପଡିବ) କରେନ୍ସି + ସଫିକ୍ସ ବିନା ସଂଖ୍ୟା ମଧ୍ୟ ହ୍ୟାଣ୍ଡେଲ୍ କରନ୍ତୁ |"}
+{"unnormalised": "", "normalised": "    def replace_currency_num(match):"}
+{"unnormalised": "", "normalised": "        currency_symbol = match.group(1)"}
+{"unnormalised": "", "normalised": "        num_str = match.group(2)"}
+{"unnormalised": "", "normalised": "        currency_word = \"\""}
+{"unnormalised": "", "normalised": "        if currency_symbol == '$': currency_word = 'dollar'"}
+{"unnormalised": "", "normalised": "        elif currency_symbol == '₹': currency_word = 'rupee'"}
+{"unnormalised": "", "normalised": "        # ଆବଶ୍ୟକ ଅନୁସାରେ ଅଧିକ କରେନ୍ସି ଯୋଡନ୍ତୁ |"}
+{"unnormalised": "", "normalised": "        num_words = number_to_words(num_str)"}
+{"unnormalised": "", "normalised": "        return f\"{currency_word} {num_words}\""}
+{"unnormalised": "", "normalised": "    text = re.sub(r'([$₹€£])(\\d+)\\b', replace_currency_num, text)"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def normalize_dates(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"ସାଂଖ୍ୟିକ ତାରିଖଗୁଡ଼ିକୁ ପ୍ରାକୃତିକ କଥିତ ଫର୍ମାଟରେ ପରିଣତ କରେ (ଅସ୍ପଷ୍ଟତା ପାଇଁ ଡିଡି/ଏମ୍ଏମ୍/ୱାଇୱାଇୱାଇୱାଇ ଧାରଣା କରାଯାଏ)।\"\"\""}
+{"unnormalised": "", "normalised": "    # DD-MM-YYYY କିମ୍ବା DD/MM/YYYY"}
+{"unnormalised": "", "normalised": "    def replace_date_dmy(match):"}
+{"unnormalised": "", "normalised": "        day = int(match.group(1))"}
+{"unnormalised": "", "normalised": "        month = int(match.group(2))"}
+{"unnormalised": "", "normalised": "        year = int(match.group(3))"}
+{"unnormalised": "", "normalised": "        months = ["}
+{"unnormalised": "", "normalised": "            \"\", \"january\", \"february\", \"march\", \"april\", \"may\", \"june\","}
+{"unnormalised": "", "normalised": "            \"july\", \"august\", \"september\", \"october\", \"november\", \"december\""}
+{"unnormalised": "", "normalised": "        ]"}
+{"unnormalised": "", "normalised": "        return f\"{p.ordinal(day)} {months[month]} {number_to_words(str(year))}\""}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b(\\d{1,2})[-/](\\d{1,2})[-/](\\d{4})\\b', replace_date_dmy, text)"}
+{"unnormalised": "", "normalised": "    # YYYY-MM-DD"}
+{"unnormalised": "", "normalised": "    def replace_date_ymd(match):"}
+{"unnormalised": "", "normalised": "        year = int(match.group(1))"}
+{"unnormalised": "", "normalised": "        month = int(match.group(2))"}
+{"unnormalised": "", "normalised": "        day = int(match.group(3))"}
+{"unnormalised": "", "normalised": "        months = ["}
+{"unnormalised": "", "normalised": "            \"\", \"january\", \"february\", \"march\", \"april\", \"may\", \"june\","}
+{"unnormalised": "", "normalised": "            \"july\", \"august\", \"september\", \"october\", \"november\", \"december\""}
+{"unnormalised": "", "normalised": "        ]"}
+{"unnormalised": "", "normalised": "        return f\"{p.ordinal(day)} {months[month]} {number_to_words(str(year))}\""}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b(\\d{4})[-/](\\d{1,2})[-/](\\d{1,2})\\b', replace_date_ymd, text)"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def normalize_units(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"ୟୁନିଟ୍ଗୁଡ଼ିକୁ ସମ୍ପୂର୍ଣ୍ଣ ଶବ୍ଦରେ ବିସ୍ତାର କରେ |\"\"\""}
+{"unnormalised": "", "normalised": "    def replace_unit(match):"}
+{"unnormalised": "", "normalised": "        num_str = match.group(1)"}
+{"unnormalised": "", "normalised": "        unit = match.group(2).lower()"}
+{"unnormalised": "", "normalised": "        num_words = number_to_words(num_str)"}
+{"unnormalised": "", "normalised": "        unit_map = {"}
+{"unnormalised": "", "normalised": "            'cm': 'centimeter', 'mm': 'millimeter', 'm': 'meter', 'km': 'kilometer',"}
+{"unnormalised": "", "normalised": "            'g': 'gram', 'kg': 'kilogram', 'mg': 'milligram',"}
+{"unnormalised": "", "normalised": "            'ml': 'milliliter', 'l': 'liter', 'kph': 'kilometers per hour',"}
+{"unnormalised": "", "normalised": "            'mph': 'miles per hour', 'hz': 'hertz', 'khz': 'kilohertz',"}
+{"unnormalised": "", "normalised": "            'mhz': 'megahertz', 'ghz': 'gigahertz', 'mb': 'megabyte',"}
+{"unnormalised": "", "normalised": "            'gb': 'gigabyte', 'tb': 'terabyte', 'kb': 'kilobyte',"}
+{"unnormalised": "", "normalised": "            'sec': 'second', 'min': 'minute', 'hr': 'hour',"}
+{"unnormalised": "", "normalised": "            'usd': 'us dollar', 'eur': 'euro', 'gbp': 'pound sterling',"}
+{"unnormalised": "", "normalised": "            'ft': 'foot', 'in': 'inch', 'yd': 'yard', 'sqm': 'square meter',"}
+{"unnormalised": "", "normalised": "            'sqkm': 'square kilometer', 'sqft': 'square foot',"}
+{"unnormalised": "", "normalised": "            'c': 'celsius', # °C ପାଇଁ ପୂର୍ବରୁ ସ୍ୱତନ୍ତ୍ର ହ୍ୟାଣ୍ଡଲିଂ, କିନ୍ତୁ କେବଳ C ପାଇଁ, ଏହା ଅସ୍ପଷ୍ଟ | ଡିଗ୍ରୀ ବୋଲି ଧାରଣା କରନ୍ତୁ |"}
+{"unnormalised": "", "normalised": "            'f': 'fahrenheit' # 'F' ପାଇଁ ଡିଗ୍ରୀ ବୋଲି ଧାରଣା କରନ୍ତୁ |"}
+{"unnormalised": "", "normalised": "        }"}
+{"unnormalised": "", "normalised": "        # °C ପାଇଁ ବିଶେଷ କେସ୍, ପୂର୍ବରୁ ସଙ୍କେତରେ ହ୍ୟାଣ୍ଡେଲ୍ |"}
+{"unnormalised": "", "normalised": "        if unit == 'c':"}
+{"unnormalised": "", "normalised": "             # ଯଦି ଏକ ସଂଖ୍ୟା ପୂର୍ବରୁ ଥାଏ, ତେବେ \"ଡିଗ୍ରୀ ସେଲସିୟସ୍\" ଧାରଣା କରନ୍ତୁ |"}
+{"unnormalised": "", "normalised": "            if re.search(r'\\b\\d+\\s*$', match.string[:match.start()], re.IGNORECASE):"}
+{"unnormalised": "", "normalised": "                return f\"{num_words} degree celsius\""}
+{"unnormalised": "", "normalised": "            return f\"{num_words} {unit_map.get(unit, unit)}\""}
+{"unnormalised": "", "normalised": "        return f\"{num_words} {unit_map.get(unit, unit)}\""}
+{"unnormalised": "", "normalised": "    # ଏହି ରେଜେକ୍ସ ବିଭିନ୍ନ ୟୁନିଟ୍ ପାଇଁ ଦୃଢ ଏବଂ ୟୁନିଟ୍ ପୂର୍ବରୁ ସଂଖ୍ୟା ନିଶ୍ଚିତ କରେ |"}
+{"unnormalised": "", "normalised": "    # ଏହା ସଂଖ୍ୟା ଏବଂ ୟୁନିଟ୍‌କୁ ପୃଥକ ଭାବରେ କ୍ୟାପଚର୍ କରିବାକୁ ଚେଷ୍ଟା କରେ |"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b(\\d+(?:\\.\\d+)?)\\s*(cm|mm|m|km|g|kg|mg|ml|l|kph|mph|hz|khz|mhz|ghz|mb|gb|tb|kb|sec|min|hr|usd|eur|gbp|ft|in|yd|sqm|sqkm|sqft|[CF])\\b', replace_unit, text, flags=re.IGNORECASE)"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def normalize_mathematical_notation(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"ଗାଣିତିକ ସଙ୍କେତ ଏବଂ ଅଭିବ୍ୟକ୍ତିଗୁଡ଼ିକୁ କଥିତ ଫର୍ମରେ ପରିଣତ କରେ |\"\"\""}
+{"unnormalised": "", "normalised": "    # କ୍ରମ ଗୁରୁତ୍ୱପୂର୍ଣ୍ଣ | ପ୍ରଥମେ ଅଧିକ ନିର୍ଦ୍ଦିଷ୍ଟ ପାଟର୍ନ |"}
+{"unnormalised": "", "normalised": "    # a ରୁ b ପର୍ଯ୍ୟନ୍ତ ଇଣ୍ଟିଗ୍ରାଲ୍"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'∫\\s*(\\d+)→(\\d+)\\s*(.*?)\\s*d([a-zA-Z])',"}
+{"unnormalised": "", "normalised": "                  lambda m: f\"integral from {number_to_words(m.group(1))} to {number_to_words(m.group(2))} of {m.group(3).strip()} d {m.group(4)}\","}
+{"unnormalised": "", "normalised": "                  text)"}
+{"unnormalised": "", "normalised": "    # ଜେନେରିକ୍ ଇଣ୍ଟିଗ୍ରାଲ୍"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'∫\\s*(.*?)\\s*d([a-zA-Z])',"}
+{"unnormalised": "", "normalised": "                  lambda m: f\"integral of {m.group(1).strip()} d {m.group(2)}\","}
+{"unnormalised": "", "normalised": "                  text)"}
+{"unnormalised": "", "normalised": "    # ପାୱାର (x^2, x^3, x^n)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'([a-zA-Z])\\^2', r'\\1 squared', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'([a-zA-Z])\\^3', r'\\1 cubed', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'([a-zA-Z])\\^([a-zA-Z0-9]+)', r'\\1 to the power of \\2', text) # x^n"}
+{"unnormalised": "", "normalised": "    # ପାଇ ଆର୍ ସ୍କୋୟାର୍ଡ (ନିର୍ଦ୍ଦିଷ୍ଟ କେସ୍)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'πr\\^2', 'pi r squared', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'π([a-zA-Z])\\^2', r'pi \\1 squared', text) # pi a^2 ପାଇଁ"}
+{"unnormalised": "", "normalised": "    # ସ୍କୋୟାର୍ ରୁଟ୍"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'√([a-zA-Z0-9]+)', r'square root of \\1', text)"}
+{"unnormalised": "", "normalised": "    # ସମେସନ୍ (Σ x_i)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'Σ\\s*([a-zA-Z])_([a-zA-Z0-9]+)', r'summation of \\1 sub \\2', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'Σ\\s*([a-zA-Z])', r'summation of \\1', text)"}
+{"unnormalised": "", "normalised": "    # ସବସ୍କ୍ରିପ୍ଟ (x_i) - ଏହା ନିଶ୍ଚିତ କରନ୍ତୁ ଯେ ଏହା ଅନ୍ୟ ପାଟର୍ନ ସହିତ ବିବାଦ କରେ ନାହିଁ |"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'([a-zA-Z])_([a-zA-Z0-9]+)', r'\\1 sub \\2', text)"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def normalize_text(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"ଏକ ଲଜିକାଲ୍ କ୍ରମରେ ସମସ୍ତ ନର୍ମାଲାଇଜେସନ୍ ନିୟମ ପ୍ରୟୋଗ କରେ |\"\"\""}
+{"unnormalised": "", "normalised": "    # 1. ଗାଣିତିକ ନୋଟେସନ୍ (ପ୍ରଥମେ ନିର୍ଦ୍ଦିଷ୍ଟ ଅଭିବ୍ୟକ୍ତି)"}
+{"unnormalised": "", "normalised": "    text = normalize_mathematical_notation(text)"}
+{"unnormalised": "", "normalised": "    # 2. ସଙ୍କେତ (ଗାଣିତିକ ସଙ୍କେତ ପରେ 3/4 ପରି ଭଗ୍ନାଂଶ ସହିତ)"}
+{"unnormalised": "", "normalised": "    text = normalize_symbols(text)"}
+{"unnormalised": "", "normalised": "    # 3. ସାଂଖ୍ୟିକ ସଫିକ୍ସ (ଉଦାହରଣ ସ୍ୱରୂପ, K, M, B, T)"}
+{"unnormalised": "", "normalised": "    text = normalize_numeric_suffixes(text)"}
+{"unnormalised": "", "normalised": "    # 4. କରେନ୍ସି + ସଂଖ୍ୟା + ସଫିକ୍ସ"}
+{"unnormalised": "", "normalised": "    text = normalize_currency_number_suffix(text)"}
+{"unnormalised": "", "normalised": "    # 5. ତାରିଖ"}
+{"unnormalised": "", "normalised": "    text = normalize_dates(text)"}
+{"unnormalised": "", "normalised": "    # 6. ୟୁନିଟ୍ (ସାଧାରଣ ସଂଖ୍ୟା ପରିବର୍ତ୍ତନ ପୂର୍ବରୁ ଆସିବା ଆବଶ୍ୟକ)"}
+{"unnormalised": "", "normalised": "    text = normalize_units(text)"}
+{"unnormalised": "", "normalised": "    # 7. ସଂକ୍ଷେପ ( \"U-S-A\" ରେ \"USA\" କୁ ବିଭାଜନ କରିବାକୁ ଏଡ଼ାଇବା ପାଇଁ ସଂଖ୍ୟା ପୂର୍ବରୁ)"}
+{"unnormalised": "", "normalised": "    text = normalize_acronyms(text)"}
+{"unnormalised": "", "normalised": "    # 8. ଜେନେରିକ୍ ସଂଖ୍ୟା (ଅବଶିଷ୍ଟ ସଂଖ୍ୟାଗୁଡ଼ିକୁ ଧରିବା ପାଇଁ ଶେଷ)"}
+{"unnormalised": "", "normalised": "    text = normalize_numbers(text)"}
+{"unnormalised": "", "normalised": "    # ଚୂଡ଼ାନ୍ତ ସଫେଇ"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\s+', ' ', text).strip() # ସ୍ପେସ୍‌ଗୁଡ଼ିକୁ ନର୍ମାଲାଇଜ୍ କରନ୍ତୁ |"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def process_folder(source_folder, destination_folder):"}
+{"unnormalised": "", "normalised": "    \"\"\""}
+{"unnormalised": "", "normalised": "    ସୋର୍ସ ଫୋଲ୍ଡର ମାଧ୍ୟମରେ ଯାଏ, .txt ଫାଇଲ୍‌ଗୁଡ଼ିକୁ ନର୍ମାଲାଇଜ୍ କରେ,"}
+{"unnormalised": "", "normalised": "    ଏବଂ ଅନ୍ୟ ଫାଇଲ୍‌ଗୁଡ଼ିକୁ ଡେଷ୍ଟିନେସନ୍ ଫୋଲ୍ଡରକୁ କପି କରେ |"}
+{"unnormalised": "", "normalised": "    \"\"\""}
+{"unnormalised": "", "normalised": "    ଯଦି ଡେଷ୍ଟିନେସନ୍ ଫୋଲ୍ଡର ଅଛି, ତେବେ ଛାପନ୍ତୁ(f\"ଡେଷ୍ଟିନେସନ୍ ଫୋଲ୍ଡର '{destination_folder}' ଆଗରୁ ଅଛି । ବିଲୋପ କରି ପୁନଃ ସୃଷ୍ଟି କରନ୍ତୁ।\")"}
+{"unnormalised": "", "normalised": "    shutil.rmtree(destination_folder)"}
+{"unnormalised": "", "normalised": "    os.makedirs(destination_folder)"}
+{"unnormalised": "", "normalised": "    print(f\"ଡେଷ୍ଟିନେସନ୍ ଫୋଲ୍ଡର ତିଆରି ହେଲା: {destination_folder}\")"}
+{"unnormalised": "", "normalised": "    ନର୍ମାଲାଇଜ୍‌ଡ୍ ଗଣନା = ୦"}
+{"unnormalised": "", "normalised": "    କପି ହୋଇଥିବା ଗଣନା = ୦"}
+{"unnormalised": "", "normalised": "    ନର୍ମାଲାଇଜ୍‌ଡ୍ ହୋଇନଥିବା ଟିଏକ୍ସଟି ଫାଇଲଗୁଡ଼ିକ = []  # ଏହା ବର୍ତ୍ତମାନର ଲଜିକ୍ ସହିତ ଖାଲି ରହିବ, ଯେହେତୁ ସମସ୍ତ ପ୍ରକ୍ରିୟାକରଣ ହେଉଛି"}
+{"unnormalised": "", "normalised": "    for root, _, files in os.walk(source_folder):"}
+{"unnormalised": "", "normalised": "        ଅପେକ୍ଷିକ ପାଥ = os.path.relpath(root, source_folder)"}
+{"unnormalised": "", "normalised": "        ବର୍ତ୍ତମାନର ଡେଷ୍ଟ_ଡିଆର୍ = os.path.join(destination_folder, ଅପେକ୍ଷିକ ପାଥ)"}
+{"unnormalised": "", "normalised": "        os.makedirs(ବର୍ତ୍ତମାନର ଡେଷ୍ଟ_ଡିଆର୍, exist_ok=True)"}
+{"unnormalised": "", "normalised": "        for filename in files:"}
+{"unnormalised": "", "normalised": "            ସୋର୍ସ ଫାଇଲ୍ ପାଥ = os.path.join(root, filename)"}
+{"unnormalised": "", "normalised": "            ଡେଷ୍ଟ ଫାଇଲ୍ ପାଥ = os.path.join(ବର୍ତ୍ତମାନର ଡେଷ୍ଟ_ଡିଆର୍, filename)"}
+{"unnormalised": "", "normalised": "            ଯଦି ଫାଇଲ୍‌ନେମ୍‌ ଲୋୟର୍‌ରେ ଶେଷ ହୁଏ ('.txt') :"}
+{"unnormalised": "", "normalised": "                try:"}
+{"unnormalised": "", "normalised": "                    with open(ସୋର୍ସ ଫାଇଲ୍ ପାଥ, 'r', encoding='utf-8') as f:"}
+{"unnormalised": "", "normalised": "                        ବିଷୟବସ୍ତୁ = f.read()"}
+{"unnormalised": "", "normalised": "                    ନର୍ମାଲାଇଜ୍‌ଡ୍ ବିଷୟବସ୍ତୁ = normalize_text(ବିଷୟବସ୍ତୁ)"}
+{"unnormalised": "", "normalised": "                    with open(ଡେଷ୍ଟ ଫାଇଲ୍ ପାଥ, 'w', encoding='utf-8') as f:"}
+{"unnormalised": "", "normalised": "                        f.write(ନର୍ମାଲାଇଜ୍‌ଡ୍ ବିଷୟବସ୍ତୁ)"}
+{"unnormalised": "", "normalised": "                    ନର୍ମାଲାଇଜ୍‌ଡ୍ ଗଣନା += 1"}
+{"unnormalised": "", "normalised": "                    # ପ୍ରକୃତିଗତ କରିବା: ସୋର୍ସ_ଫାଇଲ୍_ପାଥ୍‌"}
+{"unnormalised": "", "normalised": "                except Exception as e:"}
+{"unnormalised": "", "normalised": "                    ପ୍ରକୃତିଗତ କରିବାକୁ ତ୍ରୁଟି ସୃଷ୍ଟି ହେଲା {ସୋର୍ସ ଫାଇଲ୍ ପାଥ}: {ଇ}"}
+{"unnormalised": "", "normalised": "                    ନର୍ମାଲାଇଜ୍‌ଡ୍ ହୋଇନଥିବା ଟିଏକ୍ସଟି ଫାଇଲଗୁଡ଼ିକ.append(ସୋର୍ସ ଫାଇଲ୍ ପାଥ୍‌)"}
+{"unnormalised": "", "normalised": "                    # ତ୍ରୁଟି ହେଲେ, ଇଚ୍ଛାଧୀନ ତ୍ରୁଟି ପରିଚାଳନା ଉପରେ ନିର୍ଭର କରି ସେହିପରି କପି କରନ୍ତୁ କିମ୍ବା ଖାଲି ଛାଡିଦିଅନ୍ତୁ |"}
+{"unnormalised": "", "normalised": "                    shutil.copy2(ସୋର୍ସ ଫାଇଲ୍ ପାଥ, ଡେଷ୍ଟ ଫାଇଲ୍ ପାଥ)"}
+{"unnormalised": "", "normalised": "            else:"}
+{"unnormalised": "", "normalised": "                shutil.copy2(ସୋର୍ସ ଫାଇଲ୍ ପାଥ, ଡେଷ୍ଟ ଫାଇଲ୍ ପାଥ)"}
+{"unnormalised": "", "normalised": "                କପି ହୋଇଥିବା ଗଣନା += 1"}
+{"unnormalised": "", "normalised": "                # (ଅପରିବର୍ତ୍ତିତ)କପି ହେଲା: ସୋର୍ସ_ଫାଇଲ୍_ପାଥ୍‌"}
+{"unnormalised": "", "normalised": "    print(f\"\\n--- ପ୍ରକ୍ରିୟାକରଣ ସାରାଂଶ ---\")"}
+{"unnormalised": "", "normalised": "    print(f\"ପାଠ୍ୟ ଫାଇଲଗୁଡ଼ିକ ପ୍ରକୃତିଗତ କରାଗଲା: {ନର୍ମାଲାଇଜ୍‌ଡ୍ ଗଣନା}\")"}
+{"unnormalised": "", "normalised": "    print(f\"ଅନ୍ୟ ଫାଇଲଗୁଡ଼ିକ କପି ହେଲା: {କପି ହୋଇଥିବା ଗଣନା}\")"}
+{"unnormalised": "", "normalised": "    ଯଦି ନର୍ମାଲାଇଜ୍‌ଡ୍ ହୋଇନଥିବା ଟିଏକ୍ସଟି ଫାଇଲ୍‌ଗୁଡ଼ିକ:"}
+{"unnormalised": "", "normalised": "        printf(\"\\nଫାଇଲଗୁଡ଼ିକ ଯାହା ତ୍ରୁଟି ହେତୁ ପ୍ରକୃତିଗତ ହୋଇନଥିଲା(ସେହିପରି କପି କରାଯାଇଛି):\")"}
+{"unnormalised": "", "normalised": "        for f in ନର୍ମାଲାଇଜ୍‌ଡ୍ ହୋଇନଥିବା ଟିଏକ୍ସଟି ଫାଇଲ୍‌ଗୁଡ଼ିକ:"}
+{"unnormalised": "", "normalised": "            printf(\"- {f}\")"}
+{"unnormalised": "", "normalised": "    else:"}
+{"unnormalised": "", "normalised": "        printf(\"ସମସ୍ତ .txt ଫାଇଲଗୁଡ଼ିକ ସଫଳତାର ସହିତ ପ୍ରକ୍ରିୟାକରଣ ହେଲା |\")"}
+{"unnormalised": "", "normalised": "# --- ମୁଖ୍ୟ କାର୍ଯ୍ୟକାରୀ ବ୍ଲକ୍ ---"}
+{"unnormalised": "", "normalised": "if __name__ == \"__main__\":"}
+{"unnormalised": "", "normalised": "    # ଡେମୋ ପାଇଁ ଏକ ଡମି ସୋର୍ସ ଫୋଲ୍ଡର ଏବଂ ଫାଇଲ ତିଆରି କରନ୍ତୁ |"}
+{"unnormalised": "", "normalised": "    # ଏକ ପ୍ରକୃତ ସିନାରିଓରେ, ତୁମେ ସୋର୍ସ ଫୋଲ୍ଡରକୁ ତୁମର ପ୍ରକୃତ ତଥ୍ୟକୁ ପଏଣ୍ଟ କରିବ |"}
+{"unnormalised": "", "normalised": "    ଡମି ସୋର୍ସ ଫୋଲ୍ଡର = 'dataset_raw'"}
+{"unnormalised": "", "normalised": "    ଡମି ଡେଷ୍ଟିନେସନ ଫୋଲ୍ଡର = 'dataset_normalized'"}
+{"unnormalised": "", "normalised": "    ଡମି ଟିଏକ୍ସଟି ଫାଇଲପାଥ = os.path.join(ଡମି ସୋର୍ସ ଫୋଲ୍ଡର, 'blog_posts', 'goa_addresses.txt')"}
+{"unnormalised": "", "normalised": "    ଡମି ଇମେଜ ଫାଇଲପାଥ = os.path.join(ଡମି ସୋର୍ସ ଫୋଲ୍ଡର, 'images', 'beach.jpg')"}
+{"unnormalised": "", "normalised": "    # ନିଶ୍ଚିତ କରନ୍ତୁ ଯେ ଡମି ସୋର୍ସ ଡିରେକ୍ଟୋରୀ ବିଦ୍ୟମାନ ଅଛି |"}
+{"unnormalised": "", "normalised": "    os.makedirs(os.path.dirname(ଡମି ଟିଏକ୍ସଟି ଫାଇଲପାଥ), exist"}

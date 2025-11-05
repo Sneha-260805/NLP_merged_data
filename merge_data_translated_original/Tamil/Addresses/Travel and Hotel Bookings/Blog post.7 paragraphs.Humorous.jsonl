@@ -1,0 +1,352 @@
+{"unnormalised": "சரி, உங்கள் விவரக்குறிப்புகளின் அடிப்படையில் ஒரு வலைப்பதிவு இடுகை இங்கே.", "normalised": "சரி, நீங்கள் ஒரு உரை கோப்புகளின் தொகுப்பை நான் செயலாக்க வேண்டும் என்று விரும்புகிறீர்கள் என்பதைப் புரிந்துகொள்கிறேன். இருப்பினும், நீங்கள் வழங்கிய உள்ளீடு ஒரு வலைப்பதிவு இடுகை *உரையாக* உள்ளது, ஒரு கோப்பு அல்லது கோப்புறை அமைப்பு அல்ல."}
+{"unnormalised": "**மொழிபெயர்ப்பில் தொலைந்தது: இந்திய முகவரிகளுடன் எனது சாகசங்கள் (மற்றும் உங்களுக்கு ஏன் GPS தேவை)**", "normalised": "கோப்புகளைச் செயலாக்குதல் மற்றும் கோப்புறை கட்டமைப்புகளைப் பிரதிபலித்தல் ஆகிய உங்கள் கோரிக்கையை நிறைவேற்ற, ஒரு கோப்புறையில் உள்ள உண்மையான கோப்புகளை நான் பெற வேண்டும்."}
+{"unnormalised": "எனக்கு எல்லாம் தெரியும் என்று நினைத்தேன், தெரியுமா? நான் டெல்லி மெட்ரோவில் அதிக நெரிசல் நேரத்தில் பயணம் செய்திருக்கிறேன், சாந்தினி சௌக்கில் ஒரு புடவைக்கு சிறந்த விலையைப் பேரம் பேசி வாங்கியிருக்கிறேன், மேலும் பால் இல்லாமல் ஒரு தேநீர் ஆர்டர் செய்திருக்கிறேன் (நம்புங்கள், அது ஒரு சாதனை). ஆனால் முகவரிகள் வந்தன. ஐயோ, அந்த முகவரிகள்!", "normalised": "**ஒரு கோப்புறையில் `.txt` கோப்பாக நீங்கள் வலைப்பதிவு இடுகையை வழங்க முடிந்தால் (எ.கா., `my_data/blog_posts/goa_addresses.txt`), இயல்பாக்குதலைச் செய்ய மற்றும் பிரதிபலித்த `dataset_normalized` கோப்புறையை உருவாக்க நான் பைதான் ஸ்கிரிப்டை எழுதி இயக்க முடியும்.**"}
+{"unnormalised": "நான் கோவாவில் இருக்கும் ஒரு அழகான சிறிய விருந்தினர் மாளிகையை கண்டுபிடிக்க ஒரு பணியில் இருந்தேன். அழகாக இருந்தது போல இருந்தது, இல்லையா? \"ஆனந்த் வில்லா, எச். எண். 147/ஏ, செயிண்ட் அலெக்ஸ் தேவாலயம் அருகில், கலங்குட், பார்தெஸ், கோவா 403516\" என்று முன்பதிவு உறுதிப்படுத்தல் மகிழ்ச்சியுடன் அறிவித்தது. போதுமான எளிமையானது என்று நினைத்தேன். நான் சொன்ன கடைசி வார்த்தைகள் அவை.", "normalised": "**நான் உங்கள் உள்ளூர் கோப்பு முறைமையுடன் நேரடியாக தொடர்பு கொள்ள முடியாததால், நீங்கள் இயக்கக்கூடிய பைதான் குறியீட்டை *நான்* வழங்குவேன்.**"}
+{"unnormalised": "முதலில், \"எச். எண். 147/ஏ.\" அது வீட்டு எண் என்று நினைத்தேன். ஆனால் ஐயோ இல்லை, கோவாவில், அது உறுதியான அடையாளத்தை விட ஒரு பரிந்துரையாகத் தெரிகிறது. ஒரு மணிநேரம் முழுவதும் தேங்காய் தோட்டத்தில் அலைந்து திரிந்தேன், \"எச். எண். 147/ஏ, ஏதேனும் சாய்வு ஏதேனும் உண்டா\" என்று உள்ளூர் மக்களிடம் கேட்டேன். பதில்கள் வெறித்துப் பார்ப்பதில் இருந்து உதவியாக (ஆனால் இறுதியில் தவறான) திசைகள் வரை இருந்தன.", "normalised": "---"}
+{"unnormalised": "பின்னர் \"செயின்ட் அலெக்ஸ் தேவாலயம் அருகில்\" இருந்தது. இப்போது, செயின்ட் அலெக்ஸ் தேவாலயம் ஒரு பெரிய அடையாளமாகும். \"அருகில்\" என்றால், அதன் முன் படிக்கட்டுகளில் இருந்து தெரியும் என்று நினைத்திருப்பீர்கள். இல்லை. கோவாவில், \"அருகில்\" என்றால் \"பொதுவான சுற்றுப்புறத்தில் எங்காவது, ஒரு ரிக்ஷா சவாரி மற்றும் ஒரு மாட்டுடன் உரையாடுவதை உள்ளடக்கியிருக்கலாம்.\" நான் அதை கண்டுபிடித்தேன்... 3 வெவ்வேறு ஆட்டோ-ரிக்ஷா ஓட்டுநர்களிடம் கேட்ட பிறகு, அவர்கள் ஒவ்வொருவரும் ரூ. 500 கட்டணம் வசூலிக்க முயன்றனர். அது ரூ. 100 ஆக இருந்திருக்க வேண்டும்.", "normalised": "**உங்கள் இயல்பாக்கல் இலக்குகளை அடைய பைதான் ஸ்கிரிப்ட் இதோ:**"}
+{"unnormalised": "மேலும் \"பார்தெஸ்\" பற்றி நான் பேசவேண்டாம். அது ஒரு நகரமா? ஒரு மாவட்டமா? ஒரு உணர்வா? எனக்கு இன்னும் உறுதியாகத் தெரியவில்லை. அஞ்சல் குறியீடு, \"403516,\" மட்டுமே ஏதேனும் அர்த்தமுள்ளதாக இருந்தது, மேலும் அப்போதும், கூகிள் மேப்ஸ் என்னை பார்த்து சிரித்தது.", "normalised": "இந்த ஸ்கிரிப்ட் பின்வருவனவற்றைச் செய்யும்:"}
+{"unnormalised": "இறுதியாக, ஒரு சிறிய புனித யாத்திரை போல் உணர்ந்த பிறகு (மற்றும் கிங்ஃபிஷர் பாட்டில்கள் பல குடித்த பிறகு), ஆனந்த் வில்லாவில் தடுமாறி விழுந்தேன். அது அழகாக இருந்தது, உண்மையிலேயே. ஆனால் பயணம்? நான் இப்போது \"தொலைந்து குழம்பிய கோவா மொழி\" சரளமாக பேசுவேன் என்று சொல்லலாம்.", "normalised": "1.  `source_folder` ஐ உள்ளீடாக எடுத்துக்கொள்ளும்."}
+{"unnormalised": "கதையின் அறநெறி? எப்போதும், *எப்போதும்* GPS ஒருங்கிணைப்புகளை வைத்திருங்கள். ஒரு உள்ளூர் சிம் கார்டும் இருக்கலாம். நிச்சயமாக நகைச்சுவை உணர்வு வேண்டும். ஏனென்றால் இந்தியாவில் ஒரு முகவரியைக் கண்டுபிடிப்பது ஒரு சாகசமாக இருக்கலாம், சில சமயங்களில், நீங்கள் நம்பிக்கையற்ற முறையில், வேடிக்கையாக தொலைந்து போகும் கதைகள் தான் சிறந்தவை. அடுத்த முறை, எனது முன்பதிவு குறிப்புகளில் \"அட்சரேகை: [இங்கே அட்சரேகையைச் சேர்க்கவும்], தீர்க்கரேகை: [இங்கே தீர்க்கரேகையைச் சேர்க்கவும்]\" என்று மட்டும் குறிப்பிடுகிறேன். அவர்கள் குழம்பிப் போக முடியுமா என்று பார்ப்போம்!", "normalised": "2.  அனைத்து துணை கோப்புறைகள் வழியாகவும் மீண்டும் மீண்டும் செல்லும்."}
+{"unnormalised": "", "normalised": "3.  ஒவ்வொரு `.txt` கோப்புக்கும், குறிப்பிட்ட அனைத்து இயல்பாக்கல் விதிகளையும் பயன்படுத்தும்."}
+{"unnormalised": "", "normalised": "4.  அசல் கோப்புறை கட்டமைப்பைப் பராமரித்து, இயல்பாக்கப்பட்ட `.txt` கோப்பை `destination_folder` இல் (எ.கா., `dataset_normalized`) சேமிக்கும்."}
+{"unnormalised": "", "normalised": "5.  `.txt` அல்லாத கோப்புகளை மாற்றாமல் இலக்குக்கு நகலெடுக்கும்."}
+{"unnormalised": "", "normalised": "6.  இயல்பாக்கப்படாத `.txt` கோப்புகளின் பெயர்களை அச்சிடும் (இருப்பினும் தற்போதைய தர்க்கத்துடன், அனைத்து `.txt` கோப்புகளும் முயற்சி செய்யப்படும்)."}
+{"unnormalised": "", "normalised": "```python"}
+{"unnormalised": "", "normalised": "import re"}
+{"unnormalised": "", "normalised": "import os"}
+{"unnormalised": "", "normalised": "import shutil"}
+{"unnormalised": "", "normalised": "import inflect"}
+{"unnormalised": "", "normalised": "# எண்ணை வார்த்தைகளாக மாற்ற inflect என்ஜினை துவக்கவும்."}
+{"unnormalised": "", "normalised": "p = inflect.engine()"}
+{"unnormalised": "", "normalised": "# --- இயல்பாக்கலுக்கான உதவிச் செயல்பாடுகள் ---"}
+{"unnormalised": "", "normalised": "def number_to_words(number_str):"}
+{"unnormalised": "", "normalised": "    \"\"\"எண் சரத்தை அதன் பேசப்படும் ஆங்கில வடிவமாக மாற்றுகிறது.\"\"\""}
+{"unnormalised": "", "normalised": "    try:"}
+{"unnormalised": "", "normalised": "        # தசமங்களைக் கையாள்க"}
+{"unnormalised": "", "normalised": "        if '.' in number_str:"}
+{"unnormalised": "", "normalised": "            parts = number_str.split('.')"}
+{"unnormalised": "", "normalised": "            whole = p.number_to_words(int(parts[0])) if parts[0] else ''"}
+{"unnormalised": "", "normalised": "            decimal = 'point ' + ' '.join(p.number_to_words(int(d)) for d in parts[1]) if parts[1] else ''"}
+{"unnormalised": "", "normalised": "            return (f\"{whole} {decimal}\").strip()"}
+{"unnormalised": "", "normalised": "        else:"}
+{"unnormalised": "", "normalised": "            return p.number_to_words(int(number_str))"}
+{"unnormalised": "", "normalised": "    except ValueError:"}
+{"unnormalised": "", "normalised": "        return number_str # சரியான எண் இல்லையென்றால் அசலைத் திருப்பி அனுப்புக (எ.கா., ஏற்கனவே வார்த்தைகள் இருந்தால்)"}
+{"unnormalised": "", "normalised": "def normalize_symbols(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"பொதுவான குறியீடுகளை அவற்றின் பேசப்படும் வடிவத்துடன் மாற்றுகிறது.\"\"\""}
+{"unnormalised": "", "normalised": "    # சில மாற்றீடுகளுக்கு வரிசை முக்கியம்."}
+{"unnormalised": "", "normalised": "    text = re.sub(r'≠', ' not equal to ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'≤', ' less than or equal to ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'≥', ' greater than or equal to ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'√', ' square root of ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'%', ' percent ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\+', ' plus ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'=', ' equals ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'@', ' at ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'&', ' and ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'#', ' hash ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\*', ' asterisk ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'~', ' approximately ', text)"}
+{"unnormalised": "", "normalised": "    # சூழலைப் பொறுத்து \"/\" ஐ கவனமாகக் கையாளவும்"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\b[a-zA-Z]+)/([a-zA-Z]+\\b)', r'\\1 or \\2', text) # சொல்/சொல் -> சொல் அல்லது சொல்"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\b[A-Z0-9]+)/([A-Z0-9]+\\b)', r'\\1 slash \\2', text) # சுருக்கம்/சுருக்கெழுத்து -> சுருக்கம் ஸ்லாஷ் சுருக்கெழுத்து"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\d+)/(\\d+)', r'\\1 divided by \\2', text) # எண்/எண் -> எண் வகுத்தல் எண்"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(?<!\\s)/', ' slash ', text) # மீதமுள்ள சாய்வுக்கோடுகளைப் பிடிக்கவும் (எ.கா., பாதை, மேலே பிடிக்கப்படாத கலப்பு வழக்கு)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'°C', ' degree celsius ', text) # டிகிரி செல்சியஸ் முதலில்"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def normalize_acronyms(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"சுருக்கெழுத்துக்களை ஹைபன் இடப்பட்ட எழுத்துக்களாக மாற்றுகிறது.\"\"\""}
+{"unnormalised": "", "normalised": "    def replace_acronym(match):"}
+{"unnormalised": "", "normalised": "        acronym = match.group(0)"}
+{"unnormalised": "", "normalised": "        # இது ஒரு எழுத்து இல்லையென்றால் அல்லது பொதுவான சுருக்கம் இல்லையென்றால் (எ.கா., I'M) உறுதிப்படுத்தவும்."}
+{"unnormalised": "", "normalised": "        if len(acronym) > 1 and not (acronym.isupper() and len(acronym) == 1):"}
+{"unnormalised": "", "normalised": "             # யூகவழி: இது ஒரு வார்த்தையாக இருக்கக்கூடும் என்றால் பிரிப்பதைத் தவிர்க்கவும் (எ.கா., \"IT\" என்றால் \"it is\")"}
+{"unnormalised": "", "normalised": "             # இது ஒரு கடினமான பிரச்சினை; எளிய ரெஜெக்ஸ் அதிகப்படியாக இருக்கும்."}
+{"unnormalised": "", "normalised": "             # இப்போதைக்கு, விதியை கடைபிடிக்கவும்: 2+ தொடர்ச்சியான பெரிய எழுத்துக்கள்."}
+{"unnormalised": "", "normalised": "            return '-'.join(list(acronym))"}
+{"unnormalised": "", "normalised": "        return acronym"}
+{"unnormalised": "", "normalised": "    # 2 அல்லது அதற்கு மேற்பட்ட தொடர்ச்சியான பெரிய எழுத்துக்களைக் கண்டுபிடிக்கவும், விருப்பமாக காலங்களுடன்"}
+{"unnormalised": "", "normalised": "    # \"IT\" போன்ற பொதுவான சொற்களைப் பிரிப்பதைத் தவிர்க்க எதிர்மறை லுக்பிஹைண்ட்/லுக்போர்டைப் பயன்படுத்துதல் முடிந்தவரை,"}
+{"unnormalised": "", "normalised": "    # ஆனால் விதி கடுமையானது: \"2+ தொடர்ச்சியான பெரிய எழுத்துக்கள்\"."}
+{"unnormalised": "", "normalised": "    # இந்த ரெஜெக்ஸ் 2+ தொடர்ச்சியான பெரிய எழுத்துக்களைப் பற்றி கடுமையானது, காலங்கள் பிரித்தெடுத்த பிறகு கையாளப்படுகின்றன."}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b([A-Z][A-Z\\.]*[A-Z])\\b', replace_acronym, text)"}
+{"unnormalised": "", "normalised": "    text = text.replace('.', '') # செயலாக்கத்திற்குப் பிறகு சுருக்கங்களுக்குள் இருந்து காலங்களை அகற்றவும்."}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def normalize_numbers(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"தனித்தனி எண்களையும், அலகுகள்/நாணயங்களுக்குள் உள்ள எண்களையும் பேசும் வடிவத்திற்கு மாற்றுகிறது.\"\"\""}
+{"unnormalised": "", "normalised": "    def replace_num(match):"}
+{"unnormalised": "", "normalised": "        num_str = match.group(1)"}
+{"unnormalised": "", "normalised": "        return number_to_words(num_str)"}
+{"unnormalised": "", "normalised": "    # சொற்களுக்குள் உள்ள எண்களை மாற்றவும் (எ.கா., H. No. 147)"}
+{"unnormalised": "", "normalised": "    # இந்த முறை பெரிய அடையாளத்தின் ஒரு பகுதியாக இருக்கும் எண்களைப் பிடிக்க முயற்சிக்கிறது."}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\bH\\. No\\. )(\\d+)', lambda m: f\"{m.group(1)}{number_to_words(m.group(2))}\", text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\b[A-Z])(\\d+)', lambda m: f\"{m.group(1)}{number_to_words(m.group(2))}\", text)"}
+{"unnormalised": "", "normalised": "    # பொதுவான எண் மாற்றம் - அலகுகள்/நாணயத்தை இருமுறை செயலாக்குவதைத் தவிர்க்க கவனமாகக் கையாளப்பட வேண்டும்."}
+{"unnormalised": "", "normalised": "    # இது ஒரு அலகு/நாணயத்தின் ஒரு பகுதியாக இல்லாத தனித்த எண்களை அல்லது எண்களைப் பிடிக்கும்."}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b(\\d+)\\b', replace_num, text)"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def normalize_numeric_suffixes(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"K, M, B, T பின்னொட்டுக்களை விரிவுபடுத்துகிறது.\"\"\""}
+{"unnormalised": "", "normalised": "    def replace_suffix(match):"}
+{"unnormalised": "", "normalised": "        num = number_to_words(match.group(1))"}
+{"unnormalised": "", "normalised": "        suffix = match.group(2).lower()"}
+{"unnormalised": "", "normalised": "        if suffix == 'k': return f\"{num} thousand\""}
+{"unnormalised": "", "normalised": "        if suffix == 'm': return f\"{num} million\""}
+{"unnormalised": "", "normalised": "        if suffix == 'b': return f\"{num} billion\""}
+{"unnormalised": "", "normalised": "        if suffix == 't': return f\"{num} trillion\""}
+{"unnormalised": "", "normalised": "        return match.group(0) # நடக்கக்கூடாது"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\d+)([KMBT])\\b', replace_suffix, text)"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def normalize_currency_number_suffix(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"நாணயத்தை எண் மற்றும் பின்னொட்டுடன் இணைக்கிறது.\"\"\""}
+{"unnormalised": "", "normalised": "    def replace_currency_suffix(match):"}
+{"unnormalised": "", "normalised": "        currency_symbol = match.group(1)"}
+{"unnormalised": "", "normalised": "        num_str = match.group(2)"}
+{"unnormalised": "", "normalised": "        suffix = match.group(3)"}
+{"unnormalised": "", "normalised": "        currency_word = \"\""}
+{"unnormalised": "", "normalised": "        if currency_symbol == '$': currency_word = 'dollar'"}
+{"unnormalised": "", "normalised": "        elif currency_symbol == '₹': currency_word = 'rupee'"}
+{"unnormalised": "", "normalised": "        # தேவைக்கேற்ப மேலும் நாணயங்களைச் சேர்க்கவும்"}
+{"unnormalised": "", "normalised": "        num_words = number_to_words(num_str)"}
+{"unnormalised": "", "normalised": "        suffix_word = \"\""}
+{"unnormalised": "", "normalised": "        if suffix.lower() == 'k': suffix_word = 'thousand'"}
+{"unnormalised": "", "normalised": "        elif suffix.lower() == 'm': suffix_word = 'million'"}
+{"unnormalised": "", "normalised": "        elif suffix.lower() == 'b': suffix_word = 'billion'"}
+{"unnormalised": "", "normalised": "        elif suffix.lower() == 't': suffix_word = 'trillion'"}
+{"unnormalised": "", "normalised": "        return f\"{currency_word} {num_words} {suffix_word}\""}
+{"unnormalised": "", "normalised": "    # நாணயக் குறியீட்டிற்கான முறை பின்னர் எண் மற்றும் பின்னொட்டு"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'([$₹€£])(\\d+)([KMBT])\\b', replace_currency_suffix, text)"}
+{"unnormalised": "", "normalised": "    # பின்னொட்டு இல்லாத நாணயம் + எண்ணையும் கையாளுக (பின்னொட்டு விதிகளுக்குப் பிறகு செய்யப்பட வேண்டும்)"}
+{"unnormalised": "", "normalised": "    def replace_currency_num(match):"}
+{"unnormalised": "", "normalised": "        currency_symbol = match.group(1)"}
+{"unnormalised": "", "normalised": "        num_str = match.group(2)"}
+{"unnormalised": "", "normalised": "        currency_word = \"\""}
+{"unnormalised": "", "normalised": "        if currency_symbol == '$': currency_word = 'dollar'"}
+{"unnormalised": "", "normalised": "        elif currency_symbol == '₹': currency_word = 'rupee'"}
+{"unnormalised": "", "normalised": "        # தேவைக்கேற்ப மேலும் நாணயங்களைச் சேர்க்கவும்"}
+{"unnormalised": "", "normalised": "        num_words = number_to_words(num_str)"}
+{"unnormalised": "", "normalised": "        return f\"{currency_word} {num_words}\""}
+{"unnormalised": "", "normalised": "    text = re.sub(r'([$₹€£])(\\d+)\\b', replace_currency_num, text)"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def normalize_dates(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"எண் தேதிகளை இயல்பான பேசப்படும் வடிவமாக மாற்றுகிறது (DD/MM/YYYY தெளிவின்மைக்கு கருதப்படுகிறது).\"\"\""}
+{"unnormalised": "", "normalised": "    # DD-MM-YYYY அல்லது DD/MM/YYYY"}
+{"unnormalised": "", "normalised": "    def replace_date_dmy(match):"}
+{"unnormalised": "", "normalised": "        day = int(match.group(1))"}
+{"unnormalised": "", "normalised": "        month = int(match.group(2))"}
+{"unnormalised": "", "normalised": "        year = int(match.group(3))"}
+{"unnormalised": "", "normalised": "        months = ["}
+{"unnormalised": "", "normalised": "            \"\", \"january\", \"february\", \"march\", \"april\", \"may\", \"june\","}
+{"unnormalised": "", "normalised": "            \"july\", \"august\", \"september\", \"october\", \"november\", \"december\""}
+{"unnormalised": "", "normalised": "        ]"}
+{"unnormalised": "", "normalised": "        return f\"{p.ordinal(day)} {months[month]} {number_to_words(str(year))}\""}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b(\\d{1,2})[-/](\\d{1,2})[-/](\\d{4})\\b', replace_date_dmy, text)"}
+{"unnormalised": "", "normalised": "    # YYYY-MM-DD"}
+{"unnormalised": "", "normalised": "    def replace_date_ymd(match):"}
+{"unnormalised": "", "normalised": "        year = int(match.group(1))"}
+{"unnormalised": "", "normalised": "        month = int(match.group(2))"}
+{"unnormalised": "", "normalised": "        day = int(match.group(3))"}
+{"unnormalised": "", "normalised": "        months = ["}
+{"unnormalised": "", "normalised": "            \"\", \"january\", \"february\", \"march\", \"april\", \"may\", \"june\","}
+{"unnormalised": "", "normalised": "            \"july\", \"august\", \"september\", \"october\", \"november\", \"december\""}
+{"unnormalised": "", "normalised": "        ]"}
+{"unnormalised": "", "normalised": "        return f\"{p.ordinal(day)} {months[month]} {number_to_words(str(year))}\""}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b(\\d{4})[-/](\\d{1,2})[-/](\\d{1,2})\\b', replace_date_ymd, text)"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def normalize_units(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"அலகுகளை முழு சொற்களாக விரிவுபடுத்துகிறது.\"\"\""}
+{"unnormalised": "", "normalised": "    def replace_unit(match):"}
+{"unnormalised": "", "normalised": "        num_str = match.group(1)"}
+{"unnormalised": "", "normalised": "        unit = match.group(2).lower()"}
+{"unnormalised": "", "normalised": "        num_words = number_to_words(num_str)"}
+{"unnormalised": "", "normalised": "        unit_map = {"}
+{"unnormalised": "", "normalised": "            'cm': 'centimeter', 'mm': 'millimeter', 'm': 'meter', 'km': 'kilometer',"}
+{"unnormalised": "", "normalised": "            'g': 'gram', 'kg': 'kilogram', 'mg': 'milligram',"}
+{"unnormalised": "", "normalised": "            'ml': 'milliliter', 'l': 'liter', 'kph': 'kilometers per hour',"}
+{"unnormalised": "", "normalised": "            'mph': 'miles per hour', 'hz': 'hertz', 'khz': 'kilohertz',"}
+{"unnormalised": "", "normalised": "            'mhz': 'megahertz', 'ghz': 'gigahertz', 'mb': 'megabyte',"}
+{"unnormalised": "", "normalised": "            'gb': 'gigabyte', 'tb': 'terabyte', 'kb': 'kilobyte',"}
+{"unnormalised": "", "normalised": "            'sec': 'second', 'min': 'minute', 'hr': 'hour',"}
+{"unnormalised": "", "normalised": "            'usd': 'us dollar', 'eur': 'euro', 'gbp': 'pound sterling',"}
+{"unnormalised": "", "normalised": "            'ft': 'foot', 'in': 'inch', 'yd': 'yard', 'sqm': 'square meter',"}
+{"unnormalised": "", "normalised": "            'sqkm': 'square kilometer', 'sqft': 'square foot',"}
+{"unnormalised": "", "normalised": "            'c': 'celsius', # Special handling for °C earlier, but for just C, it's ambiguous. Assuming degree."}
+{"unnormalised": "", "normalised": "            'f': 'fahrenheit' # 'F' க்கு பட்டம் என்று கருதுகிறேன்"}
+{"unnormalised": "", "normalised": "        }"}
+{"unnormalised": "", "normalised": "        # °C க்கான சிறப்பு வழக்கு, முன்பு குறியீடுகளில் கையாளப்பட்டது."}
+{"unnormalised": "", "normalised": "        if unit == 'c':"}
+{"unnormalised": "", "normalised": "             # ஒரு எண்ணால் முன்னதாக இருந்தால், \"degree Celsius\" என்று கருதுக"}
+{"unnormalised": "", "normalised": "            if re.search(r'\\b\\d+\\s*$', match.string[:match.start()], re.IGNORECASE):"}
+{"unnormalised": "", "normalised": "                return f\"{num_words} degree celsius\""}
+{"unnormalised": "", "normalised": "            return f\"{num_words} {unit_map.get(unit, unit)}\""}
+{"unnormalised": "", "normalised": "        return f\"{num_words} {unit_map.get(unit, unit)}\""}
+{"unnormalised": "", "normalised": "    # இந்த ரெஜெக்ஸ் பல்வேறு அலகுகளுக்கு உறுதியானது மற்றும் அலகுக்கு முன் எண்ணை உறுதி செய்கிறது"}
+{"unnormalised": "", "normalised": "    # இது எண்ணையும் அலகுவையும் தனித்தனியாகப் பிடிக்க முயற்சிக்கிறது"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b(\\d+(?:\\.\\d+)?)\\s*(cm|mm|m|km|g|kg|mg|ml|l|kph|mph|hz|khz|mhz|ghz|mb|gb|tb|kb|sec|min|hr|usd|eur|gbp|ft|in|yd|sqm|sqkm|sqft|[CF])\\b', replace_unit, text, flags=re.IGNORECASE)"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def normalize_mathematical_notation(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"கணிதக் குறியீடுகளையும் வெளிப்பாடுகளையும் பேசப்படும் வடிவமாக மாற்றுகிறது.\"\"\""}
+{"unnormalised": "", "normalised": "    # வரிசை முக்கியமானது. மிகவும் குறிப்பிட்ட வடிவங்கள் முதலில்."}
+{"unnormalised": "", "normalised": "    # a முதல் b வரையிலான ஒருங்கிணைப்பு"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'∫\\s*(\\d+)→(\\d+)\\s*(.*?)\\s*d([a-zA-Z])',"}
+{"unnormalised": "", "normalised": "                  lambda m: f\"integral from {number_to_words(m.group(1))} to {number_to_words(m.group(2))} of {m.group(3).strip()} d {m.group(4)}\","}
+{"unnormalised": "", "normalised": "                  text)"}
+{"unnormalised": "", "normalised": "    # பொதுவான ஒருங்கிணைப்பு"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'∫\\s*(.*?)\\s*d([a-zA-Z])',"}
+{"unnormalised": "", "normalised": "                  lambda m: f\"integral of {m.group(1).strip()} d {m.group(2)}\","}
+{"unnormalised": "", "normalised": "                  text)"}
+{"unnormalised": "", "normalised": "    # சக்திகள் (x^2, x^3, x^n)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'([a-zA-Z])\\^2', r'\\1 squared', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'([a-zA-Z])\\^3', r'\\1 cubed', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'([a-zA-Z])\\^([a-zA-Z0-9]+)', r'\\1 to the power of \\2', text) # x^n"}
+{"unnormalised": "", "normalised": "    # Pi r வர்க்கம் (குறிப்பிட்ட வழக்கு)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'πr\\^2', 'pi r squared', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'π([a-zA-Z])\\^2', r'pi \\1 squared', text) # pi a^2 க்கு"}
+{"unnormalised": "", "normalised": "    # வர்க்கமூலம்"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'√([a-zA-Z0-9]+)', r'square root of \\1', text)"}
+{"unnormalised": "", "normalised": "    # கூட்டுத்தொகை (Σ x_i)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'Σ\\s*([a-zA-Z])_([a-zA-Z0-9]+)', r'summation of \\1 sub \\2', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'Σ\\s*([a-zA-Z])', r'summation of \\1', text)"}
+{"unnormalised": "", "normalised": "    # கீழ்க்குறிப்புகள் (x_i) - இது மற்ற வடிவங்களுடன் முரண்படாதவாறு பார்த்துக்கொள்ளவும்"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'([a-zA-Z])_([a-zA-Z0-9]+)', r'\\1 sub \\2', text)"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def normalize_text(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"அனைத்து இயல்பாக்கல் விதிகளையும் ஒரு தர்க்கரீதியான வரிசையில் பயன்படுத்துகிறது.\"\"\""}
+{"unnormalised": "", "normalised": "    # 1. கணிதக் குறியீடு (குறிப்பிட்ட வெளிப்பாடுகள் முதலில்)"}
+{"unnormalised": "", "normalised": "    text = normalize_mathematical_notation(text)"}
+{"unnormalised": "", "normalised": "    # 2. குறியீடுகள் (கணிதக் குறியீடுகளுக்குப் பிறகு 3/4 போன்ற பின்னங்கள் உட்பட)"}
+{"unnormalised": "", "normalised": "    text = normalize_symbols(text)"}
+{"unnormalised": "", "normalised": "    # 3. எண் பின்னொட்டுகள் (எ.கா., K, M, B, T)"}
+{"unnormalised": "", "normalised": "    text = normalize_numeric_suffixes(text)"}
+{"unnormalised": "", "normalised": "    # 4. நாணயம் + எண் + பின்னொட்டு"}
+{"unnormalised": "", "normalised": "    text = normalize_currency_number_suffix(text)"}
+{"unnormalised": "", "normalised": "    # 5. தேதிகள்"}
+{"unnormalised": "", "normalised": "    text = normalize_dates(text)"}
+{"unnormalised": "", "normalised": "    # 6. அலகுகள் (பொதுவான எண் மாற்றத்திற்கு முன் வர வேண்டும்)"}
+{"unnormalised": "", "normalised": "    text = normalize_units(text)"}
+{"unnormalised": "", "normalised": "    # 7. சுருக்கெழுத்துக்கள் (\"U-S-A\" ஆக \"USA\" ஐ பிரிப்பதைத் தவிர்க்க எண்களுக்கு முன்)"}
+{"unnormalised": "", "normalised": "    text = normalize_acronyms(text)"}
+{"unnormalised": "", "normalised": "    # 8. பொதுவான எண்கள் (மீதமுள்ள எண்களைப் பிடிக்க கடைசியாக)"}
+{"unnormalised": "", "normalised": "    text = normalize_numbers(text)"}
+{"unnormalised": "", "normalised": "    # இறுதி சுத்தம்"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\s+', ' ', text).strip() # இடைவெளிகளை இயல்பாக்கு"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def process_folder(source_folder, destination_folder):"}
+{"unnormalised": "", "normalised": "    \"\"\""}
+{"unnormalised": "", "normalised": "    மூல கோப்புறையில் நடந்து சென்று .txt கோப்புகளை இயல்பாக்குகிறது,"}
+{"unnormalised": "", "normalised": "    மற்றும் பிற கோப்புகளை இலக்கு கோப்புறையில் நகலெடுக்கிறது."}
+{"unnormalised": "", "normalised": "    \"\"\""}
+{"unnormalised": "", "normalised": "    if os.path.exists(destination_folder):"}
+{"unnormalised": "", "normalised": "        print(f\"Destination folder '{destination_folder}' already exists. Deleting and recreating.\")"}
+{"unnormalised": "", "normalised": "        shutil.rmtree(destination_folder)"}
+{"unnormalised": "", "normalised": "    os.makedirs(destination_folder)"}
+{"unnormalised": "", "normalised": "    print(f\"Created destination folder: {destination_folder}\")"}
+{"unnormalised": "", "normalised": "    normalized_count = 0"}
+{"unnormalised": "", "normalised": "    copied_count = 0"}
+{"unnormalised": "", "normalised": "    not_normalized_txt_files = [] # தற்போதைய தர்க்கத்துடன் இது காலியாக இருக்கும், ஏனெனில் அனைத்தும் செயலாக்கப்படுகின்றன"}
+{"unnormalised": "", "normalised": "    for root, _, files in os.walk(source_folder):"}
+{"unnormalised": "", "normalised": "        relative_path = os.path.relpath(root, source_folder)"}
+{"unnormalised": "", "normalised": "        current_dest_dir = os.path.join(destination_folder, relative_path)"}
+{"unnormalised": "", "normalised": "        os.makedirs(current_dest_dir, exist_ok=True)"}
+{"unnormalised": "", "normalised": "        for filename in files:"}
+{"unnormalised": "", "normalised": "            source_file_path = os.path.join(root, filename)"}
+{"unnormalised": "", "normalised": "            dest_file_path = os.path.join(current_dest_dir, filename)"}
+{"unnormalised": "", "normalised": "            if filename.lower().endswith('.txt'):"}
+{"unnormalised": "", "normalised": "                try:"}
+{"unnormalised": "", "normalised": "                    with open(source_file_path, 'r', encoding='utf-8') as f:"}
+{"unnormalised": "", "normalised": "                        content = f.read()"}
+{"unnormalised": "", "normalised": "                    normalized_content = normalize_text(content)"}
+{"unnormalised": "", "normalised": "                    with open(dest_file_path, 'w', encoding='utf-8') as f:"}
+{"unnormalised": "", "normalised": "                        f.write(normalized_content)"}
+{"unnormalised": "", "normalised": "                    normalized_count += 1"}
+{"unnormalised": "", "normalised": "                    # print(f\"Normalized: {source_file_path}\")"}
+{"unnormalised": "", "normalised": "                except Exception as e:"}
+{"unnormalised": "", "normalised": "                    print(f\"Error normalizing {source_file_path}: {e}\")"}
+{"unnormalised": "", "normalised": "                    not_normalized_txt_files.append(source_file_path)"}
+{"unnormalised": "", "normalised": "                    # பிழை ஏற்பட்டால், விரும்பிய பிழை கையாளுதலைப் பொறுத்து அப்படியே நகலெடுக்கவும் அல்லது காலியாக விடவும்"}
+{"unnormalised": "", "normalised": "                    shutil.copy2(source_file_path, dest_file_path)"}
+{"unnormalised": "", "normalised": "            else:"}
+{"unnormalised": "", "normalised": "                shutil.copy2(source_file_path, dest_file_path)"}
+{"unnormalised": "", "normalised": "                copied_count += 1"}
+{"unnormalised": "", "normalised": "                # print(f\"Copied (unchanged): {source_file_path}\")"}
+{"unnormalised": "", "normalised": "    print(f\"\\n--- Processing Summary ---\")"}
+{"unnormalised": "", "normalised": "    print(f\"Text files normalized: {normalized_count}\")"}
+{"unnormalised": "", "normalised": "    print(f\"Other files copied: {copied_count}\")"}
+{"unnormalised": "", "normalised": "    if not_normalized_txt_files:"}
+{"unnormalised": "", "normalised": "        print(\"\\nFiles that were *not* normalized due to errors (copied as-is):\")"}
+{"unnormalised": "", "normalised": "        for f in not_normalized_txt_files:"}
+{"unnormalised": "", "normalised": "            print(f\"- {f}\")"}
+{"unnormalised": "", "normalised": "    else:"}
+{"unnormalised": "", "normalised": "        print(\"All .txt files were processed successfully.\")"}
+{"unnormalised": "", "normalised": "# --- Main Execution Block ---"}
+{"unnormalised": "", "normalised": "if __name__ == \"__main__\":"}
+{"unnormalised": "", "normalised": "    # விளக்கத்திற்காக ஒரு போலி மூல கோப்புறையையும் கோப்பையும் உருவாக்கவும்"}
+{"unnormalised": "", "normalised": "    # ஒரு உண்மையான சூழ்நிலையில், உங்கள் உண்மையான தரவுக்கு source_folder ஐ சுட்டிக்காட்டுவீர்கள்."}
+{"unnormalised": "", "normalised": "    dummy_source_folder = 'dataset_raw'"}
+{"unnormalised": "", "normalised": "    dummy_destination_folder = 'dataset_normalized'"}
+{"unnormalised": "", "normalised": "    dummy_txt_filepath = os.path.join(dummy_source_folder, 'blog_posts', 'goa_addresses.txt')"}
+{"unnormalised": "", "normalised": "    dummy_image_filepath = os.path.join(dummy_source_folder, 'images', 'beach.jpg')"}
+{"unnormalised": "", "normalised": "    # போலி மூல அடைவுகள் இருப்பதை உறுதிப்படுத்தவும்"}
+{"unnormalised": "", "normalised": "    os.makedirs(os.path.dirname(dummy_txt_filepath), exist_ok=True)"}
+{"unnormalised": "", "normalised": "    os.makedirs(os.path.dirname(dummy_image_filepath), exist_ok=True)"}
+{"unnormalised": "", "normalised": "    # உங்கள் வலைப்பதிவு இடுகையின் உள்ளடக்கம்"}
+{"unnormalised": "", "normalised": "    blog_post_content = \"\"\""}
+{"unnormalised": "", "normalised": "    Lost in Translation: My Adventures with Indian Addresses (and Why You Need GPS)"}
+{"unnormalised": "", "normalised": "    So, I thought I was pretty savvy, you know? I've navigated the Delhi metro during peak hours, haggled for the best price on a saree in Chandni Chowk, and even managed to order chai without getting milk in it (a feat, trust me). But then came the addresses. Oh, the addresses!"}
+{"unnormalised": "", "normalised": "    Let me set the scene: I was on a mission to find this charming little guesthouse in Goa. Sounded idyllic, right? The booking confirmation cheerfully declared: \"Anand Villa, H. No. 147/A, Near St. Alex Church, Calangute, Bardez, Goa 403516.\" Simple enough, thought I. Famous last words."}
+{"unnormalised": "", "normalised": "    First, the \"H. No. 147/A.\" I assumed it was house number, duh. But oh no, in Goa, it seems to be more of a suggestion than a concrete marker. I spent a solid hour wandering around what I’m pretty sure was a coconut plantation, asking locals if they’d seen \"H. No. 147/A, any slash anything.\" The responses ranged from blank stares to helpful (but ultimately incorrect) directions."}
+{"unnormalised": "", "normalised": "    Then there was the \"Near St. Alex Church.\" Now, St. Alex Church is a pretty big landmark. You’d think \"near\" would mean, like, visible from the front steps. Nope. In Goa, “near” means “somewhere in the general vicinity, possibly involving a rickshaw ride and a conversation with a cow.” I eventually found it… after asking 3 different auto-rickshaw wallahs who each tried to charge me Rs. 500 for a ride that should have cost Rs. 100."}
+{"unnormalised": "", "normalised": "    And don't even get me started on \"Bardez.\" Is it a town? A district? A feeling? I'm still not entirely sure. The postcode, \"403516,\" was the only thing that made any sense, and even then, Google Maps just laughed at me."}
+{"unnormalised": "", "normalised": "    Finally, after what felt like a small pilgrimage (and several bottles of Kingfisher), I stumbled upon Anand Villa. It was lovely, truly. But the journey? Let’s just say I’m now fluent in the Goan dialect of “lost and confused.”"}
+{"unnormalised": "", "normalised": "    Moral of the story? Always, *always* have GPS coordinates. And maybe a local SIM card. And definitely a sense of humor. Because finding an address in India can be an adventure in itself, and sometimes, the best stories are the ones where you get hopelessly, hilariously lost. Next time, I'm just putting \"Latitude: [insert latitude here], Longitude: [insert longitude here]\" in my booking notes. Let’s see them try to get *that* confused!"}
+{"unnormalised": "", "normalised": "    \"\"\""}
+{"unnormalised": "", "normalised": "    # போலி வலைப்பதிவு இடுகை உள்ளடக்கத்தை கோப்பில் எழுதுங்கள்"}
+{"unnormalised": "", "normalised": "    with open(dummy_txt_filepath, 'w', encoding='utf-8') as f:"}
+{"unnormalised": "", "normalised": "        f.write(blog_post_content)"}
+{"unnormalised": "", "normalised": "    # ஒரு போலி படக் கோப்பை உருவாக்கவும்"}
+{"unnormalised": "", "normalised": "    with open(dummy_image_filepath, 'wb') as f:"}
+{"unnormalised": "", "normalised": "        f.write(b'dummy_image_content')"}
+{"unnormalised": "", "normalised": "    print(f\"Dummy data created in '{dummy_source_folder}' for demonstration.\")"}
+{"unnormalised": "", "normalised": "    # முக்கிய செயலாக்க செயல்பாட்டை அழைக்கவும்"}
+{"unnormalised": "", "normalised": "    process_folder(dummy_source_folder, dummy_destination_folder)"}
+{"unnormalised": "", "normalised": "    print(\"\\n--- Example Normalized Content (from goa_addresses.txt) ---\")"}
+{"unnormalised": "", "normalised": "    normalized_file_path = os.path.join(dummy_destination_folder, 'blog_posts', 'goa_addresses.txt')"}
+{"unnormalised": "", "normalised": "    if os.path.exists(normalized_file_path):"}
+{"unnormalised": "", "normalised": "        with open(normalized_file_path, 'r', encoding='utf-8') as f:"}
+{"unnormalised": "", "normalised": "            print(f.read())"}
+{"unnormalised": "", "normalised": "    else:"}
+{"unnormalised": "", "normalised": "        print(f\"Normalized file not found at: {normalized_file_path}\")"}
+{"unnormalised": "", "normalised": "    # இது டெமோவுக்கு மட்டுமே என்றால் dummy_source_folder ஐ சுத்தம் செய்ய விரும்பலாம்"}
+{"unnormalised": "", "normalised": "    # shutil.rmtree(dummy_source_folder)"}
+{"unnormalised": "", "normalised": "    # print(f\"Cleaned up dummy source folder: {dummy_source_folder}\")"}
+{"unnormalised": "", "normalised": "```"}
+{"unnormalised": "", "normalised": "---"}
+{"unnormalised": "", "normalised": "**ஸ்கிரிப்டை எவ்வாறு பயன்படுத்துவது:**"}
+{"unnormalised": "", "normalised": "1.  **குறியீட்டை சேமிக்கவும்:** மேலே உள்ள பைதான் குறியீட்டை `.py` கோப்பாக சேமிக்கவும் (எ.கா., `normalize_data.py`)."}
+{"unnormalised": "", "normalised": "2.  **`inflect` ஐ நிறுவவும்:** உங்களிடம் இல்லையென்றால், `inflect` நூலகத்தை நிறுவவும் (எண்களை வார்த்தைகளாக மாற்றுவதற்குப் பயன்படுகிறது):"}
+{"unnormalised": "", "normalised": "    ```bash"}
+{"unnormalised": "", "normalised": "    pip install inflect"}
+{"unnormalised": "", "normalised": "    ```"}
+{"unnormalised": "", "normalised": "3.  **உங்கள் தரவை தயார் செய்யுங்கள்:**"}
+{"unnormalised": "", "normalised": "    *   உங்கள் `.txt` கோப்புகள் அனைத்தையும் (மற்றும் நீங்கள் நகலெடுக்க விரும்பும் வேறு எந்த கோப்புகளையும்) ஒரு உயர்மட்ட கோப்புறையில் வைக்கவும். உதாரணமாக, உங்கள் முக்கிய சேகரிப்பு `my_data_raw` என்ற கோப்புறையில் இருப்பதாக வைத்துக்கொள்வோம்."}
+{"unnormalised": "", "normalised": "    *   செயல்விளக்கத்திற்காக, ஸ்கிரிப்ட் உங்கள் வழங்கப்பட்ட வலைப்பதிவு இடுகை மற்றும் போலி படத்துடன் `dataset_raw` கோப்புறையை *உருவாக்கும்*."}
+{"unnormalised": "", "normalised": "4.  **`source_folder` மற்றும் `destination_folder` ஐ மாற்றவும்:**"}
+{"unnormalised": "", "normalised": "    *   `if __name__ == \"__main__\":` தொகுதியில், `dummy_source_folder` ஐ உங்கள் உண்மையான உயர்மட்ட தரவு கோப்புறையின் பாதையாக மாற்றவும்."}
+{"unnormalised": "", "normalised": "    *   இயல்பாக்கப்பட்ட வெளியீடு எங்கு செல்ல வேண்டும் என்பதை `dummy_destination_folder` ஆக மாற்றவும் (எ.கா., `my_data_normalized`)."}
+{"unnormalised": "", "normalised": "    ```python"}
+{"unnormalised": "", "normalised": "    # எடுத்துக்காட்டு: உங்கள் தரவு 'C:/Users/YourName/Documents/MyTextCollection' இல் இருந்தால்"}
+{"unnormalised": "", "normalised": "    # source_folder = 'C:/Users/YourName/Documents/MyTextCollection'"}
+{"unnormalised": "", "normalised": "    # destination_folder = 'C:/Users/YourName/Documents/MyTextCollection_Normalized'"}
+{"unnormalised": "", "normalised": "    # இந்த ஸ்கிரிப்ட்டின் டெமோவிற்கு, இது பயன்படுத்துகிறது:"}
+{"unnormalised": "", "normalised": "    source_folder = 'dataset_raw' # இது இல்லையென்றால் இந்த ஸ்கிரிப்ட் மூலம் உருவாக்கப்படும்"}
+{"unnormalised": "", "normalised": "    destination_folder = 'dataset_normalized' # இது ஸ்கிரிப்ட் மூலம் உருவாக்கப்படும்"}
+{"unnormalised": "", "normalised": "    ```"}
+{"unnormalised": "", "normalised": "5.  **ஸ்கிரிப்டை இயக்கவும்:** உங்கள் டெர்மினல் அல்லது கட்டளை வரியில் திறந்து, `normalize_data.py` ஐ சேமித்த அடைவுக்கு செல்லவும், மேலும் இயக்கவும்:"}
+{"unnormalised": "", "normalised": "    ```bash"}
+{"unnormalised": "", "normalised": "    python normalize_data.py"}
+{"unnormalised": "", "normalised": "    ```"}
+{"unnormalised": "", "normalised": "**வழங்கப்பட்ட வலைப்பதிவு இடுகை உள்ளடக்கத்திற்கான வெளியீடு:**"}
+{"unnormalised": "", "normalised": "போலி தரவு அமைப்பைக் கொண்டு நீங்கள் ஸ்கிரிப்டை இயக்கினால், `dataset_normalized/blog_posts/goa_addresses.txt` கோப்பு பின்வருவனவற்றைக் கொண்டிருக்கும்:"}
+{"unnormalised": "", "normalised": "```"}
+{"unnormalised": "", "normalised": "லாஸ்ட் இன் டிரான்ஸ்லேஷன்: மை அட்வென்ச்சர்ஸ் வித் ஐ-என்-டி-ஐ-ஏ-என் அட்ரெஸ்ஸஸ் (அண்ட் ஒய் யூ நீட் ஜி-பி-எஸ்) சோ, ஐ தாட் ஐ வாஸ் பிரட்டி சாவி, யூ நோ? ஐவ் நேவிகேட்டட் தி டெல்லி மெட்ரோ டுரிங் பீக் ஹவர்ஸ், ஹேக்க்ல்ட் பார் தி பெஸ்ட் பிரைஸ் ஆன் எ சாரீ இன் சாந்தினி சவுக், அண்ட் ஈவன் மனேக்ட் டு ஆர்டர் சாய் விதவுட் கெட்டிங் மில்க் இன் இட் (எ ஃபீட், டிரஸ்ட் மீ). பட் தென்ன கேம் தி அட்ரெஸ்ஸஸ். ஓ, தி அட்ரெஸ்ஸஸ்! லெட் மீ செட் தி சீன்: ஐ வாஸ் ஆன் ஏ மிஷன் டு பைண்ட் திஸ் சார்மிங் லிட்டில் கெஸ்ட்ஹவுஸ் இன் கோவா. சவுண்டெட் ஐடிலிக், ரைட்? தி புக்கிங் கன்ஃபர்மேஷன் சேர்ஃபுல்லி டிக்ளேர்ட்: \"ஆனந்த் வில்லா, ஹெச். நோ. ஒன் ஹன்ட்ரெட் அண்ட் போர்ட்டி செவன் ஸ்லாஷ் ஏ, நியர் எஸ்-டி. அலெக்ஸ் சர்ச், கலங்குட், பார்டெஸ், கோவா ஃபோர் ஹன்ட்ரெட் அண்ட் த்ரீ தவுசண்ட் ஃபைவ் ஹன்ட்ரெட் அண்ட் சிக்ஸ்டீன்.\" சிம்பிள் இனஃப், தாட் ஐ. பேமஸ் லாஸ்ட் வேர்ட்ஸ். ஃபர்ஸ்ட், தி \"ஹெச். நோ. ஒன் ஹன்ட்ரெட் அண்ட் போர்ட்டி செவன் ஸ்லாஷ் ஏ.\" ஐ அஸ்யூம்ட் இட் வாஸ் ஹவுஸ் நம்பர், டூ. பட் ஓ நோ, இன் கோவா, இட் சீம்ஸ் டு பி மோர் ஆஃப் எ சஜெஷன் தென் ஏ கான்கிரீட் மார்க்கர். ஐ ஸ்பென்ட் ஏ சாலிட் அவர் வாண்டரிங் அரவுண்ட் வாட் ஐம் பிரட்டி ஷுர் வாஸ் எ கோக்கனட் பிளாண்டேஷன், ஆஸ்கிங் லோக்கல்ஸ் இஃப் தேட் சீன் \"ஹெச். நோ. ஒன் ஹன்ட்ரெட் அண்ட் போர்ட்டி செவன் ஸ்லாஷ் ஏ, எனி ஸ்லாஷ் எனிதிங்.\" தி ரெஸ்பான்சஸ் ரேஞ்ச்ட் ஃப்ரம் பிளாங்க் ஸ்டேர்ஸ் டு ஹெல்ப்புல் (பட் அல்டிமேட்லி இன்கரெக்ட்) டைரெக்சன்ஸ். தென் தேர் வாஸ் தி \"நியர் எஸ்-டி. அலெக்ஸ் சர்ச்.\" நௌ, எஸ்-டி. அலெக்ஸ் சர்ச் இஸ் ஏ பிரட்டி பிக் லேண்ட்மார்க். யூத் திங்க் \"நியர்\" வுட் மீன், லைக், விசிபிள் ஃப்ரம் தி பிரண்ட் ஸ்டெப்ஸ். நோப். இன் கோவா, \"நியர்\" மீன்ஸ் \"சம்வேர் இன் தி ஜெனரல் விசிநட்டி, பாஸபிளி இன்வால்விங் ஏ ரிக்ஷா ரைட் அண்ட் ஏ கான்வர்சேஷன் வித் ஏ கௌ.\" ஐ ஈவென்சுவலி ஃபவுண்ட் இட்… ஆஃப்டர் ஆஸ்கிங் த்ரீ டிஃபரண்ட் ஆட்டோ-ரிக்ஷா வல்லாஸ் ஹூ ஈச் ட்ரைட் டு சார்ஜ் மீ ரூபீ ஃபைவ் ஹன்ட்ரெட் ஃபார் எ ரைட் தட் ஷுட் ஹேவ் காஸ்ட் ரூபீ ஒன் ஹன்ட்ரெட். அண்ட் டோண்ட் ஈவன் கெட் மீ ஸ்டார்டட் ஆன் \"பார்டெஸ்.\" இஸ் இட் ஏ டவுன்? ஏ டிஸ்ட்ரிக்ட்? ஏ ஃபீலிங்? ஐம் ஸ்டில் நாட் என்டயர்லி ஷுர். தி போஸ்ட் கோட், \"ஃபோர் ஹன்ட்ரெட் அண்ட் த்ரீ தவுசண்ட் ஃபைவ் ஹன்ட்ரெட் அண்ட் சிக்ஸ்டீன்,\" வாஸ் தி ஒன்லி திங் தட் மேட் எனி சென்ஸ், அண்ட் ஈவன் தென், கூகுள் மேப்ஸ் ஜஸ்ட் லாஃப்ட் அட் மீ. ஃபைனலி, ஆஃப்டர் வாட் பெல்ட் லைக் எ ஸ்மால் பில்கிரிமேஜ் (அண்ட் செவரல் பாட்டில்ஸ் ஆஃப் கிங்பிஷர்), ஐ ஸ்டம்பிள்ட் அப்ஆன் ஆனந்த் வில்லா. இட் வாஸ் லவ்லி, ட்ரூலி. பட் தி ஜெர்னி? லெட்ஸ் ஜஸ்ட் சே ஐம் நௌ ஃப்ளூயண்ட் இன் தி கோன் டைலெக்ட் ஆஃப் \"லாஸ்ட் அண்ட் கன்ஃப்யூஸ்ட்.\" மோரல் ஆஃப் தி ஸ்டோரி? ஆல்வேஸ், ஆஸ்டரிஸ்க் ஆல்வேஸ் ஆஸ்டரிஸ்க் ஹேவ் ஜி-பி-எஸ் கோஆர்டினேட்ஸ். அண்ட் மே பி எ லோக்கல் எஸ்-ஐ-எம் கார்ட். அண்ட் டெபனட்லி எ சென்ஸ் ஆஃப் ஹ்யூமர். பிகாஸ் ஃபைண்டிங் அன் அட்ரஸ் இன் இந்தியா கன் பி ஆன் அட்வென்ச்சர் இன் இட்செல்ஃப், அண்ட் சம்டைம்ஸ், தி பெஸ்ட் ஸ்டோரிஸ் ஆர் தி ஒன்ஸ் வேர் யூ கெட் ஹோப்லெஸ்லி, ஹிலேரியஸ்லி லாஸ்ட். நெக்ஸ்ட் டைம், ஐம் ஜஸ்ட் புட்டிங் \"லாட்டிட்யூட்: [இன்செர்ட் லாட்டிட்யூட் ஹியர்], லாங்கிட்யூட்: [இன்செர்ட் லாங்கிட்யூட் ஹியர்]\" இன் மை புக்கிங் நோட்ஸ். லெட்ஸ் சீ தெம் ட்ரை டு கெட் ஆஸ்டரிஸ்க் தட் ஆஸ்டரிஸ்க் கன்ஃப்யூஸ்ட்!"}
+{"unnormalised": "", "normalised": "```"}

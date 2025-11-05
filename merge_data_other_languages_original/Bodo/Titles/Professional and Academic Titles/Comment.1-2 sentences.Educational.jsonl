@@ -1,0 +1,61 @@
+{"unnormalised": "आं Dr. रमोन बर'खौ लोगो मोननो थांगोन।", "normalised": "जाग्राब, आं गासैबो normalization नि नेमखौ आरो \"Dr.\", \"Prof.\", आरो \"Adv.\" नि थाखाय मोनफ्रोमबो नायनानै बुजिबाय। आं बे नेमखौ फोलो खालामनानै टेक्स्ट डेटाखौ process खालामनो थाखाय Python स्क्रिप्टखौ implement खालामगोन।"}
+{"unnormalised": "बियो Prof. देवनाथ नारजारिनि फिसा।", "normalised": "स्क्रिप्टआ माबोरै मोनफ्रोमबो नेमखौ नायगोन, बेनि details खौ गाहायाव होनाय जाबाय, बेनि उनाव Python code खौ होनाय जाबाय:"}
+{"unnormalised": "Adv. सोमनाथ ब्रह्मआ बुंदों दि बियो सहाय खालामगोन।", "normalised": "**Core Logic आरो Approach:**"}
+{"unnormalised": "", "normalised": "1.  **File System Traversal:** इनपुट डाइरेक्टोरीनि गासैबो फोल्डर आरो फाइलफोरनि गेजेरजों recursively थांनो थाखाय आं `os.walk` खौ बाहायगोन।"}
+{"unnormalised": "", "normalised": "2.  **Output Directory Mirroring:** इनपुटआव थानाय मोनफ्रोम फोल्डरनि थाखाय, आं `dataset_normalized` आउटपुट डाइरेक्टोरीआव related फोल्डरखौ create खालामगोन।"}
+{"unnormalised": "", "normalised": "3.  **File Processing:**"}
+{"unnormalised": "", "normalised": "    *   जुदि मोनसे फाइलआ `.txt` फाइल जायोब्ला, बेनि कन्टेन्टखौ रीड खालामनाय जागोन, normalization खालामनाय जागोन, आरो बेनि उनाव mirrored आउटपुट फोल्डरआव मोनसे गोदान `.txt` फाइलआव राइट खालामनाय जागोन।"}
+{"unnormalised": "", "normalised": "    *   जुदि मोनसे फाइलआ `.txt` फाइल जायाब्ला, बेखौ direct मिरर्ड आउटपुट फोल्डरआव मोनसेबो चेन्ज खालामनाय जायालासै copy खालामनाय जागोन।"}
+{"unnormalised": "", "normalised": "4.  **Normalization Order (correct आउटपुटनि थाखाय important):** normalization नेमखौ apply खालामनायनि orderआ important। आं बेसेन गोनां नेमखौ general नेमनि सिगां apply खालामगोन (मानोना, currency + number + suffix आ general numberनि सिगां, एबा बेसेन गोनां सिम्बलआ general alphanumeric pattern नि सिगां)।"}
+{"unnormalised": "", "normalised": "    *   सिम्बल आरो स्पेशल कैरेक्टर।"}
+{"unnormalised": "", "normalised": "    *   Currency + Number + Suffix।"}
+{"unnormalised": "", "normalised": "    *   Dates।"}
+{"unnormalised": "", "normalised": "    *   Number (unitआव थानायफोराबो, नाथाय unit expansion आ बेनि उनाव फैगोन)।"}
+{"unnormalised": "", "normalised": "    *   Acronyms।"}
+{"unnormalised": "", "normalised": "    *   Units।"}
+{"unnormalised": "", "normalised": "    *   Mathematical notation।"}
+{"unnormalised": "", "normalised": "    *   \"Dr.\", \"Prof.\", \"Adv.\" बायदि स्पेशल prefix खौ number एबा acronym नेमनिफ्राय रोंगौयैनो बुजिनायखौ एरायनायनि थाखाय गिबियावनो एबा स्पेसिफिक regex जों handle खालामनाय जागोन।"}
+{"unnormalised": "", "normalised": "    *   General `/` handle खालामनाय।"}
+{"unnormalised": "", "normalised": "    *   Final step हिसाबै स्पेस normalization।"}
+{"unnormalised": "", "normalised": "**Detailed Rule Implementation Strategy:**"}
+{"unnormalised": "", "normalised": "1.  **Symbols → Spoken form:** आं गासैबो सिम्बलफोरखौ बेनि spoken form आव map खालामनाय मोनसे डिक्सनरीखौ बाहायगोन आरो टेक्स्टनि गेजेरजों iterate खालामनानै, replace खालामगोन। रेगुलर expressionखौ गुबुन गुबुन कन्टेक्स्टआव फैनाय सिम्बलफोरनि थाखाय बाहायनाय जागोन (उदां, `+/-`)।"}
+{"unnormalised": "", "normalised": "    *   `art/craft` -> `art or craft` (regex: `(\\b\\w+)\\/(\\w+\\b)`)"}
+{"unnormalised": "", "normalised": "    *   `QA/Dev` -> `Q-A slash D-e-v` (regex for mixed case or abbreviations `(\\b[A-Z0-9]+)\\/([A-Z0-9]+\\b)`)"}
+{"unnormalised": "", "normalised": "    *   `2+2=4` खौ mathematical notation नेमजों handle खालामनाय जागोन।"}
+{"unnormalised": "", "normalised": "    *   `$`, `~`, `*`, `#`, `@`, `&`, एसेट्रानि direct map खालामनाय जागोन।"}
+{"unnormalised": "", "normalised": "2.  **Acronyms → Hyphenated letters:**"}
+{"unnormalised": "", "normalised": "    *   Regex: `\\b[A-Z]{2,}\\b` (मोननै एबा बेनि बांसिन uppercase लेटर, मोनफ्रोमबो वर्ड हिसाबै)। आं बेखौ `Dr.`, `Prof.`, `Adv.` आव apply खालामनायनिफ्राय सै खालामनो नांगोन।"}
+{"unnormalised": "", "normalised": "    *   `'-'.join(match.group())` जों replace खालामनाय जागोन।"}
+{"unnormalised": "", "normalised": "3.  **Numbers → Spoken form:** बेआ जोबोर गाज्रि। आं general number conversion नि थाखाय `num2words` लाइब्रेरिखौ बाहायगोन, जायआ गासैबो कन्टेक्स्टखौ handle खालामो। \"half kilogram\" बायदि स्पेसिफिक केसनि थाखाय, आं `(\\d+)/(\\d+)\\s*(\\w+)` बायदि पैटर्नखौ सिनायनो थाखाय regex खौ बाहायगोन बेनि उनाव मोनसे unit थायो, आरो fraction आव `num2words` खौ apply खालाम एबा `1/2` खौ \"half\" आव कनवर्ट खालाम।"}
+{"unnormalised": "", "normalised": "    *   General numbers: `num2words(number)`"}
+{"unnormalised": "", "normalised": "    *   Fractions: `1/2 kg` -> `half kilogram`, `3/4` -> `three divided by four` (math आ handle खालाम, नाथाय डेटजों गोरोन्थि खालामनो नाङा)।"}
+{"unnormalised": "", "normalised": "4.  **Numeric suffixes → Expanded form:**"}
+{"unnormalised": "", "normalised": "    *   Regex: `(\\d+)([KMBT])\\b`"}
+{"unnormalised": "", "normalised": "    *   `K` खौ `thousand` आव, `M` खौ `million` आव, `B` खौ `billion` आव, `T` खौ `trillion` आव map खालाम।"}
+{"unnormalised": "", "normalised": "    *   `num2words` खौ बाहायनानै number पार्टखौ कनवर्ट खालाम।"}
+{"unnormalised": "", "normalised": "5.  **Currency + Number + Suffix:**"}
+{"unnormalised": "", "normalised": "    *   Regex: `([$₹€£])(\\s*)(\\d+)([KMBT])?\\b`"}
+{"unnormalised": "", "normalised": "    *   करेन्सी सिम्बल, नम्बर, आरो साफािक्सखौ कनवर्ट खालाम।"}
+{"unnormalised": "", "normalised": "6.  **Dates → Natural spoken form:**"}
+{"unnormalised": "", "normalised": "    *   `DD-MM-YYYY`, `DD/MM/YYYY`, `YYYY-MM-DD` नि थाखाय regex पैटर्न।"}
+{"unnormalised": "", "normalised": "    *   parse खालामनो थाखाय `datetime.strptime` खौ बाहाय आरो बेनि उनाव ordinal number नि थाखाय (मानोना, \"tenth\", \"first\") आरो spoken year नि थाखाय custom logic जों `strftime` खालाम। एम्बिसुवास `DD/MM/YYYY` नि थाखाय `DD/MM/YYYY` बायदि मानिनानै।"}
+{"unnormalised": "", "normalised": "7.  **Units → Spoken form:**"}
+{"unnormalised": "", "normalised": "    *   `(\\d+)(\\s*)(cm|mm|m|km|g|kg|mg|ml|l|°C|...)` खौ मोननो regex।"}
+{"unnormalised": "", "normalised": "    *   फुल वर्डआव unit खौ map खालाम (उदां, `cm` खौ `centimeter` आव, `°C` खौ `degree celsius` आव)।"}
+{"unnormalised": "", "normalised": "    *   सिगांनि नम्बरआव नम्बर कनवरसनखौ apply खालाम।"}
+{"unnormalised": "", "normalised": "8.  **Mathematical notation → Spoken form:** बेखौ गाज्रि regex सेट आरो गोबां कम्प्लेक्स expression नि थाखाय मोनसे साननाय parser नांगौ।"}
+{"unnormalised": "", "normalised": "    *   `x^2`: `x squared` (regex `(\\w)\\^2`)"}
+{"unnormalised": "", "normalised": "    *   `x^3`: `x cubed` (regex `(\\w)\\^3`)"}
+{"unnormalised": "", "normalised": "    *   `x^n`: `x to the power of n` (regex `(\\w)\\^(\\w+)`)"}
+{"unnormalised": "", "normalised": "    *   `x_i`: `x sub i` (regex `(\\w)_(\\w+)`)"}
+{"unnormalised": "", "normalised": "    *   `√x`: `square root of x` (regex `√(\\w+)`)"}
+{"unnormalised": "", "normalised": "    *   `∫`: `integral`"}
+{"unnormalised": "", "normalised": "    *   `Σ`: `summation`"}
+{"unnormalised": "", "normalised": "    *   Fractions: `3/4` -> `three divided by four` (regex: `(\\d+)\\/(\\d+)`, नाथाय बेआ डेट नङा)।"}
+{"unnormalised": "", "normalised": "    *   Symbols: `≠`, `≤`, `≥` खौ general सिम्बल रिप्लेसमेन्टजों handle खालामनाय जागोन।"}
+{"unnormalised": "", "normalised": "9.  **Output format:**"}
+{"unnormalised": "", "normalised": "    *   जोबजासिम स्पेसखौ normalize खालाम: `re.sub(r'\\s+', ' ', text).strip()`।"}
+{"unnormalised": "", "normalised": "10. **File handling:** `os.walk`, `os.makedirs`, `shutil.copy2`।"}
+{"unnormalised": "", "normalised": "**Specific Prefix Handling:**"}
+{"unnormalised": "", "normalised": "*   `Dr.`, `Prof.`, `Adv.` खौ बे exact स्ट्रिंजखौ नायनानै handle खालामनाय जागोन, जाहाथे बे मोनसे period एबा स्पेस following थायो, आरो बेखौ मोजां राखिनाय जागोन। बेखौ general acronym processing नि सिगां खालामनांगौ।"}
+{"unnormalised": "", "normalised": "फै Python स्क्रिप्टखौ दानायखौ जागायनाय जायो।"}

@@ -1,0 +1,61 @@
+{"unnormalised": "ڈاکٹر صاحب (Dr.) اور پروفیسر صاحب (Prof.) کو مناسب لقب سے یاد رکھیں۔ ہندوستان میں قانونی معاملات میں وکیلوں کے لیے \"ایڈوکیٹ\" (Adv.) استعمال کرنا عام ہے۔", "normalised": "ٹھیک ہے، میں جامع معمول سازی کے قواعد اور \"Dr.\"، \"Prof.\" اور \"Adv.\" کے مخصوص ہینڈلنگ کو سمجھتا ہوں۔ میں ان تقاضوں کے مطابق متنی ڈیٹا پر کارروائی کرنے کے لیے ایک Python اسکرپٹ نافذ کروں گا۔"}
+{"unnormalised": "", "normalised": "یہاں اس بات کی تفصیل ہے کہ اسکرپٹ ہر قاعدے کو کیسے حل کرے گا، اس کے بعد Python کوڈ دیا گیا ہے:"}
+{"unnormalised": "", "normalised": "**بنیادی منطق اور طریقہ کار:**"}
+{"unnormalised": "", "normalised": "1.  **فائل سسٹم ٹراورسل:** میں ان پٹ ڈائریکٹری میں موجود تمام فولڈرز اور فائلوں میں تکراری طور پر جانے کے لیے `os.walk` استعمال کروں گا۔"}
+{"unnormalised": "", "normalised": "2.  **آؤٹ پٹ ڈائریکٹری مررنگ:** ان پٹ میں موجود ہر فولڈر کے لیے، میں `dataset_normalized` آؤٹ پٹ ڈائریکٹری میں ایک متعلقہ فولڈر بناؤں گا۔"}
+{"unnormalised": "", "normalised": "3.  **فائل پروسیسنگ:**"}
+{"unnormalised": "", "normalised": "    *   اگر کوئی فائل `.txt` فائل ہے، تو اس کے مواد کو پڑھا جائے گا، معمول پر لایا جائے گا، اور پھر اسے مررڈ آؤٹ پٹ فولڈر میں ایک نئی `.txt` فائل میں لکھا جائے گا۔"}
+{"unnormalised": "", "normalised": "    *   اگر کوئی فائل `.txt` فائل نہیں ہے، تو اسے بغیر کسی تبدیلی کے مررڈ آؤٹ پٹ فولڈر میں براہ راست کاپی کر دیا جائے گا۔"}
+{"unnormalised": "", "normalised": "4.  **معمول سازی کی ترتیب (درست آؤٹ پٹ کے لیے ضروری):** معمول سازی کے قواعد کے اطلاق کی ترتیب اہم ہے۔ میں عام طور پر زیادہ عام قواعد سے پہلے زیادہ مخصوص قواعد لاگو کروں گا (مثال کے طور پر، کرنسی + نمبر + لاحقہ سے پہلے عام نمبر، یا عام عددی حرفی پیٹرن سے پہلے مخصوص نشانات)۔"}
+{"unnormalised": "", "normalised": "    *   نشانات اور خصوصی حروف۔"}
+{"unnormalised": "", "normalised": "    *   کرنسی + نمبر + لاحقہ۔"}
+{"unnormalised": "", "normalised": "    *   تاریخیں۔"}
+{"unnormalised": "", "normalised": "    *   نمبر (بشمول وہ جو اکائیوں میں ہیں، لیکن اکائیوں کی توسیع خود اس کے بعد آتی ہے)۔"}
+{"unnormalised": "", "normalised": "    *   مخففات۔"}
+{"unnormalised": "", "normalised": "    *   اکائیاں۔"}
+{"unnormalised": "", "normalised": "    *   ریاضیاتی اشارے۔"}
+{"unnormalised": "", "normalised": "    *   \"Dr.\"، \"Prof.\"، \"Adv.\" جیسے خصوصی سابقوں کو ابتدائی طور پر یا مخصوص regex کے ساتھ ہینڈل کیا جائے گا تاکہ نمبر یا مخفف قواعد کے ذریعہ غلط تشریح سے بچا جا سکے۔"}
+{"unnormalised": "", "normalised": "    *   عام `/` ہینڈلنگ۔"}
+{"unnormalised": "", "normalised": "    *   اسپیس معمول سازی ایک آخری قدم کے طور پر۔"}
+{"unnormalised": "", "normalised": "**تفصیلی قاعدہ نفاذ کی حکمت عملی:**"}
+{"unnormalised": "", "normalised": "1.  **علامات → زبانی شکل:** میں عام علامات کو ان کی زبانی شکلوں میں نقشہ بنانے والی ایک لغت استعمال کروں گا اور متن کے ذریعے تکرار کروں گا، متبادل انجام دوں گا۔ باقاعدہ تاثرات ان علامتوں کے لیے استعمال کیے جائیں گے جو مختلف سیاق و سباق کے ساتھ ظاہر ہو سکتی ہیں (مثال کے طور پر، `+/-`)۔"}
+{"unnormalised": "", "normalised": "    *   `art/craft` -> `art or craft` (regex: `(\\b\\w+)\\/(\\w+\\b)`)"}
+{"unnormalised": "", "normalised": "    *   `QA/Dev` -> `Q-A slash D-e-v` (مخلوط کیس یا مخففات کے لیے regex `(\\b[A-Z0-9]+)\\/([A-Z0-9]+\\b)`)"}
+{"unnormalised": "", "normalised": "    *   `2+2=4` کو ریاضیاتی اشارے کے قاعدے کے ذریعے ہینڈل کیا جائے گا۔"}
+{"unnormalised": "", "normalised": "    *   `$`, `~`, `*`, `#`, `@`, `&`, وغیرہ کو براہ راست نقشہ بنایا جائے گا۔"}
+{"unnormalised": "", "normalised": "2.  **مخففات → ہائفن والے حروف:**"}
+{"unnormalised": "", "normalised": "    *   Regex: `\\b[A-Z]{2,}\\b` (دو یا دو سے زیادہ مسلسل بڑے حروف، پورے لفظ کے طور پر)۔ مجھے محتاط رہنے کی ضرورت ہے کہ اسے `Dr.`، `Prof.`، `Adv.` پر لاگو نہ کریں۔"}
+{"unnormalised": "", "normalised": "    *   `'-'.join(match.group())` سے تبدیل کریں۔"}
+{"unnormalised": "", "normalised": "3.  **نمبر → زبانی شکل:** یہ پیچیدہ ہے۔ میں عام نمبر کی تبدیلی کے لیے `num2words` لائبریری استعمال کروں گا، جو مختلف سیاق و سباق کو ہینڈل کرتی ہے۔ \"half kilogram\" جیسے مخصوص معاملات کے لیے، میں `(\\d+)/(\\d+)\\s*(\\w+)` جیسے پیٹرن کی شناخت کے لیے regex استعمال کروں گا جس کے بعد ایک اکائی ہو، اور `num2words` کو فریکشن پر لاگو کروں گا یا `1/2` کو \"half\" میں تبدیل کروں گا۔"}
+{"unnormalised": "", "normalised": "    *   عام نمبر: `num2words(number)`"}
+{"unnormalised": "", "normalised": "    *   فریکشن: `1/2 kg` -> `half kilogram`, `3/4` -> `three divided by four` (ریاضی کے ذریعے ہینڈل کیا جاتا ہے، لیکن تاریخوں کے ساتھ الجھن سے بچنے کی ضرورت ہے)۔"}
+{"unnormalised": "", "normalised": "4.  **عددی لاحقے → توسیع شدہ شکل:**"}
+{"unnormalised": "", "normalised": "    *   Regex: `(\\d+)([KMBT])\\b`"}
+{"unnormalised": "", "normalised": "    *   `K` کو `thousand`، `M` کو `million`، `B` کو `billion`، `T` کو `trillion` پر نقشہ کریں۔"}
+{"unnormalised": "", "normalised": "    *   `num2words` کا استعمال کرتے ہوئے نمبر کے حصے کو تبدیل کریں۔"}
+{"unnormalised": "", "normalised": "5.  **کرنسی + نمبر + لاحقہ:**"}
+{"unnormalised": "", "normalised": "    *   Regex: `([$₹€£])(\\s*)(\\d+)([KMBT])?\\b`"}
+{"unnormalised": "", "normalised": "    *   کرنسی کی علامت، نمبر اور لاحقے کو تبدیل کریں۔"}
+{"unnormalised": "", "normalised": "6.  **تاریخیں → قدرتی زبانی شکل:**"}
+{"unnormalised": "", "normalised": "    *   `DD-MM-YYYY`, `DD/MM/YYYY`, `YYYY-MM-DD` کے لیے Regex پیٹرن۔"}
+{"unnormalised": "", "normalised": "    *   `datetime.strptime` کا استعمال کرتے ہوئے پارس کریں اور پھر آرڈینل نمبروں (مثال کے طور پر، \"tenth\"، \"first\") اور بولی جانے والی سال کے لیے اپنی مرضی کے مطابق منطق کے ساتھ `strftime` استعمال کریں۔ مبہم `DD/MM/YYYY` کے لیے `DD/MM/YYYY` بطور ڈیفالٹ فرض کیا جاتا ہے۔"}
+{"unnormalised": "", "normalised": "7.  **اکائیاں → زبانی شکل:**"}
+{"unnormalised": "", "normalised": "    *   `(\\d+)(\\s*)(cm|mm|m|km|g|kg|mg|ml|l|°C|...)` تلاش کرنے کے لیے Regex"}
+{"unnormalised": "", "normalised": "    *   اکائیوں کو مکمل الفاظ میں نقشہ بنائیں (مثال کے طور پر، `cm` کو `centimeter`، `°C` کو `degree celsius`)۔"}
+{"unnormalised": "", "normalised": "    *   پہلے نمبر پر نمبر کی تبدیلی لگائیں۔"}
+{"unnormalised": "", "normalised": "8.  **ریاضیاتی اشارے → زبانی شکل:** اس کے لیے ریجیکس کا ایک نفیس سیٹ اور ممکنہ طور پر زیادہ پیچیدہ تاثرات کے لیے ایک چھوٹا پارسر درکار ہے۔"}
+{"unnormalised": "", "normalised": "    *   `x^2`: `x squared` (regex `(\\w)\\^2`)"}
+{"unnormalised": "", "normalised": "    *   `x^3`: `x cubed` (regex `(\\w)\\^3`)"}
+{"unnormalised": "", "normalised": "    *   `x^n`: `x to the power of n` (regex `(\\w)\\^(\\w+)`)"}
+{"unnormalised": "", "normalised": "    *   `x_i`: `x sub i` (regex `(\\w)_(\\w+)`)"}
+{"unnormalised": "", "normalised": "    *   `√x`: `square root of x` (regex `√(\\w+)`)"}
+{"unnormalised": "", "normalised": "    *   `∫`: `integral`"}
+{"unnormalised": "", "normalised": "    *   `Σ`: `summation`"}
+{"unnormalised": "", "normalised": "    *   فریکشن: `3/4` -> `three divided by four` (regex: `(\\d+)\\/(\\d+)`, لیکن اس بات کو یقینی بنانا کہ یہ تاریخ نہیں ہے)۔"}
+{"unnormalised": "", "normalised": "    *   علامات: `≠`, `≤`, `≥` کو عام علامت کی تبدیلی کے ذریعے ہینڈل کیا جائے گا۔"}
+{"unnormalised": "", "normalised": "9.  **آؤٹ پٹ فارمیٹ:**"}
+{"unnormalised": "", "normalised": "    *   آخر میں اسپیس کو معمول پر لائیں: `re.sub(r'\\s+', ' ', text).strip()`۔"}
+{"unnormalised": "", "normalised": "10. **فائل ہینڈلنگ:** `os.walk`, `os.makedirs`, `shutil.copy2`۔"}
+{"unnormalised": "", "normalised": "**مخصوص سابقہ ​​ہینڈلنگ:**"}
+{"unnormalised": "", "normalised": "*   `Dr.`، `Prof.`، `Adv.` کو ان قطعی سٹرنگ کی تلاش کرکے ہینڈل کیا جائے گا، ممکنہ طور پر اس کے بعد ایک مدت یا جگہ ہوگی، اور ان کو محفوظ رکھا جائے گا۔ یہ عام مخفف پروسیسنگ سے پہلے ہونا چاہیے۔"}
+{"unnormalised": "", "normalised": "آئیے Python اسکرپٹ بنانا شروع کریں۔"}

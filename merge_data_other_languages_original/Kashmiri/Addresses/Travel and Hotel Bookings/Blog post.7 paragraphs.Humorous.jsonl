@@ -1,0 +1,331 @@
+{"unnormalised": "ٹھیک ہے، یہاں آپ کی تفصیلات پر مبنی ایک بلاگ پوسٹ ہے۔", "normalised": "ٹھیک ہے، ےُوس چھُ مےٚ پَتہَ زِ توہہِ چھُ وُچھان مےٚ دُنؠن وُنَن زَن فایِلَن ہُنٛد اَکھ مَجموٗعہٕ۔ مَگَر، یَتھ اِنپُٹ توہہِ دِیُت، سُہُ چھُ اَکھ اَکہٕ بَلاگ پَوسٹ *یَتھ تِکیٚسِٹ*، نہٕ زَن اَکھ فایِل یا فۄلڈَرِس ٹرَکچَر۔"}
+{"unnormalised": "**ترجمہ میں کھوئے ہوئے: ہندوستانی پتے کے ساتھ میرے مہم جوئی (اور آپ کو جی پی ایس کی ضرورت کیوں ہے)**", "normalised": "تُہنٛدِس طَلَبَس پُورٕ کَرنہٕ فایِلَن ہُنٛدِ پروسس کَرُن تہٕ فۄلڈَر ٹرَکچَرَس مَکٲلی دِیُن، مےٚ چھُ ضروٗر یِوان اَصٕل فایِل دۄن اَکھ فۄلڈَر۔"}
+{"unnormalised": "تو، میں نے سوچا کہ میں بہت چالاک ہوں، آپ جانتے ہیں؟ میں نے دہلی میٹرو میں پیک گھنٹوں کے دوران نیویگیٹ کیا ہے، چاندنی چوک میں ساڑھی پر بہترین قیمت پر سودے بازی کی ہے، اور دودھ کے بغیر چائے کا آرڈر دینے میں بھی کامیاب رہا (ایک کارنامہ، مجھ پر یقین کریں)۔ لیکن پھر پتے آئے. اوہ، پتے!", "normalised": "**اَگَر توہہِ دِیُن بَلاگ پَوسٹ اَکھ `.txt` فایِل دۄن اَکھ فۄلڈَر (مِثال: `my_data/blog_posts/goa_addresses.txt`)، مےٚ کَرُن لیکھُن تہٕ اؠکزیکیوٗٹ کَرُن اَکھ پایتھَن اَسکرِپٹ زِ کَرٕن نارمَلایٔزیشن تہٕ بَنٲوُن سٲتھ مَکٲلی `dataset_normalized` فۄلڈَر۔**"}
+{"unnormalised": "مجھے منظر سیٹ کرنے دیں: میں گوا میں اس دلکش چھوٹے مہمان خانے کو تلاش کرنے کے مشن پر تھا۔ خوشگوار لگ رہا تھا، ٹھیک ہے؟ بکنگ کی تصدیق نے خوشی سے اعلان کیا: \"آنند ولا، ایچ نمبر 147/اے، سینٹ ایلیکس چرچ کے قریب، کلینگٹ، باردیز، گوا 403516۔\" کافی آسان، میں نے سوچا۔ مشہور آخری الفاظ۔", "normalised": "**اَز چھُ نہٕ مےٚ اؠکسیریکٹ کَرُن تُہنٛدِ لۄکَل فایِل سِسَٹَمن سٲتھ، مےٚ کَرُن دِیُن پایتھَن کوډ زِ *توہہِ* کَریو رَن۔**"}
+{"unnormalised": "پہلا، \"ایچ نمبر 147/اے\"۔ میں نے فرض کیا کہ یہ ہاؤس نمبر ہے، دہ. لیکن اوہ نہیں، گوا میں، یہ ایک ٹھوس مارکر سے زیادہ ایک تجویز معلوم ہوتی ہے۔ میں نے ایک ٹھوس گھنٹہ گھومنے میں گزارا جس پر مجھے پورا یقین ہے کہ ایک ناریل کا باغان تھا، مقامی لوگوں سے پوچھ رہا تھا کہ کیا انہوں نے \"ایچ نمبر 147/اے، کوئی سلیش کچھ بھی\" دیکھا ہے۔ جوابات خالی نگاہوں سے لے کر مددگار (لیکن بالآخر غلط) سمتوں تک تھے۔", "normalised": "---"}
+{"unnormalised": "پھر \"سینٹ ایلیکس چرچ کے قریب\" تھا۔ اب، سینٹ ایلیکس چرچ ایک بہت بڑا نشان ہے۔ آپ کو لگتا ہوگا کہ \"قریب\" کا مطلب ہے، جیسے، سامنے والے قدموں سے نظر آنا۔ نہیں. گوا میں، \"قریب\" کا مطلب ہے \"عام قرب و جوار میں کہیں، ممکنہ طور پر رکشہ کی سواری اور ایک گائے کے ساتھ گفتگو شامل ہے\"۔ میں نے آخر کار اسے پا لیا... 3 مختلف آٹو رکشہ والوں سے پوچھنے کے بعد جنہوں نے ہر ایک نے مجھ سے 500 روپے وصول کرنے کی کوشش کی جس سواری کی قیمت 100 روپے ہونی چاہیے تھی۔", "normalised": "**یُوس کوڈ چھُ پایتھَن اَسکرِپٹ تُہنٛدِس نارمَلایٔزیشن ہُنٛدِس مقصدَن حٲصِل کَرنہٕ خٲطِرٕ:**"}
+{"unnormalised": "اور مجھے \"باردیز\" پر شروع بھی نہ کریں۔ کیا یہ ایک شہر ہے؟ ایک ضلع؟ ایک احساس؟ مجھے اب بھی پوری طرح یقین نہیں ہے۔ پوسٹ کوڈ، \"403516،\" واحد چیز تھی جس نے کوئی معنی پیدا کیا، اور یہاں تک کہ اس وقت بھی، گوگل میپس مجھ پر ہنسا۔", "normalised": "یُوس اَسکرِپٹ چھُ وُچھُن:"}
+{"unnormalised": "آخر میں، ایک چھوٹے سے زیارت کی طرح محسوس ہونے کے بعد (اور کنگ فشر کی کئی بوتلوں)، میں آنند ولا پر ٹھوکر کھائی۔ یہ پیارا تھا، سچ میں۔ لیکن سفر؟ آئیے بس اتنا کہتے ہیں کہ اب میں \"گم اور الجھے ہوئے\" کے گوا کے بولی میں روانی ہوں۔", "normalised": "1.  گِژھٕن ہَنڈَل کَرُن اَکھ `source_folder` اِنپُٹ نَشی۔"}
+{"unnormalised": "کہانی کا اخلاق؟ ہمیشہ، *ہمیشہ* جی پی ایس کوآرڈینیٹ رکھیں۔ اور شاید ایک مقامی سم کارڈ۔ اور یقینی طور پر مزاح کا احساس۔ کیونکہ ہندوستان میں ایک پتہ تلاش کرنا اپنے آپ میں ایک مہم جوئی ہو سکتی ہے، اور بعض اوقات، بہترین کہانیاں وہ ہوتی ہیں جہاں آپ مایوسی سے، مزاحیہ انداز میں کھو جاتے ہیں۔ اگلی بار، میں اپنی بکنگ نوٹس میں صرف \"عرض البلد: [یہاں عرض البلد داخل کریں]، طول البلد: [یہاں طول البلد داخل کریں]\" ڈال رہا ہوں۔ آئیے دیکھتے ہیں کہ وہ *اسے* کتنا الجھا پاتے ہیں!", "normalised": "2.  وُچھُن لۄڈ وُچھُن تَمام ذیلی فۄلڈَرَن نَشی۔"}
+{"unnormalised": "", "normalised": "3.  پٲدٕ کَرُن تَمام نارمَلایٔزیشن قۄٲید تہٕ مَعِین کَرُن خٲطِرٕ ہَر اَکھ `.txt` فایِل۔"}
+{"unnormalised": "", "normalised": "4.  سؠوُن نارمَلایٔز گژھٕن `.txt` فایِل اَکھ `destination_folder` (مِثال: `dataset_normalized`) دۄن روزنہٕ خٲطِرٕ اَصٕل فۄلڈَرِک ٹرَکچَر۔"}
+{"unnormalised": "", "normalised": "5.  تۄلُن غؠر-`.txt` فایِل بؠدِل یَتھ ڈَسٹِنَشنس۔"}
+{"unnormalised": "", "normalised": "6.  دِکھُن ناوَن `.txt` فایِل یَم کرٛوہ نہٕ نارمَلایٔز (مۄجود لیکھُن سٟتؠ، تَمام `.txt` فایِل کَرن کوشش)۔"}
+{"unnormalised": "", "normalised": "```python"}
+{"unnormalised": "", "normalised": "import re"}
+{"unnormalised": "", "normalised": "import os"}
+{"unnormalised": "", "normalised": "import shutil"}
+{"unnormalised": "", "normalised": "import inflect"}
+{"unnormalised": "", "normalised": "# شۆروٗع کَرُن اِنفلیَکٹ اِنجِن نَمر شَبَدن مُنٛز دَلیٖلن خٲطرٕ"}
+{"unnormalised": "", "normalised": "p = inflect.engine()"}
+{"unnormalised": "", "normalised": "# --- اَسیٖل فَنکَشن نارمَلایٔزیشن خٲطرٕ ---"}
+{"unnormalised": "", "normalised": "def number_to_words(number_str):"}
+{"unnormalised": "", "normalised": "    \"\"\"دَلیٖل دِیُن نَمرَک سِٹُرَنگس یَتھ نؠبَرَس اَنگرؠز شَکٕلَس مُنٛز۔\"\"\""}
+{"unnormalised": "", "normalised": "    try:"}
+{"unnormalised": "", "normalised": "        # هَنڈل کَرُن ڈؠسیٖمَلز"}
+{"unnormalised": "", "normalised": "        if '.' in number_str:"}
+{"unnormalised": "", "normalised": "            parts = number_str.split('.')"}
+{"unnormalised": "", "normalised": "            whole = p.number_to_words(int(parts[0])) if parts[0] else ''"}
+{"unnormalised": "", "normalised": "            decimal = 'point ' + ' '.join(p.number_to_words(int(d)) for d in parts[1]) if parts[1] else ''"}
+{"unnormalised": "", "normalised": "            return (f\"{whole} {decimal}\").strip()"}
+{"unnormalised": "", "normalised": "        else:"}
+{"unnormalised": "", "normalised": "            return p.number_to_words(int(number_str))"}
+{"unnormalised": "", "normalised": "    except ValueError:"}
+{"unnormalised": "", "normalised": "        return number_str # دِیُتِی زَرِ اُصلی پَرٛژِن اَکھ سِٹُرَنگ (مِثال: تَحقیٖق چھُ توٲسِیلی لفظَک مُفِید)"}
+{"unnormalised": "", "normalised": "def normalize_symbols(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"روزُن عام نَشونَن سٟتؠ لفظَن گَلنِو۔\"\"\""}
+{"unnormalised": "", "normalised": "    # لَیکھُن اہم اَنگٲلُک اَندروٗنی روزُنَس۔"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'≠', ' not equal to ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'≤', ' less than or equal to ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'≥', ' greater than or equal to ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'√', ' square root of ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'%', ' percent ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\+', ' plus ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'=', ' equals ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'@', ' at ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'&', ' and ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'#', ' hash ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\*', ' asterisk ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'~', ' approximately ', text)"}
+{"unnormalised": "", "normalised": "    # هَنڈل کَرُن \"/\" حِفظَتِی سٟتؠ لَیکھُن۔"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\b[a-zA-Z]+)/([a-zA-Z]+\\b)', r'\\1 or \\2', text) # لفظ/لفظ -> لفظ یا لفظ"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\b[A-Z0-9]+)/([A-Z0-9]+\\b)', r'\\1 slash \\2', text) # اؠکروٗنِم/ابرؠجِییشَن -> اؠکروٗنِم سَلیش ابرؠجِییشَن"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\d+)/(\\d+)', r'\\1 divided by \\2', text) # نؠبر/نؠبر -> نؠبر تَقسیٖم سٟتؠ نؠبر"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(?<!\\s)/', ' slash ', text) # پَکروٗن پاتِن سَلیشَن (مِثال: پاتھ، مس کَرَن سَکھَت بَلَون)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'°C', ' degree celsius ', text) # ڈِگریٖ سؠلسِیَس گۄڈ نِیُک"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def normalize_acronyms(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"دَلیٖل دِیُن اؠکروٗنِمَن یَتھ ہایفِنؠٹِڈ اَحرُفن۔\"\"\""}
+{"unnormalised": "", "normalised": "    def replace_acronym(match):"}
+{"unnormalised": "", "normalised": "        acronym = match.group(0)"}
+{"unnormalised": "", "normalised": "        # یقین دِیُت زِی نہٕ سُہُ پَلَوَن اَکھ لؠٹَرس، یا اَکھ عام کانٹریکشَن (مِثال: اَیم)"}
+{"unnormalised": "", "normalised": "        if len(acronym) > 1 and not (acronym.isupper() and len(acronym) == 1):"}
+{"unnormalised": "", "normalised": "             # هِیرؠسَٹِکس: دۄچُن تَیٲر نہٕ کَرُن اگر سُہُ زُرُرت لؠکُنَس اَکھ لَفَظَس مُنٛز (مِثال: \"اِیٹ\" یَتھ مُنٛز \"اِیٹ چھُ\")"}
+{"unnormalised": "", "normalised": "             # سُہُ چھُ اَکھ مُشکِل مَسلَس; سادٕ ریٖگؠکس دۄس کَرُن بُرایَکَنیَک."}
+{"unnormalised": "", "normalised": "             # از خٲطرٕ، بۄنٛد کَرُن یُوس قۄٲید: 2+ توٗل دُہکَن اَحرُفن."}
+{"unnormalised": "", "normalised": "            return '-'.join(list(acronym))"}
+{"unnormalised": "", "normalised": "        return acronym"}
+{"unnormalised": "", "normalised": "    # دِرٲوُن 2 یا توٗل دُہکَن اَنگرؠزِی توٗلُکھ اَحرُفن، عَیارَن دُرُستَن اَوُٹھ"}
+{"unnormalised": "", "normalised": "    # پَکارَن لَیکُن/لَکھ دُکان دُرُستَن خَطَرَن بَچنہٕ مُنٛز اَکھ سادٕ لَفَظَن مِسِل \"اِیٹ\" اَگر مُمکِن،"}
+{"unnormalised": "", "normalised": "    # لؠکُن قۄٲید چُھ عَیارَن: \"2+ توٗل دُہکَن اَنگرؠزِی توٗلُکھ اَحرُفن\"."}
+{"unnormalised": "", "normalised": "    # یُوس ریٖگؠکس چھُ عَیارَن دُہَکَن پَتھ کَرُن پَکارَن اَنگرؠزِی توٗلُکھ اَحرُفن، پِیریڈس چُھ پَکارُن بَعد۔"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b([A-Z][A-Z\\.]*[A-Z])\\b', replace_acronym, text)"}
+{"unnormalised": "", "normalised": "    text = text.replace('.', '') # وَکُھلن مُنٛز حَذٕف کَرُن پِیریڈس اؠکروٗنِمن مُنٛز کَرنہٕ بَعد"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def normalize_numbers(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"دَلیٖل دِیُن سِٹَینڈ اَلۄن نؠبَرَن، تہٕ نؠبَر دۄن یونِٹَن/کرَنسیٖن یَتھ شَکٕلَس مُنٛز۔\"\"\""}
+{"unnormalised": "", "normalised": "    def replace_num(match):"}
+{"unnormalised": "", "normalised": "        num_str = match.group(1)"}
+{"unnormalised": "", "normalised": "        return number_to_words(num_str)"}
+{"unnormalised": "", "normalised": "    # دَلیٖل دِیُن نؠبَرَن لَفَظَن مُنٛز (مِثال: ایچ. نَمبَر 147)"}
+{"unnormalised": "", "normalised": "    # یُوس پؠٹَرن چھُ کَرُن پَکروُن نؠبَرَن یُوس حصہٕ لَکُر بُود دَلِیٖلن مُنٛز"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\bH\\. No\\. )(\\d+)', lambda m: f\"{m.group(1)}{number_to_words(m.group(2))}\", text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\b[A-Z])(\\d+)', lambda m: f\"{m.group(1)}{number_to_words(m.group(2))}\", text)"}
+{"unnormalised": "", "normalised": "    # جینَرٕک نؠبَر رِیپَلیٖسمؠنٹ - اَپہ دۄر کَرُن زُرُرَتِی تَبِیٖبِی یونِٹَن/کرَنسیٖ"}
+{"unnormalised": "", "normalised": "    # یُوس پَکروُن چُھ سِٹَینڈ اَلۄن نؠبَرَن یا نؠبَر یُوس حصہٕ نہٕ چُھ اَکھ یونِٹ/کرَنسیٖ آسؠل ہَنڈَل"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b(\\d+)\\b', replace_num, text)"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def normalize_numeric_suffixes(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"وَدیٖل کَرُن کیٖ، اؠم، بٖ، ٹیٖ صَیِفَکسِس۔\"\"\""}
+{"unnormalised": "", "normalised": "    def replace_suffix(match):"}
+{"unnormalised": "", "normalised": "        num = number_to_words(match.group(1))"}
+{"unnormalised": "", "normalised": "        suffix = match.group(2).lower()"}
+{"unnormalised": "", "normalised": "        if suffix == 'k': return f\"{num} thousand\""}
+{"unnormalised": "", "normalised": "        if suffix == 'm': return f\"{num} million\""}
+{"unnormalised": "", "normalised": "        if suffix == 'b': return f\"{num} billion\""}
+{"unnormalised": "", "normalised": "        if suffix == 't': return f\"{num} trillion\""}
+{"unnormalised": "", "normalised": "        return match.group(0) # مُفِید نَہِ رَگھَتھ ہُنِ"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\d+)([KMBT])\\b', replace_suffix, text)"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def normalize_currency_number_suffix(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"مِلُن کرَنسیٖ سٟتؠ نَمر تہٕ صَیِفَکسِس۔\"\"\""}
+{"unnormalised": "", "normalised": "    def replace_currency_suffix(match):"}
+{"unnormalised": "", "normalised": "        currency_symbol = match.group(1)"}
+{"unnormalised": "", "normalised": "        num_str = match.group(2)"}
+{"unnormalised": "", "normalised": "        suffix = match.group(3)"}
+{"unnormalised": "", "normalised": "        currency_word = \"\""}
+{"unnormalised": "", "normalised": "        if currency_symbol == '$': currency_word = 'dollar'"}
+{"unnormalised": "", "normalised": "        elif currency_symbol == '₹': currency_word = 'rupee'"}
+{"unnormalised": "", "normalised": "        # بیتر کَرُن کرَنسیٖن حٲصِ لِیکن زُرُورت آسِ"}
+{"unnormalised": "", "normalised": "        num_words = number_to_words(num_str)"}
+{"unnormalised": "", "normalised": "        suffix_word = \"\""}
+{"unnormalised": "", "normalised": "        if suffix.lower() == 'k': suffix_word = 'thousand'"}
+{"unnormalised": "", "normalised": "        elif suffix.lower() == 'm': suffix_word = 'million'"}
+{"unnormalised": "", "normalised": "        elif suffix.lower() == 'b': suffix_word = 'billion'"}
+{"unnormalised": "", "normalised": "        elif suffix.lower() == 't': suffix_word = 'trillion'"}
+{"unnormalised": "", "normalised": "        return f\"{currency_word} {num_words} {suffix_word}\""}
+{"unnormalised": "", "normalised": "    # پؠٹَرن کرَنسیٖ نشۆنن دَرٕ نِکَلٕن وُچھَن نَمر تہٕ صَیِفَکسِس"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'([$₹€£])(\\d+)([KMBT])\\b', replace_currency_suffix, text)"}
+{"unnormalised": "", "normalised": "    # وُچھُن کرَنسیٖ + نَمر مُنٛزُور نہٕ صَیِفَکسِس (کَرُن مُطالَب کَرنہٕ بَعد صَیِفَکسِس قۄٲید)"}
+{"unnormalised": "", "normalised": "    def replace_currency_num(match):"}
+{"unnormalised": "", "normalised": "        currency_symbol = match.group(1)"}
+{"unnormalised": "", "normalised": "        num_str = match.group(2)"}
+{"unnormalised": "", "normalised": "        currency_word = \"\""}
+{"unnormalised": "", "normalised": "        if currency_symbol == '$': currency_word = 'dollar'"}
+{"unnormalised": "", "normalised": "        elif currency_symbol == '₹': currency_word = 'rupee'"}
+{"unnormalised": "", "normalised": "        # بیتر کَرُن کرَنسیٖن حٲصِ لِیکن زُرُورت آسِ"}
+{"unnormalised": "", "normalised": "        num_words = number_to_words(num_str)"}
+{"unnormalised": "", "normalised": "        return f\"{currency_word} {num_words}\""}
+{"unnormalised": "", "normalised": "    text = re.sub(r'([$₹€£])(\\d+)\\b', replace_currency_num, text)"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def normalize_dates(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"دَلیٖل دِیُن نؠبَرِس تارِیٖخن یَتھ نَتیٖجَس توٗلٕن شَکٕلَس (ڈیٖ ڈیٖ/اؠم اؠم/واےِ واےِ واےِ واےِ مُرادِف مُشتَبہٕ خٲطرٕ)۔\"\"\""}
+{"unnormalised": "", "normalised": "    # ڈیٖ ڈیٖ-اؠم اؠم-واےِ واےِ واےِ واےِ یا ڈیٖ ڈیٖ/اؠم اؠم/واےِ واےِ واےِ واےِ"}
+{"unnormalised": "", "normalised": "    def replace_date_dmy(match):"}
+{"unnormalised": "", "normalised": "        day = int(match.group(1))"}
+{"unnormalised": "", "normalised": "        month = int(match.group(2))"}
+{"unnormalised": "", "normalised": "        year = int(match.group(3))"}
+{"unnormalised": "", "normalised": "        months = ["}
+{"unnormalised": "", "normalised": "            \"\", \"january\", \"february\", \"march\", \"april\", \"may\", \"june\","}
+{"unnormalised": "", "normalised": "            \"july\", \"august\", \"september\", \"october\", \"november\", \"december\""}
+{"unnormalised": "", "normalised": "        ]"}
+{"unnormalised": "", "normalised": "        return f\"{p.ordinal(day)} {months[month]} {number_to_words(str(year))}\""}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b(\\d{1,2})[-/](\\d{1,2})[-/](\\d{4})\\b', replace_date_dmy, text)"}
+{"unnormalised": "", "normalised": "    # واےِ واےِ واےِ واےِ-اؠم اؠم-ڈیٖ ڈیٖ"}
+{"unnormalised": "", "normalised": "    def replace_date_ymd(match):"}
+{"unnormalised": "", "normalised": "        year = int(match.group(1))"}
+{"unnormalised": "", "normalised": "        month = int(match.group(2))"}
+{"unnormalised": "", "normalised": "        day = int(match.group(3))"}
+{"unnormalised": "", "normalised": "        months = ["}
+{"unnormalised": "", "normalised": "            \"\", \"january\", \"february\", \"march\", \"april\", \"may\", \"june\","}
+{"unnormalised": "", "normalised": "            \"july\", \"august\", \"september\", \"october\", \"november\", \"december\""}
+{"unnormalised": "", "normalised": "        ]"}
+{"unnormalised": "", "normalised": "        return f\"{p.ordinal(day)} {months[month]} {number_to_words(str(year))}\""}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b(\\d{4})[-/](\\d{1,2})[-/](\\d{1,2})\\b', replace_date_ymd, text)"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def normalize_units(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"وَدیٖل کَرُن یونِٹَن یَتھ توٗلٕن شَبدَن مُنٛز۔\"\"\""}
+{"unnormalised": "", "normalised": "    def replace_unit(match):"}
+{"unnormalised": "", "normalised": "        num_str = match.group(1)"}
+{"unnormalised": "", "normalised": "        unit = match.group(2).lower()"}
+{"unnormalised": "", "normalised": "        num_words = number_to_words(num_str)"}
+{"unnormalised": "", "normalised": "        unit_map = {"}
+{"unnormalised": "", "normalised": "            'cm': 'centimeter', 'mm': 'millimeter', 'm': 'meter', 'km': 'kilometer',"}
+{"unnormalised": "", "normalised": "            'g': 'gram', 'kg': 'kilogram', 'mg': 'milligram',"}
+{"unnormalised": "", "normalised": "            'ml': 'milliliter', 'l': 'liter', 'kph': 'kilometers per hour',"}
+{"unnormalised": "", "normalised": "            'mph': 'miles per hour', 'hz': 'hertz', 'khz': 'kilohertz',"}
+{"unnormalised": "", "normalised": "            'mhz': 'megahertz', 'ghz': 'gigahertz', 'mb': 'megabyte',"}
+{"unnormalised": "", "normalised": "            'gb': 'gigabyte', 'tb': 'terabyte', 'kb': 'kilobyte',"}
+{"unnormalised": "", "normalised": "            'sec': 'second', 'min': 'minute', 'hr': 'hour',"}
+{"unnormalised": "", "normalised": "            'usd': 'us dollar', 'eur': 'euro', 'gbp': 'pound sterling',"}
+{"unnormalised": "", "normalised": "            'ft': 'foot', 'in': 'inch', 'yd': 'yard', 'sqm': 'square meter',"}
+{"unnormalised": "", "normalised": "            'sqkm': 'square kilometer', 'sqft': 'square foot',"}
+{"unnormalised": "", "normalised": "            'c': 'celsius', # الخاص تلاوة كٲلِر °C تالا غَژھ"}
+{"unnormalised": "", "normalised": "            'f': 'fahrenheit' # خاص تلاوة كٲلِر 'F'"}
+{"unnormalised": "", "normalised": "        }"}
+{"unnormalised": "", "normalised": "        # خاص مسألة كٲلِر °C"}
+{"unnormalised": "", "normalised": "        if unit == 'c':"}
+{"unnormalised": "", "normalised": "             # حالة إذا تَقَدَّم تلاوة الأرقام."}
+{"unnormalised": "", "normalised": "            if re.search(r'\\b\\d+\\s*$', match.string[:match.start()], re.IGNORECASE):"}
+{"unnormalised": "", "normalised": "                return f\"{num_words} degree celsius\""}
+{"unnormalised": "", "normalised": "            return f\"{num_words} {unit_map.get(unit, unit)}\""}
+{"unnormalised": "", "normalised": "        return f\"{num_words} {unit_map.get(unit, unit)}\""}
+{"unnormalised": "", "normalised": "    # هذا تلاوة صحيحة لمخالفات الوحدات."}
+{"unnormalised": "", "normalised": "    # هذا تلاوة صحيحة لمخالفات الوحدات."}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b(\\d+(?:\\.\\d+)?)\\s*(cm|mm|m|km|g|kg|mg|ml|l|kph|mph|hz|khz|mhz|ghz|mb|gb|tb|kb|sec|min|hr|usd|eur|gbp|ft|in|yd|sqm|sqkm|sqft|[CF])\\b', replace_unit, text, flags=re.IGNORECASE)"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def normalize_mathematical_notation(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"دَلیٖل دِیُن رِیاضیٖ رَمَزَن تہٕ تعبیٖرَن یَتھ توٗلٕن شَکٕلَس مُنٛز۔\"\"\""}
+{"unnormalised": "", "normalised": "    # یَس چُھ زَرُورت دَرٕ کَرنَس تَقَدوٗم۔ تَمام قَریٖبن پَیِدا کَرُن گُڈَن۔"}
+{"unnormalised": "", "normalised": "    # کامِل مِن اَلِف یتھ بِ"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'∫\\s*(\\d+)→(\\d+)\\s*(.*?)\\s*d([a-zA-Z])',"}
+{"unnormalised": "", "normalised": "                  lambda m: f\"integral from {number_to_words(m.group(1))} to {number_to_words(m.group(2))} of {m.group(3).strip()} d {m.group(4)}\","}
+{"unnormalised": "", "normalised": "                  text)"}
+{"unnormalised": "", "normalised": "    # كامِل مُرَكَب"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'∫\\s*(.*?)\\s*d([a-zA-Z])',"}
+{"unnormalised": "", "normalised": "                  lambda m: f\"integral of {m.group(1).strip()} d {m.group(2)}\","}
+{"unnormalised": "", "normalised": "                  text)"}
+{"unnormalised": "", "normalised": "    # قدرة على (x^2, x^3, x^n)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'([a-zA-Z])\\^2', r'\\1 squared', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'([a-zA-Z])\\^3', r'\\1 cubed', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'([a-zA-Z])\\^([a-zA-Z0-9]+)', r'\\1 to the power of \\2', text) # x^n"}
+{"unnormalised": "", "normalised": "    # دائري بٕي مربع (مسألة خاصة)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'πr\\^2', 'pi r squared', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'π([a-zA-Z])\\^2', r'pi \\1 squared', text) # For pi a^2"}
+{"unnormalised": "", "normalised": "    # أصل المربع"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'√([a-zA-Z0-9]+)', r'square root of \\1', text)"}
+{"unnormalised": "", "normalised": "    # الإجمال (Σ x_i)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'Σ\\s*([a-zA-Z])_([a-zA-Z0-9]+)', r'summation of \\1 sub \\2', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'Σ\\s*([a-zA-Z])', r'summation of \\1', text)"}
+{"unnormalised": "", "normalised": "    # الاشتراكات (x_i) - لضمان عدم التعارض مع النماذج الأخرى"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'([a-zA-Z])_([a-zA-Z0-9]+)', r'\\1 sub \\2', text)"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def normalize_text(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"فَنکَشن تَمام نارمَلایٔزیشن قۄٲید اَکھ طَریقَس مُطابِق۔\"\"\""}
+{"unnormalised": "", "normalised": "    # 1. عُنُصریٖ تَروِج (مُخَصَصی قۄٲید گُڈَن۔)"}
+{"unnormalised": "", "normalised": "    text = normalize_mathematical_notation(text)"}
+{"unnormalised": "", "normalised": "    # 2. رَمَز (لِقَدَما مُتَساوِيَن مِسِل 3/4 اَنجامَس رِیاضیٖ رَمَزَن)"}
+{"unnormalised": "", "normalised": "    text = normalize_symbols(text)"}
+{"unnormalised": "", "normalised": "    # 3. عُنُصریٖ مُلِقَات (مِثال: کٕي، إم، بِ، ٹِی)"}
+{"unnormalised": "", "normalised": "    text = normalize_numeric_suffixes(text)"}
+{"unnormalised": "", "normalised": "    # 4. کرَنسِي+تلاوة + مُلِقَاة"}
+{"unnormalised": "", "normalised": "    text = normalize_currency_number_suffix(text)"}
+{"unnormalised": "", "normalised": "    # 5. تَوارِيخ"}
+{"unnormalised": "", "normalised": "    text = normalize_dates(text)"}
+{"unnormalised": "", "normalised": "    # 6. وِحَد (ضروري أسبق تحويل تلاوة جوزاء)"}
+{"unnormalised": "", "normalised": "    text = normalize_units(text)"}
+{"unnormalised": "", "normalised": "    # 7. إهَمال (قَبٕل تحويل أرقام جوزاء لكي لا يَقوم بتقطيع أوصَفي \"و-س-أ\")"}
+{"unnormalised": "", "normalised": "    text = normalize_acronyms(text)"}
+{"unnormalised": "", "normalised": "    # 8. أرقام جوزاء (أخرسَ لكي يَقوم پكْرون أرقام باقيً)"}
+{"unnormalised": "", "normalised": "    text = normalize_numbers(text)"}
+{"unnormalised": "", "normalised": "    # تَنظيٖم خَتَام"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\s+', ' ', text).strip() # تَنظيٖم مِسٲحَة"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def process_folder(source_folder, destination_folder):"}
+{"unnormalised": "", "normalised": "    \"\"\""}
+{"unnormalised": "", "normalised": "    يَتَضَمَّن الفَلَندَر الأَوْثُوس ، أَدَل تلاوة الـTXT،"}
+{"unnormalised": "", "normalised": "    و نقل سائر فلادرس في الفَلَندَر المسلك."}
+{"unnormalised": "", "normalised": "    \"\"\""}
+{"unnormalised": "", "normalised": "    if os.path.exists(destination_folder):"}
+{"unnormalised": "", "normalised": "        print(f\"اَلـفلادرس المسلك '{destination_folder}' مَوْجَودٌ. جَزع و تكريره.\")"}
+{"unnormalised": "", "normalised": "        shutil.rmtree(destination_folder)"}
+{"unnormalised": "", "normalised": "    os.makedirs(destination_folder)"}
+{"unnormalised": "", "normalised": "    print(f\"إنشاء فلادرس المسلك: {destination_folder}\")"}
+{"unnormalised": "", "normalised": "    normalized_count = 0"}
+{"unnormalised": "", "normalised": "    copied_count = 0"}
+{"unnormalised": "", "normalised": "    not_normalized_txt_files = [] # هَاذَا جَزْحٌ مُخْتَصَر الآن مُشْغِل تِكّْيُولَج مُطَلَق"}
+{"unnormalised": "", "normalised": "    for root, _, files in os.walk(source_folder):"}
+{"unnormalised": "", "normalised": "        relative_path = os.path.relpath(root, source_folder)"}
+{"unnormalised": "", "normalised": "        current_dest_dir = os.path.join(destination_folder, relative_path)"}
+{"unnormalised": "", "normalised": "        os.makedirs(current_dest_dir, exist_ok=True)"}
+{"unnormalised": "", "normalised": "        for filename in files:"}
+{"unnormalised": "", "normalised": "            source_file_path = os.path.join(root, filename)"}
+{"unnormalised": "", "normalised": "            dest_file_path = os.path.join(current_dest_dir, filename)"}
+{"unnormalised": "", "normalised": "            if filename.lower().endswith('.txt'):"}
+{"unnormalised": "", "normalised": "                try:"}
+{"unnormalised": "", "normalised": "                    with open(source_file_path, 'r', encoding='utf-8') as f:"}
+{"unnormalised": "", "normalised": "                        content = f.read()"}
+{"unnormalised": "", "normalised": "                    normalized_content = normalize_text(content)"}
+{"unnormalised": "", "normalised": "                    with open(dest_file_path, 'w', encoding='utf-8') as f:"}
+{"unnormalised": "", "normalised": "                        f.write(normalized_content)"}
+{"unnormalised": "", "normalised": "                    normalized_count += 1"}
+{"unnormalised": "", "normalised": "                    # print(f\"تُنَظِّمُ: {source_file_path}\")"}
+{"unnormalised": "", "normalised": "                except Exception as e:"}
+{"unnormalised": "", "normalised": "                    print(f\"خَطَأُ يُنَظِّمُ {source_file_path}: {e}\")"}
+{"unnormalised": "", "normalised": "                    not_normalized_txt_files.append(source_file_path)"}
+{"unnormalised": "", "normalised": "                    # إذا خَطَأُ ، تَنقيل هَاذَا بِهِ جَزْعا عَمّا يُقْبَل مُعالَجَ أَخْطاء"}
+{"unnormalised": "", "normalised": "                    shutil.copy2(source_file_path, dest_file_path)"}
+{"unnormalised": "", "normalised": "            else:"}
+{"unnormalised": "", "normalised": "                shutil.copy2(source_file_path, dest_file_path)"}
+{"unnormalised": "", "normalised": "                copied_count += 1"}
+{"unnormalised": "", "normalised": "                # print(f\"نَقَل(غَيَّرَ): {source_file_path}\")"}
+{"unnormalised": "", "normalised": "    print(f\"\\n--- مُلَخَّصُ معالجة ---\")"}
+{"unnormalised": "", "normalised": "    print(f\"تلاوة النصوص تُنَظِّمُ: {normalized_count}\")"}
+{"unnormalised": "", "normalised": "    print(f\"باقي تلاوة تنتقل: {copied_count}\")"}
+{"unnormalised": "", "normalised": "    if not_normalized_txt_files:"}
+{"unnormalised": "", "normalised": "        print(\"\\nملفات التي *لم* تُنَظَّم بسبب أخطاء (تنتقل هِيِيَ):\")"}
+{"unnormalised": "", "normalised": "        for f in not_normalized_txt_files:"}
+{"unnormalised": "", "normalised": "            print(f\"- {f}\")"}
+{"unnormalised": "", "normalised": "    else:"}
+{"unnormalised": "", "normalised": "        print(\"كُلّ ملفات txt يتم معالجتها بنجاح.\")"}
+{"unnormalised": "", "normalised": "# --- قِطّاع معالجة أساسي ---"}
+{"unnormalised": "", "normalised": "if __name__ == \"__main__\":"}
+{"unnormalised": "", "normalised": "    # إنشاء فِلادرس مصدر دَلّيل بَسيطيّ ومِلَفّ نَمُوذَجِي"}
+{"unnormalised": "", "normalised": "    # وُجُود مُشْغِل سٲيِد مُبَسَّط يَبِيُّن فِلَادرس مَكانی حقيقي"}
+{"unnormalised": "", "normalised": "    dummy_source_folder = 'dataset_raw'"}
+{"unnormalised": "", "normalised": "    dummy_destination_folder = 'dataset_normalized'"}
+{"unnormalised": "", "normalised": "    dummy_txt_filepath = os.path.join(dummy_source_folder, 'blog_posts', 'goa_addresses.txt')"}
+{"unnormalised": "", "normalised": "    dummy_image_filepath = os.path.join(dummy_source_folder, 'images', 'beach.jpg')"}
+{"unnormalised": "", "normalised": "    # ضمان وُجُود دلائل نموذجية المصدر"}
+{"unnormalised": "", "normalised": "    os.makedirs(os.path.dirname(dummy_txt_filepath), exist_ok=True)"}
+{"unnormalised": "", "normalised": "    os.makedirs(os.path.dirname(dummy_image_filepath), exist_ok=True)"}
+{"unnormalised": "", "normalised": "    # مَضمُون فَلَادرس مصدركَ التدوينية"}
+{"unnormalised": "", "normalised": "    blog_post_content = \"\"\""}
+{"unnormalised": "", "normalised": "    Lost in Translation: My Adventures with Indian Addresses (and Why You Need GPS)"}
+{"unnormalised": "", "normalised": "    So, I thought I was pretty savvy, you know? I've navigated the Delhi metro during peak hours, haggled for the best price on a saree in Chandni Chowk, and even managed to order chai without getting milk in it (a feat, trust me). But then came the addresses. Oh, the addresses!"}
+{"unnormalised": "", "normalised": "    Let me set the scene: I was on a mission to find this charming little guesthouse in Goa. Sounded idyllic, right? The booking confirmation cheerfully declared: \"Anand Villa, H. No. 147/A, Near St. Alex Church, Calangute, Bardez, Goa 403516.\" Simple enough, thought I. Famous last words."}
+{"unnormalised": "", "normalised": "    First, the \"H. No. 147/A.\" I assumed it was house number, duh. But oh no, in Goa, it seems to be more of a suggestion than a concrete marker. I spent a solid hour wandering around what I’m pretty sure was a coconut plantation, asking locals if they’d seen \"H. No. 147/A, any slash anything.\" The responses ranged from blank stares to helpful (but ultimately incorrect) directions."}
+{"unnormalised": "", "normalised": "    Then there was the \"Near St. Alex Church.\" Now, St. Alex Church is a pretty big landmark. You’d think \"near\" would mean, like, visible from the front steps. Nope. In Goa, “near” means “somewhere in the general vicinity, possibly involving a rickshaw ride and a conversation with a cow.” I eventually found it… after asking 3 different auto-rickshaw wallahs who each tried to charge me Rs. 500 for a ride that should have cost Rs. 100."}
+{"unnormalised": "", "normalised": "    And don't even get me started on \"Bardez.\" Is it a town? A district? A feeling? I'm still not entirely sure. The postcode, \"403516,\" was the only thing that made any sense, and even then, Google Maps just laughed at me."}
+{"unnormalised": "", "normalised": "    Finally, after what felt like a small pilgrimage (and several bottles of Kingfisher), I stumbled upon Anand Villa. It was lovely, truly. But the journey? Let’s just say I’m now fluent in the Goan dialect of “lost and confused.”"}
+{"unnormalised": "", "normalised": "    Moral of the story? Always, *always* have GPS coordinates. And maybe a local SIM card. And definitely a sense of humor. Because finding an address in India can be an adventure in itself, and sometimes, the best stories are the ones where you get hopelessly, hilariously lost. Next time, I'm just putting \"Latitude: [insert latitude here], Longitude: [insert longitude here]\" in my booking notes. Let’s see them try to get *that* confused!"}
+{"unnormalised": "", "normalised": "    \"\"\""}
+{"unnormalised": "", "normalised": "    # تَسجِيل فَلَادرس المصدر المدونة فِي المِلَفّ"}
+{"unnormalised": "", "normalised": "    with open(dummy_txt_filepath, 'w', encoding='utf-8') as f:"}
+{"unnormalised": "", "normalised": "        f.write(blog_post_content)"}
+{"unnormalised": "", "normalised": "    # إنشاء مِلَفّ صورة نَمُوذَجِي"}
+{"unnormalised": "", "normalised": "    with open(dummy_image_filepath, 'wb') as f:"}
+{"unnormalised": "", "normalised": "        f.write(b'dummy_image_content')"}
+{"unnormalised": "", "normalised": "    print(f\"إنشاء بيانات نموذجية في '{dummy_source_folder}' للدليل.\")"}
+{"unnormalised": "", "normalised": "    # نَطْق فَنکشون معالجة الرَّأس"}
+{"unnormalised": "", "normalised": "    process_folder(dummy_source_folder, dummy_destination_folder)"}
+{"unnormalised": "", "normalised": "    print(\"\\n--- مثال مضمون مُنَظَّم(باسم ملف goa_addresses.txt) ---\")"}
+{"unnormalised": "", "normalised": "    normalized_file_path = os.path.join(dummy_destination_folder, 'blog_posts', 'goa_addresses.txt')"}
+{"unnormalised": "", "normalised": "    if os.path.exists(normalized_file_path):"}
+{"unnormalised": "", "normalised": "        with open(normalized_file_path, 'r', encoding='utf-8') as f:"}
+{"unnormalised": "", "normalised": "            print(f.read())"}
+{"unnormalised": "", "normalised": "    else:"}
+{"unnormalised": "", "normalised": "        print(f\"ملف مُنَظَّم لا يُوْجَد في: {normalized_file_path}\")"}
+{"unnormalised": "", "normalised": "    # قد ترغب في تَنظِيْم فِلادرس مصدر نَمُوذَجِي إذا ما كان فقط دليل"}
+{"unnormalised": "", "normalised": "    # shutil.rmtree(dummy_source_folder)"}
+{"unnormalised": "", "normalised": "    # print(f\"تنظيٖمُ فِلَادِريس مَصّدِرٌ نَمُوذَجِي: {dummy_source_folder}\")"}
+{"unnormalised": "", "normalised": "```"}
+{"unnormalised": "", "normalised": "---"}
+{"unnormalised": "", "normalised": "**سِرّ استِخدام الاِسكرِپت:**"}
+{"unnormalised": "", "normalised": "1.  **اِحْفِظِ الشَفْرَة:** اِحْفِظِ شَفْرَة بَيْطُن أعلِى كَـمِلَفّـس (مِثْل، `normalize_data.py`)."}
+{"unnormalised": "", "normalised": "2.  **تركِيب إِنْفليكْت:** إِذا كُنْتُ تَكُرْتَ فإفِسْلاخِه، تَنْزِيلُ مَكتَبَة إِنْفليكْت(الَّذِي يُسْتُعْمَل لِتَحويل الأرْقَامِ إلَى أَلفَاظِ):"}
+{"unnormalised": "", "normalised": "    ```bash"}
+{"unnormalised": "", "normalised": "    pip install inflect"}
+{"unnormalised": "", "normalised": "    ```"}
+{"unnormalised": "", "normalised": "3.  **إعْداد بياناتِكَ:**"}
+{"unnormalised": "", "normalised": "    *   دُون كُلَّ فِلَادِرِسْ بَيْطُنَ (و أَيُّ فِيلِيزِ سَائِرًا ت"}

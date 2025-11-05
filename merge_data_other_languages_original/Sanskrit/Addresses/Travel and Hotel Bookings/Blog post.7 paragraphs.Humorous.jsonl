@@ -1,0 +1,351 @@
+{"unnormalised": "अनुवादे भ्रान्तिः: भारतीयसङ्केतानां सह मम साहसानि (किं निमित्तं च GPS आवश्यकमस्ति)", "normalised": "ठीकम्, अहं बोधामि यत् भवान् पाठ्यसञ्चिकानां सङ्ग्रहं संसाधयितुम् इच्छति। तथापि, भवता यत् निवेशः प्रदत्तः, तत् एकं ब्लॉग-पोस्ट् अस्ति *पाठ्यरूपेण*, न तु सञ्चिका अथवा फोल्डर-संरचना।"}
+{"unnormalised": "अहं मन्ये स्म यत् अहं बहु कुशलः अस्मि, जानासि? अहं देहली मेट्रो यानस्य शिखरसमयेषु यात्रां कृतवान्, चांदनी चौके शाटिकायाः उत्तमं मूल्यं याचितवान्, दुग्धं विना चायं प्राप्तुम् अपि प्रबन्धितवान् (तत् मम विश्वासं कुरु, एकं महत् कार्यम्)। परन्तु ततः सङ्केताः आगताः। अहो, सङ्केताः!", "normalised": "सञ्चिकानां संसाधनस्य, फोल्डर-संरचनानां प्रतिबिम्बनस्य च भवतोः अनुरोधं पूरयितुं, मया फोल्डर-मध्ये वास्तविक-सञ्चिकाः प्राप्तव्याः।"}
+{"unnormalised": "परिदृश्यं स्थापयामि: गोआ नगरे एतत् मनोहरं लघु अतिथिशालां अन्वेष्टुं अहं मिशन पर आसम्। तत् रमणीयम् अस्ति स्म, सत्यं वा? आरक्षणपुष्टिः प्रसन्नेन घोषितवान्: \"आनन्द विला, एच. नो. 147/ए, सेंट एलेक्स चर्चस्य समीपे, कलंगुट, बार्डेज़, गोआ 403516।\" पर्याप्तं सरलम्, अहं अचिन्तयम्। प्रसिद्धानि अन्तिमवचनानि।", "normalised": "**यदि भवान् ब्लॉग-पोस्ट् `.txt` सञ्चिकारूपेण फोल्डर-मध्ये प्रदातुं शक्नोति (उदाहरणार्थं, `my_data/blog_posts/goa_addresses.txt`), तर्हि अहं सामान्यीकरणं कर्तुं, प्रतिबिम्बितं `dataset_normalized` फोल्डरं निर्मातुं च पायथॉन-स्क्रिप्ट् लेखितुं चालयितुं च शक्नोमि।**"}
+{"unnormalised": "प्रथमं, \"एच. नो. 147/ए।\" अहं अनुमानितवान् यत् गृहसंख्या अस्ति इति, स्पष्टम्। परन्तु अहो न, गोआ नगरे, तत् ठोसचिह्नात् अधिकं सुझावः प्रतीयते। अहं एकं घण्टां यावत् भ्रमन् व्यतीतवान् यत् अहं निश्चितरूपेण नारिकेलवृक्षारोपणं मन्ये, स्थानीयजनान् पृच्छन् \"एच. नो. 147/ए, कोऽपि स्लैश किमपि\" दृष्टवन्तः चेत्। प्रतिक्रियाः रिक्तनेत्रदर्शनात् आरभ्य सहायकारिणीः (परन्तु अन्ते अशुद्धानि) दिशानि पर्यन्तम् आसन्।", "normalised": "**यतः अहं प्रत्यक्षतया भवतो स्थानीय-सञ्चिका-प्रणाल्या सह अन्तर्क्रिया कर्तुं न शक्नोमि, अतः अहं पायथॉन-कोडं प्रदास्यामि, यत् *भवता* चालयितुं शक्यते।**"}
+{"unnormalised": "ततः \"सेंट एलेक्स चर्चस्य समीपे\" आसीत्। इदानीं, सेंट एलेक्स चर्च एकं महत् स्थलचिह्नम् अस्ति। भवान् चिन्तयेत् यत् \"समीपे\" इत्यस्य अर्थः अग्रिमसोपानतः दृश्यते इत्यर्थः। नहि। गोआ नगरे, \"समीपे\" इत्यस्य अर्थः \"सामान्यपरिसरे कुत्रापि, सम्भवतः रिक्षायात्रां गोमातुः सह वार्तालापं च अन्तर्भवति\"। अहं अन्ते तत् प्राप्तवान्... ३ विभिन्न ऑटो-रिक्शा वाल्लाहस् पृष्ट्वा, ये प्रत्येकं ५०० रूप्यकाणि शुल्कं दातुं प्रयत्नं कृतवन्तः यात्रायाः कृते यस्य मूल्यं १०० रूप्यकाणि भवेत्।", "normalised": "---"}
+{"unnormalised": "\"बार्डेज़\" विषये आरम्भं मा कुरु। किं तत् नगरम्? एकं मण्डलम्? एका भावना? अहं अद्यापि पूर्णतया निश्चितः नास्मि। पिनकोडः, \"403516,\" एकमेव वस्तु आसीत् यत् कञ्चित् अर्थम् अकरोत्, तथापि गूगल मानचित्रं मयि अहसत्।", "normalised": "**अत्र पायथॉन-स्क्रिप्ट् अस्ति, यत् भवतोः सामान्यीकरण-लक्ष्याणि साधयति:**"}
+{"unnormalised": "अन्ते, यत् एकं लघु तीर्थयात्रा इव अनुभूतं (अनेकानि किंगफिशर बोतलयः च) तदनन्तरं आनन्द विलाम् प्राप्तवान्। तत् मनोहरम् आसीत्, सत्यम्। परन्तु यात्रा? अहं केवलं वदामि यत् अहं \"भ्रष्टः भ्रमितः\" इति गोअनभाषायाः धाराप्रवाहः अस्मि।", "normalised": "एषः स्क्रिप्ट् एतत् करिष्यति:"}
+{"unnormalised": "कथायाः नैतिकं? सर्वदा, *सर्वदा* GPS निर्देशाङ्कान् धारय। सम्भवतः स्थानीयं सिम कार्डं च। निश्चितरूपेण हास्यस्य भावनाम्। यतः भारते सङ्केतम् अन्वेषणं स्वयं एकं साहसं भवितुम् अर्हति, कदाचित् च, उत्तमकथाः ताः सन्ति यत्र भवान् निराशाजनकं हास्यास्पदं च भ्रष्टः भवति। अग्रे, अहं केवलं \"अक्षांशः: [अक्षांशं निवेशयन्तु], रेखांशः: [रेखांशं निवेशयन्तु]\" इति मम आरक्षणटिप्पणीषु स्थापयामि। अहं तान् भ्रमितुं प्रयत्नं कुर्वतः पश्यामि!", "normalised": "१.  `source_folder` निवेशरूपेण स्वीकरिष्यति।"}
+{"unnormalised": "", "normalised": "२.  सर्वेषु उपफोल्डरेषु पुनरावृत्त्या गमिष्यति।"}
+{"unnormalised": "", "normalised": "३.  प्रत्येकस्य `.txt` सञ्चिकायाः कृते, निर्दिष्टान् सामान्यीकरण-नियमान् योजयिष्यति।"}
+{"unnormalised": "", "normalised": "४.  मूल-फोल्डर-संरचनां रक्षन्, सामान्यीकृतं `.txt` सञ्चिकां `destination_folder` (उदाहरणार्थं, `dataset_normalized`) मध्ये रक्षिष्यति।"}
+{"unnormalised": "", "normalised": "५.  गैर-`.txt` सञ्चिकाः अपरिवर्तितरूपेण गन्तव्ये प्रतिलिपि करिष्यति।"}
+{"unnormalised": "", "normalised": "६.  `.txt` सञ्चिकानां नामानि मुद्रयिष्यति, यानि सामान्यीकृत-नासन् (यद्यपि वर्तमान-तर्केण, सर्वाः `.txt` सञ्चिकाः प्रयत्स्यन्ते)।"}
+{"unnormalised": "", "normalised": "```python"}
+{"unnormalised": "", "normalised": "import re"}
+{"unnormalised": "", "normalised": "import os"}
+{"unnormalised": "", "normalised": "import shutil"}
+{"unnormalised": "", "normalised": "import inflect"}
+{"unnormalised": "", "normalised": "# संख्यायाः शब्दरूपान्तराय इन्फ्लेक्ट् इञ्जिनस्य आरम्भः"}
+{"unnormalised": "", "normalised": "p = inflect.engine()"}
+{"unnormalised": "", "normalised": "# --- सामान्यीकरणार्थं सहायकाः कार्याः ---"}
+{"unnormalised": "", "normalised": "def number_to_words(number_str):"}
+{"unnormalised": "", "normalised": "    \"\"\"संख्या-शृंखलां तस्याः कथित-आङ्ग्ल-रूपे परिवर्तयति।\"\"\""}
+{"unnormalised": "", "normalised": "    try:"}
+{"unnormalised": "", "normalised": "        # दशमलवं निर्वाहयति"}
+{"unnormalised": "", "normalised": "        if '.' in number_str:"}
+{"unnormalised": "", "normalised": "            parts = number_str.split('.')"}
+{"unnormalised": "", "normalised": "            whole = p.number_to_words(int(parts[0])) if parts[0] else ''"}
+{"unnormalised": "", "normalised": "            decimal = 'point ' + ' '.join(p.number_to_words(int(d)) for d in parts[1]) if parts[1] else ''"}
+{"unnormalised": "", "normalised": "            return (f\"{whole} {decimal}\").strip()"}
+{"unnormalised": "", "normalised": "        else:"}
+{"unnormalised": "", "normalised": "            return p.number_to_words(int(number_str))"}
+{"unnormalised": "", "normalised": "    except ValueError:"}
+{"unnormalised": "", "normalised": "        return number_str # यदि वैध-संख्या न (उदाहरणार्थं, पूर्वमेव शब्दान् धारयति) तर्हि मूलं प्रत्यागच्छति"}
+{"unnormalised": "", "normalised": "def normalize_symbols(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"सामान्यान् प्रतीकान् तैः कथित-रूपैः सह प्रतिस्थापयति।\"\"\""}
+{"unnormalised": "", "normalised": "    # केषाञ्चित् प्रतिस्थापनानां कृते क्रमः महत्त्वपूर्णः"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'≠', ' not equal to ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'≤', ' less than or equal to ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'≥', ' greater than or equal to ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'√', ' square root of ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'%', ' percent ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\+', ' plus ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'=', ' equals ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'@', ' at ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'&', ' and ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'#', ' hash ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\*', ' asterisk ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'~', ' approximately ', text)"}
+{"unnormalised": "", "normalised": "    # सन्दर्भस्य आधारेण \"/\" सावधानतया निर्वाहयति"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\b[a-zA-Z]+)/([a-zA-Z]+\\b)', r'\\1 or \\2', text) # word/word -> word or word"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\b[A-Z0-9]+)/([A-Z0-9]+\\b)', r'\\1 slash \\2', text) # Acronym/Abbr -> Acronym slash Abbr"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\d+)/(\\d+)', r'\\1 divided by \\2', text) # number/number -> number divided by number"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(?<!\\s)/', ' slash ', text) # अवशिष्ट-स्लैश-चिह्नानि गृह्णाति (उदाहरणार्थं, मार्गः, मिश्रित-केस् उपरि न गृहीतः)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'°C', ' degree celsius ', text) # डिग्री सेल्सियस प्रथमम्"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def normalize_acronyms(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"लघुरूपशब्दान् हाइफन-युक्तेषु अक्षरेषु परिवर्तयति।\"\"\""}
+{"unnormalised": "", "normalised": "    def replace_acronym(match):"}
+{"unnormalised": "", "normalised": "        acronym = match.group(0)"}
+{"unnormalised": "", "normalised": "        # सुनिश्चितं करोति यत् एतत् एकं अक्षरं, अथवा सामान्यं सङ्कोचनं (उदाहरणार्थं, I'M) न अस्ति"}
+{"unnormalised": "", "normalised": "        if len(acronym) > 1 and not (acronym.isupper() and len(acronym) == 1):"}
+{"unnormalised": "", "normalised": "             # हेयुरिस्टिक्: यदि एतत् सम्भवतः शब्दः अस्ति (उदाहरणार्थं, \"IT\" यथा \"it is\") तर्हि विभाजनं निवारयति"}
+{"unnormalised": "", "normalised": "             # एषा कठिना समस्या अस्ति; सरलः regex अति-आक्रामकः भवितुम् अर्हति।"}
+{"unnormalised": "", "normalised": "             # अधुना, नियमेन सह तिष्ठति: २+ क्रमागत-अपर-केस् अक्षराणि।"}
+{"unnormalised": "", "normalised": "            return '-'.join(list(acronym))"}
+{"unnormalised": "", "normalised": "        return acronym"}
+{"unnormalised": "", "normalised": "    # २ अथवा अधिकाः क्रमागत-अपर-केस् अक्षराणि अन्वेषयति, वैकल्पिकरूपेण बिन्दुभिः सह"}
+{"unnormalised": "", "normalised": "    # सामान्य-शब्दान् विभाजनात् निवारयितुं नकारात्मक-लुकबिहिण्ड्/लुकाहेड् उपयुज्यते यथा \"IT\" यदि सम्भवं,"}
+{"unnormalised": "", "normalised": "    # परन्तु नियमः कठोरः अस्ति: \"२+ क्रमागत-अपर-केस् अक्षराणि\"।"}
+{"unnormalised": "", "normalised": "    # एषः regex २+ क्रमागत-अपर-केस् अक्षराणां विषये कठोरः अस्ति, बिन्दवः निष्कर्षणानन्तरं निर्वाह्यन्ते।"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b([A-Z][A-Z\\.]*[A-Z])\\b', replace_acronym, text)"}
+{"unnormalised": "", "normalised": "    text = text.replace('.', '') # संसाधनानन्तरं लघुरूपशब्दानां अन्तः बिन्दून् निष्कासयति"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def normalize_numbers(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"स्वतन्त्र-संख्याः, एककेषु/मुद्रायां च संख्याः कथित-रूपे परिवर्तयति।\"\"\""}
+{"unnormalised": "", "normalised": "    def replace_num(match):"}
+{"unnormalised": "", "normalised": "        num_str = match.group(1)"}
+{"unnormalised": "", "normalised": "        return number_to_words(num_str)"}
+{"unnormalised": "", "normalised": "    # शब्देषु संख्याः परिवर्तयति (उदाहरणार्थं, H. No. 147)"}
+{"unnormalised": "", "normalised": "    # एषः पैटर्नः संख्याः गृह्णातुं प्रयतते, याः बृहत्-पहचानस्य भागः सन्ति"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\bH\\. No\\. )(\\d+)', lambda m: f\"{m.group(1)}{number_to_words(m.group(2))}\", text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\b[A-Z])(\\d+)', lambda m: f\"{m.group(1)}{number_to_words(m.group(2))}\", text)"}
+{"unnormalised": "", "normalised": "    # सामान्य-संख्या-प्रतिस्थापनं - एककान्/मुद्रां द्विगुणित-संसाधनात् निवारयितुं सावधानीपूर्वकं निर्वाह्यं"}
+{"unnormalised": "", "normalised": "    # एतत् स्वतन्त्र-संख्याः अथवा एककस्य/मुद्रायाः भागं न, या पूर्वमेव निर्वाह्यते, तान् गृह्णाति"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b(\\d+)\\b', replace_num, text)"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def normalize_numeric_suffixes(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"के, एम्, बी, टी प्रत्ययान् विस्तारयति।\"\"\""}
+{"unnormalised": "", "normalised": "    def replace_suffix(match):"}
+{"unnormalised": "", "normalised": "        num = number_to_words(match.group(1))"}
+{"unnormalised": "", "normalised": "        suffix = match.group(2).lower()"}
+{"unnormalised": "", "normalised": "        if suffix == 'k': return f\"{num} thousand\""}
+{"unnormalised": "", "normalised": "        if suffix == 'm': return f\"{num} million\""}
+{"unnormalised": "", "normalised": "        if suffix == 'b': return f\"{num} billion\""}
+{"unnormalised": "", "normalised": "        if suffix == 't': return f\"{num} trillion\""}
+{"unnormalised": "", "normalised": "        return match.group(0) # न भवितुम् अर्हति"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\d+)([KMBT])\\b', replace_suffix, text)"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def normalize_currency_number_suffix(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"मुद्रां संख्यां प्रत्ययं च संयोजयति।\"\"\""}
+{"unnormalised": "", "normalised": "    def replace_currency_suffix(match):"}
+{"unnormalised": "", "normalised": "        currency_symbol = match.group(1)"}
+{"unnormalised": "", "normalised": "        num_str = match.group(2)"}
+{"unnormalised": "", "normalised": "        suffix = match.group(3)"}
+{"unnormalised": "", "normalised": "        currency_word = \"\""}
+{"unnormalised": "", "normalised": "        if currency_symbol == '$': currency_word = 'dollar'"}
+{"unnormalised": "", "normalised": "        elif currency_symbol == '₹': currency_word = 'rupee'"}
+{"unnormalised": "", "normalised": "        # आवश्यकतानुसारं अधिकाः मुद्राः योजयन्तु"}
+{"unnormalised": "", "normalised": "        num_words = number_to_words(num_str)"}
+{"unnormalised": "", "normalised": "        suffix_word = \"\""}
+{"unnormalised": "", "normalised": "        if suffix.lower() == 'k': suffix_word = 'thousand'"}
+{"unnormalised": "", "normalised": "        elif suffix.lower() == 'm': suffix_word = 'million'"}
+{"unnormalised": "", "normalised": "        elif suffix.lower() == 'b': suffix_word = 'billion'"}
+{"unnormalised": "", "normalised": "        elif suffix.lower() == 't': suffix_word = 'trillion'"}
+{"unnormalised": "", "normalised": "        return f\"{currency_word} {num_words} {suffix_word}\""}
+{"unnormalised": "", "normalised": "    # संख्यायाः प्रत्ययस्य च अनुसरणेन मुद्रा-चिह्नस्य पैटर्नः"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'([$₹€£])(\\d+)([KMBT])\\b', replace_currency_suffix, text)"}
+{"unnormalised": "", "normalised": "    # प्रत्यय-नियमानन्तरं मुद्रा + संख्यां विना प्रत्ययं निर्वाहयन्तु (कर्तव्यं)"}
+{"unnormalised": "", "normalised": "    def replace_currency_num(match):"}
+{"unnormalised": "", "normalised": "        currency_symbol = match.group(1)"}
+{"unnormalised": "", "normalised": "        num_str = match.group(2)"}
+{"unnormalised": "", "normalised": "        currency_word = \"\""}
+{"unnormalised": "", "normalised": "        if currency_symbol == '$': currency_word = 'dollar'"}
+{"unnormalised": "", "normalised": "        elif currency_symbol == '₹': currency_word = 'rupee'"}
+{"unnormalised": "", "normalised": "        # आवश्यकतानुसारं अधिकाः मुद्राः योजयन्तु"}
+{"unnormalised": "", "normalised": "        num_words = number_to_words(num_str)"}
+{"unnormalised": "", "normalised": "        return f\"{currency_word} {num_words}\""}
+{"unnormalised": "", "normalised": "    text = re.sub(r'([$₹€£])(\\d+)\\b', replace_currency_num, text)"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def normalize_dates(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"संख्यात्मिकाः तिथयः प्राकृतिक-कथित-रूपे परिवर्तयति (अस्पष्टतायाः कृते डिडि/एम्एम्/वाय्वाय्वाय्वाय् कल्पितम्)।\"\"\""}
+{"unnormalised": "", "normalised": "    # डिडि-एम्एम्-वाय्वाय्वाय्वाय् अथवा डिडि/एम्एम्/वाय्वाय्वाय्वाय्"}
+{"unnormalised": "", "normalised": "    def replace_date_dmy(match):"}
+{"unnormalised": "", "normalised": "        day = int(match.group(1))"}
+{"unnormalised": "", "normalised": "        month = int(match.group(2))"}
+{"unnormalised": "", "normalised": "        year = int(match.group(3))"}
+{"unnormalised": "", "normalised": "        months = ["}
+{"unnormalised": "", "normalised": "            \"\", \"january\", \"february\", \"march\", \"april\", \"may\", \"june\","}
+{"unnormalised": "", "normalised": "            \"july\", \"august\", \"september\", \"october\", \"november\", \"december\""}
+{"unnormalised": "", "normalised": "        ]"}
+{"unnormalised": "", "normalised": "        return f\"{p.ordinal(day)} {months[month]} {number_to_words(str(year))}\""}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b(\\d{1,2})[-/](\\d{1,2})[-/](\\d{4})\\b', replace_date_dmy, text)"}
+{"unnormalised": "", "normalised": "    # वाय्वाय्वाय्वाय्-एम्एम्-डिडि"}
+{"unnormalised": "", "normalised": "    def replace_date_ymd(match):"}
+{"unnormalised": "", "normalised": "        year = int(match.group(1))"}
+{"unnormalised": "", "normalised": "        month = int(match.group(2))"}
+{"unnormalised": "", "normalised": "        day = int(match.group(3))"}
+{"unnormalised": "", "normalised": "        months = ["}
+{"unnormalised": "", "normalised": "            \"\", \"january\", \"february\", \"march\", \"april\", \"may\", \"june\","}
+{"unnormalised": "", "normalised": "            \"july\", \"august\", \"september\", \"october\", \"november\", \"december\""}
+{"unnormalised": "", "normalised": "        ]"}
+{"unnormalised": "", "normalised": "        return f\"{p.ordinal(day)} {months[month]} {number_to_words(str(year))}\""}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b(\\d{4})[-/](\\d{1,2})[-/](\\d{1,2})\\b', replace_date_ymd, text)"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def normalize_units(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"एककान् पूर्ण-शब्देषु विस्तारयति।\"\"\""}
+{"unnormalised": "", "normalised": "    def replace_unit(match):"}
+{"unnormalised": "", "normalised": "        num_str = match.group(1)"}
+{"unnormalised": "", "normalised": "        unit = match.group(2).lower()"}
+{"unnormalised": "", "normalised": "        num_words = number_to_words(num_str)"}
+{"unnormalised": "", "normalised": "        unit_map = {"}
+{"unnormalised": "", "normalised": "            'cm': 'centimeter', 'mm': 'millimeter', 'm': 'meter', 'km': 'kilometer',"}
+{"unnormalised": "", "normalised": "            'g': 'gram', 'kg': 'kilogram', 'mg': 'milligram',"}
+{"unnormalised": "", "normalised": "            'ml': 'milliliter', 'l': 'liter', 'kph': 'kilometers per hour',"}
+{"unnormalised": "", "normalised": "            'mph': 'miles per hour', 'hz': 'hertz', 'khz': 'kilohertz',"}
+{"unnormalised": "", "normalised": "            'mhz': 'megahertz', 'ghz': 'gigahertz', 'mb': 'megabyte',"}
+{"unnormalised": "", "normalised": "            'gb': 'gigabyte', 'tb': 'terabyte', 'kb': 'kilobyte',"}
+{"unnormalised": "", "normalised": "            'sec': 'second', 'min': 'minute', 'hr': 'hour',"}
+{"unnormalised": "", "normalised": "            'usd': 'us dollar', 'eur': 'euro', 'gbp': 'pound sterling',"}
+{"unnormalised": "", "normalised": "            'ft': 'foot', 'in': 'inch', 'yd': 'yard', 'sqm': 'square meter',"}
+{"unnormalised": "", "normalised": "            'sqkm': 'square kilometer', 'sqft': 'square foot',"}
+{"unnormalised": "", "normalised": "            'c': 'celsius', # पूर्वं °C कृते विशेष-प्रबन्धनं, परन्तु केवलं C कृते, एतत् अस्पष्टम् अस्ति। डिग्री इति मन्यते।"}
+{"unnormalised": "", "normalised": "            'f': 'fahrenheit' # 'F' कृते डिग्री इति मन्यते"}
+{"unnormalised": "", "normalised": "        }"}
+{"unnormalised": "", "normalised": "        # °C कृते विशेष-विषयः, पूर्वं प्रतीक-चिह्नेषु निर्वह्यते।"}
+{"unnormalised": "", "normalised": "        if unit == 'c':"}
+{"unnormalised": "", "normalised": "             # यदि संख्या पूर्वम् अस्ति, तर्हि \"degree Celsius\" इति मन्यते"}
+{"unnormalised": "", "normalised": "            if re.search(r'\\b\\d+\\s*$', match.string[:match.start()], re.IGNORECASE):"}
+{"unnormalised": "", "normalised": "                return f\"{num_words} degree celsius\""}
+{"unnormalised": "", "normalised": "            return f\"{num_words} {unit_map.get(unit, unit)}\""}
+{"unnormalised": "", "normalised": "        return f\"{num_words} {unit_map.get(unit, unit)}\""}
+{"unnormalised": "", "normalised": "    # एषः regex विभिन्न-एककानां कृते दृढः अस्ति, एककात् पूर्वं संख्यां सुनिश्चितं करोति"}
+{"unnormalised": "", "normalised": "    # एतत् संख्यां एककं च पृथक्-पृथक् रूपेण ग्रहीतुम् उद्यच्छते"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b(\\d+(?:\\.\\d+)?)\\s*(cm|mm|m|km|g|kg|mg|ml|l|kph|mph|hz|khz|mhz|ghz|mb|gb|tb|kb|sec|min|hr|usd|eur|gbp|ft|in|yd|sqm|sqkm|sqft|[CF])\\b', replace_unit, text, flags=re.IGNORECASE)"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def normalize_mathematical_notation(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"गणितीय-प्रतीकानि अभिव्यक्तीः च कथित-रूपे परिवर्तयति।\"\"\""}
+{"unnormalised": "", "normalised": "    # क्रमः महत्त्वपूर्णः। अधिकाः विशिष्टाः पैटर्न्स् प्रथमम्।"}
+{"unnormalised": "", "normalised": "    # a तः b पर्यन्तम् समाकलनम्"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'∫\\s*(\\d+)→(\\d+)\\s*(.*?)\\s*d([a-zA-Z])',"}
+{"unnormalised": "", "normalised": "                  lambda m: f\"integral from {number_to_words(m.group(1))} to {number_to_words(m.group(2))} of {m.group(3).strip()} d {m.group(4)}\","}
+{"unnormalised": "", "normalised": "                  text)"}
+{"unnormalised": "", "normalised": "    # सामान्यं समाकलनम्"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'∫\\s*(.*?)\\s*d([a-zA-Z])',"}
+{"unnormalised": "", "normalised": "                  lambda m: f\"integral of {m.group(1).strip()} d {m.group(2)}\","}
+{"unnormalised": "", "normalised": "                  text)"}
+{"unnormalised": "", "normalised": "    # शक्तयः (x^2, x^3, x^n)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'([a-zA-Z])\\^2', r'\\1 squared', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'([a-zA-Z])\\^3', r'\\1 cubed', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'([a-zA-Z])\\^([a-zA-Z0-9]+)', r'\\1 to the power of \\2', text) # x^n"}
+{"unnormalised": "", "normalised": "    # पाई आर स्क्वेर्ड (विशिष्ट-विषयः)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'πr\\^2', 'pi r squared', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'π([a-zA-Z])\\^2', r'pi \\1 squared', text) # पाई ए^2 कृते"}
+{"unnormalised": "", "normalised": "    # वर्गमूलम्"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'√([a-zA-Z0-9]+)', r'square root of \\1', text)"}
+{"unnormalised": "", "normalised": "    # योगः (Σ x_i)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'Σ\\s*([a-zA-Z])_([a-zA-Z0-9]+)', r'summation of \\1 sub \\2', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'Σ\\s*([a-zA-Z])', r'summation of \\1', text)"}
+{"unnormalised": "", "normalised": "    # अधोलिखिताः (x_i) - सुनिश्चितं करोति यत् एतत् अन्य-पैटर्न्स् सह संघर्षं न करोति"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'([a-zA-Z])_([a-zA-Z0-9]+)', r'\\1 sub \\2', text)"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def normalize_text(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"तार्किक-क्रमेण सर्वान् सामान्यीकरण-नियमान् योजयति।\"\"\""}
+{"unnormalised": "", "normalised": "    # १. गणितीय-अङ्कनम् (विशिष्ट-अभिव्यक्तयः प्रथमम्)"}
+{"unnormalised": "", "normalised": "    text = normalize_mathematical_notation(text)"}
+{"unnormalised": "", "normalised": "    # २. प्रतीकानि (गणितीय-प्रतीकानन्तरं ३/४ इव अंशान् सहित्वा)"}
+{"unnormalised": "", "normalised": "    text = normalize_symbols(text)"}
+{"unnormalised": "", "normalised": "    # ३. संख्यात्मक-प्रत्ययाः (उदाहरणार्थं, के, एम्, बी, टी)"}
+{"unnormalised": "", "normalised": "    text = normalize_numeric_suffixes(text)"}
+{"unnormalised": "", "normalised": "    # ४. मुद्रा + संख्या + प्रत्ययः"}
+{"unnormalised": "", "normalised": "    text = normalize_currency_number_suffix(text)"}
+{"unnormalised": "", "normalised": "    # ५. तिथयः"}
+{"unnormalised": "", "normalised": "    text = normalize_dates(text)"}
+{"unnormalised": "", "normalised": "    # ६. एककानि (सामान्य-संख्या-परिवर्तनात् पूर्वं आगन्तव्यम्)"}
+{"unnormalised": "", "normalised": "    text = normalize_units(text)"}
+{"unnormalised": "", "normalised": "    # ७. लघुरूपशब्दाः (\"USA\" इत्यस्य \"यू-एस्-ए\" इति विभाजनात् निवारयितुं संख्याभ्यः पूर्वम्)"}
+{"unnormalised": "", "normalised": "    text = normalize_acronyms(text)"}
+{"unnormalised": "", "normalised": "    # ८. सामान्य-संख्याः (अन्तिमं, अवशिष्ट-संख्याः ग्रहीतुम्)"}
+{"unnormalised": "", "normalised": "    text = normalize_numbers(text)"}
+{"unnormalised": "", "normalised": "    # अन्तिम-स्वच्छता"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\s+', ' ', text).strip() # रिक्तस्थानानि सामान्यीकरोति"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def process_folder(source_folder, destination_folder):"}
+{"unnormalised": "", "normalised": "    \"\"\""}
+{"unnormalised": "", "normalised": "    स्रोत-फोल्डर-मध्ये गच्छति, .txt सञ्चिकाः सामान्यीकरोति,"}
+{"unnormalised": "", "normalised": "    गन्तव्य-फोल्डर-मध्ये अन्याः सञ्चिकाः प्रतिलिपि करोति।"}
+{"unnormalised": "", "normalised": "    \"\"\""}
+{"unnormalised": "", "normalised": "    if os.path.exists(destination_folder):"}
+{"unnormalised": "", "normalised": "        print(f\"गन्तव्य-फोल्डरः '{destination_folder}' पूर्वमेव विद्यते। विलोपनं पुनर्निर्माणं च क्रियते।\")"}
+{"unnormalised": "", "normalised": "        shutil.rmtree(destination_folder)"}
+{"unnormalised": "", "normalised": "    os.makedirs(destination_folder)"}
+{"unnormalised": "", "normalised": "    print(f\"गन्तव्य-फोल्डरः निर्मितः: {destination_folder}\")"}
+{"unnormalised": "", "normalised": "    normalized_count = 0"}
+{"unnormalised": "", "normalised": "    copied_count = 0"}
+{"unnormalised": "", "normalised": "    not_normalized_txt_files = [] # वर्तमान-तर्केण एषा रिक्ता भविष्यति, यतः सर्वे संसाधिताः"}
+{"unnormalised": "", "normalised": "    for root, _, files in os.walk(source_folder):"}
+{"unnormalised": "", "normalised": "        relative_path = os.path.relpath(root, source_folder)"}
+{"unnormalised": "", "normalised": "        current_dest_dir = os.path.join(destination_folder, relative_path)"}
+{"unnormalised": "", "normalised": "        os.makedirs(current_dest_dir, exist_ok=True)"}
+{"unnormalised": "", "normalised": "        for filename in files:"}
+{"unnormalised": "", "normalised": "            source_file_path = os.path.join(root, filename)"}
+{"unnormalised": "", "normalised": "            dest_file_path = os.path.join(current_dest_dir, filename)"}
+{"unnormalised": "", "normalised": "            if filename.lower().endswith('.txt'):"}
+{"unnormalised": "", "normalised": "                try:"}
+{"unnormalised": "", "normalised": "                    with open(source_file_path, 'r', encoding='utf-8') as f:"}
+{"unnormalised": "", "normalised": "                        content = f.read()"}
+{"unnormalised": "", "normalised": "                    normalized_content = normalize_text(content)"}
+{"unnormalised": "", "normalised": "                    with open(dest_file_path, 'w', encoding='utf-8') as f:"}
+{"unnormalised": "", "normalised": "                        f.write(normalized_content)"}
+{"unnormalised": "", "normalised": "                    normalized_count += 1"}
+{"unnormalised": "", "normalised": "                    # print(f\"सामान्यीकृतम्: {source_file_path}\")"}
+{"unnormalised": "", "normalised": "                except Exception as e:"}
+{"unnormalised": "", "normalised": "                    print(f\"{source_file_path} सामान्यीकरणे त्रुटिः: {e}\")"}
+{"unnormalised": "", "normalised": "                    not_normalized_txt_files.append(source_file_path)"}
+{"unnormalised": "", "normalised": "                    # यदि त्रुटिः, तर्हि यथास्ति प्रतिलिपि करोति अथवा इच्छित-त्रुटि-प्रबन्धनस्य आधारेण रिक्तं त्यजति"}
+{"unnormalised": "", "normalised": "                    shutil.copy2(source_file_path, dest_file_path)"}
+{"unnormalised": "", "normalised": "            else:"}
+{"unnormalised": "", "normalised": "                shutil.copy2(source_file_path, dest_file_path)"}
+{"unnormalised": "", "normalised": "                copied_count += 1"}
+{"unnormalised": "", "normalised": "                # print(f\"प्रतिलिपितम् (अपरिवर्तितम्): {source_file_path}\")"}
+{"unnormalised": "", "normalised": "    print(f\"\\n--- संसाधन-सारांशः ---\")"}
+{"unnormalised": "", "normalised": "    print(f\"पाठ्य-सञ्चिकाः सामान्यीकृतः: {normalized_count}\")"}
+{"unnormalised": "", "normalised": "    print(f\"अन्याः सञ्चिकाः प्रतिलिपितः: {copied_count}\")"}
+{"unnormalised": "", "normalised": "    if not_normalized_txt_files:"}
+{"unnormalised": "", "normalised": "        print(\"\\nसञ्चिकाः, याः त्रुटिभिः कारणात् *न* सामान्यीकृतः (यथास्ति प्रतिलिपितः):\")"}
+{"unnormalised": "", "normalised": "        for f in not_normalized_txt_files:"}
+{"unnormalised": "", "normalised": "            print(f\"- {f}\")"}
+{"unnormalised": "", "normalised": "    else:"}
+{"unnormalised": "", "normalised": "        print(\"सर्वाः .txt सञ्चिकाः सफलतापूर्वकं संसाधिताः आसन्।\")"}
+{"unnormalised": "", "normalised": "# --- मुख्य-कार्यकारी-खण्डः ---"}
+{"unnormalised": "", "normalised": "if __name__ == \"__main__\":"}
+{"unnormalised": "", "normalised": "    # प्रदर्शनार्थं कल्पित-स्रोत-फोल्डरं सञ्चिकां च सृजति"}
+{"unnormalised": "", "normalised": "    # वास्तविक-परिदृश्ये, भवान् स्रोत-फोल्डरं भवतो वास्तविक-आङ्कडं प्रति निर्दिशेत्।"}
+{"unnormalised": "", "normalised": "    dummy_source_folder = 'dataset_raw'"}
+{"unnormalised": "", "normalised": "    dummy_destination_folder = 'dataset_normalized'"}
+{"unnormalised": "", "normalised": "    dummy_txt_filepath = os.path.join(dummy_source_folder, 'blog_posts', 'goa_addresses.txt')"}
+{"unnormalised": "", "normalised": "    dummy_image_filepath = os.path.join(dummy_source_folder, 'images', 'beach.jpg')"}
+{"unnormalised": "", "normalised": "    # कल्पित-स्रोत-निर्देशिकाः विद्यन्ते इति सुनिश्चितं करोति"}
+{"unnormalised": "", "normalised": "    os.makedirs(os.path.dirname(dummy_txt_filepath), exist_ok=True)"}
+{"unnormalised": "", "normalised": "    os.makedirs(os.path.dirname(dummy_image_filepath), exist_ok=True)"}
+{"unnormalised": "", "normalised": "    # भवतो ब्लॉग-पोस्ट् इत्यस्य सामग्री"}
+{"unnormalised": "", "normalised": "    blog_post_content = \"\"\""}
+{"unnormalised": "", "normalised": "    Lost in Translation: My Adventures with Indian Addresses (and Why You Need GPS)"}
+{"unnormalised": "", "normalised": "    So, I thought I was pretty savvy, you know? I've navigated the Delhi metro during peak hours, haggled for the best price on a saree in Chandni Chowk, and even managed to order chai without getting milk in it (a feat, trust me). But then came the addresses. Oh, the addresses!"}
+{"unnormalised": "", "normalised": "    Let me set the scene: I was on a mission to find this charming little guesthouse in Goa. Sounded idyllic, right? The booking confirmation cheerfully declared: \"Anand Villa, H. No. 147/A, Near St. Alex Church, Calangute, Bardez, Goa 403516.\" Simple enough, thought I. Famous last words."}
+{"unnormalised": "", "normalised": "    First, the \"H. No. 147/A.\" I assumed it was house number, duh. But oh no, in Goa, it seems to be more of a suggestion than a concrete marker. I spent a solid hour wandering around what I’m pretty sure was a coconut plantation, asking locals if they’d seen \"H. No. 147/A, any slash anything.\" The responses ranged from blank stares to helpful (but ultimately incorrect) directions."}
+{"unnormalised": "", "normalised": "    Then there was the \"Near St. Alex Church.\" Now, St. Alex Church is a pretty big landmark. You’d think \"near\" would mean, like, visible from the front steps. Nope. In Goa, “near” means “somewhere in the general vicinity, possibly involving a rickshaw ride and a conversation with a cow.” I eventually found it… after asking 3 different auto-rickshaw wallahs who each tried to charge me Rs. 500 for a ride that should have cost Rs. 100."}
+{"unnormalised": "", "normalised": "    And don't even get me started on \"Bardez.\" Is it a town? A district? A feeling? I'm still not entirely sure. The postcode, \"403516,\" was the only thing that made any sense, and even then, Google Maps just laughed at me."}
+{"unnormalised": "", "normalised": "    Finally, after what felt like a small pilgrimage (and several bottles of Kingfisher), I stumbled upon Anand Villa. It was lovely, truly. But the journey? Let’s just say I’m now fluent in the Goan dialect of “lost and confused.”"}
+{"unnormalised": "", "normalised": "    Moral of the story? Always, *always* have GPS coordinates. And maybe a local SIM card. And definitely a sense of humor. Because finding an address in India can be an adventure in itself, and sometimes, the best stories are the ones where you get hopelessly, hilariously lost. Next time, I'm just putting \"Latitude: [insert latitude here], Longitude: [insert longitude here]\" in my booking notes. Let’s see them try to get *that* confused!"}
+{"unnormalised": "", "normalised": "    \"\"\""}
+{"unnormalised": "", "normalised": "    # सञ्चिकायां कल्पित-ब्लॉग-पोस्ट्-सामग्रीं लिखति"}
+{"unnormalised": "", "normalised": "    with open(dummy_txt_filepath, 'w', encoding='utf-8') as f:"}
+{"unnormalised": "", "normalised": "        f.write(blog_post_content)"}
+{"unnormalised": "", "normalised": "    # कल्पित-चित्र-सञ्चिकां सृजति"}
+{"unnormalised": "", "normalised": "    with open(dummy_image_filepath, 'wb') as f:"}
+{"unnormalised": "", "normalised": "        f.write(b'dummy_image_content')"}
+{"unnormalised": "", "normalised": "    print(f\"प्रदर्शनार्थं '{dummy_source_folder}' मध्ये कल्पित-आङ्कडं निर्मितम्।\")"}
+{"unnormalised": "", "normalised": "    # मुख्य-संसाधन-कार्यं आह्वयति"}
+{"unnormalised": "", "normalised": "    process_folder(dummy_source_folder, dummy_destination_folder)"}
+{"unnormalised": "", "normalised": "    print(\"\\n--- सामान्यीकृत-सामग्री-उदाहरणम् (goa_addresses.txt तः) ---\")"}
+{"unnormalised": "", "normalised": "    normalized_file_path = os.path.join(dummy_destination_folder, 'blog_posts', 'goa_addresses.txt')"}
+{"unnormalised": "", "normalised": "    if os.path.exists(normalized_file_path):"}
+{"unnormalised": "", "normalised": "        with open(normalized_file_path, 'r', encoding='utf-8') as f:"}
+{"unnormalised": "", "normalised": "            print(f.read())"}
+{"unnormalised": "", "normalised": "    else:"}
+{"unnormalised": "", "normalised": "        print(f\"सामान्यीकृत-सञ्चिका अत्र न प्राप्ता: {normalized_file_path}\")"}
+{"unnormalised": "", "normalised": "    # यदि एतत् केवलं डेमो कृते अस्ति, तर्हि भवान् dummy_source_folder स्वच्छं कर्तुम् इच्छेत्"}
+{"unnormalised": "", "normalised": "    # shutil.rmtree(dummy_source_folder)"}
+{"unnormalised": "", "normalised": "    # print(f\"कल्पित-स्रोत-फोल्डरं स्वच्छीकृतम्: {dummy_source_folder}\")"}
+{"unnormalised": "", "normalised": "```"}
+{"unnormalised": "", "normalised": "---"}
+{"unnormalised": "", "normalised": "**स्क्रिप्ट् कथं उपयोक्तव्यम्:**"}
+{"unnormalised": "", "normalised": "१.  **कोडं रक्षतु:** उपर्युक्तं पायथॉन-कोडं `.py` सञ्चिकारूपेण रक्षतु (उदाहरणार्थं, `normalize_data.py`)।"}
+{"unnormalised": "", "normalised": "२.  **`inflect` संस्थापयतु:** यदि भवता तत् न प्राप्तम्, तर्हि `inflect` पुस्तकालयं संस्थापयन्तु (संख्याः शब्देषु परिवर्तयितुम् उपयुज्यते):"}
+{"unnormalised": "", "normalised": "    ```bash"}
+{"unnormalised": "", "normalised": "    pip install inflect"}
+{"unnormalised": "", "normalised": "    ```"}
+{"unnormalised": "", "normalised": "३.  **भवतः आङ्कडं सज्जीकरोतु:**"}
+{"unnormalised": "", "normalised": "    *   भवतः सर्वाः `.txt` सञ्चिकाः (याः अन्याः सञ्चिकाः प्रतिलिपि कर्तुम् इच्छन्ति) उच्च-स्तरीय-फोल्डर-मध्ये स्थापयन्तु। उदाहरणार्थं, वदन्तु भवतो मुख्य-सङ्ग्रहः `my_data_raw` नाम्नि फोल्डर-मध्ये अस्ति।"}
+{"unnormalised": "", "normalised": "    *   प्रदर्शनार्थं स्क्रिप्ट् भवतो प्रदत्त-ब्लॉग-पोस्ट् कल्पित-चित्रेण सह `dataset_raw` फोल्डरं *सृक्ष्यति*।"}
+{"unnormalised": "", "normalised": "४.  **`source_folder` `destination_folder` च परिवर्तयतु:**"}
+{"unnormalised": "", "normalised": "    *   `if __name__ == \"__main__\":` खण्डे `dummy_source_folder` परिवर्तयित्वा भवतो वास्तविक-उच्च-स्तरीय-आङ्कड-फोल्डरस्य मार्गं स्थापयन्तु।"}
+{"unnormalised": "", "normalised": "    *   `dummy_destination_folder` तत्र परिवर्तयन्तु, यत्र भवान् सामान्यीकृतं निर्गमनं गन्तुम् इच्छति (उदाहरणार्थं, `my_data_normalized`)।"}
+{"unnormalised": "", "normalised": "    ```python"}
+{"unnormalised": "", "normalised": "    # उदाहरणम्: यदि भवतो आङ्कडं 'C:/Users/YourName/Documents/MyTextCollection' इत्यत्र अस्ति"}
+{"unnormalised": "", "normalised": "    # source_folder = 'C:/Users/YourName/Documents/MyTextCollection'"}
+{"unnormalised": "", "normalised": "    # destination_folder = 'C:/Users/YourName/Documents/MyTextCollection_Normalized'"}
+{"unnormalised": "", "normalised": "    # अस्य स्क्रिप्ट्-प्रदर्शनस्य कृते, एतत् उपयुज्यते:"}
+{"unnormalised": "", "normalised": "    source_folder = 'dataset_raw' # यदि एतत् न विद्यते, तर्हि एतत् स्क्रिप्ट् द्वारा सृज्यते"}
+{"unnormalised": "", "normalised": "    destination_folder = 'dataset_normalized' # एतत् स्क्रिप्ट् द्वारा सृज्यते"}
+{"unnormalised": "", "normalised": "    ```"}
+{"unnormalised": "", "normalised": "५.  **स्क्रिप्ट् चालयतु:** भवतो टर्मिनलम् अथवा कमान्द् प्रॉम्प्ट् उद्घाटयन्तु, `normalize_data.py` यत्र रक्षिता अस्ति, तत्र निर्देशिकां गच्छन्तु, एवं चालयन्तु:"}
+{"unnormalised": "", "normalised": "    ```bash"}
+{"unnormalised": "", "normalised": "    python normalize_data.py"}
+{"unnormalised": "", "normalised": "    ```"}
+{"unnormalised": "", "normalised": "**प्रदत्त-ब्लॉग-पोस्ट्-सामग्री कृते निर्गमनम्:**"}
+{"unnormalised": "", "normalised": "यदि भवान् कल्पित-आङ्कड-स्थापना-सह स्क्रिप्ट् चालयति, तर्हि `dataset_normalized/blog_posts/goa_addresses.txt` सञ्चिकायां एतत् भविष्यति:"}
+{"unnormalised": "", "normalised": "```"}
+{"unnormalised": "", "normalised": "lost in translation: my adventures with i-n-d-i-a-n addresses (and why you need g-p-s) so, i thought i was pretty savvy, you know? i've navigated the delhi metro during peak hours, haggled for the best price on a saree in chandni chowk, and even managed to order chai without getting milk in it (a feat, trust me). but then came the addresses. oh, the addresses! let me set the scene: i was on a mission to find this charming little guesthouse in goa. sounded idyllic, right? the booking confirmation cheerfully declared: \"anand villa, h. no. one hundred and forty seven slash a, near s-t. alex church, calangute, bardez, goa four hundred and three thousand five hundred and sixteen.\" simple enough, thought i. famous last words. first, the \"h. no. one hundred and forty seven slash a.\" i assumed it was house number, duh. but oh no, in goa, it seems to be more of a suggestion than a concrete marker. i spent a solid hour wandering around what i’m pretty sure was a coconut plantation, asking locals if they’d seen \"h. no. one hundred and forty seven slash a, any slash anything.\" the responses ranged from blank stares to helpful (but ultimately incorrect) directions. then there was the \"near s-t. alex church.\" now, s-t. alex church is a pretty big landmark. you’d think \"near\" would mean, like, visible from the front steps. nope. in goa, “near” means “somewhere in the general vicinity, possibly involving a rickshaw ride and a conversation with a cow.” i eventually found it… after asking three different auto-rickshaw wallahs who each tried to charge me rupee five hundred for a ride that should have cost rupee one hundred. and don't even get me started on \"bardez.\" is it a town? a district? a feeling? i'm still not entirely sure. the postcode, \"four hundred and three thousand five hundred and sixteen,\" was the only thing that made any sense, and even then, google maps just laughed at me. finally, after what felt like a small pilgrimage (and several bottles of kingfisher), i stumbled upon anand villa. it was lovely, truly. but the journey? let’s just say i’m now fluent in the goan dialect of “lost and confused.” moral of the story? always, asterisk always asterisk have g-p-s coordinates. and maybe a local s-i-m card. and definitely a sense of humor. because finding an address in india can be an adventure in itself, and sometimes, the best stories are the ones where you get hopelessly, hilariously lost. next time, i'm just putting \"latitude: [insert latitude here], longitude: [insert longitude here]\" in my booking notes. let’s see them try to get asterisk that asterisk"}

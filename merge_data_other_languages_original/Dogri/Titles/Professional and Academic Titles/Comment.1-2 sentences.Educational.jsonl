@@ -1,0 +1,61 @@
+{"unnormalised": "ज़रूर, हाज़र ऐ।", "normalised": "ठीक ऐ, मूँह्जो समझने च ऐ व्यापक सामान्यीकरण दे नियम ते \"Dr.\", \"Prof.\", ते \"Adv.\" गी खास ढंग नाल सम्भालना। मैं इनें जरूरतां दे मुताबिक टेक्स्ट दे डेटा गी प्रोसेस करने आस्तै इक पाइथन स्क्रिप्ट लागू करांआ।"}
+{"unnormalised": "---", "normalised": "ऐथे इक तोड़-फोड़ ऐ जे स्क्रिप्ट हर इक नियम गी किस चाल्ली संबोधन करी: जिसदे बाद पाइथन कोड:"}
+{"unnormalised": "", "normalised": "**कोर लॉजिक ते अप्रोच:**"}
+{"unnormalised": "", "normalised": "1.  **फाइल सिस्टम ट्रेवर्सल:** इनपुट डायरेक्टरी च सारे फोल्डर ते फाइलें च रिकर्सिव रूप कन्नै जाने आस्तै मैं `os.walk` दा इस्तेमाल करांआ।"}
+{"unnormalised": "", "normalised": "2.  **आउटपुट डायरेक्टरी मिररिंग:** इनपुट च हर इक फोल्डर आस्तै, मैं `dataset_normalized` आउटपुट डायरेक्टरी च इक मेलदा फोल्डर बनांदा।"}
+{"unnormalised": "", "normalised": "3.  **फाइल प्रोसेसिंग:**"}
+{"unnormalised": "", "normalised": "    *   जेकर कोई फाइल `.txt` फाइल ऐ, तां उसदी सामग्री पढ़ी जाग, सामान्य कीती जाग, ते फिर मिरर कीते गेदे आउटपुट फोल्डर च इक नईं `.txt` फाइल च लिखी जाग।"}
+{"unnormalised": "", "normalised": "    *   जेकर कोई फाइल `.txt` फाइल नेईं ऐ, तां उसगी बिना फेरबदल कीते सीधे मिरर कीते गेदे आउटपुट फोल्डर च कॉपी कीता जाग।"}
+{"unnormalised": "", "normalised": "4.  **सामान्यीकरण क्रम (सही आउटपुट आस्तै जरूरी):** सामान्यीकरण दे नियम लागू करने दे क्रम दा महत्व ऐ। मैं आम तौर पर आम नियमें थमां पैह्ले होर खास नियमें गी लागू करांआ (उदाहरण आस्तै, मुद्रा + नंबर + सामान्य नंबरें थमां पैह्ले प्रत्यय, जां आम अल्फान्यूमेरिक पैटर्न थमां पैह्ले खास प्रतीक)।"}
+{"unnormalised": "", "normalised": "    *   प्रतीक ते खास वर्ण।"}
+{"unnormalised": "", "normalised": "    *   मुद्रा + नंबर + प्रत्यय।"}
+{"unnormalised": "", "normalised": "    *   तारीखें।"}
+{"unnormalised": "", "normalised": "    *   नंबर (इकाईयां च शामल कीते गेदे बी, पर इकाईयां दा विस्तार अपने आप गी बाद च आह्ندا ऐ)।"}
+{"unnormalised": "", "normalised": "    *   संक्षेप रूप।"}
+{"unnormalised": "", "normalised": "    *   इकाईयां।"}
+{"unnormalised": "", "normalised": "    *   गणितीय संकेतन।"}
+{"unnormalised": "", "normalised": "    *   खास उपसर्ग जिਵੇਂ \"Dr.\", \"Prof.\", \"Adv.\" गी जल्दी जां खास रेगएक्स कन्नै संभाला जाग तां जे नंबर जां संक्षेप रूप दे नियमें कन्नै गलत व्याख्या थमां बचा जाई सकै।"}
+{"unnormalised": "", "normalised": "    *   आम `/` हैंडलिंग।"}
+{"unnormalised": "", "normalised": "    *   इक अंतिम कदम दे रूप च स्पेस सामान्यीकरण।"}
+{"unnormalised": "", "normalised": "**विस्तृत नियम लागू करने दी रणनीति:**"}
+{"unnormalised": "", "normalised": "1.  **प्रतीक → बोलचाल रूप:** मैं आम प्रतीकें गी उनदे बोलचाल रूपें च मैपिंग करने आस्तै इक शब्दकोश दा इस्तेमाल करांआ ते टेक्स्ट च घूमी के बदलाहट करांआ। रेगुलर एक्सप्रेशन दा इस्तेमाल उन प्रतीकें आस्तै कीता जाग जेह्ड़े अलग-अलग संदर्भें च दिक्खी सकदे न (उदाहरण आस्तै, `+/-`)।"}
+{"unnormalised": "", "normalised": "    *   `art/craft` -> `art or craft` (regex: `(\\b\\w+)\\/(\\w+\\b)`)"}
+{"unnormalised": "", "normalised": "    *   `QA/Dev` -> `Q-A slash D-e-v` (regex for mixed case or abbreviations `(\\b[A-Z0-9]+)\\/([A-Z0-9]+\\b)`)"}
+{"unnormalised": "", "normalised": "    *   `2+2=4` गी गणितीय संकेतन नियम कन्नै संभाला जाग।"}
+{"unnormalised": "", "normalised": "    *   `$`, `~`, `*`, `#`, `@`, `&`, वगैरा सीधे मैप कीते जाङन।"}
+{"unnormalised": "", "normalised": "2.  **संक्षेप रूप → हाइफनेटेड अक्षर:**"}
+{"unnormalised": "", "normalised": "    *   Regex: `\\b[A-Z]{2,}\\b` (दो जां उस थमां मते लगातार बड़े अक्षर, पूरे शब्द दे रूप च)। मूँह्जो ऐह् सावधान रेह्ने दी लोड़ ऐ जे ऐह् `Dr.`, `Prof.`, `Adv.` गी लागू नेईं करना।"}
+{"unnormalised": "", "normalised": "    *   `'-'.join(match.group())` कन्नै बदलो।"}
+{"unnormalised": "", "normalised": "3.  **नंबर → बोलचाल रूप:** ऐह् जटिल ऐ। मैं आम नंबर रूपांतरण आस्तै `num2words` लाइब्रेरी दा इस्तेमाल करांआ, जेह्ड़ी अलग-अलग संदर्भें गी संभालदी ऐ। \"अधा किलोग्राम\" जेंह्ने खास मामले आस्तै, मैं `(\\d+)/(\\d+)\\s*(\\w+)` जेंह्ने पैटर्नें दी पन्छान करने आस्तै रेगएक्स दा इस्तेमाल करांआ जिसदे बाद इक इकाई होंदी ऐ, ते अंश गी `num2words` लागू करांआ जां `1/2` गी \"अधे\" च बदलो।"}
+{"unnormalised": "", "normalised": "    *   आम नंबर: `num2words(number)`"}
+{"unnormalised": "", "normalised": "    *   अंश: `1/2 kg` -> `half kilogram`, `3/4` -> `three divided by four` (गणित कन्नै हैंडल कीता गेआ, पर ऐह् तारीखें कन्नै भ्रमित नेईं होना चाहिदा)।"}
+{"unnormalised": "", "normalised": "4.  **संख्यात्मक प्रत्यय → विस्तारित रूप:**"}
+{"unnormalised": "", "normalised": "    *   Regex: `(\\d+)([KMBT])\\b`"}
+{"unnormalised": "", "normalised": "    *   `K` गी `हजार`, `M` गी `लाख`, `B` गी `अरब`, `T` गी `खरब` च मैप करो।"}
+{"unnormalised": "", "normalised": "    *   `num2words` दा इस्तेमाल करी के नंबर पार्ट गी बदलो।"}
+{"unnormalised": "", "normalised": "5.  **मुद्रा + नंबर + प्रत्यय:**"}
+{"unnormalised": "", "normalised": "    *   Regex: `([$₹€£])(\\s*)(\\d+)([KMBT])?\\b`"}
+{"unnormalised": "", "normalised": "    *   मुद्रा प्रतीक, नंबर, ते प्रत्यय गी बदलो।"}
+{"unnormalised": "", "normalised": "6.  **तारीखें → कुदरती बोलचाल रूप:**"}
+{"unnormalised": "", "normalised": "    *   `DD-MM-YYYY`, `DD/MM/YYYY`, `YYYY-MM-DD` आस्तै रेगएक्स पैटर्न।"}
+{"unnormalised": "", "normalised": "    *   पार्स करने आस्तै `datetime.strptime` दा इस्तेमाल करो ते फिर क्रमवाचक नंबरें आस्तै कस्टम तर्क कन्नै `strftime` (उदाहरण आस्तै, \"दसवीं\", \"पैह्ली\") ते बोलचाल साल। संदिग्ध `DD/MM/YYYY` आस्तै `DD/MM/YYYY` गी डिफ़ॉल्ट मन्नी के।"}
+{"unnormalised": "", "normalised": "7.  **इकाईयां → बोलचाल रूप:**"}
+{"unnormalised": "", "normalised": "    *   `(\\d+)(\\s*)(cm|mm|m|km|g|kg|mg|ml|l|°C|...)` गी ढूँढने आस्तै Regex।"}
+{"unnormalised": "", "normalised": "    *   इकाईयां गी पूरे शब्दें च मैप करो (उदाहरण आस्तै, `cm` गी `सेंटीमीटर`, `°C` गी `डिग्री सेल्सियस`)।"}
+{"unnormalised": "", "normalised": "    *   पैह्ले नंबर च नंबर रूपांतरण लागू करो।"}
+{"unnormalised": "", "normalised": "8.  **गणितीय संकेतन → बोलचाल रूप:** इसदे आस्तै रेगएक्स दा इक जटिल सेट ते होर जटिल अभिव्यक्तियें आस्तै मुमकिन तौर पर इक छोटा पार्सर चाहिदा ऐ।"}
+{"unnormalised": "", "normalised": "    *   `x^2`: `x squared` (regex `(\\w)\\^2`)"}
+{"unnormalised": "", "normalised": "    *   `x^3`: `x cubed` (regex `(\\w)\\^3`)"}
+{"unnormalised": "", "normalised": "    *   `x^n`: `x to the power of n` (regex `(\\w)\\^(\\w+)`)"}
+{"unnormalised": "", "normalised": "    *   `x_i`: `x sub i` (regex `(\\w)_(\\w+)`)"}
+{"unnormalised": "", "normalised": "    *   `√x`: `square root of x` (regex `√(\\w+)`)"}
+{"unnormalised": "", "normalised": "    *   `∫`: `integral`"}
+{"unnormalised": "", "normalised": "    *   `Σ`: `summation`"}
+{"unnormalised": "", "normalised": "    *   अंश: `3/4` -> `three divided by four` (regex: `(\\d+)\\/(\\d+)`, पर ऐह् सुनिश्चित करना जे ऐह् तारीख नेईं ऐ)।"}
+{"unnormalised": "", "normalised": "    *   प्रतीक: `≠`, `≤`, `≥` गी आम प्रतीक बदलने कन्नै संभाला जाग।"}
+{"unnormalised": "", "normalised": "9.  **आउटपुट फॉर्मेट:**"}
+{"unnormalised": "", "normalised": "    *   अंत च स्पेस गी सामान्य करो: `re.sub(r'\\s+', ' ', text).strip()`।"}
+{"unnormalised": "", "normalised": "10. **फाइल हैंडलिंग:** `os.walk`, `os.makedirs`, `shutil.copy2`।"}
+{"unnormalised": "", "normalised": "**विशिष्ट उपसर्ग हैंडलिंग:**"}
+{"unnormalised": "", "normalised": "*   `Dr.`, `Prof.`, `Adv.` गी इनें ठीक तारें गी ढूँढ के संभाला जाग, मुमकिन ऐ जेह्दे बाद बिंदी जां स्पेस होंदा ऐ, ते उन्हां गी बरकरार रखदा ऐ। ऐह् आम संक्षेप रूप प्रोसेसिंग थमां पैह्ले होना चाहिदा।"}
+{"unnormalised": "", "normalised": "चलो पाइथन स्क्रिप्ट बनाना शुरू करीए।"}

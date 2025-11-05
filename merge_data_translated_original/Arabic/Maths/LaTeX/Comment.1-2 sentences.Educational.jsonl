@@ -1,0 +1,247 @@
+{"unnormalised": "تذكر أن تضع معادلاتك بين علامتي الدولار $. على سبيل المثال، لكتابة المعادلة $x^2 + y^2 = r^2$، اكتب \\$x^2 + y^2 = r^2\\$. استخدم \\\\frac\\{\\}\\{\\} للكسور، مثل $\\frac{1}{2}$ مكتوبة كـ \\\\frac\\{1\\}\\{2\\}.", "normalised": "```arabic"}
+{"unnormalised": "", "normalised": "استيراد os"}
+{"unnormalised": "", "normalised": "استيراد re"}
+{"unnormalised": "", "normalised": "من num2words استيراد num2words"}
+{"unnormalised": "", "normalised": "دالة لتحويل_رقم_إلى_كلمات(سلسلة_الرقم):"}
+{"unnormalised": "", "normalised": "    حاول:"}
+{"unnormalised": "", "normalised": "        إذا '.' في سلسلة_الرقم:"}
+{"unnormalised": "", "normalised": "            الجزء_الصحيح, الجزء_العشري = سلسلة_الرقم.split('.')"}
+{"unnormalised": "", "normalised": "            إذا الجزء_الصحيح:"}
+{"unnormalised": "", "normalised": "                كلمات_الجزء_الصحيح = num2words(int(الجزء_الصحيح))"}
+{"unnormalised": "", "normalised": "            وإلا:"}
+{"unnormalised": "", "normalised": "                كلمات_الجزء_الصحيح = ''"}
+{"unnormalised": "", "normalised": "            كلمات_الجزء_العشري = 'فاصلة ' + ' '.join(num2words(int(d)) for d in الجزء_العشري)"}
+{"unnormalised": "", "normalised": "            إذا كلمات_الجزء_الصحيح:"}
+{"unnormalised": "", "normalised": "                إرجاع f\"{كلمات_الجزء_الصحيح} {كلمات_الجزء_العشري}\""}
+{"unnormalised": "", "normalised": "            وإلا:"}
+{"unnormalised": "", "normalised": "                إرجاع كلمات_الجزء_العشري"}
+{"unnormalised": "", "normalised": "        وإلا:"}
+{"unnormalised": "", "normalised": "            إرجاع num2words(int(سلسلة_الرقم))"}
+{"unnormalised": "", "normalised": "    إلا ValueError:"}
+{"unnormalised": "", "normalised": "        إرجاع سلسلة_الرقم # إرجاع الأصل إذا فشل التحويل"}
+{"unnormalised": "", "normalised": "دالة لتطبيع_النص(النص):"}
+{"unnormalised": "", "normalised": "    # القاعدة 1: الرموز ← الشكل المنطوق"}
+{"unnormalised": "", "normalised": "    # ملاحظة: الترتيب مهم لاستبدال الرموز لتجنب مشكلات مثل استبدال '$' قبل معالجة '$20B'."}
+{"unnormalised": "", "normalised": "    # إعطاء الأولوية للرموز متعددة الأحرف وتلك التي تتفاعل مع الأرقام."}
+{"unnormalised": "", "normalised": "    # عملة مدمجة + رقم + لاحقة (القاعدة 5) - يجب أن تأتي قبل قواعد الرمز أو الرقم الفردية"}
+{"unnormalised": "", "normalised": "    دالة لاستبدال_عملة_رقم_لاحقة(المطابقة):"}
+{"unnormalised": "", "normalised": "        رمز_العملة = المطابقة.group(1)"}
+{"unnormalised": "", "normalised": "        قيمة_الرقم = المطابقة.group(2)"}
+{"unnormalised": "", "normalised": "        اللاحقة = المطابقة.group(3)"}
+{"unnormalised": "", "normalised": "        "}
+{"unnormalised": "", "normalised": "        خريطة_العملة = {"}
+{"unnormalised": "", "normalised": "            '$': 'دولار', '₹': 'روبية', '€': 'يورو', '£': 'جنيه', '¥': 'ين'"}
+{"unnormalised": "", "normalised": "        }"}
+{"unnormalised": "", "normalised": "        كلمة_العملة = خريطة_العملة.get(رمز_العملة, رمز_العملة) # الرجوع إلى الأصل إذا لم يكن في الخريطة"}
+{"unnormalised": "", "normalised": "        كلمات_الرقم = دالة_لتحويل_رقم_إلى_كلمات(قيمة_الرقم)"}
+{"unnormalised": "", "normalised": "        خريطة_اللاحقة = {"}
+{"unnormalised": "", "normalised": "            'K': 'ألف', 'M': 'مليون', 'B': 'مليار', 'T': 'تريليون'"}
+{"unnormalised": "", "normalised": "        }"}
+{"unnormalised": "", "normalised": "        كلمة_اللاحقة = خريطة_اللاحقة.get(اللاحقة.upper(), اللاحقة) # الافتراضي هو الأصلي إذا لم يكن في الخريطة"}
+{"unnormalised": "", "normalised": "        إرجاع f\"{كلمة_العملة} {كلمات_الرقم} {كلمة_اللاحقة}\""}
+{"unnormalised": "", "normalised": "    "}
+{"unnormalised": "", "normalised": "    النص = re.sub(r'([$₹€£¥])(\\d+)([KMBTkmbt])\\b', استبدال_عملة_رقم_لاحقة, النص)"}
+{"unnormalised": "", "normalised": "    # القاعدة 4: اللواحق الرقمية (K, M, B, T) - بعد العملة المدمجة ولكن قبل قاعدة الرقم العامة"}
+{"unnormalised": "", "normalised": "    دالة لاستبدال_اللاحقة_الرقمية(المطابقة):"}
+{"unnormalised": "", "normalised": "        قيمة_الرقم = المطابقة.group(1)"}
+{"unnormalised": "", "normalised": "        اللاحقة = المطابقة.group(2)"}
+{"unnormalised": "", "normalised": "        كلمات_الرقم = دالة_لتحويل_رقم_إلى_كلمات(قيمة_الرقم)"}
+{"unnormalised": "", "normalised": "        خريطة_اللاحقة = {"}
+{"unnormalised": "", "normalised": "            'K': 'ألف', 'M': 'مليون', 'B': 'مليار', 'T': 'تريليون'"}
+{"unnormalised": "", "normalised": "        }"}
+{"unnormalised": "", "normalised": "        إرجاع f\"{كلمات_الرقم} {خريطة_اللاحقة.get(اللاحقة.upper(), اللاحقة)}\""}
+{"unnormalised": "", "normalised": "    "}
+{"unnormalised": "", "normalised": "    النص = re.sub(r'(\\d+)([KMBTkmbt])\\b', استبدال_اللاحقة_الرقمية, النص)"}
+{"unnormalised": "", "normalised": "    # القاعدة 1 و 8: التدوين الرياضي والرموز المعقدة"}
+{"unnormalised": "", "normalised": "    # الكسور: x/y -> x مقسومة على y (فقط للأرقام الصرفة)"}
+{"unnormalised": "", "normalised": "    النص = re.sub(r'(\\d+)/(\\d+)', r'\\1 مقسومة على \\2', النص)"}
+{"unnormalised": "", "normalised": "    "}
+{"unnormalised": "", "normalised": "    # الرموز الرياضية"}
+{"unnormalised": "", "normalised": "    النص = النص.replace('∫', 'تكامل')"}
+{"unnormalised": "", "normalised": "    النص = النص.replace('→', 'إلى') # لحدود التكامل"}
+{"unnormalised": "", "normalised": "    النص = النص.replace('√', 'الجذر التربيعي لـ')"}
+{"unnormalised": "", "normalised": "    النص = النص.replace('π', 'باي')"}
+{"unnormalised": "", "normalised": "    النص = النص.replace('Σ', 'مجموع')"}
+{"unnormalised": "", "normalised": "    النص = النص.replace('≠', 'لا يساوي')"}
+{"unnormalised": "", "normalised": "    النص = النص.replace('≤', 'أقل من أو يساوي')"}
+{"unnormalised": "", "normalised": "    النص = النص.replace('≥', 'أكبر من أو يساوي')"}
+{"unnormalised": "", "normalised": "    النص = النص.replace('≈', 'يساوي تقريبا')"}
+{"unnormalised": "", "normalised": "    النص = النص.replace('≅', 'متطابق تقريبا مع')"}
+{"unnormalised": "", "normalised": "    النص = النص.replace('≡', 'يساوي تماما')"}
+{"unnormalised": "", "normalised": "    النص = النص.replace('∀', 'لكل')"}
+{"unnormalised": "", "normalised": "    النص = النص.replace('∃', 'يوجد')"}
+{"unnormalised": "", "normalised": "    النص = النص.replace('∉', 'ليس عنصرا من')"}
+{"unnormalised": "", "normalised": "    النص = النص.replace('∈', 'هو عنصر من')"}
+{"unnormalised": "", "normalised": "    النص = النص.replace('⊂', 'هو مجموعة فرعية من')"}
+{"unnormalised": "", "normalised": "    النص = النص.replace('⊃', 'هو مجموعة شاملة من')"}
+{"unnormalised": "", "normalised": "    النص = النص.replace('∪', 'اتحاد')"}
+{"unnormalised": "", "normalised": "    النص = النص.replace('∩', 'تقاطع')"}
+{"unnormalised": "", "normalised": "    النص = النص.replace('∅', 'مجموعة فارغة')"}
+{"unnormalised": "", "normalised": "    النص = النص.replace('∝', 'يتناسب مع')"}
+{"unnormalised": "", "normalised": "    النص = النص.replace('∞', 'مالانهاية')"}
+{"unnormalised": "", "normalised": "    النص = النص.replace('±', 'زائد أو ناقص')"}
+{"unnormalised": "", "normalised": "    النص = النص.replace('∇', 'نابلا')"}
+{"unnormalised": "", "normalised": "    النص = النص.replace('∂', 'مشتق جزئي')"}
+{"unnormalised": "", "normalised": "    النص = النص.replace('⊕', 'مجموع مباشر')"}
+{"unnormalised": "", "normalised": "    النص = النص.replace('⊗', 'حاصل ضرب متجهي')"}
+{"unnormalised": "", "normalised": "    النص = النص.replace('∘', 'تركيب')"}
+{"unnormalised": "", "normalised": "    النص = النص.replace('⋅', 'ضرب نقطي') # أو مرات ، اعتمادا على السياق. الافتراضي هو 'ضرب نقطي'"}
+{"unnormalised": "", "normalised": "    النص = النص.replace('°', 'درجة') # للوحدات ، يتم التعامل معها بشكل منفصل"}
+{"unnormalised": "", "normalised": "    # القوى والرموز السفلية"}
+{"unnormalised": "", "normalised": "    النص = re.sub(r'(\\w)\\^2\\b', r'\\1 تربيع', النص)"}
+{"unnormalised": "", "normalised": "    النص = re.sub(r'(\\w)\\^3\\b', r'\\1 تكعيب', النص)"}
+{"unnormalised": "", "normalised": "    النص = re.sub(r'(\\w)\\^(\\d+)\\b', r'\\1 مرفوعة للقوة \\2', النص)"}
+{"unnormalised": "", "normalised": "    النص = re.sub(r'(\\w)_(\\w+)\\b', r'\\1 أسفل \\2', النص) # x_i -> x أسفل i"}
+{"unnormalised": "", "normalised": "    النص = re.sub(r'(\\w)_(\\{\\w+\\})\\b', r'\\1 أسفل \\2', النص) # x_{max} -> x أسفل max"}
+{"unnormalised": "", "normalised": "    # رموز أخرى"}
+{"unnormalised": "", "normalised": "    النص = النص.replace('$', 'دولار')"}
+{"unnormalised": "", "normalised": "    النص = النص.replace('€', 'يورو')"}
+{"unnormalised": "", "normalised": "    النص = النص.replace('£', 'جنيه')"}
+{"unnormalised": "", "normalised": "    النص = النص.replace('¥', 'ين')"}
+{"unnormalised": "", "normalised": "    النص = النص.replace('₹', 'روبية')"}
+{"unnormalised": "", "normalised": "    النص = النص.replace('%', 'بالمائة')"}
+{"unnormalised": "", "normalised": "    النص = النص.replace('@', 'في')"}
+{"unnormalised": "", "normalised": "    النص = النص.replace('&', 'و')"}
+{"unnormalised": "", "normalised": "    النص = النص.replace('#', 'هاش')"}
+{"unnormalised": "", "normalised": "    النص = النص.replace('*', 'نجمة')"}
+{"unnormalised": "", "normalised": "    النص = النص.replace('+', 'زائد')"}
+{"unnormalised": "", "normalised": "    النص = النص.replace('=', 'يساوي')"}
+{"unnormalised": "", "normalised": "    النص = النص.replace('-', 'ناقص') # كن حذرا مع الكلمات التي بها واصلة مقابل الرياضيات ناقص"}
+{"unnormalised": "", "normalised": "    النص = النص.replace('~', 'تقريبا')"}
+{"unnormalised": "", "normalised": "    # القاعدة 2: الاختصارات → حروف موصولة"}
+{"unnormalised": "", "normalised": "    النص = re.sub(r'\\b([A-Z]{2,})\\b', lambda m: '-'.join(list(m.group(1))), النص)"}
+{"unnormalised": "", "normalised": "    "}
+{"unnormalised": "", "normalised": "    # القاعدة 6: التواريخ → الشكل المنطوق الطبيعي (يفترض DD/MM/YYYY أو YYYY-MM-DD)"}
+{"unnormalised": "", "normalised": "    دالة لاستبدال_التاريخ(المطابقة):"}
+{"unnormalised": "", "normalised": "        اليوم, الشهر, السنة = '', '', ''"}
+{"unnormalised": "", "normalised": "        إذا المطابقة.group(1): # DD-MM-YYYY أو DD/MM/YYYY"}
+{"unnormalised": "", "normalised": "            اليوم = int(المطابقة.group(2))"}
+{"unnormalised": "", "normalised": "            الشهر = int(المطابقة.group(3))"}
+{"unnormalised": "", "normalised": "            السنة = int(المطابقة.group(4))"}
+{"unnormalised": "", "normalised": "        أو إذا المطابقة.group(5): # YYYY-MM-DD"}
+{"unnormalised": "", "normalised": "            السنة = int(المطابقة.group(6))"}
+{"unnormalised": "", "normalised": "            الشهر = int(المطابقة.group(7))"}
+{"unnormalised": "", "normalised": "            اليوم = int(المطابقة.group(8))"}
+{"unnormalised": "", "normalised": "        إذا لم يكن (اليوم and الشهر and السنة):"}
+{"unnormalised": "", "normalised": "            إرجاع المطابقة.group(0) # إرجاع الأصل إذا فشل تحليل التاريخ"}
+{"unnormalised": "", "normalised": "        الأشهر = [\"\", \"يناير\", \"فبراير\", \"مارس\", \"أبريل\", \"مايو\", \"يونيو\","}
+{"unnormalised": "", "normalised": "                  \"يوليو\", \"أغسطس\", \"سبتمبر\", \"أكتوبر\", \"نوفمبر\", \"ديسمبر\"]"}
+{"unnormalised": "", "normalised": "        "}
+{"unnormalised": "", "normalised": "        لاحقة_اليوم = {1: 'الأول', 2: 'الثاني', 3: 'الثالث', 4: 'الرابع', 5: 'الخامس', 6: 'السادس', 7: 'السابع', 8: 'الثامن', 9: 'التاسع', 10: 'العاشر', 11: 'الحادي عشر', 12: 'الثاني عشر', 13: 'الثالث عشر', 14: 'الرابع عشر', 15: 'الخامس عشر', 16: 'السادس عشر', 17: 'السابع عشر', 18: 'الثامن عشر', 19: 'التاسع عشر', 20: 'العشرون', 21: 'الواحد والعشرون', 22: 'الاثنان والعشرون', 23: 'الثلاثة والعشرون', 24: 'الأربعة والعشرون', 25: 'الخمسة والعشرون', 26: 'الستة والعشرون', 27: 'السبعة والعشرون', 28: 'الثمانية والعشرون', 29: 'التسعة والعشرون', 30: 'الثلاثون', 31: 'الواحد والثلاثون'}"}
+{"unnormalised": "", "normalised": "        "}
+{"unnormalised": "", "normalised": "        اليوم_المنطوق = لاحقة_اليوم.get(اليوم, num2words(اليوم, to='ordinal'))"}
+{"unnormalised": "", "normalised": "        الشهر_المنطوق = الأشهر[الشهر]"}
+{"unnormalised": "", "normalised": "        السنة_المنطوقة = دالة_لتحويل_رقم_إلى_كلمات(str(السنة))"}
+{"unnormalised": "", "normalised": "        "}
+{"unnormalised": "", "normalised": "        إرجاع f\"{اليوم_المنطوق} {الشهر_المنطوق} {السنة_المنطوقة}\""}
+{"unnormalised": "", "normalised": "    # DD/MM/YYYY أو DD-MM-YYYY"}
+{"unnormalised": "", "normalised": "    النص = re.sub(r'\\b((\\d{1,2})[/-](\\d{1,2})[/-](\\d{4}))\\b', استبدال_التاريخ, النص)"}
+{"unnormalised": "", "normalised": "    # YYYY-MM-DD"}
+{"unnormalised": "", "normalised": "    النص = re.sub(r'\\b((\\d{4})[/-](\\d{1,2})[/-](\\d{1,2}))\\b', استبدال_التاريخ, النص)"}
+{"unnormalised": "", "normalised": "    # القاعدة 7: الوحدات → الشكل المنطوق"}
+{"unnormalised": "", "normalised": "    دالة لاستبدال_الوحدات(المطابقة):"}
+{"unnormalised": "", "normalised": "        الرقم = دالة_لتحويل_رقم_إلى_كلمات(المطابقة.group(1))"}
+{"unnormalised": "", "normalised": "        الوحدة = المطابقة.group(2).lower()"}
+{"unnormalised": "", "normalised": "        خريطة_الوحدة = {"}
+{"unnormalised": "", "normalised": "            'cm': 'سنتيمتر', 'mm': 'مليمتر', 'm': 'متر', 'km': 'كيلومتر',"}
+{"unnormalised": "", "normalised": "            'g': 'غرام', 'kg': 'كيلوغرام', 'mg': 'مليغرام',"}
+{"unnormalised": "", "normalised": "            'ml': 'مليلتر', 'l': 'لتر',"}
+{"unnormalised": "", "normalised": "            '°c': 'درجة مئوية', 'kph': 'كيلومتر في الساعة',"}
+{"unnormalised": "", "normalised": "            'mph': 'ميل في الساعة', 'psi': 'رطل لكل بوصة مربعة',"}
+{"unnormalised": "", "normalised": "            'sqm': 'متر مربع', 'sqkm': 'كيلومتر مربع',"}
+{"unnormalised": "", "normalised": "            'ha': 'هكتار', 'ft': 'قدم', 'in': 'بوصة', 'yd': 'ياردة',"}
+{"unnormalised": "", "normalised": "            'oz': 'أوقية', 'lb': 'رطل', 'hr': 'ساعة', 'min': 'دقيقة', 'sec': 'ثانية',"}
+{"unnormalised": "", "normalised": "            'mb': 'ميغابايت', 'gb': 'غيغابايت', 'tb': 'تيرابايت', 'kb': 'كيلوبايت',"}
+{"unnormalised": "", "normalised": "            'hz': 'هرتز', 'khz': 'كيلوهرتز', 'mhz': 'ميغاهرتز', 'ghz': 'غيغاهرتز',"}
+{"unnormalised": "", "normalised": "            'v': 'فولت', 'a': 'أمبير', 'w': 'واط', 'kw': 'كيلوواط', 'mw': 'ميغاواط'"}
+{"unnormalised": "", "normalised": "        }"}
+{"unnormalised": "", "normalised": "        # التعامل مع الجمع إذا لزم الأمر (طريقة استدلال بسيطة)"}
+{"unnormalised": "", "normalised": "        إذا int(المطابقة.group(1)) > 1 and خريطة_الوحدة.get(الوحدة) and not خريطة_الوحدة.get(الوحدة).endswith('s'):"}
+{"unnormalised": "", "normalised": "            إرجاع f\"{الرقم} {خريطة_الوحدة.get(الوحدة)}ات\""}
+{"unnormalised": "", "normalised": "        إرجاع f\"{الرقم} {خريطة_الوحدة.get(الوحدة, الوحدة)}\""}
+{"unnormalised": "", "normalised": "    النص = re.sub(r'(\\d+(?:\\.\\d+)?)\\s*(cm|mm|m|km|g|kg|mg|ml|l|°C|°c|kph|mph|psi|sqm|sqkm|ha|ft|in|yd|oz|lb|hr|min|sec|mb|gb|tb|kb|hz|khz|mhz|ghz|v|a|w|kw|mw)\\b', استبدال_الوحدات, النص, flags=re.IGNORECASE)"}
+{"unnormalised": "", "normalised": "    # القاعدة 3: الأرقام ← الشكل المنطوق (بعد العملة واللواحق والوحدات)"}
+{"unnormalised": "", "normalised": "    # يجب أن يأتي هذا بعد جميع القواعد الأخرى المتعلقة بالأرقام"}
+{"unnormalised": "", "normalised": "    النص = re.sub(r'\\b(\\d+(?:\\.\\d+)?)\\b', lambda m: دالة_لتحويل_رقم_إلى_كلمات(m.group(1)), النص)"}
+{"unnormalised": "", "normalised": "    # القاعدة 1 (تابع): استبدال الرموز التي قد تتعارض مع القواعد الأخرى إذا وضعت في وقت سابق"}
+{"unnormalised": "", "normalised": "    # التعامل مع / بعناية: \"مقسومة على\" بين الأرقام ، \"أو\" بين الكلمات ، \"شرطة\" للآخرين"}
+{"unnormalised": "", "normalised": "    دالة لاستبدال_الشرطة(المطابقة):"}
+{"unnormalised": "", "normalised": "        قبل = المطابقة.group(1)"}
+{"unnormalised": "", "normalised": "        بعد = المطابقة.group(2)"}
+{"unnormalised": "", "normalised": "        إذا re.match(r'\\b\\w+\\b', قبل) and re.match(r'\\b\\w+\\b', بعد):"}
+{"unnormalised": "", "normalised": "            إرجاع f\"{قبل} أو {بعد}\""}
+{"unnormalised": "", "normalised": "        أو إذا (re.match(r'\\b[A-Z-]+\\b', قبل) or re.match(r'\\b[a-z-]+\\b', قبل)) and \\"}
+{"unnormalised": "", "normalised": "             (re.match(r'\\b[A-Z-]+\\b', بعد) or re.match(r'\\b[a-z-]+\\b', بعد)) and \\"}
+{"unnormalised": "", "normalised": "             (قبل.isupper() != بعد.isupper()): # حالة مختلطة على سبيل المثال QA/Dev"}
+{"unnormalised": "", "normalised": "            إرجاع f\"{قبل} شرطة {بعد}\""}
+{"unnormalised": "", "normalised": "        وإلا:"}
+{"unnormalised": "", "normalised": "            إرجاع f\"{قبل} شرطة {بعد}\" # الافتراضي هو شرطة للحالات الأخرى"}
+{"unnormalised": "", "normalised": "    النص = re.sub(r'(\\S)\\s*/\\s*(\\S)', استبدال_الشرطة, النص) # تم الاستبدال بالتعبير النمطي الذي يراعي المحيط"}
+{"unnormalised": "", "normalised": "    # القاعدة 9: تطبيع المسافات"}
+{"unnormalised": "", "normalised": "    النص = re.sub(r'\\s+', ' ', النص).strip()"}
+{"unnormalised": "", "normalised": "    "}
+{"unnormalised": "", "normalised": "    إرجاع النص"}
+{"unnormalised": "", "normalised": "دالة لمعالجة_المجلد(المجلد_المدخل, المجلد_المخرج):"}
+{"unnormalised": "", "normalised": "    الملفات_غير_المطبعة = []"}
+{"unnormalised": "", "normalised": "    "}
+{"unnormalised": "", "normalised": "    من أجل الجذر, المجلدات, الملفات في os.walk(المجلد_المدخل):"}
+{"unnormalised": "", "normalised": "        المسار_النسبي = os.path.relpath(الجذر, المجلد_المدخل)"}
+{"unnormalised": "", "normalised": "        الجذر_المخرج = os.path.join(المجلد_المخرج, المسار_النسبي)"}
+{"unnormalised": "", "normalised": "        os.makedirs(الجذر_المخرج, exist_ok=True)"}
+{"unnormalised": "", "normalised": "        من أجل اسم_الملف في الملفات:"}
+{"unnormalised": "", "normalised": "            مسار_ملف_الإدخال = os.path.join(الجذر, اسم_الملف)"}
+{"unnormalised": "", "normalised": "            مسار_ملف_الإخراج = os.path.join(الجذر_المخرج, اسم_الملف)"}
+{"unnormalised": "", "normalised": "            إذا اسم_الملف.endswith('.txt'):"}
+{"unnormalised": "", "normalised": "                حاول:"}
+{"unnormalised": "", "normalised": "                    مع فتح(مسار_ملف_الإدخال, 'r', encoding='utf-8') كما f_in:"}
+{"unnormalised": "", "normalised": "                        المحتوى = f_in.read()"}
+{"unnormalised": "", "normalised": "                    "}
+{"unnormalised": "", "normalised": "                    المحتوى_المطبع = دالة_لتطبيع_النص(المحتوى)"}
+{"unnormalised": "", "normalised": "                    "}
+{"unnormalised": "", "normalised": "                    مع فتح(مسار_ملف_الإخراج, 'w', encoding='utf-8') كما f_out:"}
+{"unnormalised": "", "normalised": "                        f_out.write(المحتوى_المطبع)"}
+{"unnormalised": "", "normalised": "                إلا Exception كما e:"}
+{"unnormalised": "", "normalised": "                    طباعة(f\"خطأ في معالجة {مسار_ملف_الإدخال}: {e}\")"}
+{"unnormalised": "", "normalised": "                    الملفات_غير_المطبعة.append(مسار_ملف_الإدخال)"}
+{"unnormalised": "", "normalised": "                    # نسخ الملف الأصلي في حالة فشل التطبيع"}
+{"unnormalised": "", "normalised": "                    مع فتح(مسار_ملف_الإخراج, 'w', encoding='utf-8') كما f_out:"}
+{"unnormalised": "", "normalised": "                        f_out.write(المحتوى)"}
+{"unnormalised": "", "normalised": "            وإلا:"}
+{"unnormalised": "", "normalised": "                # نسخ الملفات غير txt بدون تغيير"}
+{"unnormalised": "", "normalised": "                حاول:"}
+{"unnormalised": "", "normalised": "                    مع فتح(مسار_ملف_الإدخال, 'rb') كما f_in, فتح(مسار_ملف_الإخراج, 'wb') كما f_out:"}
+{"unnormalised": "", "normalised": "                        f_out.write(f_in.read())"}
+{"unnormalised": "", "normalised": "                إلا Exception كما e:"}
+{"unnormalised": "", "normalised": "                    طباعة(f\"خطأ في نسخ ملف غير txt {مسار_ملف_الإدخال}: {e}\")"}
+{"unnormalised": "", "normalised": "                    الملفات_غير_المطبعة.append(مسار_ملف_الإدخال)"}
+{"unnormalised": "", "normalised": "    إذا الملفات_غير_المطبعة:"}
+{"unnormalised": "", "normalised": "        طباعة(\"\\nالملفات التي لا يمكن تطبيعها بالكامل أو نسخها بسبب الأخطاء:\")"}
+{"unnormalised": "", "normalised": "        من أجل f في الملفات_غير_المطبعة:"}
+{"unnormalised": "", "normalised": "            طباعة(f)"}
+{"unnormalised": "", "normalised": "# مثال على الاستخدام:"}
+{"unnormalised": "", "normalised": "# إنشاء بعض البيانات الوهمية للعرض التوضيحي"}
+{"unnormalised": "", "normalised": "إذا __name__ == \"__main__\":"}
+{"unnormalised": "", "normalised": "    # إنشاء مجموعة بيانات وهمية"}
+{"unnormalised": "", "normalised": "    os.makedirs('dataset/subfolder1', exist_ok=True)"}
+{"unnormalised": "", "normalised": "    os.makedirs('dataset/subfolder2', exist_ok=True)"}
+{"unnormalised": "", "normalised": "    مع فتح('dataset/file1.txt', 'w') كما f:"}
+{"unnormalised": "", "normalised": "        f.write(\"تلقى مشروع ناسا تمويلا بقيمة 20 مليار دولار. بدأ في 10/09/2024. كان نمو الناتج المحلي الإجمالي ~ 5٪. يحتاج إلى 2.5 كجم من الأرز. 20.50 دولار هو السعر. أ 2 + 2 = 4. الفن / الحرف جيد. فريق QA / Dev.\\n\")"}
+{"unnormalised": "", "normalised": "        f.write(\"التكامل ∫ x^2 dx من 0 إلى 1. القيمة هي πr^2. x^n و x_i مهمان. 3/4 من السكان. 25 درجة مئوية بالخارج. كانت السرعة 100 كم / ساعة. الناتج المحلي الإجمالي هو 10 ملايين. 1/2 كجم.\\n\")"}
+{"unnormalised": "", "normalised": "        f.write(\"رموز خاصة: @ # & * ≠ ≤ ≥. هذه 99 مشكلة. الولايات المتحدة الأمريكية عظيمة. اليوم السابع. تقرير 2024-09-10. 10 سم ، 100 مل. مشى 5 كم. √9 ثلاثة. المساحة 100 متر مربع. هذا مثال على x^3. درجة الحرارة 10 درجات. جهاز الكمبيوتر الخاص بي لديه مساحة تخزين 1 تيرابايت. التردد 50 هرتز.\")"}
+{"unnormalised": "", "normalised": "    "}
+{"unnormalised": "", "normalised": "    مع فتح('dataset/subfolder1/file2.txt', 'w') كما f:"}
+{"unnormalised": "", "normalised": "        f.write(\"اختبار آخر: 12345 دولار. التاريخ هو 01-01-2023. نحن بحاجة إلى 500 ملغ. الزاوية 45 درجة. يجب تطبيع هذا بشكل صحيح. ماذا عن 9999999999.99؟\\n\")"}
+{"unnormalised": "", "normalised": "        f.write(\"هذا اختبار X-Y-Z. هذا نص A.B.C. 200 فولت ، 10 أمبير ، 5 كيلو وات. x_max و y_min متغيرات مهمة.\")"}
+{"unnormalised": "", "normalised": "    مع فتح('dataset/subfolder2/image.jpg', 'w') كما f: # ملف وهمي غير نصي"}
+{"unnormalised": "", "normalised": "        f.write(\"هذا ليس ملف نصي.\")"}
+{"unnormalised": "", "normalised": "    المجلد_المدخل = 'dataset'"}
+{"unnormalised": "", "normalised": "    المجلد_المخرج = 'dataset_normalized'"}
+{"unnormalised": "", "normalised": "    دالة لمعالجة_المجلد(المجلد_المدخل, المجلد_المخرج)"}
+{"unnormalised": "", "normalised": "    طباعة(f\"\\nاكتمل التطبيع. تحقق من '{المجلد_المخرج}' للحصول على النتائج.\")"}
+{"unnormalised": "", "normalised": "    طباعة(\"مثال على محتوى الملف الذي تم تطبيعه (file1.txt):\")"}
+{"unnormalised": "", "normalised": "    حاول:"}
+{"unnormalised": "", "normalised": "        مع فتح(os.path.join(المجلد_المخرج, 'file1.txt'), 'r', encoding='utf-8') كما f:"}
+{"unnormalised": "", "normalised": "            طباعة(f.read())"}
+{"unnormalised": "", "normalised": "    إلا FileNotFoundError:"}
+{"unnormalised": "", "normalised": "        طباعة(\"لم يتم العثور على file1.txt المطبع.\")"}
+{"unnormalised": "", "normalised": "```"}

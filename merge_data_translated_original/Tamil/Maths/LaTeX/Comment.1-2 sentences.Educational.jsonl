@@ -1,0 +1,248 @@
+{"unnormalised": "சமன்பாடுகளை \\$ குறியீடுகளுக்குள் அடைக்க நினைவில் கொள்ளுங்கள். உதாரணமாக, \\$x^2 + y^2 = r^2\\$ என்ற சமன்பாட்டை எழுத, நீங்கள் \\$x^2 + y^2 = r^2\\$ என்று தட்டச்சு செய்வீர்கள். பின்னங்களுக்கு \\\\frac\\{\\}\\{\\} ஐப் பயன்படுத்தவும், $\\frac{1}{2}$ என்பது \\\\frac\\{1\\}\\{2\\} என்று எழுதப்பட்டது போல்.", "normalised": "```tamil"}
+{"unnormalised": "", "normalised": "இறக்குமதி ஓஎஸ்"}
+{"unnormalised": "", "normalised": "இறக்குமதி மீள்"}
+{"unnormalised": "", "normalised": "இறக்குமதி நம்2வேர்ட்ஸ்லிருந்து நம்2வேர்ட்ஸ்"}
+{"unnormalised": "", "normalised": "def convert_number_to_words(number_str):"}
+{"unnormalised": "", "normalised": "    try:"}
+{"unnormalised": "", "normalised": "        if '.' in number_str:"}
+{"unnormalised": "", "normalised": "            integer_part, decimal_part = number_str.split('.')"}
+{"unnormalised": "", "normalised": "            if integer_part:"}
+{"unnormalised": "", "normalised": "                integer_words = num2words(int(integer_part))"}
+{"unnormalised": "", "normalised": "            else:"}
+{"unnormalised": "", "normalised": "                integer_words = ''"}
+{"unnormalised": "", "normalised": "            decimal_words = 'பாயின்ட் ' + ' '.join(num2words(int(d)) for d in decimal_part)"}
+{"unnormalised": "", "normalised": "            if integer_words:"}
+{"unnormalised": "", "normalised": "                return f\"{integer_words} {decimal_words}\""}
+{"unnormalised": "", "normalised": "            else:"}
+{"unnormalised": "", "normalised": "                return decimal_words"}
+{"unnormalised": "", "normalised": "        else:"}
+{"unnormalised": "", "normalised": "            return num2words(int(number_str))"}
+{"unnormalised": "", "normalised": "    except ValueError:"}
+{"unnormalised": "", "normalised": "        return number_str # மாற்றங்கள் தோல்வியடைந்தால் மூலத்தை மீண்டும் அனுப்பு"}
+{"unnormalised": "", "normalised": "def normalize_text(text):"}
+{"unnormalised": "", "normalised": "    # விதி 1: குறியீடுகள் → பேசும் முறை"}
+{"unnormalised": "", "normalised": "    # குறிப்பு: குறியீட்டு மாற்றத்திற்கான வரிசை முக்கியம். '$' என்பது '$20B' கையாளுவதற்கு முன் மாற்றுவதைத் தவிர்க்கலாம்."}
+{"unnormalised": "", "normalised": "    # பல எழுத்துக் குறியீடுகளுக்கும் எண்களுடன் செயல்படுபவர்களுக்கும் முன்னுரிமை கொடுங்கள்."}
+{"unnormalised": "", "normalised": "    # ஒருங்கிணைந்த நாணயம் + எண் + பின்னொட்டு (விதி 5) - தனிப்பட்ட சின்னம் அல்லது எண் விதிகளுக்கு முன் வரவேண்டும்"}
+{"unnormalised": "", "normalised": "    def replace_currency_number_suffix(match):"}
+{"unnormalised": "", "normalised": "        currency_symbol = match.group(1)"}
+{"unnormalised": "", "normalised": "        number_val = match.group(2)"}
+{"unnormalised": "", "normalised": "        suffix = match.group(3)"}
+{"unnormalised": "", "normalised": "        "}
+{"unnormalised": "", "normalised": "        currency_map = {"}
+{"unnormalised": "", "normalised": "            '$': 'டாலர்', '₹': 'ரூபாய்', '€': 'யூரோ', '£': 'பவுண்டு', '¥': 'யென்'"}
+{"unnormalised": "", "normalised": "        }"}
+{"unnormalised": "", "normalised": "        currency_word = currency_map.get(currency_symbol, currency_symbol) # வரைபடத்தில் இல்லாவிட்டால், பதிலி"}
+{"unnormalised": "", "normalised": "        number_words = convert_number_to_words(number_val)"}
+{"unnormalised": "", "normalised": "        suffix_map = {"}
+{"unnormalised": "", "normalised": "            'K': 'ஆயிரம்', 'M': 'மில்லியன்', 'B': 'பில்லியன்', 'T': 'டிரில்லியன்'"}
+{"unnormalised": "", "normalised": "        }"}
+{"unnormalised": "", "normalised": "        suffix_word = suffix_map.get(suffix.upper(), suffix) # வரைபடத்தில் இல்லையென்றால் அசலுக்குத் திரும்பு"}
+{"unnormalised": "", "normalised": "        return f\"{currency_word} {number_words} {suffix_word}\""}
+{"unnormalised": "", "normalised": "    "}
+{"unnormalised": "", "normalised": "    text = re.sub(r'([$₹€£¥])(\\d+)([KMBTkmbt])\\b', replace_currency_number_suffix, text)"}
+{"unnormalised": "", "normalised": "    # விதி 4: எண் பின்னொட்டுகள் (K, M, B, T) - ஒருங்கிணைந்த நாணயத்திற்குப் பிறகு, ஆனால் பொது எண் விதிக்கு முன்"}
+{"unnormalised": "", "normalised": "    def replace_numeric_suffix(match):"}
+{"unnormalised": "", "normalised": "        number_val = match.group(1)"}
+{"unnormalised": "", "normalised": "        suffix = match.group(2)"}
+{"unnormalised": "", "normalised": "        number_words = convert_number_to_words(number_val)"}
+{"unnormalised": "", "normalised": "        suffix_map = {"}
+{"unnormalised": "", "normalised": "            'K': 'ஆயிரம்', 'M': 'மில்லியன்', 'B': 'பில்லியன்', 'T': 'டிரில்லியன்'"}
+{"unnormalised": "", "normalised": "        }"}
+{"unnormalised": "", "normalised": "        return f\"{number_words} {suffix_map.get(suffix.upper(), suffix)}\""}
+{"unnormalised": "", "normalised": "    "}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\d+)([KMBTkmbt])\\b', replace_numeric_suffix, text)"}
+{"unnormalised": "", "normalised": "    # விதி 1 & 8: கணித குறியீடு மற்றும் சிக்கலான குறியீடுகள்"}
+{"unnormalised": "", "normalised": "    # பின்னங்கள்: x/y -> x ஐ y ஆல் வகுக்கப்படுகிறது (தூய எண்களுக்கு மட்டும்)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\d+)/(\\d+)', r'\\1 ஐ \\2 ஆல் வகுக்கப்படுகிறது', text)"}
+{"unnormalised": "", "normalised": "    "}
+{"unnormalised": "", "normalised": "    # கணித குறியீடுகள்"}
+{"unnormalised": "", "normalised": "    text = text.replace('∫', 'இன்டகிரல் ஆப்')"}
+{"unnormalised": "", "normalised": "    text = text.replace('→', 'க்கு') # இன்டகிரல் லிமிட்களுக்கு"}
+{"unnormalised": "", "normalised": "    text = text.replace('√', 'சதுர ரூட் ஆப்')"}
+{"unnormalised": "", "normalised": "    text = text.replace('π', 'பை')"}
+{"unnormalised": "", "normalised": "    text = text.replace('Σ', 'கூடுதல் ஆப்')"}
+{"unnormalised": "", "normalised": "    text = text.replace('≠', 'சமமில்லை')"}
+{"unnormalised": "", "normalised": "    text = text.replace('≤', 'குறைவாகவோ அல்லது சமமாகவோ இருக்கும்')"}
+{"unnormalised": "", "normalised": "    text = text.replace('≥', 'அதிகமாகவோ அல்லது சமமாகவோ இருக்கும்')"}
+{"unnormalised": "", "normalised": "    text = text.replace('≈', 'தோராயமாக சமமாக உள்ளது')"}
+{"unnormalised": "", "normalised": "    text = text.replace('≅', 'தோராயமாக ஒன்றுக்கொன்று பொருந்துகிறது')"}
+{"unnormalised": "", "normalised": "    text = text.replace('≡', 'முற்றிலும் சமம்')"}
+{"unnormalised": "", "normalised": "    text = text.replace('∀', 'அனைத்துக்கும்')"}
+{"unnormalised": "", "normalised": "    text = text.replace('∃', 'அங்கு உள்ளது')"}
+{"unnormalised": "", "normalised": "    text = text.replace('∉', 'ஒரு உறுப்பு அல்ல')"}
+{"unnormalised": "", "normalised": "    text = text.replace('∈', 'ஒரு உறுப்பு')"}
+{"unnormalised": "", "normalised": "    text = text.replace('⊂', 'துணைக்குழு')"}
+{"unnormalised": "", "normalised": "    text = text.replace('⊃', 'மேல் குழு')"}
+{"unnormalised": "", "normalised": "    text = text.replace('∪', 'யூனியன்')"}
+{"unnormalised": "", "normalised": "    text = text.replace('∩', 'சந்திப்பு')"}
+{"unnormalised": "", "normalised": "    text = text.replace('∅', 'வெற்று கணம்')"}
+{"unnormalised": "", "normalised": "    text = text.replace('∝', 'விகிதாசாரமாக உள்ளது')"}
+{"unnormalised": "", "normalised": "    text = text.replace('∞', 'முடிவிலி')"}
+{"unnormalised": "", "normalised": "    text = text.replace('±', 'பிளஸ் அல்லது மைனஸ்')"}
+{"unnormalised": "", "normalised": "    text = text.replace('∇', 'நாப்லா')"}
+{"unnormalised": "", "normalised": "    text = text.replace('∂', 'பகுதி வழித்தோன்றல்')"}
+{"unnormalised": "", "normalised": "    text = text.replace('⊕', 'நேரடி தொகை')"}
+{"unnormalised": "", "normalised": "    text = text.replace('⊗', 'டென்சர் தயாரிப்பு')"}
+{"unnormalised": "", "normalised": "    text = text.replace('∘', 'கலவை')"}
+{"unnormalised": "", "normalised": "    text = text.replace('⋅', 'புள்ளி தயாரிப்பு') # அல்லது முறை, சூழலைப் பொறுத்து. இயல்பாக 'புள்ளி தயாரிப்பு'"}
+{"unnormalised": "", "normalised": "    text = text.replace('°', 'டிகிரி') # அலகுகளுக்கு, தனியாகக் கையாளப்படுகிறது"}
+{"unnormalised": "", "normalised": "    # சக்திகள் மற்றும் அடிக்குறிப்புகள்"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\w)\\^2\\b', r'\\1 வர்க்கம்', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\w)\\^3\\b', r'\\1 கனசதுரம்', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\w)\\^(\\d+)\\b', r'\\1 சக்தி \\2', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\w)_(\\w+)\\b', r'\\1 சப் \\2', text) # x_i -> x சப் i"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\w)_(\\{\\w+\\})\\b', r'\\1 சப் \\2', text) # x_{max} -> x சப் மேக்ஸ்"}
+{"unnormalised": "", "normalised": "    # பிற குறியீடுகள்"}
+{"unnormalised": "", "normalised": "    text = text.replace('$', 'டாலர்')"}
+{"unnormalised": "", "normalised": "    text = text.replace('€', 'யூரோ')"}
+{"unnormalised": "", "normalised": "    text = text.replace('£', 'பவுண்டு')"}
+{"unnormalised": "", "normalised": "    text = text.replace('¥', 'யென்')"}
+{"unnormalised": "", "normalised": "    text = text.replace('₹', 'ரூபாய்')"}
+{"unnormalised": "", "normalised": "    text = text.replace('%', 'சதவீதம்')"}
+{"unnormalised": "", "normalised": "    text = text.replace('@', 'அட்')"}
+{"unnormalised": "", "normalised": "    text = text.replace('&', 'மற்றும்')"}
+{"unnormalised": "", "normalised": "    text = text.replace('#', 'ஹாஷ்')"}
+{"unnormalised": "", "normalised": "    text = text.replace('*', 'நட்சத்திரக் குறி')"}
+{"unnormalised": "", "normalised": "    text = text.replace('+', 'கூட்டல்')"}
+{"unnormalised": "", "normalised": "    text = text.replace('=', 'சமம்')"}
+{"unnormalised": "", "normalised": "    text = text.replace('-', 'மைனஸ்') # ஹைஃபனேட்டட் சொற்களைப் பற்றி கவனமாக இருங்கள் vs கணித மைனஸ்"}
+{"unnormalised": "", "normalised": "    text = text.replace('~', 'தோராயமாக')"}
+{"unnormalised": "", "normalised": "    # விதி 2: சுருக்கெழுத்துக்கள் → ஹைஃபனேட்டட் எழுத்துக்கள்"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b([A-Z]{2,})\\b', lambda m: '-'.join(list(m.group(1))), text)"}
+{"unnormalised": "", "normalised": "    "}
+{"unnormalised": "", "normalised": "    # விதி 6: தேதிகள் → இயற்கையான பேச்சு வடிவம் (DD/MM/YYYY அல்லது YYYY-MM-DD என்று கருதப்படுகிறது)"}
+{"unnormalised": "", "normalised": "    def replace_date(match):"}
+{"unnormalised": "", "normalised": "        day, month, year = '', '', ''"}
+{"unnormalised": "", "normalised": "        if match.group(1): # DD-MM-YYYY அல்லது DD/MM/YYYY"}
+{"unnormalised": "", "normalised": "            day = int(match.group(2))"}
+{"unnormalised": "", "normalised": "            month = int(match.group(3))"}
+{"unnormalised": "", "normalised": "            year = int(match.group(4))"}
+{"unnormalised": "", "normalised": "        elif match.group(5): # YYYY-MM-DD"}
+{"unnormalised": "", "normalised": "            year = int(match.group(6))"}
+{"unnormalised": "", "normalised": "            month = int(match.group(7))"}
+{"unnormalised": "", "normalised": "            day = int(match.group(8))"}
+{"unnormalised": "", "normalised": "        if not (day and month and year):"}
+{"unnormalised": "", "normalised": "            return match.group(0) # தேதி பகுப்பாய்வு தோல்வியடைந்தால் மூலத்தை திருப்பி அனுப்பு"}
+{"unnormalised": "", "normalised": "        months = [\"\", \"ஜனவரி\", \"பிப்ரவரி\", \"மார்ச்\", \"ஏப்ரல்\", \"மே\", \"ஜூன்\","}
+{"unnormalised": "", "normalised": "                  \"ஜூலை\", \"ஆகஸ்ட்\", \"செப்டம்பர்\", \"அக்டோபர்\", \"நவம்பர்\", \"டிசம்பர்\"]"}
+{"unnormalised": "", "normalised": "        "}
+{"unnormalised": "", "normalised": "        day_suffix = {1: 'முதல்', 2: 'இரண்டாவது', 3: 'மூன்றாவது', 4: 'நான்காவது', 5: 'ஐந்தாவது', 6: 'ஆறாவது', 7: 'ஏழாவது', 8: 'எட்டாவது', 9: 'ஒன்பதாவது', 10: 'பத்தாவது', 11: 'பதினொன்றாவது', 12: 'பன்னிரண்டாவது', 13: 'பதிமூன்றாவது', 14: 'பதினான்காவது', 15: 'பதினைந்தாவது', 16: 'பதினாறாவது', 17: 'பதினேழாவது', 18: 'பதினெட்டாவது', 19: 'பத்தொன்பதாவது', 20: 'இருபதாவது', 21: 'இருபத்தி ஒன்று', 22: 'இருபத்தி இரண்டு', 23: 'இருபத்தி மூன்று', 24: 'இருபத்தி நான்கு', 25: 'இருபத்தி ஐந்து', 26: 'இருபத்தி ஆறு', 27: 'இருபத்தி ஏழு', 28: 'இருபத்தி எட்டு', 29: 'இருபத்தி ஒன்பது', 30: 'முப்பது', 31: 'முப்பத்தி ஒன்று'}"}
+{"unnormalised": "", "normalised": "        "}
+{"unnormalised": "", "normalised": "        spoken_day = day_suffix.get(day, num2words(day, to='ordinal'))"}
+{"unnormalised": "", "normalised": "        spoken_month = months[month]"}
+{"unnormalised": "", "normalised": "        spoken_year = convert_number_to_words(str(year))"}
+{"unnormalised": "", "normalised": "        "}
+{"unnormalised": "", "normalised": "        return f\"{spoken_day} {spoken_month} {spoken_year}\""}
+{"unnormalised": "", "normalised": "    # DD/MM/YYYY அல்லது DD-MM-YYYY"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b((\\d{1,2})[/-](\\d{1,2})[/-](\\d{4}))\\b', replace_date, text)"}
+{"unnormalised": "", "normalised": "    # YYYY-MM-DD"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b((\\d{4})[/-](\\d{1,2})[/-](\\d{1,2}))\\b', replace_date, text)"}
+{"unnormalised": "", "normalised": "    # விதி 7: அலகுகள் → பேசும் முறை"}
+{"unnormalised": "", "normalised": "    def replace_units(match):"}
+{"unnormalised": "", "normalised": "        number = convert_number_to_words(match.group(1))"}
+{"unnormalised": "", "normalised": "        unit = match.group(2).lower()"}
+{"unnormalised": "", "normalised": "        unit_map = {"}
+{"unnormalised": "", "normalised": "            'cm': 'சென்டிமீட்டர்', 'mm': 'மில்லிமீட்டர்', 'm': 'மீட்டர்', 'km': 'கிலோமீட்டர்',"}
+{"unnormalised": "", "normalised": "            'g': 'கிராம்', 'kg': 'கிலோகிராம்', 'mg': 'மில்லிகிராம்',"}
+{"unnormalised": "", "normalised": "            'ml': 'மில்லிலிட்டர்', 'l': 'லிட்டர்',"}
+{"unnormalised": "", "normalised": "            '°c': 'டிகிரி செல்சியஸ்', 'kph': 'கிலோமீட்டர் பெர் ஹவர்',"}
+{"unnormalised": "", "normalised": "            'mph': 'மைல் பெர் ஹவர்', 'psi': 'பவுண்ட் பெர் ஸ்கொயர் இன்ச்',"}
+{"unnormalised": "", "normalised": "            'sqm': 'சதுர மீட்டர்', 'sqkm': 'சதுர கிலோமீட்டர்',"}
+{"unnormalised": "", "normalised": "            'ha': 'ஹெக்டேர்', 'ft': 'அடி', 'in': 'அங்குலம்', 'yd': 'யார்டு',"}
+{"unnormalised": "", "normalised": "            'oz': 'அவுன்ஸ்', 'lb': 'பவுண்ட்', 'hr': 'மணி', 'min': 'நிமிடம்', 'sec': 'நொடி',"}
+{"unnormalised": "", "normalised": "            'mb': 'மெகாபைட்', 'gb': 'ஜிகாபைட்', 'tb': 'டெராபைட்', 'kb': 'கிலோபைட்',"}
+{"unnormalised": "", "normalised": "            'hz': 'ஹெர்ட்ஸ்', 'khz': 'கிலோஹெர்ட்ஸ்', 'mhz': 'மெகாஹெர்ட்ஸ்', 'ghz': 'ஜிகாஹெர்ட்ஸ்',"}
+{"unnormalised": "", "normalised": "            'v': 'வோல்ட்', 'a': 'ஆம்பியர்', 'w': 'வாட்', 'kw': 'கிலோவாட்', 'mw': 'மெகாவாட்'"}
+{"unnormalised": "", "normalised": "        }"}
+{"unnormalised": "", "normalised": "        # தேவைப்பட்டால் பன்மை கையாளுகை (எளிய யூகத்தின் அடிப்படையில்)"}
+{"unnormalised": "", "normalised": "        if int(match.group(1)) > 1 and unit_map.get(unit) and not unit_map.get(unit).endswith('s'):"}
+{"unnormalised": "", "normalised": "            return f\"{number} {unit_map.get(unit)}கள்\""}
+{"unnormalised": "", "normalised": "        return f\"{number} {unit_map.get(unit, unit)}\""}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\d+(?:\\.\\d+)?)\\s*(cm|mm|m|km|g|kg|mg|ml|l|°C|°c|kph|mph|psi|sqm|sqkm|ha|ft|in|yd|oz|lb|hr|min|sec|mb|gb|tb|kb|hz|khz|mhz|ghz|v|a|w|kw|mw)\\b', replace_units, text, flags=re.IGNORECASE)"}
+{"unnormalised": "", "normalised": "    # விதி 3: எண்கள் → பேசும் முறை (நாணயம், பின்னொட்டுகள் மற்றும் அலகுகளுக்குப் பிறகு)"}
+{"unnormalised": "", "normalised": "    # இது மற்ற எல்லா எண்கள் தொடர்பான விதிகளுக்கும் பிறகு வர வேண்டும்"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b(\\d+(?:\\.\\d+)?)\\b', lambda m: convert_number_to_words(m.group(1)), text)"}
+{"unnormalised": "", "normalised": "    # விதி 1 (தொடர்ச்சி): முன்னதாக வைத்தால் மற்ற விதிகளுடன் முரண்படும் சின்னங்களின் மாற்றீடுகள்"}
+{"unnormalised": "", "normalised": "    # / ஐ கவனமாகக் கையாள்க: எண்களுக்கு இடையில் \"வகுக்கப்படுகிறது\", சொற்களுக்கு இடையில் \"அல்லது\", மற்றவர்களுக்கு \"சாய்வுக்கோடு\""}
+{"unnormalised": "", "normalised": "    def replace_slash(match):"}
+{"unnormalised": "", "normalised": "        pre = match.group(1)"}
+{"unnormalised": "", "normalised": "        post = match.group(2)"}
+{"unnormalised": "", "normalised": "        if re.match(r'\\b\\w+\\b', pre) and re.match(r'\\b\\w+\\b', post):"}
+{"unnormalised": "", "normalised": "            return f\"{pre} அல்லது {post}\""}
+{"unnormalised": "", "normalised": "        elif (re.match(r'\\b[A-Z-]+\\b', pre) or re.match(r'\\b[a-z-]+\\b', pre)) and \\"}
+{"unnormalised": "", "normalised": "             (re.match(r'\\b[A-Z-]+\\b', post) or re.match(r'\\b[a-z-]+\\b', post)) and \\"}
+{"unnormalised": "", "normalised": "             (pre.isupper() != post.isupper()): # கலப்பு நிலை எடுத்துக்காட்டாக QA/Dev"}
+{"unnormalised": "", "normalised": "            return f\"{pre} சாய்வுக்கோடு {post}\""}
+{"unnormalised": "", "normalised": "        else:"}
+{"unnormalised": "", "normalised": "            return f\"{pre} சாய்வுக்கோடு {post}\" # மற்ற சந்தர்ப்பங்களில் சாய்வுக்கோடு இயல்பாக"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\S)\\s*/\\s*(\\S)', replace_slash, text) # சுற்றியுள்ளவற்றை கருத்தில் கொள்ளும் regex உடன் மாற்றப்பட்டது"}
+{"unnormalised": "", "normalised": "    "}
+{"unnormalised": "", "normalised": "    # விதி 9: இடைவெளிகளைச் சீராக்குதல்"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\s+', ' ', text).strip()"}
+{"unnormalised": "", "normalised": "    "}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def process_folder(input_folder, output_folder):"}
+{"unnormalised": "", "normalised": "    unnormalized_files = []"}
+{"unnormalised": "", "normalised": "    "}
+{"unnormalised": "", "normalised": "    for root, dirs, files in os.walk(input_folder):"}
+{"unnormalised": "", "normalised": "        relative_path = os.path.relpath(root, input_folder)"}
+{"unnormalised": "", "normalised": "        output_root = os.path.join(output_folder, relative_path)"}
+{"unnormalised": "", "normalised": "        os.makedirs(output_root, exist_ok=True)"}
+{"unnormalised": "", "normalised": "        for file_name in files:"}
+{"unnormalised": "", "normalised": "            input_file_path = os.path.join(root, file_name)"}
+{"unnormalised": "", "normalised": "            output_file_path = os.path.join(output_root, file_name)"}
+{"unnormalised": "", "normalised": "            if file_name.endswith('.txt'):"}
+{"unnormalised": "", "normalised": "                try:"}
+{"unnormalised": "", "normalised": "                    with open(input_file_path, 'r', encoding='utf-8') as f_in:"}
+{"unnormalised": "", "normalised": "                        content = f_in.read()"}
+{"unnormalised": "", "normalised": "                    "}
+{"unnormalised": "", "normalised": "                    normalized_content = normalize_text(content)"}
+{"unnormalised": "", "normalised": "                    "}
+{"unnormalised": "", "normalised": "                    with open(output_file_path, 'w', encoding='utf-8') as f_out:"}
+{"unnormalised": "", "normalised": "                        f_out.write(normalized_content)"}
+{"unnormalised": "", "normalised": "                except Exception as e:"}
+{"unnormalised": "", "normalised": "                    print(f\"பிழை {input_file_path} ஐச் செயலாக்குவதில்: {e}\")"}
+{"unnormalised": "", "normalised": "                    unnormalized_files.append(input_file_path)"}
+{"unnormalised": "", "normalised": "                    # இயல்பாக்குதல் தோல்வியுற்றால் மூலக் கோப்பைப் நகலெடுக்கவும்"}
+{"unnormalised": "", "normalised": "                    with open(output_file_path, 'w', encoding='utf-8') as f_out:"}
+{"unnormalised": "", "normalised": "                        f_out.write(content)"}
+{"unnormalised": "", "normalised": "            else:"}
+{"unnormalised": "", "normalised": "                # .txt அல்லாத கோப்புகளை மாற்றாமல் நகலெடுக்கவும்"}
+{"unnormalised": "", "normalised": "                try:"}
+{"unnormalised": "", "normalised": "                    with open(input_file_path, 'rb') as f_in, open(output_file_path, 'wb') as f_out:"}
+{"unnormalised": "", "normalised": "                        f_out.write(f_in.read())"}
+{"unnormalised": "", "normalised": "                except Exception as e:"}
+{"unnormalised": "", "normalised": "                    print(f\"txt அல்லாத கோப்பை நகலெடுப்பதில் பிழை {input_file_path}: {e}\")"}
+{"unnormalised": "", "normalised": "                    unnormalized_files.append(input_file_path)"}
+{"unnormalised": "", "normalised": "    if unnormalized_files:"}
+{"unnormalised": "", "normalised": "        print(\"\\nபிழைகள் காரணமாக முழுமையாக இயல்பாக்கப்பட முடியாத அல்லது நகலெடுக்க முடியாத கோப்புகள்:\")"}
+{"unnormalised": "", "normalised": "        for f in unnormalized_files:"}
+{"unnormalised": "", "normalised": "            print(f)"}
+{"unnormalised": "", "normalised": "# உதாரண பயன்பாடு:"}
+{"unnormalised": "", "normalised": "# விளக்கத்திற்காக சில போலி தரவை உருவாக்கவும்"}
+{"unnormalised": "", "normalised": "if __name__ == \"__main__\":"}
+{"unnormalised": "", "normalised": "    # போலி தரவுத்தொகுப்பை உருவாக்கவும்"}
+{"unnormalised": "", "normalised": "    os.makedirs('dataset/subfolder1', exist_ok=True)"}
+{"unnormalised": "", "normalised": "    os.makedirs('dataset/subfolder2', exist_ok=True)"}
+{"unnormalised": "", "normalised": "    with open('dataset/file1.txt', 'w') as f:"}
+{"unnormalised": "", "normalised": "        f.write(\"நாசா திட்டம் டாலர் இருபது பில்லியன் நிதி பெற்றது. இது டென் ஆப் செப்டம்பர் டூ தௌசண்ட் அண்ட் டுவென்டி ஃபோரில் தொடங்கியது. ஜிடிபி வளர்ச்சி தோராயமாக ஃபைவ் பெர்சென்ட். அவருக்கு டூ பாயின்ட் ஃபைவ் கிலோகிராம் அரிசி தேவை. டாலர் டுவென்டி பாயின்ட் ஃபிஃப்டி விலை. ஏ டூ பிளஸ் டூ ஈகுவல்ஸ் ஃபோர். ஆர்ட் ஆர் கிராஃப்ட் நல்லது. க்யூ-ஏ ஸ்லாஷ் டி-இ-வி அணி.\\n\")"}
+{"unnormalised": "", "normalised": "        f.write(\"இன்டகிரல் இன்டகிரல் ஆப் எக்ஸ் ஸ்கொயர் டிக்ஸ் ஃப்ரம் ஜீரோ டு ஒன். பை ஆர் ஸ்கொயர் இதன் மதிப்பு. எக்ஸ் டு த பவர் ஆப் என் மற்றும் எக்ஸ் சப் ஐ முக்கியம். த்ரீ டிவைடட் பை ஃபோர் ஆப் தி பாப்புலேஷன். ட்வென்டி ஃபைவ் டிகிரி செல்சியஸ் வெளியில். ஹன்ட்ரெட் கிலோமீட்டர் பெர் ஹவர் வேகத்தில் சென்றார். ஜிடிபி டென் மில்லியன். ஒன் ஸ்லாஷ் டூ கிலோ.\\n\")"}
+{"unnormalised": "", "normalised": "        f.write(\"சிறப்பு குறியீடுகள்: அட் ஹாஷ் அண்ட் ஆஸ்டரிஸ்க் நாட் ஈகுவல் டு லெஸ் தான் ஆர் ஈகுவல் டு கிரேட்டர் தான் ஆர் ஈகுவல் டு. இது நைன்டி நைன் பிரச்சினைகள். யு-எஸ்-ஏ பெரியது. செவன்த் டே. டூ தௌசண்ட் அண்ட் டுவென்டி ஃபோர் மைனஸ் ஜீரோ நைன் மைனஸ் டென் அறிக்கை. டென் சென்டிமீட்டர், ஹன்ட்ரெட் மில்லிலிட்டர். அவர் ஃபைவ் கிலோமீட்டர் நடந்து சென்றார். சதுர ரூட் ஆப் நைன் த்ரீ. தி ஏரியா இஸ் ஹன்ட்ரெட் ஸ்கொயர் மீட்டர். இது எக்ஸ் க்யூபிற்கான உதாரணம். டெம்பரேச்சர் டென் டிகிரீஸ். என் கம்ப்யூட்டரில் ஒன் டெராபைட் ஸ்டோரேஜ் உள்ளது. பிரீக்வென்சி ஃபைஃப்டி ஹெர்ட்ஸ்.\")"}
+{"unnormalised": "", "normalised": "    "}
+{"unnormalised": "", "normalised": "    with open('dataset/subfolder1/file2.txt', 'w') as f:"}
+{"unnormalised": "", "normalised": "        f.write(\"மற்றொரு சோதனை: ட்வெல்வ் தௌசண்ட் த்ரீ ஹன்ட்ரெட் அண்ட் ஃபோர்ட்டி ஃபைவ் டாலர்கள். தி டேட் இஸ் ஃபர்ஸ்ட் ஆப் ஜனவரி டூ தௌசண்ட் அண்ட் ட்வென்டி த்ரீ. எங்களுக்கு ஃபைவ் ஹன்ட்ரெட் மில்லிகிராம் தேவை. கோணம் ஃபோர்ட்டி ஃபைவ் டிகிரி. இது சரியாக இயல்பாக்கப்பட வேண்டும். நைன் பில்லியன் நைன் ஹன்ட்ரெட் அண்ட் நைன்டி நைன் மில்லியன் நைன் ஹன்ட்ரெட் அண்ட் நைன்டி நைன் தௌசண்ட் நைன் ஹன்ட்ரெட் அண்ட் நைன்டி நைன் பாயின்ட் நைன்டி நைன் பற்றி என்ன?\\n\")"}
+{"unnormalised": "", "normalised": "        f.write(\"இது எக்ஸ் மைனஸ் ஒய் மைனஸ் இஸட் டெஸ்ட். இது ஏ பாயின்ட் பி பாயின்ட் சி டெக்ஸ்ட். டூ ஹன்ட்ரெட் வோல்ட்ஸ், டென் ஆம்பியர், ஃபைவ் கிலோவாட். எக்ஸ் சப் மேக்ஸ் மற்றும் ஒய் சப் மின் முக்கிய வேரியபிள்கள்.\")"}
+{"unnormalised": "", "normalised": "    with open('dataset/subfolder2/image.jpg', 'w') as f: # போலி உரை அல்லாத கோப்பு"}
+{"unnormalised": "", "normalised": "        f.write(\"இது ஒரு டெக்ஸ்ட் ஃபைல் அல்ல.\")"}
+{"unnormalised": "", "normalised": "    input_folder = 'dataset'"}
+{"unnormalised": "", "normalised": "    output_folder = 'dataset_normalized'"}
+{"unnormalised": "", "normalised": "    process_folder(input_folder, output_folder)"}
+{"unnormalised": "", "normalised": "    print(f\"\\nஇயல்பாக்குதல் முடிந்தது. முடிவுகளுக்கு '{output_folder}'ஐப் பார்க்கவும்.\")"}
+{"unnormalised": "", "normalised": "    print(\"இயல்பாக்கப்பட்ட கோப்பின் உள்ளடக்கத்தின் எடுத்துக்காட்டு (file1.txt):\")"}
+{"unnormalised": "", "normalised": "    try:"}
+{"unnormalised": "", "normalised": "        with open(os.path.join(output_folder, 'file1.txt'), 'r', encoding='utf-8') as f:"}
+{"unnormalised": "", "normalised": "            print(f.read())"}
+{"unnormalised": "", "normalised": "    except FileNotFoundError:"}
+{"unnormalised": "", "normalised": "        print(\"இயல்பாக்கப்பட்ட file1.txt காணப்படவில்லை.\")"}
+{"unnormalised": "", "normalised": "```"}

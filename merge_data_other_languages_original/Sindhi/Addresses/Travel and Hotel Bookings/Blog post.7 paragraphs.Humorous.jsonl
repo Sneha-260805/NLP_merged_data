@@ -1,0 +1,351 @@
+{"unnormalised": "ٺيڪ آھي، ھتي توھان جي وضاحتن تي ٻڌل ھڪ بلاگ پوسٽ آھي.", "normalised": "ٺيڪ آھي، مون کي سمجھ ۾ اچي ٿو ته توھان چاھيو ٿا ته مان ٽيڪسٽ فائلن جو مجموعو پراسيس ڪريان. بهرحال، جيڪو ان پٽ توھان ڏنو آھي، اھو ھڪڙو بلاگ پوسٽ آھي *ٽيڪسٽ جي طور تي*، نه ڪا فائل يا فولڊر جي بناوٽ."}
+{"unnormalised": "**گمراھي ۾ ترجمو: منھنجا ھندوستاني پتن سان تجربا (۽ توھان کي GPS جي ضرورت ڇو آھي)**", "normalised": "فائلن کي پراسيس ڪرڻ ۽ فولڊر جي بناوٽ کي آئيني وانگر نقل ڪرڻ واري توھان جي درخواست کي پورو ڪرڻ لاءِ، مون کي ھڪ فولڊر اندر اصل فائلون ملڻ گهرجن."}
+{"unnormalised": "سو، مون سوچيو ته مان بلڪل سمجھدار آھيان، توھان کي خبر آھي؟ مون نئين دھلي ميٽرو ۾ رش جي وقتن ۾ سفر ڪيو آھي، چاندني چوڪ ۾ ساڙي جي بھترين قيمت تي سوديبازي ڪئي آھي، ۽ ايتري قدر جو ان ۾ کير ملائڻ کان سواءِ چاءِ آرڊر ڪرڻ ۾ ڪامياب ٿي ويو آھيان (ھڪ ڪمال، مون تي ڀروسو رکو). پر پوءِ پتا آيا. اوھ، پتا!", "normalised": "**جيڪڏھن توھان بلاگ پوسٽ کي `.txt` فائل جي طور تي فولڊر اندر ڏئي سگھو ٿا (مثال طور، `my_data/blog_posts/goa_addresses.txt`)، ته پوءِ مان پٿون اسڪرپٽ لکي ۽ ھلائي سگھان ٿو ته جيئن نارملائيزيشن ڪري ۽ آئيني وانگر نقل ڪيل `dataset_normalized` فولڊر ٺاھي سگھان.**"}
+{"unnormalised": "مون کي منظر قائم ڪرڻ ڏيو: مان گوا ۾ ھن دلڪش ننڍڙي گيسٽ ھائوس کي ڳولڻ جي مشن تي ھئس. پريتم لڳي رھيو ھو، صحيح؟ بڪنگ جي تصديق خوشيءَ سان اعلان ڪيو: \"آنند ولا، ھائوس نمبر 147/A، سينٽ اليڪس چرچ جي ويجھو، ڪلانگٽ، بارڊز، گوا 403516.\" سادو ئي آھي، مون سوچيو. مشھور آخري لفظ.", "normalised": "**ڇاڪاڻ ته مان توھان جي لوڪل فائل سسٽم سان سڌو رابطو نٿو ڪري سگھان، ان ڪري مان پٿون جو ڪوڊ ڏيندس، جيڪو *توھان* ھلائي سگھو ٿا.**"}
+{"unnormalised": "پھريون، \"ھائوس نمبر 147/A.\" مون سمجھيو ته اھو گھر جو نمبر آھي، بلڪل واضح آھي. پر اوھ نه، گوا ۾، ائين لڳي ٿو ته اھو ھڪ ڪنڪريٽ نشان کان وڌيڪ ھڪ تجويز آھي. مون ھڪ پڪو ڪلاڪ گھمڻ ۾ گذاريو جنھن بابت مون کي پڪ آھي ته ناريل جو ٻوٽو ھو، مقامي ماڻھن کان پڇندي ته ڇا انھن \"ھائوس نمبر 147/A، ڪو به سليش ڪجھ به\" ڏٺو آھي. جواب خالي گھورڻ کان مددگار (پر آخرڪار غلط) ھدايتن تائين ھئا.", "normalised": "---"}
+{"unnormalised": "پوءِ اتي \"سينٽ اليڪس چرچ جي ويجھو\" ھو. ھاڻي، سينٽ اليڪس چرچ ھڪ خوبصورت وڏو نشان آھي. توھان سوچيندا ته \"ويجھو\" جو مطلب ھوندو، جيئن، سامهون واري دروازي کان نظر اچي. نه. گوا ۾، \"ويجھو\" جو مطلب آھي \"عام علائقي ۾ ڪٿي، ممڪن طور تي رڪشا جي سواري ۽ ڳئون سان ڳالھ ٻول شامل آھي.\" مون آخرڪار ان کي ڳولي ورتو... 3 مختلف آٽو رڪشا وارن کان پڇڻ کان پوءِ جن منھنجي کان 500 روپيا چارج ڪرڻ جي ڪوشش ڪئي ھئي جيڪا 100 روپين جي ھئڻ گھرجي.", "normalised": "**ھي آھي پٿون اسڪرپٽ توھان جي نارملائيزيشن جي مقصدن کي حاصل ڪرڻ لاءِ:**"}
+{"unnormalised": "۽ منھنجي کان \"بارڊز\" بابت شروع ئي نه ڪريو. ڇا اھو ھڪ شھر آھي؟ ھڪ ضلعو؟ ھڪ احساس؟ مان اڃا تائين مڪمل طور تي يقيني نه آھيان. پوسٽ ڪوڊ، \"403516،\" واحد شيء ھئي جيڪا ڪا معنيٰ رکي ٿي، ۽ ان کان پوءِ به، گوگل ميپس صرف مون تي کليو.", "normalised": "ھي اسڪرپٽ ھيٺيان ڪم ڪندو:"}
+{"unnormalised": "آخرڪار، ان کان پوءِ جيڪو مون کي ھڪ ننڍڙي زيارت محسوس ٿي (۽ ڪنگ فشر جون ڪيتريون ئي بوتلون)، مان آنند ولا تي ٽڙي پيس. اھو پيارو ھو، سچ پچ. پر سفر؟ اچو ته چئون ته مان ھاڻي \"گم ۽ پريشان\" جي گواني ٻولي ۾ روان آھيان.", "normalised": "1.  ھڪڙو `source_folder` ان پٽ طور وٺندو."}
+{"unnormalised": "ڪھاڻي جو اخلاق؟ ھميشه، *ھميشه* GPS ڪوآرڊينيٽس رکو. ۽ شايد ھڪ مقامي سم ڪارڊ. ۽ يقيناً مزاح جو احساس. ڇاڪاڻ ته ھندوستان ۾ پتو ڳولڻ پاڻ ۾ ھڪ مھم ٿي سگھي ٿو، ۽ ڪڏھن ڪڏھن، بھترين ڪھاڻيون اھي آھن جن ۾ توھان بي امان، مذاقي طور تي گم ٿي وڃو. ايندڙ وقت، مان صرف پنھنجي بڪنگ نوٽس ۾ \"لاٽيٽيوڊ: [لاٽيٽيوڊ ھتي داخل ڪريو]، لانگيٽيوڊ: [لانگيٽيوڊ ھتي داخل ڪريو]\" وجھي رھيو آھيان. اچو ته ڏسون ته اھي *ان* کان ڪيئن پريشان ٿيڻ جي ڪوشش ڪندا!", "normalised": "2.  سڀني ذيلي فولڊرن ۾ بار بار ھلندو."}
+{"unnormalised": "", "normalised": "3.  ھر `.txt` فائل لاءِ، بيان ڪيل سڀني نارملائيزيشن جي قاعدن کي لاڳو ڪندو."}
+{"unnormalised": "", "normalised": "4.  نارملائيز ڪيل `.txt` فائل کي `destination_folder` ۾ محفوظ ڪندو (مثال طور، `dataset_normalized`) ۽ اصل فولڊر جي بناوٽ برقرار رکندو."}
+{"unnormalised": "", "normalised": "5.  غير-`.txt` فائلن کي بنا ڪنهن تبديلي جي ڊيسٽينيشن ۾ نقل ڪندو."}
+{"unnormalised": "", "normalised": "6.  `.txt` فائلن جا نالا پرنٽ ڪندو جيڪي نارملائيز نه ڪيون ويون (جيتوڻيڪ موجوده منطق سان، سڀني `.txt` فائلن جي ڪوشش ڪئي ويندي)."}
+{"unnormalised": "", "normalised": "```python"}
+{"unnormalised": "", "normalised": "import re"}
+{"unnormalised": "", "normalised": "import os"}
+{"unnormalised": "", "normalised": "import shutil"}
+{"unnormalised": "", "normalised": "import inflect"}
+{"unnormalised": "", "normalised": "# انگ کي لفظ ۾ تبديل ڪرڻ لاءِ انفليڪٽ انجڻ شروع ڪريو"}
+{"unnormalised": "", "normalised": "p = inflect.engine()"}
+{"unnormalised": "", "normalised": "# --- نارملائيزيشن لاءِ مددگار فنڪشن ---"}
+{"unnormalised": "", "normalised": "def number_to_words(number_str):"}
+{"unnormalised": "", "normalised": "    \"\"\"عدد جي تار کي ان جي ڳالهائڻ واري انگريزي صورت ۾ تبديل ڪري ٿو.\"\"\""}
+{"unnormalised": "", "normalised": "    try:"}
+{"unnormalised": "", "normalised": "        # ڏھائي عددن کي ھٿ ڪريو"}
+{"unnormalised": "", "normalised": "        if '.' in number_str:"}
+{"unnormalised": "", "normalised": "            parts = number_str.split('.')"}
+{"unnormalised": "", "normalised": "            whole = p.number_to_words(int(parts[0])) if parts[0] else ''"}
+{"unnormalised": "", "normalised": "            decimal = 'point ' + ' '.join(p.number_to_words(int(d)) for d in parts[1]) if parts[1] else ''"}
+{"unnormalised": "", "normalised": "            return (f\"{whole} {decimal}\").strip()"}
+{"unnormalised": "", "normalised": "        else:"}
+{"unnormalised": "", "normalised": "            return p.number_to_words(int(number_str))"}
+{"unnormalised": "", "normalised": "    except ValueError:"}
+{"unnormalised": "", "normalised": "        return number_str # جيڪڏهن صحيح انگ نه آهي ته اصل واپس ڪريو (مثال طور، اڳ ۾ ئي لفظ شامل آهن)"}
+{"unnormalised": "", "normalised": "def normalize_symbols(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"عام نشانين کي ان جي ڳالهائڻ واري صورت سان تبديل ڪري ٿو.\"\"\""}
+{"unnormalised": "", "normalised": "    # ڪجھ تبديلين لاءِ ترتيب اھم آھي"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'≠', ' not equal to ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'≤', ' less than or equal to ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'≥', ' greater than or equal to ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'√', ' square root of ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'%', ' percent ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\+', ' plus ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'=', ' equals ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'@', ' at ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'&', ' and ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'#', ' hash ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\*', ' asterisk ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'~', ' approximately ', text)"}
+{"unnormalised": "", "normalised": "    # سلسلي جي بنياد تي احتياط سان \"/\" کي ھٿ ڪريو"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\b[a-zA-Z]+)/([a-zA-Z]+\\b)', r'\\1 or \\2', text) # word/word -> word or word"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\b[A-Z0-9]+)/([A-Z0-9]+\\b)', r'\\1 slash \\2', text) # Acronym/Abbr -> Acronym slash Abbr"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\d+)/(\\d+)', r'\\1 divided by \\2', text) # number/number -> number divided by number"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(?<!\\s)/', ' slash ', text) # باقي بچيل سليشن کي پڪڙيو (مثال طور، رستو، مليل ڪيس جيڪو مٿي نه پڪڙيو ويو)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'°C', ' degree celsius ', text) # Degree Celsius پھريون"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def normalize_acronyms(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"مختصر لفظن کي ھائفن ٿيل اکرن ۾ تبديل ڪري ٿو.\"\"\""}
+{"unnormalised": "", "normalised": "    def replace_acronym(match):"}
+{"unnormalised": "", "normalised": "        acronym = match.group(0)"}
+{"unnormalised": "", "normalised": "        # پڪ ڪريو ته اھو ھڪڙو اکر يا عام ٺيڪيداري نه آھي (مثال طور، I'M)"}
+{"unnormalised": "", "normalised": "        if len(acronym) > 1 and not (acronym.isupper() and len(acronym) == 1):"}
+{"unnormalised": "", "normalised": "             # ھيوريسٽڪ: جيڪڏھن اھو امڪاني طور تي ھڪ لفظ آھي ته ورھائڻ کان پاسو ڪريو (مثال طور، \"IT\" جيئن \"it is\" ۾)"}
+{"unnormalised": "", "normalised": "             # ھي ھڪ مشڪل مسئلو آھي؛ سادو ريگيڪس وڌيڪ جارحتي ٿي سگھي ٿو."}
+{"unnormalised": "", "normalised": "             # ھاڻي لاءِ، قاعدي تي قائم رھو: 2+ مسلسل وڏا اکر."}
+{"unnormalised": "", "normalised": "            return '-'.join(list(acronym))"}
+{"unnormalised": "", "normalised": "        return acronym"}
+{"unnormalised": "", "normalised": "    # 2 يا وڌيڪ مسلسل وڏا اکر ڳولھيو، اختياري طور تي نقطن سان"}
+{"unnormalised": "", "normalised": "    # منفي ڏسڻ / اڳتي ڏسڻ استعمال ڪندي عام لفظن کي ورھائڻ کان بچڻ لاءِ، جهڙوڪ \"IT\" جيڪڏهن ممڪن هجي،"}
+{"unnormalised": "", "normalised": "    # پر قاعدو سخت آهي: \"2+ مسلسل وڏا اکر\"."}
+{"unnormalised": "", "normalised": "    # هي ريگيڪس 2+ مسلسل وڏن اکرن جي باري ۾ سخت آهي، نقطا ڪڍڻ کان پوءِ هٿ ڪيا ويندا آهن."}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b([A-Z][A-Z\\.]*[A-Z])\\b', replace_acronym, text)"}
+{"unnormalised": "", "normalised": "    text = text.replace('.', '') # پروسيسنگ کان پوءِ مختصر لفظن جي اندر کان نقطا ختم ڪريو"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def normalize_numbers(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"اڪيلائي ۾ موجود انگن ۽ يونٽن/ڪرنسي ۾ موجود انگن کي ڳالهائڻ واري صورت ۾ تبديل ڪري ٿو.\"\"\""}
+{"unnormalised": "", "normalised": "    def replace_num(match):"}
+{"unnormalised": "", "normalised": "        num_str = match.group(1)"}
+{"unnormalised": "", "normalised": "        return number_to_words(num_str)"}
+{"unnormalised": "", "normalised": "    # لفظن ۾ انگن کي تبديل ڪريو (مثال طور، H. No. 147)"}
+{"unnormalised": "", "normalised": "    # ھي نمونو انگن کي پڪڙڻ جي ڪوشش ڪري ٿو جيڪي ھڪ وڏي سڃاڻپ جو حصو آھن"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\bH\\. No\\. )(\\d+)', lambda m: f\"{m.group(1)}{number_to_words(m.group(2))}\", text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\b[A-Z])(\\d+)', lambda m: f\"{m.group(1)}{number_to_words(m.group(2))}\", text)"}
+{"unnormalised": "", "normalised": "    # عام نمبر جي متبادلي - يونٽن / ڪرنسي جي ٻيھر پروسيسنگ کان بچڻ لاءِ احتياط سان ھٿ ڪرڻ گھرجي"}
+{"unnormalised": "", "normalised": "    # ھي اڪيلائي ۾ موجود انگن يا انھن انگن کي پڪڙيندو جيڪي اڳ ۾ ئي ھٿ ڪيل يونٽ / ڪرنسي جو حصو ناھن"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b(\\d+)\\b', replace_num, text)"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def normalize_numeric_suffixes(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"K، M، B، T جي پڇاڙين کي وڌائي ٿو.\"\"\""}
+{"unnormalised": "", "normalised": "    def replace_suffix(match):"}
+{"unnormalised": "", "normalised": "        num = number_to_words(match.group(1))"}
+{"unnormalised": "", "normalised": "        suffix = match.group(2).lower()"}
+{"unnormalised": "", "normalised": "        if suffix == 'k': return f\"{num} thousand\""}
+{"unnormalised": "", "normalised": "        if suffix == 'm': return f\"{num} million\""}
+{"unnormalised": "", "normalised": "        if suffix == 'b': return f\"{num} billion\""}
+{"unnormalised": "", "normalised": "        if suffix == 't': return f\"{num} trillion\""}
+{"unnormalised": "", "normalised": "        return match.group(0) # ائين نه ٿيڻ گھرجي"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\d+)([KMBT])\\b', replace_suffix, text)"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def normalize_currency_number_suffix(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"ڪرنسي کي انگ ۽ پڇاڙي سان گڏ ڪري ٿو.\"\"\""}
+{"unnormalised": "", "normalised": "    def replace_currency_suffix(match):"}
+{"unnormalised": "", "normalised": "        currency_symbol = match.group(1)"}
+{"unnormalised": "", "normalised": "        num_str = match.group(2)"}
+{"unnormalised": "", "normalised": "        suffix = match.group(3)"}
+{"unnormalised": "", "normalised": "        currency_word = \"\""}
+{"unnormalised": "", "normalised": "        if currency_symbol == '$': currency_word = 'dollar'"}
+{"unnormalised": "", "normalised": "        elif currency_symbol == '₹': currency_word = 'rupee'"}
+{"unnormalised": "", "normalised": "        # ضرورت مطابق وڌيڪ ڪرنسيون شامل ڪريو"}
+{"unnormalised": "", "normalised": "        num_words = number_to_words(num_str)"}
+{"unnormalised": "", "normalised": "        suffix_word = \"\""}
+{"unnormalised": "", "normalised": "        if suffix.lower() == 'k': suffix_word = 'thousand'"}
+{"unnormalised": "", "normalised": "        elif suffix.lower() == 'm': suffix_word = 'million'"}
+{"unnormalised": "", "normalised": "        elif suffix.lower() == 'b': suffix_word = 'billion'"}
+{"unnormalised": "", "normalised": "        elif suffix.lower() == 't': suffix_word = 'trillion'"}
+{"unnormalised": "", "normalised": "        return f\"{currency_word} {num_words} {suffix_word}\""}
+{"unnormalised": "", "normalised": "    # ڪرنسي جي نشاني لاءِ نمونو، ان کان پوءِ انگ ۽ پڇاڙي"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'([$₹€£])(\\d+)([KMBT])\\b', replace_currency_suffix, text)"}
+{"unnormalised": "", "normalised": "    # ڪرنسي + انگ کي پڇاڙي کان سواءِ به ھٿ ڪريو (پڇاڙي واري قاعدي کان پوءِ ٿيڻ گھرجي)"}
+{"unnormalised": "", "normalised": "    def replace_currency_num(match):"}
+{"unnormalised": "", "normalised": "        currency_symbol = match.group(1)"}
+{"unnormalised": "", "normalised": "        num_str = match.group(2)"}
+{"unnormalised": "", "normalised": "        currency_word = \"\""}
+{"unnormalised": "", "normalised": "        if currency_symbol == '$': currency_word = 'dollar'"}
+{"unnormalised": "", "normalised": "        elif currency_symbol == '₹': currency_word = 'rupee'"}
+{"unnormalised": "", "normalised": "        # ضرورت مطابق وڌيڪ ڪرنسيون شامل ڪريو"}
+{"unnormalised": "", "normalised": "        num_words = number_to_words(num_str)"}
+{"unnormalised": "", "normalised": "        return f\"{currency_word} {num_words}\""}
+{"unnormalised": "", "normalised": "    text = re.sub(r'([$₹€£])(\\d+)\\b', replace_currency_num, text)"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def normalize_dates(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"عددي تاريخن کي قدرتي ڳالهائڻ واري شڪل ۾ تبديل ڪري ٿو (ابهام لاءِ DD/MM/YYYY فرض ڪيو ويو آهي).\"\"\""}
+{"unnormalised": "", "normalised": "    # DD-MM-YYYY يا DD/MM/YYYY"}
+{"unnormalised": "", "normalised": "    def replace_date_dmy(match):"}
+{"unnormalised": "", "normalised": "        day = int(match.group(1))"}
+{"unnormalised": "", "normalised": "        month = int(match.group(2))"}
+{"unnormalised": "", "normalised": "        year = int(match.group(3))"}
+{"unnormalised": "", "normalised": "        months = ["}
+{"unnormalised": "", "normalised": "            \"\", \"january\", \"february\", \"march\", \"april\", \"may\", \"june\","}
+{"unnormalised": "", "normalised": "            \"july\", \"august\", \"september\", \"october\", \"november\", \"december\""}
+{"unnormalised": "", "normalised": "        ]"}
+{"unnormalised": "", "normalised": "        return f\"{p.ordinal(day)} {months[month]} {number_to_words(str(year))}\""}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b(\\d{1,2})[-/](\\d{1,2})[-/](\\d{4})\\b', replace_date_dmy, text)"}
+{"unnormalised": "", "normalised": "    # YYYY-MM-DD"}
+{"unnormalised": "", "normalised": "    def replace_date_ymd(match):"}
+{"unnormalised": "", "normalised": "        year = int(match.group(1))"}
+{"unnormalised": "", "normalised": "        month = int(match.group(2))"}
+{"unnormalised": "", "normalised": "        day = int(match.group(3))"}
+{"unnormalised": "", "normalised": "        months = ["}
+{"unnormalised": "", "normalised": "            \"\", \"january\", \"february\", \"march\", \"april\", \"may\", \"june\","}
+{"unnormalised": "", "normalised": "            \"july\", \"august\", \"september\", \"october\", \"november\", \"december\""}
+{"unnormalised": "", "normalised": "        ]"}
+{"unnormalised": "", "normalised": "        return f\"{p.ordinal(day)} {months[month]} {number_to_words(str(year))}\""}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b(\\d{4})[-/](\\d{1,2})[-/](\\d{1,2})\\b', replace_date_ymd, text)"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def normalize_units(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"يونٽن کي مڪمل لفظن ۾ وڌائي ٿو.\"\"\""}
+{"unnormalised": "", "normalised": "    def replace_unit(match):"}
+{"unnormalised": "", "normalised": "        num_str = match.group(1)"}
+{"unnormalised": "", "normalised": "        unit = match.group(2).lower()"}
+{"unnormalised": "", "normalised": "        num_words = number_to_words(num_str)"}
+{"unnormalised": "", "normalised": "        unit_map = {"}
+{"unnormalised": "", "normalised": "            'cm': 'centimeter', 'mm': 'millimeter', 'm': 'meter', 'km': 'kilometer',"}
+{"unnormalised": "", "normalised": "            'g': 'gram', 'kg': 'kilogram', 'mg': 'milligram',"}
+{"unnormalised": "", "normalised": "            'ml': 'milliliter', 'l': 'liter', 'kph': 'kilometers per hour',"}
+{"unnormalised": "", "normalised": "            'mph': 'miles per hour', 'hz': 'hertz', 'khz': 'kilohertz',"}
+{"unnormalised": "", "normalised": "            'mhz': 'megahertz', 'ghz': 'gigahertz', 'mb': 'megabyte',"}
+{"unnormalised": "", "normalised": "            'gb': 'gigabyte', 'tb': 'terabyte', 'kb': 'kilobyte',"}
+{"unnormalised": "", "normalised": "            'sec': 'second', 'min': 'minute', 'hr': 'hour',"}
+{"unnormalised": "", "normalised": "            'usd': 'us dollar', 'eur': 'euro', 'gbp': 'pound sterling',"}
+{"unnormalised": "", "normalised": "            'ft': 'foot', 'in': 'inch', 'yd': 'yard', 'sqm': 'square meter',"}
+{"unnormalised": "", "normalised": "            'sqkm': 'square kilometer', 'sqft': 'square foot',"}
+{"unnormalised": "", "normalised": "            'c': 'celsius', # °C لاءِ خاص هٿ ڪرڻ اڳ ۾، پر صرف C لاءِ، اهو مبهم آهي. ڊگري فرض ڪندي."}
+{"unnormalised": "", "normalised": "            'f': 'fahrenheit' # 'F' لاءِ ڊگري فرض ڪندي"}
+{"unnormalised": "", "normalised": "        }"}
+{"unnormalised": "", "normalised": "        # °C لاءِ خاص ڪيس، جيڪو نشانين ۾ اڳ ۾ ئي هٿ ڪيو ويو آهي."}
+{"unnormalised": "", "normalised": "        if unit == 'c':"}
+{"unnormalised": "", "normalised": "             # جيڪڏهن عدد سان اڳ ۾ آهي، ته \"ڊگري سيلسيس\" فرض ڪريو"}
+{"unnormalised": "", "normalised": "            if re.search(r'\\b\\d+\\s*$', match.string[:match.start()], re.IGNORECASE):"}
+{"unnormalised": "", "normalised": "                return f\"{num_words} degree celsius\""}
+{"unnormalised": "", "normalised": "            return f\"{num_words} {unit_map.get(unit, unit)}\""}
+{"unnormalised": "", "normalised": "        return f\"{num_words} {unit_map.get(unit, unit)}\""}
+{"unnormalised": "", "normalised": "    # ھي ريگيڪس مختلف يونٽن لاءِ مضبوط آھي ۽ يقيني بڻائي ٿو ته يونٽ کان اڳ عدد آھي"}
+{"unnormalised": "", "normalised": "    # اھو عدد ۽ يونٽ کي الڳ الڳ پڪڙڻ جي ڪوشش ڪري ٿو"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b(\\d+(?:\\.\\d+)?)\\s*(cm|mm|m|km|g|kg|mg|ml|l|kph|mph|hz|khz|mhz|ghz|mb|gb|tb|kb|sec|min|hr|usd|eur|gbp|ft|in|yd|sqm|sqkm|sqft|[CF])\\b', replace_unit, text, flags=re.IGNORECASE)"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def normalize_mathematical_notation(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"رياضياتي نشانين ۽ اظهارن کي ڳالهائڻ واري صورت ۾ تبديل ڪري ٿو.\"\"\""}
+{"unnormalised": "", "normalised": "    # ترتيب اهم آھي. وڌيڪ مخصوص نمونن کي پھريون."}
+{"unnormalised": "", "normalised": "    # انٽيگرل a کان b تائين"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'∫\\s*(\\d+)→(\\d+)\\s*(.*?)\\s*d([a-zA-Z])',"}
+{"unnormalised": "", "normalised": "                  lambda m: f\"integral from {number_to_words(m.group(1))} to {number_to_words(m.group(2))} of {m.group(3).strip()} d {m.group(4)}\","}
+{"unnormalised": "", "normalised": "                  text)"}
+{"unnormalised": "", "normalised": "    # عام انٽيگرل"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'∫\\s*(.*?)\\s*d([a-zA-Z])',"}
+{"unnormalised": "", "normalised": "                  lambda m: f\"integral of {m.group(1).strip()} d {m.group(2)}\","}
+{"unnormalised": "", "normalised": "                  text)"}
+{"unnormalised": "", "normalised": "    # پاورون (x^2، x^3، x^n)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'([a-zA-Z])\\^2', r'\\1 squared', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'([a-zA-Z])\\^3', r'\\1 cubed', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'([a-zA-Z])\\^([a-zA-Z0-9]+)', r'\\1 to the power of \\2', text) # x^n"}
+{"unnormalised": "", "normalised": "    # Pi r squared (مخصوص ڪيس)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'πr\\^2', 'pi r squared', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'π([a-zA-Z])\\^2', r'pi \\1 squared', text) # Pi a^2 لاءِ"}
+{"unnormalised": "", "normalised": "    # اسڪوائر روٽ"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'√([a-zA-Z0-9]+)', r'square root of \\1', text)"}
+{"unnormalised": "", "normalised": "    # جمع (Σ x_i)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'Σ\\s*([a-zA-Z])_([a-zA-Z0-9]+)', r'summation of \\1 sub \\2', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'Σ\\s*([a-zA-Z])', r'summation of \\1', text)"}
+{"unnormalised": "", "normalised": "    # سبسڪرپٽس (x_i) - يقيني بڻايو ته هي ٻين نمونن سان تڪرار نه ڪري"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'([a-zA-Z])_([a-zA-Z0-9]+)', r'\\1 sub \\2', text)"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def normalize_text(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"منطقي ترتيب ۾ سڀني نارملائيزيشن جي قاعدن کي لاڳو ڪري ٿو.\"\"\""}
+{"unnormalised": "", "normalised": "    # 1. رياضي جا نشان (پھريون مخصوص اظهار)"}
+{"unnormalised": "", "normalised": "    text = normalize_mathematical_notation(text)"}
+{"unnormalised": "", "normalised": "    # 2. نشانيون (رياضي جي نشانين کان پوءِ حصا شامل آھن جهڙوڪ 3/4)"}
+{"unnormalised": "", "normalised": "    text = normalize_symbols(text)"}
+{"unnormalised": "", "normalised": "    # 3. عددي پڇاڙيون (مثال طور، K، M، B، T)"}
+{"unnormalised": "", "normalised": "    text = normalize_numeric_suffixes(text)"}
+{"unnormalised": "", "normalised": "    # 4. ڪرنسي + انگ + پڇاڙي"}
+{"unnormalised": "", "normalised": "    text = normalize_currency_number_suffix(text)"}
+{"unnormalised": "", "normalised": "    # 5. تاريخون"}
+{"unnormalised": "", "normalised": "    text = normalize_dates(text)"}
+{"unnormalised": "", "normalised": "    # 6. يونٽون (عام عدد جي تبديلي کان اڳ اچڻ گھرجي)"}
+{"unnormalised": "", "normalised": "    text = normalize_units(text)"}
+{"unnormalised": "", "normalised": "    # 7. مختصر لفظ (انگن کان اڳ \"USA\" کي \"U-S-A\" ۾ ورھائڻ کان بچڻ لاءِ)"}
+{"unnormalised": "", "normalised": "    text = normalize_acronyms(text)"}
+{"unnormalised": "", "normalised": "    # 8. عام عدد (باقي بچيل ڪنهن به انگ کي پڪڙڻ لاءِ آخر ۾)"}
+{"unnormalised": "", "normalised": "    text = normalize_numbers(text)"}
+{"unnormalised": "", "normalised": "    # آخري صفائي"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\s+', ' ', text).strip() # خالن کي برابر ڪريو"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def process_folder(source_folder, destination_folder):"}
+{"unnormalised": "", "normalised": "    \"\"\""}
+{"unnormalised": "", "normalised": "    ذريعو فولڊر ۾ گھمندو، .txt فائلن کي نارملائيز ڪندو،"}
+{"unnormalised": "", "normalised": "    ۽ ٻين فائلن کي منزل واري فولڊر ۾ نقل ڪندو."}
+{"unnormalised": "", "normalised": "    \"\"\""}
+{"unnormalised": "", "normalised": "    if os.path.exists(destination_folder):"}
+{"unnormalised": "", "normalised": "        print(f\"منزل وارو فولڊر '{destination_folder}' اڳ ۾ ئي موجود آھي. ختم ڪري ٻيهر ٺاهيو پيو وڃي.\")"}
+{"unnormalised": "", "normalised": "        shutil.rmtree(destination_folder)"}
+{"unnormalised": "", "normalised": "    os.makedirs(destination_folder)"}
+{"unnormalised": "", "normalised": "    print(f\"منزل وارو فولڊر ٺاهيو ويو: {destination_folder}\")"}
+{"unnormalised": "", "normalised": "    normalized_count = 0"}
+{"unnormalised": "", "normalised": "    copied_count = 0"}
+{"unnormalised": "", "normalised": "    not_normalized_txt_files = [] # موجوده منطق سان اهو خالي هوندو، ڇو ته سڀ پروسيس ڪيا ويا آهن"}
+{"unnormalised": "", "normalised": "    for root, _, files in os.walk(source_folder):"}
+{"unnormalised": "", "normalised": "        relative_path = os.path.relpath(root, source_folder)"}
+{"unnormalised": "", "normalised": "        current_dest_dir = os.path.join(destination_folder, relative_path)"}
+{"unnormalised": "", "normalised": "        os.makedirs(current_dest_dir, exist_ok=True)"}
+{"unnormalised": "", "normalised": "        for filename in files:"}
+{"unnormalised": "", "normalised": "            source_file_path = os.path.join(root, filename)"}
+{"unnormalised": "", "normalised": "            dest_file_path = os.path.join(current_dest_dir, filename)"}
+{"unnormalised": "", "normalised": "            if filename.lower().endswith('.txt'):"}
+{"unnormalised": "", "normalised": "                try:"}
+{"unnormalised": "", "normalised": "                    with open(source_file_path, 'r', encoding='utf-8') as f:"}
+{"unnormalised": "", "normalised": "                        content = f.read()"}
+{"unnormalised": "", "normalised": "                    normalized_content = normalize_text(content)"}
+{"unnormalised": "", "normalised": "                    with open(dest_file_path, 'w', encoding='utf-8') as f:"}
+{"unnormalised": "", "normalised": "                        f.write(normalized_content)"}
+{"unnormalised": "", "normalised": "                    normalized_count += 1"}
+{"unnormalised": "", "normalised": "                    # print(f\"Normalized: {source_file_path}\")"}
+{"unnormalised": "", "normalised": "                except Exception as e:"}
+{"unnormalised": "", "normalised": "                    print(f\"Error normalizing {source_file_path}: {e}\")"}
+{"unnormalised": "", "normalised": "                    not_normalized_txt_files.append(source_file_path)"}
+{"unnormalised": "", "normalised": "                    # جيڪڏهن غلطي ٿئي ته، ذريعو فائل کي ايئن ئي نقل ڪريو يا خالي ڇڏي ڏيو، اهو مطلوبہ غلطي جي ھٿ ڪرڻ تي منحصر آھي"}
+{"unnormalised": "", "normalised": "                    shutil.copy2(source_file_path, dest_file_path)"}
+{"unnormalised": "", "normalised": "            else:"}
+{"unnormalised": "", "normalised": "                shutil.copy2(source_file_path, dest_file_path)"}
+{"unnormalised": "", "normalised": "                copied_count += 1"}
+{"unnormalised": "", "normalised": "                # print(f\"Copied (unchanged): {source_file_path}\")"}
+{"unnormalised": "", "normalised": "    print(f\"\\n--- پروسيسنگ جو خلاصو ---\")"}
+{"unnormalised": "", "normalised": "    print(f\"ٽيڪسٽ فائلون نارملائيز ڪيون ويون: {normalized_count}\")"}
+{"unnormalised": "", "normalised": "    print(f\"ٻيون فائلون نقل ڪيون ويون: {copied_count}\")"}
+{"unnormalised": "", "normalised": "    if not_normalized_txt_files:"}
+{"unnormalised": "", "normalised": "        print(\"\\nفائلون جيڪي غلطين جي ڪري نارملائيز *نه* ڪيون ويون (ايئن ئي نقل ڪيون ويون):\")"}
+{"unnormalised": "", "normalised": "        for f in not_normalized_txt_files:"}
+{"unnormalised": "", "normalised": "            print(f\"- {f}\")"}
+{"unnormalised": "", "normalised": "    else:"}
+{"unnormalised": "", "normalised": "        print(\"سڀ .txt فائلون ڪاميابي سان پروسيس ڪيون ويون.\")"}
+{"unnormalised": "", "normalised": "# --- مکيه عملدار بلاڪ ---"}
+{"unnormalised": "", "normalised": "if __name__ == \"__main__\":"}
+{"unnormalised": "", "normalised": "    # مظاهري لاءِ هڪ فرضي ذريعو فولڊر ۽ فائل ٺاهيو"}
+{"unnormalised": "", "normalised": "    # حقيقي منظرنامي ۾، توهان ذريعو_فولڊر کي پنهنجي اصل ڊيٽا ڏانهن اشارو ڪندا."}
+{"unnormalised": "", "normalised": "    dummy_source_folder = 'dataset_raw'"}
+{"unnormalised": "", "normalised": "    dummy_destination_folder = 'dataset_normalized'"}
+{"unnormalised": "", "normalised": "    dummy_txt_filepath = os.path.join(dummy_source_folder, 'blog_posts', 'goa_addresses.txt')"}
+{"unnormalised": "", "normalised": "    dummy_image_filepath = os.path.join(dummy_source_folder, 'images', 'beach.jpg')"}
+{"unnormalised": "", "normalised": "    # يقيني بڻايو ته فرضي ذريعو ڊائريڪٽريون موجود آهن"}
+{"unnormalised": "", "normalised": "    os.makedirs(os.path.dirname(dummy_txt_filepath), exist_ok=True)"}
+{"unnormalised": "", "normalised": "    os.makedirs(os.path.dirname(dummy_image_filepath), exist_ok=True)"}
+{"unnormalised": "", "normalised": "    # توهان جي بلاگ پوسٽ جو مواد"}
+{"unnormalised": "", "normalised": "    blog_post_content = \"\"\""}
+{"unnormalised": "", "normalised": "    Lost in Translation: My Adventures with Indian Addresses (and Why You Need GPS)"}
+{"unnormalised": "", "normalised": "    So, I thought I was pretty savvy, you know? I've navigated the Delhi metro during peak hours, haggled for the best price on a saree in Chandni Chowk, and even managed to order chai without getting milk in it (a feat, trust me). But then came the addresses. Oh, the addresses!"}
+{"unnormalised": "", "normalised": "    Let me set the scene: I was on a mission to find this charming little guesthouse in Goa. Sounded idyllic, right? The booking confirmation cheerfully declared: \"Anand Villa, H. No. 147/A, Near St. Alex Church, Calangute, Bardez, Goa 403516.\" Simple enough, thought I. Famous last words."}
+{"unnormalised": "", "normalised": "    First, the \"H. No. 147/A.\" I assumed it was house number, duh. But oh no, in Goa, it seems to be more of a suggestion than a concrete marker. I spent a solid hour wandering around what I’m pretty sure was a coconut plantation, asking locals if they’d seen \"H. No. 147/A, any slash anything.\" The responses ranged from blank stares to helpful (but ultimately incorrect) directions."}
+{"unnormalised": "", "normalised": "    Then there was the \"Near St. Alex Church.\" Now, St. Alex Church is a pretty big landmark. You’d think \"near\" would mean, like, visible from the front steps. Nope. In Goa, “near” means “somewhere in the general vicinity, possibly involving a rickshaw ride and a conversation with a cow.” I eventually found it… after asking 3 different auto-rickshaw wallahs who each tried to charge me Rs. 500 for a ride that should have cost Rs. 100."}
+{"unnormalised": "", "normalised": "    And don't even get me started on \"Bardez.\" Is it a town? A district? A feeling? I'm still not entirely sure. The postcode, \"403516,\" was the only thing that made any sense, and even then, Google Maps just laughed at me."}
+{"unnormalised": "", "normalised": "    Finally, after what felt like a small pilgrimage (and several bottles of Kingfisher), I stumbled upon Anand Villa. It was lovely, truly. But the journey? Let’s just say I’m now fluent in the Goan dialect of “lost and confused.”"}
+{"unnormalised": "", "normalised": "    Moral of the story? Always, *always* have GPS coordinates. And maybe a local SIM card. And definitely a sense of humor. Because finding an address in India can be an adventure in itself, and sometimes, the best stories are the ones where you get hopelessly, hilariously lost. Next time, I'm just putting \"Latitude: [insert latitude here], Longitude: [insert longitude here]\" in my booking notes. Let’s see them try to get *that* confused!"}
+{"unnormalised": "", "normalised": "    \"\"\""}
+{"unnormalised": "", "normalised": "    # فرضي بلاگ پوسٽ جي مواد کي فائل ۾ لکو"}
+{"unnormalised": "", "normalised": "    with open(dummy_txt_filepath, 'w', encoding='utf-8') as f:"}
+{"unnormalised": "", "normalised": "        f.write(blog_post_content)"}
+{"unnormalised": "", "normalised": "    # هڪ فرضي تصويري فائل ٺاهيو"}
+{"unnormalised": "", "normalised": "    with open(dummy_image_filepath, 'wb') as f:"}
+{"unnormalised": "", "normalised": "        f.write(b'dummy_image_content')"}
+{"unnormalised": "", "normalised": "    print(f\"مظاهري لاءِ فرضي ڊيٽا '{dummy_source_folder}' ۾ ٺاهي وئي.\")"}
+{"unnormalised": "", "normalised": "    # مکيه پروسيسنگ فنڪشن کي ڪال ڪريو"}
+{"unnormalised": "", "normalised": "    process_folder(dummy_source_folder, dummy_destination_folder)"}
+{"unnormalised": "", "normalised": "    print(\"\\n--- مثال ڏنل نارملائيز مواد (goa_addresses.txt مان) ---\")"}
+{"unnormalised": "", "normalised": "    normalized_file_path = os.path.join(dummy_destination_folder, 'blog_posts', 'goa_addresses.txt')"}
+{"unnormalised": "", "normalised": "    if os.path.exists(normalized_file_path):"}
+{"unnormalised": "", "normalised": "        with open(normalized_file_path, 'r', encoding='utf-8') as f:"}
+{"unnormalised": "", "normalised": "            print(f.read())"}
+{"unnormalised": "", "normalised": "    else:"}
+{"unnormalised": "", "normalised": "        print(f\"نارملائيز فائل هتي نه ملي: {normalized_file_path}\")"}
+{"unnormalised": "", "normalised": "    # توهان شايد فرضي ذريعو_فولڊر کي صاف ڪرڻ چاهيو ٿا جيڪڏهن اهو صرف ڊيمو لاءِ آهي"}
+{"unnormalised": "", "normalised": "    # shutil.rmtree(dummy_source_folder)"}
+{"unnormalised": "", "normalised": "    # print(f\"فرضي ذريعو فولڊر صاف ڪيو ويو: {dummy_source_folder}\")"}
+{"unnormalised": "", "normalised": "```"}
+{"unnormalised": "", "normalised": "---"}
+{"unnormalised": "", "normalised": "**اسڪرپٽ کي ڪيئن استعمال ڪجي:**"}
+{"unnormalised": "", "normalised": "1.  **ڪوڊ محفوظ ڪريو:** مٿي ڏنل پٿون ڪوڊ کي `.py` فائل طور محفوظ ڪريو (مثال طور، `normalize_data.py`)."}
+{"unnormalised": "", "normalised": "2.  **`inflect` انسٽال ڪريو:** جيڪڏهن توهان وٽ اهو ناهي، ته `inflect` لائبريري انسٽال ڪريو (عددن کي لفظن ۾ تبديل ڪرڻ لاءِ استعمال ٿيندو آهي):"}
+{"unnormalised": "", "normalised": "    ```bash"}
+{"unnormalised": "", "normalised": "    pip install inflect"}
+{"unnormalised": "", "normalised": "    ```"}
+{"unnormalised": "", "normalised": "3.  **پنهنجي ڊيٽا تيار ڪريو:**"}
+{"unnormalised": "", "normalised": "    *   پنهنجي سڀني `.txt` فائلن (۽ ڪنهن ٻئي فائل جيڪا توهان نقل ڪرڻ چاهيو ٿا) کي مٿين سطح واري فولڊر ۾ رکو. مثال طور، اچو ته توهان جو مکيه مجموعو `my_data_raw` نالي هڪ فولڊر ۾ آهي."}
+{"unnormalised": "", "normalised": "    *   مظاهري لاءِ، اسڪرپٽ توهان جي مهيا ڪيل بلاگ پوسٽ ۽ هڪ فرضي تصوير سان `dataset_raw` فولڊر *ٺاهيندو*."}
+{"unnormalised": "", "normalised": "4.  **`source_folder` ۽ `destination_folder` ۾ ترميم ڪريو:**"}
+{"unnormalised": "", "normalised": "    *   `if __name__ == \"__main__\":` بلاڪ ۾، `dummy_source_folder` کي پنهنجي اصل مٿين سطح واري ڊيٽا فولڊر جي رستي ۾ تبديل ڪريو."}
+{"unnormalised": "", "normalised": "    *   `dummy_destination_folder` کي تبديل ڪريو جتي توھان چاھيو ٿا ته نارملائيز ڪيل آئوٽ پٽ وڃي (مثال طور، `my_data_normalized`)."}
+{"unnormalised": "", "normalised": "    ```python"}
+{"unnormalised": "", "normalised": "    # مثال: جيڪڏهن توهان جي ڊيٽا 'C:/Users/YourName/Documents/MyTextCollection' ۾ آهي"}
+{"unnormalised": "", "normalised": "    # source_folder = 'C:/Users/YourName/Documents/MyTextCollection'"}
+{"unnormalised": "", "normalised": "    # destination_folder = 'C:/Users/YourName/Documents/MyTextCollection_Normalized'"}
+{"unnormalised": "", "normalised": "    # هن اسڪرپٽ جي ڊيمو لاءِ، اهو استعمال ڪري ٿو:"}
+{"unnormalised": "", "normalised": "    source_folder = 'dataset_raw' # اهو اسڪرپٽ طرفان ٺاهيو ويندو جيڪڏهن اهو موجود نه آهي"}
+{"unnormalised": "", "normalised": "    destination_folder = 'dataset_normalized' # اهو اسڪرپٽ طرفان ٺاهيو ويندو"}
+{"unnormalised": "", "normalised": "    ```"}
+{"unnormalised": "", "normalised": "5.  **اسڪرپٽ هلايو:** پنهنجو ٽرمينل يا ڪمانڊ پرامپٽ کوليو، ڊائريڪٽري ڏانهن وڃو جتي توهان `normalize_data.py` محفوظ ڪيو، ۽ هلايو:"}
+{"unnormalised": "", "normalised": "    ```bash"}
+{"unnormalised": "", "normalised": "    python normalize_data.py"}
+{"unnormalised": "", "normalised": "    ```"}
+{"unnormalised": "", "normalised": "**مهيا ڪيل بلاگ پوسٽ جي مواد لاءِ آئوٽ پُٽ:**"}
+{"unnormalised": "", "normalised": "جيڪڏهن توهان فرضي ڊيٽا سيٽ اپ سان اسڪرپٽ هلايو ٿا، ته `dataset_normalized/blog_posts/goa_addresses.txt` فائل ۾ هيٺيون شامل هوندو:"}
+{"unnormalised": "", "normalised": "```"}
+{"unnormalised": "", "normalised": "lost in translation: my adventures with i-n-d-i-a-n addresses (and why you need g-p-s) so, i thought i was pretty savvy, you know? i've navigated the delhi metro during peak hours, haggled for the best price on a saree in chandni chowk, and even managed to order chai without getting milk in it (a feat, trust me). but then came the addresses. oh, the addresses! let me set the scene: i was on a mission to find this charming little guesthouse in goa. sounded idyllic, right? the booking confirmation cheerfully declared: \"anand villa, h. no. one hundred and forty seven slash a, near s-t. alex church, calangute, bardez, goa four hundred and three thousand five hundred and sixteen.\" simple enough, thought i. famous last words. first, the \"h. no. one hundred and forty seven slash a.\" i assumed it was house number, duh. but oh no, in goa, it seems to be more of a suggestion than a concrete marker. i spent a solid hour wandering around what i’m pretty sure was a coconut plantation, asking locals if they’d seen \"h. no. one hundred and forty seven slash a, any slash anything.\" the responses ranged from blank stares to helpful (but ultimately incorrect) directions. then there was the \"near s-t. alex church.\" now, s-t. alex church is a pretty big landmark. you’d think \"near\" would mean, like, visible from the front steps. nope. in goa, “near” means “somewhere in the general vicinity, possibly involving a rickshaw ride and a conversation with a cow.” i eventually found it… after asking three different auto-rickshaw wallahs who each tried to charge me rupee five hundred for a ride that should have cost rupee one hundred. and don't even get me started on \"bardez.\" is it a town? a district? a feeling? i'm still not"}

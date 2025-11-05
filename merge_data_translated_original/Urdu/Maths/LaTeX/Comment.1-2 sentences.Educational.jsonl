@@ -1,0 +1,248 @@
+{"unnormalised": "براہ کرم یاد رکھیں کہ مساوات کو \\$ نشانات میں بند کریں۔ مثال کے طور پر، مساوات \\$x^2 + y^2 = r^2\\$ لکھنے کے لیے، آپ \\$x^2 + y^2 = r^2\\$ ٹائپ کریں گے۔ کسروں کے لیے \\\\frac\\{\\}\\{\\} استعمال کریں، جیسے کہ $\\frac{1}{2}$ کو \\\\frac\\{1\\}\\{2\\} کی طرح لکھا جاتا ہے۔", "normalised": "```urdu"}
+{"unnormalised": "", "normalised": "امپورٹ اوس"}
+{"unnormalised": "", "normalised": "امپورٹ ری"}
+{"unnormalised": "", "normalised": "فرام نم ٹو ورڈز امپورٹ نم ٹو ورڈز"}
+{"unnormalised": "", "normalised": "ڈیف کنورٹ_نمبر_ٹو_ورڈز(نمبر_سٹر):"}
+{"unnormalised": "", "normalised": "    ٹرائی:"}
+{"unnormalised": "", "normalised": "        اف '.' ان نمبر_سٹر:"}
+{"unnormalised": "", "normalised": "            انٹیجر_پارٹ، ڈیسیمل_پارٹ = نمبر_سٹر۔اسپلٹ('.')"}
+{"unnormalised": "", "normalised": "            اف انٹیجر_پارٹ:"}
+{"unnormalised": "", "normalised": "                انٹیجر_ورڈز = نم ٹو ورڈز(انٹ(انٹیجر_پارٹ))"}
+{"unnormalised": "", "normalised": "            ایلس:"}
+{"unnormalised": "", "normalised": "                انٹیجر_ورڈز = ''"}
+{"unnormalised": "", "normalised": "            ڈیسیمل_ورڈز = 'پوائنٹ ' + ' '.جوائن(نم ٹو ورڈز(انٹ(ڈی)) فار ڈی ان ڈیسیمل_پارٹ)"}
+{"unnormalised": "", "normalised": "            اف انٹیجر_ورڈز:"}
+{"unnormalised": "", "normalised": "                ریٹرن ایف\"{انٹیجر_ورڈز} {ڈیسیمل_ورڈز}\""}
+{"unnormalised": "", "normalised": "            ایلس:"}
+{"unnormalised": "", "normalised": "                ریٹرن ڈیسیمل_ورڈز"}
+{"unnormalised": "", "normalised": "        ایلس:"}
+{"unnormalised": "", "normalised": "            ریٹرن نم ٹو ورڈز(انٹ(نمبر_سٹر))"}
+{"unnormalised": "", "normalised": "    ایکسپٹ ویلیو ایرر:"}
+{"unnormalised": "", "normalised": "        ریٹرن نمبر_سٹر # ریٹرن اوریجنل اف کنورژن فیلز"}
+{"unnormalised": "", "normalised": "ڈیف نارملائز_ٹیکسٹ(ٹیکسٹ):"}
+{"unnormalised": "", "normalised": "    # رول 1: سمبلز → سپوکن فارم"}
+{"unnormalised": "", "normalised": "    # نوٹ: آرڈر میٹرز فار سمبل ریپلیسمنٹ ٹو اوائڈ ایشوز لائک '$' بینگ ریپلیسڈ بیفور '$20B' از ہینڈلڈ۔"}
+{"unnormalised": "", "normalised": "    # پرائورٹائز ملٹی_کریکٹر سمبلز اینڈ دوز دیٹ انٹریکٹ ود نمبرز۔"}
+{"unnormalised": "", "normalised": "    # کمبائنڈ کرنسی + نمبر + سفکس (رول 5) - مسٹ کم بیفور انڈیویجول سمبل اور نمبر رولز"}
+{"unnormalised": "", "normalised": "    ڈیف ریپلیس_کرنسی_نمبر_سفکس(میچ):"}
+{"unnormalised": "", "normalised": "        کرنسی_سمبل = میچ۔گروپ(1)"}
+{"unnormalised": "", "normalised": "        نمبر_ویل = میچ۔گروپ(2)"}
+{"unnormalised": "", "normalised": "        سفکس = میچ۔گروپ(3)"}
+{"unnormalised": "", "normalised": "        "}
+{"unnormalised": "", "normalised": "        کرنسی_میپ = {"}
+{"unnormalised": "", "normalised": "            '$': 'ڈالر', '₹': 'روپی', '€': 'یورو', '£': 'پاؤنڈ', '¥': 'ین'"}
+{"unnormalised": "", "normalised": "        }"}
+{"unnormalised": "", "normalised": "        کرنسی_ورڈ = کرنسی_میپ۔گیٹ(کرنسی_سمبل، کرنسی_سمبل) # فال بیک اف ناٹ ان میپ"}
+{"unnormalised": "", "normalised": "        نمبر_ورڈز = کنورٹ_نمبر_ٹو_ورڈز(نمبر_ویل)"}
+{"unnormalised": "", "normalised": "        سفکس_میپ = {"}
+{"unnormalised": "", "normalised": "            'K': 'تھاؤزنڈ', 'M': 'ملین', 'B': 'بلین', 'T': 'ٹریلین'"}
+{"unnormalised": "", "normalised": "        }"}
+{"unnormalised": "", "normalised": "        سفکس_ورڈ = سفکس_میپ۔گیٹ(سفکس۔اپر()، سفکس) # ڈیفالٹ ٹو اوریجنل اف ناٹ ان میپ"}
+{"unnormalised": "", "normalised": "        ریٹرن ایف\"{کرنسی_ورڈ} {نمبر_ورڈز} {سفکس_ورڈ}\""}
+{"unnormalised": "", "normalised": "    "}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ری۔سب(آر'([$₹€£¥])(\\d+)([KMBTkmbt])\\b', ریپلیس_کرنسی_نمبر_سفکس، ٹیکسٹ)"}
+{"unnormalised": "", "normalised": "    # رول 4: نیومیرک سفکسز (کے، ایم، بی، ٹی) - آفٹر کمبائنڈ کرنسی بٹ بیفور جنرل نمبر رول"}
+{"unnormalised": "", "normalised": "    ڈیف ریپلیس_نیومیرک_سفکس(میچ):"}
+{"unnormalised": "", "normalised": "        نمبر_ویل = میچ۔گروپ(1)"}
+{"unnormalised": "", "normalised": "        سفکس = میچ۔گروپ(2)"}
+{"unnormalised": "", "normalised": "        نمبر_ورڈز = کنورٹ_نمبر_ٹو_ورڈز(نمبر_ویل)"}
+{"unnormalised": "", "normalised": "        سفکس_میپ = {"}
+{"unnormalised": "", "normalised": "            'K': 'تھاؤزنڈ', 'M': 'ملین', 'B': 'بلین', 'T': 'ٹریلین'"}
+{"unnormalised": "", "normalised": "        }"}
+{"unnormalised": "", "normalised": "        ریٹرن ایف\"{نمبر_ورڈز} {سفکس_میپ۔گیٹ(سفکس۔اپر()، سفکس)}\""}
+{"unnormalised": "", "normalised": "    "}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ری۔سب(آر'(\\d+)([KMBTkmbt])\\b', ریپلیس_نیومیرک_سفکس، ٹیکسٹ)"}
+{"unnormalised": "", "normalised": "    # رول 1 & 8: میتھمیٹیکل نوٹیشن اینڈ کمپلیکس سمبلز"}
+{"unnormalised": "", "normalised": "    # فریکشنز: ایکس/وائی -> ایکس ڈیوائیڈڈ بائی وائی (اونلی فار پیور نمبرز)"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ری۔سب(آر'(\\d+)/(\\d+)', آر'\\1 ڈیوائیڈڈ بائی \\2', ٹیکسٹ)"}
+{"unnormalised": "", "normalised": "    "}
+{"unnormalised": "", "normalised": "    # میتھمیٹیکل سمبلز"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ٹیکسٹ۔ریپلیس('∫', 'انٹیگرل آف')"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ٹیکسٹ۔ریپلیس('→', 'ٹو') # فار انٹیگرل لمٹس"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ٹیکسٹ۔ریپلیس('√', 'اسکوائر روٹ آف')"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ٹیکسٹ۔ریپلیس('π', 'پائی')"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ٹیکسٹ۔ریپلیس('Σ', 'سمیشن آف')"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ٹیکسٹ۔ریپلیس('≠', 'ناٹ ایکول ٹو')"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ٹیکسٹ۔ریپلیس('≤', 'لیس دین اور ایکول ٹو')"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ٹیکسٹ۔ریپلیس('≥', 'گریٹر دین اور ایکول ٹو')"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ٹیکسٹ۔ریپلیس('≈', 'اپروکسیمیٹلی ایکول ٹو')"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ٹیکسٹ۔ریپلیس('≅', 'اپروکسیمیٹلی کونگروینٹ ٹو')"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ٹیکسٹ۔ریپلیس('≡', 'آئیڈینٹیکلی ایکول ٹو')"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ٹیکسٹ۔ریپلیس('∀', 'فار آل')"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ٹیکسٹ۔ریپلیس('∃', 'دیر ایگزسٹس')"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ٹیکسٹ۔ریپلیس('∉', 'ناٹ این ایلیمنٹ آف')"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ٹیکسٹ۔ریپلیس('∈', 'از این ایلیمنٹ آف')"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ٹیکسٹ۔ریپلیس('⊂', 'از اے سب سیٹ آف')"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ٹیکسٹ۔ریپلیس('⊃', 'از اے سپر سیٹ آف')"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ٹیکسٹ۔ریپلیس('∪', 'یونین')"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ٹیکسٹ۔ریپلیس('∩', 'انٹرسیکشن')"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ٹیکسٹ۔ریپلیس('∅', 'ایمپٹی سیٹ')"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ٹیکسٹ۔ریپلیس('∝', 'از پروپورشنل ٹو')"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ٹیکسٹ۔ریپلیس('∞', 'انفینیٹی')"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ٹیکسٹ۔ریپلیس('±', 'پلس اور مائینس')"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ٹیکسٹ۔ریپلیس('∇', 'نابلا')"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ٹیکسٹ۔ریپلیس('∂', 'پارشل ڈیریویٹیو')"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ٹیکسٹ۔ریپلیس('⊕', 'ڈائریکٹ سم')"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ٹیکسٹ۔ریپلیس('⊗', 'ٹینسَر پروڈکٹ')"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ٹیکسٹ۔ریپلیس('∘', 'کمپوزیشن')"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ٹیکسٹ۔ریپلیس('⋅', 'ڈاٹ پروڈکٹ') # اور ٹائمز، ڈیپینڈنگ آن کانٹیکسٹ۔ ڈیفالٹ ٹو 'ڈاٹ پروڈکٹ'"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ٹیکسٹ۔ریپلیس('°', 'ڈگری') # فار یونٹس، ہینڈلڈ سیپریٹلی"}
+{"unnormalised": "", "normalised": "    # پاورز اینڈ سبسکرپٹس"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ری۔سب(آر'(\\w)\\^2\\b', آر'\\1 اسکوائرڈ', ٹیکسٹ)"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ری۔سب(آر'(\\w)\\^3\\b', آر'\\1 کیوبڈ', ٹیکسٹ)"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ری۔سب(آر'(\\w)\\^(\\d+)\\b', آر'\\1 ٹو دا پاور آف \\2', ٹیکسٹ)"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ری۔سب(آر'(\\w)_(\\w+)\\b', آر'\\1 سب \\2', ٹیکسٹ) # ایکس_آئی -> ایکس سب آئی"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ری۔سب(آر'(\\w)_(\\{\\w+\\})\\b', آر'\\1 سب \\2', ٹیکسٹ) # ایکس_{میکس} -> ایکس سب میکس"}
+{"unnormalised": "", "normalised": "    # ادر سمبلز"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ٹیکسٹ۔ریپلیس('$', 'ڈالر')"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ٹیکسٹ۔ریپلیس('€', 'یورو')"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ٹیکسٹ۔ریپلیس('£', 'پاؤنڈ')"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ٹیکسٹ۔ریپلیس('¥', 'ین')"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ٹیکسٹ۔ریپلیس('₹', 'روپی')"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ٹیکسٹ۔ریپلیس('%', 'پرسنٹ')"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ٹیکسٹ۔ریپلیس('@', 'ایٹ')"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ٹیکسٹ۔ریپلیس('&', 'اینڈ')"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ٹیکسٹ۔ریپلیس('#', 'ہیش')"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ٹیکسٹ۔ریپلیس('*', 'ایسٹرسک')"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ٹیکسٹ۔ریپلیس('+', 'پلس')"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ٹیکسٹ۔ریپلیس('=', 'ایکوئلز')"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ٹیکسٹ۔ریپلیس('-', 'مائینس') # بی کیئر فل ود ہائیفنیٹڈ ورڈز ورسس میتھ مائینس"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ٹیکسٹ۔ریپلیس('~', 'اپروکسیمیٹلی')"}
+{"unnormalised": "", "normalised": "    # رول 2: ایکرونیمز → ہائیفنیٹڈ لیٹرز"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ری۔سب(آر'\\b([A-Z]{2,})\\b', لیمڈا ایم: '-'.جوائن(لسٹ(ایم۔گروپ(1))), ٹیکسٹ)"}
+{"unnormalised": "", "normalised": "    "}
+{"unnormalised": "", "normalised": "    # رول 6: ڈیٹس → نیچرل سپوکن فارم (ڈی ڈی/ایم ایم/وائی وائی وائی وائی اور وائی وائی وائی وائی-ایم ایم-ڈی ڈی ازیومڈ)"}
+{"unnormalised": "", "normalised": "    ڈیف ریپلیس_ڈیٹ(میچ):"}
+{"unnormalised": "", "normalised": "        ڈے، منتھ، ایئر = ''، ''، ''"}
+{"unnormalised": "", "normalised": "        اف میچ۔گروپ(1): # ڈی ڈی-ایم ایم-وائی وائی وائی وائی اور ڈی ڈی/ایم ایم/وائی وائی وائی وائی"}
+{"unnormalised": "", "normalised": "            ڈے = انٹ(میچ۔گروپ(2))"}
+{"unnormalised": "", "normalised": "            منتھ = انٹ(میچ۔گروپ(3))"}
+{"unnormalised": "", "normalised": "            ایئر = انٹ(میچ۔گروپ(4))"}
+{"unnormalised": "", "normalised": "        ایلف میچ۔گروپ(5): # وائی وائی وائی وائی-ایم ایم-ڈی ڈی"}
+{"unnormalised": "", "normalised": "            ایئر = انٹ(میچ۔گروپ(6))"}
+{"unnormalised": "", "normalised": "            منتھ = انٹ(میچ۔گروپ(7))"}
+{"unnormalised": "", "normalised": "            ڈے = انٹ(میچ۔گروپ(8))"}
+{"unnormalised": "", "normalised": "        اف ناٹ (ڈے اینڈ منتھ اینڈ ایئر):"}
+{"unnormalised": "", "normalised": "            ریٹرن میچ۔گروپ(0) # ریٹرن اوریجنل اف ڈیٹ پارسنگ فیلڈ"}
+{"unnormalised": "", "normalised": "        منتھس = [\"\", \"جنوری\", \"فروری\", \"مارچ\", \"اپریل\", \"مئی\", \"جون\","}
+{"unnormalised": "", "normalised": "                  \"جولائی\", \"اگست\", \"ستمبر\", \"اکتوبر\", \"نومبر\", \"دسمبر\"]"}
+{"unnormalised": "", "normalised": "        "}
+{"unnormalised": "", "normalised": "        ڈے_سفکس = {1: 'فرسٹ', 2: 'سیکنڈ', 3: 'تھرڈ', 4: 'فورتھ', 5: 'فتھ', 6: 'سکسٹھ', 7: 'سیونتھ', 8: 'ایتھ', 9: 'نائنٹھ', 10: 'ٹینٹھ', 11: 'الیونتھ', 12: 'ٹویلتھ', 13: 'تھرٹینتھ', 14: 'فورتھٹینتھ', 15: 'فتھٹینتھ', 16: 'سکسٹینتھ', 17: 'سیونتینتھ', 18: 'ایتھٹینتھ', 19: 'نائنٹینتھ', 20: 'ٹوینٹیتھ', 21: 'ٹوینٹی فرسٹ', 22: 'ٹوینٹی سیکنڈ', 23: 'ٹوینٹی تھرڈ', 24: 'ٹوینٹی فورتھ', 25: 'ٹوینٹی ففتھ', 26: 'ٹوینٹی سکسٹھ', 27: 'ٹوینٹی سیونتھ', 28: 'ٹوینٹی ایتھ', 29: 'ٹوینٹی نائنٹھ', 30: 'تھرٹیتھ', 31: 'تھرٹی فرسٹ'}"}
+{"unnormalised": "", "normalised": "        "}
+{"unnormalised": "", "normalised": "        سپوکن_ڈے = ڈے_سفکس۔گیٹ(ڈے، نم ٹو ورڈز(ڈے، ٹو='آرڈینل'))"}
+{"unnormalised": "", "normalised": "        سپوکن_منتھ = منتھس[منتھ]"}
+{"unnormalised": "", "normalised": "        سپوکن_ایئر = کنورٹ_نمبر_ٹو_ورڈز(سٹر(ایئر))"}
+{"unnormalised": "", "normalised": "        "}
+{"unnormalised": "", "normalised": "        ریٹرن ایف\"{سپوکن_ڈے} {سپوکن_منتھ} {سپوکن_ایئر}\""}
+{"unnormalised": "", "normalised": "    # ڈی ڈی/ایم ایم/وائی وائی وائی وائی اور ڈی ڈی-ایم ایم-وائی وائی وائی وائی"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ری۔سب(آر'\\b((\\d{1,2})[/-](\\d{1,2})[/-](\\d{4}))\\b', ریپلیس_ڈیٹ، ٹیکسٹ)"}
+{"unnormalised": "", "normalised": "    # وائی وائی وائی وائی-ایم ایم-ڈی ڈی"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ری۔سب(آر'\\b((\\d{4})[/-](\\d{1,2})[/-](\\d{1,2}))\\b', ریپلیس_ڈیٹ، ٹیکسٹ)"}
+{"unnormalised": "", "normalised": "    # رول 7: یونٹس → سپوکن فارم"}
+{"unnormalised": "", "normalised": "    ڈیف ریپلیس_یونٹس(میچ):"}
+{"unnormalised": "", "normalised": "        نمبر = کنورٹ_نمبر_ٹو_ورڈز(میچ۔گروپ(1))"}
+{"unnormalised": "", "normalised": "        یونٹ = میچ۔گروپ(2)۔لوئر()"}
+{"unnormalised": "", "normalised": "        یونٹ_میپ = {"}
+{"unnormalised": "", "normalised": "            'cm': 'سینٹی میٹر', 'mm': 'ملی میٹر', 'm': 'میٹر', 'km': 'کلومیٹر',"}
+{"unnormalised": "", "normalised": "            'g': 'گرام', 'kg': 'کلوگرام', 'mg': 'ملی گرام',"}
+{"unnormalised": "", "normalised": "            'ml': 'ملی لیٹر', 'l': 'لیٹر',"}
+{"unnormalised": "", "normalised": "            '°c': 'ڈگری سیلسیس', 'kph': 'کلومیٹر فی گھنٹہ',"}
+{"unnormalised": "", "normalised": "            'mph': 'میل فی گھنٹہ', 'psi': 'پاؤنڈ فی مربع انچ',"}
+{"unnormalised": "", "normalised": "            'sqm': 'اسکوائر میٹر', 'sqkm': 'اسکوائر کلومیٹر',"}
+{"unnormalised": "", "normalised": "            'ha': 'ہیکٹر', 'ft': 'فٹ', 'in': 'انچ', 'yd': 'یارڈ',"}
+{"unnormalised": "", "normalised": "            'oz': 'اونس', 'lb': 'پاؤنڈ', 'hr': 'گھنٹہ', 'min': 'منٹ', 'sec': 'سیکنڈ',"}
+{"unnormalised": "", "normalised": "            'mb': 'میگا بائٹ', 'gb': 'گیگا بائٹ', 'tb': 'ٹیرا بائٹ', 'kb': 'کلو بائٹ',"}
+{"unnormalised": "", "normalised": "            'hz': 'ہرٹز', 'khz': 'کلو ہرٹز', 'mhz': 'میگا ہرٹز', 'ghz': 'گیگا ہرٹز',"}
+{"unnormalised": "", "normalised": "            'v': 'وولٹ', 'a': 'ایمپیئر', 'w': 'واٹ', 'kw': 'کلو واٹ', 'mw': 'میگا واٹ'"}
+{"unnormalised": "", "normalised": "        }"}
+{"unnormalised": "", "normalised": "        # ہینڈل پلورلائزیشن اف نیسیسری (سمپل ہیورسٹک)"}
+{"unnormalised": "", "normalised": "        اف انٹ(میچ۔گروپ(1)) > 1 اینڈ یونٹ_میپ۔گیٹ(یونٹ) اینڈ ناٹ یونٹ_میپ۔گیٹ(یونٹ)۔اینڈز وِدھ('s'):"}
+{"unnormalised": "", "normalised": "            ریٹرن ایف\"{نمبر} {یونٹ_میپ۔گیٹ(یونٹ)}s\""}
+{"unnormalised": "", "normalised": "        ریٹرن ایف\"{نمبر} {یونٹ_میپ۔گیٹ(یونٹ، یونٹ)}\""}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ری۔سب(آر'(\\d+(?:\\.\\d+)?)\\s*(cm|mm|m|km|g|kg|mg|ml|l|°C|°c|kph|mph|psi|sqm|sqkm|ha|ft|in|yd|oz|lb|hr|min|sec|mb|gb|tb|kb|hz|khz|mhz|ghz|v|a|w|kw|mw)\\b', ریپلیس_یونٹس، ٹیکسٹ، فلیگز=ری۔اگنورکیس)"}
+{"unnormalised": "", "normalised": "    # رول 3: نمبرز → سپوکن فارم (آفٹر کرنسی، سفکسس، اینڈ یونٹس)"}
+{"unnormalised": "", "normalised": "    # دس مسٹ کم آفٹر آل ادر نمبر-ریلیٹڈ رولز"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ری۔سب(آر'\\b(\\d+(?:\\.\\d+)?)\\b', لیمڈا ایم: کنورٹ_نمبر_ٹو_ورڈز(ایم۔گروپ(1))، ٹیکسٹ)"}
+{"unnormalised": "", "normalised": "    # رول 1 (کانٹ.): سمبل ریپلیسمنٹس دیٹ مائٹ کنفلکٹ ود ادر رولز اف پلیسڈ ارلئیر"}
+{"unnormalised": "", "normalised": "    # ہینڈل / کیئرفلی: \"ڈیوائیڈڈ بائی\" بٹوین نمبرز، \"اور\" بٹوین ورڈز، \"سلیش\" فار ادرز"}
+{"unnormalised": "", "normalised": "    ڈیف ریپلیس_سلیش(میچ):"}
+{"unnormalised": "", "normalised": "        پری = میچ۔گروپ(1)"}
+{"unnormalised": "", "normalised": "        پوسٹ = میچ۔گروپ(2)"}
+{"unnormalised": "", "normalised": "        اف ری۔میچ(آر'\\b\\w+\\b', پری) اینڈ ری۔میچ(آر'\\b\\w+\\b', پوسٹ):"}
+{"unnormalised": "", "normalised": "            ریٹرن ایف\"{پری} اور {پوسٹ}\""}
+{"unnormalised": "", "normalised": "        ایلف (ری۔میچ(آر'\\b[A-Z-]+\\b', پری) اور ری۔میچ(آر'\\b[a-z-]+\\b', پری)) اینڈ \\"}
+{"unnormalised": "", "normalised": "             (ری۔میچ(آر'\\b[A-Z-]+\\b', پوسٹ) اور ری۔میچ(آر'\\b[a-z-]+\\b', پوسٹ)) اینڈ \\"}
+{"unnormalised": "", "normalised": "             (پری۔ازاپر() != پوسٹ۔ازاپر()): # مکسڈ کیس فار ایگزیمپل کیو اے/ڈِیو"}
+{"unnormalised": "", "normalised": "            ریٹرن ایف\"{پری} سلیش {پوسٹ}\""}
+{"unnormalised": "", "normalised": "        ایلس:"}
+{"unnormalised": "", "normalised": "            ریٹرن ایف\"{پری} سلیش {پوسٹ}\" # ڈیفالٹ ٹو سلیش فار ادر کیسز"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ری۔سب(آر'(\\S)\\s*/\\s*(\\S)', ریپلیس_سلیش، ٹیکسٹ) # ریپلیسڈ ود ریجیکس دیٹ کنسیڈرز سراؤنڈنگ"}
+{"unnormalised": "", "normalised": "    "}
+{"unnormalised": "", "normalised": "    # رول 9: نارملائز اسپیسز"}
+{"unnormalised": "", "normalised": "    ٹیکسٹ = ری۔سب(آر'\\s+', ' ', ٹیکسٹ)۔سٹرپ()"}
+{"unnormalised": "", "normalised": "    "}
+{"unnormalised": "", "normalised": "    ریٹرن ٹیکسٹ"}
+{"unnormalised": "", "normalised": "ڈیف پراسیس_فولڈر(ان پٹ_فولڈر، آؤٹ پٹ_فولڈر):"}
+{"unnormalised": "", "normalised": "    ان نارملائزڈ_فائلز = []"}
+{"unnormalised": "", "normalised": "    "}
+{"unnormalised": "", "normalised": "    فار روٹ، ڈیرز، فائلز ان اوس۔واک(ان پٹ_فولڈر):"}
+{"unnormalised": "", "normalised": "        ریلیٹو_پاتھ = اوس۔پاتھ۔ریل پاتھ(روٹ، ان پٹ_فولڈر)"}
+{"unnormalised": "", "normalised": "        آؤٹ پٹ_روٹ = اوس۔پاتھ۔جوائن(آؤٹ پٹ_فولڈر، ریلیٹو_پاتھ)"}
+{"unnormalised": "", "normalised": "        اوس۔میکڈیرز(آؤٹ پٹ_روٹ، ایگزسٹ_اوکے=ٹرو)"}
+{"unnormalised": "", "normalised": "        فار فائل_نیم ان فائلز:"}
+{"unnormalised": "", "normalised": "            ان پٹ_فائل_پاتھ = اوس۔پاتھ۔جوائن(روٹ، فائل_نیم)"}
+{"unnormalised": "", "normalised": "            آؤٹ پٹ_فائل_پاتھ = اوس۔پاتھ۔جوائن(آؤٹ پٹ_روٹ، فائل_نیم)"}
+{"unnormalised": "", "normalised": "            اف فائل_نیم۔اینڈز وِدھ('.txt'):"}
+{"unnormalised": "", "normalised": "                ٹرائی:"}
+{"unnormalised": "", "normalised": "                    ود اوپن(ان پٹ_فائل_پاتھ, 'آر', انکوڈنگ='یو ٹی ایف-8') ایز ایف_ان:"}
+{"unnormalised": "", "normalised": "                        کانٹینٹ = ایف_ان۔ریڈ()"}
+{"unnormalised": "", "normalised": "                    "}
+{"unnormalised": "", "normalised": "                    نارملائزڈ_کانٹینٹ = نارملائز_ٹیکسٹ(کانٹینٹ)"}
+{"unnormalised": "", "normalised": "                    "}
+{"unnormalised": "", "normalised": "                    ود اوپن(آؤٹ پٹ_فائل_پاتھ, 'ڈبلیو', انکوڈنگ='یو ٹی ایف-8') ایز ایف_آؤٹ:"}
+{"unnormalised": "", "normalised": "                        ایف_آؤٹ۔رائیٹ(نارملائزڈ_کانٹینٹ)"}
+{"unnormalised": "", "normalised": "                ایکسپٹ ایکسیپشن ایز ای:"}
+{"unnormalised": "", "normalised": "                    پرنٹ(ایف\"ایرور پراسیسنگ {ان پٹ_فائل_پاتھ}: {ای}\")"}
+{"unnormalised": "", "normalised": "                    ان نارملائزڈ_فائلز۔اَپَینڈ(ان پٹ_فائل_پاتھ)"}
+{"unnormalised": "", "normalised": "                    # کاپی اوریجنل فائل اف نارملائزیشن فیلز"}
+{"unnormalised": "", "normalised": "                    ود اوپن(آؤٹ پٹ_فائل_پاتھ, 'ڈبلیو', انکوڈنگ='یو ٹی ایف-8') ایز ایف_آؤٹ:"}
+{"unnormalised": "", "normalised": "                        ایف_آؤٹ۔رائیٹ(کانٹینٹ)"}
+{"unnormalised": "", "normalised": "            ایلس:"}
+{"unnormalised": "", "normalised": "                # کاپی نان-.txt فائلز انچینجڈ"}
+{"unnormalised": "", "normalised": "                ٹرائی:"}
+{"unnormalised": "", "normalised": "                    ود اوپن(ان پٹ_فائل_پاتھ, 'آر بی') ایز ایف_ان، اوپن(آؤٹ پٹ_فائل_پاتھ, 'ڈبلیو بی') ایز ایف_آؤٹ:"}
+{"unnormalised": "", "normalised": "                        ایف_آؤٹ۔رائیٹ(ایف_ان۔ریڈ())"}
+{"unnormalised": "", "normalised": "                ایکسپٹ ایکسیپشن ایز ای:"}
+{"unnormalised": "", "normalised": "                    پرنٹ(ایف\"ایرور کاپینگ نان-txt فائل {ان پٹ_فائل_پاتھ}: {ای}\")"}
+{"unnormalised": "", "normalised": "                    ان نارملائزڈ_فائلز۔اَپَینڈ(ان پٹ_فائل_پاتھ)"}
+{"unnormalised": "", "normalised": "    اف ان نارملائزڈ_فائلز:"}
+{"unnormalised": "", "normalised": "        پرنٹ(\"\\nفائلز دیٹ کُڈ ناٹ بی فُلی نارملائزڈ اور کاپیڈ ڈیو ٹو ایررز:\")"}
+{"unnormalised": "", "normalised": "        فار ایف ان ان نارملائزڈ_فائلز:"}
+{"unnormalised": "", "normalised": "            پرنٹ(ایف)"}
+{"unnormalised": "", "normalised": "# ایگزیمپل یوسیج:"}
+{"unnormalised": "", "normalised": "# کرئیٹ سم ڈمی ڈیٹا فار ڈیمانسٹریشن"}
+{"unnormalised": "", "normalised": "اف __نیم__ == \"__مین__\":"}
+{"unnormalised": "", "normalised": "    # کرئیٹ اے ڈمی ڈیٹا سیٹ"}
+{"unnormalised": "", "normalised": "    اوس۔میکڈیرز('ڈیٹا سیٹ/سب فولڈر1', ایگزسٹ_اوکے=ٹرو)"}
+{"unnormalised": "", "normalised": "    اوس۔میکڈیرز('ڈیٹا سیٹ/سب فولڈر2', ایگزسٹ_اوکے=ٹرو)"}
+{"unnormalised": "", "normalised": "    ود اوپن('ڈیٹا سیٹ/فائل1۔txt', 'ڈبلیو') ایز ایف:"}
+{"unnormalised": "", "normalised": "        ایف۔رائیٹ(\"دا ناسا پراجیکٹ ریسیوڈ $20B فنڈنگ۔ اٹ سٹارٹڈ آن 10/09/2024۔ دا جی ڈی پی گروتھ واز ~5%۔ ہی نیڈز 2.5کے جی آف رائس۔ $20.50 از دا پرائس۔ اے 2+2=4۔ آرٹ/کرافٹ از گڈ۔ کیو اے/ڈِیو ٹیم۔\\n\")"}
+{"unnormalised": "", "normalised": "        ایف۔رائیٹ(\"دا انٹیگرل ∫ ایکس^2 ڈی ایکس فرام زیرو ٹو ون۔ دا ویلیو از پائی آر^2۔ ایکس^این اینڈ ایکس_آئی آر امپورٹنٹ۔ 3/4 آف دا پاپولیشن۔ 25°C آؤٹ سائیڈ۔ دا اسپیڈ واز 100کے ایم/ایچ آر۔ جی ڈی پی از 10ایم۔ 1/2 کے جی۔\\n\")"}
+{"unnormalised": "", "normalised": "        ایف۔رائیٹ(\"اسپیشل سمبلز: ایٹ ہیش اینڈ ایسٹرسک ناٹ ایکول ٹو لیس دین اور ایکول ٹو گریٹر دین اور ایکول ٹو۔ دس از 99 پرابلمز۔ یو۔ایس۔اے از گریٹ۔ سیونٹھ ڈے ۔ 2024-09-10 رپورٹ۔ 10سینٹی میٹر، 100ملی لیٹر۔ ہی واکڈ 5کے ایم۔ √9 از تھری۔ دا ایریا از 100اسکوائر میٹر۔ دس از این ایگزیمپل آف ایکس^3۔ دا ٹمپریچر از 10 ڈگریز۔ مائی کمپیوٹر ہیز 1ٹی بی اسٹوریج۔ دا فریکوینسی از 50ہرٹز۔\")"}
+{"unnormalised": "", "normalised": "    "}
+{"unnormalised": "", "normalised": "    ود اوپن('ڈیٹا سیٹ/سب فولڈر1/فائل2۔txt', 'ڈبلیو') ایز ایف:"}
+{"unnormalised": "", "normalised": "        ایف۔رائیٹ(\"ادر ٹیسٹ: 12345 ڈالرز۔ دا ڈیٹ از 01-01-2023۔ وی نیڈ 500 ملی گرام۔ دا اینگل از 45°۔ دس شوڈ بی نارملائزڈ پراپرلی۔ واٹ اباؤٹ 9999999999.99؟\\n\")"}
+{"unnormalised": "", "normalised": "        ایف۔رائیٹ(\"دس از این ایکس-وائی-زی ٹیسٹ۔ دس از اے۔بی۔سی ٹیکسٹ۔ 200وولٹ، 10ایمپیئر، 5کلو واٹ۔ ایکس_میکس اینڈ وائی_من آر امپورٹنٹ ویری ایبلز۔\")"}
+{"unnormalised": "", "normalised": "    ود اوپن('ڈیٹا سیٹ/سب فولڈر2/امیج۔جِی پی جِی', 'ڈبلیو') ایز ایف: # ڈمی نان-ٹیکسٹ فائل"}
+{"unnormalised": "", "normalised": "        ایف۔رائیٹ(\"دس از ناٹ اے ٹیکسٹ فائل۔\")"}
+{"unnormalised": "", "normalised": "    ان پٹ_فولڈر = 'ڈیٹا سیٹ'"}
+{"unnormalised": "", "normalised": "    آؤٹ پٹ_فولڈر = 'ڈیٹا سیٹ_نارملائزڈ'"}
+{"unnormalised": "", "normalised": "    پراسیس_فولڈر(ان پٹ_فولڈر, آؤٹ پٹ_فولڈر)"}
+{"unnormalised": "", "normalised": "    پرنٹ(ایف\"\\nنارملائزیشن کمپلیٹ۔ چیک '{آؤٹ پٹ_فولڈر}' فار رزلٹس۔\")"}
+{"unnormalised": "", "normalised": "    پرنٹ(\"ایگزیمپل آف نارملائزڈ فائل کانٹینٹ (فائل1۔txt):\")"}
+{"unnormalised": "", "normalised": "    ٹرائی:"}
+{"unnormalised": "", "normalised": "        ود اوپن(اوس۔پاتھ۔جوائن(آؤٹ پٹ_فولڈر, 'فائل1۔txt'), 'آر', انکوڈنگ='یو ٹی ایف-8') ایز ایف:"}
+{"unnormalised": "", "normalised": "            پرنٹ(ایف۔ریڈ())"}
+{"unnormalised": "", "normalised": "    ایکسپٹ فائل ناٹ فاؤنڈ ایرر:"}
+{"unnormalised": "", "normalised": "        پرنٹ(\"نارملائزڈ فائل1۔txt ناٹ فاؤنڈ۔\")"}
+{"unnormalised": "", "normalised": "```"}

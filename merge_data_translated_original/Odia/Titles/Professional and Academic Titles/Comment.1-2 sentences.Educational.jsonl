@@ -1,0 +1,265 @@
+{"unnormalised": "ଡାକ୍ତରଙ୍କ ପାଇଁ \"ଡାକ୍ତର।\" ଏବଂ ପ୍ରଫେସରଙ୍କ ପାଇଁ \"ପ୍ରଫେସର।\" ବ୍ୟବହାର କରିବାକୁ ମନେ ରଖନ୍ତୁ। ଭାରତର ଆଇନଗତ ପରିପ୍ରେକ୍ଷୀରେ ଓକିଲମାନଙ୍କ ପାଇଁ \"ଆଡଭୋକେଟ।\" ବ୍ୟବହାର ହେବାର ଦେଖାଯାଏ।", "normalised": "ଓକେ, ମୁଁ ବିସ୍ତୃତ ସ୍ୱାଭାବିକକରଣ ନିୟମ ଏବଂ \"Dr.\", \"Prof.\" ଏବଂ \"Adv.\" ର ନିର୍ଦ୍ଦିଷ୍ଟ ପରିଚାଳନାକୁ ବୁଝିପାରୁଛି। ମୁଁ ଏହି ଆବଶ୍ୟକତା ଅନୁସାରେ ଟେକ୍ସଚୁଆଲ ଡାଟାକୁ ପ୍ରକ୍ରିୟାକରଣ କରିବା ପାଇଁ ଏକ ପାଇଥନ୍ ସ୍କ୍ରିପ୍ଟ କାର୍ଯ୍ୟକାରୀ କରିବି।"}
+{"unnormalised": "", "normalised": "ସ୍କ୍ରିପ୍ଟଟି କିପରି ପ୍ରତ୍ୟେକ ନିୟମକୁ ସମାଧାନ କରିବ ତାହାର ଏକ ବିଶ୍ଳେଷଣ ଏଠାରେ ଦିଆଯାଇଛି, ଏହା ପରେ ପାଇଥନ୍ କୋଡ୍:"}
+{"unnormalised": "", "normalised": "**ମୂଳ ତର୍କ ଏବଂ ଆଭିମୁଖ୍ୟ:**"}
+{"unnormalised": "", "normalised": "୧. **ଫାଇଲ୍ ସିଷ୍ଟମ୍ ଟ୍ରାଭର୍ସାଲ୍:** ଇନପୁଟ୍ ଡିରେକ୍ଟୋରୀରେ ଥିବା ସମସ୍ତ ଫୋଲ୍ଡର ଏବଂ ଫାଇଲ୍ ମାଧ୍ୟମରେ ପୁନରାବୃତ୍ତି କରିବାକୁ ମୁଁ `os.walk` ବ୍ୟବହାର କରିବି।"}
+{"unnormalised": "", "normalised": "୨. **ଆଉଟପୁଟ୍ ଡିରେକ୍ଟୋରୀ ମିରରିଙ୍ଗ୍:** ଇନପୁଟ୍ ରେ ଥିବା ପ୍ରତ୍ୟେକ ଫୋଲ୍ଡର ପାଇଁ, ମୁଁ `dataset_normalized` ଆଉଟପୁଟ୍ ଡିରେକ୍ଟୋରୀରେ ଏକ ଅନୁରୂପ ଫୋଲ୍ଡର ସୃଷ୍ଟି କରିବି।"}
+{"unnormalised": "", "normalised": "୩. **ଫାଇଲ୍ ପ୍ରକ୍ରିୟାକରଣ:**"}
+{"unnormalised": "", "normalised": "    * ଯଦି ଏକ ଫାଇଲ୍ `.txt` ଫାଇଲ୍ ହୁଏ, ତେବେ ଏହାର ବିଷୟବସ୍ତୁ ପଢାଯିବ, ସ୍ୱାଭାବିକ କରାଯିବ, ଏବଂ ତା’ପରେ ମିରର୍ ହୋଇଥିବା ଆଉଟପୁଟ୍ ଫୋଲ୍ଡରରେ ଏକ ନୂଆ `.txt` ଫାଇଲ୍ ରେ ଲେଖାଯିବ।"}
+{"unnormalised": "", "normalised": "    * ଯଦି ଏକ ଫାଇଲ୍ `.txt` ଫାଇଲ୍ ନୁହେଁ, ତେବେ ଏହାକୁ ବିନା ସଂଶୋଧନରେ ସିଧାସଳଖ ମିରର୍ ହୋଇଥିବା ଆଉଟପୁଟ୍ ଫୋଲ୍ଡରକୁ କପି କରାଯିବ।"}
+{"unnormalised": "", "normalised": "୪. **ସ୍ୱାଭାବିକକରଣ କ୍ରମ (ସଠିକ୍ ଆଉଟପୁଟ୍ ପାଇଁ ଗୁରୁତ୍ୱପୂର୍ଣ୍ଣ):** ସ୍ୱାଭାବିକକରଣ ନିୟମଗୁଡ଼ିକ ପ୍ରୟୋଗ କରିବାର କ୍ରମ ମହତ୍ତ୍ୱପୂର୍ଣ୍ଣ। ମୁଁ ସାଧାରଣତଃ ଅଧିକ ସାଧାରଣ ନିୟମ ପୂର୍ବରୁ ଅଧିକ ନିର୍ଦ୍ଦିଷ୍ଟ ନିୟମ ପ୍ରୟୋଗ କରିବି (ଉଦାହରଣ ସ୍ୱରୂପ, ମୁଦ୍ରା + ସଂଖ୍ୟା + ସଫିକ୍ସ ସାଧାରଣ ସଂଖ୍ୟାଗୁଡ଼ିକ ପୂର୍ବରୁ, କିମ୍ବା ସାଧାରଣ ଆଲଫାନୁମେରିକ୍ ପାଟର୍ନ ପୂର୍ବରୁ ନିର୍ଦ୍ଦିଷ୍ଟ ସଙ୍କେତ)।"}
+{"unnormalised": "", "normalised": "    * ସଙ୍କେତ ଏବଂ ବିଶେଷ ଅକ୍ଷର।"}
+{"unnormalised": "", "normalised": "    * ମୁଦ୍ରା + ସଂଖ୍ୟା + ସଫିକ୍ସ।"}
+{"unnormalised": "", "normalised": "    * ତାରିଖ।"}
+{"unnormalised": "", "normalised": "    * ସଂଖ୍ୟା (ୟୁନିଟ୍ ରେ ଥିବାଗୁଡ଼ିକ ସହିତ, କିନ୍ତୁ ୟୁନିଟ୍ ବିସ୍ତାର ନିଜେ ପରେ ଆସେ)।"}
+{"unnormalised": "", "normalised": "    * ସଂକ୍ଷେପ।"}
+{"unnormalised": "", "normalised": "    * ୟୁନିଟ୍।"}
+{"unnormalised": "", "normalised": "    * ଗାଣିତିକ ସଙ୍କେତ।"}
+{"unnormalised": "", "normalised": "    * \"Dr.\", \"Prof.\", \"Adv.\" ପରି ବିଶେଷ ପ୍ରିଫିକ୍ସଗୁଡ଼ିକ ସଂଖ୍ୟା କିମ୍ବା ସଂକ୍ଷେପ ନିୟମ ଦ୍ୱାରା ଭୁଲ ବ୍ୟାଖ୍ୟାକୁ ଏଡ଼ାଇବା ପାଇଁ ଶୀଘ୍ର କିମ୍ବା ନିର୍ଦ୍ଦିଷ୍ଟ ରେଜେକ୍ସ ସହିତ ପରିଚାଳିତ ହେବ।"}
+{"unnormalised": "", "normalised": "    * ସାଧାରଣ `/` ପରିଚାଳନା।"}
+{"unnormalised": "", "normalised": "    * ଏକ ଶେଷ ପଦକ୍ଷେପ ଭାବରେ ସ୍ପେସ୍ ସ୍ୱାଭାବିକକରଣ।"}
+{"unnormalised": "", "normalised": "**ବିସ୍ତୃତ ନିୟମ କାର୍ଯ୍ୟକାରିତା ରଣନୀତି:**"}
+{"unnormalised": "", "normalised": "୧. **ସଙ୍କେତ → କଥିତ ରୂପ:** ମୁଁ ସେମାନଙ୍କର କଥିତ ରୂପରେ ସାଧାରଣ ସଙ୍କେତଗୁଡ଼ିକର ଏକ ଡିକ୍ସନାରୀ ମ୍ୟାପିଂ ବ୍ୟବହାର କରିବି ଏବଂ ପାଠ୍ୟ ମାଧ୍ୟମରେ ପୁନରାବୃତ୍ତି କରିବି, ପ୍ରତିସ୍ଥାପନ କରିବି। ନିୟମିତ ଅଭିବ୍ୟକ୍ତିଗୁଡ଼ିକ ସଙ୍କେତଗୁଡ଼ିକ ପାଇଁ ବ୍ୟବହୃତ ହେବ ଯାହା ବିଭିନ୍ନ ପ୍ରସଙ୍ଗ ସହିତ ଦେଖାଯାଇପାରେ (ଉଦାହରଣ ସ୍ୱରୂପ, `+/-`)।"}
+{"unnormalised": "", "normalised": "    * `art/craft` -> `art or craft` (ରେଜେକ୍ସ: `(\\b\\w+)\\/(\\w+\\b)`)"}
+{"unnormalised": "", "normalised": "    * `QA/Dev` -> `Q-A slash D-e-v` (ମିଶ୍ରିତ କେସ୍ କିମ୍ବା ସଂକ୍ଷେପ ପାଇଁ ରେଜେକ୍ସ `(\\b[A-Z0-9]+)\\/([A-Z0-9]+\\b)`)"}
+{"unnormalised": "", "normalised": "    * `2+2=4` ଗାଣିତିକ ସଙ୍କେତ ନିୟମ ଦ୍ୱାରା ପରିଚାଳିତ ହେବ।"}
+{"unnormalised": "", "normalised": "    * `$`, `~`, `*`, `#`, `@`, `&`, ଇତ୍ୟାଦି ସିଧାସଳଖ ମ୍ୟାପ୍ ହେବ।"}
+{"unnormalised": "", "normalised": "୨. **ସଂକ୍ଷେପ → ହାଇଫେନ୍ ଥିବା ଅକ୍ଷର:**"}
+{"unnormalised": "", "normalised": "    * ରେଜେକ୍ସ: `\\b[A-Z]{2,}\\b` (ଲଗାତାର ଦୁଇଟି କିମ୍ବା ଅଧିକ ବଡ଼ ଅକ୍ଷର, ଏକ ସମ୍ପୂର୍ଣ୍ଣ ଶବ୍ଦ ଭାବରେ)। ମୋତେ ସାବଧାନ ରହିବାକୁ ପଡ଼ିବ ଯେ ଏହାକୁ `Dr.`, `Prof.`, `Adv.` କୁ ପ୍ରୟୋଗ ନକରିବା।"}
+{"unnormalised": "", "normalised": "    * `'-'.join(match.group())` ସହିତ ବଦଳାନ୍ତୁ।"}
+{"unnormalised": "", "normalised": "୩. **ସଂଖ୍ୟା → କଥିତ ରୂପ:** ଏହା ଜଟିଳ। ମୁଁ ସାଧାରଣ ସଂଖ୍ୟା ରୂପାନ୍ତର ପାଇଁ `num2words` ଲାଇବ୍ରେରୀ ବ୍ୟବହାର କରିବି, ଯାହା ବିଭିନ୍ନ ପ୍ରସଙ୍ଗକୁ ପରିଚାଳନା କରେ। \"ଅଧା କିଲୋଗ୍ରାମ\" ପରି ନିର୍ଦ୍ଦିଷ୍ଟ କ୍ଷେତ୍ର ପାଇଁ, ମୁଁ `(\\d+)/(\\d+)\\s*(\\w+)` ପରି ପାଟର୍ନ ଚିହ୍ନଟ କରିବା ପାଇଁ ରେଜେକ୍ସ ବ୍ୟବହାର କରିବି ଏବଂ ତା’ପରେ ଏକ ୟୁନିଟ୍ ଫଲୋ କରିବି ଏବଂ ଭଗ୍ନାଂଶରେ `num2words` ପ୍ରୟୋଗ କରିବି କିମ୍ବା `1/2` କୁ \"ଅଧା\" ରେ ପରିବର୍ତ୍ତନ କରିବି।"}
+{"unnormalised": "", "normalised": "    * ସାଧାରଣ ସଂଖ୍ୟା: `num2words(number)`"}
+{"unnormalised": "", "normalised": "    * ଭଗ୍ନାଂଶ: `1/2 kg` -> `half kilogram`, `3/4` -> `three divided by four` (ଗଣିତ ଦ୍ୱାରା ପରିଚାଳିତ, କିନ୍ତୁ ତାରିଖ ସହିତ ଦ୍ୱନ୍ଦ୍ୱ ନକରିବା ପାଇଁ ସାବଧାନ ରହିବା ଆବଶ୍ୟକ)।"}
+{"unnormalised": "", "normalised": "୪. **ସାଂଖ୍ୟିକ ସଫିକ୍ସ → ବିସ୍ତାରିତ ରୂପ:**"}
+{"unnormalised": "", "normalised": "    * ରେଜେକ୍ସ: `(\\d+)([KMBT])\\b`"}
+{"unnormalised": "", "normalised": "    * `K` କୁ `thousand`, `M` କୁ `million`, `B` କୁ `billion`, `T` କୁ `trillion` ରେ ମ୍ୟାପ୍ କରନ୍ତୁ।"}
+{"unnormalised": "", "normalised": "    * `num2words` ବ୍ୟବହାର କରି ସଂଖ୍ୟା ଅଂଶକୁ ରୂପାନ୍ତର କରନ୍ତୁ।"}
+{"unnormalised": "", "normalised": "୫. **ମୁଦ୍ରା + ସଂଖ୍ୟା + ସଫିକ୍ସ:**"}
+{"unnormalised": "", "normalised": "    * ରେଜେକ୍ସ: `([$₹€£])(\\s*)(\\d+)([KMBT])?\\b`"}
+{"unnormalised": "", "normalised": "    * ମୁଦ୍ରା ସଙ୍କେତ, ସଂଖ୍ୟା ଏବଂ ସଫିକ୍ସକୁ ରୂପାନ୍ତର କରନ୍ତୁ।"}
+{"unnormalised": "", "normalised": "୬. **ତାରିଖ → ପ୍ରାକୃତିକ କଥିତ ରୂପ:**"}
+{"unnormalised": "", "normalised": "    * `DD-MM-YYYY`, `DD/MM/YYYY`, `YYYY-MM-DD` ପାଇଁ ରେଜେକ୍ସ ପାଟର୍ନ।"}
+{"unnormalised": "", "normalised": "    * ପାର୍ସ କରିବା ପାଇଁ `datetime.strptime` ବ୍ୟବହାର କରନ୍ତୁ ଏବଂ ତା’ପରେ ଅର୍ଡିନାଲ୍ ସଂଖ୍ୟା (ଉଦାହରଣ ସ୍ୱରୂପ, \"ଦଶମ\", \"ପ୍ରଥମ\") ଏବଂ କଥିତ ବର୍ଷ ପାଇଁ କଷ୍ଟମ୍ ତର୍କ ସହିତ `strftime` କରନ୍ତୁ। ଅସ୍ପଷ୍ଟ `DD/MM/YYYY` ପାଇଁ `DD/MM/YYYY` କୁ ଡିଫଲ୍ଟ ଭାବରେ ଧରିନିଆଯାଉଛି।"}
+{"unnormalised": "", "normalised": "୭. **ୟୁନିଟ୍ → କଥିତ ରୂପ:**"}
+{"unnormalised": "", "normalised": "    * `(\\d+)(\\s*)(cm|mm|m|km|g|kg|mg|ml|l|°C|...)` ଖୋଜିବା ପାଇଁ ରେଜେକ୍ସ।"}
+{"unnormalised": "", "normalised": "    * ୟୁନିଟ୍ କୁ ସମ୍ପୂର୍ଣ୍ଣ ଶବ୍ଦରେ ମ୍ୟାପ୍ କରନ୍ତୁ (ଉଦାହରଣ ସ୍ୱରୂପ, `cm` କୁ `centimeter`, `°C` କୁ `degree celsius`)।"}
+{"unnormalised": "", "normalised": "    * ପୂର୍ବବର୍ତ୍ତୀ ସଂଖ୍ୟାକୁ ସଂଖ୍ୟା ରୂପାନ୍ତର ପ୍ରୟୋଗ କରନ୍ତୁ।"}
+{"unnormalised": "", "normalised": "୮. **ଗାଣିତିକ ସଙ୍କେତ → କଥିତ ରୂପ:** ଏହା ପାଇଁ ଏକ ଅତ୍ୟାଧୁନିକ ରେଜେକ୍ସ ସେଟ୍ ଏବଂ ଅଧିକ ଜଟିଳ ଅଭିବ୍ୟକ୍ତି ପାଇଁ ସମ୍ଭାବ୍ୟ ଏକ ଛୋଟ ପାର୍ସର୍ ଆବଶ୍ୟକ।"}
+{"unnormalised": "", "normalised": "    * `x^2`: `x squared` (ରେଜେକ୍ସ `(\\w)\\^2`)"}
+{"unnormalised": "", "normalised": "    * `x^3`: `x cubed` (ରେଜେକ୍ସ `(\\w)\\^3`)"}
+{"unnormalised": "", "normalised": "    * `x^n`: `x to the power of n` (ରେଜେକ୍ସ `(\\w)\\^(\\w+)`)"}
+{"unnormalised": "", "normalised": "    * `x_i`: `x sub i` (ରେଜେକ୍ସ `(\\w)_(\\w+)`)"}
+{"unnormalised": "", "normalised": "    * `√x`: `square root of x` (ରେଜେକ୍ସ `√(\\w+)`)"}
+{"unnormalised": "", "normalised": "    * `∫`: `integral`"}
+{"unnormalised": "", "normalised": "    * `Σ`: `summation`"}
+{"unnormalised": "", "normalised": "    * ଭଗ୍ନାଂଶ: `3/4` -> `three divided by four` (ରେଜେକ୍ସ: `(\\d+)\\/(\\d+)`, କିନ୍ତୁ ଏହା ଏକ ତାରିଖ ନୁହେଁ ବୋଲି ନିଶ୍ଚିତ କରନ୍ତୁ)।"}
+{"unnormalised": "", "normalised": "    * ସଙ୍କେତ: `≠`, `≤`, `≥` ସାଧାରଣ ସଙ୍କେତ ପ୍ରତିସ୍ଥାପନ ଦ୍ୱାରା ପରିଚାଳିତ ହେବ।"}
+{"unnormalised": "", "normalised": "୯. **ଆଉଟପୁଟ୍ ଫର୍ମାଟ୍:**"}
+{"unnormalised": "", "normalised": "    * ଶେଷରେ ସ୍ପେସ୍ ସ୍ୱାଭାବିକ କରନ୍ତୁ: `re.sub(r'\\s+', ' ', text).strip()`।"}
+{"unnormalised": "", "normalised": "୧୦. **ଫାଇଲ୍ ପରିଚାଳନା:** `os.walk`, `os.makedirs`, `shutil.copy2`।"}
+{"unnormalised": "", "normalised": "**ନିର୍ଦ୍ଦିଷ୍ଟ ପ୍ରିଫିକ୍ସ ପରିଚାଳନା:**"}
+{"unnormalised": "", "normalised": "*   `Dr.`, `Prof.`, `Adv.` ଏହି ସଠିକ୍ ଷ୍ଟ୍ରିଙ୍ଗ୍ ଖୋଜି ଏଗୁଡ଼ିକୁ ପରିଚାଳନା କରାଯିବ, ସମ୍ଭବତଃ ଏକ ପିରିୟଡ୍ କିମ୍ବା ସ୍ପେସ୍ ଫଲୋ କରିବ, ଏବଂ ସେଗୁଡ଼ିକୁ ସଂରକ୍ଷଣ କରାଯିବ। ଏହା ସାଧାରଣ ସଂକ୍ଷେପ ପ୍ରକ୍ରିୟାକରଣ ପୂର୍ବରୁ ହେବା ଉଚିତ୍।"}
+{"unnormalised": "", "normalised": "ଚାଲନ୍ତୁ ପାଇଥନ୍ ସ୍କ୍ରିପ୍ଟ ନିର୍ମାଣ କରିବା ଆରମ୍ଭ କରିବା।"}
+{"unnormalised": "", "normalised": "```python"}
+{"unnormalised": "", "normalised": "import os"}
+{"unnormalised": "", "normalised": "import re"}
+{"unnormalised": "", "normalised": "import shutil"}
+{"unnormalised": "", "normalised": "from datetime import datetime"}
+{"unnormalised": "", "normalised": "from num2words import num2words"}
+{"unnormalised": "", "normalised": "import unicodedata # ୟୁନିକୋଡ୍ ସଙ୍କେତଗୁଡ଼ିକ ପରିଚାଳନା କରିବା ପାଇଁ"}
+{"unnormalised": "", "normalised": "def ordinal_suffix(day):"}
+{"unnormalised": "", "normalised": "    \"\"\"ଏକ ସଂଖ୍ୟା ପାଇଁ ଅର୍ଡିନାଲ୍ ସଫିକ୍ସ ଫେରସ୍ତ କରେ।\"\"\""}
+{"unnormalised": "", "normalised": "    if 10 <= day % 100 <= 20:"}
+{"unnormalised": "", "normalised": "        return 'th'"}
+{"unnormalised": "", "normalised": "    else:"}
+{"unnormalised": "", "normalised": "        return {1: 'st', 2: 'nd', 3: 'rd'}.get(day % 10, 'th')"}
+{"unnormalised": "", "normalised": "def convert_number_to_words(number_str):"}
+{"unnormalised": "", "normalised": "    \"\"\"ଧାର ଥିବା ସ୍ଥାନଗୁଡ଼ିକ ପରିଚାଳନା କରି ଏକ ସଂଖ୍ୟା ଷ୍ଟ୍ରିଙ୍ଗକୁ ଏହାର କଥିତ ରୂପରେ ପରିବର୍ତ୍ତନ କରେ।\"\"\""}
+{"unnormalised": "", "normalised": "    try:"}
+{"unnormalised": "", "normalised": "        if '.' in number_str:"}
+{"unnormalised": "", "normalised": "            # ଯଦି num2words ସମସ୍ତ କ୍ଷେତ୍ରରେ ସ୍ୱାଭାବିକ ଭାବରେ କରେ ନାହିଁ ତେବେ ଡେସିମାଲ୍ ଗୁଡ଼ିକ ପୃଥକ ଭାବରେ ପରିଚାଳନା କରନ୍ତୁ"}
+{"unnormalised": "", "normalised": "            integer_part, decimal_part = number_str.split('.')"}
+{"unnormalised": "", "normalised": "            integer_words = num2words(int(integer_part))"}
+{"unnormalised": "", "normalised": "            decimal_words = 'point ' + ' '.join(num2words(int(d)) for d in decimal_part)"}
+{"unnormalised": "", "normalised": "            return f\"{integer_words} {decimal_words}\""}
+{"unnormalised": "", "normalised": "        else:"}
+{"unnormalised": "", "normalised": "            return num2words(int(number_str))"}
+{"unnormalised": "", "normalised": "    except ValueError:"}
+{"unnormalised": "", "normalised": "        return number_str # ଯଦି ରୂପାନ୍ତର ବିଫଳ ହୁଏ ତେବେ ମୂଳ ଫେରସ୍ତ କରନ୍ତୁ"}
+{"unnormalised": "", "normalised": "def normalize_text(text):"}
+{"unnormalised": "", "normalised": "    \"\"\""}
+{"unnormalised": "", "normalised": "    ଇନପୁଟ୍ ଟେକ୍ସଟ୍ ରେ ସମସ୍ତ ସ୍ୱାଭାବିକକରଣ ନିୟମ ପ୍ରୟୋଗ କରେ।"}
+{"unnormalised": "", "normalised": "    \"\"\""}
+{"unnormalised": "", "normalised": "    # --- 0. ବିଶେଷ ପ୍ରିଫିକ୍ସ ପରିଚାଳନା (Dr., Prof., Adv.) ---"}
+{"unnormalised": "", "normalised": "    # ଏଗୁଡ଼ିକୁ ଯେମିତି ଅଛି ସେମିତି ରଖି ପରିଚାଳନା କରାଯାଏ, ଏଗୁଡ଼ିକୁ ସଂକ୍ଷେପ ଭାବରେ ବିବେଚନା କରାଯିବା ଉଚିତ୍ ନୁହେଁ।"}
+{"unnormalised": "", "normalised": "    # କୌଣସି ସ୍ପଷ୍ଟ ପ୍ରତିସ୍ଥାପନ ଆବଶ୍ୟକ ନାହିଁ, କେବଳ ଏହା ନିଶ୍ଚିତ କରେ ଯେ ଅନ୍ୟ ନିୟମଗୁଡ଼ିକ ସେଗୁଡ଼ିକୁ ସଂଶୋଧନ କରନ୍ତି ନାହିଁ।"}
+{"unnormalised": "", "normalised": "    # --- 1. ସଙ୍କେତ → କଥିତ ରୂପ ---"}
+{"unnormalised": "", "normalised": "    # ଅଧିକ ନିର୍ଦ୍ଦିଷ୍ଟ ସଙ୍କେତ ପ୍ରତିସ୍ଥାପନ ପ୍ରଥମେ"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\+/-', 'plus or minus', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'!=', 'not equal to', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'<=', 'less than or equal to', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'>=', 'greater than or equal to', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'==', 'equals', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'->', 'maps to', text) # ଗଣିତ/ପ୍ରୋଗ୍ରାମିଂ ପ୍ରସଙ୍ଗରେ ସାଧାରଣ"}
+{"unnormalised": "", "normalised": "    symbol_map = {"}
+{"unnormalised": "", "normalised": "        '#': 'hash',"}
+{"unnormalised": "", "normalised": "        '@': 'at',"}
+{"unnormalised": "", "normalised": "        '&': 'and',"}
+{"unnormalised": "", "normalised": "        '*': 'asterisk',"}
+{"unnormalised": "", "normalised": "        '~': 'approximately',"}
+{"unnormalised": "", "normalised": "        '≠': 'not equal to',"}
+{"unnormalised": "", "normalised": "        '≤': 'less than or equal to',"}
+{"unnormalised": "", "normalised": "        '≥': 'greater than or equal to',"}
+{"unnormalised": "", "normalised": "        '∫': 'integral',"}
+{"unnormalised": "", "normalised": "        '∑': 'summation',"}
+{"unnormalised": "", "normalised": "        'π': 'pi',"}
+{"unnormalised": "", "normalised": "        '√': 'square root of',"}
+{"unnormalised": "", "normalised": "        '%': 'percent', # ~ approximately ପରେ, ସାଧାରଣ ସଂଖ୍ୟା ପୂର୍ବରୁ"}
+{"unnormalised": "", "normalised": "        '°': 'degree', # ସାଧାରଣ ସଂଖ୍ୟା ପୂର୍ବରୁ"}
+{"unnormalised": "", "normalised": "        '€': 'euro',"}
+{"unnormalised": "", "normalised": "        '£': 'pound',"}
+{"unnormalised": "", "normalised": "    }"}
+{"unnormalised": "", "normalised": "    # ଆଂଶିକ ମେଳକୁ ଏଡ଼ାଇବା ପାଇଁ ଲମ୍ବ ଦ୍ୱାରା କିଗୁଡ଼ିକୁ ଅବତରଣ କ୍ରମରେ ସର୍ଟ କରନ୍ତୁ (ଉଦାହରଣ ସ୍ୱରୂପ, '≠' ପୂର୍ବରୁ '≠')"}
+{"unnormalised": "", "normalised": "    for symbol, spoken_form in sorted(symbol_map.items(), key=lambda item: len(item[0]), reverse=True):"}
+{"unnormalised": "", "normalised": "        text = text.replace(symbol, spoken_form)"}
+{"unnormalised": "", "normalised": "    # '/' ପରିଚାଳନା କରିବା"}
+{"unnormalised": "", "normalised": "    # ପ୍ରାଥମିକତା:"}
+{"unnormalised": "", "normalised": "    # 1. ଦ୍ୱାରା ବିଭାଜିତ (ସଂଖ୍ୟା/ଗଣିତ ମଧ୍ୟରେ)"}
+{"unnormalised": "", "normalised": "    # 2. କିମ୍ବା (ଶବ୍ଦ ମଧ୍ୟରେ)"}
+{"unnormalised": "", "normalised": "    # 3. ସ୍ଲାସ୍ (ମିଶ୍ରିତ କେସ୍, ସଂକ୍ଷେପ, ଅବଶିଷ୍ଟ)"}
+{"unnormalised": "", "normalised": "    # 1. ଭଗ୍ନାଂଶ କିମ୍ବା ଗଣିତରେ ବିଭାଜନ: 3/4 -> ତିନି ଚାରି ଦ୍ୱାରା ବିଭାଜିତ, 1/2 -> ଏକ ଦୁଇ ଦ୍ୱାରା ବିଭାଜିତ"}
+{"unnormalised": "", "normalised": "    # ଏହା ଦୃଢ ହେବା ଆବଶ୍ୟକ, ଏହା ଏକ ତାରିଖ ନୁହେଁ ବୋଲି ନିଶ୍ଚିତ କରିବା।"}
+{"unnormalised": "", "normalised": "    # ଏକ ୟୁନିଟ୍ ଦ୍ୱାରା ଅନୁସରଣ କରାଯିବା ସମୟରେ 1/2 ପାଇଁ ନିର୍ଦ୍ଦିଷ୍ଟ ଭାବରେ \"ଅଧା\" (ନିୟମ 3/7 ଅନ୍ତଃକ୍ରିୟା)"}
+{"unnormalised": "", "normalised": "    def replace_fraction_with_unit(match):"}
+{"unnormalised": "", "normalised": "        num_str = match.group(1)"}
+{"unnormalised": "", "normalised": "        denom_str = match.group(2)"}
+{"unnormalised": "", "normalised": "        unit = match.group(3) if match.group(3) else ''"}
+{"unnormalised": "", "normalised": "        if num_str == '1' and denom_str == '2':"}
+{"unnormalised": "", "normalised": "            return f\"half {unit}\""}
+{"unnormalised": "", "normalised": "        else:"}
+{"unnormalised": "", "normalised": "            return f\"{convert_number_to_words(num_str)} divided by {convert_number_to_words(denom_str)} {unit}\".strip()"}
+{"unnormalised": "", "normalised": "    # X/Y ୟୁନିଟ୍ ପାଇଁ ପାଟର୍ନ, ଉଦାହରଣ ସ୍ୱରୂପ, 1/2 kg, 3/4 meter"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b(\\d+)/(\\d+)\\s*(cm|mm|m|km|g|kg|mg|ml|l|C|F|K|hour|day|week|month|year)s?\\b',"}
+{"unnormalised": "", "normalised": "                  replace_fraction_with_unit, text, flags=re.IGNORECASE)"}
+{"unnormalised": "", "normalised": "    # ଏକ ନିର୍ଦ୍ଦିଷ୍ଟ ୟୁନିଟ୍ ବିନା X/Y ପାଇଁ ପାଟର୍ନ, ଉଦାହରଣ ସ୍ୱରୂପ, 3/4"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b(\\d+)/(\\d+)\\b',"}
+{"unnormalised": "", "normalised": "                  lambda m: f\"{convert_number_to_words(m.group(1))} divided by {convert_number_to_words(m.group(2))}\","}
+{"unnormalised": "", "normalised": "                  text)"}
+{"unnormalised": "", "normalised": "    # 2. ଶବ୍ଦ ମଧ୍ୟରେ \"କିମ୍ବା\" (ଉଦାହରଣ ସ୍ୱରୂପ, art/craft)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\b\\w+)\\/(\\w+\\b)', r'\\1 or \\2', text)"}
+{"unnormalised": "", "normalised": "    # 3. ମିଶ୍ରିତ କେସ୍ କିମ୍ବା ସଂକ୍ଷେପ ପାଇଁ \"ସ୍ଲାସ୍\" (ଉଦାହରଣ ସ୍ୱରୂପ, QA/Dev, R/D)"}
+{"unnormalised": "", "normalised": "    # ଏହା ତାରିଖ କିମ୍ବା ଭଗ୍ନାଂଶ ନୁହେଁ ଏପରି ଯେକୌଣସି ଅବଶିଷ୍ଟ ସ୍ଲାସ୍ କୁ ମଧ୍ୟ ଧରେ"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'([A-Za-z0-9]+)\\/([A-Za-z0-9]+)', r'\\1 slash \\2', text)"}
+{"unnormalised": "", "normalised": "    # --- 2. ସଂକ୍ଷେପ → ହାଇଫେନ୍ ଥିବା ଅକ୍ଷର ---"}
+{"unnormalised": "", "normalised": "    # Dr., Prof., Adv. ଏବଂ ସାଧାରଣ ମୁଦ୍ରା କୋଡ୍ ଗୁଡ଼ିକୁ ବାଦ୍ ଦିଅନ୍ତୁ (ଉଦାହରଣ ସ୍ୱରୂପ, USD, EUR, INR)"}
+{"unnormalised": "", "normalised": "    # ଏକ ଅଭିବ୍ୟକ୍ତିର ଅଂଶ ହୋଇପାରୁଥିବା ଏକକ ଅକ୍ଷର କିମ୍ବା ସଂଖ୍ୟା ଏବଂ ୟୁନିଟ୍ ଗୁଡ଼ିକୁ ମଧ୍ୟ ବାଦ୍ ଦିଅନ୍ତୁ।"}
+{"unnormalised": "", "normalised": "    # ଏହି ରେଜେକ୍ସ କଷ୍ଟକର। ବଡ ଅକ୍ଷରଗୁଡ଼ିକର କ୍ରମକୁ ମେଳ କରିବାକୁ ଚେଷ୍ଟା କରିବା।"}
+{"unnormalised": "", "normalised": "    # ଏକ ଶବ୍ଦ ସୀମା ପାଇଁ ଲୁକ୍ ବିହାଇଣ୍ଡ୍, ଏକ ଶବ୍ଦ ସୀମା ପାଇଁ ଲୁକ୍ ଏହେଡ୍।"}
+{"unnormalised": "", "normalised": "    # ସାଧାରଣ ପୂର୍ବ ନିର୍ଦ୍ଧାରିତ ଶବ୍ଦଗୁଡ଼ିକୁ ବାଦ୍ ଦିଅନ୍ତୁ।"}
+{"unnormalised": "", "normalised": "    excluded_acronyms = {'DR', 'PROF', 'ADV', 'USD', 'EUR', 'GBP', 'INR', 'K', 'M', 'B', 'T'}"}
+{"unnormalised": "", "normalised": "    def replace_acronym(match):"}
+{"unnormalised": "", "normalised": "        acronym = match.group(0)"}
+{"unnormalised": "", "normalised": "        if acronym in excluded_acronyms:"}
+{"unnormalised": "", "normalised": "            return acronym"}
+{"unnormalised": "", "normalised": "        # ଯଦି ଏହା ସମ୍ଭାବ୍ୟ ଏକ ୟୁନିଟ୍ ହୁଏ ତେବେ ଯାଞ୍ଚ କରନ୍ତୁ ଯେପରିକି 'KG', 'CM' ଇତ୍ୟାଦି (ୟୁନିଟ୍ ନିୟମ ଦ୍ୱାରା ପୂର୍ବରୁ ପରିଚାଳିତ)"}
+{"unnormalised": "", "normalised": "        if len(acronym) <= 3 and acronym.lower() in ['cm', 'mm', 'm', 'km', 'g', 'kg', 'mg', 'ml', 'l', 'c', 'f', 'k']:"}
+{"unnormalised": "", "normalised": "            return acronym # ଏହାକୁ ୟୁନିଟ୍ ନିୟମ ପରିଚାଳନା କରିବାକୁ ଦିଅନ୍ତୁ"}
+{"unnormalised": "", "normalised": "        return '-'.join(list(acronym))"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b[A-Z]{2,}\\b', replace_acronym, text)"}
+{"unnormalised": "", "normalised": "    # --- 6. ତାରିଖ → ପ୍ରାକୃତିକ କଥିତ ରୂପ ---"}
+{"unnormalised": "", "normalised": "    # YYYY-MM-DD କୁ ପ୍ରାଥମିକତା ଦିଅନ୍ତୁ"}
+{"unnormalised": "", "normalised": "    def replace_date(match):"}
+{"unnormalised": "", "normalised": "        try:"}
+{"unnormalised": "", "normalised": "            date_obj = datetime.strptime(match.group(0), '%Y-%m-%d')"}
+{"unnormalised": "", "normalised": "            day = date_obj.day"}
+{"unnormalised": "", "normalised": "            month = date_obj.strftime('%B').lower()"}
+{"unnormalised": "", "normalised": "            year = num2words(date_obj.year)"}
+{"unnormalised": "", "normalised": "            return f\"{num2words(day, to='ordinal')} {month} {year}\""}
+{"unnormalised": "", "normalised": "        except ValueError:"}
+{"unnormalised": "", "normalised": "            return match.group(0) # ଯଦି ପାର୍ସିଂ ବିଫଳ ହୁଏ ତେବେ ମୂଳ ଫେରସ୍ତ କରନ୍ତୁ"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b\\d{4}-\\d{2}-\\d{2}\\b', replace_date, text)"}
+{"unnormalised": "", "normalised": "    # DD-MM-YYYY କିମ୍ବା DD/MM/YYYY କୁ ପ୍ରାଥମିକତା ଦିଅନ୍ତୁ (ଅସ୍ପଷ୍ଟ ହେଲେ DD/MM/YYYY ଅନୁମାନ କରି)"}
+{"unnormalised": "", "normalised": "    def replace_date_ambiguous(match):"}
+{"unnormalised": "", "normalised": "        try:"}
+{"unnormalised": "", "normalised": "            # ପ୍ରଥମେ DD/MM/YYYY ଚେଷ୍ଟା କରନ୍ତୁ"}
+{"unnormalised": "", "normalised": "            date_obj = datetime.strptime(match.group(0), '%d/%m/%Y')"}
+{"unnormalised": "", "normalised": "        except ValueError:"}
+{"unnormalised": "", "normalised": "            try:"}
+{"unnormalised": "", "normalised": "                # ତାପରେ DD-MM-YYYY ଚେଷ୍ଟା କରନ୍ତୁ"}
+{"unnormalised": "", "normalised": "                date_obj = datetime.strptime(match.group(0), '%d-%m-%Y')"}
+{"unnormalised": "", "normalised": "            except ValueError:"}
+{"unnormalised": "", "normalised": "                return match.group(0) # ଯଦି ପାର୍ସିଂ ବିଫଳ ହୁଏ ତେବେ ମୂଳ ଫେରସ୍ତ କରନ୍ତୁ"}
+{"unnormalised": "", "normalised": "        day = date_obj.day"}
+{"unnormalised": "", "normalised": "        month = date_obj.strftime('%B').lower()"}
+{"unnormalised": "", "normalised": "        year = num2words(date_obj.year)"}
+{"unnormalised": "", "normalised": "        return f\"{num2words(day, to='ordinal')} {month} {year}\""}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b\\d{2}[-/]\\d{2}[-/]\\d{4}\\b', replace_date_ambiguous, text)"}
+{"unnormalised": "", "normalised": "    # --- 5. ମୁଦ୍ରା + ସଂଖ୍ୟା + ସଫିକ୍ସ ---"}
+{"unnormalised": "", "normalised": "    # ଏହା ସାଧାରଣ ସାଂଖ୍ୟିକ ସଫିକ୍ସ ଏବଂ ସାଧାରଣ ସଂଖ୍ୟା ରୂପାନ୍ତର ପୂର୍ବରୁ ଆସିବା ଜରୁରୀ।"}
+{"unnormalised": "", "normalised": "    def replace_currency_suffix(match):"}
+{"unnormalised": "", "normalised": "        currency_symbol = match.group(1)"}
+{"unnormalised": "", "normalised": "        number_str = match.group(3)"}
+{"unnormalised": "", "normalised": "        suffix = match.group(4)"}
+{"unnormalised": "", "normalised": "        "}
+{"unnormalised": "", "normalised": "        currency_name = ''"}
+{"unnormalised": "", "normalised": "        if currency_symbol == '$':"}
+{"unnormalised": "", "normalised": "            currency_name = 'dollar'"}
+{"unnormalised": "", "normalised": "        elif currency_symbol == '₹':"}
+{"unnormalised": "", "normalised": "            currency_name = 'rupee'"}
+{"unnormalised": "", "normalised": "        # ଆବଶ୍ୟକ ହେଲେ ଅନ୍ୟ ମୁଦ୍ରା ଯୋଡନ୍ତୁ"}
+{"unnormalised": "", "normalised": "        spoken_number = convert_number_to_words(number_str)"}
+{"unnormalised": "", "normalised": "        if suffix:"}
+{"unnormalised": "", "normalised": "            suffix_map = {'K': 'thousand', 'M': 'million', 'B': 'billion', 'T': 'trillion'}"}
+{"unnormalised": "", "normalised": "            return f\"{currency_name} {spoken_number} {suffix_map[suffix]}\""}
+{"unnormalised": "", "normalised": "        else:"}
+{"unnormalised": "", "normalised": "            return f\"{currency_name} {spoken_number}\""}
+{"unnormalised": "", "normalised": "    text = re.sub(r'([$₹€£])(\\s*)(\\d+)([KMBT])?\\b', replace_currency_suffix, text)"}
+{"unnormalised": "", "normalised": "    # --- 4. ସାଂଖ୍ୟିକ ସଫିକ୍ସ → ବିସ୍ତାରିତ ରୂପ ---"}
+{"unnormalised": "", "normalised": "    # ଏହା ସାଧାରଣ ସଂଖ୍ୟା ରୂପାନ୍ତର ପୂର୍ବରୁ ଆସିବା ଜରୁରୀ।"}
+{"unnormalised": "", "normalised": "    def replace_numeric_suffix(match):"}
+{"unnormalised": "", "normalised": "        number_str = match.group(1)"}
+{"unnormalised": "", "normalised": "        suffix = match.group(2)"}
+{"unnormalised": "", "normalised": "        spoken_number = convert_number_to_words(number_str)"}
+{"unnormalised": "", "normalised": "        "}
+{"unnormalised": "", "normalised": "        suffix_map = {'K': 'thousand', 'M': 'million', 'B': 'billion', 'T': 'trillion'}"}
+{"unnormalised": "", "normalised": "        return f\"{spoken_number} {suffix_map[suffix]}\""}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b(\\d+)([KMBT])\\b', replace_numeric_suffix, text)"}
+{"unnormalised": "", "normalised": "    # --- 7. ୟୁନିଟ୍ → କଥିତ ରୂପ ---"}
+{"unnormalised": "", "normalised": "    # ଏହା ସାଧାରଣ ସଂଖ୍ୟା ରୂପାନ୍ତର ପୂର୍ବରୁ ଆସିବା ଜରୁରୀ।"}
+{"unnormalised": "", "normalised": "    unit_map = {"}
+{"unnormalised": "", "normalised": "        'cm': 'centimeter', 'mm': 'millimeter', 'm': 'meter', 'km': 'kilometer',"}
+{"unnormalised": "", "normalised": "        'g': 'gram', 'kg': 'kilogram', 'mg': 'milligram',"}
+{"unnormalised": "", "normalised": "        'ml': 'milliliter', 'l': 'liter',"}
+{"unnormalised": "", "normalised": "        'C': 'celsius', 'F': 'fahrenheit', 'K': 'kelvin', # ଡିଗ୍ରୀ ୟୁନିଟ୍ ପାଇଁ"}
+{"unnormalised": "", "normalised": "        'hrs': 'hours', 'hr': 'hour',"}
+{"unnormalised": "", "normalised": "        'min': 'minute', 'mins': 'minutes',"}
+{"unnormalised": "", "normalised": "        'sec': 'second', 'secs': 'seconds',"}
+{"unnormalised": "", "normalised": "        'volt': 'volt', 'volts': 'volts', 'v': 'volt',"}
+{"unnormalised": "", "normalised": "        'amp': 'ampere', 'amps': 'amperes', 'a': 'ampere',"}
+{"unnormalised": "", "normalised": "        'watt': 'watt', 'watts': 'watts', 'w': 'watt',"}
+{"unnormalised": "", "normalised": "        'hz': 'hertz', 'khz': 'kilohertz', 'mhz': 'megahertz', 'ghz': 'gigahertz'"}
+{"unnormalised": "", "normalised": "    }"}
+{"unnormalised": "", "normalised": "    def replace_unit(match):"}
+{"unnormalised": "", "normalised": "        number_str = match.group(1)"}
+{"unnormalised": "", "normalised": "        unit = match.group(2).lower()"}
+{"unnormalised": "", "normalised": "        spoken_number = convert_number_to_words(number_str)"}
+{"unnormalised": "", "normalised": "        spoken_unit = unit_map.get(unit, unit)"}
+{"unnormalised": "", "normalised": "        # ୟୁନିଟ୍ ପାଇଁ ବହୁବଚନ ପରିଚାଳନା କରନ୍ତୁ"}
+{"unnormalised": "", "normalised": "        if int(number_str) > 1 and not spoken_unit.endswith('s') and spoken_unit not in ['celsius', 'fahrenheit', 'kelvin']:"}
+{"unnormalised": "", "normalised": "            spoken_unit += 's'"}
+{"unnormalised": "", "normalised": "        elif int(number_str) == 1 and spoken_unit.endswith('s') and spoken_unit not in ['celsius', 'fahrenheit', 'kelvin']:"}
+{"unnormalised": "", "normalised": "            spoken_unit = spoken_unit[:-1] # ଯଦି ସଂଖ୍ୟା 1 ଅଟେ ଏବଂ ୟୁନିଟ୍ ବହୁବଚନ ଅଟେ ତେବେ 's' ବାହାର କରନ୍ତୁ"}
+{"unnormalised": "", "normalised": "        return f\"{spoken_number} {spoken_unit}\""}
+{"unnormalised": "", "normalised": "    # ସଂଖ୍ୟା ପାଇଁ ପାଟର୍ନ ସିଧାସଳଖ ଏକ ୟୁନିଟ୍ ଦ୍ୱାରା ଫଲୋ ହୋଇଥାଏ (ଉଦାହରଣ ସ୍ୱରୂପ, 10cm, 5kg)"}
+{"unnormalised": "", "normalised": "    # ଆଂଶିକ ମେଳକୁ ଏଡ଼ାଇବା ପାଇଁ ୟୁନିଟ୍ ପାଇଁ \\b ବ୍ୟବହାର କରିବା (ଉଦାହରଣ ସ୍ୱରୂପ, 'meter' ରେ 'm')"}
+{"unnormalised": "", "normalised": "    unit_pattern = r'\\b(\\d+(?:\\.\\d+)?)\\s*(%s)\\b' % '|'.join(re.escape(u) for u in unit_map.keys())"}
+{"unnormalised": "", "normalised": "    text = re.sub(unit_pattern, replace_unit, text, flags=re.IGNORECASE)"}
+{"unnormalised": "", "normalised": "    # ଡିଗ୍ରୀ ସେଲସିୟସ୍/ଫାରେନ୍ହାଇଟ୍ କୁ ବିଶେଷ ଭାବରେ ପରିଚାଳନା କରନ୍ତୁ, ପ୍ରାୟତଃ 25°C ଭାବରେ ଲେଖାଯାଏ"}
+{"unnormalised": "", "normalised": "    def replace_degree_unit(match):"}
+{"unnormalised": "", "normalised": "        number_str = match.group(1)"}
+{"unnormalised": "", "normalised": "        unit = match.group(2).upper() # 'C', 'F'"}
+{"unnormalised": "", "normalised": "        spoken_number = convert_number_to_words(number_str)"}
+{"unnormalised": "", "normalised": "        unit_name = 'celsius' if unit == 'C' else 'fahrenheit' if unit == 'F' else 'kelvin' if unit == 'K' else ''"}
+{"unnormalised": "", "normalised": "        return f\"{spoken_number} degree {unit_name}\""}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b(\\d+(?:\\.\\d+)?)\\s*degree\\s*([CFK])\\b', replace_degree_unit, text, flags=re.IGNORECASE) # 'degree' ସଙ୍କେତକୁ ବଦଳାଇବା ପରେ"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b(\\d+(?:\\.\\d+)?)\\s*degree\\s*(celsius|fahrenheit|kelvin)\\b', lambda m: f\"{convert_number_to_words(m.group(1))} degree {m.group(2)}\", text, flags=re.IGNORECASE)"}
+{"unnormalised": "", "normalised": "    #"}

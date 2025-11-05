@@ -1,0 +1,385 @@
+{"unnormalised": "\"Dr.\" மருத்துவ நிபுணர்களுக்கு பயன்படுத்தவும், \"Prof.\" பேராசிரியர்களுக்கு பயன்படுத்தவும் நினைவில் கொள்ளுங்கள். இந்தியாவில் சட்ட சூழல்களில் \"Adv.\" வழக்கறிஞர்களுக்கு பயன்படுத்துவது வழக்கமான ஒன்று.", "normalised": "சரி, விரிவான இயல்பாக்குதல் விதிகள் மற்றும் \"Dr.\", \"Prof.\", மற்றும் \"Adv.\" ஆகியவற்றைக் கையாளுதல் எனக்குப் புரிகிறது. இந்தத் தேவைகளுக்கு ஏற்ப உரைத் தரவைச் செயலாக்க பைதான் ஸ்கிரிப்டை நான் செயல்படுத்துவேன்."}
+{"unnormalised": "", "normalised": "ஒவ்வொரு விதியையும் ஸ்கிரிப்ட் எவ்வாறு கையாளும் என்பதற்கான விளக்கமும், அதைத் தொடர்ந்து பைதான் குறியீடும் இங்கே:"}
+{"unnormalised": "", "normalised": "**முக்கிய தர்க்கம் மற்றும் அணுகுமுறை:**"}
+{"unnormalised": "", "normalised": "1.  **கோப்பு முறைமை கடப்பு (File System Traversal):** உள்ளீட்டு கோப்பகத்தில் உள்ள அனைத்து கோப்புறைகள் மற்றும் கோப்புகளையும் சுழற்சி முறையில் செல்ல `os.walk` பயன்படுத்துவேன்."}
+{"unnormalised": "", "normalised": "2.  **வெளியீட்டு கோப்பக பிரதிபலிப்பு (Output Directory Mirroring):** உள்ளீட்டில் உள்ள ஒவ்வொரு கோப்புறையிலும், `dataset_normalized` வெளியீட்டு கோப்பகத்தில் தொடர்புடைய கோப்புறையை உருவாக்குவேன்."}
+{"unnormalised": "", "normalised": "3.  **கோப்பு செயலாக்கம் (File Processing):**"}
+{"unnormalised": "", "normalised": "    *   ஒரு கோப்பு `.txt` கோப்பாக இருந்தால், அதன் உள்ளடக்கம் படிக்கப்பட்டு, இயல்பாக்கப்பட்டு, பின்னர் கண்ணாடியில் பிரதிபலிக்கும் வெளியீட்டு கோப்புறையில் புதிய `.txt` கோப்பில் எழுதப்படும்."}
+{"unnormalised": "", "normalised": "    *   ஒரு கோப்பு `.txt` கோப்பு இல்லையென்றால், அது மாற்றியமைக்காமல் கண்ணாடியில் பிரதிபலிக்கும் வெளியீட்டு கோப்புறையில் நேரடியாக நகலெடுக்கப்படும்."}
+{"unnormalised": "", "normalised": "4.  **இயல்பாக்குதல் வரிசை (சரியான வெளியீட்டிற்கு முக்கியமானது):** இயல்பாக்குதல் விதிகளைப் பயன்படுத்தும் வரிசை முக்கியமானது. பொதுவாக, மிகவும் பொதுவான விதிகளுக்கு முன் மிகவும் குறிப்பிட்ட விதிகளைப் பயன்படுத்துவேன் (எடுத்துக்காட்டாக, பொது எண்களுக்கு முன் நாணயம் + எண் + விகுதி அல்லது பொதுவான எண்ணெழுத்து வடிவங்களுக்கு முன் குறிப்பிட்ட குறியீடுகள்)."}
+{"unnormalised": "", "normalised": "    *   சின்னங்கள் மற்றும் சிறப்பு எழுத்துகள்."}
+{"unnormalised": "", "normalised": "    *   நாணயம் + எண் + விகுதி."}
+{"unnormalised": "", "normalised": "    *   தேதிகள்."}
+{"unnormalised": "", "normalised": "    *   எண்கள் (அலகுகளில் உள்ளவை உட்பட, ஆனால் அலகு விரிவாக்கம் அதற்குப் பிறகு வருகிறது)."}
+{"unnormalised": "", "normalised": "    *   சுருக்கெழுத்துகள்."}
+{"unnormalised": "", "normalised": "    *   அலகுகள்."}
+{"unnormalised": "", "normalised": "    *   கணிதக் குறியீடு."}
+{"unnormalised": "", "normalised": "    *   \"Dr.\", \"Prof.\", \"Adv.\" போன்ற சிறப்பு முன்னொட்டுகள் எண் அல்லது சுருக்கெழுத்து விதிகளால் தவறாகப் புரிந்துகொள்ளப்படுவதைத் தவிர்க்க ஆரம்பத்தில் அல்லது குறிப்பிட்ட regex உடன் கையாளப்படும்."}
+{"unnormalised": "", "normalised": "    *   பொதுவான `/` கையாளுதல்."}
+{"unnormalised": "", "normalised": "    *   இறுதி கட்டமாக இடைவெளி இயல்பாக்கம்."}
+{"unnormalised": "", "normalised": "**விரிவான விதி செயல்படுத்தல் உத்தி:**"}
+{"unnormalised": "", "normalised": "1.  **சின்னங்கள் → பேசும் வடிவம்:** பொதுவான சின்னங்களை அவற்றின் பேசும் வடிவங்களுக்கு மேப்பிங் செய்யும் அகராதியைப் பயன்படுத்துவேன், மேலும் உரையின் மூலம் மீண்டும் மீண்டும் மாற்றுவேன். மாறுபட்ட சூழல்களுடன் தோன்றும் சின்னங்களுக்கு வழக்கமான வெளிப்பாடுகள் பயன்படுத்தப்படும் (எ.கா., `+/-`)."}
+{"unnormalised": "", "normalised": "    *   `art/craft` -> `art or craft` (regex: `(\\b\\w+)\\/(\\w+\\b)`)"}
+{"unnormalised": "", "normalised": "    *   `QA/Dev` -> `Q-A slash D-e-v` (கலப்பு கேஸ் அல்லது சுருக்கங்களுக்கான regex `(\\b[A-Z0-9]+)\\/([A-Z0-9]+\\b)`)"}
+{"unnormalised": "", "normalised": "    *   `2+2=4` கணிதக் குறியீட்டு விதியால் கையாளப்படும்."}
+{"unnormalised": "", "normalised": "    *   `$`, `~`, `*`, `#`, `@`, `&`, முதலியன நேரடியாக மேப்பிங் செய்யப்படும்."}
+{"unnormalised": "", "normalised": "2.  **சுருக்கெழுத்துகள் → இடைக்கோடு உள்ள எழுத்துக்கள்:**"}
+{"unnormalised": "", "normalised": "    *   Regex: `\\b[A-Z]{2,}\\b` (இரண்டு அல்லது அதற்கு மேற்பட்ட தொடர்ச்சியான பெரிய எழுத்துக்கள், ஒரு முழு வார்த்தையாக). இதை `Dr.`, `Prof.`, `Adv.` ஆகியவற்றிற்குப் பயன்படுத்தாமல் கவனமாக இருக்க வேண்டும்."}
+{"unnormalised": "", "normalised": "    *   `'-'.join(match.group())` உடன் மாற்றவும்."}
+{"unnormalised": "", "normalised": "3.  **எண்கள் → பேசும் வடிவம்:** இது சிக்கலானது. பல்வேறு சூழல்களைக் கையாளும் பொதுவான எண் மாற்றத்திற்கு `num2words` நூலகத்தைப் பயன்படுத்துவேன். \"அரை கிலோகிராம்\" போன்ற குறிப்பிட்ட நிகழ்வுகளுக்கு, `(\\d+)/(\\d+)\\s*(\\w+)` போன்ற வடிவங்களைக் கண்டறிய regex ஐப் பயன்படுத்துவேன், அதைத் தொடர்ந்து ஒரு யூனிட், மற்றும் பின்னத்திற்கு `num2words` ஐப் பயன்படுத்தவும் அல்லது `1/2` ஐ \"அரை\" ஆக மாற்றவும்."}
+{"unnormalised": "", "normalised": "    *   பொது எண்கள்: `num2words(number)`"}
+{"unnormalised": "", "normalised": "    *   பின்னங்கள்: `1/2 kg` -> `half kilogram`, `3/4` -> `three divided by four` (கணிதத்தால் கையாளப்படுகிறது, ஆனால் தேதிகளுடன் குழப்பமடையாமல் கவனமாக இருக்க வேண்டும்)."}
+{"unnormalised": "", "normalised": "4.  **எண் விகுதிகன் → விரிவாக்கப்பட்ட வடிவம்:**"}
+{"unnormalised": "", "normalised": "    *   Regex: `(\\d+)([KMBT])\\b`"}
+{"unnormalised": "", "normalised": "    *   `K` ஐ `thousand` ஆகவும், `M` ஐ `million` ஆகவும், `B` ஐ `billion` ஆகவும், `T` ஐ `trillion` ஆகவும் மேப் செய்யவும்."}
+{"unnormalised": "", "normalised": "    *   `num2words` ஐப் பயன்படுத்தி எண் பகுதியை மாற்றவும்."}
+{"unnormalised": "", "normalised": "5.  **நாணயம் + எண் + விகுதி:**"}
+{"unnormalised": "", "normalised": "    *   Regex: `([$₹€£])(\\s*)(\\d+)([KMBT])?\\b`"}
+{"unnormalised": "", "normalised": "    *   நாணயக் குறியீடு, எண் மற்றும் விகுதியை மாற்றவும்."}
+{"unnormalised": "", "normalised": "6.  **தேதிகள் → இயற்கையான பேசும் வடிவம்:**"}
+{"unnormalised": "", "normalised": "    *   `DD-MM-YYYY`, `DD/MM/YYYY`, `YYYY-MM-DD` க்கான regex வடிவங்கள்."}
+{"unnormalised": "", "normalised": "    *   `datetime.strptime` ஐப் பயன்படுத்தி ஆர்டினல் எண்களுக்கான (எ.கா., \"tenth\", \"first\") மற்றும் பேசும் ஆண்டுக்கான தனிப்பயன் தர்க்கத்துடன் `strftime` ஐப் பயன்படுத்தவும். தெளிவற்ற `DD/MM/YYYY`க்கு `DD/MM/YYYY` ஐ இயல்புநிலையாகக் கருதுகிறோம்."}
+{"unnormalised": "", "normalised": "7.  **அலகுகள் → பேசும் வடிவம்:**"}
+{"unnormalised": "", "normalised": "    *   `(\\d+)(\\s*)(cm|mm|m|km|g|kg|mg|ml|l|°C|...)` ஐக் கண்டறிய regex"}
+{"unnormalised": "", "normalised": "    *   அலகுகளை முழு வார்த்தைகளாக மேப் செய்யவும் (எ.கா., `cm` ஐ `centimeter` ஆகவும், `°C` ஐ `degree celsius` ஆகவும்)."}
+{"unnormalised": "", "normalised": "    *   முந்தைய எண்ணுக்கு எண் மாற்றத்தைப் பயன்படுத்துங்கள்."}
+{"unnormalised": "", "normalised": "8.  **கணிதக் குறியீடு → பேசும் வடிவம்:** இதற்கு regex இன் அதிநவீன தொகுப்பு மற்றும் மிகவும் சிக்கலான வெளிப்பாடுகளுக்கு சிறிய பாகுபடுத்தி தேவைப்படுகிறது."}
+{"unnormalised": "", "normalised": "    *   `x^2`: `x squared` (regex `(\\w)\\^2`)"}
+{"unnormalised": "", "normalised": "    *   `x^3`: `x cubed` (regex `(\\w)\\^3`)"}
+{"unnormalised": "", "normalised": "    *   `x^n`: `x to the power of n` (regex `(\\w)\\^(\\w+)`)"}
+{"unnormalised": "", "normalised": "    *   `x_i`: `x sub i` (regex `(\\w)_(\\w+)`)"}
+{"unnormalised": "", "normalised": "    *   `√x`: `square root of x` (regex `√(\\w+)`)"}
+{"unnormalised": "", "normalised": "    *   `∫`: `integral`"}
+{"unnormalised": "", "normalised": "    *   `Σ`: `summation`"}
+{"unnormalised": "", "normalised": "    *   பின்னங்கள்: `3/4` -> `three divided by four` (regex: `(\\d+)\\/(\\d+)`, ஆனால் இது தேதியாக இருக்கக்கூடாது)."}
+{"unnormalised": "", "normalised": "    *   சின்னங்கள்: `≠`, `≤`, `≥` பொதுவான சின்ன மாற்றத்தால் கையாளப்படும்."}
+{"unnormalised": "", "normalised": "9.  **வெளியீட்டு வடிவம்:**"}
+{"unnormalised": "", "normalised": "    *   இறுதியில் இடைவெளிகளை இயல்பாக்குங்கள்: `re.sub(r'\\s+', ' ', text).strip()`."}
+{"unnormalised": "", "normalised": "10. **கோப்பு கையாளுதல்:** `os.walk`, `os.makedirs`, `shutil.copy2`."}
+{"unnormalised": "", "normalised": "**குறிப்பிட்ட முன்னொட்டு கையாளுதல்:**"}
+{"unnormalised": "", "normalised": "*   `Dr.`, `Prof.`, `Adv.` இந்தக் குறிப்பிட்ட வார்த்தைகளைத் தேடுவதன் மூலம் கையாளப்படும், ஒருவேளை ஒரு காலம் அல்லது இடைவெளி பின்வருமாறு இருக்கலாம், மேலும் அவை பாதுகாக்கப்படும். இது பொதுவான சுருக்கெழுத்து செயலாக்கத்திற்கு முன் நடக்க வேண்டும்."}
+{"unnormalised": "", "normalised": "பைதான் ஸ்கிரிப்டை உருவாக்கத் தொடங்குவோம்."}
+{"unnormalised": "", "normalised": "```python"}
+{"unnormalised": "", "normalised": "import os"}
+{"unnormalised": "", "normalised": "import re"}
+{"unnormalised": "", "normalised": "import shutil"}
+{"unnormalised": "", "normalised": "from datetime import datetime"}
+{"unnormalised": "", "normalised": "from num2words import num2words"}
+{"unnormalised": "", "normalised": "import unicodedata # For handling unicode symbols"}
+{"unnormalised": "", "normalised": "def ordinal_suffix(day):"}
+{"unnormalised": "", "normalised": "    \"\"\"Returns the ordinal suffix for a number.\"\"\""}
+{"unnormalised": "", "normalised": "    if 10 <= day % 100 <= 20:"}
+{"unnormalised": "", "normalised": "        return 'th'"}
+{"unnormalised": "", "normalised": "    else:"}
+{"unnormalised": "", "normalised": "        return {1: 'st', 2: 'nd', 3: 'rd'}.get(day % 10, 'th')"}
+{"unnormalised": "", "normalised": "def convert_number_to_words(number_str):"}
+{"unnormalised": "", "normalised": "    \"\"\"Converts a number string to its spoken form, handling edge cases.\"\"\""}
+{"unnormalised": "", "normalised": "    try:"}
+{"unnormalised": "", "normalised": "        if '.' in number_str:"}
+{"unnormalised": "", "normalised": "            # Handle decimals separately if num2words doesn't do it naturally for all cases"}
+{"unnormalised": "", "normalised": "            integer_part, decimal_part = number_str.split('.')"}
+{"unnormalised": "", "normalised": "            integer_words = num2words(int(integer_part))"}
+{"unnormalised": "", "normalised": "            decimal_words = 'point ' + ' '.join(num2words(int(d)) for d in decimal_part)"}
+{"unnormalised": "", "normalised": "            return f\"{integer_words} {decimal_words}\""}
+{"unnormalised": "", "normalised": "        else:"}
+{"unnormalised": "", "normalised": "            return num2words(int(number_str))"}
+{"unnormalised": "", "normalised": "    except ValueError:"}
+{"unnormalised": "", "normalised": "        return number_str # Return original if conversion fails"}
+{"unnormalised": "", "normalised": "def normalize_text(text):"}
+{"unnormalised": "", "normalised": "    \"\"\""}
+{"unnormalised": "", "normalised": "    Applies all normalization rules to the input text."}
+{"unnormalised": "", "normalised": "    \"\"\""}
+{"unnormalised": "", "normalised": "    # --- 0. Special Prefix Handling (Dr., Prof., Adv.) ---"}
+{"unnormalised": "", "normalised": "    # These are handled by keeping them as is, they should not be treated as acronyms."}
+{"unnormalised": "", "normalised": "    # No explicit replacement needed, just ensures other rules don't modify them."}
+{"unnormalised": "", "normalised": "    # --- 1. Symbols → Spoken form ---"}
+{"unnormalised": "", "normalised": "    # More specific symbol replacements first"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\+/-', 'plus or minus', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'!=', 'not equal to', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'<=', 'less than or equal to', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'>=', 'greater than or equal to', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'==', 'equals', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'->', 'maps to', text) # Common in math/programming context"}
+{"unnormalised": "", "normalised": "    symbol_map = {"}
+{"unnormalised": "", "normalised": "        '#': 'hash',"}
+{"unnormalised": "", "normalised": "        '@': 'at',"}
+{"unnormalised": "", "normalised": "        '&': 'and',"}
+{"unnormalised": "", "normalised": "        '*': 'asterisk',"}
+{"unnormalised": "", "normalised": "        '~': 'approximately',"}
+{"unnormalised": "", "normalised": "        '≠': 'not equal to',"}
+{"unnormalised": "", "normalised": "        '≤': 'less than or equal to',"}
+{"unnormalised": "", "normalised": "        '≥': 'greater than or equal to',"}
+{"unnormalised": "", "normalised": "        '∫': 'integral',"}
+{"unnormalised": "", "normalised": "        '∑': 'summation',"}
+{"unnormalised": "", "normalised": "        'π': 'pi',"}
+{"unnormalised": "", "normalised": "        '√': 'square root of',"}
+{"unnormalised": "", "normalised": "        '%': 'percent', # After ~ approximately, before general numbers"}
+{"unnormalised": "", "normalised": "        '°': 'degree', # Before general numbers"}
+{"unnormalised": "", "normalised": "        '€': 'euro',"}
+{"unnormalised": "", "normalised": "        '£': 'pound',"}
+{"unnormalised": "", "normalised": "    }"}
+{"unnormalised": "", "normalised": "    # Sort keys by length in descending order to avoid partial matches (e.g., '≠' before '≠')"}
+{"unnormalised": "", "normalised": "    for symbol, spoken_form in sorted(symbol_map.items(), key=lambda item: len(item[0]), reverse=True):"}
+{"unnormalised": "", "normalised": "        text = text.replace(symbol, spoken_form)"}
+{"unnormalised": "", "normalised": "    # Handling '/'"}
+{"unnormalised": "", "normalised": "    # Priority:"}
+{"unnormalised": "", "normalised": "    # 1. Divided by (between numbers/math)"}
+{"unnormalised": "", "normalised": "    # 2. Or (between words)"}
+{"unnormalised": "", "normalised": "    # 3. Slash (mixed cases, abbreviations, remaining)"}
+{"unnormalised": "", "normalised": "    # 1. Fractions or division in math: 3/4 -> three divided by four, 1/2 -> one divided by two"}
+{"unnormalised": "", "normalised": "    # This needs to be robust, ensuring it's not a date."}
+{"unnormalised": "", "normalised": "    # Specific for 1/2 as \"half\" when followed by a unit (Rule 3/7 interplay)"}
+{"unnormalised": "", "normalised": "    def replace_fraction_with_unit(match):"}
+{"unnormalised": "", "normalised": "        num_str = match.group(1)"}
+{"unnormalised": "", "normalised": "        denom_str = match.group(2)"}
+{"unnormalised": "", "normalised": "        unit = match.group(3) if match.group(3) else ''"}
+{"unnormalised": "", "normalised": "        if num_str == '1' and denom_str == '2':"}
+{"unnormalised": "", "normalised": "            return f\"half {unit}\""}
+{"unnormalised": "", "normalised": "        else:"}
+{"unnormalised": "", "normalised": "            return f\"{convert_number_to_words(num_str)} divided by {convert_number_to_words(denom_str)} {unit}\".strip()"}
+{"unnormalised": "", "normalised": "    # Pattern for X/Y unit, e.g., 1/2 kg, 3/4 meter"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b(\\d+)/(\\d+)\\s*(cm|mm|m|km|g|kg|mg|ml|l|C|F|K|hour|day|week|month|year)s?\\b',"}
+{"unnormalised": "", "normalised": "                  replace_fraction_with_unit, text, flags=re.IGNORECASE)"}
+{"unnormalised": "", "normalised": "    # Pattern for X/Y without a specific unit, e.g., 3/4"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b(\\d+)/(\\d+)\\b',"}
+{"unnormalised": "", "normalised": "                  lambda m: f\"{convert_number_to_words(m.group(1))} divided by {convert_number_to_words(m.group(2))}\","}
+{"unnormalised": "", "normalised": "                  text)"}
+{"unnormalised": "", "normalised": "    # 2. \"or\" between words (e.g., art/craft)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\b\\w+)\\/(\\w+\\b)', r'\\1 or \\2', text)"}
+{"unnormalised": "", "normalised": "    # 3. \"slash\" for mixed cases or abbreviations (e.g., QA/Dev, R/D)"}
+{"unnormalised": "", "normalised": "    # This also catches any remaining slashes that aren't dates or fractions"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'([A-Za-z0-9]+)\\/([A-Za-z0-9]+)', r'\\1 slash \\2', text)"}
+{"unnormalised": "", "normalised": "    # --- 2. Acronyms → Hyphenated letters ---"}
+{"unnormalised": "", "normalised": "    # Exclude Dr., Prof., Adv. and common currency codes (e.g., USD, EUR, INR)"}
+{"unnormalised": "", "normalised": "    # Also exclude single letters or numbers that might be part of an expression, and units."}
+{"unnormalised": "", "normalised": "    # This regex is tricky. Let's try to match sequences of uppercase letters."}
+{"unnormalised": "", "normalised": "    # Lookbehind for a word boundary, lookahead for a word boundary."}
+{"unnormalised": "", "normalised": "    # Exclude common pre-defined terms."}
+{"unnormalised": "", "normalised": "    excluded_acronyms = {'DR', 'PROF', 'ADV', 'USD', 'EUR', 'GBP', 'INR', 'K', 'M', 'B', 'T'}"}
+{"unnormalised": "", "normalised": "    def replace_acronym(match):"}
+{"unnormalised": "", "normalised": "        acronym = match.group(0)"}
+{"unnormalised": "", "normalised": "        if acronym in excluded_acronyms:"}
+{"unnormalised": "", "normalised": "            return acronym"}
+{"unnormalised": "", "normalised": "        # Check if it's potentially a unit like 'KG', 'CM' etc. (already handled by units rule later)"}
+{"unnormalised": "", "normalised": "        if len(acronym) <= 3 and acronym.lower() in ['cm', 'mm', 'm', 'km', 'g', 'kg', 'mg', 'ml', 'l', 'c', 'f', 'k']:"}
+{"unnormalised": "", "normalised": "            return acronym # Let unit rule handle it"}
+{"unnormalised": "", "normalised": "        return '-'.join(list(acronym))"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b[A-Z]{2,}\\b', replace_acronym, text)"}
+{"unnormalised": "", "normalised": "    # --- 6. Dates → Natural spoken form ---"}
+{"unnormalised": "", "normalised": "    # Prioritize YYYY-MM-DD"}
+{"unnormalised": "", "normalised": "    def replace_date(match):"}
+{"unnormalised": "", "normalised": "        try:"}
+{"unnormalised": "", "normalised": "            date_obj = datetime.strptime(match.group(0), '%Y-%m-%d')"}
+{"unnormalised": "", "normalised": "            day = date_obj.day"}
+{"unnormalised": "", "normalised": "            month = date_obj.strftime('%B').lower()"}
+{"unnormalised": "", "normalised": "            year = num2words(date_obj.year)"}
+{"unnormalised": "", "normalised": "            return f\"{num2words(day, to='ordinal')} {month} {year}\""}
+{"unnormalised": "", "normalised": "        except ValueError:"}
+{"unnormalised": "", "normalised": "            return match.group(0) # Return original if parsing fails"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b\\d{4}-\\d{2}-\\d{2}\\b', replace_date, text)"}
+{"unnormalised": "", "normalised": "    # Prioritize DD-MM-YYYY or DD/MM/YYYY (assuming DD/MM/YYYY when ambiguous)"}
+{"unnormalised": "", "normalised": "    def replace_date_ambiguous(match):"}
+{"unnormalised": "", "normalised": "        try:"}
+{"unnormalised": "", "normalised": "            # Try DD/MM/YYYY first"}
+{"unnormalised": "", "normalised": "            date_obj = datetime.strptime(match.group(0), '%d/%m/%Y')"}
+{"unnormalised": "", "normalised": "        except ValueError:"}
+{"unnormalised": "", "normalised": "            try:"}
+{"unnormalised": "", "normalised": "                # Then try DD-MM-YYYY"}
+{"unnormalised": "", "normalised": "                date_obj = datetime.strptime(match.group(0), '%d-%m-%Y')"}
+{"unnormalised": "", "normalised": "            except ValueError:"}
+{"unnormalised": "", "normalised": "                return match.group(0) # Return original if parsing fails"}
+{"unnormalised": "", "normalised": "        day = date_obj.day"}
+{"unnormalised": "", "normalised": "        month = date_obj.strftime('%B').lower()"}
+{"unnormalised": "", "normalised": "        year = num2words(date_obj.year)"}
+{"unnormalised": "", "normalised": "        return f\"{num2words(day, to='ordinal')} {month} {year}\""}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b\\d{2}[-/]\\d{2}[-/]\\d{4}\\b', replace_date_ambiguous, text)"}
+{"unnormalised": "", "normalised": "    # --- 5. Currency + Number + Suffix ---"}
+{"unnormalised": "", "normalised": "    # This must come before general numeric suffix and general number conversion."}
+{"unnormalised": "", "normalised": "    def replace_currency_suffix(match):"}
+{"unnormalised": "", "normalised": "        currency_symbol = match.group(1)"}
+{"unnormalised": "", "normalised": "        number_str = match.group(3)"}
+{"unnormalised": "", "normalised": "        suffix = match.group(4)"}
+{"unnormalised": "", "normalised": "        "}
+{"unnormalised": "", "normalised": "        currency_name = ''"}
+{"unnormalised": "", "normalised": "        if currency_symbol == '$':"}
+{"unnormalised": "", "normalised": "            currency_name = 'dollar'"}
+{"unnormalised": "", "normalised": "        elif currency_symbol == '₹':"}
+{"unnormalised": "", "normalised": "            currency_name = 'rupee'"}
+{"unnormalised": "", "normalised": "        # Add other currencies if needed"}
+{"unnormalised": "", "normalised": "        spoken_number = convert_number_to_words(number_str)"}
+{"unnormalised": "", "normalised": "        if suffix:"}
+{"unnormalised": "", "normalised": "            suffix_map = {'K': 'thousand', 'M': 'million', 'B': 'billion', 'T': 'trillion'}"}
+{"unnormalised": "", "normalised": "            return f\"{currency_name} {spoken_number} {suffix_map[suffix]}\""}
+{"unnormalised": "", "normalised": "        else:"}
+{"unnormalised": "", "normalised": "            return f\"{currency_name} {spoken_number}\""}
+{"unnormalised": "", "normalised": "    text = re.sub(r'([$₹€£])(\\s*)(\\d+)([KMBT])?\\b', replace_currency_suffix, text)"}
+{"unnormalised": "", "normalised": "    # --- 4. Numeric suffixes → Expanded form ---"}
+{"unnormalised": "", "normalised": "    # This must come before general number conversion."}
+{"unnormalised": "", "normalised": "    def replace_numeric_suffix(match):"}
+{"unnormalised": "", "normalised": "        number_str = match.group(1)"}
+{"unnormalised": "", "normalised": "        suffix = match.group(2)"}
+{"unnormalised": "", "normalised": "        spoken_number = convert_number_to_words(number_str)"}
+{"unnormalised": "", "normalised": "        "}
+{"unnormalised": "", "normalised": "        suffix_map = {'K': 'thousand', 'M': 'million', 'B': 'billion', 'T': 'trillion'}"}
+{"unnormalised": "", "normalised": "        return f\"{spoken_number} {suffix_map[suffix]}\""}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b(\\d+)([KMBT])\\b', replace_numeric_suffix, text)"}
+{"unnormalised": "", "normalised": "    # --- 7. Units → Spoken form ---"}
+{"unnormalised": "", "normalised": "    # This must come before general number conversion."}
+{"unnormalised": "", "normalised": "    unit_map = {"}
+{"unnormalised": "", "normalised": "        'cm': 'centimeter', 'mm': 'millimeter', 'm': 'meter', 'km': 'kilometer',"}
+{"unnormalised": "", "normalised": "        'g': 'gram', 'kg': 'kilogram', 'mg': 'milligram',"}
+{"unnormalised": "", "normalised": "        'ml': 'milliliter', 'l': 'liter',"}
+{"unnormalised": "", "normalised": "        'C': 'celsius', 'F': 'fahrenheit', 'K': 'kelvin', # For degree units"}
+{"unnormalised": "", "normalised": "        'hrs': 'hours', 'hr': 'hour',"}
+{"unnormalised": "", "normalised": "        'min': 'minute', 'mins': 'minutes',"}
+{"unnormalised": "", "normalised": "        'sec': 'second', 'secs': 'seconds',"}
+{"unnormalised": "", "normalised": "        'volt': 'volt', 'volts': 'volts', 'v': 'volt',"}
+{"unnormalised": "", "normalised": "        'amp': 'ampere', 'amps': 'amperes', 'a': 'ampere',"}
+{"unnormalised": "", "normalised": "        'watt': 'watt', 'watts': 'watts', 'w': 'watt',"}
+{"unnormalised": "", "normalised": "        'hz': 'hertz', 'khz': 'kilohertz', 'mhz': 'megahertz', 'ghz': 'gigahertz'"}
+{"unnormalised": "", "normalised": "    }"}
+{"unnormalised": "", "normalised": "    def replace_unit(match):"}
+{"unnormalised": "", "normalised": "        number_str = match.group(1)"}
+{"unnormalised": "", "normalised": "        unit = match.group(2).lower()"}
+{"unnormalised": "", "normalised": "        spoken_number = convert_number_to_words(number_str)"}
+{"unnormalised": "", "normalised": "        spoken_unit = unit_map.get(unit, unit)"}
+{"unnormalised": "", "normalised": "        # Handle plurals for units"}
+{"unnormalised": "", "normalised": "        if int(number_str) > 1 and not spoken_unit.endswith('s') and spoken_unit not in ['celsius', 'fahrenheit', 'kelvin']:"}
+{"unnormalised": "", "normalised": "            spoken_unit += 's'"}
+{"unnormalised": "", "normalised": "        elif int(number_str) == 1 and spoken_unit.endswith('s') and spoken_unit not in ['celsius', 'fahrenheit', 'kelvin']:"}
+{"unnormalised": "", "normalised": "            spoken_unit = spoken_unit[:-1] # Remove 's' if number is 1 and unit is plural"}
+{"unnormalised": "", "normalised": "        return f\"{spoken_number} {spoken_unit}\""}
+{"unnormalised": "", "normalised": "    # Pattern for numbers directly followed by a unit (e.g., 10cm, 5kg)"}
+{"unnormalised": "", "normalised": "    # Using \\b for units to avoid partial matches (e.g., 'm' in 'meter')"}
+{"unnormalised": "", "normalised": "    unit_pattern = r'\\b(\\d+(?:\\.\\d+)?)\\s*(%s)\\b' % '|'.join(re.escape(u) for u in unit_map.keys())"}
+{"unnormalised": "", "normalised": "    text = re.sub(unit_pattern, replace_unit, text, flags=re.IGNORECASE)"}
+{"unnormalised": "", "normalised": "    # Handle degrees Celsius/Fahrenheit specifically, often written as 25°C"}
+{"unnormalised": "", "normalised": "    def replace_degree_unit(match):"}
+{"unnormalised": "", "normalised": "        number_str = match.group(1)"}
+{"unnormalised": "", "normalised": "        unit = match.group(2).upper() # 'C', 'F'"}
+{"unnormalised": "", "normalised": "        spoken_number = convert_number_to_words(number_str)"}
+{"unnormalised": "", "normalised": "        unit_name = 'celsius' if unit == 'C' else 'fahrenheit' if unit == 'F' else 'kelvin' if unit == 'K' else ''"}
+{"unnormalised": "", "normalised": "        return f\"{spoken_number} degree {unit_name}\""}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b(\\d+(?:\\.\\d+)?)\\s*degree\\s*([CFK])\\b', replace_degree_unit, text, flags=re.IGNORECASE) # After 'degree' symbol is replaced"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b(\\d+(?:\\.\\d+)?)\\s*degree\\s*(celsius|fahrenheit|kelvin)\\b', lambda m: f\"{convert_number_to_words(m.group(1))} degree {m.group(2)}\", text, flags=re.IGNORECASE)"}
+{"unnormalised": "", "normalised": "    # --- 3. Numbers → Spoken form (general) ---"}
+{"unnormalised": "", "normalised": "    # Apply to any remaining standalone numbers. This should be late."}
+{"unnormalised": "", "normalised": "    # Exclude numbers that are part of file names or mixed alphanumeric strings that don't look like numbers."}
+{"unnormalised": "", "normalised": "    def replace_general_number(match):"}
+{"unnormalised": "", "normalised": "        number_str = match.group(0)"}
+{"unnormalised": "", "normalised": "        # Avoid converting numbers that are part of other identifiers (e.g., H2O, ID123)"}
+{"unnormalised": "", "normalised": "        if re.match(r'^[A-Za-z]+$', number_str): # If it's pure alphabet, ignore"}
+{"unnormalised": "", "normalised": "            return number_str"}
+{"unnormalised": "", "normalised": "        "}
+{"unnormalised": "", "normalised": "        # Avoid converting if it's a floating point number with only zero after decimal and num2words gives full stop"}
+{"unnormalised": "", "normalised": "        if '.' in number_str and float(number_str) == int(float(number_str)):"}
+{"unnormalised": "", "normalised": "            return convert_number_to_words(str(int(float(number_str))))"}
+{"unnormalised": "", "normalised": "            "}
+{"unnormalised": "", "normalised": "        return convert_number_to_words(number_str)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b\\d+(?:\\.\\d+)?\\b', replace_general_number, text)"}
+{"unnormalised": "", "normalised": "    # --- 8. Mathematical notation → Spoken form ---"}
+{"unnormalised": "", "normalised": "    # Ensure this happens after general symbol/number conversions to avoid conflicts"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\w)\\^2', r'\\1 squared', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\w)\\^3', r'\\1 cubed', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\w)\\^(\\w+)', r'\\1 to the power of \\2', text) # General power"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\w)_(\\w+)', r'\\1 sub \\2', text) # Subscript"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'summation\\s*x\\s*sub\\s*i', 'summation of x sub i', text) # Common summation form"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'integral\\s*(\\d+)\\s*to\\s*(\\d+)\\s*of\\s*(\\w)\\s*d\\s*(\\w)',"}
+{"unnormalised": "", "normalised": "                  lambda m: f\"integral from {convert_number_to_words(m.group(1))} to {convert_number_to_words(m.group(2))} of {m.group(3)} d {m.group(4)}\","}
+{"unnormalised": "", "normalised": "                  text) # Specific integral form ∫ 0→1 x dx"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'integral\\s*(\\w)\\s*d\\s*(\\w)', r'integral of \\1 d \\2', text) # General integral form ∫ x dx"}
+{"unnormalised": "", "normalised": "    # --- Final Space Normalization ---"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\s+', ' ', text).strip()"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def process_folder(input_folder, output_folder):"}
+{"unnormalised": "", "normalised": "    \"\"\""}
+{"unnormalised": "", "normalised": "    Walks through the input folder, normalizes .txt files, and copies others."}
+{"unnormalised": "", "normalised": "    \"\"\""}
+{"unnormalised": "", "normalised": "    os.makedirs(output_folder, exist_ok=True)"}
+{"unnormalised": "", "normalised": "    unnormalized_txt_files = []"}
+{"unnormalised": "", "normalised": "    for root, dirs, files in os.walk(input_folder):"}
+{"unnormalised": "", "normalised": "        relative_path = os.path.relpath(root, input_folder)"}
+{"unnormalised": "", "normalised": "        current_output_dir = os.path.join(output_folder, relative_path)"}
+{"unnormalised": "", "normalised": "        os.makedirs(current_output_dir, exist_ok=True)"}
+{"unnormalised": "", "normalised": "        for file_name in files:"}
+{"unnormalised": "", "normalised": "            input_file_path = os.path.join(root, file_name)"}
+{"unnormalised": "", "normalised": "            output_file_path = os.path.join(current_output_dir, file_name)"}
+{"unnormalised": "", "normalised": "            if file_name.lower().endswith('.txt'):"}
+{"unnormalised": "", "normalised": "                try:"}
+{"unnormalised": "", "normalised": "                    with open(input_file_path, 'r', encoding='utf-8') as f_in:"}
+{"unnormalised": "", "normalised": "                        content = f_in.read()"}
+{"unnormalised": "", "normalised": "                    "}
+{"unnormalised": "", "normalised": "                    normalized_content = normalize_text(content)"}
+{"unnormalised": "", "normalised": "                    with open(output_file_path, 'w', encoding='utf-8') as f_out:"}
+{"unnormalised": "", "normalised": "                        f_out.write(normalized_content)"}
+{"unnormalised": "", "normalised": "                except Exception as e:"}
+{"unnormalised": "", "normalised": "                    print(f\"Error processing {input_file_path}: {e}\")"}
+{"unnormalised": "", "normalised": "                    unnormalized_txt_files.append(input_file_path)"}
+{"unnormalised": "", "normalised": "                    # If error, copy the original file to output"}
+{"unnormalised": "", "normalised": "                    shutil.copy2(input_file_path, output_file_path)"}
+{"unnormalised": "", "normalised": "            else:"}
+{"unnormalised": "", "normalised": "                shutil.copy2(input_file_path, output_file_path)"}
+{"unnormalised": "", "normalised": "    "}
+{"unnormalised": "", "normalised": "    if unnormalized_txt_files:"}
+{"unnormalised": "", "normalised": "        print(\"\\n--- List of .txt files that could not be normalized (original copied instead) ---\")"}
+{"unnormalised": "", "normalised": "        for f in unnormalized_txt_files:"}
+{"unnormalised": "", "normalised": "            print(f)"}
+{"unnormalised": "", "normalised": "if __name__ == \"__main__\":"}
+{"unnormalised": "", "normalised": "    # Example usage:"}
+{"unnormalised": "", "normalised": "    # Create a dummy dataset structure for testing"}
+{"unnormalised": "", "normalised": "    if not os.path.exists(\"dataset\"):"}
+{"unnormalised": "", "normalised": "        os.makedirs(\"dataset/subfolder1\", exist_ok=True)"}
+{"unnormalised": "", "normalised": "        os.makedirs(\"dataset/subfolder2\", exist_ok=True)"}
+{"unnormalised": "", "normalised": "        with open(\"dataset/test1.txt\", \"w\", encoding=\"utf-8\") as f:"}
+{"unnormalised": "", "normalised": "            f.write(\"The price is $20B. NASA launched in 1958. Approx ~5% gain.\\n\")"}
+{"unnormalised": "", "normalised": "            f.write(\"Today's date is 10/09/2024. Dr. Smith works for the U.S.A. government.\\n\")"}
+{"unnormalised": "", "normalised": "            f.write(\"The temperature is 25°C. Water boiled at 100°C. Total 5km run.\\n\")"}
+{"unnormalised": "", "normalised": "            f.write(\"The equation is 2+2=4. Area is πr^2. Sum is Σ x_i. Consider x^2 and x^3. Also x^n.\\n\")"}
+{"unnormalised": "", "normalised": "            f.write(\"The fraction is 3/4. We need 1/2 kg of sugar. The report covers QA/Dev and art/craft. GDP growth is strong. Adv. Ram is here.\\n\")"}
+{"unnormalised": "", "normalised": "            f.write(\"Math: ∫ x^2 dx. Or ∫ 0→1 x dx. If x != y, then x <= z or z >= x. He runs 100M dash.\\n\")"}
+{"unnormalised": "", "normalised": "            f.write(\"He ran 10km in 45 min. His speed was 100km/hr. The battery is 12V and 50A.\\n\")"}
+{"unnormalised": "", "normalised": "            f.write(\"Product IDs: PROD123, PROD456.\\n\")"}
+{"unnormalised": "", "normalised": "            f.write(\"₹500M was invested. The value is 99. The number is 7.\\n\")"}
+{"unnormalised": "", "normalised": "            f.write(\"This has a decimal 12.5 kg. A total of 1.0 M people. Test 1.0 kg and 1.00 kg.\\n\")"}
+{"unnormalised": "", "normalised": "        with open(\"dataset/subfolder1/test2.txt\", \"w\", encoding=\"utf-8\") as f:"}
+{"unnormalised": "", "normalised": "            f.write(\"Project Alpha started 2023-12-01. Prof. Jones gave a lecture on ∫ x^n dx.\\n\")"}
+{"unnormalised": "", "normalised": "            f.write(\"He spent 2.5 hrs studying. The data is 1.2M records. He earns 50K per month.\\n\")"}
+{"unnormalised": "", "normalised": "        with open(\"dataset/subfolder2/image.jpg\", \"w\", encoding=\"utf-8\") as f:"}
+{"unnormalised": "", "normalised": "            f.write(\"This is not a text file.\") # Dummy content for non-txt file"}
+{"unnormalised": "", "normalised": "        with open(\"dataset/subfolder2/another.txt\", \"w\", encoding=\"utf-8\") as f:"}
+{"unnormalised": "", "normalised": "            f.write(\"Special characters: ≠, ≤, ≥. Test approximately five percent ~5%. Hash #tag. At @user. And & more.\")"}
+{"unnormalised": "", "normalised": "    input_data_folder = \"dataset\""}
+{"unnormalised": "", "normalised": "    output_normalized_folder = \"dataset_normalized\""}
+{"unnormalised": "", "normalised": "    print(f\"Starting normalization for '{input_data_folder}' into '{output_normalized_folder}'...\")"}
+{"unnormalised": "", "normalised": "    process_folder(input_data_folder, output_normalized_folder)"}
+{"unnormalised": "", "normalised": "    print(\"Normalization complete.\")"}
+{"unnormalised": "", "normalised": "    # --- Verification ---"}
+{"unnormalised": "", "normalised": "    print(\"\\n--- Verifying a sample normalized file ---\")"}
+{"unnormalised": "", "normalised": "    try:"}
+{"unnormalised": "", "normalised": "        with open(os.path.join(output_normalized_folder, \"test1.txt\"), 'r', encoding='utf-8') as f:"}
+{"unnormalised": "", "normalised": "            print(f.read())"}
+{"unnormalised": "", "normalised": "    except FileNotFoundError:"}
+{"unnormalised": "", "normalised": "        print(\"Sample normalized file 'test1.txt' not found in output folder.\")"}
+{"unnormalised": "", "normalised": "```"}
+{"unnormalised": "", "normalised": "**விளக்கம் மற்றும் வடிவமைப்பு தேர்வுகள்:**"}
+{"unnormalised": "", "normalised": "1.  **`num2words` நூலகம்:** இயற்கையான எண் மாற்றத்திற்கு இது ஒரு முக்கியமான சார்பு. அதை நிறுவ உறுதிப்படுத்திக் கொள்ளுங்கள்: `pip install num2words`."}
+{"unnormalised": "", "normalised": "2.  **செயல்பாடுகளின் வரிசை:** `re.sub` அழைப்புகளின் வரிசை மிகவும் முக்கியமானது."}
+{"unnormalised": "", "normalised": "    *   **குறிப்பிட்ட சின்னங்கள் முதலில்:** `+/-`, `!=`, `<=`, `>=` போன்ற பொதுவான சின்னங்களுக்கு முன் `@`, `&` போன்றவை சரியாக மாற்றப்படுவதை உறுதிசெய்யும்."}
+{"unnormalised": "", "normalised": "    *   **`/` கையாளுதல்:** `/` குறியீட்டிற்கு சிக்கலான விதிகள் உள்ளன. இது ஒரு குறிப்பிட்ட வரிசையில் கையாளப்படுகிறது: அலகுகளுடன் கூடிய பின்னங்கள், பின்னர் பொதுவான பின்னங்கள், பின்னர் சொற்களுக்கு இடையில் \"அல்லது\", பின்னர் கலப்பு நிகழ்வுகளுக்கு \"சாய்வுக்கோடு\". இந்த அடுக்கு மிகவும் பொருத்தமான பொருள் பயன்படுத்தப்படுவதை உறுதி செய்கிறது."}
+{"unnormalised": "", "normalised": "    *   **தேதிகள்:** `DD/MM/YYYY` பின்னங்களாகவோ அல்லது எண்களாகவோ தவறாகப் புரிந்துகொள்ளப்படுவதைத் தவிர்க்க, ஆரம்பத்தில் செயலாக்கப்படுகின்றன."}
+{"unnormalised": "", "normalised": "    *   **நாணயம் + எண் + விகுதி:** இது மிகவும் குறிப்பிட்ட முறை, எனவே இது ஆரம்பத்தில் கையாளப்படுகிறது."}
+{"unnormalised": "", "normalised": "    *   **எண் விகுதிகள்:** பொதுவான எண் மாற்றத்திற்கு முன் கையாளப்படுகின்றன. `20K` என்பது `twenty K` ஆக மாறக்கூடாது, பின்னர் `twenty thousand` ஆக மாறக்கூடாது."}
+{"unnormalised": "", "normalised": "    *   **அலகுகள்:** பொதுவான எண் மாற்றத்திற்கு முன் கையாளப்படுகின்றன. `10cm` என்பது `ten cm` ஆக மாறக்கூடாது, பின்னர் `ten centimeter` ஆக மாறக்கூடாது."}
+{"unnormalised": "", "normalised": "    *   **சுருக்கெழுத்துகள்:** தவறான விளக்கத்தைத் தவிர்க்க சிறப்பு முன்னொட்டுகளுக்குப் பிறகும் பொதுவான எண்களுக்கு முன்பும் கையாளப்படுகின்றன. விலக்குகள் முக்கியமானவை."}
+{"unnormalised": "", "normalised": "    *   **பொது எண்கள்:** மிகவும் குறிப்பிட்ட விதிகளால் உள்ளடக்கப்படாத எஞ்சியிருக்கும் இலக்கங்களைப் பிடிக்க ஒப்பீட்டளவில் தாமதமாகப் பயன்படுத்தப்படுகிறது."}
+{"unnormalised": "", "normalised": "    *   **கணிதக் குறியீடு:** பல கணித கூறுகள் (`^`, `_`, `∫`, `Σ`, எண்கள் போன்றவை) முந்தைய சின்னம் அல்லது எண் விதிகளால் தொடப்பட்டிருக்கக்கூடும் என்பதால், இறுதியில் பயன்படுத்தப்படுகிறது. கணிதம் தொடர்பான ரெஜெக்ஸ் பின்னர் அவற்றை பேசும் வடிவங்களாக மாற்றுகிறது."}
+{"unnormalised": "", "normalised": "3.  **வழக்கமான வெளிப்பாடுகள்:**"}
+{"unnormalised": "", "normalised": "    *   `\\b`: சொல் எல்லை என்பது முழு சொற்கள்/எண்களை பொருத்தவும், மற்ற சொற்கள் அல்லது அடையாளங்காட்டிகளில் பகுதி மாற்றீடுகளைத் தவிர்க்கவும் பரவலாகப் பயன்படுத்தப்படுகிறது."}
+{"unnormalised": "", "normalised": "    *   `(?:\\.\\d+)?: எண்களில் விருப்பமான தசம பாகங்களுக்கான குறியீடு அல்லாத குழு (எ.கா., `10` அல்லது `10.5`)."}
+{"unnormalised": "", "normalised": "    *   `re.IGNORECASE`: `KG`, `kg` போன்றவற்றை பிடிக்க அலகு பொருத்தத்திற்குப் பயன்படுத்தப்படுகிறது."}
+{"unnormalised": "", "normalised": "4.  **`convert_number_to_words` உதவி:** `num2words` ஐ மடிக்கிறது மற்றும் தசம எண்களுக்கான எளிய சரிபார்ப்பைச் சேர்க்கிறது, அவை நேர்த்தியாக கையாளப்படுவதை உறுதி செய்கிறது (எ.கா., `12.5` என்பது `twelve point five` ஆகிறது). `1.0` அல்லது `1.00` வெறுமனே \"one\" ஆக இருக்க வேண்டும், \"one point zero\" அல்ல என்ற நிகழ்வையும் இது கையாளுகிறது."}
+{"unnormalised": "", "normalised": "5.  **ஆர்டினல் எண்கள்:** தேதி மாற்றத்திற்கு `num2words(day, to='ordinal')` பயன்படுத்தப்படுகிறது, இது \"tenth\", \"first\" போன்றவற்றை உறுதி செய்கிறது."}
+{"unnormalised": "", "normalised": "6.  **பிழை கையாளுதல்:** கோப்பு செயலாக்கத்தின் போது சாத்தியமான `IOError` அல்லது பிற சிக்கல்களைப் பிடிக்கவும், சிக்கலான கோப்புகளைப் பதிவு செய்யவும், அத்தகைய சந்தர்ப்பங்களில் அசல் நகலை நகலெடுக்கவும், `try-except` தொகுதி சேர்க்கப்பட்டுள்ளது."}
+{"unnormalised": "", "normalised": "7.  **`unicodedata`:** இந்த பதிப்பில் `normalize_text` க்கு வெளிப்படையாகப் பயன்படுத்தப்படவில்லை என்றாலும் (`re` பெரும்பாலானவற்றை கையாள்வதால், மேலும் `unicodedata` உரை நியமத்திற்கு அதிகம்), தேவைப்பட்டால், இன்னும் மேம்பட்ட சின்னத்தைக் கையாளுவதற்கு மனதில் வைத்துக்கொள்ள வேண்டிய ஒரு நல்ல கருவியாகும்."}
+{"unnormalised": "", "normalised": "8.  **வெளியீட்டு கோப்புறை பிரதிபலிப்பு:** `os.makedirs(output_folder, exist_ok=True)` மற்றும் `os.path.relpath` சரியான அடைவு கட்டமைப்பை மீண்டும் உருவாக்குகின்றன."}
+{"unnormalised": "", "normalised": "இந்த ஸ்கிரிப்ட் விவரிக்கப்பட்ட இயல்பாக்குதல் பணிகளை உறுதியாக கையாள வேண்டும். மாறுபட்ட உள்ளீட்டு எடுத்துக்காட்டுகளுடன் இதை முழுமையாக சோதிக்க நினைவில் கொள்ளுங்கள்!"}

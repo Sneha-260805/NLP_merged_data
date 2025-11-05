@@ -1,0 +1,351 @@
+{"unnormalised": "సరే, మీ సూచనల ఆధారంగా ఒక బ్లాగ్ పోస్ట్ ఇక్కడ ఉంది.", "normalised": "సరే, మీరు నా నుండి టెక్స్ట్ ఫైల్‌ల సమాహారాన్ని ప్రాసెస్ చేయాలనుకుంటున్నారని నేను అర్థం చేసుకున్నాను. అయితే, మీరు అందించిన ఇన్పుట్ ఒక ఫైల్ లేదా ఫోల్డర్ నిర్మాణం కాకుండా ఒకే బ్లాగ్ పోస్ట్ *టెక్స్ట్‌గా* ఉంది."}
+{"unnormalised": "**అనువాదంలో కోల్పోయాను: భారతీయ చిరునామాలతో నా సాహసాలు (మరియు మీకు GPS ఎందుకు అవసరం)**", "normalised": "ఫైల్‌లను ప్రాసెస్ చేయడం మరియు ఫోల్డర్ నిర్మాణాలను ప్రతిబింబించే మీ అభ్యర్థనను నెరవేర్చడానికి, నేను ఫోల్డర్‌లో వాస్తవ ఫైల్‌లను స్వీకరించాలి."}
+{"unnormalised": "నేను చాలా తెలివైనవాడినని అనుకున్నాను, తెలుసా? నేను ఢిల్లీ మెట్రోలో రద్దీ సమయంలో ప్రయాణించాను, చాందినీ చౌక్‌లో చీరపై ఉత్తమ ధర కోసం బేరం చేశాను, మరియు పాలు లేకుండా చాయ్ ఆర్డర్ చేయగలిగాను (నమ్మండి, ఇది గొప్ప విషయం). కానీ అప్పుడు చిరునామాలు వచ్చాయి. ఓహ్, ఆ చిరునామాలు!", "normalised": "**. మీరు బ్లాగ్ పోస్ట్‌ను ఫోల్డర్‌లోని `.txt` ఫైల్‌గా అందించగలిగితే (ఉదా., `my_data/blog_posts/goa_addresses.txt`), నేను సాధారణీకరణను నిర్వహించడానికి మరియు ప్రతిబింబించే `dataset_normalized` ఫోల్డర్‌ను సృష్టించడానికి పైథాన్ స్క్రిప్ట్‌ను వ్రాసి అమలు చేయగలను.**"}
+{"unnormalised": "నేను గోవాలో ఈ మనోహరమైన చిన్న అతిథి గృహాన్ని కనుగొనే పనిలో ఉన్నాను. ఇది చాలా అందంగా ఉంటుందని అనిపించింది, సరియైనదా? బుకింగ్ నిర్ధారణ సంతోషంగా ఇలా ప్రకటించింది: \"ఆనంద్ విల్లా, H. No. 147/A, సెయింట్ అలెక్స్ చర్చి సమీపంలో, కలాంగుటే, బార్డెజ్, గోవా 403516.\" చాలా సులభం అని నేను అనుకున్నాను. చివరి మాటలు.", "normalised": "**. నేను మీ స్థానిక ఫైల్ సిస్టమ్‌తో నేరుగా సంభాషించలేను కాబట్టి, మీరు అమలు చేయగల పైథాన్ కోడ్‌ను నేను అందిస్తాను.**"}
+{"unnormalised": "మొదట, \"H. No. 147/A.\" ఇది ఇంటి నంబర్ అని నేను అనుకున్నాను. కానీ గోవాలో, ఇది ఖచ్చితమైన గుర్తు కంటే ఒక సలహా మాత్రమే అని తెలుస్తోంది. కొబ్బరి తోట అని నేను అనుకుంటున్న ప్రదేశంలో నేను ఒక గంటసేపు తిరిగాను, \"H. No. 147/A, ఏదైనా స్లాష్ ఏదైనా\" చూశారా అని స్థానికులను అడిగాను. స్పందనలు ఖాళీ చూపుల నుండి సహాయకరమైన (కానీ చివరికి సరికాని) సూచనల వరకు ఉన్నాయి.", "normalised": "---"}
+{"unnormalised": "తర్వాత \"సెయింట్ అలెక్స్ చర్చి సమీపంలో\" అని ఉంది. సెయింట్ అలెక్స్ చర్చి చాలా పెద్ద మైలురాయి. \"సమీపంలో\" అంటే ముందు మెట్ల నుండి కనిపించేంత దగ్గరగా ఉంటుందని మీరు అనుకుంటారు. లేదు. గోవాలో, \"సమీపంలో\" అంటే \"సాధారణ పరిసరాల్లో ఎక్కడో ఒక చోట, బహుశా రిక్షా ప్రయాణం మరియు ఆవుతో సంభాషణ కూడా ఉండవచ్చు.\" చివరికి నేను దానిని కనుగొన్నాను... ఒక్కొక్కరు రూ. 500 వసూలు చేయడానికి ప్రయత్నించిన ముగ్గురు వేర్వేరు ఆటో-రిక్షా వాళ్ళను అడిగిన తర్వాత, అది రూ. 100 ఉండాలి.", "normalised": "**.మీ సాధారణీకరణ లక్ష్యాలను సాధించడానికి ఇక్కడ పైథాన్ స్క్రిప్ట్ ఉంది:**"}
+{"unnormalised": "మరియు \"బార్డెజ్\" గురించి నన్ను అడగవద్దు. అది ఒక పట్టణమా? జిల్లానా? భావనా? నాకు ఇంకా పూర్తిగా తెలియదు. పోస్ట్‌కోడ్, \"403516\" మాత్రమే అర్థవంతంగా ఉంది, మరియు అప్పుడు కూడా, గూగుల్ మ్యాప్స్ నన్ను చూసి నవ్వింది.", "normalised": "ఈ స్క్రిప్ట్:"}
+{"unnormalised": "చివరగా, ఒక చిన్న యాత్రలా అనిపించిన తర్వాత (మరియు చాలా కింగ్‌ఫిషర్ బాటిల్స్ తాగిన తర్వాత), నేను ఆనంద్ విల్లాను కనుగొన్నాను. ఇది నిజంగా చాలా బాగుంది. కానీ ప్రయాణం? నేను ఇప్పుడు \"తప్పిపోయి గందరగోళంగా ఉన్న\" గోవా మాండలికంలో అనర్గళంగా మాట్లాడగలను.", "normalised": "1.  `source_folder` ను ఇన్‌పుట్‌గా తీసుకుంటుంది."}
+{"unnormalised": "కథ యొక్క నీతి ఏమిటంటే? ఎల్లప్పుడూ, *ఎల్లప్పుడూ* GPS కోఆర్డినేట్‌లను కలిగి ఉండండి. మరియు బహుశా స్థానిక SIM కార్డ్ కూడా. మరియు ఖచ్చితంగా హాస్యాన్ని కలిగి ఉండండి. ఎందుకంటే భారతదేశంలో ఒక చిరునామాను కనుగొనడం అనేది ఒక సాహసం కావచ్చు, మరియు కొన్నిసార్లు, మీరు నిస్సహాయంగా, వినోదంగా తప్పిపోయిన కథలే ఉత్తమమైనవి. వచ్చేసారి, నేను నా బుకింగ్ నోట్స్‌లో \"[latitude ఇక్కడ చేర్చండి], రేఖాంశం: [longitude ఇక్కడ చేర్చండి]\" అని పెడుతున్నాను. వారు ఎంత గందరగోళానికి గురవుతారో చూద్దాం!", "normalised": "2.  అన్ని సబ్‌ఫోల్డర్‌ల ద్వారా పునరావృతంగా నడుస్తుంది."}
+{"unnormalised": "", "normalised": "3.  ప్రతి `.txt` ఫైల్ కోసం, పేర్కొన్న సాధారణీకరణ నియమాలన్నింటినీ వర్తింపజేస్తుంది."}
+{"unnormalised": "", "normalised": "4.  అసలైన ఫోల్డర్ నిర్మాణాన్ని కొనసాగిస్తూ, సాధారణీకరించబడిన `.txt` ఫైల్‌ను `destination_folder` (ఉదా., `dataset_normalized`) కు సేవ్ చేస్తుంది."}
+{"unnormalised": "", "normalised": "5.  `.txt` కాని ఫైళ్ళను మార్పు లేకుండా గమ్యానికి కాపీ చేస్తుంది."}
+{"unnormalised": "", "normalised": "6.  సాధారణీకరించబడని `.txt` ఫైళ్ళ పేర్లను ముద్రిస్తుంది (ప్రస్తుత తర్కంతో, అన్ని `.txt` ఫైళ్ళను ప్రయత్నిస్తారు)."}
+{"unnormalised": "", "normalised": "```python"}
+{"unnormalised": "", "normalised": "import re"}
+{"unnormalised": "", "normalised": "import os"}
+{"unnormalised": "", "normalised": "import shutil"}
+{"unnormalised": "", "normalised": "import inflect"}
+{"unnormalised": "", "normalised": "# సంఖ్యను పద మార్పిడి కోసం ఇన్ఫ్లెక్ట్ ఇంజిన్‌ను ప్రారంభించండి"}
+{"unnormalised": "", "normalised": "p = inflect.engine()"}
+{"unnormalised": "", "normalised": "# --- సాధారణీకరణ కోసం సహాయక విధులు ---"}
+{"unnormalised": "", "normalised": "def number_to_words(number_str):"}
+{"unnormalised": "", "normalised": "    \"\"\"సంఖ్య స్ట్రింగ్‌ను దాని మాట్లాడే ఆంగ్ల రూపానికి మారుస్తుంది.\"\"\""}
+{"unnormalised": "", "normalised": "    try:"}
+{"unnormalised": "", "normalised": "        # దశాంశాలను నిర్వహించండి"}
+{"unnormalised": "", "normalised": "        if '.' in number_str:"}
+{"unnormalised": "", "normalised": "            parts = number_str.split('.')"}
+{"unnormalised": "", "normalised": "            whole = p.number_to_words(int(parts[0])) if parts[0] else ''"}
+{"unnormalised": "", "normalised": "            decimal = 'point ' + ' '.join(p.number_to_words(int(d)) for d in parts[1]) if parts[1] else ''"}
+{"unnormalised": "", "normalised": "            return (f\"{whole} {decimal}\").strip()"}
+{"unnormalised": "", "normalised": "        else:"}
+{"unnormalised": "", "normalised": "            return p.number_to_words(int(number_str))"}
+{"unnormalised": "", "normalised": "    except ValueError:"}
+{"unnormalised": "", "normalised": "        return number_str # చెల్లుబాటు అయ్యే సంఖ్య కాకపోతే అసలైనదాన్ని తిరిగి ఇవ్వండి (ఉదా., ఇప్పటికే పదాలను కలిగి ఉంది)"}
+{"unnormalised": "", "normalised": "def normalize_symbols(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"సాధారణ చిహ్నాలను వాటి మాట్లాడే రూపంతో భర్తీ చేస్తుంది.\"\"\""}
+{"unnormalised": "", "normalised": "    # కొన్ని ప్రత్యామ్నాయాల కోసం క్రమం ముఖ్యం"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'≠', ' not equal to ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'≤', ' less than or equal to ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'≥', ' greater than or equal to ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'√', ' square root of ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'%', ' percent ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\+', ' plus ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'=', ' equals ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'@', ' at ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'&', ' and ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'#', ' hash ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\*', ' asterisk ', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'~', ' approximately ', text)"}
+{"unnormalised": "", "normalised": "    # సందర్భాన్ని బట్టి \"/\" ని జాగ్రత్తగా నిర్వహించండి"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\b[a-zA-Z]+)/([a-zA-Z]+\\b)', r'\\1 or \\2', text) # పదం/పదం -> పదం లేదా పదం"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\b[A-Z0-9]+)/([A-Z0-9]+\\b)', r'\\1 slash \\2', text) # సంక్షిప్త రూపం/సంక్షిప్తీకరణ -> సంక్షిప్త రూపం స్లాష్ సంక్షిప్తీకరణ"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\d+)/(\\d+)', r'\\1 divided by \\2', text) # సంఖ్య/సంఖ్య -> సంఖ్య ద్వారా భాగించబడిన సంఖ్య"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(?<!\\s)/', ' slash ', text) # మిగిలిన స్లాష్‌లను పట్టుకోండి (ఉదా., పాత్, పైన పట్టుకోని మిశ్రమ కేసు)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'°C', ' degree celsius ', text) # డిగ్రీ సెల్సియస్ మొదట"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def normalize_acronyms(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"సంక్షిప్త పదాలను హైఫన్ అక్షరాలుగా మారుస్తుంది.\"\"\""}
+{"unnormalised": "", "normalised": "    def replace_acronym(match):"}
+{"unnormalised": "", "normalised": "        acronym = match.group(0)"}
+{"unnormalised": "", "normalised": "        # ఇది ఒకే అక్షరం కాదని లేదా సాధారణ సంకోచం కాదని నిర్ధారించుకోండి (ఉదా., I'M)"}
+{"unnormalised": "", "normalised": "        if len(acronym) > 1 and not (acronym.isupper() and len(acronym) == 1):"}
+{"unnormalised": "", "normalised": "             # హియురిస్టిక్: ఇది ఒక పదంగా ఉండే అవకాశం ఉంటే విభజించకుండా ఉండండి (ఉదా., \"IT\" అంటే \"it is\")"}
+{"unnormalised": "", "normalised": "             # ఇది కష్టమైన సమస్య; సాధారణ రెజెక్స్ అధిక దూకుడుగా ఉంటుంది."}
+{"unnormalised": "", "normalised": "             # ప్రస్తుతానికి, నియమానికి కట్టుబడి ఉండండి: 2+ వరుస పెద్ద అక్షరాలు."}
+{"unnormalised": "", "normalised": "            return '-'.join(list(acronym))"}
+{"unnormalised": "", "normalised": "        return acronym"}
+{"unnormalised": "", "normalised": "    # చుక్కలతో 2 లేదా అంతకంటే ఎక్కువ వరుస పెద్ద అక్షరాలను కనుగొనండి"}
+{"unnormalised": "", "normalised": "    # సాధ్యమైనంతవరకు \"IT\" వంటి సాధారణ పదాలను విభజించకుండా ఉండటానికి ప్రతికూల లుక్‌బిహైండ్/లుక్‌హెడ్ ఉపయోగించడం,"}
+{"unnormalised": "", "normalised": "    # కానీ నియమం కఠినమైనది: \"2+ వరుస పెద్ద అక్షరాలు\"."}
+{"unnormalised": "", "normalised": "    # ఈ రెజెక్స్ 2+ వరుస పెద్ద అక్షరాల గురించి ఖచ్చితంగా ఉంటుంది, చుక్కలు వెలికితీసిన తర్వాత నిర్వహించబడతాయి."}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b([A-Z][A-Z\\.]*[A-Z])\\b', replace_acronym, text)"}
+{"unnormalised": "", "normalised": "    text = text.replace('.', '') # ప్రాసెసింగ్ తర్వాత సంక్షిప్త పదాల లోపల నుండి చుక్కలను తొలగించండి"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def normalize_numbers(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"స్వతంత్ర సంఖ్యలను మరియు యూనిట్లు/కరెన్సీలోని సంఖ్యలను మాట్లాడే రూపానికి మారుస్తుంది.\"\"\""}
+{"unnormalised": "", "normalised": "    def replace_num(match):"}
+{"unnormalised": "", "normalised": "        num_str = match.group(1)"}
+{"unnormalised": "", "normalised": "        return number_to_words(num_str)"}
+{"unnormalised": "", "normalised": "    # పదాలలో సంఖ్యలను మార్చండి (ఉదా., H. No. 147)"}
+{"unnormalised": "", "normalised": "    # ఈ నమూనా పెద్ద ఐడెంటిఫైయర్‌లో భాగమైన సంఖ్యలను పట్టుకోవడానికి ప్రయత్నిస్తుంది"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\bH\\. No\\. )(\\d+)', lambda m: f\"{m.group(1)}{number_to_words(m.group(2))}\", text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\b[A-Z])(\\d+)', lambda m: f\"{m.group(1)}{number_to_words(m.group(2))}\", text)"}
+{"unnormalised": "", "normalised": "    # సాధారణ సంఖ్య భర్తీ - యూనిట్లు/కరెన్సీని రెండుసార్లు ప్రాసెస్ చేయకుండా ఉండటానికి జాగ్రత్తగా నిర్వహించాలి"}
+{"unnormalised": "", "normalised": "    # ఇది స్వతంత్ర సంఖ్యలను లేదా ఇప్పటికే నిర్వహించబడిన యూనిట్/కరెన్సీలో భాగం కాని సంఖ్యలను పట్టుకుంటుంది"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b(\\d+)\\b', replace_num, text)"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def normalize_numeric_suffixes(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"K, M, B, T ప్రత్యయాలను విస్తరిస్తుంది.\"\"\""}
+{"unnormalised": "", "normalised": "    def replace_suffix(match):"}
+{"unnormalised": "", "normalised": "        num = number_to_words(match.group(1))"}
+{"unnormalised": "", "normalised": "        suffix = match.group(2).lower()"}
+{"unnormalised": "", "normalised": "        if suffix == 'k': return f\"{num} thousand\""}
+{"unnormalised": "", "normalised": "        if suffix == 'm': return f\"{num} million\""}
+{"unnormalised": "", "normalised": "        if suffix == 'b': return f\"{num} billion\""}
+{"unnormalised": "", "normalised": "        if suffix == 't': return f\"{num} trillion\""}
+{"unnormalised": "", "normalised": "        return match.group(0) # జరగకూడదు"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\d+)([KMBT])\\b', replace_suffix, text)"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def normalize_currency_number_suffix(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"కరెన్సీని సంఖ్య మరియు ప్రత్యయంతో కలుపుతుంది.\"\"\""}
+{"unnormalised": "", "normalised": "    def replace_currency_suffix(match):"}
+{"unnormalised": "", "normalised": "        currency_symbol = match.group(1)"}
+{"unnormalised": "", "normalised": "        num_str = match.group(2)"}
+{"unnormalised": "", "normalised": "        suffix = match.group(3)"}
+{"unnormalised": "", "normalised": "        currency_word = \"\""}
+{"unnormalised": "", "normalised": "        if currency_symbol == '$': currency_word = 'dollar'"}
+{"unnormalised": "", "normalised": "        elif currency_symbol == '₹': currency_word = 'rupee'"}
+{"unnormalised": "", "normalised": "        # అవసరమైన విధంగా మరిన్ని కరెన్సీలను జోడించండి"}
+{"unnormalised": "", "normalised": "        num_words = number_to_words(num_str)"}
+{"unnormalised": "", "normalised": "        suffix_word = \"\""}
+{"unnormalised": "", "normalised": "        if suffix.lower() == 'k': suffix_word = 'thousand'"}
+{"unnormalised": "", "normalised": "        elif suffix.lower() == 'm': suffix_word = 'million'"}
+{"unnormalised": "", "normalised": "        elif suffix.lower() == 'b': suffix_word = 'billion'"}
+{"unnormalised": "", "normalised": "        elif suffix.lower() == 't': suffix_word = 'trillion'"}
+{"unnormalised": "", "normalised": "        return f\"{currency_word} {num_words} {suffix_word}\""}
+{"unnormalised": "", "normalised": "    # కరెన్సీ గుర్తు తర్వాత సంఖ్య మరియు ప్రత్యయం కోసం నమూనా"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'([$₹€£])(\\d+)([KMBT])\\b', replace_currency_suffix, text)"}
+{"unnormalised": "", "normalised": "    # ప్రత్యయం లేని కరెన్సీ + సంఖ్యను కూడా నిర్వహించండి (ప్రత్యయ నియమం తర్వాత చేయాలి)"}
+{"unnormalised": "", "normalised": "    def replace_currency_num(match):"}
+{"unnormalised": "", "normalised": "        currency_symbol = match.group(1)"}
+{"unnormalised": "", "normalised": "        num_str = match.group(2)"}
+{"unnormalised": "", "normalised": "        currency_word = \"\""}
+{"unnormalised": "", "normalised": "        if currency_symbol == '$': currency_word = 'dollar'"}
+{"unnormalised": "", "normalised": "        elif currency_symbol == '₹': currency_word = 'rupee'"}
+{"unnormalised": "", "normalised": "        # అవసరమైన విధంగా మరిన్ని కరెన్సీలను జోడించండి"}
+{"unnormalised": "", "normalised": "        num_words = number_to_words(num_str)"}
+{"unnormalised": "", "normalised": "        return f\"{currency_word} {num_words}\""}
+{"unnormalised": "", "normalised": "    text = re.sub(r'([$₹€£])(\\d+)\\b', replace_currency_num, text)"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def normalize_dates(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"సంఖ్యా తేదీలను సహజంగా మాట్లాడే ఆకృతిలోకి మారుస్తుంది (అస్పష్టత కోసం DD/MM/YYYY అని అనుకుంటారు).\"\"\""}
+{"unnormalised": "", "normalised": "    # DD-MM-YYYY లేదా DD/MM/YYYY"}
+{"unnormalised": "", "normalised": "    def replace_date_dmy(match):"}
+{"unnormalised": "", "normalised": "        day = int(match.group(1))"}
+{"unnormalised": "", "normalised": "        month = int(match.group(2))"}
+{"unnormalised": "", "normalised": "        year = int(match.group(3))"}
+{"unnormalised": "", "normalised": "        months = ["}
+{"unnormalised": "", "normalised": "            \"\", \"జనవరి\", \"ఫిబ్రవరి\", \"మార్చి\", \"ఏప్రిల్\", \"మే\", \"జూన్\","}
+{"unnormalised": "", "normalised": "            \"జూలై\", \"ఆగస్టు\", \"సెప్టెంబర్\", \"అక్టోబర్\", \"నవంబర్\", \"డిసెంబర్\""}
+{"unnormalised": "", "normalised": "        ]"}
+{"unnormalised": "", "normalised": "        return f\"{p.ordinal(day)} {months[month]} {number_to_words(str(year))}\""}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b(\\d{1,2})[-/](\\d{1,2})[-/](\\d{4})\\b', replace_date_dmy, text)"}
+{"unnormalised": "", "normalised": "    # YYYY-MM-DD"}
+{"unnormalised": "", "normalised": "    def replace_date_ymd(match):"}
+{"unnormalised": "", "normalised": "        year = int(match.group(1))"}
+{"unnormalised": "", "normalised": "        month = int(match.group(2))"}
+{"unnormalised": "", "normalised": "        day = int(match.group(3))"}
+{"unnormalised": "", "normalised": "        months = ["}
+{"unnormalised": "", "normalised": "            \"\", \"జనవరి\", \"ఫిబ్రవరి\", \"మార్చి\", \"ఏప్రిల్\", \"మే\", \"జూన్\","}
+{"unnormalised": "", "normalised": "            \"జూలై\", \"ఆగస్టు\", \"సెప్టెంబర్\", \"అక్టోబర్\", \"నవంబర్\", \"డిసెంబర్\""}
+{"unnormalised": "", "normalised": "        ]"}
+{"unnormalised": "", "normalised": "        return f\"{p.ordinal(day)} {months[month]} {number_to_words(str(year))}\""}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b(\\d{4})[-/](\\d{1,2})[-/](\\d{1,2})\\b', replace_date_ymd, text)"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def normalize_units(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"యూనిట్లను పూర్తి పదాలుగా విస్తరిస్తుంది.\"\"\""}
+{"unnormalised": "", "normalised": "    def replace_unit(match):"}
+{"unnormalised": "", "normalised": "        num_str = match.group(1)"}
+{"unnormalised": "", "normalised": "        unit = match.group(2).lower()"}
+{"unnormalised": "", "normalised": "        num_words = number_to_words(num_str)"}
+{"unnormalised": "", "normalised": "        unit_map = {"}
+{"unnormalised": "", "normalised": "            'cm': 'సెంటీమీటర్', 'mm': 'మిల్లీమీటర్', 'm': 'మీటర్', 'km': 'కిలోమీటర్',"}
+{"unnormalised": "", "normalised": "            'g': 'గ్రామ్', 'kg': 'కిలోగ్రామ్', 'mg': 'మిల్లీగ్రామ్',"}
+{"unnormalised": "", "normalised": "            'ml': 'మిల్లీలీటర్', 'l': 'లీటరు', 'kph': 'గంటకు కిలోమీటర్లు',"}
+{"unnormalised": "", "normalised": "            'mph': 'గంటకు మైళ్ళు', 'hz': 'హెర్ట్జ్', 'khz': 'కిలోహెర్ట్జ్',"}
+{"unnormalised": "", "normalised": "            'mhz': 'మెగాహెర్ట్జ్', 'ghz': 'గిగాహెర్ట్జ్', 'mb': 'మెగాబైట్',"}
+{"unnormalised": "", "normalised": "            'gb': 'గిగాబైట్', 'tb': 'టెరాబైట్', 'kb': 'కిలోబైట్',"}
+{"unnormalised": "", "normalised": "            'sec': 'సెకను', 'min': 'నిమిషం', 'hr': 'గంట',"}
+{"unnormalised": "", "normalised": "            'usd': 'యు-ఎస్ డాలర్', 'eur': 'యూరో', 'gbp': 'బ్రిటిష్ పౌండ్',"}
+{"unnormalised": "", "normalised": "            'ft': 'అడుగు', 'in': 'అంగుళం', 'yd': 'గజం', 'sqm': 'చదరపు మీటరు',"}
+{"unnormalised": "", "normalised": "            'sqkm': 'చదరపు కిలోమీటరు', 'sqft': 'చదరపు అడుగు',"}
+{"unnormalised": "", "normalised": "            'c': 'సెల్సియస్', # °C కోసం ప్రత్యేక నిర్వహణ ఇంతకు ముందు, కానీ C కోసం మాత్రమే, ఇది అస్పష్టంగా ఉంది. డిగ్రీ అని అనుకుంటారు."}
+{"unnormalised": "", "normalised": "            'f': 'ఫారెన్‌హీట్' # 'F' కోసం డిగ్రీ అని అనుకుంటారు"}
+{"unnormalised": "", "normalised": "        }"}
+{"unnormalised": "", "normalised": "        # °C కోసం ప్రత్యేక సందర్భం, చిహ్నాలలో ఇంతకు ముందు నిర్వహించబడింది."}
+{"unnormalised": "", "normalised": "        if unit == 'c':"}
+{"unnormalised": "", "normalised": "             # సంఖ్య ముందు ఉంటే, \"డిగ్రీ సెల్సియస్\" అని అనుకోండి"}
+{"unnormalised": "", "normalised": "            if re.search(r'\\b\\d+\\s*$', match.string[:match.start()], re.IGNORECASE):"}
+{"unnormalised": "", "normalised": "                return f\"{num_words} డిగ్రీ సెల్సియస్\""}
+{"unnormalised": "", "normalised": "            return f\"{num_words} {unit_map.get(unit, unit)}\""}
+{"unnormalised": "", "normalised": "        return f\"{num_words} {unit_map.get(unit, unit)}\""}
+{"unnormalised": "", "normalised": "    # ఈ రెజెక్స్ వివిధ యూనిట్లకు బలంగా ఉంటుంది మరియు యూనిట్‌కు ముందు సంఖ్యను నిర్ధారిస్తుంది"}
+{"unnormalised": "", "normalised": "    # ఇది సంఖ్యను మరియు యూనిట్‌ను విడివిడిగా సంగ్రహించడానికి ప్రయత్నిస్తుంది"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b(\\d+(?:\\.\\d+)?)\\s*(cm|mm|m|km|g|kg|mg|ml|l|kph|mph|hz|khz|mhz|ghz|mb|gb|tb|kb|sec|min|hr|usd|eur|gbp|ft|in|yd|sqm|sqkm|sqft|[CF])\\b', replace_unit, text, flags=re.IGNORECASE)"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def normalize_mathematical_notation(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"గణిత చిహ్నాలు మరియు వ్యక్తీకరణలను మాట్లాడే రూపానికి మారుస్తుంది.\"\"\""}
+{"unnormalised": "", "normalised": "    # క్రమం ముఖ్యం. మరింత నిర్దిష్ట నమూనాలు మొదట."}
+{"unnormalised": "", "normalised": "    # a నుండి b వరకు సమగ్రం"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'∫\\s*(\\d+)→(\\d+)\\s*(.*?)\\s*d([a-zA-Z])',"}
+{"unnormalised": "", "normalised": "                  lambda m: f\"{number_to_words(m.group(1))} నుండి {number_to_words(m.group(2))} వరకు {m.group(3).strip()} d {m.group(4)} యొక్క సమగ్రం\","}
+{"unnormalised": "", "normalised": "                  text)"}
+{"unnormalised": "", "normalised": "    # సాధారణ సమగ్రం"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'∫\\s*(.*?)\\s*d([a-zA-Z])',"}
+{"unnormalised": "", "normalised": "                  lambda m: f\"{m.group(1).strip()} d {m.group(2)} యొక్క సమగ్రం\","}
+{"unnormalised": "", "normalised": "                  text)"}
+{"unnormalised": "", "normalised": "    # అధికారాలు (x^2, x^3, x^n)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'([a-zA-Z])\\^2', r'\\1 వర్గీకరించబడింది', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'([a-zA-Z])\\^3', r'\\1 ఘనీభవించబడింది', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'([a-zA-Z])\\^([a-zA-Z0-9]+)', r'\\1 యొక్క శక్తికి \\2', text) # x^n"}
+{"unnormalised": "", "normalised": "    # పై r వర్గీకరించబడింది (నిర్దిష్ట సందర్భం)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'πr\\^2', 'పై r వర్గీకరించబడింది', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'π([a-zA-Z])\\^2', r'పై \\1 వర్గీకరించబడింది', text) # పై a^2 కోసం"}
+{"unnormalised": "", "normalised": "    # వర్గ మూలం"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'√([a-zA-Z0-9]+)', r'\\1 యొక్క వర్గ మూలం', text)"}
+{"unnormalised": "", "normalised": "    # సంకలనం (Σ x_i)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'Σ\\s*([a-zA-Z])_([a-zA-Z0-9]+)', r'\\1 సబ్ \\2 యొక్క సంకలనం', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'Σ\\s*([a-zA-Z])', r'\\1 యొక్క సంకలనం', text)"}
+{"unnormalised": "", "normalised": "    # సబ్‌స్క్రిప్ట్‌లు (x_i) - ఇది ఇతర నమూనాలతో వైరుధ్యంగా లేదని నిర్ధారించుకోండి"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'([a-zA-Z])_([a-zA-Z0-9]+)', r'\\1 సబ్ \\2', text)"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def normalize_text(text):"}
+{"unnormalised": "", "normalised": "    \"\"\"అన్ని సాధారణీకరణ నియమాలను తార్కిక క్రమంలో వర్తింపజేస్తుంది.\"\"\""}
+{"unnormalised": "", "normalised": "    # 1. గణిత సంజ్ఞామానం (మొదట నిర్దిష్ట వ్యక్తీకరణలు)"}
+{"unnormalised": "", "normalised": "    text = normalize_mathematical_notation(text)"}
+{"unnormalised": "", "normalised": "    # 2. చిహ్నాలు (గణిత చిహ్నాల తర్వాత 3/4 వంటి భిన్నాలు ఉన్నాయి)"}
+{"unnormalised": "", "normalised": "    text = normalize_symbols(text)"}
+{"unnormalised": "", "normalised": "    # 3. సంఖ్యా ప్రత్యయాలు (ఉదా., K, M, B, T)"}
+{"unnormalised": "", "normalised": "    text = normalize_numeric_suffixes(text)"}
+{"unnormalised": "", "normalised": "    # 4. కరెన్సీ + సంఖ్య + ప్రత్యయం"}
+{"unnormalised": "", "normalised": "    text = normalize_currency_number_suffix(text)"}
+{"unnormalised": "", "normalised": "    # 5. తేదీలు"}
+{"unnormalised": "", "normalised": "    text = normalize_dates(text)"}
+{"unnormalised": "", "normalised": "    # 6. యూనిట్లు (సాధారణ సంఖ్య మార్పిడికి ముందు రావాలి)"}
+{"unnormalised": "", "normalised": "    text = normalize_units(text)"}
+{"unnormalised": "", "normalised": "    # 7. సంక్షిప్త పదాలు (\"USA\" ను \"U-S-A\" గా విభజించకుండా ఉండటానికి సంఖ్యల ముందు)"}
+{"unnormalised": "", "normalised": "    text = normalize_acronyms(text)"}
+{"unnormalised": "", "normalised": "    # 8. సాధారణ సంఖ్యలు (మిగిలిన సంఖ్యలను పట్టుకోవడానికి చివరిది)"}
+{"unnormalised": "", "normalised": "    text = normalize_numbers(text)"}
+{"unnormalised": "", "normalised": "    # తుది శుభ్రపరచడం"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\s+', ' ', text).strip() # ఖాళీలను సాధారణీకరించండి"}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def process_folder(source_folder, destination_folder):"}
+{"unnormalised": "", "normalised": "    \"\"\""}
+{"unnormalised": "", "normalised": "    మూలం ఫోల్డర్ ద్వారా నడుస్తుంది, .txt ఫైళ్ళను సాధారణీకరిస్తుంది,"}
+{"unnormalised": "", "normalised": "    మరియు ఇతర ఫైళ్ళను గమ్య ఫోల్డర్‌కు కాపీ చేస్తుంది."}
+{"unnormalised": "", "normalised": "    \"\"\""}
+{"unnormalised": "", "normalised": "    if os.path.exists(destination_folder):"}
+{"unnormalised": "", "normalised": "        print(f\"గమ్య ఫోల్డర్ '{destination_folder}' ఇప్పటికే ఉంది. తొలగించి, తిరిగి సృష్టిస్తున్నాను.\")"}
+{"unnormalised": "", "normalised": "        shutil.rmtree(destination_folder)"}
+{"unnormalised": "", "normalised": "    os.makedirs(destination_folder)"}
+{"unnormalised": "", "normalised": "    print(f\"గమ్య ఫోల్డర్‌ను సృష్టించాను: {destination_folder}\")"}
+{"unnormalised": "", "normalised": "    సాధారణీకరించబడిన సంఖ్య = 0"}
+{"unnormalised": "", "normalised": "    కాపీ చేయబడిన సంఖ్య = 0"}
+{"unnormalised": "", "normalised": "    సాధారణీకరించబడని _txt_ఫైళ్లు = [] # ఇది ప్రస్తుత తర్కంతో ఖాళీగా ఉంటుంది, ఎందుకంటే అన్ని ప్రాసెస్ చేయబడతాయి"}
+{"unnormalised": "", "normalised": "    for root, _, files in os.walk(source_folder):"}
+{"unnormalised": "", "normalised": "        relative_path = os.path.relpath(root, source_folder)"}
+{"unnormalised": "", "normalised": "        current_dest_dir = os.path.join(destination_folder, relative_path)"}
+{"unnormalised": "", "normalised": "        os.makedirs(current_dest_dir, exist_ok=True)"}
+{"unnormalised": "", "normalised": "        for filename in files:"}
+{"unnormalised": "", "normalised": "            source_file_path = os.path.join(root, filename)"}
+{"unnormalised": "", "normalised": "            dest_file_path = os.path.join(current_dest_dir, filename)"}
+{"unnormalised": "", "normalised": "            if filename.lower().endswith('.txt'):"}
+{"unnormalised": "", "normalised": "                try:"}
+{"unnormalised": "", "normalised": "                    with open(source_file_path, 'r', encoding='utf-8') as f:"}
+{"unnormalised": "", "normalised": "                        content = f.read()"}
+{"unnormalised": "", "normalised": "                    normalized_content = normalize_text(content)"}
+{"unnormalised": "", "normalised": "                    with open(dest_file_path, 'w', encoding='utf-8') as f:"}
+{"unnormalised": "", "normalised": "                        f.write(normalized_content)"}
+{"unnormalised": "", "normalised": "                    normalized_count += 1"}
+{"unnormalised": "", "normalised": "                    # print(f\"సాధారణీకరించబడింది: {source_file_path}\")"}
+{"unnormalised": "", "normalised": "                except Exception as e:"}
+{"unnormalised": "", "normalised": "                    print(f\"సాధారణీకరించడంలో లోపం {source_file_path}: {e}\")"}
+{"unnormalised": "", "normalised": "                    not_normalized_txt_files.append(source_file_path)"}
+{"unnormalised": "", "normalised": "                    # లోపం ఉంటే, కోరుకున్న లోపం నిర్వహణను బట్టి ఉన్నట్లుగా కాపీ చేయండి లేదా ఖాళీగా ఉంచండి"}
+{"unnormalised": "", "normalised": "                    shutil.copy2(source_file_path, dest_file_path)"}
+{"unnormalised": "", "normalised": "            else:"}
+{"unnormalised": "", "normalised": "                shutil.copy2(source_file_path, dest_file_path)"}
+{"unnormalised": "", "normalised": "                copied_count += 1"}
+{"unnormalised": "", "normalised": "                # print(f\"కాపీ చేయబడింది (మార్పు లేకుండా): {source_file_path}\")"}
+{"unnormalised": "", "normalised": "    print(f\"\\n--- ప్రాసెసింగ్ సారాంశం ---\")"}
+{"unnormalised": "", "normalised": "    print(f\"సాధారణీకరించబడిన టెక్స్ట్ ఫైళ్లు: {normalized_count}\")"}
+{"unnormalised": "", "normalised": "    print(f\"కాపీ చేయబడిన ఇతర ఫైళ్లు: {copied_count}\")"}
+{"unnormalised": "", "normalised": "    if not_normalized_txt_files:"}
+{"unnormalised": "", "normalised": "        print(\"\\nలోపాల కారణంగా *సాధారణీకరించబడని* ఫైళ్లు (ఉన్నట్లుగా కాపీ చేయబడింది):\")"}
+{"unnormalised": "", "normalised": "        for f in not_normalized_txt_files:"}
+{"unnormalised": "", "normalised": "            print(f\"- {f}\")"}
+{"unnormalised": "", "normalised": "    else:"}
+{"unnormalised": "", "normalised": "        print(\"అన్ని .txt ఫైళ్లు విజయవంతంగా ప్రాసెస్ చేయబడ్డాయి.\")"}
+{"unnormalised": "", "normalised": "# --- ప్రధాన అమలు బ్లాక్ ---"}
+{"unnormalised": "", "normalised": "if __name__ == \"__main__\":"}
+{"unnormalised": "", "normalised": "    # ప్రదర్శన కోసం ఒక డమ్మీ సోర్స్ ఫోల్డర్ మరియు ఫైల్‌ను సృష్టించండి"}
+{"unnormalised": "", "normalised": "    # నిజమైన దృష్టాంతంలో, మీరు source_folder ను మీ వాస్తవ డేటాకు సూచిస్తారు."}
+{"unnormalised": "", "normalised": "    dummy_source_folder = 'dataset_raw'"}
+{"unnormalised": "", "normalised": "    dummy_destination_folder = 'dataset_normalized'"}
+{"unnormalised": "", "normalised": "    dummy_txt_filepath = os.path.join(dummy_source_folder, 'blog_posts', 'goa_addresses.txt')"}
+{"unnormalised": "", "normalised": "    dummy_image_filepath = os.path.join(dummy_source_folder, 'images', 'beach.jpg')"}
+{"unnormalised": "", "normalised": "    # డమ్మీ సోర్స్ డైరెక్టరీలు ఉన్నాయని నిర్ధారించుకోండి"}
+{"unnormalised": "", "normalised": "    os.makedirs(os.path.dirname(dummy_txt_filepath), exist_ok=True)"}
+{"unnormalised": "", "normalised": "    os.makedirs(os.path.dirname(dummy_image_filepath), exist_ok=True)"}
+{"unnormalised": "", "normalised": "    # మీ బ్లాగ్ పోస్ట్ యొక్క కంటెంట్"}
+{"unnormalised": "", "normalised": "    blog_post_content = \"\"\""}
+{"unnormalised": "", "normalised": "    అనువాదంలో తప్పిపోయింది: భారతీయ చిరునామాలతో నా సాహసాలు (మరియు మీకు GPS ఎందుకు అవసరం)"}
+{"unnormalised": "", "normalised": "    కాబట్టి, నేను చాలా తెలివైనవాడినని అనుకున్నాను, మీకు తెలుసా? నేను పీక్ అవర్స్‌లో ఢిల్లీ మెట్రోలో తిరిగాను, చాందినీ చౌక్‌లో చీరపై ఉత్తమ ధర కోసం బేరం చేశాను, మరియు పాలలో పాలు రాకుండా చాయ్ ఆర్డర్ చేయగలిగాను (విశ్వసించండి, అది ఒక సాహసం). కానీ అప్పుడు చిరునామాలు వచ్చాయి. ఓహ్, చిరునామాలు!"}
+{"unnormalised": "", "normalised": "    నేను గోవాలోని ఈ మనోహరమైన చిన్న అతిథి గృహాన్ని కనుగొనే పనిలో ఉన్నానని నేను సన్నివేశాన్ని సెట్ చేస్తాను. అది చాలా ఆనందంగా ఉంది, కాదా? బుకింగ్ నిర్ధారణ సంతోషంగా ప్రకటించింది: \"ఆనంద్ విల్లా, హెచ్. నం. 147/ఎ, సెయింట్ అలెక్స్ చర్చి సమీపంలో, కలాంగుట్, బార్డెజ్, గోవా 403516.\" తగినంత సులభం, నేను అనుకున్నాను. ప్రసిద్ధ చివరి పదాలు."}
+{"unnormalised": "", "normalised": "    మొదట, \"హెచ్. నం. 147/ఎ.\" ఇది ఇంటి సంఖ్య అని నేను అనుకున్నాను, దహ్. కానీ అయ్యో కాదు, గోవాలో, ఇది కాంక్రీట్ మార్కర్ కంటే ఎక్కువ సూచనగా అనిపిస్తుంది. కొబ్బరి తోట అని నేను ఖచ్చితంగా అనుకుంటున్న దాని చుట్టూ తిరుగుతూ, \"హెచ్. నం. 147/ఎ, ఏదైనా స్లాష్ ఏదైనా ఉంటే\" అని స్థానికులను అడుగుతూ నేను ఒక గంట గడిపాను. ప్రతిస్పందనలు ఖాళీ చూపుల నుండి సహాయకరమైన (కానీ చివరికి సరికాని) ఆదేశాల వరకు ఉన్నాయి."}
+{"unnormalised": "", "normalised": "    అప్పుడు \"సెయింట్ అలెక్స్ చర్చి సమీపంలో\" ఉంది. ఇప్పుడు, సెయింట్ అలెక్స్ చర్చి చాలా పెద్ద మైలురాయి. \"సమీపంలో\" అంటే ముందు మెట్ల నుండి కనిపించే విధంగా ఉంటుందని మీరు అనుకుంటారు. లేదు. గోవాలో, \"సమీపంలో\" అంటే \"సాధారణ పరిసరాల్లో ఎక్కడో, బహుశా రిక్షా రైడ్ మరియు ఆవుతో సంభాషణ ఉంటుంది.\" నేను చివరికి దాన్ని కనుగొన్నాను... ప్రతి ఒక్కరూ రూ. 500 వసూలు చేయడానికి ప్రయత్నించిన 3 వేర్వేరు ఆటో-రిక్షా వల్లాహ్లను అడిగిన తర్వాత ఇది రూ. 100 ఖర్చు అవుతుంది."}
+{"unnormalised": "", "normalised": "    మరియు \"బార్డెజ్\" గురించి నన్ను ప్రారంభించవద్దు. అది పట్టణమా? జిల్లానా? అనుభూతి నా? నాకు ఇంకా పూర్తిగా తెలియదు. పిన్‌కోడ్, \"403516,\" మాత్రమే అర్థం చేసుకుంది, ఆపై కూడా, గూగుల్ మ్యాప్స్ నాపై నవ్వింది."}
+{"unnormalised": "", "normalised": "    చివరగా, ఒక చిన్న యాత్రలా అనిపించిన తర్వాత (మరియు కింగ్‌ఫిషర్ సీసాలు), నేను ఆనంద్ విల్లాపైకి వచ్చాను. ఇది చాలా మనోహరంగా ఉంది, నిజంగా. కానీ ప్రయాణం? నేను ఇప్పుడు గోవా యాసలో \"తప్పిపోయి గందరగోళంగా ఉన్నాను\" అని అనర్గళంగా చెప్పగలను."}
+{"unnormalised": "", "normalised": "    కథ యొక్క నీతి? ఎల్లప్పుడూ, *ఎల్లప్పుడూ* GPS కోఆర్డినేట్‌లను కలిగి ఉండండి. మరియు బహుశా స్థానిక సిమ్ కార్డు. మరియు ఖచ్చితంగా హాస్యం యొక్క భావం. భారతదేశంలో చిరునామాను కనుగొనడం అనేది ఒక సాహసంగా ఉంటుంది, మరియు కొన్నిసార్లు, మీరు నిస్సహాయంగా, ఉల్లాసంగా తప్పిపోయే ఉత్తమ కథలు. వచ్చేసారి, నేను నా బుకింగ్ నోట్స్‌లో \"అక్షాంశం: [అక్షాంశాన్ని ఇక్కడ చేర్చండి], రేఖాంశం: [రేఖాంశాన్ని ఇక్కడ చేర్చండి]\" అని వ్రాస్తున్నాను. *దాన్ని* గందరగోళంగా చేయడానికి వారు ప్రయత్నిస్తారో చూద్దాం!"}
+{"unnormalised": "", "normalised": "    \"\"\""}
+{"unnormalised": "", "normalised": "    # డమ్మీ బ్లాగ్ పోస్ట్ కంటెంట్‌ను ఫైల్‌కు వ్రాయండి"}
+{"unnormalised": "", "normalised": "    with open(dummy_txt_filepath, 'w', encoding='utf-8') as f:"}
+{"unnormalised": "", "normalised": "        f.write(blog_post_content)"}
+{"unnormalised": "", "normalised": "    # ఒక డమ్మీ ఇమేజ్ ఫైల్‌ను సృష్టించండి"}
+{"unnormalised": "", "normalised": "    with open(dummy_image_filepath, 'wb') as f:"}
+{"unnormalised": "", "normalised": "        f.write(b'dummy_image_content')"}
+{"unnormalised": "", "normalised": "    print(f\"ప్రదర్శన కోసం డమ్మీ డేటా '{dummy_source_folder}' లో సృష్టించబడింది.\")"}
+{"unnormalised": "", "normalised": "    # ప్రధాన ప్రాసెసింగ్ ఫంక్షన్‌ను పిలవండి"}
+{"unnormalised": "", "normalised": "    process_folder(dummy_source_folder, dummy_destination_folder)"}
+{"unnormalised": "", "normalised": "    print(\"\\n--- ఉదాహరణ సాధారణీకరించబడిన కంటెంట్ (goa_addresses.txt నుండి) ---\")"}
+{"unnormalised": "", "normalised": "    normalized_file_path = os.path.join(dummy_destination_folder, 'blog_posts', 'goa_addresses.txt')"}
+{"unnormalised": "", "normalised": "    if os.path.exists(normalized_file_path):"}
+{"unnormalised": "", "normalised": "        with open(normalized_file_path, 'r', encoding='utf-8') as f:"}
+{"unnormalised": "", "normalised": "            print(f.read())"}
+{"unnormalised": "", "normalised": "    else:"}
+{"unnormalised": "", "normalised": "        print(f\"సాధారణీకరించబడిన ఫైల్ ఇక్కడ కనుగొనబడలేదు: {normalized_file_path}\")"}
+{"unnormalised": "", "normalised": "    # మీరు డెమో కోసం మాత్రమే ఉంటే dummy_source_folder ను శుభ్రం చేయాలనుకోవచ్చు"}
+{"unnormalised": "", "normalised": "    # shutil.rmtree(dummy_source_folder)"}
+{"unnormalised": "", "normalised": "    # print(f\"డమ్మీ సోర్స్ ఫోల్డర్‌ను శుభ్రం చేశారు: {dummy_source_folder}\")"}
+{"unnormalised": "", "normalised": "```"}
+{"unnormalised": "", "normalised": "---"}
+{"unnormalised": "", "normalised": "**.స్క్రిప్ట్‌ను ఎలా ఉపయోగించాలి:**"}
+{"unnormalised": "", "normalised": "1.  **.కోడ్‌ను సేవ్ చేయండి:** పైథాన్ కోడ్‌ను `.py` ఫైల్‌గా సేవ్ చేయండి (ఉదా., `normalize_data.py`)."}
+{"unnormalised": "", "normalised": "2.  **`inflect` ను ఇన్స్టాల్ చేయండి:** మీ వద్ద లేకపోతే, `inflect` లైబ్రరీని ఇన్స్టాల్ చేయండి (సంఖ్యలను పదాలుగా మార్చడానికి ఉపయోగిస్తారు):"}
+{"unnormalised": "", "normalised": "    ```bash"}
+{"unnormalised": "", "normalised": "    pip install inflect"}
+{"unnormalised": "", "normalised": "    ```"}
+{"unnormalised": "", "normalised": "3.  **.మీ డేటాను సిద్ధం చేయండి:**"}
+{"unnormalised": "", "normalised": "    *   మీ అన్ని `.txt` ఫైళ్ళను (మరియు మీరు కాపీ చేయాలనుకుంటున్న ఇతర ఫైళ్ళను) టాప్-లెవల్ ఫోల్డర్‌లో ఉంచండి. ఉదాహరణకు, మీ ప్రధాన సేకరణ `my_data_raw` అనే ఫోల్డర్‌లో ఉందని అనుకుందాం."}
+{"unnormalised": "", "normalised": "    *   ప్రదర్శన కోసం, స్క్రిప్ట్ మీరు అందించిన బ్లాగ్ పోస్ట్ మరియు డమ్మీ ఇమేజ్‌తో `dataset_raw` ఫోల్డర్‌ను *సృష్టిస్తుంది*."}
+{"unnormalised": "", "normalised": "4.  **`source_folder` మరియు `destination_folder` ను సవరించండి:**"}
+{"unnormalised": "", "normalised": "    *   `if __name__ == \"__main__\":` బ్లాక్‌లో, `dummy_source_folder` ను మీ అసలు టాప్-లెవల్ డేటా ఫోల్డర్ యొక్క మార్గానికి మార్చండి."}
+{"unnormalised": "", "normalised": "    *   సాధారణీకరించబడిన అవుట్‌పుట్ ఎక్కడికి వెళ్లాలనుకుంటున్నారో దానికి `dummy_destination_folder` ను మార్చండి (ఉదా., `my_data_normalized`)."}
+{"unnormalised": "", "normalised": "    ```python"}
+{"unnormalised": "", "normalised": "    # ఉదాహరణ: మీ డేటా 'C:/Users/YourName/Documents/MyTextCollection' లో ఉంటే"}
+{"unnormalised": "", "normalised": "    # source_folder = 'C:/Users/YourName/Documents/MyTextCollection'"}
+{"unnormalised": "", "normalised": "    # destination_folder = 'C:/Users/YourName/Documents/MyTextCollection_Normalized'"}
+{"unnormalised": "", "normalised": "    # ఈ స్క్రిప్ట్ యొక్క డెమో కోసం, ఇది ఉపయోగిస్తుంది:"}
+{"unnormalised": "", "normalised": "    source_folder = 'dataset_raw' # ఇది లేకపోతే స్క్రిప్ట్ ద్వారా సృష్టించబడుతుంది"}
+{"unnormalised": "", "normalised": "    destination_folder = 'dataset_normalized' # ఇది స్క్రిప్ట్ ద్వారా సృష్టించబడుతుంది"}
+{"unnormalised": "", "normalised": "    ```"}
+{"unnormalised": "", "normalised": "5.  **.స్క్రిప్ట్‌ను అమలు చేయండి:** మీ టెర్మినల్ లేదా కమాండ్ ప్రాంప్ట్‌ను తెరిచి, మీరు `normalize_data.py` ను సేవ్ చేసిన డైరెక్టరీకి నావిగేట్ చేయండి మరియు అమలు చేయండి:"}
+{"unnormalised": "", "normalised": "    ```bash"}
+{"unnormalised": "", "normalised": "    python normalize_data.py"}
+{"unnormalised": "", "normalised": "    ```"}
+{"unnormalised": "", "normalised": "**.అందించిన బ్లాగ్ పోస్ట్ కంటెంట్ కోసం అవుట్‌పుట్:**"}
+{"unnormalised": "", "normalised": "మీరు డమ్మీ డేటా సెటప్‌తో స్క్రిప్ట్‌ను అమలు చేస్తే, `dataset_normalized/blog_posts/goa_addresses.txt` ఫైల్‌లో ఇవి ఉంటాయి:"}
+{"unnormalised": "", "normalised": "```"}
+{"unnormalised": "", "normalised": "అనువాదంలో తప్పిపోయింది: భారతీయ చిరునామాలతో నా సాహసాలు (మరియు మీకు జి-పి-ఎస్ ఎందుకు అవసరం) కాబట్టి, నేను చాలా తెలివైనవాడినని అనుకున్నాను, మీకు తెలుసా? నేను పీక్ అవర్స్‌లో ఢిల్లీ మెట్రోలో తిరిగాను, చాందినీ చౌక్‌లో చీరపై ఉత్తమ ధర కోసం బేరం చేశాను, మరియు పాలలో పాలు రాకుండా చాయ్ ఆర్డర్ చేయగలిగాను (నన్ను నమ్మండి, అది ఒక సాహసం). కానీ అప్పుడు చిరునామాలు వచ్చాయి. ఓహ్, చిరునామాలు! నేను సన్నివేశాన్ని సెట్ చేస్తాను: నేను గోవాలోని ఈ మనోహరమైన చిన్న అతిథి గృహాన్ని కనుగొనే పనిలో ఉన్నాను. ఇది చాలా ఆనందంగా ఉంది, కాదా? బుకింగ్ నిర్ధారణ సంతోషంగా ప్రకటించింది: \"ఆనంద్ విల్లా, హెచ్. నం. నూట నలభై ఏడు స్లాష్ ఎ, ఎస్-టి సమీపంలో. అలెక్స్ చర్చి, కలాంగుట్, బార్డెజ్, గోవా నాలుగు వందల మూడు వేల ఐదు వందల పదహారు.\" తగినంత సులభం, నేను అనుకున్నాను. ప్రసిద్ధ చివరి పదాలు. మొదట, \"హెచ్. నం."}

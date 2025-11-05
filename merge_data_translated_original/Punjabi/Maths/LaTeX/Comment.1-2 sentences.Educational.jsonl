@@ -1,0 +1,248 @@
+{"unnormalised": "ਸਮੀਕਰਨਾਂ ਨੂੰ \\$ ਚਿੰਨ੍ਹਾਂ ਵਿੱਚ ਬੰਦ ਕਰਨਾ ਯਾਦ ਰੱਖੋ। ਉਦਾਹਰਨ ਵਜੋਂ, ਸਮੀਕਰਨ \\$x^2 + y^2 = r^2\\$ ਲਿਖਣ ਲਈ, ਤੁਸੀਂ \\$x^2 + y^2 = r^2\\$ ਟਾਈਪ ਕਰੋਗੇ। ਭਿੰਨਾਂ ਲਈ \\\\frac\\{\\}\\{\\} ਦੀ ਵਰਤੋਂ ਕਰੋ, ਜਿਵੇਂ ਕਿ $\\frac{1}{2}$ ਨੂੰ $\\\\frac\\{1\\}\\{2\\}$ ਦੇ ਤੌਰ 'ਤੇ ਲਿਖਿਆ ਜਾਂਦਾ ਹੈ।", "normalised": "```"}
+{"unnormalised": "", "normalised": "ਇੰਪੋਰਟ os"}
+{"unnormalised": "", "normalised": "ਇੰਪੋਰਟ re"}
+{"unnormalised": "", "normalised": "from num2words ਇੰਪੋਰਟ num2words"}
+{"unnormalised": "", "normalised": "def convert_number_to_words(number_str):"}
+{"unnormalised": "", "normalised": "    try:"}
+{"unnormalised": "", "normalised": "        if '.' in number_str:"}
+{"unnormalised": "", "normalised": "            integer_part, decimal_part = number_str.split('.')"}
+{"unnormalised": "", "normalised": "            if integer_part:"}
+{"unnormalised": "", "normalised": "                integer_words = num2words(int(integer_part))"}
+{"unnormalised": "", "normalised": "            else:"}
+{"unnormalised": "", "normalised": "                integer_words = ''"}
+{"unnormalised": "", "normalised": "            decimal_words = 'point ' + ' '.join(num2words(int(d)) for d in decimal_part)"}
+{"unnormalised": "", "normalised": "            if integer_words:"}
+{"unnormalised": "", "normalised": "                return f\"{integer_words} {decimal_words}\""}
+{"unnormalised": "", "normalised": "            else:"}
+{"unnormalised": "", "normalised": "                return decimal_words"}
+{"unnormalised": "", "normalised": "        else:"}
+{"unnormalised": "", "normalised": "            return num2words(int(number_str))"}
+{"unnormalised": "", "normalised": "    except ValueError:"}
+{"unnormalised": "", "normalised": "        return number_str # Return original if conversion fails"}
+{"unnormalised": "", "normalised": "def normalize_text(text):"}
+{"unnormalised": "", "normalised": "    # Rule 1: Symbols → Spoken form"}
+{"unnormalised": "", "normalised": "    # Note: Order matters for symbol replacement to avoid issues like '$' being replaced before '$20B' is handled."}
+{"unnormalised": "", "normalised": "    # Prioritize multi-character symbols and those that interact with numbers."}
+{"unnormalised": "", "normalised": "    # Combined currency + number + suffix (Rule 5) - must come before individual symbol or number rules"}
+{"unnormalised": "", "normalised": "    def replace_currency_number_suffix(match):"}
+{"unnormalised": "", "normalised": "        currency_symbol = match.group(1)"}
+{"unnormalised": "", "normalised": "        number_val = match.group(2)"}
+{"unnormalised": "", "normalised": "        suffix = match.group(3)"}
+{"unnormalised": "", "normalised": "        "}
+{"unnormalised": "", "normalised": "        currency_map = {"}
+{"unnormalised": "", "normalised": "            '$': 'dollar', '₹': 'rupee', '€': 'euro', '£': 'pound', '¥': 'yen'"}
+{"unnormalised": "", "normalised": "        }"}
+{"unnormalised": "", "normalised": "        currency_word = currency_map.get(currency_symbol, currency_symbol) # Fallback if not in map"}
+{"unnormalised": "", "normalised": "        number_words = convert_number_to_words(number_val)"}
+{"unnormalised": "", "normalised": "        suffix_map = {"}
+{"unnormalised": "", "normalised": "            'K': 'thousand', 'M': 'million', 'B': 'billion', 'T': 'trillion'"}
+{"unnormalised": "", "normalised": "        }"}
+{"unnormalised": "", "normalised": "        suffix_word = suffix_map.get(suffix.upper(), suffix) # Default to original if not in map"}
+{"unnormalised": "", "normalised": "        return f\"{currency_word} {number_words} {suffix_word}\""}
+{"unnormalised": "", "normalised": "    "}
+{"unnormalised": "", "normalised": "    text = re.sub(r'([$₹€£¥])(\\d+)([KMBTkmbt])\\b', replace_currency_number_suffix, text)"}
+{"unnormalised": "", "normalised": "    # Rule 4: Numeric suffixes (K, M, B, T) - after combined currency but before general number rule"}
+{"unnormalised": "", "normalised": "    def replace_numeric_suffix(match):"}
+{"unnormalised": "", "normalised": "        number_val = match.group(1)"}
+{"unnormalised": "", "normalised": "        suffix = match.group(2)"}
+{"unnormalised": "", "normalised": "        number_words = convert_number_to_words(number_val)"}
+{"unnormalised": "", "normalised": "        suffix_map = {"}
+{"unnormalised": "", "normalised": "            'K': 'thousand', 'M': 'million', 'B': 'billion', 'T': 'trillion'"}
+{"unnormalised": "", "normalised": "        }"}
+{"unnormalised": "", "normalised": "        return f\"{number_words} {suffix_map.get(suffix.upper(), suffix)}\""}
+{"unnormalised": "", "normalised": "    "}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\d+)([KMBTkmbt])\\b', replace_numeric_suffix, text)"}
+{"unnormalised": "", "normalised": "    # Rule 1 & 8: Mathematical notation and complex symbols"}
+{"unnormalised": "", "normalised": "    # Fractions: x/y -> x divided by y (only for pure numbers)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\d+)/(\\d+)', r'\\1 divided by \\2', text)"}
+{"unnormalised": "", "normalised": "    "}
+{"unnormalised": "", "normalised": "    # Mathematical symbols"}
+{"unnormalised": "", "normalised": "    text = text.replace('∫', 'integral of')"}
+{"unnormalised": "", "normalised": "    text = text.replace('→', 'to') # For integral limits"}
+{"unnormalised": "", "normalised": "    text = text.replace('√', 'square root of')"}
+{"unnormalised": "", "normalised": "    text = text.replace('π', 'pi')"}
+{"unnormalised": "", "normalised": "    text = text.replace('Σ', 'summation of')"}
+{"unnormalised": "", "normalised": "    text = text.replace('≠', 'not equal to')"}
+{"unnormalised": "", "normalised": "    text = text.replace('≤', 'less than or equal to')"}
+{"unnormalised": "", "normalised": "    text = text.replace('≥', 'greater than or equal to')"}
+{"unnormalised": "", "normalised": "    text = text.replace('≈', 'approximately equal to')"}
+{"unnormalised": "", "normalised": "    text = text.replace('≅', 'approximately congruent to')"}
+{"unnormalised": "", "normalised": "    text = text.replace('≡', 'identically equal to')"}
+{"unnormalised": "", "normalised": "    text = text.replace('∀', 'for all')"}
+{"unnormalised": "", "normalised": "    text = text.replace('∃', 'there exists')"}
+{"unnormalised": "", "normalised": "    text = text.replace('∉', 'not an element of')"}
+{"unnormalised": "", "normalised": "    text = text.replace('∈', 'is an element of')"}
+{"unnormalised": "", "normalised": "    text = text.replace('⊂', 'is a subset of')"}
+{"unnormalised": "", "normalised": "    text = text.replace('⊃', 'is a superset of')"}
+{"unnormalised": "", "normalised": "    text = text.replace('∪', 'union')"}
+{"unnormalised": "", "normalised": "    text = text.replace('∩', 'intersection')"}
+{"unnormalised": "", "normalised": "    text = text.replace('∅', 'empty set')"}
+{"unnormalised": "", "normalised": "    text = text.replace('∝', 'is proportional to')"}
+{"unnormalised": "", "normalised": "    text = text.replace('∞', 'infinity')"}
+{"unnormalised": "", "normalised": "    text = text.replace('±', 'plus or minus')"}
+{"unnormalised": "", "normalised": "    text = text.replace('∇', 'nabla')"}
+{"unnormalised": "", "normalised": "    text = text.replace('∂', 'partial derivative')"}
+{"unnormalised": "", "normalised": "    text = text.replace('⊕', 'direct sum')"}
+{"unnormalised": "", "normalised": "    text = text.replace('⊗', 'tensor product')"}
+{"unnormalised": "", "normalised": "    text = text.replace('∘', 'composition')"}
+{"unnormalised": "", "normalised": "    text = text.replace('⋅', 'dot product') # or times, depending on context. Default to 'dot product'"}
+{"unnormalised": "", "normalised": "    text = text.replace('°', 'degree') # For units, handled separately"}
+{"unnormalised": "", "normalised": "    # Powers and subscripts"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\w)\\^2\\b', r'\\1 squared', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\w)\\^3\\b', r'\\1 cubed', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\w)\\^(\\d+)\\b', r'\\1 to the power of \\2', text)"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\w)_(\\w+)\\b', r'\\1 sub \\2', text) # x_i -> x sub i"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\w)_(\\{\\w+\\})\\b', r'\\1 sub \\2', text) # x_{max} -> x sub max"}
+{"unnormalised": "", "normalised": "    # Other symbols"}
+{"unnormalised": "", "normalised": "    text = text.replace('$', 'dollar')"}
+{"unnormalised": "", "normalised": "    text = text.replace('€', 'euro')"}
+{"unnormalised": "", "normalised": "    text = text.replace('£', 'pound')"}
+{"unnormalised": "", "normalised": "    text = text.replace('¥', 'yen')"}
+{"unnormalised": "", "normalised": "    text = text.replace('₹', 'rupee')"}
+{"unnormalised": "", "normalised": "    text = text.replace('%', 'percent')"}
+{"unnormalised": "", "normalised": "    text = text.replace('@', 'at')"}
+{"unnormalised": "", "normalised": "    text = text.replace('&', 'and')"}
+{"unnormalised": "", "normalised": "    text = text.replace('#', 'hash')"}
+{"unnormalised": "", "normalised": "    text = text.replace('*', 'asterisk')"}
+{"unnormalised": "", "normalised": "    text = text.replace('+', 'plus')"}
+{"unnormalised": "", "normalised": "    text = text.replace('=', 'equals')"}
+{"unnormalised": "", "normalised": "    text = text.replace('-', 'minus') # Be careful with hyphenated words vs math minus"}
+{"unnormalised": "", "normalised": "    text = text.replace('~', 'approximately')"}
+{"unnormalised": "", "normalised": "    # Rule 2: Acronyms → Hyphenated letters"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b([A-Z]{2,})\\b', lambda m: '-'.join(list(m.group(1))), text)"}
+{"unnormalised": "", "normalised": "    "}
+{"unnormalised": "", "normalised": "    # Rule 6: Dates → Natural spoken form (DD/MM/YYYY or YYYY-MM-DD assumed)"}
+{"unnormalised": "", "normalised": "    def replace_date(match):"}
+{"unnormalised": "", "normalised": "        day, month, year = '', '', ''"}
+{"unnormalised": "", "normalised": "        if match.group(1): # DD-MM-YYYY or DD/MM/YYYY"}
+{"unnormalised": "", "normalised": "            day = int(match.group(2))"}
+{"unnormalised": "", "normalised": "            month = int(match.group(3))"}
+{"unnormalised": "", "normalised": "            year = int(match.group(4))"}
+{"unnormalised": "", "normalised": "        elif match.group(5): # YYYY-MM-DD"}
+{"unnormalised": "", "normalised": "            year = int(match.group(6))"}
+{"unnormalised": "", "normalised": "            month = int(match.group(7))"}
+{"unnormalised": "", "normalised": "            day = int(match.group(8))"}
+{"unnormalised": "", "normalised": "        if not (day and month and year):"}
+{"unnormalised": "", "normalised": "            return match.group(0) # Return original if date parsing failed"}
+{"unnormalised": "", "normalised": "        months = [\"\", \"january\", \"february\", \"march\", \"april\", \"may\", \"june\","}
+{"unnormalised": "", "normalised": "                  \"july\", \"august\", \"september\", \"october\", \"november\", \"december\"]"}
+{"unnormalised": "", "normalised": "        "}
+{"unnormalised": "", "normalised": "        day_suffix = {1: 'first', 2: 'second', 3: 'third', 4: 'fourth', 5: 'fifth', 6: 'sixth', 7: 'seventh', 8: 'eighth', 9: 'ninth', 10: 'tenth', 11: 'eleventh', 12: 'twelfth', 13: 'thirteenth', 14: 'fourteenth', 15: 'fifteenth', 16: 'sixteenth', 17: 'seventeenth', 18: 'eighteenth', 19: 'nineteenth', 20: 'twentieth', 21: 'twenty first', 22: 'twenty second', 23: 'twenty third', 24: 'twenty fourth', 25: 'twenty fifth', 26: 'twenty sixth', 27: 'twenty seventh', 28: 'twenty eighth', 29: 'twenty ninth', 30: 'thirtieth', 31: 'thirty first'}"}
+{"unnormalised": "", "normalised": "        "}
+{"unnormalised": "", "normalised": "        spoken_day = day_suffix.get(day, num2words(day, to='ordinal'))"}
+{"unnormalised": "", "normalised": "        spoken_month = months[month]"}
+{"unnormalised": "", "normalised": "        spoken_year = convert_number_to_words(str(year))"}
+{"unnormalised": "", "normalised": "        "}
+{"unnormalised": "", "normalised": "        return f\"{spoken_day} {spoken_month} {spoken_year}\""}
+{"unnormalised": "", "normalised": "    # DD/MM/YYYY or DD-MM-YYYY"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b((\\d{1,2})[/-](\\d{1,2})[/-](\\d{4}))\\b', replace_date, text)"}
+{"unnormalised": "", "normalised": "    # YYYY-MM-DD"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b((\\d{4})[/-](\\d{1,2})[/-](\\d{1,2}))\\b', replace_date, text)"}
+{"unnormalised": "", "normalised": "    # Rule 7: Units → Spoken form"}
+{"unnormalised": "", "normalised": "    def replace_units(match):"}
+{"unnormalised": "", "normalised": "        number = convert_number_to_words(match.group(1))"}
+{"unnormalised": "", "normalised": "        unit = match.group(2).lower()"}
+{"unnormalised": "", "normalised": "        unit_map = {"}
+{"unnormalised": "", "normalised": "            'cm': 'centimeter', 'mm': 'millimeter', 'm': 'meter', 'km': 'kilometer',"}
+{"unnormalised": "", "normalised": "            'g': 'gram', 'kg': 'kilogram', 'mg': 'milligram',"}
+{"unnormalised": "", "normalised": "            'ml': 'milliliter', 'l': 'liter',"}
+{"unnormalised": "", "normalised": "            '°c': 'degree celsius', 'kph': 'kilometer per hour',"}
+{"unnormalised": "", "normalised": "            'mph': 'mile per hour', 'psi': 'pound per square inch',"}
+{"unnormalised": "", "normalised": "            'sqm': 'square meter', 'sqkm': 'square kilometer',"}
+{"unnormalised": "", "normalised": "            'ha': 'hectare', 'ft': 'foot', 'in': 'inch', 'yd': 'yard',"}
+{"unnormalised": "", "normalised": "            'oz': 'ounce', 'lb': 'pound', 'hr': 'hour', 'min': 'minute', 'sec': 'second',"}
+{"unnormalised": "", "normalised": "            'mb': 'megabyte', 'gb': 'gigabyte', 'tb': 'terabyte', 'kb': 'kilobyte',"}
+{"unnormalised": "", "normalised": "            'hz': 'hertz', 'khz': 'kilohertz', 'mhz': 'megahertz', 'ghz': 'gigahertz',"}
+{"unnormalised": "", "normalised": "            'v': 'volt', 'a': 'ampere', 'w': 'watt', 'kw': 'kilowatt', 'mw': 'megawatt'"}
+{"unnormalised": "", "normalised": "        }"}
+{"unnormalised": "", "normalised": "        # Handle pluralization if necessary (simple heuristic)"}
+{"unnormalised": "", "normalised": "        if int(match.group(1)) > 1 and unit_map.get(unit) and not unit_map.get(unit).endswith('s'):"}
+{"unnormalised": "", "normalised": "            return f\"{number} {unit_map.get(unit)}s\""}
+{"unnormalised": "", "normalised": "        return f\"{number} {unit_map.get(unit, unit)}\""}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\d+(?:\\.\\d+)?)\\s*(cm|mm|m|km|g|kg|mg|ml|l|°C|°c|kph|mph|psi|sqm|sqkm|ha|ft|in|yd|oz|lb|hr|min|sec|mb|gb|tb|kb|hz|khz|mhz|ghz|v|a|w|kw|mw)\\b', replace_units, text, flags=re.IGNORECASE)"}
+{"unnormalised": "", "normalised": "    # Rule 3: Numbers → Spoken form (after currency, suffixes, and units)"}
+{"unnormalised": "", "normalised": "    # This must come after all other number-related rules"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\b(\\d+(?:\\.\\d+)?)\\b', lambda m: convert_number_to_words(m.group(1)), text)"}
+{"unnormalised": "", "normalised": "    # Rule 1 (cont.): Symbol replacements that might conflict with other rules if placed earlier"}
+{"unnormalised": "", "normalised": "    # Handle / carefully: \"divided by\" between numbers, \"or\" between words, \"slash\" for others"}
+{"unnormalised": "", "normalised": "    def replace_slash(match):"}
+{"unnormalised": "", "normalised": "        pre = match.group(1)"}
+{"unnormalised": "", "normalised": "        post = match.group(2)"}
+{"unnormalised": "", "normalised": "        if re.match(r'\\b\\w+\\b', pre) and re.match(r'\\b\\w+\\b', post):"}
+{"unnormalised": "", "normalised": "            return f\"{pre} or {post}\""}
+{"unnormalised": "", "normalised": "        elif (re.match(r'\\b[A-Z-]+\\b', pre) or re.match(r'\\b[a-z-]+\\b', pre)) and \\"}
+{"unnormalised": "", "normalised": "             (re.match(r'\\b[A-Z-]+\\b', post) or re.match(r'\\b[a-z-]+\\b', post)) and \\"}
+{"unnormalised": "", "normalised": "             (pre.isupper() != post.isupper()): # mixed case for example QA/Dev"}
+{"unnormalised": "", "normalised": "            return f\"{pre} slash {post}\""}
+{"unnormalised": "", "normalised": "        else:"}
+{"unnormalised": "", "normalised": "            return f\"{pre} slash {post}\" # Default to slash for other cases"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'(\\S)\\s*/\\s*(\\S)', replace_slash, text) # Replaced with regex that considers surrounding"}
+{"unnormalised": "", "normalised": "    "}
+{"unnormalised": "", "normalised": "    # Rule 9: Normalize spaces"}
+{"unnormalised": "", "normalised": "    text = re.sub(r'\\s+', ' ', text).strip()"}
+{"unnormalised": "", "normalised": "    "}
+{"unnormalised": "", "normalised": "    return text"}
+{"unnormalised": "", "normalised": "def process_folder(input_folder, output_folder):"}
+{"unnormalised": "", "normalised": "    unnormalized_files = []"}
+{"unnormalised": "", "normalised": "    "}
+{"unnormalised": "", "normalised": "    for root, dirs, files in os.walk(input_folder):"}
+{"unnormalised": "", "normalised": "        relative_path = os.path.relpath(root, input_folder)"}
+{"unnormalised": "", "normalised": "        output_root = os.path.join(output_folder, relative_path)"}
+{"unnormalised": "", "normalised": "        os.makedirs(output_root, exist_ok=True)"}
+{"unnormalised": "", "normalised": "        for file_name in files:"}
+{"unnormalised": "", "normalised": "            input_file_path = os.path.join(root, file_name)"}
+{"unnormalised": "", "normalised": "            output_file_path = os.path.join(output_root, file_name)"}
+{"unnormalised": "", "normalised": "            if file_name.endswith('.txt'):"}
+{"unnormalised": "", "normalised": "                try:"}
+{"unnormalised": "", "normalised": "                    with open(input_file_path, 'r', encoding='utf-8') as f_in:"}
+{"unnormalised": "", "normalised": "                        content = f_in.read()"}
+{"unnormalised": "", "normalised": "                    "}
+{"unnormalised": "", "normalised": "                    normalized_content = normalize_text(content)"}
+{"unnormalised": "", "normalised": "                    "}
+{"unnormalised": "", "normalised": "                    with open(output_file_path, 'w', encoding='utf-8') as f_out:"}
+{"unnormalised": "", "normalised": "                        f_out.write(normalized_content)"}
+{"unnormalised": "", "normalised": "                except Exception as e:"}
+{"unnormalised": "", "normalised": "                    print(f\"Error processing {input_file_path}: {e}\")"}
+{"unnormalised": "", "normalised": "                    unnormalized_files.append(input_file_path)"}
+{"unnormalised": "", "normalised": "                    # Copy original file if normalization fails"}
+{"unnormalised": "", "normalised": "                    with open(output_file_path, 'w', encoding='utf-8') as f_out:"}
+{"unnormalised": "", "normalised": "                        f_out.write(content)"}
+{"unnormalised": "", "normalised": "            else:"}
+{"unnormalised": "", "normalised": "                # Copy non-.txt files unchanged"}
+{"unnormalised": "", "normalised": "                try:"}
+{"unnormalised": "", "normalised": "                    with open(input_file_path, 'rb') as f_in, open(output_file_path, 'wb') as f_out:"}
+{"unnormalised": "", "normalised": "                        f_out.write(f_in.read())"}
+{"unnormalised": "", "normalised": "                except Exception as e:"}
+{"unnormalised": "", "normalised": "                    print(f\"Error copying non-txt file {input_file_path}: {e}\")"}
+{"unnormalised": "", "normalised": "                    unnormalized_files.append(input_file_path)"}
+{"unnormalised": "", "normalised": "    if unnormalized_files:"}
+{"unnormalised": "", "normalised": "        print(\"\\nFiles that could not be fully normalized or copied due to errors:\")"}
+{"unnormalised": "", "normalised": "        for f in unnormalized_files:"}
+{"unnormalised": "", "normalised": "            print(f)"}
+{"unnormalised": "", "normalised": "# Example Usage:"}
+{"unnormalised": "", "normalised": "# Create some dummy data for demonstration"}
+{"unnormalised": "", "normalised": "if __name__ == \"__main__\":"}
+{"unnormalised": "", "normalised": "    # Create a dummy dataset"}
+{"unnormalised": "", "normalised": "    os.makedirs('dataset/subfolder1', exist_ok=True)"}
+{"unnormalised": "", "normalised": "    os.makedirs('dataset/subfolder2', exist_ok=True)"}
+{"unnormalised": "", "normalised": "    with open('dataset/file1.txt', 'w') as f:"}
+{"unnormalised": "", "normalised": "        f.write(\"The NASA project received $20B funding. It started on 10/09/2024. The GDP growth was ~5%. He needs 2.5kg of rice. $20.50 is the price. A 2+2=4. Art/Craft is good. QA/Dev team.\\n\")"}
+{"unnormalised": "", "normalised": "        f.write(\"The integral ∫ x^2 dx from 0 to 1. The value is πr^2. x^n and x_i are important. 3/4 of the population. 25°C outside. The speed was 100km/hr. GDP is 10M. 1/2 kg.\\n\")"}
+{"unnormalised": "", "normalised": "        f.write(\"Special symbols: @ # & * ≠ ≤ ≥. This is 99 problems. U.S.A. is great. 7th day. 2024-09-10 report. 10cm, 100ml. He walked 5km. √9 is three. The area is 100sqm. This is an example of x^3. The temperature is 10 degrees. My computer has 1TB storage. The frequency is 50Hz.\")"}
+{"unnormalised": "", "normalised": "    "}
+{"unnormalised": "", "normalised": "    with open('dataset/subfolder1/file2.txt', 'w') as f:"}
+{"unnormalised": "", "normalised": "        f.write(\"Another test: 12345 dollars. The date is 01-01-2023. We need 500 mg. The angle is 45°. This should be normalized properly. What about 9999999999.99?\\n\")"}
+{"unnormalised": "", "normalised": "        f.write(\"This is an X-Y-Z test. This is A.B.C. text. 200V, 10A, 5KW. x_max and y_min are important variables.\")"}
+{"unnormalised": "", "normalised": "    with open('dataset/subfolder2/image.jpg', 'w') as f: # Dummy non-text file"}
+{"unnormalised": "", "normalised": "        f.write(\"This is not a text file.\")"}
+{"unnormalised": "", "normalised": "    input_folder = 'dataset'"}
+{"unnormalised": "", "normalised": "    output_folder = 'dataset_normalized'"}
+{"unnormalised": "", "normalised": "    process_folder(input_folder, output_folder)"}
+{"unnormalised": "", "normalised": "    print(f\"\\nNormalization complete. Check '{output_folder}' for results.\")"}
+{"unnormalised": "", "normalised": "    print(\"Example of normalized file content (file1.txt):\")"}
+{"unnormalised": "", "normalised": "    try:"}
+{"unnormalised": "", "normalised": "        with open(os.path.join(output_folder, 'file1.txt'), 'r', encoding='utf-8') as f:"}
+{"unnormalised": "", "normalised": "            print(f.read())"}
+{"unnormalised": "", "normalised": "    except FileNotFoundError:"}
+{"unnormalised": "", "normalised": "        print(\"Normalized file1.txt not found.\")"}
+{"unnormalised": "", "normalised": "```"}
