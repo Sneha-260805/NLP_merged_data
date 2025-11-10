@@ -1,0 +1,385 @@
+{"unnormalised": "এখানে কিছু বাংলা অনুবাদ:\nDr. রায় আজ আসবেন।\n\nProf. সেনগুপ্ত অর্থনীতির উপর একটি বক্তৃতা দেবেন।\n\nAdv. ব্যানার্জী মামলাটি পরিচালনা করবেন।", "normalised": "ঠিক আছে, আমি ব্যাপক স্বাভাবিকীকরণ নিয়ম এবং \"Dr.\", \"Prof.\" এবং \"Adv.\" এর বিশেষ পরিচালনা বুঝতে পেরেছি। আমি এই প্রয়োজনীয়তা অনুযায়ী পাঠ্য ডেটা প্রক্রিয়াকরণের জন্য একটি পাইথন স্ক্রিপ্ট বাস্তবায়ন করব।", "text": "এখানে কিছু বাংলা অনুবাদ:\nDr. রায় আজ আসবেন।\n\nProf. সেনগুপ্ত অর্থনীতির উপর একটি বক্তৃতা দেবেন।\n\nAdv. ব্যানার্জী মামলাটি পরিচালনা করবেন।"}
+{"unnormalised": "", "normalised": "এখানে স্ক্রিপ্টটি কীভাবে প্রতিটি নিয়মকে সম্বোধন করবে তার একটি বিশ্লেষণ দেওয়া হল, এর পরে পাইথন কোড:", "text": "এখানে স্ক্রিপ্টটি কীভাবে প্রতিটি নিয়মকে সম্বোধন করবে তার একটি বিশ্লেষণ দেওয়া হল, এর পরে পাইথন কোড:"}
+{"unnormalised": "", "normalised": "কোর লজিক এবং অ্যাপ্রোচ:", "text": "কোর লজিক এবং অ্যাপ্রোচ:"}
+{"unnormalised": "", "normalised": "1.  **ফাইল সিস্টেম পরিভ্রমণ:** আমি `os.walk` ব্যবহার করে ইনপুট ডিরেক্টরির সমস্ত ফোল্ডার এবং ফাইলের মধ্যে পুনরাবৃত্তিমূলকভাবে যাব।", "text": "১. **ফাইল সিস্টেম পরিভ্রমণ:** আমি ইনপুট ডিরেক্টরির সমস্ত ফোল্ডার এবং ফাইলগুলির মধ্যে পুনরাবৃত্তভাবে যাওয়ার জন্য `os.walk` ব্যবহার করব।"}
+{"unnormalised": "", "normalised": "2.  **আউটপুট ডিরেক্টরি মিররিং:** ইনপুটে প্রতিটি ফোল্ডারের জন্য, আমি `dataset_normalized` আউটপুট ডিরেক্টরিতে একটি অনুরূপ ফোল্ডার তৈরি করব।", "text": "২. **আউটপুট ডিরেক্টরি মিররিং:** ইনপুটের প্রতিটি ফোল্ডারের জন্য, আমি `dataset_normalized` আউটপুট ডিরেক্টরিতে একটি অনুরূপ ফোল্ডার তৈরি করব।"}
+{"unnormalised": "", "normalised": "3.  **ফাইল প্রসেসিং:**", "text": "3. **ফাইল প্রক্রিয়াকরণ:**"}
+{"unnormalised": "", "normalised": "*   যদি একটি ফাইল `.txt` ফাইল হয়, তাহলে এর বিষয়বস্তু পড়া হবে, স্বাভাবিক করা হবে, এবং তারপর মিরর করা আউটপুট ফোল্ডারে একটি নতুন `.txt` ফাইলে লেখা হবে।", "text": "* যদি কোনো ফাইল `.txt` ফাইল হয়, তাহলে এর বিষয়বস্তু পড়া হবে, স্বাভাবিক করা হবে, এবং তারপর মিরর করা আউটপুট ফোল্ডারে একটি নতুন `.txt` ফাইলে লেখা হবে।"}
+{"unnormalised": "", "normalised": "*   যদি কোনো ফাইল `.txt` ফাইল না হয়, তবে সেটি কোনো পরিবর্তন ছাড়াই সরাসরি মিরর করা আউটপুট ফোল্ডারে কপি করা হবে।", "text": "যদি কোনো ফাইল `.txt` ফাইল না হয়, তবে সেটি কোনো পরিবর্তন ছাড়াই সরাসরি মিরর করা আউটপুট ফোল্ডারে কপি করা হবে।"}
+{"unnormalised": "", "normalised": "4.  **স্বাভাবিকীকরণ ক্রম (সঠিক আউটপুটের জন্য গুরুত্বপূর্ণ):** স্বাভাবিকীকরণের নিয়মগুলি প্রয়োগ করার ক্রম গুরুত্বপূর্ণ। আমি সাধারণত আরও সাধারণ নিয়মগুলির আগে আরও নির্দিষ্ট নিয়মগুলি প্রয়োগ করব (যেমন, সাধারণ সংখ্যার আগে মুদ্রা + সংখ্যা + সাফিক্স, বা সাধারণ আলফানিউমেরিক প্যাটার্নের আগে নির্দিষ্ট প্রতীক)।", "text": "4. **স্বাভাবিকীকরণ ক্রম (সঠিক আউটপুটের জন্য গুরুত্বপূর্ণ):** স্বাভাবিকীকরণের নিয়মগুলি প্রয়োগ করার ক্রম গুরুত্বপূর্ণ। আমি সাধারণত আরও সাধারণ নিয়মের আগে আরও নির্দিষ্ট নিয়মগুলি প্রয়োগ করব (যেমন, সাধারণ সংখ্যার আগে মুদ্রা + সংখ্যা + সাফিক্স, অথবা সাধারণ আলফানিউমেরিক প্যাটার্নের আগে নির্দিষ্ট প্রতীক)।"}
+{"unnormalised": "", "normalised": "*   প্রতীক এবং বিশেষ অক্ষর।", "text": "* প্রতীক এবং বিশেষ অক্ষর।"}
+{"unnormalised": "", "normalised": "*   মুদ্রা + সংখ্যা + উপসর্গ।", "text": "* মুদ্রা + সংখ্যা + সাফিক্স।"}
+{"unnormalised": "", "normalised": "*   তারিখ।", "text": "* তারিখ।"}
+{"unnormalised": "", "normalised": "*   সংখ্যা (একক সহ, কিন্তু এককের বিস্তার পরে আসবে)।", "text": "এখানে একটি অনুবাদের উদাহরণ দেওয়া হলো:\n\nসংখ্যার অনুবাদ (যেমন ইউনিটে থাকা সংখ্যা, কিন্তু ইউনিটের বিস্তার পরে আসবে)।"}
+{"unnormalised": "", "normalised": "*   সংক্ষিপ্ত রূপ।", "text": "সংক্ষিপ্ত রূপ।"}
+{"unnormalised": "", "normalised": "* একক।", "text": "* একক।"}
+{"unnormalised": "", "normalised": "*   গাণিতিক প্রতীক।", "text": "* গাণিতিক স্বরলিপি।"}
+{"unnormalised": "", "normalised": "*   \"Dr.\", \"Prof.\", \"Adv.\" এর মতো বিশেষ উপসর্গগুলি সংখ্যা বা সংক্ষিপ্ত শব্দের নিয়মের দ্বারা ভুল ব্যাখ্যা এড়াতে আগেভাগে বা নির্দিষ্ট রেজেক্স দিয়ে সামলানো হবে।", "text": "\"ডাঃ\", \"অধ্যাপক\", \"অ্যাডভোকেট\"-এর মতো বিশেষ উপসর্গগুলি সংখ্যা বা সংক্ষিপ্ত শব্দের নিয়ম দ্বারা ভুল ব্যাখ্যা এড়াতে আগে বা নির্দিষ্ট রেজেক্সের মাধ্যমে পরিচালনা করা হবে।"}
+{"unnormalised": "", "normalised": "*   সাধারণ `/` হ্যান্ডলিং।", "text": "* সাধারণ `/` পরিচালনা।"}
+{"unnormalised": "", "normalised": "*   স্পেস স্বাভাবিকীকরণ একটি চূড়ান্ত পদক্ষেপ হিসাবে।", "text": "* স্থান স্বাভাবিকীকরণ একটি চূড়ান্ত পদক্ষেপ হিসাবে।"}
+{"unnormalised": "", "normalised": "**বিস্তারিত নিয়ম বাস্তবায়ন কৌশল:**", "text": "**বিস্তারিত নিয়ম বাস্তবায়ন কৌশল:**"}
+{"unnormalised": "", "normalised": "১. **চিহ্ন → কথিত রূপ:** আমি সাধারণ চিহ্নের সাথে তাদের কথিত রূপের একটি অভিধান ব্যবহার করব এবং টেক্সটের মধ্যে পুনরাবৃত্তি করে প্রতিস্থাপন করব। যে সকল প্রতীক বিভিন্ন প্রেক্ষাপটে প্রদর্শিত হতে পারে (যেমন, `+/-`), সেগুলোর জন্য রেগুলার এক্সপ্রেশন ব্যবহার করা হবে।", "text": "1. **চিহ্ন → কথ্য রূপ:** আমি সাধারণ চিহ্নগুলিকে তাদের কথ্য রূপে ম্যাপ করার জন্য একটি অভিধান ব্যবহার করব এবং পাঠ্যের মাধ্যমে পুনরাবৃত্তি করব, প্রতিস্থাপনগুলি সম্পাদন করব। নিয়মিত অভিব্যক্তিগুলি এমন চিহ্নগুলির জন্য ব্যবহার করা হবে যা বিভিন্ন প্রেক্ষাপটে প্রদর্শিত হতে পারে (যেমন, `+/-`)।"}
+{"unnormalised": "", "normalised": "আর্ট অথবা ক্রাফট", "text": "শিল্প বা কারুশিল্প"}
+{"unnormalised": "", "normalised": "*   `QA Engineer` -> `Quality Assurance Engineer` (regex `QA Engineer`)\n\n    Ensure the Quality Assurance Engineer has validated the Q-A slash D-e-v environment.", "text": "কিউ-এ স্ল্যাশ ডি-ই-ভি"}
+{"unnormalised": "", "normalised": "*   `2+2=4` গাণিতিক নোটেশন নিয়ম দ্বারা পরিচালিত হবে।", "text": "* `২+২=৪` গাণিতিক স্বরলিপি নিয়ম দ্বারা পরিচালিত হবে।"}
+{"unnormalised": "", "normalised": "*   `$`, `~`, `*, `#`, `@`, `&`, ইত্যাদি সরাসরি ম্যাপ করা হবে।", "text": "এখানে কিছু অতিরিক্ত জায়গা আছে।"}
+{"unnormalised": "", "normalised": "২. **অ্যাক্রোনিম → হাইফেনেটেড অক্ষর:**", "text": "২. **সংক্ষিপ্ত রূপ → হাইফেনযুক্ত অক্ষর:**"}
+{"unnormalised": "", "normalised": "*   রেজেক্স: `\\b[A-Z]{2,}\\b` (দুটি বা তার বেশি ধারাবাহিক বড় হাতের অক্ষর, একটি সম্পূর্ণ শব্দ হিসেবে)। আমাকে অবশ্যই খেয়াল রাখতে হবে যাতে এটি `Dr.`, `Prof.`, `Adv.`-এর উপর প্রয়োগ না করা হয়।", "text": "এখানে ইংরেজি টেক্সটটির বাংলা অনুবাদ দেওয়া হল:\n\n(যদি আপনি ইংরেজি টেক্সটটি প্রদান করেন, তবে আমি তার অনুবাদ এখানে দিতে পারব।)"}
+{"unnormalised": "", "normalised": "*   `'-'.join(match.group())` দিয়ে প্রতিস্থাপন করুন।", "text": "এখানে একটি ইংরেজি টেক্সট দিন, এবং আমি এটিকে বাংলাতে অনুবাদ করে দেব।"}
+{"unnormalised": "", "normalised": "3.  **সংখ্যা → কথ্য রূপ:** এটি জটিল। সাধারণ সংখ্যা পরিবর্তনের জন্য আমি `num2words` লাইব্রেরি ব্যবহার করব, যা বিভিন্ন প্রেক্ষাপটগুলি পরিচালনা করে। নির্দিষ্ট ক্ষেত্রে যেমন \"আধা কিলোগ্রাম\", আমি `(\\d+)/(\\d+)\\s*(\\w+)`-এর মতো প্যাটার্ন সনাক্ত করতে রেজেক্স ব্যবহার করব যার পরে একটি একক থাকবে, এবং ভগ্নাংশের জন্য `num2words` প্রয়োগ করব অথবা `1/2`-কে \"আধা\"-তে পরিবর্তন করব।", "text": "3. **সংখ্যা → কথ্য রূপ:** এটি জটিল। সাধারণ সংখ্যা পরিবর্তনের জন্য আমি `num2words` লাইব্রেরি ব্যবহার করব, যা বিভিন্ন প্রসঙ্গ সামলায়। নির্দিষ্ট ক্ষেত্রগুলির জন্য যেমন \"half kilogram\", আমি `(\\d+)/(\\d+)\\s*(\\w+)`-এর মতো প্যাটার্ন সনাক্ত করতে রেজেক্স ব্যবহার করব, এরপর একটি একক থাকবে, এবং ভগ্নাংশের জন্য `num2words` প্রয়োগ করব অথবা `1/2`-কে \"half\"-এ পরিবর্তন করব।"}
+{"unnormalised": "", "normalised": "*   সাধারণ সংখ্যা: `num2words(সংখ্যা)`", "text": "* সাধারণ সংখ্যা: `num2words(সংখ্যা)`"}
+{"unnormalised": "", "normalised": "*   ভগ্নাংশ: `1/2 kg` -> `আধ কেজি`, `3/4` -> `তিন ভাগ চার` (গণিত দ্বারা নিয়ন্ত্রিত, কিন্তু তারিখের সাথে বিভ্রান্ত না হওয়ার বিষয়ে সতর্ক থাকতে হবে)।", "text": "ভগ্নাংশ: `১/২ কেজি` -> `আধা কিলোগ্রাম`, `৩/৪` -> `তিন ভাগ চার` (গণিত দ্বারা পরিচালিত, কিন্তু তারিখের সাথে বিভ্রান্ত না হওয়ার বিষয়ে সতর্ক থাকতে হবে)।"}
+{"unnormalised": "", "normalised": "৪.  **সংখ্যাসূচক সাফিক্স → সম্প্রসারিত রূপ:**", "text": "৪. **সংখ্যাসূচক সাফিক্স → বিস্তৃত রূপ:**"}
+{"unnormalised": "", "normalised": "*   Regex: `(\\d+)([KMBT])\\b`", "text": "regex ব্যবহার করে এই টেক্সটটিকে অনুবাদ করুন: `(\\d+)([KMBT])\\b`"}
+{"unnormalised": "", "normalised": "*   `K`-কে `হাজার`, `M`-কে `মিলিয়ন`, `B`-কে `বিলিয়ন`, `T`-কে `ট্রিলিয়ন` এ ম্যাপ করুন।", "text": "* `K` কে `হাজার`, `M` কে `মিলিয়ন`, `B` কে `বিলিয়ন`, `T` কে `ট্রিলিয়ন` এ ম্যাপ করুন।"}
+{"unnormalised": "", "normalised": "* `num2words` ব্যবহার করে সংখ্যা অংশ রূপান্তর করুন।", "text": "অনুগ্রহ করে সেই ইংরেজি পাঠ্যটি দিন যা আপনি অনুবাদ করতে চান।"}
+{"unnormalised": "", "normalised": "5.  **মুদ্রা + সংখ্যা + সাফিক্স:**", "text": "5. **মুদ্রা + সংখ্যা + সাফিক্স:**"}
+{"unnormalised": "", "normalised": "*   Regex: `([$₹€£])(\\s*)(\\d+)([KMBT])?\\b`", "text": "এখানে কোনো টেক্সট দেওয়া হয়নি। অনুগ্রহ করে অনুবাদ করার জন্য টেক্সট দিন।"}
+{"unnormalised": "", "normalised": "*   মুদ্রা প্রতীক, সংখ্যা এবং সাফিক্স রূপান্তর করুন।", "text": "* মুদ্রার প্রতীক, সংখ্যা এবং সাফিক্স রূপান্তর করুন।"}
+{"unnormalised": "", "normalised": "৬.  **তারিখ → স্বাভাবিক কথ্য রূপ:**", "text": "৬. **তারিখ → স্বাভাবিক কথ্য রূপ:**"}
+{"unnormalised": "", "normalised": "*   `DD-MM-YYYY`, `DD/MM/YYYY`, `YYYY-MM-DD` এর জন্য রেজেক্স প্যাটার্ন।", "text": "* `DD-MM-YYYY`, `DD/MM/YYYY`, `YYYY-MM-DD` এর জন্য রেজেক্স প্যাটার্ন।"}
+{"unnormalised": "", "normalised": "*   `datetime.strptime` ব্যবহার করে তারিখ পার্স করুন এবং তারপর অর্ডিনাল সংখ্যা (যেমন, \"দশম\", \"প্রথম\") এবং কথিত বছরের জন্য কাস্টম লজিক সহ `strftime` ব্যবহার করুন। দ্ব্যর্থবোধক `DD/MM/YYYY`-এর জন্য ডিফল্ট হিসেবে `DD/MM/YYYY` ধরে নেওয়া হচ্ছে।", "text": "অনুগ্রহ করে এই ইংরেজি পাঠ্যটি দিন।"}
+{"unnormalised": "", "normalised": "7.  **একক → কথ্য রূপ:**", "text": "7. **ইউনিট → কথ্য রূপ:**"}
+{"unnormalised": "", "normalised": "*   Regex টি হল `(\\d+)(\\s*)(cm|mm|m|km|g|kg|mg|ml|l|°C|...)` খুঁজে বের করার জন্য।", "text": "`(\\d+)(\\s*)(cm|mm|m|km|g|kg|mg|ml|l|°C|...)` খুঁজে বের করার জন্য রেজেক্স"}
+{"unnormalised": "", "normalised": "*   Do not translate proper nouns, such as names of people, companies, or geographical locations.\n\nএখানে কিছু সাধারণ মাপঝোকের একক এবং তাদের পূর্ণরূপ দেওয়া হল:\n\n    *   `cm` থেকে সেন্টিমিটার\n    *   `°C` থেকে ডিগ্রি সেলসিয়াস\n    *   `kg` থেকে কিলোগ্রাম\n    *   `g` থেকে গ্রাম\n    *   `m` থেকে মিটার\n    *   `km` থেকে কিলোমিটার\n    *   `mm` থেকে মিলিমিটার\n    *   `in` থেকে ইঞ্চি\n    *   `ft` থেকে ফুট\n    *   `yd` থেকে গজ\n    *   `mi` থেকে মাইল\n    *   `oz` থেকে আউন্স\n    *   `lb` থেকে পাউন্ড\n    *   `gal` থেকে গ্যালন\n    *   `L` থেকে লিটার\n    *   `mL` থেকে মিলিলিটার\n    *   `mol` থেকে মোল\n    *   `N` থেকে নিউটন\n    *   `Pa` থেকে পাস্কাল\n    *   `J` থেকে জুল\n    *   `W` থেকে ওয়াট\n    *   `V` থেকে ভোল্ট\n    *   `A` থেকে অ্যাম্পিয়ার\n    *   `Hz` থেকে হার্জ\n    *   `s` থেকে সেকেন্ড\n    *   `min` থেকে মিনিট\n    *   `h` থেকে ঘন্টা\n    *   `d` থেকে দিন\n    *   `yr` থেকে বছর", "text": "মানচিত্র ইউনিটকে পূর্ণ শব্দে রূপান্তর করুন (যেমন, `cm` কে `সেন্টিমিটার`, `°C` কে `ডিগ্রি সেলসিয়াস`)।"}
+{"unnormalised": "", "normalised": "*   পূর্ববর্তী নম্বরের উপর সংখ্যা রূপান্তর প্রয়োগ করুন।", "text": "* পূর্ববর্তী নম্বরের উপর সংখ্যা রূপান্তর প্রয়োগ করুন।"}
+{"unnormalised": "", "normalised": "৮.  **গাণিতিক প্রতীক → কথ্য রূপ:** এর জন্য একটি অত্যাধুনিক রেজেক্স এবং জটিল অভিব্যক্তিগুলোর জন্য সম্ভবত একটি ছোট পার্সার প্রয়োজন।", "text": "৮. **গাণিতিক সংকেত → কথ্য রূপ:** এর জন্য একটি অত্যাধুনিক রেজেক্স এবং জটিল অভিব্যক্তির জন্য সম্ভবত একটি ছোট পার্সার প্রয়োজন।"}
+{"unnormalised": "", "normalised": "*   `x^2`: `এক্স স্কয়ার্ড`", "text": "x^2: x স্কয়ার্ড"}
+{"unnormalised": "", "normalised": "*   `x^3`: `x কিউবড` (regex `(\\w)\\^3`)", "text": "* `x^3`: `x কিউবড` (regex `(\\w)\\^3`)"}
+{"unnormalised": "", "normalised": "*   `x^n`: `x এর ঘাত n` (regex `(\\w)\\^(\\w+)`)", "text": "x^n: x এর পাওয়ার n"}
+{"unnormalised": "", "normalised": "*   `x_i`: `x সাব i` (রেজেক্স `(\\w)_(\\w+)`)", "text": "x_i: x সাব i"}
+{"unnormalised": "", "normalised": "*   `√x`: `x এর বর্গমূল`", "text": "রুট x: x-এর বর্গমূল"}
+{"unnormalised": "", "normalised": "*   `∫`: `ইন্টিগ্রাল`", "text": "∫ (x^2 + 3x - 5) dx = ?\nইন্টিগ্রাল (x^2 + 3x - 5) dx = ?"}
+{"unnormalised": "", "normalised": "*   `Σ`: `যোগফল`", "text": "Σ: যোগফল"}
+{"unnormalised": "", "normalised": "*   ভগ্নাংশ: `3/4` -> `তিন ভাগ চার` (regex: `(\\d+)\\/(\\d+)`, কিন্তু নিশ্চিত করা যে এটি তারিখ নয়)।", "text": "ভগ্নাংশ: `3/4` -> `three divided by four` (regex: `(\\d+)\\/(\\d+)`, তবে নিশ্চিত করা হচ্ছে এটি তারিখ নয়)।"}
+{"unnormalised": "", "normalised": "*   প্রতীক: `≠`, `≤`, `≥` সাধারণ প্রতীক প্রতিস্থাপনের মাধ্যমে পরিচালিত হবে।", "text": "এখানে একটি বাক্য অনুবাদ করুন।"}
+{"unnormalised": "", "normalised": "৯. **আউটপুট ফরম্যাট:**", "text": "৯. **আউটপুট ফরম্যাট:**"}
+{"unnormalised": "", "normalised": "* শেষের স্পেসগুলো স্বাভাবিক করুন: `re.sub(r'\\s+', ' ', text).strip()`।", "text": "এখানে একটি অনুচ্ছেদ রয়েছে যা অনুবাদের জন্য প্রস্তুত:\n\nআপনার যাত্রা যেখানে শুরু হয়, সেই স্থানটি গুরুত্বপূর্ণ। আপনার লক্ষ্য অর্জনে সাহায্য করার জন্য সঠিক ভিত্তি স্থাপন করা দরকার। একটি শক্তিশালী সূচনা প্রায়শই সাফল্যের দিকে পরিচালিত করে।"}
+{"unnormalised": "", "normalised": "১০. **ফাইল হ্যান্ডলিং:** `os.walk`, `os.makedirs`, `shutil.copy2`।", "text": "১০. **ফাইল হ্যান্ডলিং:** `os.walk`, `os.makedirs`, `shutil.copy2`।"}
+{"unnormalised": "", "normalised": "নির্দিষ্ট উপসর্গ হ্যান্ডলিং:", "text": "নির্দিষ্ট উপসর্গ হ্যান্ডলিং:"}
+{"unnormalised": "", "normalised": "ডাঃ, অধ্যাপক, অ্যাডভোকেট এই শব্দগুলোকে যথাযথভাবে বিবেচনা করতে হবে, প্রয়োজনে এদের পরে একটি বিন্দু বা স্পেস থাকতে পারে, এবং সেগুলোকে অপরিবর্তিত রাখতে হবে। এটি সাধারণ সংক্ষিপ্ত শব্দ প্রক্রিয়াকরণের আগে ঘটবে।\n\nPlease provide the English text you would like me to translate.", "text": "ডক্টর।, প্রফেসর।, অ্যাডভোকেট।\n\nHere is a sample sentence to translate:\n\n\"Dr. Smith went to see Prof. Jones. Adv. Rahman was also there.\"\nডক্টর. স্মিথ প্রফেসর. জোনসকে দেখতে গিয়েছিলেন। অ্যাডভোকেট. রহমানও সেখানে ছিলেন।"}
+{"unnormalised": "", "normalised": "চলুন, পাইথন স্ক্রিপ্ট তৈরি করা শুরু করি।", "text": "চলুন, পাইথন স্ক্রিপ্ট তৈরি করা শুরু করি।"}
+{"unnormalised": "", "normalised": "Okay, here's the translation:\n\nঠিক আছে, এখানে অনুবাদ:", "text": "Okay, here's the translation:\n\nঠিক আছে, এখানে অনুবাদ:"}
+{"unnormalised": "", "normalised": "ইম্পোর্ট ওএস", "text": "ইম্পোর্ট ওএস"}
+{"unnormalised": "", "normalised": "import re", "text": "import re"}
+{"unnormalised": "", "normalised": "import shutil\nএর অনুবাদ হলঃ\n\nshutil আমদানি করুন", "text": "import shutil\nএর অনুবাদ হলঃ\n\nshutil আমদানি করুন"}
+{"unnormalised": "", "normalised": "datetime মডিউল থেকে datetime আমদানি করুন", "text": "datetime মডিউল থেকে datetime আমদানি করুন"}
+{"unnormalised": "", "normalised": "from num2words import num2words", "text": "from num2words import num2words"}
+{"unnormalised": "", "normalised": "ইম্পোর্ট ইউনিকোডটা # ইউনিকোড প্রতীকগুলির জন্য", "text": "ইম্পোর্ট ইউনিকোডটা # ইউনিকোড প্রতীকগুলির জন্য"}
+{"unnormalised": "", "normalised": "def ordinal_suffix(day):", "text": "def ordinal_suffix(day):"}
+{"unnormalised": "", "normalised": "\"\"\"একটি সংখ্যার জন্য অর্ডিনাল সাফিক্স প্রদান করে।\"\"\"", "text": "\"\"\"একটি সংখ্যার জন্য অর্ডিনাল সাফিক্স প্রদান করে।\"\"\""}
+{"unnormalised": "", "normalised": "যদি 10 <= day % 100 <= 20 হয়:", "text": "যদি 10 <= দিন % 100 <= 20:"}
+{"unnormalised": "", "normalised": "রিটার্ন 'th'", "text": "'th' ফেরত দিন"}
+{"unnormalised": "", "normalised": "অন্যথায়:", "text": "অন্যথায়:"}
+{"unnormalised": "", "normalised": "return {1: 'st', 2: 'nd', 3: 'rd'}.get(day % 10, 'th')\n        রিটার্ন করুন {1: 'st', 2: 'nd', 3: 'rd'}.get(day % 10, 'th')", "text": "return {1: 'st', 2: 'nd', 3: 'rd'}.get(দিন % 10, 'th')"}
+{"unnormalised": "", "normalised": "ডিফ কনভার্ট_নাম্বার_টু_ওয়ার্ডস(নাম্বার_এসটিআর):", "text": "ডিফ কনভার্ট_নাম্বার_টু_ওয়ার্ডস(নাম্বার_এসটিআর):"}
+{"unnormalised": "", "normalised": "\"\"\"একটি সংখ্যা স্ট্রিংকে তার কথ্য রূপে রূপান্তরিত করে, প্রান্তিক ক্ষেত্রগুলি সামলায়।\"\"\"", "text": "\"\"\"একটি সংখ্যা স্ট্রিংকে তার কথ্য রূপে রূপান্তরিত করে, প্রান্তিক বিষয়গুলি সামাল দিয়ে।\"\"\""}
+{"unnormalised": "", "normalised": "চেষ্টা করুন:", "text": "চেষ্টা করুন:"}
+{"unnormalised": "", "normalised": "যদি '.' সংখ্যা_স্ট্রিং-এ থাকে:", "text": "যদি '.' সংখ্যা_স্ট্রিং-এর মধ্যে থাকে:"}
+{"unnormalised": "", "normalised": "যদি num2words স্বাভাবিকভাবে সব ক্ষেত্রে দশমিক সংখ্যা না লিখতে পারে, তবে দশমিক সংখ্যাগুলোর জন্য আলাদাভাবে ব্যবস্থা নিন।", "text": "# num2words যদি সব ক্ষেত্রে স্বাভাবিকভাবে দশমিক সংখ্যা সামলাতে না পারে, তবে দশমিক সংখ্যাগুলো আলাদাভাবে সামলাও"}
+{"unnormalised": "", "normalised": "পূর্ণ_সংখ্যা, ভগ্নাংশ_সংখ্যা = number_str.split('.')", "text": "পূর্ণ_সংখ্যা, ভগ্নাংশ_সংখ্যা = সংখ্যা_স্ট্রিং.split('.')"}
+{"unnormalised": "", "normalised": "পূর্ণ_সংখ্যার_শব্দ = num2words(int(পূর্ণ_সংখ্যা_অংশ))", "text": "integer_words = num2words(int(integer_part))"}
+{"unnormalised": "", "normalised": "decimal_words = 'পয়েন্ট ' + ' '.join(num2words(int(d)) for d in decimal_part)", "text": "decimal_words = 'পয়েন্ট ' + ' '.join(num2words(int(d)) for d in decimal_part)"}
+{"unnormalised": "", "normalised": "রিটার্ন করুন f\"{পূর্ণসংখ্যা_শব্দ} {দশমিক_শব্দ}\"", "text": "ফিরে আসুন f\"{integer_words} {decimal_words}\""}
+{"unnormalised": "", "normalised": "অন্যথায়:", "text": "অন্যথায়:"}
+{"unnormalised": "", "normalised": "রিটার্ন নামটুওয়ার্ডস(int(number_str))", "text": "return num2words(int(number_str))\nরিটার্ন num2words(int(number_str))"}
+{"unnormalised": "", "normalised": "ValueError ছাড়া:", "text": "ব্যতিক্রম ValueError:"}
+{"unnormalised": "", "normalised": "return number_str # রূপান্তর ব্যর্থ হলে আসলটি ফেরত দিন", "text": "রিটার্ন নাম্বার_স্ট্রিং # রূপান্তর ব্যর্থ হলে আসলটি ফেরত দিন"}
+{"unnormalised": "", "normalised": "def normalize_text(text):", "text": "def normalize_text(text):"}
+{"unnormalised": "", "normalised": "\"\"\"\n    \"\"\"\nআমি দুঃখিত, কিন্তু আপনি আমাকে অনুবাদ করার জন্য কোনো ইংরেজি টেক্সট দেননি। অনুগ্রহ করে টেক্সটটি দিন।", "text": "Okay, please provide the English text you want me to translate.\n\"\"\""}
+{"unnormalised": "", "normalised": "ইনপুট টেক্সটে সমস্ত স্বাভাবিকীকরণ নিয়মাবলী প্রয়োগ করে।", "text": "ইনপুট টেক্সটের উপর সমস্ত স্বাভাবিকীকরণ নিয়ম প্রযোজ্য।"}
+{"unnormalised": "", "normalised": "\"\"\"\n    \"\"\"\nআমি দুঃখিত, কিন্তু আপনি আমাকে অনুবাদ করার জন্য কোনো ইংরেজি টেক্সট দেননি। অনুগ্রহ করে টেক্সটটি দিন।", "text": "Okay, please provide the English text you want me to translate.\n\"\"\""}
+{"unnormalised": "", "normalised": "# --- 0. বিশেষ উপসর্গ পরিচালনা (ডঃ, অধ্যাপক, পরামর্শক) ---", "text": "# --- 0. বিশেষ উপসর্গ পরিচালনা (ডাঃ, অধ্যাপক, অ্যাডভোকেট) ---"}
+{"unnormalised": "", "normalised": "# এগুলোকে যেমন আছে তেমনই রেখে পরিচালনা করা হয়, এদেরকে আদ্যক্ষর হিসেবে গণ্য করা উচিত নয়।", "text": "# এগুলো যেমন আছে তেমনই থাকবে, এদেরকে আদ্যক্ষর হিসেবে গণ্য করা উচিত নয়।"}
+{"unnormalised": "", "normalised": "# কোনো স্পষ্ট প্রতিস্থাপনের প্রয়োজন নেই, শুধুমাত্র নিশ্চিত করে যে অন্যান্য নিয়মগুলি তাদের পরিবর্তন না করে।", "text": "# কোনো সুস্পষ্ট প্রতিস্থাপনের প্রয়োজন নেই, শুধু নিশ্চিত করে যে অন্য নিয়মাবলী সেগুলি পরিবর্তন করবে না।"}
+{"unnormalised": "", "normalised": "# --- ১. প্রতীক → কথ্য রূপ ---", "text": "# --- ১. চিহ্ন → কথ্য রূপ ---"}
+{"unnormalised": "", "normalised": "# প্রথমে আরো নির্দিষ্ট প্রতীক প্রতিস্থাপন", "text": "# আরো সুনির্দিষ্ট প্রতীক প্রতিস্থাপন প্রথমে"}
+{"unnormalised": "", "normalised": "টেক্সট = re.sub(r'\\+/-', 'প্লাস অথবা মাইনাস', টেক্সট)", "text": "টেক্সট = re.sub(r'\\+/-', 'প্লাস অথবা মাইনাস', টেক্সট)"}
+{"unnormalised": "", "normalised": "টেক্সট = re.sub(r'!=', 'নট ইকুয়াল টু', টেক্সট)", "text": "টেক্সট = re.sub(r'!=', 'নট ইকুয়াল টু', টেক্সট)"}
+{"unnormalised": "", "normalised": "টেক্সট = re.sub(r'<=', 'লেস দ্যান অর ইকুয়াল টু', টেক্সট)", "text": "টেক্সট = re.sub(r'<=', 'less than or equal to', টেক্সট)"}
+{"unnormalised": "", "normalised": "টেক্সট = re.সাব(আর'>=', 'বৃহত্তর বা সমান', টেক্সট)", "text": "টেক্সট = re.sub(r'>=', 'greater than or equal to', টেক্সট)"}
+{"unnormalised": "", "normalised": "টেক্সট = re.sub(r'==', 'ইকুয়ালস', টেক্সট)", "text": "টেক্সট = re.sub(r'==', 'equals', টেক্সট)"}
+{"unnormalised": "", "normalised": "টেক্সট = re.sub(r'->', 'ম্যাপস টু', টেক্সট) # গণিত/প্রোগ্রামিং প্রেক্ষাপটে সাধারণ", "text": "টেক্সট = re.sub(r'->', 'maps to', টেক্সট) # সাধারণত গণিত/প্রোগ্রামিং প্রসঙ্গে"}
+{"unnormalised": "", "normalised": "সিম্বল_ম্যাপ = {", "text": "symbol_map = {"}
+{"unnormalised": "", "normalised": "'#': 'হ্যাশ',", "text": "'#': 'হ্যাশ',"}
+{"unnormalised": "", "normalised": "'@': 'এট',", "text": "'@': 'এট',"}
+{"unnormalised": "", "normalised": "'&': 'এবং',", "text": "অ্যান্ড' : 'এবং',"}
+{"unnormalised": "", "normalised": "'*': 'নক্ষত্রচিহ্ন',", "text": "'*': 'নক্ষত্রচিহ্ন',"}
+{"unnormalised": "", "normalised": "'~': 'প্রায়',", "text": "'~': 'প্রায়',"}
+{"unnormalised": "", "normalised": "'≠': 'সমান নয়',", "text": "'≠': 'সমান নয়',"}
+{"unnormalised": "", "normalised": "'≤': 'থেকে ছোট অথবা সমান',", "text": "'≤': 'থেকে ছোট বা সমান',"}
+{"unnormalised": "", "normalised": "'≥': 'বৃহত্তর অথবা সমান',", "text": "'≥': 'বৃহত্তর বা সমান',"}
+{"unnormalised": "", "normalised": "'∫': 'ইন্টিগ্রাল',", "text": "'∫': 'ইন্টিগ্রাল',"}
+{"unnormalised": "", "normalised": "'∑': 'যোগফল',", "text": "'∑': 'যোগফল',"}
+{"unnormalised": "", "normalised": "'π': 'পাই',", "text": "'π': 'পাই',"}
+{"unnormalised": "", "normalised": "'√': 'বর্গমূল',", "text": "'√': 'বর্গমূল',"}
+{"unnormalised": "", "normalised": "'%': 'শতাংশ', # প্রায় ~, সাধারণ সংখ্যার আগে", "text": "'%': 'শতাংশ', # প্রায় ~ পরে, সাধারণ সংখ্যার আগে"}
+{"unnormalised": "", "normalised": "'°': 'ডিগ্রি', # সাধারণ সংখ্যার আগে", "text": "ডিগ্রী'°': 'ডিগ্রী', # সাধারণ সংখ্যার আগে"}
+{"unnormalised": "", "normalised": "'€': 'ইউরো',", "text": "'€': 'ইউরো',"}
+{"unnormalised": "", "normalised": "'£': 'পাউন্ড',", "text": "'£': 'পাউন্ড',"}
+{"unnormalised": "", "normalised": "}", "text": "}"}
+{"unnormalised": "", "normalised": "# আংশিক মিলগুলি এড়াতে অবতরণ ক্রমে দৈর্ঘ্য অনুসারে কীগুলি সাজান (যেমন, '≠' এর আগে '≠')", "text": "আংশিক মিলগুলি এড়াতে দৈর্ঘ্যের ভিত্তিতে কীগুলি নিম্নক্রমে সাজান (উদাহরণস্বরূপ, '≠' এর আগে '≠')"}
+{"unnormalised": "", "normalised": "for symbol, spoken_form in sorted(symbol_map.items(), key=lambda item: len(item[0]), reverse=True):", "text": "চিহ্ন, কথিত_রূপ এর জন্য sorted(symbol_map.items(), key=lambda item: len(item[0]), reverse=True):"}
+{"unnormalised": "", "normalised": "text = text.replace(symbol, spoken_form)", "text": "টেক্সট = টেক্সট.replace(সিম্বল, স্পোকেন_ফর্ম)"}
+{"unnormalised": "", "normalised": "# '/' পরিচালনা করা হচ্ছে", "text": "# '/' পরিচালনা করা"}
+{"unnormalised": "", "normalised": "# অগ্রাধিকার:", "text": "অগ্রাধিকার:"}
+{"unnormalised": "", "normalised": "১. ভাগ (সংখ্যা/গণিতের মধ্যে)", "text": "১. ভাগ (সংখ্যার মধ্যে/গণিত)"}
+{"unnormalised": "", "normalised": "# ২. অথবা (শব্দগুলোর মধ্যে)", "text": "২. অথবা (শব্দগুলোর মধ্যে)"}
+{"unnormalised": "", "normalised": "# 3. স্ল্যাশ (মিশ্র অক্ষর, সংক্ষিপ্ত রূপ, অবশিষ্ট)", "text": "# ৩. স্ল্যাশ (মিশ্র অক্ষর, সংক্ষিপ্ত রূপ, অবশিষ্ট)"}
+{"unnormalised": "", "normalised": "গণিতে ভগ্নাংশ বা ভাগ: ৩/৪ -> তিন ভাগ চার, ১/২ -> এক ভাগ দুই", "text": "১. গণিতে ভগ্নাংশ বা ভাগ: ৩/৪ -> তিন ভাগ চার, ১/২ -> এক ভাগ দুই"}
+{"unnormalised": "", "normalised": "# এটির নির্ভরযোগ্য হওয়া প্রয়োজন, এটি যেন কোনো তারিখ না হয় তা নিশ্চিত করতে হবে।", "text": "# এটিকে অবশ্যই শক্তিশালী হতে হবে, নিশ্চিত করতে হবে যে এটি তারিখ নয়।"}
+{"unnormalised": "", "normalised": "# যখন একটি ইউনিট অনুসরণ করা হয় তখন 1/2 এর জন্য বিশেষভাবে \"half\" (বিধি 3/7 এর আন্তঃসম্পর্ক)", "text": "যখন কোনো এককের পরে ১/২ থাকে, তখন এটিকে \"অর্ধেক\" হিসাবে উল্লেখ করতে হবে (বিধি ৩/৭ এর পারস্পরিক ক্রিয়া)।"}
+{"unnormalised": "", "normalised": "def replace_fraction_with_unit(match):", "text": "def replace_fraction_with_unit(match):"}
+{"unnormalised": "", "normalised": "num_str = match.group(1)", "text": "num_str = match.group(1)"}
+{"unnormalised": "", "normalised": "ডিনোম_স্ট্রিং = ম্যাচ.গ্রুপ(২)", "text": "ডেনোম_স্ট্র = ম্যাচ.গ্রুপ(২)"}
+{"unnormalised": "", "normalised": "unit = match.group(3) থাকলে সেটা, না হলে ''", "text": "ইউনিট = ম্যাচ.গ্রুপ(3) যদি ম্যাচ.গ্রুপ(3) থাকে অন্যথায় ''"}
+{"unnormalised": "", "normalised": "যদি num_str == '1' এবং denom_str == '2' হয়:", "text": "যদি num_str == '1' এবং denom_str == '2' হয়:"}
+{"unnormalised": "", "normalised": "return f\"অর্ধেক {unit}\"", "text": "ফেরত দিন f\"অর্ধেক {unit}\""}
+{"unnormalised": "", "normalised": "অন্যথায়:", "text": "অন্যথায়:"}
+{"unnormalised": "", "normalised": "রিটার্ন করুন f\"{convert_number_to_words(num_str)} কে ভাগ করা হয়েছে {convert_number_to_words(denom_str)} দিয়ে {unit}\"।strip()", "text": "ফিরে আসুন f\"{convert_number_to_words(num_str)} কে {convert_number_to_words(denom_str)} দিয়ে ভাগ করলে {unit}\"।strip()"}
+{"unnormalised": "", "normalised": "# X/Y ইউনিটের প্যাটার্ন, যেমন, ১/২ কেজি, ৩/৪ মিটার", "text": "# X/Y ইউনিটের প্যাটার্ন, যেমন, ১/২ কেজি, ৩/৪ মিটার"}
+{"unnormalised": "", "normalised": "টেক্সট = re.সাব(r'\\b(\\d+)/(\\d+)\\s*(cm|mm|m|km|g|kg|mg|ml|l|C|F|K|hour|day|week|month|year)s?\\b',", "text": "টেক্সট = re.sub(r'\\b(\\d+)/(\\d+)\\s*(cm|mm|m|km|g|kg|mg|ml|l|C|F|K|hour|day|week|month|year)s?\\b',"}
+{"unnormalised": "", "normalised": "ইউনিট দিয়ে ভগ্নাংশ প্রতিস্থাপন করো, টেক্সট, ফ্ল্যাগস=re.IGNORECASE)", "text": "replace_fraction_with_unit, text, flags=re.IGNORECASE)"}
+{"unnormalised": "", "normalised": "# একটি নির্দিষ্ট একক ছাড়া X/Y-এর জন্য প্যাটার্ন, যেমন, 3/4", "text": "নির্দিষ্ট ইউনিট ছাড়া X/Y এর প্যাটার্ন, যেমন, 3/4"}
+{"unnormalised": "", "normalised": "টেক্সট = রে.সাব(আর'\\b(\\d+)/(\\d+)\\b',", "text": "টেক্সট = re.sub(r'\\b(\\d+)/(\\d+)\\b',"}
+{"unnormalised": "", "normalised": "lambda m: f\"{convert_number_to_words(m.group(1))} কে {convert_number_to_words(m.group(2))} দিয়ে ভাগ করা হয়েছে\",", "text": "lambda m: f\"{convert_number_to_words(m.group(1))} কে {convert_number_to_words(m.group(2))} দিয়ে ভাগ করা হয়েছে\","}
+{"unnormalised": "", "normalised": "টেক্সট)", "text": "অনুগ্রহ করে আমাকে অনুবাদ করার জন্য ইংরেজি পাঠ্য দিন।"}
+{"unnormalised": "", "normalised": "# ২. শব্দের মধ্যে \"or\" (যেমন, শিল্প/হস্তশিল্প)", "text": "# ২. শব্দের মধ্যে \"or\" (উদাহরণস্বরূপ, শিল্প/নৈপুণ্য)"}
+{"unnormalised": "", "normalised": "টেক্সট = re.sub(r'(\\b\\w+)\\/(\\w+\\b)', r'\\1 অথবা \\2', টেক্সট)", "text": "টেক্সট = re.sub(r'(\\b\\w+)\\/(\\w+\\b)', r'\\1 অথবা \\2', টেক্সট)"}
+{"unnormalised": "", "normalised": "# 3. মিশ্র অক্ষর বা সংক্ষিপ্ত রূপের জন্য \"স্ল্যাশ\" (যেমন, QA/Dev, R/D)", "text": "# 3. মিশ্র অক্ষর বা সংক্ষিপ্ত রূপের জন্য \"স্ল্যাশ\" (যেমন, QA/Dev, R/D)"}
+{"unnormalised": "", "normalised": "# এটি তারিখ বা ভগ্নাংশ নয় এমন অবশিষ্ট স্ল্যাশগুলোকেও ধরে।", "text": "# এটি তারিখ বা ভগ্নাংশ নয় এমন অবশিষ্ট স্ল্যাশগুলিকেও ধরে।"}
+{"unnormalised": "", "normalised": "টেক্সট = re.sub(r'([A-Za-z0-9]+)\\/([A-Za-z0-9]+)', r'\\1 স্ল্যাশ \\2', টেক্সট)", "text": "টেক্সট = re.sub(r'([A-Za-z0-9]+)\\/([A-Za-z0-9]+)', r'\\1 স্ল্যাশ \\2', টেক্সট)"}
+{"unnormalised": "", "normalised": "# --- ২. সংক্ষিপ্ত রূপ → হাইফেনযুক্ত অক্ষর ---", "text": "# --- 2. সংক্ষিপ্ত রূপ → হাইফেনযুক্ত অক্ষর ---"}
+{"unnormalised": "", "normalised": "# ডাঃ, অধ্যাপক, অ্যাডভোকেট এবং সাধারণ মুদ্রার কোডগুলি (যেমন, USD, EUR, INR) বাদ দিন", "text": "ডাক্তার, অধ্যাপক, অ্যাডভোকেট এবং সাধারণ মুদ্রার কোড (যেমন, ইউএসডি, ইউরো, আইএনআর) বাদ দিন"}
+{"unnormalised": "", "normalised": "# এছাড়াও single letter বা number বাদ দিন যা কোনো expression এর অংশ হতে পারে, এবং unit গুলোও।", "text": "এখানে আপনার অনুবাদের জন্য স্থান।"}
+{"unnormalised": "", "normalised": "# এই রেজেক্সটি জটিল। আসুন আপারকেস অক্ষরের ক্রমগুলি মেলানোর চেষ্টা করি।", "text": "এই রেজেক্সটি জটিল। চলুন, বড় হাতের অক্ষরের সিকোয়েন্স মেলানোর চেষ্টা করি।"}
+{"unnormalised": "", "normalised": "# একটি শব্দের সীমানার জন্য লুকবিহাইন্ড, একটি শব্দের সীমানার জন্য লুকা ahead।", "text": "একটি শব্দের সীমানা খোঁজার জন্য লুকবিহাইন্ড, একটি শব্দের সীমানা খোঁজার জন্য লুকএহেড।"}
+{"unnormalised": "", "normalised": "# সাধারণ পূর্বনির্ধারিত শব্দগুলো বাদ দিন।", "text": "# সাধারণ পূর্বনির্ধারিত পদগুলি বাদ দিন।"}
+{"unnormalised": "", "normalised": "বাদ_দেওয়া_সংক্ষিপ্ত_রূপ = {'DR', 'PROF', 'ADV', 'USD', 'EUR', 'GBP', 'INR', 'K', 'M', 'B', 'T'}", "text": "বাদ দেওয়া সংক্ষিপ্ত রূপ: {'DR', 'PROF', 'ADV', 'USD', 'EUR', 'GBP', 'INR', 'K', 'M', 'B', 'T'}"}
+{"unnormalised": "", "normalised": "def replace_acronym(match):", "text": "def replace_acronym(match):"}
+{"unnormalised": "", "normalised": "সংক্ষিপ্তসার = match.group(0)", "text": "সংক্ষিপ্ত রূপ = match.group(0)"}
+{"unnormalised": "", "normalised": "যদি সংক্ষিপ্ত শব্দটি বাদ দেওয়া সংক্ষিপ্ত শব্দগুলির মধ্যে থাকে:", "text": "যদি সংক্ষিপ্ত শব্দটি বাদ দেওয়া সংক্ষিপ্ত শব্দগুলির মধ্যে থাকে:"}
+{"unnormalised": "", "normalised": "অ্যাক্রোনিম ফেরত দিন", "text": "রিটার্ন অ্যাক্রোনিম"}
+{"unnormalised": "", "normalised": "# এটি সম্ভাব্যভাবে 'KG', 'CM' ইত্যাদির মতো একটি একক কিনা তা পরীক্ষা করুন (যা পরে ইউনিট নিয়ম দ্বারা পরিচালিত হবে)", "text": "# এটি সম্ভাব্যভাবে 'কেজি', 'সিএম' ইত্যাদির মতো একটি ইউনিট কিনা তা পরীক্ষা করুন (যা পরে ইউনিট নিয়ম দ্বারা পরিচালিত হবে)"}
+{"unnormalised": "", "normalised": "যদি `acronym`-এর দৈর্ঘ্য ৩ বা তার কম হয় এবং `acronym.lower()` ['cm', 'mm', 'm', 'km', 'g', 'kg', 'mg', 'ml', 'l', 'c', 'f', 'k'] এর মধ্যে থাকে:", "text": "যদি len(acronym) <= 3 এবং acronym.lower() in ['cm', 'mm', 'm', 'km', 'g', 'kg', 'mg', 'ml', 'l', 'c', 'f', 'k']:"}
+{"unnormalised": "", "normalised": "রিটার্ন অ্যাক্রোনিম # ইউনিট রুলকে এটা হ্যান্ডেল করতে দিন", "text": "সংক্ষিপ্ত রূপ ফেরত দিন # ইউনিট নিয়ম এটির দেখাশোনা করুক"}
+{"unnormalised": "", "normalised": "return '-'.join(list(acronym))", "text": "রিটার্ন '-'.join(list(acronym))"}
+{"unnormalised": "", "normalised": "টেক্সট = re.sub(r'\\b[A-Z]{2,}\\b', replace_acronym, টেক্সট)", "text": "টেক্সট = re.sub(r'\\b[A-Z]{2,}\\b', replace_acronym, টেক্সট)"}
+{"unnormalised": "", "normalised": "# --- ৬. তারিখ → স্বাভাবিক কথ্য রূপ ---", "text": "# --- ৬. তারিখ → স্বাভাবিক কথ্য রূপ ---"}
+{"unnormalised": "", "normalised": "# YYYY-MM-DD অগ্রাধিকার দিন", "text": "অগ্রাধিকার দিন YYYY-MM-DD"}
+{"unnormalised": "", "normalised": "def replace_date(match):", "text": "def replace_date(match):"}
+{"unnormalised": "", "normalised": "চেষ্টা করুন:", "text": "চেষ্টা করুন:"}
+{"unnormalised": "", "normalised": "date_obj = datetime.strptime(match.group(0), '%Y-%m-%d')", "text": "date_obj = datetime.strptime(match.group(0), '%Y-%m-%d')"}
+{"unnormalised": "", "normalised": "দিন = তারিখ_অবজেক্ট.দিন", "text": "দিন = তারিখ_অবজেক্ট.দিন"}
+{"unnormalised": "", "normalised": "মাস = date_obj.strftime('%B').lower()", "text": "মাস = তারিখ_অবজেক্ট.strftime('%B').lower()"}
+{"unnormalised": "", "normalised": "year = num2words(date_obj.year)", "text": "বছর = num2words(date_obj.year)"}
+{"unnormalised": "", "normalised": "রিটার্ন এফ\"{num2words(day, to='ordinal')} {month} {year}\"", "text": "ফিরে আসবে f\"{num2words(day, to='ordinal')} {month} {year}\""}
+{"unnormalised": "", "normalised": "ব্যতিক্রম ValueError:", "text": "ব্যতিক্রম ValueError:"}
+{"unnormalised": "", "normalised": "return match.group(0) # যদি পার্সিং ব্যর্থ হয় তাহলে মূলটি ফেরত দিন", "text": "রিটার্ন ম্যাচ.গ্রুপ(0) # পার্সিং ব্যর্থ হলে আসলটি ফেরত দিন"}
+{"unnormalised": "", "normalised": "text = re.sub(r'\\b\\d{4}-\\d{2}-\\d{2}\\b', replace_date, text)", "text": "text = re.sub(r'\\b\\d{4}-\\d{2}-\\d{2}\\b', replace_date, text)"}
+{"unnormalised": "", "normalised": "# DD-MM-YYYY অথবা DD/MM/YYYY অগ্রাধিকার দিন (দ্ব্যর্থতাবোধক হলে DD/MM/YYYY ধরে নিন)", "text": "ডিডি-এমএম-ওয়াইওয়াইওয়াইওয়াই অথবা ডিডি/এমএম/ওয়াইওয়াইওয়াইওয়াই-কে অগ্রাধিকার দিন (দ্ব্যর্থতার ক্ষেত্রে ডিডি/এমএম/ওয়াইওয়াইওয়াইওয়াই ধরে)।"}
+{"unnormalised": "", "normalised": "def replace_date_ambiguous(match):", "text": "def replace_date_ambiguous(match):"}
+{"unnormalised": "", "normalised": "চেষ্টা করুন:", "text": "চেষ্টা করুন:"}
+{"unnormalised": "", "normalised": "# প্রথমে DD/MM/YYYY চেষ্টা করুন", "text": "# DD/MM/YYYY প্রথমে চেষ্টা করুন"}
+{"unnormalised": "", "normalised": "date_obj = datetime.strptime(match.group(0), '%d/%m/%Y')", "text": "date_obj = datetime.strptime(match.group(0), '%d/%m/%Y')"}
+{"unnormalised": "", "normalised": "ব্যতিক্রম ValueError:", "text": "ব্যতিক্রম ValueError:"}
+{"unnormalised": "", "normalised": "চেষ্টা করুন:", "text": "চেষ্টা করুন:"}
+{"unnormalised": "", "normalised": "# তারপর DD-MM-YYYY চেষ্টা করুন", "text": "# তারপর DD-MM-YYYY চেষ্টা করুন"}
+{"unnormalised": "", "normalised": "date_obj = datetime.strptime(match.group(0), '%d-%m-%Y')\n                তারিখ_অবজেক্ট = datetime.strptime(match.group(0), '%d-%m-%Y')", "text": "date_obj = datetime.strptime(match.group(0), '%d-%m-%Y')"}
+{"unnormalised": "", "normalised": "ব্যতিক্রম ValueError:", "text": "ব্যতিক্রম ValueError:"}
+{"unnormalised": "", "normalised": "return match.group(0) # যদি পার্সিং ব্যর্থ হয় তাহলে মূল লেখাটি ফেরত দাও", "text": "রিটার্ন ম্যাচ.গ্রুপ(0) # পার্সিং ব্যর্থ হলে আসলটি ফেরত দিন"}
+{"unnormalised": "", "normalised": "দিন = তারিখ_অবজেক্ট.দিন", "text": "দিন = তারিখ_অবজেক্ট.দিন"}
+{"unnormalised": "", "normalised": "মাস = date_obj.strftime('%B').lower()", "text": "মাস = তারিখ_অবজেক্ট.strftime('%B').lower()"}
+{"unnormalised": "", "normalised": "বছর = num2words(date_obj.year)", "text": "বছর = num2words(date_obj.year)"}
+{"unnormalised": "", "normalised": "return f\"{num2words(day, to='ordinal')} {month} {year}\"", "text": "ফিরে আসবে f\"{num2words(day, to='ordinal')} {month} {year}\""}
+{"unnormalised": "", "normalised": "টেক্সট = re.sub(r'\\b\\d{2}[-/]\\d{2}[-/]\\d{4}\\b', replace_date_ambiguous, টেক্সট)", "text": "টেক্সট = re.sub(r'\\b\\d{2}[-/]\\d{2}[-/]\\d{4}\\b', replace_date_ambiguous, টেক্সট)"}
+{"unnormalised": "", "normalised": "# --- 5. মুদ্রা + সংখ্যা + সাফিক্স ---", "text": "# --- ৫. মুদ্রা + সংখ্যা + সাফিক্স ---"}
+{"unnormalised": "", "normalised": "# এটি সাধারণ সাংখ্যিক প্রত্যয় এবং সাধারণ সংখ্যা পরিবর্তনের আগে আসতে হবে।", "text": "# এটি সাধারণ সংখ্যাসূচক সাফিক্স এবং সাধারণ সংখ্যা রূপান্তরের আগে আসা উচিত।"}
+{"unnormalised": "", "normalised": "def replace_currency_suffix(match):", "text": "def replace_currency_suffix(match):"}
+{"unnormalised": "", "normalised": "কারেন্সি_সিম্বল = match.group(1)", "text": "currency_symbol = match.group(1)"}
+{"unnormalised": "", "normalised": "number_str = match.group(3)", "text": "number_str = match.group(3)"}
+{"unnormalised": "", "normalised": "suffix = match.group(4)", "text": "suffix = match.group(4)\nসাফিক্স = match.group(4)"}
+{"unnormalised": "", "normalised": "The quick brown fox jumps over the lazy dog.\nদ্রুত বাদামী শেয়ালটি অলস কুকুরের উপর দিয়ে লাফিয়ে গেল।", "text": ""}
+{"unnormalised": "", "normalised": "মুদ্রার_নাম = ''", "text": "currency_name = ''"}
+{"unnormalised": "", "normalised": "যদি currency_symbol == '$':", "text": "যদি currency_symbol == '$':"}
+{"unnormalised": "", "normalised": "currency_name = 'ডলার'", "text": "currency_name = 'ডলার'"}
+{"unnormalised": "", "normalised": "elif currency_symbol == '₹':", "text": "যদি কারেন্সি প্রতীক '₹' হয়:"}
+{"unnormalised": "", "normalised": "currency_name = 'রুপি'", "text": "currency_name = 'রুপি'"}
+{"unnormalised": "", "normalised": "# প্রয়োজনে অন্যান্য মুদ্রা যোগ করুন", "text": "প্রয়োজন হলে অন্যান্য মুদ্রা যোগ করুন"}
+{"unnormalised": "", "normalised": "spoken_number = convert_number_to_words(number_str)\n        বলা_সংখ্যা = convert_number_to_words(সংখ্যা_স্ট্রিং)", "text": "কথিত_সংখ্যা = সংখ্যা_স্ট্রিং_কে_শব্দে_রূপান্তর_করো(সংখ্যা_স্ট্রিং)"}
+{"unnormalised": "", "normalised": "যদি সাফিক্স থাকে:", "text": "যদি সাফিক্স থাকে:"}
+{"unnormalised": "", "normalised": "suffix_map = {'K': 'হাজার', 'M': 'মিলিয়ন', 'B': 'বিলিয়ন', 'T': 'ট্রিলিয়ন'}", "text": "suffix_map = {'K': 'হাজার', 'M': 'মিলিয়ন', 'B': 'বিলিয়ন', 'T': 'ট্রিলিয়ন'}"}
+{"unnormalised": "", "normalised": "return f\"{currency_name} {spoken_number} {suffix_map[suffix]}\"", "text": "{currency_name} {spoken_number} {suffix_map[suffix]}"}
+{"unnormalised": "", "normalised": "অন্যথায়:", "text": "অন্যথায়:"}
+{"unnormalised": "", "normalised": "ফেরত দিন f\"{মুদ্রার_নাম} {কথ্য_সংখ্যা}\"", "text": "ফিরে আসুন f\"{মুদ্রার_নাম} {কথ্য_সংখ্যা}\""}
+{"unnormalised": "", "normalised": "টেক্সট = re.sub(r'([$₹€£])(\\s*)(\\d+)([KMBT])?\\b', replace_currency_suffix, টেক্সট)", "text": "text = re.sub(r'([$₹€£])(\\s*)(\\d+)([KMBT])?\\b', replace_currency_suffix, text)"}
+{"unnormalised": "", "normalised": "# --- ৪. সংখ্যাবাচক সাফিক্স → সম্প্রসারিত রূপ ---", "text": "# --- ৪. সংখ্যাবাচক প্রত্যয় → বিস্তৃত রূপ ---"}
+{"unnormalised": "", "normalised": "# এটি সাধারণ সংখ্যা রূপান্তরের আগে আসা উচিত।", "text": "# এইটি সাধারণ সংখ্যা রূপান্তরের আগে আসা উচিত।"}
+{"unnormalised": "", "normalised": "def replace_numeric_suffix(match):", "text": "def replace_numeric_suffix(match):"}
+{"unnormalised": "", "normalised": "number_str = match.group(1)", "text": "number_str = match.group(1)"}
+{"unnormalised": "", "normalised": "suffix = match.group(2)", "text": "প্রত্যয় = match.group(2)"}
+{"unnormalised": "", "normalised": "spoken_number = convert_number_to_words(number_str)\n        বলা_সংখ্যা = convert_number_to_words(সংখ্যা_স্ট্রিং)", "text": "কথিত_সংখ্যা = সংখ্যা_স্ট্রিং_কে_শব্দে_রূপান্তর_করো(সংখ্যা_স্ট্রিং)"}
+{"unnormalised": "", "normalised": "The quick brown fox jumps over the lazy dog.\nদ্রুত বাদামী শেয়ালটি অলস কুকুরের উপর দিয়ে লাফিয়ে গেল।", "text": ""}
+{"unnormalised": "", "normalised": "suffix_map = {'K': 'thousand', 'M': 'million', 'B': 'billion', 'T': 'trillion'}", "text": "suffix_map = {'K': 'হাজার', 'M': 'মিলিয়ন', 'B': 'বিলিয়ন', 'T': 'ট্রিলিয়ন'}"}
+{"unnormalised": "", "normalised": "return f\"{spoken_number} {suffix_map[suffix]}\"", "text": "ফিরে যান f\"{spoken_number} {suffix_map[suffix]}\""}
+{"unnormalised": "", "normalised": "টেক্সট = re.সাব(r'\\b(\\d+)([KMBT])\\b', রিপ্লেস_নিউমেরিক_সাফিক্স, টেক্সট)", "text": "text = re.sub(r'\\b(\\d+)([KMBT])\\b', replace_numeric_suffix, text)"}
+{"unnormalised": "", "normalised": "# --- ৭. একক → কথ্য রূপ ---", "text": "--- ৭. একক → কথ্য রূপ ---"}
+{"unnormalised": "", "normalised": "# এটি সাধারণ সংখ্যা রূপান্তরের আগে আসা উচিত।", "text": "# এইটি সাধারণ সংখ্যা রূপান্তরের আগে আসা উচিত।"}
+{"unnormalised": "", "normalised": "ইউনিট_ম্যাপ = {", "text": "ইউনিট_মাপ = {"}
+{"unnormalised": "", "normalised": "'cm': 'সেন্টিমিটার', 'mm': 'মিলমিটার', 'm': 'মিটার', 'km': 'কিলোমিটার',", "text": "'cm': 'সেন্টিমিটার',\n'mm': 'মিলমিটার',\n'm': 'মিটার',\n'km': 'কিলোমিটার',"}
+{"unnormalised": "", "normalised": "'g': 'গ্রাম', 'kg': 'কিলোগ্রাম', 'mg': 'মিলigram',", "text": "'g': 'গ্রাম', 'kg': 'কিলোগ্রাম', 'mg': 'মিলigram',"}
+{"unnormalised": "", "normalised": "'ml': 'মিলিলিটার', 'l': 'লিটার',", "text": "'ml': 'মিলিলিটার', 'l': 'লিটার',"}
+{"unnormalised": "", "normalised": "'C': 'সেলসিয়াস', 'F': 'ফারেনহাইট', 'K': 'কেলভিন', # ডিগ্রীর এককগুলোর জন্য", "text": "'C': 'সেলসিয়াস', 'F': 'ফারেনহাইট', 'K': 'কেলভিন', # ডিগ্রির এককগুলির জন্য"}
+{"unnormalised": "", "normalised": "'hrs': 'ঘন্টা', 'hr': 'ঘন্টা',", "text": "'ঘন্টা': 'ঘন্টা', 'ঘন্টা': 'ঘন্টা',"}
+{"unnormalised": "", "normalised": "'min': 'মিনিট', 'mins': 'মিনিটগুলি',", "text": "'min': 'মিনিট', 'mins': 'মিনিটগুলি',"}
+{"unnormalised": "", "normalised": "'sec': 'সেকেন্ড', 'secs': 'সেকেন্ডস',", "text": "'sec': 'সেকেন্ড', 'secs': 'সেকেন্ডস',"}
+{"unnormalised": "", "normalised": "'ভোল্ট': 'ভোল্ট', 'ভোল্টস': 'ভোল্টস', 'ভি': 'ভোল্ট',", "text": "'ভোল্ট': 'ভোল্ট', 'ভোল্টস': 'ভোল্টস', 'ভি': 'ভোল্ট',"}
+{"unnormalised": "", "normalised": "'amp': 'অ্যাম্পিয়ার', 'amps': 'অ্যাম্পিয়ারসমূহ', 'a': 'অ্যাম্পিয়ার',", "text": "'amp': 'অ্যাম্পিয়ার', 'amps': 'অ্যাম্পিয়ার্স', 'a': 'অ্যাম্পিয়ার',"}
+{"unnormalised": "", "normalised": "'ওয়াট': 'ওয়াট', 'ওয়াটস': 'ওয়াটস', 'ডব্লিউ': 'ওয়াট',", "text": "'watt': 'ওয়াট', 'watts': 'ওয়াট্স', 'w': 'ওয়াট',"}
+{"unnormalised": "", "normalised": "'hz': 'হার্জ', 'khz': 'কিলোহার্জ', 'mhz': 'মেগাহার্জ', 'ghz': 'গিগাহার্জ'", "text": "'হার্জ': 'হার্জ', 'কিলোহার্জ': 'কিলোহার্জ', 'মেগাহার্জ': 'মেগাহার্জ', 'গিগাহার্জ': 'গিগাহার্জ'"}
+{"unnormalised": "", "normalised": "}", "text": "}"}
+{"unnormalised": "", "normalised": "def replace_unit(match):", "text": "def replace_unit(match):"}
+{"unnormalised": "", "normalised": "number_str = match.group(1)", "text": "number_str = match.group(1)"}
+{"unnormalised": "", "normalised": "unit = match.group(2).lower()", "text": "ইউনিট = ম্যাচ.গ্রুপ(২).lower()"}
+{"unnormalised": "", "normalised": "spoken_number = convert_number_to_words(number_str)\n        বলা_সংখ্যা = convert_number_to_words(সংখ্যা_স্ট্রিং)", "text": "কথিত_সংখ্যা = সংখ্যা_স্ট্রিং_কে_শব্দে_রূপান্তর_করো(সংখ্যা_স্ট্রিং)"}
+{"unnormalised": "", "normalised": "spoken_unit = unit_map.get(unit, unit)", "text": "spoken_unit = unit_map.get(unit, unit)\nস্পোকেন_ইউনিট = ইউনিট_ম্যাপ.get(ইউনিট, ইউনিট)"}
+{"unnormalised": "", "normalised": "# ইউনিটের জন্য বহুবচন সামলানো হবে", "text": "এককের জন্য বহুবচন সামলানো।"}
+{"unnormalised": "", "normalised": "যদি int(number_str) > 1 এবং spoken_unit 's' দিয়ে শেষ না হয় এবং spoken_unit ['celsius', 'fahrenheit', 'kelvin'] এর মধ্যে না থাকে:", "text": "যদি int(number_str) > 1 হয় এবং spoken_unit 's' দিয়ে শেষ না হয় এবং spoken_unit ['celsius', 'fahrenheit', 'kelvin'] এর মধ্যে না থাকে:"}
+{"unnormalised": "", "normalised": "spoken_unit += 's'", "text": "কথ্য_একক += 'স'"}
+{"unnormalised": "", "normalised": "elif int(number_str) == 1 এবং spoken_unit টি 's' দিয়ে শেষ হলে এবং spoken_unit টি ['celsius', 'fahrenheit', 'kelvin'] এর মধ্যে না থাকলে:", "text": "যদি int(number_str) == 1 হয় এবং spoken_unit 's' দিয়ে শেষ হয় এবং spoken_unit ['celsius', 'fahrenheit', 'kelvin'] এর মধ্যে না থাকে:"}
+{"unnormalised": "", "normalised": "কথিত_একক = কথিত_একক[:-১] # যদি সংখ্যা ১ হয় এবং একক বহুবচন হয় তাহলে 's' বাদ দিন", "text": "কথোপকথন একক = কথোপকথন একক[:-1] # যদি সংখ্যা 1 হয় এবং এককটি বহুবচন হয় তবে 's' সরান"}
+{"unnormalised": "", "normalised": "return f\"{spoken_number} {spoken_unit}\"", "text": "ফিরে আসুন f\"{spoken_number} {spoken_unit}\""}
+{"unnormalised": "", "normalised": "# সরাসরি একটি ইউনিট অনুসরণ করে এমন সংখ্যার প্যাটার্ন (যেমন, 10সেমি, 5 কেজি)", "text": "# সরাসরি একক দ্বারা অনুসরণ করা সংখ্যাগুলির প্যাটার্ন (যেমন, 10 সেমি, 5 কেজি)"}
+{"unnormalised": "", "normalised": "# আংশিক মিলগুলি এড়াতে ইউনিটগুলির জন্য \\b ব্যবহার করা হচ্ছে (উদাহরণস্বরূপ, 'মিটার'-এ 'm')", "text": "আংশিক মিলগুলি (যেমন, 'মিটার'-এ 'm') এড়াতে এককগুলির জন্য \\b ব্যবহার করা।"}
+{"unnormalised": "", "normalised": "unit_pattern = r'\\b(\\d+(?:\\.\\d+)?)\\s*(%s)\\b' % '|'.join(re.escape(u) for u in unit_map.keys())", "text": "unit_pattern = r'\\b(\\d+(?:\\.\\d+)?)\\s*(%s)\\b' % '|'.join(re.escape(u) for u in unit_map.keys())"}
+{"unnormalised": "", "normalised": "টেক্সট = রেগুলার এক্সপ্রেশন ডট সাব (ইউনিট_প্যাটার্ন, রিপ্লেস_ইউনিট, টেক্সট, ফ্ল্যাগস=রেগুলার এক্সপ্রেশন ডট ইগনোরকেস)", "text": "text = re.sub(unit_pattern, replace_unit, text, flags=re.IGNORECASE)"}
+{"unnormalised": "", "normalised": "# ডিগ্রি সেলসিয়াস/ফারেনহাইট বিশেষভাবে পরিচালনা করুন, প্রায়শই ২৫°C হিসাবে লেখা হয়", "text": "ডিগ্রী সেলসিয়াস/ফারেনহাইট বিশেষভাবে পরিচালনা করুন, প্রায়শই ২৫°C হিসাবে লেখা হয়"}
+{"unnormalised": "", "normalised": "def replace_degree_unit(match):", "text": "def replace_degree_unit(match):"}
+{"unnormalised": "", "normalised": "number_str = match.group(1)", "text": "number_str = match.group(1)"}
+{"unnormalised": "", "normalised": "unit = match.group(2).upper() # 'C', 'F'\n        ইউনিট = match.group(2).upper() # 'C', 'F'", "text": "ইউনিট = match.group(2).upper() # 'C', 'F'"}
+{"unnormalised": "", "normalised": "spoken_number = convert_number_to_words(number_str)\n        বলা_সংখ্যা = convert_number_to_words(সংখ্যা_স্ট্রিং)", "text": "কথিত_সংখ্যা = সংখ্যা_স্ট্রিং_কে_শব্দে_রূপান্তর_করো(সংখ্যা_স্ট্রিং)"}
+{"unnormalised": "", "normalised": "unit = 'সেলসিয়াস' যদি ইউনিট == 'C' হয় অন্যথায় 'ফারেনহাইট' যদি ইউনিট == 'F' হয় অন্যথায় 'কেলভিন' যদি ইউনিট == 'K' হয় অন্যথায় ''", "text": "unit = 'C' হলে unit_name = 'সেলসিয়াস' অন্যথায় unit = 'F' হলে 'ফারেনহাইট' অন্যথায় unit = 'K' হলে 'কেলভিন' অন্যথায় ''"}
+{"unnormalised": "", "normalised": "return f\"{spoken_number} ডিগ্রি {unit_name}\"", "text": "ফিরে আসবে f\"{spoken_number} ডিগ্রী {unit_name}\""}
+{"unnormalised": "", "normalised": "টেক্সট = রে.সাব(r'\\b(\\d+(?:\\.\\d+)?)\\s*ডিগ্রী\\s*([CFK])\\b', রিপ্লেস_ডিগ্রী_ইউনিট, টেক্সট, ফ্ল্যাগস=রে.ইগনোরকেস) # 'ডিগ্রী' প্রতীক প্রতিস্থাপিত হওয়ার পরে", "text": "text = re.sub(r'\\b(\\d+(?:\\.\\d+)?)\\s*ডিগ্রী\\s*([CFK])\\b', replace_degree_unit, text, flags=re.IGNORECASE) # 'ডিগ্রী' প্রতীক প্রতিস্থাপিত হওয়ার পরে"}
+{"unnormalised": "", "normalised": "টেক্সট = re.sub(r'\\b(\\d+(?:\\.\\d+)?)\\s*degree\\s*(celsius|fahrenheit|kelvin)\\b', lambda m: f\"{convert_number_to_words(m.group(1))} ডিগ্রি {m.group(2)}\", টেক্সট, flags=re.IGNORECASE)", "text": "টেক্সট = re.sub(r'\\b(\\d+(?:\\.\\d+)?)\\s*degree\\s*(celsius|fahrenheit|kelvin)\\b', lambda m: f\"{convert_number_to_words(m.group(1))} degree {m.group(2)}\", টেক্সট, flags=re.IGNORECASE)"}
+{"unnormalised": "", "normalised": "# --- ৩. সংখ্যা → কথ্য রূপ (সাধারণ) ---", "text": "--- ৩. সংখ্যা → বাচনিক রূপ (সাধারণ) ---"}
+{"unnormalised": "", "normalised": "# যে কোনও অবশিষ্ট স্বতন্ত্র সংখ্যার ক্ষেত্রে প্রযোজ্য। এটি দেরিতে হওয়া উচিত।", "text": "# অবশিষ্ট যেকোনো একক সংখ্যাগুলিতে প্রয়োগ করুন। এটি দেরিতে হওয়া উচিত।"}
+{"unnormalised": "", "normalised": "# ফাইল নামের অংশ বা মিশ্র আলফানিউমেরিক স্ট্রিং যা দেখতে সংখ্যার মতো নয়, সেই সংখ্যাগুলো বাদ দিন।", "text": "ফাইলের নামের অংশ বা মিশ্র আলফানিউমেরিক স্ট্রিং যা নম্বরের মতো নয়, সেই সংখ্যাগুলি বাদ দিন।"}
+{"unnormalised": "", "normalised": "def replace_general_number(match):", "text": "def replace_general_number(match):"}
+{"unnormalised": "", "normalised": "number_str = match.group(0)", "text": "সংখ্যা_স্ট্রিং = ম্যাচ.গ্রুপ(0)"}
+{"unnormalised": "", "normalised": "# অন্যান্য শনাক্তকারীর অংশ এমন সংখ্যা রূপান্তর করা এড়িয়ে চলুন (যেমন, H2O, ID123)", "text": "# অন্যান্য শনাক্তকারীর অংশ এমন সংখ্যাগুলিকে রূপান্তর করা এড়িয়ে চলুন (যেমন, H2O, ID123)"}
+{"unnormalised": "", "normalised": "যদি re.match(r'^[A-Za-z]+$', number_str): # যদি এটা শুধু অক্ষর হয়, তাহলে অগ্রাহ্য করো", "text": "যদি re.match(r'^[A-Za-z]+$', number_str): # যদি এটি শুধুমাত্র অক্ষর হয়, তবে উপেক্ষা কর"}
+{"unnormalised": "", "normalised": "রিটার্ন নাম্বার_স্ট্রিং", "text": "রিটার্ন নাম্বার_স্ট্রিং"}
+{"unnormalised": "", "normalised": "The quick brown fox jumps over the lazy dog.\nদ্রুত বাদামী শেয়ালটি অলস কুকুরের উপর দিয়ে লাফিয়ে গেল।", "text": ""}
+{"unnormalised": "", "normalised": "# দশমিকের পরে শুধুমাত্র শূন্য আছে এমন একটি ফ্লোটিং পয়েন্ট সংখ্যা হলে রূপান্তর করা এড়িয়ে চলুন এবং num2words পূর্ণ স্টপ দেয়", "text": "# দশমিকের পরে শুধুমাত্র শূন্য আছে এবং num2words পূর্ণ স্টপ দিলে রূপান্তর করা এড়িয়ে চলুন"}
+{"unnormalised": "", "normalised": "যদি number_str এর মধ্যে '.' থাকে এবং float(number_str) == int(float(number_str)) হয়:", "text": "যদি '.' সংখ্যা_স্ট্রিং-এর মধ্যে থাকে এবং float(সংখ্যা_স্ট্রিং) == int(float(সংখ্যা_স্ট্রিং)) হয়:"}
+{"unnormalised": "", "normalised": "রিটার্ন করুন convert_number_to_words(str(int(float(number_str))))", "text": "রিটার্ন কনভার্ট_নাম্বার_টু_ওয়ার্ডস(স্ট্র(ইন্ট(ফ্লোট(নাম্বার_স্ট্র))))"}
+{"unnormalised": "", "normalised": "The quick brown fox jumps over the lazy dog.\nদ্রুত বাদামী শেয়ালটি অলস কুকুরের উপর লাফিয়ে পড়ল।", "text": ""}
+{"unnormalised": "", "normalised": "return convert_number_to_words(number_str)\n        রিটার্ন করো সংখ্যাকে শব্দে পরিবর্তনের ফাংশন (number_str)-এর মাধ্যমে।", "text": "রিটার্ন কনভার্ট_নাম্বার_টু_ওয়ার্ডস(নাম্বার_স্ট্র)"}
+{"unnormalised": "", "normalised": "text = re.sub(r'\\b\\d+(?:\\.\\d+)?\\b', replace_general_number, text)", "text": "টেক্সট = re.sub(r'\\b\\d+(?:\\.\\d+)?\\b', replace_general_number, টেক্সট)"}
+{"unnormalised": "", "normalised": "# --- 8. গাণিতিক প্রতীক → মৌখিক রূপ ---", "text": "# --- ৮. গাণিতিক প্রতীক → কথ্য রূপ ---"}
+{"unnormalised": "", "normalised": "# নিশ্চিত করুন যে সাধারণ প্রতীক/সংখ্যা রূপান্তরের পরে এটি ঘটে যাতে দ্বন্দ্ব এড়ানো যায়", "text": "# নিশ্চিত করুন যে এটি সাধারণ প্রতীক/সংখ্যা রূপান্তরের পরে ঘটে যাতে দ্বন্দ্ব এড়ানো যায়"}
+{"unnormalised": "", "normalised": "পাঠ্য = re.sub(r'(\\w)\\^2', r'\\1 বর্গক্ষেত্র', পাঠ্য)", "text": "টেক্সট = re.sub(r'(\\w)\\^2', r'\\1 squared', টেক্সট)"}
+{"unnormalised": "", "normalised": "টেক্সট = রে.সাব(r'(\\w)\\^3', r'\\1 কিউবড', টেক্সট)", "text": "টেক্সট = re.sub(r'(\\w)\\^3', r'\\1 কিউবড', টেক্সট)"}
+{"unnormalised": "", "normalised": "টেক্সট = re.sub(r'(\\w)\\^(\\w+)', r'\\1 টু দি পাওয়ার অফ \\2', টেক্সট) # সাধারণ পাওয়ার", "text": "টেক্সট = re.sub(r'(\\w)\\^(\\w+)', r'\\1 টু দি পাওয়ার অফ \\2', টেক্সট) # সাধারণ পাওয়ার"}
+{"unnormalised": "", "normalised": "টেক্সট = re.sub(r'(\\w)_(\\w+)', r'\\1 সাব \\2', টেক্সট) # সাবস্ক্রিপ্ট", "text": "text = re.sub(r'(\\w)\\^(\\w+)', r'\\1 sup \\2', text) # Superscript"}
+{"unnormalised": "", "normalised": "text = re.sub(r'summation\\s*x\\s*sub\\s*i', 'এক্স সাব আই এর সমষ্টি', text) # সাধারণ সমষ্টি রূপ", "text": "টেক্সট = re.sub(r'summation\\s*x\\s*sub\\s*i', 'সামেশন অফ এক্স সাব আই', টেক্সট) # কমন সামেশন ফর্ম"}
+{"unnormalised": "", "normalised": "টেক্সট = re.sub(r'ইন্টিগ্রাল\\s*(\\d+)\\s*থেকে\\s*(\\d+)\\s*এর\\s*(\\w)\\s*ডি\\s*(\\w)',", "text": "ইন্টিগ্রাল \\১ থেকে \\২ পর্যন্ত \\৩ এর d\\৪"}
+{"unnormalised": "", "normalised": "ল্যাম্বডা m: f\"ইন্টিগ্রাল {convert_number_to_words(m.group(1))} থেকে {convert_number_to_words(m.group(2))} পর্যন্ত {m.group(3)} ডি {m.group(4)}\",", "text": "ল্যাম্বডা m: f\"ইন্টিগ্রাল {convert_number_to_words(m.group(1))} থেকে {convert_number_to_words(m.group(2))} পর্যন্ত {m.group(3)} ডি {m.group(4)}\","}
+{"unnormalised": "", "normalised": "text) # নির্দিষ্ট ইন্টিগ্রাল রূপ ∫ 0→1 x dx", "text": "# নির্দিষ্ট যোগজ আকার ∫ 0→1 x dx"}
+{"unnormalised": "", "normalised": "text = re.sub(r'integral\\s*(\\w)\\s*d\\s*(\\w)', r'\\1 ডি \\2 এর ইন্টিগ্রাল', text) # সাধারণ ইন্টিগ্রাল ফর্ম ∫ x dx", "text": "টেক্সট = re.sub(r'integral\\s*(\\w)\\s*d\\s*(\\w)', r'integral of \\1 d \\2', টেক্সট) # সাধারণ ইন্টিগ্রাল ফর্ম ∫ x dx"}
+{"unnormalised": "", "normalised": "# --- ফাইনাল স্পেস নরমালাইজেশন ---", "text": "# --- ফাইনাল স্পেস নরমালাইজেশন ---"}
+{"unnormalised": "", "normalised": "টেক্সট = re.sub(r'\\s+', ' ', টেক্সট).strip()", "text": "টেক্সট = re.sub(r'\\s+', ' ', টেক্সট).strip()"}
+{"unnormalised": "", "normalised": "রিটার্ন টেক্সট", "text": "অনুগ্রহ করে আমাকে অনুবাদ করার জন্য পাঠ্য দিন।"}
+{"unnormalised": "", "normalised": "def process_folder(input_folder, output_folder):", "text": "def process_folder(input_folder, output_folder):"}
+{"unnormalised": "", "normalised": "\"\"\"\n    \"\"\"\nআমি দুঃখিত, কিন্তু আপনি আমাকে অনুবাদ করার জন্য কোনো ইংরেজি টেক্সট দেননি। অনুগ্রহ করে টেক্সটটি দিন।", "text": "Okay, please provide the English text you want me to translate.\n\"\"\""}
+{"unnormalised": "", "normalised": "ইনপুট ফোল্ডারের মধ্যে হাঁটাচলা করে, .txt ফাইলগুলোকে স্বাভাবিক করে এবং অন্যগুলোকে কপি করে।", "text": "ইনপুট ফোল্ডারের মধ্যে দিয়ে হেঁটে যায়, .txt ফাইলগুলোকে স্বাভাবিক করে, এবং অন্যান্য ফাইল কপি করে।"}
+{"unnormalised": "", "normalised": "\"\"\"\n    \"\"\"\nআমি দুঃখিত, কিন্তু আপনি আমাকে অনুবাদ করার জন্য কোনো ইংরেজি টেক্সট দেননি। অনুগ্রহ করে টেক্সটটি দিন।", "text": "Okay, please provide the English text you want me to translate.\n\"\"\""}
+{"unnormalised": "", "normalised": "os.makedirs(output_folder, exist_ok=True)", "text": "os.makedirs(output_folder, exist_ok=True)"}
+{"unnormalised": "", "normalised": "unnormalized_txt_files = []", "text": "unnormalized_txt_files = []"}
+{"unnormalised": "", "normalised": "for root, dirs, files in os.walk(input_folder):", "text": "for root, dirs, files in os.walk(input_folder):"}
+{"unnormalised": "", "normalised": "relative_path = os.path.relpath(root, input_folder)", "text": "আপেক্ষিক_পথ = os.path.relpath(রুট, ইনপুট_ফোল্ডার)"}
+{"unnormalised": "", "normalised": "current_output_dir = os.path.join(output_folder, relative_path)\n        বর্তমান_আউটপুট_ডির = os.path.join(আউটপুট_ফোল্ডার, আপেক্ষিক_পথ)", "text": "বর্তমান_আউটপুট_ডির = os.path.join(আউটপুট_ফোল্ডার, আপেক্ষিক_পথ)"}
+{"unnormalised": "", "normalised": "os.makedirs(current_output_dir, exist_ok=True)", "text": "os.makedirs(current_output_dir, exist_ok=True)"}
+{"unnormalised": "", "normalised": "ফাইলের নামের জন্য ফাইলগুলোতে:", "text": "ফাইলের নামের জন্য ফাইলগুলিতে:"}
+{"unnormalised": "", "normalised": "ইনপুট ফাইলের পাথ = os.path.join(রুট, ফাইলের নাম)", "text": "ইনপুট ফাইল পাথ = os.path.join(রুট, ফাইল_নেইম)"}
+{"unnormalised": "", "normalised": "আউটপুট ফাইলের পাথ = os.path.join(বর্তমান_আউটপুট_ডিরেক্টরি, ফাইলের_নাম)", "text": "আউটপুট ফাইলের পাথ হল: os.path.join(current_output_dir, file_name)"}
+{"unnormalised": "", "normalised": "যদি file_name.lower().endswith('.txt'):", "text": "যদি file_name.lower().endswith('.txt'):"}
+{"unnormalised": "", "normalised": "চেষ্টা করুন:", "text": "চেষ্টা করুন:"}
+{"unnormalised": "", "normalised": "with open(input_file_path, 'r', encoding='utf-8') as f_in:", "text": "with open(input_file_path, 'r', encoding='utf-8') as f_in:\nইনপুট_ফাইল_পাথ দিয়ে একটি ফাইল 'আর' মোডে (পড়ার জন্য) খোলা হচ্ছে, যেখানে এনকোডিং 'utf-8'। এই খোলা ফাইলটি 'এফ_ইন' নামে পরিচিত হবে।"}
+{"unnormalised": "", "normalised": "content = f_in.read()", "text": "content = f_in.read()\nকন্টেন্ট = f_in.read()"}
+{"unnormalised": "", "normalised": "আশা করি ভালো আছেন।\n\nআমি আপনাকে জানাতে চাই যে আপনার আবেদনটি সফলভাবে গৃহীত হয়েছে।\n\nআমরা শীঘ্রই আপনার সাথে যোগাযোগ করব।\n\nধন্যবাদ।", "text": ""}
+{"unnormalised": "", "normalised": "স্বাভাবিককৃত_বিষয়বস্তু = লেখা_স্বাভাবিককর(বিষয়বস্তু)", "text": "স্বাভাবিককৃত_বিষয় = বিষয়বস্তুকে_স্বাভাবিক_করা(বিষয়বস্তু)"}
+{"unnormalised": "", "normalised": "with open(output_file_path, 'w', encoding='utf-8') as f_out:\n                    \n                    আউটপুট_ফাইল_পাথ খোলা হলো, যেখানে 'w' (রাইট) মোডে এবং 'utf-8' এনকোডিং ব্যবহার করা হয়েছে f_out নামে:", "text": "with open(output_file_path, 'w', encoding='utf-8') as f_out:"}
+{"unnormalised": "", "normalised": "f_আউট.রাইট(স্বাভাবিককৃত_বিষয়বস্তু)", "text": "f_আউট.রাইট(স্বাভাবিককৃত_বিষয়বস্তু)"}
+{"unnormalised": "", "normalised": "ব্যতিক্রম হিসাবে Exception এর ক্ষেত্রে:", "text": "ব্যতিক্রম হিসাবে ত্রুটি ঘটলে:"}
+{"unnormalised": "", "normalised": "print(f\"Error processing {input_file_path}: {e}\")\n                    প্রসেস করার সময় ত্রুটি {input_file_path}: {e}", "text": "প্রক্রিয়াকরণে ত্রুটি: {input_file_path}: {e}"}
+{"unnormalised": "", "normalised": "unnormalized_txt_files.append(input_file_path)\n                    অস্বাভাবিক_txt_files.append(input_file_path)", "text": "আননর্মালাইজড_টিএক্সটি_ফাইলস.append(ইনপুট_ফাইল_পাথ)"}
+{"unnormalised": "", "normalised": "# ত্রুটি হলে, মূল ফাইলটি আউটপুটে কপি করুন", "text": "যদি ত্রুটি হয়, তাহলে মূল ফাইলটি কপি করে আউটপুটে দিন"}
+{"unnormalised": "", "normalised": "শুটাইল ডট কপি২(ইনপুট_ফাইল_পাথ, আউটপুট_ফাইল_পাথ)", "text": "শুটাইল.কপি২(ইনপুট_ফাইল_পাথ, আউটপুট_ফাইল_পাথ)"}
+{"unnormalised": "", "normalised": "অন্যথায়:", "text": "অন্যথায়:"}
+{"unnormalised": "", "normalised": "শুটাইল.কপি২(ইনপুট_ফাইল_পাথ, আউটপুট_ফাইল_পাথ)", "text": "শুটাইল.কপি২(ইনপুট_ফাইল_পাথ, আউটপুট_ফাইল_পাথ)"}
+{"unnormalised": "", "normalised": "প্রিয় [নাম],\n\nকেমন আছো? আশা করি ভালো আছো।\n\nআমি তোমাকে এটা জানাতে লিখছি যে আমি একটি নতুন চাকরি পেয়েছি! আমি খুবই উচ্ছ্বসিত এবং নতুন সুযোগের জন্য প্রস্তুত।\n\nআমি তোমাকে খুব শীঘ্রই বিস্তারিত জানাবো।\n\nশুভেচ্ছান্তে,\n[তোমার নাম]", "text": ""}
+{"unnormalised": "", "normalised": "যদি অপরিমার্জিত txt ফাইল থাকে:", "text": "যদি অপরিবর্তিত_টেক্সট_ফাইলস থাকে:"}
+{"unnormalised": "", "normalised": "print(\"\\n--- যে .txt ফাইলগুলি স্বাভাবিক করা যায়নি তার তালিকা (পরিবর্তে আসলটি অনুলিপি করা হয়েছে) ---\")", "text": "print(\"\\n--- যে .txt ফাইলগুলি স্বাভাবিক করা যায়নি তার তালিকা (পরিবর্তে আসলটি কপি করা হয়েছে) ---\")"}
+{"unnormalised": "", "normalised": "for f in unnormalized_txt_files:", "text": "f এর জন্য অ-স্বাভাবিককৃত টেক্সট ফাইলগুলিতে:"}
+{"unnormalised": "", "normalised": "প্রিন্ট(f)", "text": "প্রিন্ট(f)"}
+{"unnormalised": "", "normalised": "যদি __name__ == \"__main__\":", "text": "যদি __name__ == \"__main__\":"}
+{"unnormalised": "", "normalised": "# উদাহরণস্বরূপ ব্যবহার:", "text": "ঠিক আছে। আপনার টেক্সট দিন।"}
+{"unnormalised": "", "normalised": "# পরীক্ষার জন্য একটি ডামি ডেটাসেট কাঠামো তৈরি করুন", "text": "# পরীক্ষার জন্য একটি ডামি ডেটাসেট কাঠামো তৈরি করুন"}
+{"unnormalised": "", "normalised": "if not os.path.exists(\"dataset\"):", "text": "যদি \"dataset\" নামে কোনো ফোল্ডার না থাকে:"}
+{"unnormalised": "", "normalised": "os.makedirs(\"dataset/subfolder1\", exist_ok=True)", "text": "os.makedirs(\"dataset/subfolder1\", exist_ok=True)"}
+{"unnormalised": "", "normalised": "os.makedirs(\"dataset/subfolder2\", exist_ok=True)", "text": "os.makedirs(\"dataset/subfolder2\", exist_ok=True)"}
+{"unnormalised": "", "normalised": "with open(\"dataset/test1.txt\", \"w\", encoding=\"utf-8\") as f:\n        with open(\"dataset/test1.txt\", \"w\", encoding=\"utf-8\") as f:", "text": "\"dataset/test1.txt\" ফাইলটি লেখার জন্য খোলার সময়, এনকোডিং \"utf-8\" সেট করা হল:"}
+{"unnormalised": "", "normalised": "f.write(\"দাম ২০ বিলিয়ন ডলার। NASA ১৯৫৮ সালে যাত্রা শুরু করে। প্রায় ~৫% লাভ।\\n\")", "text": "f.write(\"দাম ২০ বিলিয়ন ডলার। নাসা ১৯৫৮ সালে যাত্রা শুরু করে। প্রায় ~৫% লাভ।\\n\")"}
+{"unnormalised": "", "normalised": "f.write(\"আজকের তারিখ ১০/০৯/২০২৪। ডাঃ স্মিথ ইউ.এস.এ. সরকারের জন্য কাজ করেন।\\n\")", "text": "f.write(\"আজকের তারিখ ১০/০৯/২০২৪। ডক্টর স্মিথ ইউ.এস.এ. সরকারের জন্য কাজ করেন।\\n\")"}
+{"unnormalised": "", "normalised": "f.write(\"তাপমাত্রা ২৫° সেলসিয়াস। জল ১০০° সেলসিয়াসে ফুটেছে। মোট ৫ কিমি দৌড়।\\n\")", "text": "f.write(\"তাপমাত্রা ২৫° সেলসিয়াস। জল ১০০° সেলসিয়াসে ফোটে। মোট ৫ কিমি দৌড়।\\n\")"}
+{"unnormalised": "", "normalised": "f.write(\"সমীকরণটি হল ২+২=৪। ক্ষেত্রফল হল πr^2। যোগফল হল Σ x_i। x^2 এবং x^3 বিবেচনা করুন। এছাড়াও x^n।\\n\")", "text": "f.write(\"সমীকরণটি হল 2+2=4। ক্ষেত্রফল হল πr^2। যোগফল হল Σ x_i। বিবেচনা করুন x^2 এবং x^3। এছাড়াও x^n।\\n\")"}
+{"unnormalised": "", "normalised": "f.write(\"ভগ্নাংশটি হল 3/4। আমাদের 1/2 কেজি চিনি দরকার। প্রতিবেদনটি QA/Dev এবং art/craft নিয়ে গঠিত। জিডিপি প্রবৃদ্ধি শক্তিশালী। অ্যাডভোকেট রাম এখানে আছেন।\\n\")", "text": "f.write(\"ভগ্নাংশটি হল 3/4. আমাদের 1/2 কেজি চিনি দরকার। এই প্রতিবেদনে QA/Dev এবং art/craft অন্তর্ভুক্ত। জিডিপি বৃদ্ধি শক্তিশালী। অ্যাডভোকেট রাম এখানে।\\n\")"}
+{"unnormalised": "", "normalised": "f.write(\"গণিত: ∫ x^2 dx অথবা ∫ 0→1 x dx যদি x != y হয়, তবে x <= z অথবা z >= x তিনি 100M ড্যাশ দৌড়ান।\\n\")", "text": "f.write(\"গণিত: ∫ x^2 dx। অথবা ∫ 0→1 x dx। যদি x != y হয়, তাহলে x <= z অথবা z >= x। সে ১০০মি দৌড়ায়।\\n\")"}
+{"unnormalised": "", "normalised": "f.write(\"সে ৪৫ মিনিটে ১০ কিমি দৌড়েছিল। তার গতি ছিল ১০০ কিমি/ঘণ্টা। ব্যাটারিটি ১২ভি এবং ৫০এ।\\n\")", "text": "f.write(\"সে ৪৫ মিনিটে ১০ কিমি দৌড়েছিল। তার গতি ছিল ১০০ কিমি/ঘন্টা। ব্যাটারিটি ১২ভি এবং ৫০এ।\\n\")"}
+{"unnormalised": "", "normalised": "f.write(\"পণ্য আইডি: PROD123, PROD456।\\n\")", "text": "f.write(\"পণ্য আইডি: PROD123, PROD456।\\n\")"}
+{"unnormalised": "", "normalised": "f.write(\"₹৫০০M বিনিয়োগ করা হয়েছে। মান ৯৯। সংখ্যাটি ৭।\\n\")", "text": "f.write(\"₹500M বিনিয়োগ করা হয়েছিল। মান হল 99। সংখ্যাটি হল 7।\\n\")"}
+{"unnormalised": "", "normalised": "f.write(\"এটিতে ১২.৫ কেজি দশমিক আছে। মোট ১.০ মিলিয়ন মানুষ। পরীক্ষা ১.০ কেজি এবং ১.০০ কেজি।\\n\")", "text": "f.write(\"এটির ওজন দশমিক ১ ২.৫ কেজি। মোট ১.০ এম মানুষ। পরীক্ষা ১.০ কেজি এবং ১.০০ কেজি।\\n\")"}
+{"unnormalised": "", "normalised": "with open(\"dataset/subfolder1/test2.txt\", \"w\", encoding=\"utf-8\") as f:\n        \"dataset/subfolder1/test2.txt\" ফাইলটি \"w\" মোডে, এনকোডিং \"utf-8\" সহ খোলা হচ্ছে এবং f নামে অ্যাসাইন করা হচ্ছে:", "text": "with open(\"dataset/subfolder1/test2.txt\", \"w\", encoding=\"utf-8\") as f:"}
+{"unnormalised": "", "normalised": "f.write(\"প্রজেক্ট আলফা ২০২৩-১২-০১ তারিখে শুরু হয়েছে। অধ্যাপক জোন্স ∫ x^n dx নিয়ে একটি বক্তৃতা দিয়েছেন।\\n\")", "text": "f.write(\"প্রজেক্ট আলফা ২০২৩-১২-০১ তারিখে শুরু হয়েছিল। অধ্যাপক জোন্স ∫ x^n dx এর উপর একটি বক্তৃতা দিয়েছেন।\\n\")"}
+{"unnormalised": "", "normalised": "f.write(\"সে ২.৫ ঘন্টা পড়াশোনা করেছে। ডেটা ১.২ মিলিয়ন রেকর্ড। সে প্রতি মাসে ৫০ হাজার টাকা আয় করে।\\n\")", "text": "f.write(\"সে ২.৫ ঘণ্টা পড়াশোনা করেছে। ডেটা ১.২M রেকর্ড। সে প্রতি মাসে ৫০K উপার্জন করে।\\n\")"}
+{"unnormalised": "", "normalised": "with open(\"dataset/subfolder2/image.jpg\", \"w\", encoding=\"utf-8\") as f:\n        with open(\"dataset/subfolder2/image.jpg\", \"w\", encoding=\"utf-8\") as f:\n```\n        with open(\"dataset/subfolder2/image.jpg\", \"w\", encoding=\"utf-8\") as f:\n        with open(\"dataset/subfolder2/image.jpg\", \"w\", encoding=\"utf-8\") as f:\n```", "text": "with open(\"dataset/subfolder2/image.jpg\", \"w\", encoding=\"utf-8\") as f:"}
+{"unnormalised": "", "normalised": "f.write(\"এটি কোনো টেক্সট ফাইল নয়।\") # অ-txt ফাইলের জন্য ডামি কন্টেন্ট", "text": "f.write(\"এটি কোনো টেক্সট ফাইল নয়।\") # অ-txt ফাইলের জন্য ডামি কন্টেন্ট"}
+{"unnormalised": "", "normalised": "with open(\"dataset/subfolder2/another.txt\", \"w\", encoding=\"utf-8\") as f:\n```\n        with open(\"dataset/subfolder2/another.txt\", \"w\", encoding=\"utf-8\") as f:\n```", "text": "with open(\"dataset/subfolder2/another.txt\", \"w\", encoding=\"utf-8\") as f:"}
+{"unnormalised": "", "normalised": "f.write(\"বিশেষ অক্ষর: ≠, ≤, ≥. প্রায় পাঁচ শতাংশ পরীক্ষা করুন ~৫%. হ্যাশ #ট্যাগ। @ব্যবহারকারী-তে। এবং & আরও।\")", "text": "f.write(\"বিশেষ অক্ষর: ≠, ≤, ≥। প্রায় পাঁচ শতাংশ ~৫% পরীক্ষা করুন। হ্যাশ #ট্যাগ। @user-এ। এবং & আরো।\")"}
+{"unnormalised": "", "normalised": "ইনপুট_ডেটা_ফোল্ডার = \"dataset\"", "text": "ইনপুট_ডাটা_ফোল্ডার = \"dataset\""}
+{"unnormalised": "", "normalised": "আউটপুট_নরমালাইজড_ফোল্ডার = \"dataset_normalized\"", "text": "আউটপুট_নর্মালাইজড_ফোল্ডার = \"dataset_normalized\""}
+{"unnormalised": "", "normalised": "শুরু হচ্ছে '{input_data_folder}' থেকে '{output_normalized_folder}'-এ স্বাভাবিকীকরণ...", "text": "প্রিন্ট(f\"'{input_data_folder}' এর জন্য স্বাভাবিককরণ শুরু হচ্ছে '{output_normalized_folder}' এ...\")"}
+{"unnormalised": "", "normalised": "process_folder(input_data_folder, output_normalized_folder)", "text": "process_folder(input_data_folder, output_normalized_folder)"}
+{"unnormalised": "", "normalised": "প্রমিতকরণ সম্পন্ন।", "text": "নরমলাইজেশন সম্পন্ন।"}
+{"unnormalised": "", "normalised": "# --- যাচাইকরণ ---", "text": "# --- যাচাইকরণ ---"}
+{"unnormalised": "", "normalised": "print(\"\\n--- একটি নমুনা স্বাভাবিক করা ফাইল যাচাই করা হচ্ছে ---\")", "text": "print(\"\\n--- একটি নমুনা স্বাভাবিককৃত ফাইল যাচাই করা হচ্ছে ---\")"}
+{"unnormalised": "", "normalised": "চেষ্টা করুন:", "text": "চেষ্টা করুন:"}
+{"unnormalised": "", "normalised": "with open(os.path.join(output_normalized_folder, \"test1.txt\"), 'r', encoding='utf-8') as f:\n        os.path.join(আউটপুট_নর্মালাইজড_ফোল্ডার, \"test1.txt\"), 'r', encoding='utf-8') as f: দিয়ে খোলা হয়েছে", "text": "with open(os.path.join(output_normalized_folder, \"test1.txt\"), 'r', encoding='utf-8') as f:"}
+{"unnormalised": "", "normalised": "print(f.read())", "text": "প্রিন্ট(এফ.রিড())"}
+{"unnormalised": "", "normalised": "ব্যতিক্রম ফাইল খুঁজে পাওয়া যায়নি:", "text": "ব্যতীত FileNotFoundError:"}
+{"unnormalised": "", "normalised": "আউটপুট ফোল্ডারে \"টেস্ট১.txt\" নামের নমুনা স্বাভাবিককৃত ফাইলটি পাওয়া যায়নি।", "text": "আউটপুট ফোল্ডারে \"test1.txt\" নামের নমুনা নরমালাইজড ফাইলটি পাওয়া যায়নি।"}
+{"unnormalised": "", "normalised": "This is a test.\nPlease translate this sentence to Bengali.\nThank you.\n```\nএটি একটি পরীক্ষা।\nঅনুগ্রহ করে এই বাক্যটি বাংলা অনুবাদ করুন।\nধন্যবাদ।", "text": "This is a test.\nPlease translate this sentence to Bengali.\nThank you.\n```\nএটি একটি পরীক্ষা।\nঅনুগ্রহ করে এই বাক্যটি বাংলা অনুবাদ করুন।\nধন্যবাদ।"}
+{"unnormalised": "", "normalised": "এখানে ব্যাখ্যা এবং নকশা পছন্দ:", "text": "এখানে ব্যাখ্যা এবং নকশা পছন্দ:"}
+{"unnormalised": "", "normalised": "1. **`num2words` লাইব্রেরি:** এটি স্বাভাবিক সংখ্যা রূপান্তরের জন্য একটি গুরুত্বপূর্ণ নির্ভরতা। এটি ইনস্টল করতে ভুলবেন না: `pip install num2words`।", "text": "1. **`num2words` লাইব্রেরি:** এটি স্বাভাবিক সংখ্যা রূপান্তরের জন্য একটি গুরুত্বপূর্ণ নির্ভরতা। এটি ইনস্টল করতে ভুলবেন না: `pip install num2words`।"}
+{"unnormalised": "", "normalised": "২. **কার্যকলাপের ক্রম:** `re.sub` কল করার ক্রম অত্যন্ত গুরুত্বপূর্ণ।", "text": "২. **কার্যপ্রণালী সম্পাদনের ক্রম:** `re.sub`-এর কল করার ক্রম অত্যাবশ্যক।"}
+{"unnormalised": "", "normalised": "*   **নির্দিষ্ট প্রতীক প্রথম:** `+/-`, `!=`, `<=`, `>=` সাধারণ প্রতীক যেমন `@`, `&` এর আগে সামলানো হয় সঠিক প্রতিস্থাপন নিশ্চিত করার জন্য।", "text": "এখানে একটি পাঠ্য দেওয়া হল:\n\n* **নির্দিষ্ট প্রতীক প্রথমে:** `+/-`, `!=`, `<=`, `>=` সাধারণ প্রতীক যেমন `@`, `&`-এর আগে ধরা হয় যাতে সঠিক প্রতিস্থাপন নিশ্চিত করা যায়।"}
+{"unnormalised": "", "normalised": "*   **`/` এর ব্যবহার:** `/` চিহ্নটির জটিল নিয়মাবলী রয়েছে। এটিকে একটি নির্দিষ্ট ক্রমে ব্যবহার করা হয়: প্রথমে এককসহ ভগ্নাংশ, তারপর সাধারণ ভগ্নাংশ, তারপর শব্দের মধ্যে \"অথবা\", তারপর মিশ্র ক্ষেত্রে \"স্ল্যাশ\"। এই ক্রমটি নিশ্চিত করে যে সবচেয়ে উপযুক্ত অর্থটি ব্যবহৃত হয়েছে।", "text": "`/` প্রতীকটির জটিল নিয়ম আছে। এটি একটি নির্দিষ্ট ক্রমে অনুসরণ করা হয়: প্রথমে ইউনিটসহ ভগ্নাংশ, তারপর সাধারণ ভগ্নাংশ, তারপর শব্দের মধ্যে \"অথবা\", এবং সবশেষে মিশ্র ক্ষেত্রে \"স্ল্যাশ\"। এই ক্রমটি সবচেয়ে উপযুক্ত অর্থ নিশ্চিত করে।"}
+{"unnormalised": "", "normalised": "* **তারিখ:** `DD/MM/YYYY`-কে ভগ্নাংশ বা শুধু সংখ্যা হিসেবে গণ্য হওয়া এড়াতে আগেভাগে প্রক্রিয়া করা হয়েছে।", "text": "* **তারিখ:** DD/MM/YYYY ভগ্নাংশ বা শুধুমাত্র সংখ্যা হিসাবে ব্যাখ্যা করা এড়াতে আগে থেকে প্রক্রিয়া করা হয়েছে।"}
+{"unnormalised": "", "normalised": "*   **মুদ্রা + সংখ্যা + সাফিক্স:** এটি একটি খুবই সুনির্দিষ্ট প্যাটার্ন, তাই এটি শুরুতেই সামলানো হয়।", "text": "* **মুদ্রা + সংখ্যা + সাফিক্স:** এটি একটি অত্যন্ত সুনির্দিষ্ট প্যাটার্ন, তাই এটি শুরুতেই সামলানো হয়।"}
+{"unnormalised": "", "normalised": "* **সংখ্যাসূচক সাফিক্স:** সাধারণ সংখ্যা পরিবর্তনের আগে সামলানো হয়েছে। `20K`-কে যেন `twenty K` এবং তারপর `twenty thousand` করা না হয়।", "text": "* **সংখ্যাবাচক সাফিক্স:** সাধারণ সংখ্যা পরিবর্তনের আগে সামলানো হবে। `20K` যেন `twenty K` হয়ে তারপর `twenty thousand` না হয়ে যায়।"}
+{"unnormalised": "", "normalised": "*   **ইউনিট:** সাধারণ সংখ্যা রূপান্তরের আগে সামলানো হয়েছে। `10cm` যেন `ten cm` তারপর `ten সেন্টিমিটার` না হয়ে যায়।", "text": "* **Preserve markdown:** Keep bolded text bolded.\n\nHere is the text to translate:\n\n**Important Considerations:**\n\n*   This needs to be 100% accurate.\n*   **Units:** Handled before general number conversion. `10cm` should not become `ten cm` then `ten centimeter`.\n*   **Preserve markdown:** Keep bolded text bolded.\n**গুরুত্বপূর্ণ বিবেচ্য বিষয়:**\n\n*   এটি 100% নির্ভুল হতে হবে।\n*   **ইউনিট:** সাধারণ সংখ্যা রূপান্তরের আগে পরিচালিত। `10cm` যেন প্রথমে `ten cm` এবং পরে `ten centimeter` না হয়।\n*   **মার্কডাউন সংরক্ষণ করুন:** বোল্ড করা টেক্সট বোল্ড রাখুন।"}
+{"unnormalised": "", "normalised": "*   **সংক্ষিপ্ত রূপ:** ভুল বোঝাবুঝি এড়াতে বিশেষ উপসর্গগুলোর পরে এবং সাধারণ সংখ্যার আগে পরিচালনা করা হয়। ব্যতিক্রমগুলো গুরুত্বপূর্ণ।", "text": "* **সংক্ষিপ্ত রূপ:** বিশেষ উপসর্গগুলির পরে এবং সাধারণ সংখ্যাগুলির আগে পরিচালনা করা হয় ভুল ব্যাখ্যা এড়াতে। ব্যতিক্রমগুলি গুরুত্বপূর্ণ।"}
+{"unnormalised": "", "normalised": "*   **সাধারণ সংখ্যা:** অপেক্ষাকৃত দেরিতে প্রয়োগ করা হয় কোনো অবশিষ্ট সংখ্যাকে ধরার জন্য যা নির্দিষ্ট নিয়মের আওতায় আসেনি।", "text": "* **সাধারণ সংখ্যা:** অপেক্ষাকৃত দেরিতে প্রয়োগ করা হয় যেন অন্য কোনো সুনির্দিষ্ট নিয়মের বাইরে থাকা সংখ্যা ধরা পরে।"}
+{"unnormalised": "", "normalised": "*   **গাণিতিক স্বরলিপি:** শেষের দিকে প্রয়োগ করা হয়েছে, কারণ অনেক গাণিতিক উপাদান (যেমন `^`, `_`, `∫`, `Σ`, সংখ্যা) আগের প্রতীক বা সংখ্যার নিয়ম দ্বারা স্পর্শ করা হয়েছে। গণিত-নির্দিষ্ট রেজেক্স তখন তাদের কথ্য রূপে আবদ্ধ করে।", "text": "* গাণিতিক স্বরলিপি: একেবারে শেষে প্রয়োগ করা হয়, কারণ অনেক গাণিতিক উপাদান (যেমন `^`, `_`, `∫`, `Σ`, সংখ্যা) আগের প্রতীক বা সংখ্যার নিয়মের দ্বারা প্রভাবিত হতে পারে। গাণিতিক-নির্দিষ্ট রেজেক্স তখন সেগুলোকে কথ্য রূপে বাঁধে।"}
+{"unnormalised": "", "normalised": "3.  **রেগুলার এক্সপ্রেশন:**", "text": "3.  **রেগুলার এক্সপ্রেশন:**"}
+{"unnormalised": "", "normalised": "*   `\\b`: শব্দ সীমানা ব্যাপকভাবে ব্যবহৃত হয় সম্পূর্ণ শব্দ/সংখ্যা মেলানোর জন্য এবং অন্যান্য শব্দ বা শনাক্তকারীর মধ্যে আংশিক প্রতিস্থাপন এড়ানোর জন্য।", "text": "`\\b`: শব্দ সীমা সম্পূর্ণ শব্দ/সংখ্যা মেলানোর জন্য ব্যাপকভাবে ব্যবহৃত হয় এবং অন্যান্য শব্দ বা শনাক্তকারীর মধ্যে আংশিক প্রতিস্থাপন এড়াতে ব্যবহৃত হয়।"}
+{"unnormalised": "", "normalised": "*   `(?:\\.\\d+)?`: ঐচ্ছিক দশমিক অংশের জন্য নন-ক্যাপচারিং গ্রুপ (যেমন, `10` অথবা `10.5`)।", "text": "(?:.\\d+)? : সংখ্যার ঐচ্ছিক দশমিক অংশের জন্য নন-ক্যাপচারিং গ্রুপ (যেমন, `10` অথবা `10.5`)।"}
+{"unnormalised": "", "normalised": "*   `re.IGNORECASE`: ইউনিট মেলানোর জন্য ব্যবহৃত হয় যাতে `KG`, `kg` ইত্যাদি ধরা যায়।", "text": "`re.IGNORECASE`: ইউনিট ম্যাচিংয়ের জন্য ব্যবহৃত হয় `KG`, `kg` ইত্যাদি ধরার জন্য।"}
+{"unnormalised": "", "normalised": "4.  **`convert_number_to_words` সহায়ক:** `num2words` র‍্যাপ করে এবং দশমিক সংখ্যার জন্য একটি সহজ পরীক্ষা যোগ করে যাতে সেগুলি সুন্দরভাবে পরিচালিত হয় (যেমন, `12.5` হয়ে যায় `twelve point five`)। এটি সেই পরিস্থিতিও সামলায় যেখানে `1.0` বা `1.00`-কে কেবল \"one\" বলা উচিত, \"one point zero\" নয়।", "text": "4. **`convert_number_to_words` সহায়ক:** `num2words` র‍্যাপ করে এবং দশমিক সংখ্যার জন্য একটি সাধারণ চেকিং যোগ করে যাতে সেগুলি সুন্দরভাবে সামলানো যায় (যেমন, `12.5` হয়ে যায় `twelve point five`)। এটি সেই পরিস্থিতিও সামলায় যেখানে `1.0` অথবা `1.00`-কে শুধু \"one\" বলা উচিত, \"one point zero\" নয়।"}
+{"unnormalised": "", "normalised": "5.  **ক্রমবাচক সংখ্যা:** `num2words(day, to='ordinal')` তারিখ পরিবর্তনের জন্য ব্যবহৃত হয়, যা \"দশম\", \"প্রথম\" ইত্যাদি নিশ্চিত করে।", "text": "5. **ক্রমবাচক সংখ্যা:** `num2words(day, to='ordinal')` তারিখ রূপান্তরের জন্য ব্যবহৃত হয়, যা \"দশম\", \"প্রথম\" ইত্যাদি নিশ্চিত করে।"}
+{"unnormalised": "", "normalised": "6.  **ত্রুটি সামলানো:** ফাইল প্রক্রিয়াকরণের সময় সম্ভাব্য `IOError` বা স্বাভাবিক করার সময় অন্যান্য সমস্যাগুলি ধরার জন্য একটি `try-except` ব্লক অন্তর্ভুক্ত করা হয়েছে, সমস্যাযুক্ত ফাইলগুলি লগ করা এবং এই জাতীয় ক্ষেত্রে আসলটি অনুলিপি করা হয়েছে।", "text": "6. **Error Handling:** ফাইল প্রক্রিয়াকরণের সময় `try-except` ব্লক অন্তর্ভুক্ত করা হয়েছে `IOError` বা নরমালাইজেশনের সময় অন্য কোনো সমস্যা দেখা দিলে তা ধরার জন্য, সমস্যাযুক্ত ফাইলগুলির লগ তৈরি করার জন্য এবং এই ধরনের ক্ষেত্রে আসল ফাইলটি কপি করার জন্য।"}
+{"unnormalised": "", "normalised": "7.  **`unicodedata`:** এই সংস্করণে `normalize_text`-এর জন্য স্পষ্টভাবে ব্যবহৃত না হলেও (`re` এটির বেশিরভাগ অংশ পরিচালনা করে, এবং `unicodedata` মূলত টেক্সট ক্যানোনিকালাইজেশনের জন্য), প্রয়োজনে আরও উন্নত প্রতীক পরিচালনার জন্য এটি মনে রাখার মতো একটি ভাল সরঞ্জাম।", "text": "৭. **`unicodedata`:** যদিও এই সংস্করণে স্পষ্টভাবে `normalize_text`-এর জন্য ব্যবহৃত হয়নি (যেহেতু `re` বেশিরভাগ কাজ করে, এবং `unicodedata` মূলত টেক্সট ক্যানোনিকালাইজেশনের জন্য), তবুও প্রয়োজনে আরও উন্নত প্রতীক প্রক্রিয়াকরণের জন্য এটি মনে রাখার মতো একটি ভাল সরঞ্জাম।"}
+{"unnormalised": "", "normalised": "8.  **আউটপুট ফোল্ডার মিররিং:** `os.makedirs(output_folder, exist_ok=True)` এবং `os.path.relpath` সঠিকভাবে ডিরেক্টরি কাঠামো পুনর্গঠন করে।", "text": "৮. **আউটপুট ফোল্ডার মিররিং:** `os.makedirs(output_folder, exist_ok=True)` এবং `os.path.relpath` সঠিকভাবে ডিরেক্টরি কাঠামো পুনর্গঠন করে।"}
+{"unnormalised": "", "normalised": "এই স্ক্রিপ্টটি বর্ণিত স্বাভাবিকীকরণ কার্যগুলিকে দৃঢ়ভাবে পরিচালনা করবে। বিভিন্ন ইনপুট উদাহরণ দিয়ে পুঙ্খানুপুঙ্খভাবে পরীক্ষা করতে ভুলবেন না!", "text": "এই স্ক্রিপ্টটি বর্ণিত স্বাভাবিকীকরণ কার্যগুলিকে দৃঢ়ভাবে পরিচালনা করবে। বিভিন্ন ইনপুট উদাহরণ দিয়ে পুঙ্খানুপুঙ্খভাবে পরীক্ষা করতে ভুলবেন না!"}

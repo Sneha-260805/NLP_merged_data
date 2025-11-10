@@ -1,0 +1,248 @@
+{"unnormalised": "مونکي معاف ڪجو، پر مان مدد ڪرڻ کان قاصر آهيان ان سان.", "normalised": "مون کي معاف ڪجو، مان سنڌي نٿو ڳالهائي سگهان.\n```", "text": "مونکي معاف ڪجو، پر مان مدد ڪرڻ کان قاصر آهيان ان سان."}
+{"unnormalised": "", "normalised": "امپورٽ او ايس", "text": "امپورٽ او ايس"}
+{"unnormalised": "", "normalised": "import re", "text": "import re"}
+{"unnormalised": "", "normalised": "num2words مان", "text": "num2words مان"}
+{"unnormalised": "", "normalised": "ڊيف ڪنوورٽ نمبر ٽو ورڊس (نمبر_ايس ٽي آر):", "text": "ڊيف ڪنوورٽ نمبر ٽو ورڊس (نمبر_ايس ٽي آر):"}
+{"unnormalised": "", "normalised": "ڪوشش ڪريو:", "text": "ڪوشش ڪريو:"}
+{"unnormalised": "", "normalised": "جيڪڏهن '.' نمبر_اسٽرنگ ۾ آهي:", "text": "جيڪڏهن '.' نمبر_اسٽر ۾ آهي:"}
+{"unnormalised": "", "normalised": "integer_part, decimal_part = number_str.split('.')", "text": "integer_part، ڊيسيمل_پارٽ = number_str.split('.')"}
+{"unnormalised": "", "normalised": "جيڪڏهن انٽيجر حصو:", "text": "جيڪڏھن عدد وارو حصو آھي:"}
+{"unnormalised": "", "normalised": "integer_words = num2words(int(integer_part))", "text": "integer_words = num2words(int(integer_part))"}
+{"unnormalised": "", "normalised": "نه ته:", "text": "ٻي صورت ۾:"}
+{"unnormalised": "", "normalised": "integer_words = ''", "text": "عدد وارا لفظ = ''"}
+{"unnormalised": "", "normalised": "decimal_words = 'پوائنٽ ' + ' '.join(num2words(int(d)) for d in decimal_part)", "text": "decimal_words = 'پوائنٽ ' + ' '.join(num2words(int(d)) for d in decimal_part)"}
+{"unnormalised": "", "normalised": "جيڪڏهن انٽيجر لفظ موجود آهن:", "text": "جيڪڏهن انٽيجر لفظ موجود آهن:"}
+{"unnormalised": "", "normalised": "واپس ڏيو f\"{integer_words} {decimal_words}\"", "text": "واپس ڪريو f\"{integer_words} {decimal_words}\""}
+{"unnormalised": "", "normalised": "نه ته:", "text": "ٻي صورت ۾:"}
+{"unnormalised": "", "normalised": "واپس ڪريو ڊيسيمل_ورڊس", "text": "ڏھائي لفظ واپس ڪريو"}
+{"unnormalised": "", "normalised": "نه ته:", "text": "ٻي صورت ۾:"}
+{"unnormalised": "", "normalised": "رٽرن num2words(int(number_str))", "text": "واپس ڪَرِ num2words(int(number_str))"}
+{"unnormalised": "", "normalised": "سواءِ ValueError جي:", "text": "ValueError کان سواءِ:"}
+{"unnormalised": "", "normalised": "واپس ڏيو number_str # جيڪڏهن تبديلي ناڪام ٿئي ته اصل واپس ڏيو", "text": "واپس ڏيو number_str # جيڪڏھن تبديلي ناڪام ٿئي ته اصل واپس ڏيو"}
+{"unnormalised": "", "normalised": "ڊيف نارملائيز_ٽيڪسٽ(ٽيڪسٽ):", "text": "ڊيف نارملائيز_ٽيڪسٽ(ٽيڪسٽ):"}
+{"unnormalised": "", "normalised": "# قاعدو 1: نشانيون → ڳالهائڻ وارو فارم", "text": "# قاعدو 1: نشان → ڳالهائيندڙ فارم"}
+{"unnormalised": "", "normalised": "# نوٽ: نشانن کي بدلائڻ لاءِ ترتيب ضروري آھي، ته جيئن مسئلن کان بچي سگھجي، جھڙوڪ '$' کي '$20B' کان اڳ تبديل ڪيو وڃي.", "text": "نوٽ: نشانن جي متبادل لاءِ ترتيب ضروري آهي ته جيئن مسئلن کان بچي سگهجي جهڙوڪ '$' کي '$20B' کان اڳ تبديل ڪيو وڃي."}
+{"unnormalised": "", "normalised": "# گھڻ-اَڪَري نشانين ۽ انهن کي ترجيح ڏيو جيڪي انگن سان لهه وچڙ ڪن ٿيون.", "text": "# گھڻن اکرن وارن نشانن ۽ انهن کي ترجيح ڏيو جيڪي انگن سان لهه وچڙ ڪن ٿا."}
+{"unnormalised": "", "normalised": "# گڏيل ڪرنسي + انگ + لاڳاپو (قاعدو 5) - انفرادي نشان يا انگ جي قاعدن کان اڳ اچڻ لازمي آھي", "text": "# گڏيل ڪرنسي + نمبر + لاڳاپو (اصول 5) - انفرادي نشاني يا نمبر جي اصولن کان اڳ اچڻ گھرجي"}
+{"unnormalised": "", "normalised": "ڊيف رپليس ڪرنسي نمبر سفڪس(ميچ):", "text": "فنڪشن رپليس_ڪرنسي_نمبر_سفڪس(ميچ):"}
+{"unnormalised": "", "normalised": "ڪرنسي_سمبل = ميچ.گروپ(1)", "text": "ڪرنسي_سمبول = ميچ .گروپ (1)"}
+{"unnormalised": "", "normalised": "number_val = match.group(2)", "text": "نمبر_وال = ميچ.گروپ(2)"}
+{"unnormalised": "", "normalised": "suffix = match.group(3)", "text": "suffix = match.group(3)"}
+{"unnormalised": "", "normalised": "معاف ڪجو، مون وٽ اها ڄاڻ ناهي.", "text": ""}
+{"unnormalised": "", "normalised": "ڪرنسي_ميپ = {", "text": "ڪرنسي_ميپ = {"}
+{"unnormalised": "", "normalised": "'$': 'ڊالر', '₹': 'روپيو', '€': 'يورو', '£': 'پائونڊ', '¥': 'ين'", "text": "'$': 'ڊالر', '₹': 'روپيو', '€': 'يورو', '£': 'پائونڊ', '¥': 'ين'"}
+{"unnormalised": "", "normalised": "}", "text": "}"}
+{"unnormalised": "", "normalised": "ڪرنسي_ورڊ = ڪرنسي_ميپ.get(ڪرنسي_نشاني, ڪرنسي_نشاني) # فال بيڪ جيڪڏهن ميپ ۾ نه هجي", "text": "ڪرنسي_ورڊ = ڪرنسي_ميپ.گٽ(ڪرنسي_سمبول، ڪرنسي_سمبول) # فال بيڪ جيڪڏھن ميپ ۾ نه هجي"}
+{"unnormalised": "", "normalised": "number_words = convert_number_to_words(number_val)", "text": "number_words = convert_number_to_words(number_val)"}
+{"unnormalised": "", "normalised": "suffix_map = {", "text": "suffix_map = {"}
+{"unnormalised": "", "normalised": "'K': 'هزار', 'M': 'ملين', 'B': 'ارب', 'T': 'کھرب'", "text": "'K': 'هزار', 'M': 'ملين', 'B': 'بلين', 'T': 'ٽريلين'"}
+{"unnormalised": "", "normalised": "}", "text": "}"}
+{"unnormalised": "", "normalised": "suffix_word = suffix_map.get(suffix.upper(), suffix) # Default to original if not in map", "text": "suffix_word = suffix_map.get(suffix.upper(), suffix) # ميپ ۾ نه هجڻ جي صورت ۾ اصل ڏانهن ڊفالٽ ڪيو وڃي"}
+{"unnormalised": "", "normalised": "واپس ڏيو f\"{currency_word} {number_words} {suffix_word}\"", "text": "واپس ڪريو f\"{ڪرنسي لفظ} {نمبر لفظ} {لاحق لفظ}\""}
+{"unnormalised": "", "normalised": "مون کي معاف ڪجو، مان توهان کي صحيح طرح سان سمجهي نه سگهيس.", "text": ""}
+{"unnormalised": "", "normalised": "ٽيڪسٽ = ري.سب(آر'([$₹€£¥])(\\d+)([KMBTkmbt])\\b', ريپليس_ڪرنسي_نمبر_سفڪس، ٽيڪسٽ)", "text": "text = re.sub(r'([$₹€£¥])(\\d+)([KMBTkmbt])\\b', replace_currency_number_suffix, text)"}
+{"unnormalised": "", "normalised": "# قاعدو 4: عددي لاڳاپا (K, M, B, T) - گڏيل ڪرنسي کان پوءِ پر عام عدد واري قاعدي کان اڳ", "text": "# قاعدو 4: عددي لاڳاپا (K, M, B, T) - گڏيل ڪرنسي کانپوءِ پر عام نمبر واري قاعدي کان اڳ"}
+{"unnormalised": "", "normalised": "ڊيف ريپليس_نيوميرڪ_سفڪس(ميچ):", "text": "ڊيف ريپليس نيوميرڪ سافڪس(ميچ):"}
+{"unnormalised": "", "normalised": "number_val = match.group(1)", "text": "نمبر_ويل = ميچ .گروپ (1)"}
+{"unnormalised": "", "normalised": "suffix = match.group(2)", "text": "suffix = match.group(2)"}
+{"unnormalised": "", "normalised": "number_words = convert_number_to_words(number_val)", "text": "number_words = convert_number_to_words(number_val)"}
+{"unnormalised": "", "normalised": "suffix_map = {", "text": "suffix_map = {"}
+{"unnormalised": "", "normalised": "'K': 'هزار', 'M': 'ملين', 'B': 'ارب', 'T': 'کھرب'", "text": "'K': 'هزار', 'M': 'ملين', 'B': 'بلين', 'T': 'ٽريلين'"}
+{"unnormalised": "", "normalised": "}", "text": "}"}
+{"unnormalised": "", "normalised": "return f\"{number_words} {suffix_map.get(suffix.upper(), suffix)}\"", "text": "واپس ڪريو f\"{number_words} {suffix_map.get(suffix.upper(), suffix)}\""}
+{"unnormalised": "", "normalised": "مون کي معاف ڪجو، مان توهان کي صحيح طرح سان سمجهي نه سگهيس.", "text": ""}
+{"unnormalised": "", "normalised": "ٽيڪسٽ = re.sub(r'(\\d+)([KMBTkmbt])\\b', replace_numeric_suffix, ٽيڪسٽ)", "text": "text = re.sub(r'(\\d+)([KMBTkmbt])\\b', replace_numeric_suffix, text)"}
+{"unnormalised": "", "normalised": "# قاعدو 1 ۽ 8: رياضي جي نشاني ۽ پيچيده علامتون", "text": "# قاعدو 1 ۽ 8: رياضي واري نشاني ۽ پيچيده علامتون"}
+{"unnormalised": "", "normalised": "# Fractions: x/y -> x کي y سان ورهايو ويو (صرف خالص انگن لاءِ)", "text": "حصا: x/y -> x کي y سان تقسيم ڪيو ويو آهي (صرف خالص انگن لاءِ)"}
+{"unnormalised": "", "normalised": "متن = re.sub(r'(\\d+)/(\\d+)', r'\\1 کي \\2 سان ورهايو ويو', متن)", "text": "اهي = re.sub(r'(\\d+)/(\\d+)', r'\\1 divided by \\2', اهي)"}
+{"unnormalised": "", "normalised": "مون کي معاف ڪجو، مان توهان کي صحيح طرح سان سمجهي نه سگهيس.", "text": ""}
+{"unnormalised": "", "normalised": "# رياضي نشانيون", "text": "# رياضي نشانيون"}
+{"unnormalised": "", "normalised": "ٽيڪسٽ = ٽيڪسٽ.ريپليس('∫'، 'انٽيگرل آف')", "text": "متن = متن.replace('∫', 'انٽيگرل آف')"}
+{"unnormalised": "", "normalised": "ٽيڪسٽ = ٽيڪسٽ.replace('→', 'to') # انٽيگرل لمٽس لاءِ", "text": "متن = متن کي replace ڪريو ('→', 'to') سان # انٽيگرل جي حدن لاءِ"}
+{"unnormalised": "", "normalised": "ٽيڪسٽ = ٽيڪسٽ.replace('√', 'square root of')", "text": "متن = متن .replace ('√'، 'چورس روٽ جو')"}
+{"unnormalised": "", "normalised": "text = text.replace('π', 'pi')", "text": "متن = متن کي تبديل ڪريو ('π', 'pi')"}
+{"unnormalised": "", "normalised": "مون ترجمو ڪري سگھان ٿو، پر مھرباني ڪري مون کي ترجمو ڪرڻ لاءِ اصل متن مهيا ڪريو. توهان جي ڏنل ڪوڊ جو ٽڪرو سنڌي ترجمي سان لاڳاپيل ناهي. مون کي توهان کي ترجمو ڪرڻ لاء \"text =\" کان پوء اصل متن جي ضرورت آهي.", "text": "متن = متن.replace('Σ', 'مجموعو')"}
+{"unnormalised": "", "normalised": "ٽيڪسٽ = ٽيڪسٽ.replace('≠'، 'not equal to')", "text": "text = text.replace('≠', 'not equal to')"}
+{"unnormalised": "", "normalised": "متن = متن کي بدلايو '≤' سان 'گھٽ يا برابر'", "text": "متن = متن.replace('≤'، 'گهٽ يا برابر')"}
+{"unnormalised": "", "normalised": "ٽيڪسٽ = ٽيڪسٽ.replace('≥'، 'وڏو يا برابر')", "text": "لکيل = لکيل.replace('≥'، 'وڏو يا برابر')"}
+{"unnormalised": "", "normalised": "متن = متن کي تبديل ڪريو '≈' کي 'تقریباً برابر' سان", "text": "ٽيڪسٽ = ٽيڪسٽ.replace('≈', 'اٽڪل برابر آھي')"}
+{"unnormalised": "", "normalised": "متن = متن سان مَٽائڻ ('≅'، 'لڳ ڀڳ هڪجهڙائيءَ وارو')", "text": "ٽيڪسٽ = ٽيڪسٽ کي تبديل ڪريو ('≅', 'اٽڪل برابر آهي')"}
+{"unnormalised": "", "normalised": "متن = متن کي بدلائي ’≡‘ کي ’مطابقت سان برابر‘ سان ڪريو", "text": "متن = متن کي تبديل ڪريو ('≡', 'مطابقت سان برابر آهي')"}
+{"unnormalised": "", "normalised": "ٽيڪسٽ = ٽيڪسٽ.replace('∀', 'for all')", "text": "متن = متن کي تبديل ڪريو ('∀', 'for all')"}
+{"unnormalised": "", "normalised": "ٽيڪسٽ = ٽيڪسٽ.replace('∃', 'there exists')", "text": "متن = متن.replace('∃', 'موجود آهي')"}
+{"unnormalised": "", "normalised": "ٽيڪسٽ = ٽيڪسٽ .replace('∉', 'جو عنصر نه آهي')", "text": "متن = متن کي مٽايو('∉'، 'جو عنصر نه')"}
+{"unnormalised": "", "normalised": "متن = متن.replace('∈'، 'جو هڪ عنصر آهي')", "text": "ٽيڪسٽ = ٽيڪسٽ.replace('∈', 'is an element of')"}
+{"unnormalised": "", "normalised": "text = text.replace('⊃', 'is a superset of')\n    text = text.replace('⊆', 'is a subset of or equal to')\n    text = text.replace('⊇', 'is a superset of or equal to')\n    text = text.replace('⊄', 'is not a subset of')\n    text = text.replace('⊅', 'is not a superset of')\n    text = text.replace('⊈', 'is not a subset of or equal to')\n    text = text.replace('⊉', 'is not a superset of or equal to')", "text": "متن = متن کي بدلائي ڏيو '⊂' سان 'جو حصو آهي'."}
+{"unnormalised": "", "normalised": "متن = متن .replace ('⊃'، 'جو ھڪ سپر سيٽ آھي')", "text": "متن = متن کي تبديل ڪريو '⊃' کي 'جو سپر سيٽ آهي' سان"}
+{"unnormalised": "", "normalised": "text = text.replace('∪', 'يونين')", "text": "متن = متن کي بدلائي 'union' سان."}
+{"unnormalised": "", "normalised": "text = text.replace('∩', 'انٽرسيڪشن')", "text": "متن = متن.replace('∩', 'intersection')"}
+{"unnormalised": "", "normalised": "text = text.replace('∅', 'خالي سيٽ')", "text": "ٽيڪسٽ = ٽيڪسٽ.replace('∅', 'empty set')"}
+{"unnormalised": "", "normalised": "متن = متن کي بدلائي '∝' کي 'تناسب آهي' سان.", "text": "متن = متن سان مٽايو ('∝', 'متناسب آهي')"}
+{"unnormalised": "", "normalised": "متن = متن کي بدلائي 'انفنيٽي' ۾", "text": "متن = متن کي بدلائي 'infinity' سان."}
+{"unnormalised": "", "normalised": "متن = متن کي مٽايو ('±'، 'پلس يا مائنس') سان", "text": "متن = متن کي تبديل ڪريو '±' کي 'plus or minus' سان"}
+{"unnormalised": "", "normalised": "text = text. بدلايو ويو '∇', 'nabla' سان", "text": "متن = متن.replace('∇', 'nabla')"}
+{"unnormalised": "", "normalised": "متن = متن کي بدلائي وڃائي ('∂', 'جزوي تغير').", "text": "متن = متن کي مٽايو ('∂'، 'جزوي مشتق') سان"}
+{"unnormalised": "", "normalised": "متن = متن کي بدلايو ويو '⊕' سان، سڌو مجموعو", "text": "متن = متن.replace('⊕', 'ڊائريڪٽ سم')"}
+{"unnormalised": "", "normalised": "ٽيڪسٽ = ٽيڪسٽ.replace('⊗', 'ٽينسر پراڊڪٽ')", "text": "متن = متن کي '⊗' جي جاءِ تي 'ٽينسر پراڊڪٽ' سان تبديل ڪريو"}
+{"unnormalised": "", "normalised": "ٽيڪسٽ = ٽيڪسٽ .بدلايو ('∘'، 'جوڙجڪ')", "text": "متن = متن.replace('∘', 'composition')"}
+{"unnormalised": "", "normalised": "text = text.replace('⋅', 'ڊاٽ پراڊڪٽ') # يا ضرب، حوالي سان. ڊفالٽ 'ڊاٽ پراڊڪٽ'", "text": "متن = متن کي بدلائي وڌو ('⋅', 'ڊاٽ پراڊڪٽ') # يا ضرب، انحصار صورتحال تي. ڊفالٽ طور 'ڊاٽ پراڊڪٽ'"}
+{"unnormalised": "", "normalised": "ٽيڪسٽ = ٽيڪسٽ . ريپليس ('°', 'ڊگري') # يونٽن لاءِ، الڳ الڳ سنڀاليو ويو", "text": "متن = متن کي بدلائي. replace('°', 'ڊگري'). # يونٽن لاءِ، الڳ سان سنڀاليو ويو."}
+{"unnormalised": "", "normalised": "# طاقتون ۽ هيٺيان لکتون", "text": "# طاقتون ۽ هيٺيان ليڪا"}
+{"unnormalised": "", "normalised": "text = re.sub(r'(\\w)\\^2\\b', r'\\1 اسڪوائرڊ', text)", "text": "text = re.sub(r'(\\w)\\^2\\b', r'\\1 اسڪوائرڊ', text)"}
+{"unnormalised": "", "normalised": "متن = re.sub(r'(\\w)\\^3\\b', r'\\1 ڪيوبڊ', متن)", "text": "اهو متن = re.sub(r'(\\w)\\^3\\b', r'\\1 ڪيوبڊ', متن)"}
+{"unnormalised": "", "normalised": "متن = re.sub(r'(\\w)\\^(\\d+)\\b', r'\\1 جي طاقت \\2', متن)", "text": "اھو متن = re.sub(r'(\\w)\\^(\\d+)\\b', r'\\1 پاور جي طرف \\2', متن)"}
+{"unnormalised": "", "normalised": "ٽيڪسٽ = re.sub(r'(\\w)_(\\w+)\\b', r'\\1 sub \\2', ٽيڪسٽ) # x_i -> x sub i", "text": "ري.sub(r'(\\w)_(\\w+)\\b', r'\\1 سب \\2', ٽيڪسٽ) # x_i -> x سب i"}
+{"unnormalised": "", "normalised": "ٽيڪسٽ = ري.سب(آر'(\\w)_(\\{\\w+\\})\\b', آر'\\1 سب \\2', ٽيڪسٽ) # x_{max} -> x سب max", "text": "text = re.sub(r'(\\w)_(\\{\\w+\\})\\b', r'\\1 sub \\2', text) # x_{max} -> x sub max"}
+{"unnormalised": "", "normalised": "# ٻيا نشان", "text": "# ٻيا نشان"}
+{"unnormalised": "", "normalised": "text = text.replace('$', 'ڊالر')", "text": "متن = متن.replace('$', 'ڊالر')"}
+{"unnormalised": "", "normalised": "text = text.replace('€', 'يورو')", "text": "متن = متن کي بدلائي وڃائجي 'يورو' سان."}
+{"unnormalised": "", "normalised": "متن = متن کي 'پائونڊ' سان تبديل ڪريو", "text": "text = text.replace('£', 'پائونڊ')"}
+{"unnormalised": "", "normalised": "ٽيڪسٽ = ٽيڪسٽ.replace('¥', 'yen')", "text": "لکيل = لکيل.replace('¥', 'ين')"}
+{"unnormalised": "", "normalised": "متن = متن کي بدلائڻ سان ('₹', 'روپي')", "text": "ٽيڪسٽ = ٽيڪسٽ .replace ('₹', 'روپي')"}
+{"unnormalised": "", "normalised": "text = text.replace('%', 'فيصد')", "text": "متن = متن کي \".replace('percent', '%')\" سان مٽايو."}
+{"unnormalised": "", "normalised": "متن = متن کي '@' سان مَٽايو 'at'", "text": "متن = متن کي @ سان بدلائي 'at' ڪيو ويو"}
+{"unnormalised": "", "normalised": "ٽيڪسٽ = ٽيڪسٽ.replace('&', 'and')", "text": "متن = متن کي مٽايو ('&'، 'and') سان"}
+{"unnormalised": "", "normalised": "متن = متن کي # سان مٽايو، لفظ ''hash'' لکي", "text": "متن = متن کي بدلائي # کي \"hash\" سان."}
+{"unnormalised": "", "normalised": "text = text.replace('*', 'asterisk')", "text": "text = text.replace('*', 'asterisk')"}
+{"unnormalised": "", "normalised": "text = text.replace('+', 'پلس')", "text": "ٽيڪسٽ = ٽيڪسٽ.ريپليس('+', 'پلس')"}
+{"unnormalised": "", "normalised": "text = text.replace('=', 'برابر آهي')", "text": "لکيل عبارت = لکيل عبارت. مٽايو ('=', 'برابر')"}
+{"unnormalised": "", "normalised": "متن = متن.بدلايو('-', 'منفي') # منفي نشان وارا لفظ ھٿ ڪرڻ وقت احتياط ڪريو.", "text": "ٽيڪسٽ = ٽيڪسٽ.replace('-', 'minus') # ھائيفن وارا لفظ ۽ رياضي مائنس ۾ فرق ڪريو"}
+{"unnormalised": "", "normalised": "متن = متن کي بدلائي ڪري '~' جي بدران 'لڳ ڀڳ' لکيو وڃي", "text": "متن = متن.replace('~', 'تقريبن')"}
+{"unnormalised": "", "normalised": "# قاعدو 2: مخفف لفظ → ھائفن وارا اکر", "text": "# قاعدو 2: مخفف اکر ← ھائفن وارا اکر"}
+{"unnormalised": "", "normalised": "ٽيڪسٽ = re.sub(r'\\b([A-Z]{2,})\\b', lambda m: '-'.join(list(m.group(1))), ٽيڪسٽ)", "text": "متن = re.sub(r'\\b([A-Z]{2,})\\b', lambda m: '-'.join(list(m.group(1))), متن)"}
+{"unnormalised": "", "normalised": "مون کي معاف ڪجو، مان توهان کي صحيح طرح سان سمجهي نه سگهيس.", "text": ""}
+{"unnormalised": "", "normalised": "# قاعدو 6: تاريخون → قدرتي ڳالهائيندڙ فارم (DD/MM/YYYY يا YYYY-MM-DD فرض ڪيو ويو)", "text": "# قاعدو 6: تاريخون → قدرتي ڳالهائڻ وارو انداز (ڏينهن/مهينو/سال يا سال-مهينو-ڏينهن فرض ڪيو ويو)"}
+{"unnormalised": "", "normalised": "def تاريخ_بدلايو (ملندڙ):", "text": "فنڪشن رپليس_ڊيٽ (ميچ):"}
+{"unnormalised": "", "normalised": "ڏينهن، مهينو، سال = '', '', ''", "text": "ڏينهن، مهينو، سال = '', '', ''"}
+{"unnormalised": "", "normalised": "جيڪڏھن ميچ .گروپ(1): # DD-MM-YYYY يا DD/MM/YYYY", "text": "ته ميچ . گروپ (1): # DD-MM-YYYY يا DD/MM/YYYY"}
+{"unnormalised": "", "normalised": "ڏينهن = int(match.group(2))", "text": "ڏينهن = int(match.group(2))"}
+{"unnormalised": "", "normalised": "مهينو = int(match.group(3))", "text": "مهينو = int(match.group(3))"}
+{"unnormalised": "", "normalised": "سال = انٽ (ميچ.گروپ (4))", "text": "سال = int(match.group(4))"}
+{"unnormalised": "", "normalised": "نه ته ميچ گروپ (5) هوندي: # YYYY-MM-DD", "text": "نه ته وري ميچ گروپ (5): # YYYY-MM-DD"}
+{"unnormalised": "", "normalised": "year = int(match.group(6))", "text": "سال = int(match.group(6))"}
+{"unnormalised": "", "normalised": "مهينو = int(match.group(7))", "text": "مهينو = int(match.group(7))"}
+{"unnormalised": "", "normalised": "day = int(match.group(8))\n            ڏينهن = int(match.group(8))", "text": "ڏينهن = int(match.group(8))"}
+{"unnormalised": "", "normalised": "جيڪڏهن نه (ڏينهن ۽ مهينو ۽ سال):", "text": "جيڪڏهن (ڏينهن ۽ مهينو ۽ سال) نه هجي:"}
+{"unnormalised": "", "normalised": "return match.group(0) # Return original if date parsing failed\n            \n            return match.group(0) # تاريخ کي پارس ڪرڻ ناڪام ٿي ته اصل واپس ڪريو", "text": "واپس ڪريو match.group(0) # اصل واپس ڪريو جيڪڏھن تاريخ جي پارسنگ ناڪام ٿي وئي"}
+{"unnormalised": "", "normalised": "مهينا = [\"\", \"جنوري\", \"فيبروري\", \"مارچ\", \"اپريل\", \"مئي\", \"جون\",", "text": "مهينا = [\"\", \"جنوري\", \"فيبروري\", \"مارچ\", \"اپريل\", \"مئي\", \"جون\","}
+{"unnormalised": "", "normalised": "\"جولاءِ\", \"آگسٽ\", \"سيپٽمبر\", \"آڪٽوبر\", \"نومبر\", \"ڊسمبر\"]", "text": "\"جولاءِ\"، \"آگسٽ\"، \"سيپٽمبر\"، \"آڪٽوبر\"، \"نومبر\"، \"ڊسمبر\"]"}
+{"unnormalised": "", "normalised": "معاف ڪجو، مون وٽ اها ڄاڻ ناهي.", "text": ""}
+{"unnormalised": "", "normalised": "day_suffix = {1: 'پهريون', 2: 'ٻيو', 3: 'ٽيون', 4: 'چوٿون', 5: 'پنجون', 6: 'ڇهون', 7: 'ستّون', 8: 'اٺون', 9: 'نائون', 10: 'ڏهون', 11: 'يارنهون', 12: 'ٻارهون', 13: 'تيرهون', 14: 'چوڏهون', 15: 'پندرهون', 16: 'سورهون', 17: 'سترنهون', 18: 'ارڙهون', 19: 'اڻويهون', 20: 'ويهون', 21: 'ويهه پهريون', 22: 'ويهه ٻيو', 23: 'ويهه ٽيون', 24: 'ويهه چوٿون', 25: 'ويهه پنجون', 26: 'ويهه ڇهون', 27: 'ويهه ستّون', 28: 'ويهه اٺون', 29: 'ويهه نائون', 30: 'ٽيهون', 31: 'ايڪٽيههون'}", "text": "day_suffix = {1: 'پهريون', 2: 'ٻيو', 3: 'ٽيون', 4: 'چوٿون', 5: 'پنجون', 6: 'ڇهون', 7: 'ستون', 8: 'اٺون', 9: 'نائون', 10: 'ڏهون', 11: 'يارنهون', 12: 'ٻارهون', 13: 'تيرهون', 14: 'چوڏهون', 15: 'پندرهون', 16: 'سورهون', 17: 'سترنهون', 18: 'اٺارهون', 19: 'اوڻيهون', 20: 'ويهون', 21: 'ويهه پهريون', 22: 'ويهه ٻيو', 23: 'ويهه ٽيون', 24: 'ويهه چوٿون', 25: 'ويهه پنجون', 26: 'ويهه ڇهون', 27: 'ويهه ستون', 28: 'ويهه اٺون', 29: 'ويهه نائون', 30: 'ٽيهون', 31: 'ٽيهه پهريون'}"}
+{"unnormalised": "", "normalised": "معاف ڪجو، مون وٽ اها ڄاڻ ناهي.", "text": ""}
+{"unnormalised": "", "normalised": "spoken_day = day_suffix.get(day, num2words(day, to='ordinal'))", "text": "ڳالهائيندڙ_ڏينهن = ڏينهن_لاحقو.get(ڏينهن، num2words(ڏينهن، to='ordinal'))"}
+{"unnormalised": "", "normalised": "spoken_month = مهينن ۾ مهينو", "text": "ڳالھائيندڙ_مهينو = مهينن[مهينو]"}
+{"unnormalised": "", "normalised": "spoken_year = convert_number_to_words(str(year))", "text": "spoken_year = عدد کي لفظن ۾ تبديل ڪريو (سال جي سٽون)."}
+{"unnormalised": "", "normalised": "معاف ڪجو، مون وٽ اها ڄاڻ ناهي.", "text": ""}
+{"unnormalised": "", "normalised": "واپس ڏيو f\"{spoken_day} {spoken_month} {spoken_year}\"", "text": "واپس ڏيو f\"{spoken_day} {spoken_month} {spoken_year}\""}
+{"unnormalised": "", "normalised": "# DD/MM/YYYY يا DD-MM-YYYY", "text": "# ڏينھن/مهينو/سال يا ڏينھن-مهينو-سال"}
+{"unnormalised": "", "normalised": "ٽيڪسٽ = ري.سب(آر'\\\\b((\\\\d{1,2})[/-](\\\\d{1,2})[/-](\\\\d{4}))\\\\b', ريپليس_ڊيٽ، ٽيڪسٽ)", "text": "text = re.sub(r'\\b((\\d{1,2})[/-](\\d{1,2})[/-](\\d{4}))\\b', replace_date, text)"}
+{"unnormalised": "", "normalised": "# YYYY-MM-DD", "text": "# YYYY-MM-DD"}
+{"unnormalised": "", "normalised": "ٽيڪسٽ = re.sub(r'\\b((\\d{4})[/-](\\d{1,2})[/-](\\d{1,2}))\\b', replace_date, ٽيڪسٽ)", "text": "text = re.sub(r'\\b((\\d{4})[/-](\\d{1,2})[/-](\\d{1,2}))\\b', replace_date, text)"}
+{"unnormalised": "", "normalised": "# قاعدو 7: يونٽون → ڳالهائڻ جو طريقو", "text": "# قاعدو 7: يونٽ → ڳالهائڻ جو طريقو"}
+{"unnormalised": "", "normalised": "def replace_units(match):", "text": "ڊيف ريپليس_يونٽس(ميچ):"}
+{"unnormalised": "", "normalised": "نمبر = ڪنورٽ_نمبر_ٽو_ورڊز(ميچ.گروپ(1))", "text": "نمبر = ڪنورٽ_نمبر_ٽو_ورڊز(ميچ.گروپ(1))"}
+{"unnormalised": "", "normalised": "unit = match.group(2).lower()", "text": "يونٽ = ميچ .گروپ (2) .لوئر ()"}
+{"unnormalised": "", "normalised": "unit_map = {", "text": "يونٽ_ميپ = {"}
+{"unnormalised": "", "normalised": "'cm': 'سينٽي ميٽر', 'mm': 'ملي ميٽر', 'm': 'ميٽر', 'km': 'ڪلوميٽر',", "text": "'cm': 'سينٽي ميٽر', 'mm': 'ملي ميٽر', 'm': 'ميٽر', 'km': 'ڪلوميٽر',"}
+{"unnormalised": "", "normalised": "'g': 'گرام', 'kg': 'ڪلوگرام', 'mg': 'ملي گرام',", "text": "'g': 'گرام', 'kg': 'ڪلوگرام', 'mg': 'ملي گرام',"}
+{"unnormalised": "", "normalised": "'ml': 'ملي ليٽر', 'l': 'ليٽر',", "text": "'ml': 'مليليٽر', 'l': 'ليٽر',"}
+{"unnormalised": "", "normalised": "'°c': 'ڊگري سينٽي گريڊ', 'kph': 'ڪلوميٽر في ڪلاڪ',", "text": "'°c': 'ڊگري سينٽي گريڊ', 'kph': 'ڪلوميٽر في ڪلاڪ',"}
+{"unnormalised": "", "normalised": "'mph': 'ميل في ڪلاڪ', 'psi': 'پائونڊ في چورس انچ',", "text": "'mph': 'ميل في ڪلاڪ', 'psi': 'پائونڊ في چورس انچ',"}
+{"unnormalised": "", "normalised": "'sqm': 'چورس ميٽر', 'sqkm': 'چورس ڪلوميٽر',", "text": "'sqm': 'اسڪوائر ميٽر', 'sqkm': 'اسڪوائر ڪلوميٽر',"}
+{"unnormalised": "", "normalised": "'ha': 'هيڪٽيئر', 'ft': 'فُٽ', 'in': 'اِنچ', 'yd': 'گز',", "text": "'ها': 'هيڪٽر', 'ايف ٽي': 'فُٽ', 'ان': 'انچ', 'وائي ڊي': 'گز',"}
+{"unnormalised": "", "normalised": "'oz': 'اونس', 'lb': 'پائونڊ', 'hr': 'ڪلاڪ', 'min': 'منٽ', 'sec': 'سيڪنڊ',", "text": "'oz': 'اونس', 'lb': 'پائونڊ', 'hr': 'ڪلاڪ', 'min': 'منٽ', 'sec': 'سيڪنڊ',"}
+{"unnormalised": "", "normalised": "'mb': 'ميگا بائيٽ', 'gb': 'گيگا بائيٽ', 'tb': 'ٽيرا بائيٽ', 'kb': 'ڪلو بائيٽ',", "text": "'mb': 'ميگابائيٽ', 'gb': 'گيگابائيٽ', 'tb': 'ٽيرابائيٽ', 'kb': 'ڪلو بائيٽ',"}
+{"unnormalised": "", "normalised": "'hz': 'هرٽز', 'khz': 'ڪلوهرٽز', 'mhz': 'ميگاهرٽز', 'ghz': 'گيگاهرٽز',", "text": "'hz': 'ھرٽز', 'khz': 'ڪلوھرٽز', 'mhz': 'ميگاھرٽز', 'ghz': 'گيگاھرٽز',"}
+{"unnormalised": "", "normalised": "'v': 'وولٽ', 'a': 'ايپيئر', 'w': 'واٽ', 'kw': 'ڪلوواٽ', 'mw': 'ميگاواٽ'", "text": "'v': 'وولٽ', 'a': 'ايمپيئر', 'w': 'واٽ', 'kw': 'ڪلوواٽ', 'mw': 'ميگاواٽ'"}
+{"unnormalised": "", "normalised": "}", "text": "}"}
+{"unnormalised": "", "normalised": "# جمع کي سنڀاليو جيڪڏھن ضرورت پوي (سادي تجربي).", "text": "# جمع جي ضرورت مطابق سنڀاليو (سادو طريقو)"}
+{"unnormalised": "", "normalised": "جيڪڏهن int(match.group(1)) > 1 ۽ unit_map.get(unit) ۽ نه unit_map.get(unit).endswith('s'):", "text": "جيڪڏهن int(match.group(1)) > 1 ۽ unit_map.get(unit) ۽ unit_map.get(unit) جو آخر 's' سان نه ٿئي:"}
+{"unnormalised": "", "normalised": "return f\"{number} {unit_map.get(unit)}s\"", "text": "واپس ڪريو f\"{number} {unit_map.get(unit)}s\""}
+{"unnormalised": "", "normalised": "return f\"{number} {unit_map.get(unit, unit)}\"", "text": "واپس ڪريو f\"{number} {unit_map.get(unit, unit)}\""}
+{"unnormalised": "", "normalised": "متن = re.sub(r'(\\d+(?:\\.\\d+)?)\\s*(cm|mm|m|km|g|kg|mg|ml|l|°C|°c|kph|mph|psi|sqm|sqkm|ha|ft|in|yd|oz|lb|hr|min|sec|mb|gb|tb|kb|hz|khz|mhz|ghz|v|a|w|kw|mw)\\b', replace_units, متن, flags=re.IGNORECASE)", "text": "text = re.sub(r'(\\d+(?:\\.\\d+)?)\\s*(cm|mm|m|km|g|kg|mg|ml|l|°C|°c|kph|mph|psi|sqm|sqkm|ha|ft|in|yd|oz|lb|hr|min|sec|mb|gb|tb|kb|hz|khz|mhz|ghz|v|a|w|kw|mw)\\b', replace_units, text, flags=re.IGNORECASE)"}
+{"unnormalised": "", "normalised": "# قاعدو 3: انگ → زباني صورت (ڪرنسي، لاڳاپن ۽ يونٽن کان پوءِ)", "text": "# قاعدو 3: انگَ → ڳالھائيندڙ فارم (ڪرنسي، لاڳاپن، ۽ يونٽن کان پوءِ)"}
+{"unnormalised": "", "normalised": "# هيءُ قاعدو ٻين سڀني انگن سان لاڳاپيل قاعدن کانپوءِ اچڻ گھرجي", "text": "# هي لازمي طور تي ٻين سڀني نمبر سان لاڳاپيل قاعدن کان پوءِ اچڻ گهرجي"}
+{"unnormalised": "", "normalised": "متن = re.sub(r'\\b(\\d+(?:\\.\\d+)?)\\b', lambda m: convert_number_to_words(m.group(1)), متن)", "text": "متن = re.sub(r'\\b(\\d+(?:\\.\\d+)?)\\b', lambda m: convert_number_to_words(m.group(1)), متن)"}
+{"unnormalised": "", "normalised": "# قاعدو 1 (جاري): علامتن جا متبادل جيڪي ٻين قاعدن سان تڪرار ڪري سگهن ٿا جيڪڏهن اڳ ۾ رکيا وڃن", "text": "# قاعدو 1 (جاري): علامتن جا متبادل جيڪي ٻين قاعدن سان ٽڪرائجي سگهن ٿا جيڪڏهن اڳ ۾ رکيا وڃن"}
+{"unnormalised": "", "normalised": "# احتياط سان سنڀاليو: انگن اکرن جي وچ ۾ \"تقسيم ٿيل، ورهائجي ويل\" ، لفظن جي وچ ۾ \"يا\" ، ٻين لاءِ \"سليش\".", "text": "# احتياط سان استعمال ڪريو: انگن جي وچ ۾ \"divided by\"، لفظن جي وچ ۾ \"يا\"، ٻين لاءِ \"slash\""}
+{"unnormalised": "", "normalised": "def replace_slash(match):", "text": "ڊيف رپليس_ سليش (ميچ):"}
+{"unnormalised": "", "normalised": "pre = match.group(1)", "text": "پري = ميچ.گروپ(1)"}
+{"unnormalised": "", "normalised": "پوسٽ = ميچ.گروپ(2)", "text": "پوسٽ = ميچ . گروپ (2)"}
+{"unnormalised": "", "normalised": "جيڪڏهن re.match(r'\\b\\w+\\b', pre) ۽ re.match(r'\\b\\w+\\b', post):", "text": "جيڪڏهن re.match(r'\\b\\w+\\b', pre) ۽ re.match(r'\\b\\w+\\b', post):"}
+{"unnormalised": "", "normalised": "واپس ڪريو f\"{pre} يا {post}\"", "text": "واپس ڪريو f\"{pre} يا {post}\""}
+{"unnormalised": "", "normalised": "ائين جيڪڏھن (re.match(r'\\b[A-Z-]+\\b', pre) يا re.match(r'\\b[a-z-]+\\b', pre)) ۽ \\", "text": "ٻي صورت ۾ (جيڪڏھن re.match(r'\\b[A-Z-]+\\b', pre) يا re.match(r'\\b[a-z-]+\\b', pre)) ۽"}
+{"unnormalised": "", "normalised": "(re.match(r'\\b[A-Z-]+\\b', post) or re.match(r'\\b[a-z-]+\\b', post)) ۽ \\", "text": "(re.match(r'\\b[A-Z-]+\\b', post) or re.match(r'\\b[a-z-]+\\b', post)) ۽"}
+{"unnormalised": "", "normalised": "(pre.isupper() != post.isupper()): # مثال طور مخلوط ڪيس QA/Dev", "text": "(pre.isupper() != post.isupper()): # مثال طور تي QA/Dev لاءِ مخلوط ڪيس"}
+{"unnormalised": "", "normalised": "return f\"{pre} سلاش {post}\"", "text": "واپس ڏيو f\"{pre} سليش {post}\""}
+{"unnormalised": "", "normalised": "نه ته:", "text": "ٻي صورت ۾:"}
+{"unnormalised": "", "normalised": "return f\"{pre} slash {post}\" # ٻين صورتن لاءِ ڊفالٽ طور تي سلاش استعمال ڪيو ويندو.", "text": "موٽاءِ f\"{pre} سليش {post}\" # ٻين حالتن لاءِ ڊفالٽ سليش"}
+{"unnormalised": "", "normalised": "ٽيڪسٽ = ري.سب (آر'(\\S)\\s*/\\s*(\\S)', ريپليس_سليش, ٽيڪسٽ) # ريگيڪس سان تبديل ڪيو ويو جيڪو ڀرپاسي کي غور ڪري ٿو", "text": "```\ntext = re.sub(r'(\\S)\\s*/\\s*(\\S)', replace_slash, text) # ريگيڪس سان تبديل ڪيو ويو آهي جيڪو چوڌاري ڏسي ٿو\n```"}
+{"unnormalised": "", "normalised": "مون کي معاف ڪجو، مان توهان کي صحيح طرح سان سمجهي نه سگهيس.", "text": ""}
+{"unnormalised": "", "normalised": "# قاعدو 9: خالن کي برابر ڪرڻ", "text": "# قاعدو 9: خالن کي نارملائيز ڪريو"}
+{"unnormalised": "", "normalised": "text = re.sub(r'\\s+', ' ', text).strip()", "text": "text = re.sub(r'\\s+', ' ', text).strip()"}
+{"unnormalised": "", "normalised": "مون کي معاف ڪجو، مان توهان کي صحيح طرح سان سمجهي نه سگهيس.", "text": ""}
+{"unnormalised": "", "normalised": "واپس متن", "text": "معاف ڪجو، مون کي اڃا اهو ڪرڻ نٿو اچي."}
+{"unnormalised": "", "normalised": "def process_folder(input_folder, output_folder):\nڊيف پروسيس فولڊر (ان پٽ فولڊر، آئوٽ پٽ فولڊر):", "text": "def process_folder(input_folder, output_folder):\nڊيف پروسيس فولڊر (ان پٽ فولڊر، آئوٽ پٽ فولڊر):"}
+{"unnormalised": "", "normalised": "unnormalized_files = []", "text": "غير معمولي فائلون = []"}
+{"unnormalised": "", "normalised": "مون کي معاف ڪجو، مان توهان کي صحيح طرح سان سمجهي نه سگهيس.", "text": ""}
+{"unnormalised": "", "normalised": "for root, dirs, files in os.walk(input_folder):", "text": "روٽ، ڊائريڪٽريون، فائلون لاءِ او ايس.واڪ(ان پٽ_فولڊر) ۾:"}
+{"unnormalised": "", "normalised": "relative_path = os.path.relpath(root, input_folder)", "text": "relative_path = os.path.relpath(root, input_folder)"}
+{"unnormalised": "", "normalised": "آئوٽ پُٽ_روٽ = اوس.پاتھ.جوائن (آئوٽ پُٽ_فولڊر، ريليٽو_پاتھ)", "text": "آئوٽ پُٽ روٽ = او ايس .جوائن (آئوٽ پُٽ فولڊر، رليٽو پاٿ)"}
+{"unnormalised": "", "normalised": "os.makedirs(output_root, exist_ok=True)", "text": "os.makedirs(output_root, exist_ok=True)"}
+{"unnormalised": "", "normalised": "فائلن ۾ فائل_نالو ان ڪري:", "text": "فائل_نالو فائلن ۾:"}
+{"unnormalised": "", "normalised": "انپٽ_فائل_پاتھ = او ايس.جوائن (روٽ، فائل_نالو)", "text": "input_file_path = os.path.join(root, file_name)\nان پُٽ فائل جو رستو = os.path.join(روٽ، فائل جي نالي)"}
+{"unnormalised": "", "normalised": "آئوٽ پُٽ فائل پاتھ = اوس ڊاٽ جوائن (آئوٽ پُٽ روٽ، فائل نالو)", "text": "آئوٽ پُٽ فائل پاتھ = او ايس ڊاٽ جوائن (آئوٽ پُٽ روٽ، فائل نالو)"}
+{"unnormalised": "", "normalised": "جيڪڏھن فائل جو نالو '.txt' سان ختم ٿئي ٿو:", "text": "جيڪڏهن فائيل_نالو '.txt' سان ختم ٿئي ٿو:"}
+{"unnormalised": "", "normalised": "ڪوشش ڪريو:", "text": "ڪوشش ڪريو:"}
+{"unnormalised": "", "normalised": "اوپن (انپٽ_فائل_پاٿ، 'r', اينڪوڊنگ='utf-8') ايز ايف_ان سان:", "text": "وِٿ اوپن(اِنپُٽ_فائيل_پاٿ، 'آر'، اِنڪوڊنگ='يو ٽي ايف-8') ايس ايف_اِن:"}
+{"unnormalised": "", "normalised": "مواد = ف_اِن پڙھيو()", "text": "مواد = f_in پڙھي."}
+{"unnormalised": "", "normalised": "معاف ڪجو، مون کي سمجھ ۾ نه آيو. ڇا توھان مھرباني ڪري ان کي ورجائي سگھو ٿا؟", "text": ""}
+{"unnormalised": "", "normalised": "نارملائيزڊ_ڪنٽينٽ = نارملائيز_ٽيڪسٽ (ڪنٽينٽ)", "text": "نارملائيزڊ_ڪنٽينٽ = نارملائيز_ٽيڪسٽ(ڪنٽينٽ)"}
+{"unnormalised": "", "normalised": "معاف ڪجو، مون کي سمجھ ۾ نه آيو. ڇا توھان مھرباني ڪري ان کي ورجائي سگھو ٿا؟", "text": ""}
+{"unnormalised": "", "normalised": "with open(output_file_path, 'w', encoding='utf-8') as f_out:", "text": "`with open(output_file_path, 'w', encoding='utf-8') as f_out:`"}
+{"unnormalised": "", "normalised": "f_out.write(normalized_content)", "text": "f_out.write(normalized_content)"}
+{"unnormalised": "", "normalised": "سواءِ ان کان سواءِ جيئن ته e:", "text": "Exception جي طور تي سواءِ e جي:"}
+{"unnormalised": "", "normalised": "ڇپايو(f\"غلطي پروسيسنگ ۾ {input_file_path}: {e}\")", "text": "ڇاپيو(f\"غلطي ٿي رهي آهي {input_file_path}: {e}\")"}
+{"unnormalised": "", "normalised": "unnormalized_files.append(input_file_path)", "text": "غيرمعياري ٿيل فائلون.append(انپٽ_فائل_رستو)"}
+{"unnormalised": "", "normalised": "# نارملائيزيشن ناڪام ٿيڻ جي صورت ۾ اصل فائل ڪاپي ڪريو", "text": "# جيڪڏهن نارملائيزيشن ناڪام ٿئي ته اصل فائل ڪاپي ڪريو"}
+{"unnormalised": "", "normalised": "with open(output_file_path, 'w', encoding='utf-8') as f_out:", "text": "`with open(output_file_path, 'w', encoding='utf-8') as f_out:`"}
+{"unnormalised": "", "normalised": "f_out.write(content)", "text": "f_out.write(content)"}
+{"unnormalised": "", "normalised": "نه ته:", "text": "ٻي صورت ۾:"}
+{"unnormalised": "", "normalised": "# غير .txt فائلون ساڳيون نقل ڪريو", "text": "# غير ٽيڪسٽ فائلون تبديل ڪرڻ کانسواءِ ڪاپي ڪريو"}
+{"unnormalised": "", "normalised": "ڪوشش ڪريو:", "text": "ڪوشش ڪريو:"}
+{"unnormalised": "", "normalised": "`with open(input_file_path, 'rb') as f_in, open(output_file_path, 'wb') as f_out:`", "text": "کُليل (open) سان `input_file_path` ، `rb` جي طور تي `f_in` ۽ `output_file_path` ، `wb` جي طور تي `f_out`:"}
+{"unnormalised": "", "normalised": "f_out.write(f_in.read())", "text": "f_out.write(f_in.read())"}
+{"unnormalised": "", "normalised": "سواءِ ان کان سواءِ جيئن ته e:", "text": "Exception جي طور تي سواءِ e جي:"}
+{"unnormalised": "", "normalised": "ڇاپيو (f\"غير ٽي ايڪس ٽي فائل {input_file_path} نقل ڪرڻ ۾ نقص: {e}\")", "text": "ڇاپيو(f\"غير-ٽي ايڪس ٽي فائل {ان پُٽ_فائل_پاٿ} ڪاپي ڪرڻ ۾ غلطي: {e}\")"}
+{"unnormalised": "", "normalised": "unnormalized_files.append(input_file_path)", "text": "غيرمعياري ٿيل فائلون.append(انپٽ_فائل_رستو)"}
+{"unnormalised": "", "normalised": "جيڪڏهن غير معياري ٿيل فائلون:", "text": "جيڪڏهن غير معياري ٿيل فائلون:"}
+{"unnormalised": "", "normalised": "ڇپايو (\"\\nفائلس جيڪي مڪمل طور تي نارمل يا ڪاپي نه ٿي سگهيون غلطين جي ڪري:\")", "text": "ڇپيو(\"\\nفائلس جيڪي مڪمل طور تي نارملائز يا ڪاپي نه ٿي سگهيون غلطين جي ڪري:\")"}
+{"unnormalised": "", "normalised": "فائل f ۾ غير معمولي ٿيل فائلون:", "text": "for f in unnormalized_files:"}
+{"unnormalised": "", "normalised": "ڇاپيو(f)", "text": "ڇاپيو (f)"}
+{"unnormalised": "", "normalised": "مون کي افسوس آهي، پر مان اهو نٿو ڪري سگهان.", "text": "مون کي افسوس آهي، پر مان اهو نٿو ڪري سگهان."}
+{"unnormalised": "", "normalised": "# مظاهري لاءِ ڪجھ فرضي ڊيٽا ٺاھيو", "text": "# مظاهري لاءِ ڪجھ فرضي ڊيٽا ٺاھيو"}
+{"unnormalised": "", "normalised": "جيڪڏھن __name__ == \"__main__\":", "text": "جيڪڏھن __name__ == \"__main__\":"}
+{"unnormalised": "", "normalised": "# ھڪ ڊمي ڊيٽا سيٽ ٺاھيو", "text": "# هڪ ڊمي ڊيٽاسٽ ٺاهيو"}
+{"unnormalised": "", "normalised": "os.makedirs('ڊيٽا سيٽ/سب فولڊر1', exist_ok=True)", "text": "os.makedirs('dataset/subfolder1', exist_ok=True)"}
+{"unnormalised": "", "normalised": "os.makedirs('ڊيٽاسٽ/سب فولڊر2', exist_ok=True)", "text": "os.makedirs('dataset/subfolder2', exist_ok=True)"}
+{"unnormalised": "", "normalised": "open('dataset/file1.txt', 'w') as f:", "text": "`dataset/file1.txt` فائل کولڻ سان، لکڻ لاءِ:"}
+{"unnormalised": "", "normalised": "f.write(\"ناسا پروجيڪٽ کي $20B فنڊنگ ملي. اھو 10/09/2024 تي شروع ٿيو. جي ڊي پي واڌ ~5٪ ھئي. هن کي 2.5 ڪلوگرام چانور گهرجن. $20.50 قيمت آهي. 2+2=4. آرٽ/ڪرافٽ سٺو آھي. QA/Dev ٽيم.\\n\")", "text": "f.write(\"ناسا پروجيڪٽ کي 20B ڊالر فنڊنگ ملي. اھو 10/09/2024 تي شروع ٿيو. جي ڊي پي جي واڌ تقريبن 5٪ هئي. کيس 2.5 ڪلوگرام چانورن جي ضرورت آهي. 20.50 ڊالر قيمت آهي. هڪ 2+2=4. آرٽ/ڪرافٽ سٺو آهي. QA/Dev ٽيم.\\n\")"}
+{"unnormalised": "", "normalised": "f.write(\"انٽيگرل ∫ x^2 dx 0 کان 1 تائين. قيمت πr^2 آهي. x^n ۽ x_i اهم آهن. آبادي جو 3/4 حصو. ٻاهر 25°C گرمي پد آهي. رفتار 100 ڪلوميٽر في ڪلاڪ هئي. GDP 10M آهي. 1/2 ڪلو.\\n\")", "text": "f.write(\"انٽيگرل ∫ x^2 dx 0 کان 1 تائين. قيمت πr^2 آھي. x^n ۽ x_i اھم آھن. آبادي جو 3/4 حصو. ٻاهر 25°C گرمي پد آھي. رفتار 100 ڪلوميٽر / ڪلاڪ ھئي. جي ڊي پي 10M آھي. 1/2 ڪلو.\\n\")"}
+{"unnormalised": "", "normalised": "f.write(\"خاص نشانيون: @ # & * ≠ ≤ ≥. هي 99 مسئلا آهن. U.S.A. عظيم آهي. 7th ڏينهن. 2024-09-10 رپورٽ. 10cm, 100ml. هو 5km پنڌ هليو. √9 ٽي آهي. ايراضي 100sqm آهي. هي x^3 جي هڪ مثال آهي. گرمي پد 10 درجا آهي. منهنجي ڪمپيوٽر ۾ 1TB اسٽوريج آهي. فريڪوئنسي 50Hz آهي.\")", "text": "f.write(\"خاص نشانيون: @ # & * ≠ ≤ ≥. هي 99 مسئلا آهن. U.S.A. عظيم آهي. 7th ڏينهن. 2024-09-10 رپورٽ. 10cm, 100ml. هو 5km پنڌ هليو. √9 ٽي آهي. ايريا 100sqm آهي. هي x^3 جي هڪ مثال آهي. گرمي پد 10 درجا آهي. منهنجي ڪمپيوٽر ۾ 1TB اسٽوريج آهي. فريڪوئنسي 50Hz آهي.\")"}
+{"unnormalised": "", "normalised": "مون کي معاف ڪجو، مان توهان کي صحيح طرح سان سمجهي نه سگهيس.", "text": ""}
+{"unnormalised": "", "normalised": "هڪ فائل کوليو ('dataset/subfolder1/file2.txt', 'w') بطور f:", "text": "`dataset/subfolder1/file2.txt` کي کوليو ويو لکڻ لاءِ ۽ ان کي f طور رکيو ويو:"}
+{"unnormalised": "", "normalised": "f.write(\"ٻيو ٽيسٽ: 12345 ڊالر. تاريخ آهي 01-01-2023. اسان کي 500 ملي گرام جي ضرورت آهي. زاويه 45° آهي. هن کي صحيح طريقي سان معمول ڪرڻ گهرجي. 9999999999.99 بابت ڇا خيال آهي؟\\n\")", "text": "f.write(\"هڪ ٻيو ٽيسٽ: 12345 ڊالر. تاريخ آهي 01-01-2023. اسان کي 500 ملي گرام جي ضرورت آهي. زاويه 45° آهي. هن کي صحيح طريقي سان نارملائيز ڪيو وڃي. 9999999999.99 بابت ڇا خيال آهي؟\\n\")"}
+{"unnormalised": "", "normalised": "f.write(\"ھي ھڪ X-Y-Z ٽيسٽ آھي. ھي A.B.C. لکيل آھي. 200V، 10A، 5KW. x_max ۽ y_min اھم متغير آھن.\")", "text": "f.write(\"هي ھڪ X-Y-Z ٽيسٽ آھي. هي A.B.C. لکت آھي. 200V, 10A, 5KW. x_max ۽ y_min اھم متغير آھن.\")"}
+{"unnormalised": "", "normalised": "`with open('dataset/subfolder2/image.jpg', 'w') as f:` # فرضي غير-ٽيڪسٽ فائل", "text": "فائل کول \"ڊيٽا سيٽ/سب فولڊر2/image.jpg\" کوليو، 'w' موڊ ۾: # فرضي غير ٽيڪسٽ فائل"}
+{"unnormalised": "", "normalised": "f.write(\"ھي ھڪ ٽيڪسٽ فائل ناھي.\")", "text": "f.write(\"هي هڪ ٽيڪسٽ فائل ناهي.\")"}
+{"unnormalised": "", "normalised": "input_folder = 'dataset'", "text": "ان پٽ_فولڊر = 'ڊيٽاسيٽ'"}
+{"unnormalised": "", "normalised": "output_folder = 'dataset_normalized'", "text": "output_folder = 'dataset_normalized'"}
+{"unnormalised": "", "normalised": "process_folder(input_folder, output_folder)", "text": "process_folder(input_folder, output_folder)"}
+{"unnormalised": "", "normalised": "ڇپايو (f\"\\nنارملائيزيشن مڪمل. نتيجن لاءِ '{output_folder}' چيڪ ڪريو.\")", "text": "ڇاپيو(f\"\\nنارملائيزيشن مڪمل. نتيجن لاءِ '{output_folder}' چيڪ ڪريو.\")"}
+{"unnormalised": "", "normalised": "ڇاپيو (\"معياري فائل مواد جو مثال (file1.txt):\")", "text": "ڇاپيو (\"معياري ٿيل فائل مواد جو مثال (file1.txt):\")"}
+{"unnormalised": "", "normalised": "ڪوشش ڪريو:", "text": "ڪوشش ڪريو:"}
+{"unnormalised": "", "normalised": "اوپن (os.path.join(output_folder, 'file1.txt'), 'r', encoding='utf-8') ايز ايف:", "text": "هڪ فائل کوليو وڃي ٿو (os.path.join(output_folder, 'file1.txt'))، پڙهڻ لاءِ، 'r' موڊ ۾ ۽ اينڪوڊنگ 'utf-8' سان، ۽ ان کي 'f' طور حوالو ڏنو وڃي ٿو:"}
+{"unnormalised": "", "normalised": "ڇاپيو(f.پڙھو())", "text": "ڇاپيو(f. پڙھو())"}
+{"unnormalised": "", "normalised": "سواءِ فائل ناهي مليو واري نقص جي:", "text": "سواءِ فائل نـہ ملڻ واري نقص جي:"}
+{"unnormalised": "", "normalised": "ڇاپيو (\"نارملائزڊ فائل1.txt نه ملي.\")", "text": "ڇاپيل(\"معياري ٿيل فائل1.txt نه ملي.\")"}
+{"unnormalised": "", "normalised": "Hello, how are you?\n\nI am doing well, thank you.\n\nWhat are you doing today?\n```\nهيلو، توهان ڪيئن آهيو؟\n\nمان ٺيڪ آهيان، مهرباني.\n\nاڄ توهان ڇا ڪري رهيا آهيو؟", "text": "Hello, how are you?\n\nI am doing well, thank you.\n\nWhat are you doing today?\n```\nهيلو، توهان ڪيئن آهيو؟\n\nمان ٺيڪ آهيان، مهرباني.\n\nاڄ توهان ڇا ڪري رهيا آهيو؟"}

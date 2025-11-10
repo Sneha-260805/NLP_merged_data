@@ -1,0 +1,248 @@
+{"unnormalised": "ଏହି ଇଂରାଜୀ ଲେଖାକୁ ଓଡ଼ିଆରେ ଅନୁବାଦ କରନ୍ତୁ | କେବଳ ଅନୁବାଦ ଫେରାନ୍ତୁ; ମୂଳ ଧାଡି ଭଙ୍ଗ ଏବଂ ସ୍ପେସିଙ୍ଗ୍ ବଜାୟ ରଖନ୍ତୁ |\n\nମନେରଖନ୍ତୁ ତୁମର ସମୀକରଣଗୁଡ଼ିକୁ \\$ ଚିହ୍ନରେ ଆବଦ୍ଧ କରିବେ | ଉଦାହରଣ ସ୍ଵରୂପ, \\$x^2 + y^2 = r^2\\$ ସମୀକରଣ ଲେଖିବାକୁ, ଆପଣ \\$x^2 + y^2 = r^2\\$ ଟାଇପ୍ କରିବେ | ଭଗ୍ନାଂଶ ପାଇଁ \\\\frac\\{\\}\\{\\} ବ୍ୟବହାର କରନ୍ତୁ, ଯେପରିକି $\\frac{1}{2}$ କୁ \\\\frac\\{1\\}\\{2\\} ଭାବରେ ଲେଖାଯାଏ |", "normalised": "ମୁଁ ଭାବୁଛି ତୁମେ କେମିତି ଅଛ।\nଆଶା କରୁଛି ତୁମେ ଭଲରେ ଥିବ।\nମୋର ତୁମକୁ ମନେ ପଡୁଛି।\n```", "text": "ଏହି ଇଂରାଜୀ ଲେଖାକୁ ଓଡ଼ିଆରେ ଅନୁବାଦ କରନ୍ତୁ | କେବଳ ଅନୁବାଦ ଫେରାନ୍ତୁ; ମୂଳ ଧାଡି ଭଙ୍ଗ ଏବଂ ସ୍ପେସିଙ୍ଗ୍ ବଜାୟ ରଖନ୍ତୁ |\n\nମନେରଖନ୍ତୁ ତୁମର ସମୀକରଣଗୁଡ଼ିକୁ \\$ ଚିହ୍ନରେ ଆବଦ୍ଧ କରିବେ | ଉଦାହରଣ ସ୍ଵରୂପ, \\$x^2 + y^2 = r^2\\$ ସମୀକରଣ ଲେଖିବାକୁ, ଆପଣ \\$x^2 + y^2 = r^2\\$ ଟାଇପ୍ କରିବେ | ଭଗ୍ନାଂଶ ପାଇଁ \\\\frac\\{\\}\\{\\} ବ୍ୟବହାର କରନ୍ତୁ, ଯେପରିକି $\\frac{1}{2}$ କୁ \\\\frac\\{1\\}\\{2\\} ଭାବରେ ଲେଖାଯାଏ |"}
+{"unnormalised": "", "normalised": "ଇମ୍ପୋର୍ଟ ଓଏସ୍", "text": "ଇମ୍ପୋର୍ଟ ଓଏସ୍"}
+{"unnormalised": "", "normalised": "ଇମ୍ପୋର୍ଟ ରି", "text": "ଇମ୍ପୋର୍ଟ ରି"}
+{"unnormalised": "", "normalised": "num2words ରୁ", "text": "num2words ରୁ"}
+{"unnormalised": "", "normalised": "def convert_number_to_words(number_str):", "text": "def convert_number_to_words(number_str):"}
+{"unnormalised": "", "normalised": "ପ୍ରୟାସ କରନ୍ତୁ:", "text": "ପ୍ରୟାସ କରନ୍ତୁ:"}
+{"unnormalised": "", "normalised": "ଯଦି '.' ଅଛି ସଂଖ୍ୟା_ଷ୍ଟ୍ରିଙ୍ଗ୍ ରେ:", "text": "ଯଦି '.' ସଂଖ୍ୟା_ଷ୍ଟ୍ରିଙ୍ଗ୍ ରେ ଅଛି:"}
+{"unnormalised": "", "normalised": "ସଂପୂର୍ଣ୍ଣ_ଅଂଶ, ଦଶମିକ_ଅଂଶ = number_str.split('.')", "text": "integer_part, decimal_part = number_str.split('.')\nପୂର୍ଣ୍ଣାଂଶ, ଦଶମିକ_ଅଂଶ = number_str.split('.')"}
+{"unnormalised": "", "normalised": "ଯଦି ପୂର୍ଣ୍ଣାଂଶ ଥାଏ:", "text": "ଯଦି ପୂର୍ଣ୍ଣ ସଂଖ୍ୟା ଅଂଶଟି ଥାଏ:"}
+{"unnormalised": "", "normalised": "integer_words = num2words(int(integer_part))", "text": "ପୂର୍ଣ୍ଣସଂଖ୍ୟା_ଶବ୍ଦ = num2words(int(ପୂର୍ଣ୍ଣସଂଖ୍ୟା_ଅଂଶ))"}
+{"unnormalised": "", "normalised": "ଅନ୍ୟଥା:", "text": "ଅନ୍ୟଥା:"}
+{"unnormalised": "", "normalised": "ପୂର୍ଣ୍ଣସଂଖ୍ୟା_ଶବ୍ଦ = ''", "text": "ପୂର୍ଣ୍ଣସଂଖ୍ୟା_ଶବ୍ଦ = ''"}
+{"unnormalised": "", "normalised": "decimal_words = 'ପଏଣ୍ଟ ' + ' '.join(num2words(int(d)) for d in decimal_part)", "text": "ଦଶମିକ_ଶବ୍ଦ = 'ପଏଣ୍ଟ୍ ' + ' '.join(num2words(int(d)) for d in ଦଶମିକ_ଅଂଶ)"}
+{"unnormalised": "", "normalised": "ଯଦି ପୂର୍ଣ୍ଣସଂଖ୍ୟା_ଶବ୍ଦଗୁଡ଼ିକ:", "text": "ଯଦି integer_words:"}
+{"unnormalised": "", "normalised": "ରିଟର୍ଣ୍ଣ କରନ୍ତୁ f\"{ପୂର୍ଣ୍ଣସଂଖ୍ୟା_ଶବ୍ଦ} {ଦଶମିକ_ଶବ୍ଦ}\"", "text": "ଫେରସ୍ତ କରନ୍ତୁ f\"{integer_words} {decimal_words}\""}
+{"unnormalised": "", "normalised": "ଅନ୍ୟଥା:", "text": "ଅନ୍ୟଥା:"}
+{"unnormalised": "", "normalised": "ଫେରସ୍ତ କର ଦଶମିକ_ଶବ୍ଦଗୁଡ଼ିକ", "text": "ଦଶମିକ_ଶବ୍ଦ ଫେରସ୍ତ କରନ୍ତୁ |"}
+{"unnormalised": "", "normalised": "ଅନ୍ୟଥା:", "text": "ଅନ୍ୟଥା:"}
+{"unnormalised": "", "normalised": "return num2words(int(number_str))\nreturn num2words(int(number_str))", "text": "return num2words(int(number_str))\nରିଟର୍ଣ୍ଣ ନମ୍2ୱାର୍ଡସ୍(ଇଣ୍ଟ୍(ନମ୍ବର_ଏସ୍‌ଟିଆର୍))"}
+{"unnormalised": "", "normalised": "ବ୍ୟତିକ୍ରମ ValueError:", "text": "ମୂଲ୍ୟଏରର ବ୍ୟତୀତ:"}
+{"unnormalised": "", "normalised": "ରିଟର୍ଣ୍ଣ ନମ୍ବର_ଷ୍ଟ୍ରିଙ୍ଗ୍ # ରୂପାନ୍ତରଣ ବିଫଳ ହେଲେ ମୂଳ ରିଟର୍ଣ୍ଣ କରନ୍ତୁ", "text": "ସଂଖ୍ୟା_ଷ୍ଟ୍ରିଙ୍ଗ୍ ଫେରାନ୍ତୁ # ଯଦି ରୂପାନ୍ତରଣ ବିଫଳ ହୁଏ ତେବେ ମୂଳ ଫେରାନ୍ତୁ"}
+{"unnormalised": "", "normalised": "ଡେଫ୍ ନର୍ମାଲାଇଜ୍_ଟେକ୍ସଟ୍(ଟେକ୍ସଟ୍):", "text": "ଡେଫ୍ ନର୍ମାଲାଇଜ୍_ଟେକ୍ସଟ୍(ଟେକ୍ସଟ୍):"}
+{"unnormalised": "", "normalised": "# ନିୟମ 1: ସଙ୍କେତ → କଥିତ ରୂପ", "text": "ନିୟମ ୧: ସଙ୍କେତ → କଥିତ ରୂପ"}
+{"unnormalised": "", "normalised": "# ଧ୍ୟାନ ଦିଅନ୍ତୁ: ପ୍ରତୀକ ବଦଳାଇବା ପାଇଁ କ୍ରମ ଗୁରୁତ୍ୱପୂର୍ଣ୍ଣ, ଫଳରେ '$20B' ପରି ସମସ୍ୟା ଆସିବା ପୂର୍ବରୁ '$' ବଦଳା ଯିବାରୁ ରକ୍ଷା କରାଯାଇପାରିବ ।", "text": "# ଧ୍ୟାନ ଦିଅନ୍ତୁ: ଚିହ୍ନ ବଦଳାଇବା ପାଇଁ କ୍ରମ ଗୁରୁତ୍ୱପୂର୍ଣ୍ଣ ଅଟେ, ଯାହା ଦ୍ୱାରା '$' ପୂର୍ବରୁ '$20B' କୁ ପରିଚାଳନା କରାଯିବା ସମସ୍ୟାକୁ ଏଡ଼ାଇ ଦିଆଯାଇପାରିବ।"}
+{"unnormalised": "", "normalised": "# ବହୁ-ଅକ୍ଷର ସଙ୍କେତ ଏବଂ ସେଗୁଡ଼ିକୁ ପ୍ରାଥମିକତା ଦିଅନ୍ତୁ ଯାହା ସଂଖ୍ୟା ସହିତ ପାରସ୍ପରିକ କ୍ରିୟା କରନ୍ତି।", "text": "# ବହୁ-ଅକ୍ଷର ସଙ୍କେତ ଏବଂ ସେଗୁଡ଼ିକୁ ପ୍ରାଥମିକତା ଦିଅନ୍ତୁ ଯାହା ସଂଖ୍ୟା ସହିତ ପାରସ୍ପରିକ କ୍ରିୟା କରନ୍ତି।"}
+{"unnormalised": "", "normalised": "# ସଂଯୁକ୍ତ ମୁଦ୍ରା + ସଂଖ୍ୟା + ପୃଷ୍ଠଲଗ୍ନ (ନିୟମ ୫) - ବ୍ୟକ୍ତିଗତ ଚିହ୍ନ କିମ୍ବା ସଂଖ୍ୟା ନିୟମ ପୂର୍ବରୁ ଆସିବା ଆବଶ୍ୟକ", "text": "# ମିଳିତ ମୁଦ୍ରା + ସଂଖ୍ୟା + ପ୍ରତ୍ୟୟ (ନିୟମ 5) - ବ୍ୟକ୍ତିଗତ ସଙ୍କେତ କିମ୍ବା ସଂଖ୍ୟା ନିୟମ ପୂର୍ବରୁ ଆସିବା ଆବଶ୍ୟକ"}
+{"unnormalised": "", "normalised": "def replace_currency_number_suffix(match):", "text": "def replace_currency_number_suffix(match):"}
+{"unnormalised": "", "normalised": "କରେନ୍ସି_ସିମ୍ବଲ୍ = match.group(1)", "text": "currency_symbol = match.group(1)"}
+{"unnormalised": "", "normalised": "ନମ୍ବର_ଭାଲ୍ = ମ୍ୟାଚ୍.ଗ୍ରୁପ୍(୨)", "text": "ସଂଖ୍ୟା_ମୂଲ୍ୟ = ମ୍ୟାଚ୍.ଗ୍ରୁପ୍(2)"}
+{"unnormalised": "", "normalised": "ସଫିକ୍ସ = ମ୍ୟାଚ୍ . ଗ୍ରୁପ୍ (3)", "text": "ପ୍ରତ୍ୟୟ = ମେଳ(match).ଗ୍ରୁପ୍(3)"}
+{"unnormalised": "", "normalised": "ମୁଁ ତୁମକୁ ଭଲପାଏ ।", "text": ""}
+{"unnormalised": "", "normalised": "currency_map = {", "text": "କରେନ୍ସି_ମ୍ୟାପ୍ = {"}
+{"unnormalised": "", "normalised": "'$': 'ଡଲାର', '₹': 'ଟଙ୍କା', '€': 'ୟୁରୋ', '£': 'ପାଉଣ୍ଡ', '¥': 'ୟେନ'", "text": "'$': 'ଡଲାର', '₹': 'ଟଙ୍କା', '€': 'ୟୁରୋ', '£': 'ପାଉଣ୍ଡ', '¥': 'ୟେନ'"}
+{"unnormalised": "", "normalised": "}", "text": "ମୁଁ କ୍ଷମା ପ୍ରାର୍ଥନା କରୁଛି, ମୁଁ ତୁମର ଅନୁରୋଧ ବୁଝିପାରୁନାହିଁ ।"}
+{"unnormalised": "", "normalised": "currency_word = currency_map.get(currency_symbol, currency_symbol) # ଫଲବ୍ୟାକ୍ ଯଦି ମ୍ୟାପରେ ନାହିଁ", "text": "currency_word = currency_map.get(currency_symbol, currency_symbol) # ଯଦି map ରେ ନାହିଁ ତେବେ ଫଲ୍‌ବ୍ୟାକ୍"}
+{"unnormalised": "", "normalised": "number_words = convert_number_to_words(number_val)", "text": "number_words = convert_number_to_words(number_val)"}
+{"unnormalised": "", "normalised": "ସଫିକ୍ସ_ମ୍ୟାପ୍ = {", "text": "ସଫିକ୍ସ_ମ୍ୟାପ୍ = {"}
+{"unnormalised": "", "normalised": "'K': 'ହଜାର', 'M': 'ନିୟୁତ', 'B': 'କୋଟି', 'T': 'ଟ୍ରିଲିୟନ'", "text": "'K': 'ହଜାର', 'M': 'ମିଲିୟନ', 'B': 'ବିଲିୟନ', 'T': 'ଟ୍ରିଲିୟନ'"}
+{"unnormalised": "", "normalised": "}", "text": "ମୁଁ କ୍ଷମା ପ୍ରାର୍ଥନା କରୁଛି, ମୁଁ ତୁମର ଅନୁରୋଧ ବୁଝିପାରୁନାହିଁ ।"}
+{"unnormalised": "", "normalised": "suffix_word = suffix_map.get(suffix.upper(), suffix) # ଯଦି ମ୍ୟାପ୍‌ରେ ନାହିଁ ତେବେ ମୂଳକୁ ଡିଫଲ୍ଟ କରନ୍ତୁ |", "text": "suffix_word = suffix_map.get(suffix.upper(), suffix) # ଯଦି ମ୍ୟାପ୍ ରେ ନାହିଁ, ତେବେ ମୂଳକୁ ଡିଫଲ୍ଟ କରନ୍ତୁ"}
+{"unnormalised": "", "normalised": "ରିଟର୍ଣ୍ଣ f\"{ମୁଦ୍ରା_ଶବ୍ଦ} {ସଂଖ୍ୟା_ଶବ୍ଦ} {ପ୍ରତ୍ୟୟ_ଶବ୍ଦ}\"", "text": "ରିଟର୍ଣ୍ଣ f\"{currency_word} {number_words} {suffix_word}\""}
+{"unnormalised": "", "normalised": "ମୁଁ ଭଲ ଅଛି।", "text": ""}
+{"unnormalised": "", "normalised": "text = re.sub(r'([$₹€£¥])(\\d+)([KMBTkmbt])\\b', replace_currency_number_suffix, text)", "text": "text = re.sub(r'([$₹€£¥])(\\d+)([KMBTkmbt])\\b', replace_currency_number_suffix, text)"}
+{"unnormalised": "", "normalised": "# ନିୟମ 4: ସଂଖ୍ୟା ସଫିକ୍ସ (K, M, B, T) - ମିଳିତ ମୁଦ୍ରା ପରେ କିନ୍ତୁ ସାଧାରଣ ସଂଖ୍ୟା ନିୟମ ପୂର୍ବରୁ", "text": "ନିୟମ 4: ସଂଖ୍ୟା ସୂଚକ ପ୍ରତ୍ୟୟ (K, M, B, T) - ମିଳିତ ମୁଦ୍ରା ପରେ କିନ୍ତୁ ସାଧାରଣ ସଂଖ୍ୟା ନିୟମ ପୂର୍ବରୁ"}
+{"unnormalised": "", "normalised": "def replace_numeric_suffix(match):", "text": "ଡେଫ୍ ରିପ୍ଲେସ_ନ୍ୟୁମେରିକ_ସଫିକ୍ସ(ମ୍ୟାଚ୍):"}
+{"unnormalised": "", "normalised": "ନମ୍ବର_ଭାଲ୍ = ମ୍ୟାଚ୍ .ଗ୍ରୁପ୍(୧)", "text": "ସଂଖ୍ୟା_ମୂଲ୍ୟ = ମ୍ୟାଚ୍.ଗ୍ରୁପ୍(1)"}
+{"unnormalised": "", "normalised": "ସଫିକ୍ସ = ମ୍ୟାଚ୍ .ଗ୍ରୁପ୍(2)", "text": "ସଫିକ୍ସ = ମ୍ୟାଚ୍.ଗ୍ରୁପ୍(୨)"}
+{"unnormalised": "", "normalised": "number_words = convert_number_to_words(number_val)", "text": "number_words = convert_number_to_words(number_val)"}
+{"unnormalised": "", "normalised": "ସଫିକ୍ସ_ମ୍ୟାପ୍ = {", "text": "ସଫିକ୍ସ_ମ୍ୟାପ୍ = {"}
+{"unnormalised": "", "normalised": "'K': 'ହଜାର', 'M': 'ନିୟୁତ', 'B': 'କୋଟି', 'T': 'ଟ୍ରିଲିୟନ'", "text": "'K': 'ହଜାର', 'M': 'ମିଲିୟନ', 'B': 'ବିଲିୟନ', 'T': 'ଟ୍ରିଲିୟନ'"}
+{"unnormalised": "", "normalised": "}", "text": "ମୁଁ କ୍ଷମା ପ୍ରାର୍ଥନା କରୁଛି, ମୁଁ ତୁମର ଅନୁରୋଧ ବୁଝିପାରୁନାହିଁ ।"}
+{"unnormalised": "", "normalised": "ରିଟର୍ଣ୍ଣ କରନ୍ତୁ f\"{number_words} {suffix_map.get(suffix.upper(), suffix)}\"", "text": "ଫେରସ୍ତ କରନ୍ତୁ f\"{ସଂଖ୍ୟା_ଶବ୍ଦ} {ସଫିକ୍ସ_ମ୍ୟାପ୍.ଗେଟ୍(ସଫିକ୍ସ.ଅପର୍(), ସଫିକ୍ସ)}\""}
+{"unnormalised": "", "normalised": "ମୁଁ ଭଲ ଅଛି।", "text": ""}
+{"unnormalised": "", "normalised": "text = re.sub(r'(\\d+)([KMBTkmbt])\\b', replace_numeric_suffix, text)", "text": "text = re.sub(r'(\\d+)([KMBTkmbt])\\b', replace_numeric_suffix, text)"}
+{"unnormalised": "", "normalised": "# ନିୟମ 1 ଏବଂ 8: ଗାଣିତିକ ସଙ୍କେତ ଏବଂ ଜଟିଳ ଚିହ୍ନ", "text": "ନିୟମ ୧ ଏବଂ ୮: ଗାଣିତିକ ସଙ୍କେତ ଏବଂ ଜଟିଳ ଚିହ୍ନ"}
+{"unnormalised": "", "normalised": "# ଭଗ୍ନାଂଶ: x/y -> x କୁ y ଦ୍ୱାରା ଭାଗ କରାଯାଏ (କେବଳ ଶୁଦ୍ଧ ସଂଖ୍ୟା ପାଇଁ)", "text": "ଅଂଶଭଗ୍ନାଂଶ: x/y -> x କୁ y ଦ୍ଵାରା ଭାଗ କରାଗଲା (କେବଳ ଶୁଦ୍ଧ ସଂଖ୍ୟା ପାଇଁ)"}
+{"unnormalised": "", "normalised": "ଟେକ୍ସଟ୍ = re.sub(r'(\\d+)/(\\d+)', r'\\1 କୁ \\2 ଦ୍ଵାରା ବିଭାଜନ କରାଯାଇଛି', ଟେକ୍ସଟ୍)", "text": "ଟେକ୍ସଟ୍ = re.sub(r'(\\d+)/(\\d+)', r'\\1 ଭାଗ \\2', ଟେକ୍ସଟ୍)"}
+{"unnormalised": "", "normalised": "ମୁଁ ଭଲ ଅଛି।", "text": ""}
+{"unnormalised": "", "normalised": "# ଗାଣିତିକ ସଙ୍କେତ", "text": "ଗାଣିତିକ ସଙ୍କେତ"}
+{"unnormalised": "", "normalised": "ଟେକ୍ସଟ୍ = ଟେକ୍ସଟ୍.replace('∫', 'ଇଣ୍ଟିଗ୍ରାଲ୍ ଅଫ୍')", "text": "ପାଠ୍ୟ = ପାଠ୍ୟ.replace('∫', 'ର ସମାକଳ')"}
+{"unnormalised": "", "normalised": "ଟେକ୍ସଟ୍ = ଟେକ୍ସଟ୍ .replace('→', 'to') # ଇଣ୍ଟିଗ୍ରାଲ୍ ଲିମିଟ୍ ପାଇଁ", "text": "ପାଠ୍ଯ = ପାଠ୍ଯ। replace('→', 'to') # ସମାକଳ ସୀମାଗୁଡିକ ପାଇଁ"}
+{"unnormalised": "", "normalised": "ପାଠ୍ଯ = ପାଠ୍ଯ.replace('√', 'square root of')", "text": "ପାଠ = ପାଠ .replace('√', 'ବର୍ଗମୂଳ')"}
+{"unnormalised": "", "normalised": "ପାଠ୍ୟ = ପାଠ୍ୟ .replace('π', 'pi')", "text": "text = text.replace('π', 'pi')"}
+{"unnormalised": "", "normalised": "ଟେକ୍ସଟ୍ = ଟେକ୍ସଟ୍.ରିପ୍ଲେସ୍('Σ', 'ସମେସନ୍ ଅଫ୍')", "text": "ପାଠ୍ୟ = text.replace('Σ', 'ସମଷ୍ଟିର')"}
+{"unnormalised": "", "normalised": "text = text.replace('≠', 'ସମାନ ନୁହେଁ')", "text": "ପାଠ୍ୟ = ପାଠ୍ୟ.replace('≠', 'ସମାନ ନୁହେଁ')"}
+{"unnormalised": "", "normalised": "ଟେକ୍ସଟ୍ = ଟେକ୍ସଟ୍ .ରିପ୍ଲେସ୍ ('≤', 'ଲେସ୍ ଦ୍ୟାନ୍ ଅର୍ ଇକ୍ଵାଲ୍ ଟୁ')", "text": "ପାଠ୍ଯ = ପାଠ୍ଯ.replace('≤', 'less than or equal to')"}
+{"unnormalised": "", "normalised": "text = text.replace('≥', 'ସମାନ ବା ଅଧିକ')", "text": "ପାଠ୍ଯ = ପାଠ୍ଯ.ସ୍ଥାନାନ୍ତରଣ('≥', 'ସମାନ ବା ଠାରୁ ଅଧିକ')"}
+{"unnormalised": "", "normalised": "ପାଠ = ପାଠ.replace('≈', 'ପ୍ରାୟ ସମାନ')", "text": "ପାଠ୍ଯ = ପାଠ୍ଯ .ପ୍ରତିସ୍ଥାପିତ ('≈', 'ପ୍ରାୟ ସମାନ')"}
+{"unnormalised": "", "normalised": "ପାଠ୍ଯ = ପାଠ୍ଯ.replace('≅', 'ପ୍ରାୟ ସର୍ବସମ')", "text": "ପାଠ୍ଯ = ପାଠ୍ଯ . replace('≅', 'ଅନୁମାନିକ ଭାବରେ ସର୍ବସମ')"}
+{"unnormalised": "", "normalised": "ପାଠ = text.replace('≡', 'ସର୍ବତୋଭାବେ ସମାନ')", "text": "ପାଠ = text.replace('≡', 'identically equal to')"}
+{"unnormalised": "", "normalised": "ଟେକ୍ସଟ୍ = ଟେକ୍ସଟ୍.ରିପ୍ଲେସ୍('∀', 'ସମସ୍ତଙ୍କ ପାଇଁ')", "text": "ପାଠ୍ଯ = ପାଠ୍ଯ.replace('∀', 'ସମସ୍ତଙ୍କ ପାଇଁ')"}
+{"unnormalised": "", "normalised": "ଟେକ୍ସଟ୍ = ଟେକ୍ସଟ୍‌.ରିପ୍ଲେସ୍('∃', 'ଥେର୍ ଏକ୍ସିଷ୍ଟସ୍')", "text": "ପାଠ୍ୟ = ପାଠ୍ୟ । ବଦଳାନ୍ତୁ ('∃', 'ସେଠାରେ ଅଛି')"}
+{"unnormalised": "", "normalised": "ଟେକ୍ସଟ୍ = ଟେକ୍ସଟ୍.ରିପ୍ଲେସ୍('∉', 'ଏଲିମେଣ୍ଟ୍ ନୁହେଁ')", "text": "ପାଠ = ପାଠ .ସ୍ଥାନାନ୍ତର ('∉', 'ଉପାଦାନ ନୁହେଁ')"}
+{"unnormalised": "", "normalised": "ପାଠ୍ଯ = ପାଠ୍ଯ .replace ('∈', 'ର ଏକ ଉପାଦାନ ଅଟେ')", "text": "ପାଠ୍ୟ = ପାଠ୍ୟ। replace('∈', 'ଏହାର ଏକ ଉପାଦାନ ଅଟେ')"}
+{"unnormalised": "", "normalised": "ପାଠ୍ଯ = ପାଠ୍ଯ .replace('⊂', 'is a subset of')", "text": "ପାଠ୍ଯ = ପାଠ୍ଯ . replace('⊂', 'ର ଏକ ଉପଗୋଷ୍ଠୀ ଅଟେ')"}
+{"unnormalised": "", "normalised": "ପାଠ୍ଯ = ପାଠ୍ଯ .replace('⊃', 'ର ଏକ ସୁପରସେଟ୍ ଅଟେ')", "text": "ପାଠ୍ୟ = ପାଠ୍ୟ | ପ୍ରତିସ୍ଥାପନ ('⊃', 'ଏକ ସୁପରସେଟ୍ ଅଟେ')"}
+{"unnormalised": "", "normalised": "text = text.replace('∪', 'union')", "text": "ପାଠ = ପାଠ.ପ୍ରତିସ୍ଥାପନ('∪', 'union')"}
+{"unnormalised": "", "normalised": "ପାଠ = ପାଠ.replace('∩', 'intersection')", "text": "text = text.replace('∩', 'intersection')"}
+{"unnormalised": "", "normalised": "ପାଠ୍ଯ = ପାଠ୍ଯ . ସ୍ଥାନାନ୍ତର ( '∅', 'ଖାଲି ସେଟ୍' )", "text": "text = text.replace('∅', 'ଶୂନ୍ୟ ସେଟ୍')"}
+{"unnormalised": "", "normalised": "ପାଠ୍ଯ = ପାଠ୍ଯ.replace('∝', 'is proportional to')", "text": "ପାଠ୍ୟ = ପାଠ୍ୟ .replace('∝', 'ଅନୁପାତୀ ଅଟେ')"}
+{"unnormalised": "", "normalised": "ଟେକ୍ସଟ = ଟେକ୍ସଟ.ରିପ୍ଲେସ('∞', 'ଇନଫିନିଟି')", "text": "ପାଠ୍ଯ = ପାଠ୍ଯ.replace('∞', 'ଅସୀମ')"}
+{"unnormalised": "", "normalised": "ଟେକ୍ସଟ୍ = ଟେକ୍ସଟ୍ .replace('±', 'ପ୍ଲସ୍ ଅର୍ ମାଇନସ୍')", "text": "ପାଠ୍ୟ = ପାଠ୍ୟ.ପ୍ରତିସ୍ଥାପିତ('±', 'ପ୍ଲସ୍ କିମ୍ବା ମାଇନସ୍')"}
+{"unnormalised": "", "normalised": "ଟେକ୍ସଟ୍ = ଟେକ୍ସଟ୍.ରିପ୍ଲେସ୍('∇', 'nabla')", "text": "ପାଠ = ପାଠ . ବଦଳାଅ ('∇', 'nabla')"}
+{"unnormalised": "", "normalised": "ପାଠ୍ଯ = ପାଠ୍ଯ.replace('∂', 'ଆଂଶିକ ଅବକଳନ')", "text": "ପାଠ୍ଯ = ପାଠ୍ଯ.replace('∂', 'ଆଂଶିକ ଅବକଳନ')"}
+{"unnormalised": "", "normalised": "ଟେକ୍ସଟ୍ = ଟେକ୍ସଟ୍ .replace('⊕', 'direct sum')", "text": "ପାଠ୍ୟ = ପାଠ୍ୟ | ପ୍ରତିସ୍ଥାପନ ('⊕', 'ସିଧା ସଳଖ ସମଷ୍ଟି')"}
+{"unnormalised": "", "normalised": "ଟେକ୍ସଟ୍ = ଟେକ୍ସଟ୍.replace('⊗', 'ଟେନସର୍ ପ୍ରଡକ୍ଟ୍')", "text": "ପାଠ୍ଯ = ପାଠ୍ଯ.replace('⊗', 'ଟେନସର୍ ପ୍ରଡକ୍ଟ')"}
+{"unnormalised": "", "normalised": "ଟେକ୍ସଟ୍ = ଟେକ୍ସଟ୍.ରିପ୍ଲେସ୍('∘', 'କମ୍ପୋଜିସନ୍')", "text": "ପାଠ୍ୟ = ପାଠ୍ୟ.ପ୍ରତିସ୍ଥାପନ('∘', 'ସଂରଚନା')"}
+{"unnormalised": "", "normalised": "ଟେକ୍ସଟ୍ = ଟେକ୍ସଟ୍ . replace('⋅', 'ଡଟ୍ ପ୍ରଡକ୍ଟ୍') # କିମ୍ବା ଗୁଣ, ପ୍ରସଙ୍ଗ ଉପରେ ନିର୍ଭର କରେ | ଡିଫଲ୍ଟ୍ 'ଡଟ୍ ପ୍ରଡକ୍ଟ୍' କୁ", "text": "ପାଠ = text.replace('⋅', 'ଡଟ୍ ପ୍ରଡକ୍ଟ୍') # କିମ୍ବା ଗୁଣ, ପ୍ରସଙ୍ଗ ଉପରେ ନିର୍ଭର କରେ | 'ଡଟ୍ ପ୍ରଡକ୍ଟ୍' ରେ ଡିଫଲ୍ଟ୍"}
+{"unnormalised": "", "normalised": "ପାଠ୍ଯ = ପାଠ୍ଯ . ପ୍ରତିସ୍ଥାପନ ('°', 'ଡିଗ୍ରୀ') # ଏକକ ପାଇଁ, ପୃଥକ ଭାବରେ ପରିଚାଳିତ", "text": "ପାଠ୍ୟ = ପାଠ୍ୟ। ପ୍ରତିସ୍ଥାପିତ ('°', 'ଡିଗ୍ରୀ') # ଏକକ ପାଇଁ, ପୃଥକ ଭାବରେ ପରିଚାଳିତ"}
+{"unnormalised": "", "normalised": "# ପାୱାର୍ ଏବଂ ସବସ୍କ୍ରିପ୍ଟ୍", "text": "# ଘାତ ଏବଂ ସବସ୍କ୍ରିପ୍ଟସ୍"}
+{"unnormalised": "", "normalised": "text = re.sub(r'(\\w)\\^2\\b', r'\\1 ସ୍କୋୟାର୍ଡ', text)", "text": "text = re.sub(r'(\\w)\\^2\\b', r'\\1 ସ୍କୋୟାର୍ଡ', text)"}
+{"unnormalised": "", "normalised": "ଟେକ୍ସଟ୍ = re.sub(r'(\\w)\\^3\\b', r'\\1 କ୍ୟୁବ୍ଡ', ଟେକ୍ସଟ୍)", "text": "text = re.sub(r'(\\w)\\^3\\b', r'\\1 କ୍ୟୁବ୍ଡ', text)"}
+{"unnormalised": "", "normalised": "ଟେକ୍ସଟ୍ = ରେ.ସବ୍(r'(\\w)\\^(\\d+)\\b', r'\\1 ଟୁ ଦି ପାୱାର୍ ଅଫ୍ \\2', ଟେକ୍ସଟ୍)", "text": "ପାଠ୍ୟ = re.sub(r'(\\w)\\^(\\d+)\\b', r'\\1 ର ଘାତ \\2', ପାଠ୍ୟ)"}
+{"unnormalised": "", "normalised": "text = re.sub(r'(\\w)_(\\w+)\\b', r'\\1 ସବ୍ \\2', text) # x_i -> x ସବ୍ i", "text": "ପାଠ୍ୟ = re.sub(r'(\\w)_(\\w+)\\b', r'\\1 ସବ୍ \\2', ପାଠ୍ୟ) # x_i -> x ସବ୍ i"}
+{"unnormalised": "", "normalised": "ଟେକ୍ସଟ୍ = re.sub(r'(\\w)_(\\{\\w+\\})\\b', r'\\1 sub \\2', ଟେକ୍ସଟ୍) # x_{max} -> x sub max", "text": "text = re.sub(r'(\\w)_(\\{\\w+\\})\\b', r'\\1 sub \\2', text) # x_{max} -> x sub max"}
+{"unnormalised": "", "normalised": "ଅନ୍ୟ ସଙ୍କେତଗୁଡିକ", "text": "ଅନ୍ୟାନ୍ୟ ସଙ୍କେତଗୁଡିକ"}
+{"unnormalised": "", "normalised": "ଟେକ୍ସଟ୍ = ଟେକ୍ସଟ୍ .ରିପ୍ଲେସ୍('$', 'ଡଲାର୍')", "text": "text = text.replace('$', 'ଡଲାର୍')"}
+{"unnormalised": "", "normalised": "text = text.replace('€', 'ୟୁରୋ')", "text": "text = text.replace('€', 'euro')"}
+{"unnormalised": "", "normalised": "text = text.replace('£', 'ପାଉଣ୍ଡ')", "text": "ପାଠ୍ଯ = ପାଠ୍ଯ.ସ୍ଥାନାନ୍ତରଣ('£', 'ପାଉଣ୍ଡ')"}
+{"unnormalised": "", "normalised": "ଟେକ୍ସଟ୍ = ଟେକ୍ସଟ୍.replace('¥', 'yen')", "text": "text = text.replace('¥', 'yen')"}
+{"unnormalised": "", "normalised": "ଟେକ୍ସଟ୍ = ଟେକ୍ସଟ୍.ରିପ୍ଲେସ୍('₹', 'ଟଙ୍କା')", "text": "text = text.replace('₹', 'ଟଙ୍କା')"}
+{"unnormalised": "", "normalised": "text = text.replace('%', 'ପ୍ରତିଶତ')", "text": "text = text.replace('percent', 'ପ୍ରତିଶତ')"}
+{"unnormalised": "", "normalised": "text = text.replace('@', 'ଆଟ୍')", "text": "text = text.replace('@', 'ଏଟ୍')"}
+{"unnormalised": "", "normalised": "text = text.replace('&', 'and')", "text": "text = text.replace('and', 'and')"}
+{"unnormalised": "", "normalised": "text = text.replace('#', 'ହ୍ୟାଶ୍')", "text": "ପାଠ = ପାଠ.replace('#', 'ହ୍ୟାଶ୍')"}
+{"unnormalised": "", "normalised": "text = text.replace('*', 'asterisk')", "text": "ପାଠ୍ଯ = ପାଠ୍ଯ.replace('asterisk', 'asterisk')"}
+{"unnormalised": "", "normalised": "ଟେକ୍ସଟ୍ = ଟେକ୍ସଟ୍.ରିପ୍ଲେସ୍('+', 'ପ୍ଲସ୍')", "text": "text = text.replace('+', 'ପ୍ଲସ୍')"}
+{"unnormalised": "", "normalised": "ଟେକ୍ସଟ୍ = ଟେକ୍ସଟ୍.ରିପ୍ଲେସ୍('=', 'ଇକ୍ଵଲ୍ସ')", "text": "ପାଠ୍ଯ = ପାଠ୍ଯ.ପ୍ରତିସ୍ଥାପନ('=', 'ସମାନ')"}
+{"unnormalised": "", "normalised": "ଟେକ୍ସଟ୍ = ଟେକ୍ସଟ୍ . ରିପ୍ଲେସ୍('-', 'ମାଇନସ୍') # ହାଇଫେନଯୁକ୍ତ ଶବ୍ଦ ବନାମ ଗାଣିତିକ ମାଇନସ୍ ସହିତ ସାବଧାନ ରୁହନ୍ତୁ", "text": "ମୁଁ ଦୁଃଖିତ, ମୁଁ ତାହା କରିପାରିବି ନାହିଁ।"}
+{"unnormalised": "", "normalised": "text = text.replace('~', 'ପ୍ରାୟ')", "text": "ପାଠ୍ଯ = ପାଠ୍ଯ .replace('~', 'ଆନୁମାନିକ')"}
+{"unnormalised": "", "normalised": "# ନିୟମ 2: ସଂକ୍ଷିପ୍ତ ଶବ୍ଦ → ଡେସଯୁକ୍ତ ଅକ୍ଷର", "text": "ନିୟମ ୨: ସଂକ୍ଷିପ୍ତ ଶବ୍ଦ → ହାଇଫେନ୍‌ଯୁକ୍ତ ଅକ୍ଷର"}
+{"unnormalised": "", "normalised": "ପାଠ = ପୁନଃ.ଉପ.କରିବା(r'\\b([A-Z]{2,})\\b', ଲାମ୍ବଡା m: '-'.ଯୋଗଦିଅନ୍ତୁ(ସୂଚୀ(m.ଗୋଷ୍ଠୀ(1))), ପାଠ)", "text": "text = re.sub(r'\\b([A-Z]{2,})\\b', lambda m: '-'.join(list(m.group(1))), text)\nଟେକ୍ସଟ୍ = re.sub(r'\\b([A-Z]{2,})\\b', lambda m: '-'.join(list(m.group(1))), ଟେକ୍ସଟ୍)"}
+{"unnormalised": "", "normalised": "ମୁଁ ଭଲ ଅଛି।", "text": ""}
+{"unnormalised": "", "normalised": "# ନିୟମ 6: ତାରିଖ → ସ୍ୱାଭାବିକ କଥାବାର୍ତ୍ତା ଶୈଳୀ (DD/MM/YYYY କିମ୍ବା YYYY-MM-DD ଅନୁମାନ କରାଯାଏ)", "text": "# ନିୟମ 6: ତାରିଖ → ସ୍ୱାଭାବିକ କଥନ ଶୈଳୀ (DD/MM/YYYY କିମ୍ବା YYYY-MM-DD ଅନୁମାନ କରାଯାଇଛି)"}
+{"unnormalised": "", "normalised": "def replace_date(match):", "text": "ଡେଫ୍ ରିପ୍ଲେସ୍_ଡେଟ୍(ମ୍ୟାଚ୍):"}
+{"unnormalised": "", "normalised": "ଦିନ, ମାସ, ବର୍ଷ = '', '', ''", "text": "ଦିନ, ମାସ, ବର୍ଷ = '', '', ''"}
+{"unnormalised": "", "normalised": "ଯଦି ମ୍ୟାଚ୍‌.ଗ୍ରୁପ୍(1): # DD-MM-YYYY କିମ୍ବା DD/MM/YYYY", "text": "ଯଦି match.group(1): # DD-MM-YYYY କିମ୍ବା DD/MM/YYYY"}
+{"unnormalised": "", "normalised": "ଦିନ = int(match.group(2))", "text": "ଦିନ = int(match.group(2))"}
+{"unnormalised": "", "normalised": "ମାସ = int(ମ୍ୟାଚ୍.ଗ୍ରୁପ୍(3))", "text": "ମାସ = int(match.group(3))"}
+{"unnormalised": "", "normalised": "ବର୍ଷ = int(match.group(4))", "text": "ବର୍ଷ = int(match.group(4))"}
+{"unnormalised": "", "normalised": "ଯଦି ମ୍ୟାଚ୍‌ . ଗ୍ରୁପ୍‌(୫) : # YYYY-MM-DD", "text": "ଅଥବା ଯଦି match.group(5) ଅଛି: # YYYY-MM-DD"}
+{"unnormalised": "", "normalised": "ବର୍ଷ = int(match.group(6))", "text": "ବର୍ଷ = int(match.group(6))"}
+{"unnormalised": "", "normalised": "ମାସ = int(ମ୍ୟାଚ୍.ଗ୍ରୁପ୍(୭))", "text": "ମାସ = int(match.group(7))"}
+{"unnormalised": "", "normalised": "ଦିନ = int(match.group(8))", "text": "ଦିନ = int(match.group(8))"}
+{"unnormalised": "", "normalised": "ଯଦି (ଦିନ ଓ ମାସ ଓ ବର୍ଷ) ନାହିଁ:", "text": "ଯଦି (ଦିନ ଓ ମାସ ଓ ବର୍ଷ) ନାହିଁ:"}
+{"unnormalised": "", "normalised": "ରିଟର୍ଣ୍ଣ ମ୍ୟାଚ୍.ଗ୍ରୁପ୍(୦) # ଯଦି ତାରିଖ ପାର୍ସ କରିବାରେ ବିଫଳ ହୁଏ ତେବେ ମୂଳ ଫେରାନ୍ତୁ", "text": "ରିଟର୍ଣ୍ଣ ମ୍ୟାଚ୍‌.ଗ୍ରୁପ୍‌(୦) # ତାରିଖ ପାର୍ସ କରିବାରେ ବିଫଳ ହେଲେ ମୂଳ ରିଟର୍ଣ୍ଣ କରନ୍ତୁ"}
+{"unnormalised": "", "normalised": "ମାସଗୁଡ଼ିକ = [\"\", \"ଜାନୁଆରୀ\", \"ଫେବୃଆରୀ\", \"ମାର୍ଚ୍ଚ\", \"ଏପ୍ରିଲ୍\", \"ମେ\", \"ଜୁନ୍\",", "text": "ମାସ = [\"\", \"ଜାନୁଆରୀ\", \"ଫେବୃଆରୀ\", \"ମାର୍ଚ୍ଚ\", \"ଏପ୍ରିଲ୍\", \"ମେ\", \"ଜୁନ୍\","}
+{"unnormalised": "", "normalised": "\"ଜୁଲାଇ\", \"ଅଗଷ୍ଟ\", \"ସେପ୍ଟେମ୍ବର\", \"ଅକ୍ଟୋବର\", \"ନଭେମ୍ବର\", \"ଡିସେମ୍ବର\"]", "text": "\"ଜୁଲାଇ\", \"ଅଗଷ୍ଟ\", \"ସେପ୍ଟେମ୍ବର\", \"ଅକ୍ଟୋବର\", \"ନଭେମ୍ବର\", \"ଡିସେମ୍ବର\"]"}
+{"unnormalised": "", "normalised": "ମୁଁ ତୁମକୁ ଭଲପାଏ ।", "text": ""}
+{"unnormalised": "", "normalised": "day_suffix = {1: 'ପ୍ରଥମ', 2: 'ଦ୍ୱିତୀୟ', 3: 'ତୃତୀୟ', 4: 'ଚତୁର୍ଥ', 5: 'ପଞ୍ଚମ', 6: 'ଷଷ୍ଠ', 7: 'ସପ୍ତମ', 8: 'ଅଷ୍ଟମ', 9: 'ନବମ', 10: 'ଦଶମ', 11: 'ଏକାଦଶ', 12: 'ଦ୍ୱାଦଶ', 13: 'ତ୍ରୟୋଦଶ', 14: 'ଚତୁର୍ଦ୍ଦଶ', 15: 'ପଞ୍ଚଦଶ', 16: 'ଷୋଡଶ', 17: 'ସପ୍ତଦଶ', 18: 'ଅଷ୍ଟାଦଶ', 19: 'ଊନବିଂଶ', 20: 'ବିଂଶ', 21: 'ଏକବିଂଶ', 22: 'ଦ୍ୱାବିଂଶ', 23: 'ତ୍ରୟୋବିଂଶ', 24: 'ଚତୁର୍ବିଂଶ', 25: 'ପଞ୍ଚବିଂଶ', 26: 'ଷଡବିଂଶ', 27: 'ସପ୍ତବିଂଶ', 28: 'ଅଷ୍ଟାବିଂଶ', 29: 'ଊନତ୍ରିଂଶ', 30: 'ତ୍ରିଂଶ', 31: 'ଏକତ୍ରିଂଶ'}", "text": "day_suffix = {1: 'first', 2: 'second', 3: 'third', 4: 'fourth', 5: 'fifth', 6: 'sixth', 7: 'seventh', 8: 'eighth', 9: 'ninth', 10: 'tenth', 11: 'eleventh', 12: 'twelfth', 13: 'thirteenth', 14: 'fourteenth', 15: 'fifteenth', 16: 'sixteenth', 17: 'seventeenth', 18: 'eighteenth', 19: 'nineteenth', 20: 'twentieth', 21: 'twenty first', 22: 'twenty second', 23: 'twenty third', 24: 'twenty fourth', 25: 'twenty fifth', 26: 'twenty sixth', 27: 'twenty seventh', 28: 'twenty eighth', 29: 'twenty ninth', 30: 'thirtieth', 31: 'thirty first'}"}
+{"unnormalised": "", "normalised": "ମୁଁ ତୁମକୁ ଭଲପାଏ ।", "text": ""}
+{"unnormalised": "", "normalised": "ସ୍ପୋକେନ୍_ଡେ = ଡେ_ସଫିକ୍ସ.ଗେଟ୍(ଡେ, ନମ୍୨ୱାର୍ଡସ୍(ଡେ, ଟୁ='ଅର୍ଡିନାଲ୍'))", "text": "କଥ୍ତ_ଦିନ = ଦିନ_ପ୍ରତ୍ୟୟ.get(ଦିନ, ନମ୍ବର୍୨ୱାର୍ଡସ୍(ଦିନ, ଟୋ='ଅର୍ଡିନାଲ୍'))"}
+{"unnormalised": "", "normalised": "କଥିତ_ମାସ = ମାସଗୁଡ଼ିକ[ମାସ]", "text": "କଥାହେଉଥିବା_ମାସ = ମାସ[ମାସ]"}
+{"unnormalised": "", "normalised": "ସ୍କୋକେନ୍_ଇୟର୍ = କନ୍‌ଭର୍ଟ୍_ନମ୍ବର୍_ଟୁ_ୱାର୍ଡସ୍(ଷ୍ଟ୍ର(ଇୟର୍))", "text": "କଥାରେ_ବର୍ଷ = ସଂଖ୍ୟାକୁ_ଶବ୍ଦରେ_ପରିବର୍ତ୍ତନ(str(ବର୍ଷ))"}
+{"unnormalised": "", "normalised": "ମୁଁ ତୁମକୁ ଭଲପାଏ ।", "text": ""}
+{"unnormalised": "", "normalised": "ରିଟର୍ଣ୍ଣ କରନ୍ତୁ f\"{spoken_day} {spoken_month} {spoken_year}\"", "text": "return f\"{spoken_day} {spoken_month} {spoken_year}\""}
+{"unnormalised": "", "normalised": "# DD/MM/YYYY ଅଥବା DD-MM-YYYY", "text": "# DD/MM/YYYY ଅଥବା DD-MM-YYYY"}
+{"unnormalised": "", "normalised": "text = re.sub(r'\\b((\\d{1,2})[/-](\\d{1,2})[/-](\\d{4}))\\b', replace_date, text)", "text": "text = re.sub(r'\\b((\\d{1,2})[/-](\\d{1,2})[/-](\\d{4}))\\b', replace_date, text)"}
+{"unnormalised": "", "normalised": "# YYYY-MM-DD", "text": "# ବର୍ଷ-ମାସ-ଦିନ"}
+{"unnormalised": "", "normalised": "ଟେକ୍ସଟ୍ = re.sub(r'\\b((\\d{4})[/-](\\d{1,2})[/-](\\d{1,2}))\\b', replace_date, text)", "text": "text = re.sub(r'\\b((\\d{4})[/-](\\d{1,2})[/-](\\d{1,2}))\\b', replace_date, text)"}
+{"unnormalised": "", "normalised": "# ନିୟମ 7: ଏକକ → କଥିତ ରୂପ", "text": "# ନିୟମ ୭: ଏକକ → କଥିତ ରୂପ"}
+{"unnormalised": "", "normalised": "def replace_units(match):", "text": "ଡେଫ୍ ରିପ୍ଲେସ_ୟୁନିଟ୍ସ(ମ୍ୟାଚ୍):"}
+{"unnormalised": "", "normalised": "ସଂଖ୍ୟା = convert_number_to_words(match.group(1))", "text": "ସଂଖ୍ୟା = convert_number_to_words(match.group(1))"}
+{"unnormalised": "", "normalised": "unit = match.group(2).lower()", "text": "ଏକକ = match.group(2).lower()"}
+{"unnormalised": "", "normalised": "unit_map = {", "text": "unit_map = {"}
+{"unnormalised": "", "normalised": "'cm': 'ସେଣ୍ଟିମିଟର', 'mm': 'ମିଲିମିଟର', 'm': 'ମିଟର', 'km': 'କିଲୋମିଟର',", "text": "'cm': 'ସେଣ୍ଟିମିଟର',\n'mm': 'ମିଲିମିଟର',\n'm': 'ମିଟର',\n'km': 'କିଲୋମିଟର',"}
+{"unnormalised": "", "normalised": "'g': 'ଗ୍ରାମ', 'kg': 'କିଲୋଗ୍ରାମ', 'mg': 'ମିଲିଗ୍ରାମ',", "text": "'g': 'ଗ୍ରାମ', 'kg': 'କିଲୋଗ୍ରାମ', 'mg': 'ମିଲିଗ୍ରାମ',"}
+{"unnormalised": "", "normalised": "'ml': 'ମିଲିଲିଟର', 'l': 'ଲିଟର',", "text": "'ml': 'ମିଲିଲିଟର', 'l': 'ଲିଟର',"}
+{"unnormalised": "", "normalised": "'°c': 'ଡିଗ୍ରୀ ସେଲସିୟସ', 'kph': 'କିଲୋମିଟର ପ୍ରତି ଘଣ୍ଟା',", "text": "'°c': 'ଡିଗ୍ରୀ ସେଲସିୟସ୍', 'kph': 'କିଲୋମିଟର ପ୍ରତି ଘଣ୍ଟା',"}
+{"unnormalised": "", "normalised": "'mph': 'ମାଇଲ୍ ପ୍ରତି ଘଣ୍ଟା', 'psi': 'ପାଉଣ୍ଡ ପ୍ରତି ବର୍ଗ ଇଞ୍ଚ',", "text": "'mph': 'ମାଇଲ ପ୍ରତି ଘଣ୍ଟା', 'psi': 'ପାଉଣ୍ଡ ପ୍ରତି ବର୍ଗ ଇଞ୍ଚ',"}
+{"unnormalised": "", "normalised": "'sqm': 'ବର୍ଗ ମିଟର', 'sqkm': 'ବର୍ଗ କିଲୋମିଟର',", "text": "'sqm': 'ବର୍ଗ ମିଟର', 'sqkm': 'ବର୍ଗ କିଲୋମିଟର',"}
+{"unnormalised": "", "normalised": "'ha': 'ହେକ୍ଟର', 'ft': 'ଫୁଟ', 'in': 'ଇଞ୍ଚ', 'yd': 'ଗଜ',", "text": "'ha': 'ହେକ୍ଟର', 'ft': 'ଫୁଟ୍', 'in': 'ଇଞ୍ଚ', 'yd': 'ଗଜ',"}
+{"unnormalised": "", "normalised": "'oz': 'ଆଉନ୍ସ', 'lb': 'ପାଉଣ୍ଡ', 'hr': 'ଘଣ୍ଟା', 'min': 'ମିନିଟ୍', 'sec': 'ସେକେଣ୍ଡ',", "text": "'oz': 'ଆଉନ୍ସ', 'lb': 'ପାଉଣ୍ଡ', 'hr': 'ଘଣ୍ଟା', 'min': 'ମିନିଟ୍', 'sec': 'ସେକେଣ୍ଡ',"}
+{"unnormalised": "", "normalised": "'mb': 'ମେଗାବାଇଟ୍', 'gb': 'ଗିଗାବାଇଟ୍', 'tb': 'ଟେରାବାଇଟ୍', 'kb': 'କିଲୋବାଇଟ୍',", "text": "'mb': 'ମେଗାବାଇଟ୍', 'gb': 'ଗିଗାବାଇଟ୍', 'tb': 'ଟେରାବାଇଟ୍', 'kb': 'କିଲୋବାଇଟ୍',"}
+{"unnormalised": "", "normalised": "'hz': 'ହର୍ଜ୍', 'khz': 'କିଲୋହର୍ଜ୍', 'mhz': 'ମେଗାହର୍ଜ୍', 'ghz': 'ଗିଗାହର୍ଜ୍',", "text": "'hz': 'ହର୍ଜ୍', 'khz': 'କିଲୋହର୍ଜ୍', 'mhz': 'ମେଗାହର୍ଜ୍', 'ghz': 'ଗିଗାହର୍ଜ୍',"}
+{"unnormalised": "", "normalised": "'v': 'ଭୋଲ୍ଟ', 'a': 'ଆମ୍ପିୟର', 'w': 'ୱାଟ୍', 'kw': 'କିଲୋୱାଟ୍', 'mw': 'ମେଗାୱାଟ୍'", "text": "'v': 'ଭୋଲ୍ଟ', 'a': 'ଆମ୍ପିୟର', 'w': 'ୱାଟ୍', 'kw': 'କିଲୋୱାଟ୍', 'mw': 'ମେଗାୱାଟ୍'"}
+{"unnormalised": "", "normalised": "}", "text": "ମୁଁ କ୍ଷମା ପ୍ରାର୍ଥନା କରୁଛି, ମୁଁ ତୁମର ଅନୁରୋଧ ବୁଝିପାରୁନାହିଁ ।"}
+{"unnormalised": "", "normalised": "# ଆବଶ୍ୟକ ହେଲେ ବହୁବଚନକୁ ପରିଚାଳନା କରନ୍ତୁ (ସରଳ ହ୍ୟୁରିଷ୍ଟିକ୍)", "text": "# ଆବଶ୍ୟକ ହେଲେ ବହୁବଚନକୁ ସମ୍ଭାଳନ୍ତୁ (ସରଳ ହ୍ୟୁରିଷ୍ଟିକ୍)"}
+{"unnormalised": "", "normalised": "ଯଦି int(match.group(1)) > 1 ଏବଂ unit_map.get(unit) ଅଛି ଏବଂ unit_map.get(unit) ‘s’ରେ ଶେଷ ହେଉନାହିଁ:", "text": "ଯଦି int(match.group(1)) > 1 ଏବଂ unit_map.get(unit) ଏବଂ unit_map.get(unit).endswith('s') ନୁହେଁ:"}
+{"unnormalised": "", "normalised": "ରିଟର୍ଣ୍ଣ f\"{number} {unit_map.get(unit)}s\"", "text": "ଫେରସ୍ତ କରନ୍ତୁ f\"{number} {unit_map.get(unit)}s\""}
+{"unnormalised": "", "normalised": "ରିଟର୍ଣ୍ଣ f\"{ସଂଖ୍ୟା} {unit_map.get(ଏକକ, ଏକକ)}\"", "text": "ଫେରସ୍ତ କରନ୍ତୁ f\"{ସଂଖ୍ୟା} {ଏକକ_ମାନଚିତ୍ର।get(ଏକକ, ଏକକ)}\""}
+{"unnormalised": "", "normalised": "text = re.sub(r'(\\d+(?:\\.\\d+)?)\\s*(ସେମି|ମିମି|ମି|କିମି|ଗ୍ରାମ|କିଗ୍ରା|ମିଗ୍ରା|ମିଲି|ଲି|°ସେ|°ସେ|କିମିପ୍ରତିଘଣ୍ଟା|ମାଇଲପ୍ରତିଘଣ୍ଟା|ପିଏସଆଇ|ବର୍ଗମିଟର|ବର୍ଗକିମି|ହେକ୍ଟର|ଫୁଟ|ଇଞ୍ଚ|ଗଜ|ଅନ୍ସ|ପାଉଣ୍ଡ|ଘଣ୍ଟା|ମିନିଟ|ସେକେଣ୍ଡ|ଏମବି|ଜିବି|ଟିବି|କେବି|ହର୍ଜ|କିଲୋହର୍ଜ|ମେଗାହର୍ଜ|ଗିଗାହର୍ଜ|ଭୋଲ୍ଟ|ଆମ୍ପିୟର|ୱାଟ୍|କିଲୋୱାଟ୍|ମେଗାୱାଟ୍)\\b', replace_units, text, flags=re.IGNORECASE)", "text": "text = re.sub(r'(\\d+(?:\\.\\d+)?)\\s*(cm|mm|m|km|g|kg|mg|ml|l|°C|°c|kph|mph|psi|sqm|sqkm|ha|ft|in|yd|oz|lb|hr|min|sec|mb|gb|tb|kb|hz|khz|mhz|ghz|v|a|w|kw|mw)\\b', replace_units, text, flags=re.IGNORECASE)"}
+{"unnormalised": "", "normalised": "# ନିୟମ 3: ସଂଖ୍ୟା → କଥନ ରୂପ (ମୁଦ୍ରା, ପ୍ରତ୍ୟୟ, ଏବଂ ଏକକ ପରେ)", "text": "ନିୟମ ୩: ସଂଖ୍ୟା → କଥିତ ରୂପ (ମୁଦ୍ରା, ପ୍ରତ୍ୟୟ ଏବଂ ଏକକ ପରେ)"}
+{"unnormalised": "", "normalised": "# ଏହା ଅନ୍ୟ ସମସ୍ତ ସଂଖ୍ୟା ସମ୍ବନ୍ଧୀୟ ନିୟମ ପରେ ଆସିବା ଉଚିତ୍ |", "text": "# ଏହା ଅନ୍ୟ ସମସ୍ତ ସଂଖ୍ୟା ସମ୍ବନ୍ଧୀୟ ନିୟମ ପରେ ଆସିବା ଉଚିତ୍"}
+{"unnormalised": "", "normalised": "ଟେକ୍ସଟ୍ = re.sub(r'\\b(\\d+(?:\\.\\d+)?)\\b', lambda m: convert_number_to_words(m.group(1)), text)", "text": "text = re.sub(r'\\b(\\d+(?:\\.\\d+)?)\\b', lambda m: convert_number_to_words(m.group(1)), text)\nଟେକ୍ସଟ୍ = re.sub(r'\\b(\\d+(?:\\.\\d+)?)\\b', ଲାମ୍ବଡା m: convert_number_to_words(m.group(1)), text)"}
+{"unnormalised": "", "normalised": "# ନିୟମ ୧ (ଅବ୍ୟାହତ): ପ୍ରତୀକଗୁଡ଼ିକର ବଦଳ ଯାହା ପୂର୍ବରୁ ରଖାଗଲେ ଅନ୍ୟ ନିୟମ ସହିତ ବିବାଦ ସୃଷ୍ଟି କରିପାରେ", "text": "ନିୟମ ୧ (ଅବ୍ୟାହତ): ପ୍ରତୀକଗୁଡ଼ିକର ପରିବର୍ତ୍ତନ ଯାହା ପୂର୍ବରୁ ରଖାଗଲେ ଅନ୍ୟ ନିୟମ ସହିତ ବିବାଦ ସୃଷ୍ଟି କରିପାରେ |"}
+{"unnormalised": "", "normalised": "# / କୁ ସାବଧାନରେ ପରିଚାଳନା କରନ୍ତୁ: ସଂଖ୍ୟା ମଧ୍ୟରେ \"ହରଣ\", ଶବ୍ଦ ମଧ୍ୟରେ \"କିମ୍ବା\", ଅନ୍ୟମାନଙ୍କ ପାଇଁ \"ସ୍ଲାସ୍\"", "text": "# ଧ୍ୟାନ ଦିଅନ୍ତୁ / ଯତ୍ନର ସହିତ: ସଂଖ୍ୟା ମଧ୍ୟରେ \"divided by\", ଶବ୍ଦ ମଧ୍ୟରେ \"or\", ଅନ୍ୟମାନଙ୍କ ପାଇଁ \"slash\""}
+{"unnormalised": "", "normalised": "def replace_slash(match):", "text": "ଡେଫ୍ ରିପ୍ଲେସ୍_ସ୍ଲାସ୍(ମ୍ୟାଚ୍):"}
+{"unnormalised": "", "normalised": "ପ୍ରି = ମ୍ୟାଚ୍.ଗ୍ରୁପ୍(1)", "text": "ପ୍ରି = ମ୍ୟାଚ୍ . ଗ୍ରୁପ୍ (୧)"}
+{"unnormalised": "", "normalised": "ପୋଷ୍ଟ = ମ୍ୟାଚ୍.ଗ୍ରୁପ୍(2)", "text": "ପୋଷ୍ଟ = ମ୍ୟାଚ୍.ଗ୍ରୁପ(2)"}
+{"unnormalised": "", "normalised": "ଯଦି re.match(r'\\b\\w+\\b', pre) ଏବଂ re.match(r'\\b\\w+\\b', post):", "text": "ଯଦି re.match(r'\\b\\w+\\b', pre) ଏବଂ re.match(r'\\b\\w+\\b', post):"}
+{"unnormalised": "", "normalised": "ରିଟର୍ଣ୍ଣ f\"{pre} କିମ୍ବା {post}\"", "text": "ଫେରସ୍ତ କରନ୍ତୁ f\"{pre} କିମ୍ବା {post}\""}
+{"unnormalised": "", "normalised": "ଯଦି (re.match(r'\\b[A-Z-]+\\b', pre) କିମ୍ବା re.match(r'\\b[a-z-]+\\b', pre)) ଏବଂ \\", "text": "ଯଦି (re.match(r'\\b[A-Z-]+\\b', pre) କିମ୍ବା re.match(r'\\b[a-z-]+\\b', pre)) ଏବଂ \\"}
+{"unnormalised": "", "normalised": "(re.match(r'\\b[A-Z-]+\\b', post) or re.match(r'\\b[a-z-]+\\b', post)) ଏବଂ \\", "text": "(re.match(r'\\b[A-Z-]+\\b', post) or re.match(r'\\b[a-z-]+\\b', post)) ଏବଂ"}
+{"unnormalised": "", "normalised": "(pre.isupper() != post.isupper()): # ଉଦାହରଣ ସ୍ୱରୂପ QA/Dev ପାଇଁ ମିଶ୍ରିତ କେସ୍", "text": "(pre.isupper() != post.isupper()): # ଉଦାହରଣ ସ୍ୱରୂପ QA/Dev ପାଇଁ ମିଶ୍ରିତ କେସ୍"}
+{"unnormalised": "", "normalised": "return f\"{pre} ସ୍ଲାସ୍ {post}\"", "text": "ଫେରସ୍ତ କରନ୍ତୁ f\"{pre} ସ୍ଲାସ୍ {post}\""}
+{"unnormalised": "", "normalised": "ଅନ୍ୟଥା:", "text": "ଅନ୍ୟଥା:"}
+{"unnormalised": "", "normalised": "return f\"{pre} ସ୍ଲାସ୍ {post}\" # ଅନ୍ୟ କ୍ଷେତ୍ରଗୁଡ଼ିକ ପାଇଁ ସ୍ଲାସ୍ ଡିଫଲ୍ଟ ରଖନ୍ତୁ", "text": "ଫେରସ୍ତ କରନ୍ତୁ f\"{pre} ସ୍ଲାସ୍ {post}\" # ଅନ୍ୟ କେସଗୁଡ଼ିକ ପାଇଁ ସ୍ଲାସ୍ ଡିଫଲ୍ଟ କରନ୍ତୁ"}
+{"unnormalised": "", "normalised": "ଟେକ୍ସଟ୍ = re.sub(r'(\\S)\\s*/\\s*(\\S)', replace_slash, text) # Replaced with regex that considers surrounding", "text": "text = re.sub(r'(\\S)\\s*/\\s*(\\S)', replace_slash, text) # ଆଖପାଖକୁ ବିଚାର କରୁଥିବା ରେଜେକ୍ସ ସହିତ ବଦଳାଯାଇଛି"}
+{"unnormalised": "", "normalised": "ମୁଁ ଭଲ ଅଛି।", "text": ""}
+{"unnormalised": "", "normalised": "# ନିୟମ 9: ସ୍ପେସ୍ଗୁଡ଼ିକୁ ସ୍ୱାଭାବିକ କରନ୍ତୁ", "text": "ନିୟମ 9: ସ୍ପେସଗୁଡ଼ିକୁ ସ୍ୱାଭାବିକ କରନ୍ତୁ |"}
+{"unnormalised": "", "normalised": "ଟେକ୍ସଟ୍ = re.sub(r'\\s+', ' ', ଟେକ୍ସଟ୍).strip()", "text": "ପାଠ୍ୟ = re.sub(r'\\s+', ' ', ପାଠ୍ୟ).strip()"}
+{"unnormalised": "", "normalised": "ମୁଁ ଭଲ ଅଛି।", "text": ""}
+{"unnormalised": "", "normalised": "ଫେରସ୍ତ କରନ୍ତୁ ଟେକ୍ସଟ୍ |", "text": "ରିଟର୍ଣ୍ ଟେକ୍ସଟ୍"}
+{"unnormalised": "", "normalised": "ଡେଫ ପ୍ରୋସେସ_ଫୋଲ୍ଡର(ଇନପୁଟ_ଫୋଲ୍ଡର, ଆଉଟପୁଟ_ଫୋଲ୍ଡର):", "text": "ଡେଫ ପ୍ରୋସେସ_ଫୋଲ୍ଡର(ଇନପୁଟ_ଫୋଲ୍ଡର, ଆଉଟପୁଟ_ଫୋଲ୍ଡର):"}
+{"unnormalised": "", "normalised": "ଅସାଧାରଣୀକୃତ ଫାଇଲଗୁଡିକ = []", "text": "ଅଣ-ସାଧାରଣୀକୃତ ଫାଇଲ୍‍ଗୁଡ଼ିକ = []"}
+{"unnormalised": "", "normalised": "ମୁଁ ଭଲ ଅଛି।", "text": ""}
+{"unnormalised": "", "normalised": "for root, dirs, files in os.walk(input_folder):", "text": "ମୂଳ, ଡିରେକ୍ଟରୀ, ଫାଇଲ୍ସ ପାଇଁ os.walk(input_folder) ରେ:"}
+{"unnormalised": "", "normalised": "ରିଲେଟିଭ୍ ପାଥ୍ = os.path.relpath(ରୁଟ୍, ଇନ୍‌ପୁଟ୍ ଫୋଲ୍ଡର୍)", "text": "ଆପେକ୍ଷିକ_ପଥ = os.path.relpath(ମୂଳ, ଇନପୁଟ_ଫୋଲ୍ଡର)"}
+{"unnormalised": "", "normalised": "output_root = os.path.join(output_folder, relative_path)\n        ଆଉଟପୁଟ୍_ରୁଟ୍ = os.path.join(ଆଉଟପୁଟ୍_ଫୋଲ୍ଡର୍, ରିଲେଟିଭ୍_ପାଥ୍)", "text": "ଆଉଟପୁଟ୍_ରୁଟ୍ = os.path.join(ଆଉଟପୁଟ୍_ଫୋଲଡର୍, ରିଲେଟିଭ୍_ପାଥ୍)"}
+{"unnormalised": "", "normalised": "os.makedirs(output_root, exist_ok=True)", "text": "os.makedirs(output_root, exist_ok=True)"}
+{"unnormalised": "", "normalised": "ଫାଇଲ୍‌ଗୁଡ଼ିକ ମଧ୍ୟରେ ଥିବା ପ୍ରତ୍ୟେକ ଫାଇଲ୍ ନାମ ପାଇଁ:", "text": "ଫାଇଲ୍‌_ନାମ in ଫାଇଲଗୁଡିକ:"}
+{"unnormalised": "", "normalised": "input_file_path = os.path.join(root, file_name)\n            ଇନପୁଟ୍_ଫାଇଲ୍_ପାଥ୍ = os.path.join(ରୁଟ୍, ଫାଇଲ୍_ନାମ)", "text": "ଇନପୁଟ୍_ଫାଇଲ୍_ପାଥ୍ = os.path.join(root, ଫାଇଲ୍_ନାମ)"}
+{"unnormalised": "", "normalised": "ଆଉଟପୁଟ୍_ଫାଇଲ୍_ପାଥ୍ = os.path.join(ଆଉଟପୁଟ୍_ରୁଟ୍, ଫାଇଲ୍_ନାମ)", "text": "ଆଉଟପୁଟ୍_ଫାଇଲ୍_ପାଥ୍ = os.path.join(ଆଉଟପୁଟ୍_ରୁଟ୍, ଫାଇଲ୍_ନାମ)"}
+{"unnormalised": "", "normalised": "ଯଦି ଫାଇଲ୍_ନାମ .txt ରେ ଶେଷ ହୁଏ:", "text": "ଯଦି file_name .txt ରେ ଶେଷ ହୁଏ:"}
+{"unnormalised": "", "normalised": "ପ୍ରୟାସ କରନ୍ତୁ:", "text": "ପ୍ରୟାସ କରନ୍ତୁ:"}
+{"unnormalised": "", "normalised": "ସହିତ open(input_file_path, 'r', encoding='utf-8') as f_in:", "text": "with open(input_file_path, 'r', encoding='utf-8') as f_in:\ninput_file_path, 'r', encoding='utf-8') ହିସାବରେ f_in ଭାବରେ ଖୋଲାଗଲା:"}
+{"unnormalised": "", "normalised": "ବିଷୟବସ୍ତୁ = f_in.read()", "text": "content = f_in.read()\nକଣ୍ଟେଣ୍ଟ = f_in.read()"}
+{"unnormalised": "", "normalised": "ମୁଁ ଦୁଃଖିତ।", "text": ""}
+{"unnormalised": "", "normalised": "ସାଧାରଣୀକୃତ_ବିଷୟବସ୍ତୁ = ବିଷୟବସ୍ତୁକୁ_ସାଧାରଣ_କର(ବିଷୟବସ୍ତୁ)", "text": "ସାଧାରଣୀକୃତ_ବିଷୟବସ୍ତୁ = normalize_text(ବିଷୟବସ୍ତୁ)"}
+{"unnormalised": "", "normalised": "ମୁଁ ଦୁଃଖିତ।", "text": ""}
+{"unnormalised": "", "normalised": "ସହିତ open(output_file_path, 'w', encoding='utf-8') as f_out:", "text": "with open(output_file_path, 'w', encoding='utf-8') as f_out:\n    \nwith open(output_file_path, 'w', encoding='utf-8') as f_out:"}
+{"unnormalised": "", "normalised": "f_out.write(normalized_content)", "text": "f_out.write(normalized_content)"}
+{"unnormalised": "", "normalised": "ବ୍ୟତିକ୍ରମ ସ୍ୱରୂପ ଯଦି Exception ଘଟେ ଯାହାକୁ e କୁହାଯାଏ:", "text": "ଏକ୍ସେପ୍ସନ୍ ଭାବରେ e:"}
+{"unnormalised": "", "normalised": "ପ୍ରିଣ୍ଟ(f\"Error processing {input_file_path}: {e}\")", "text": "ପ୍ରକ୍ରିୟାକରଣ କରିବାରେ ତ୍ରୁଟି {input_file_path}: {e}"}
+{"unnormalised": "", "normalised": "unnormalized_files.append(input_file_path)\n                    ଅନ୍ନର୍ମାଲାଇଜ୍ଡ୍_ଫାଇଲ୍ସ.append(ଇନପୁଟ୍_ଫାଇଲ୍_ପାଥ୍)", "text": "ଅନନର୍ମାଲାଇଜଡ୍_ଫାଇଲ୍ସ.ଆପେଣ୍ଡ(ଇନପୁଟ୍_ଫାଇଲ୍_ପାଥ୍)"}
+{"unnormalised": "", "normalised": "ଯଦି ସ୍ୱାଭାବିକକରଣ ବିଫଳ ହୁଏ ତେବେ ମୂଳ ଫାଇଲ୍ କପି କରନ୍ତୁ", "text": "ଯଦି ସ୍ୱାଭାବିକୀକରଣ ବିଫଳ ହୁଏ ତେବେ ମୂଳ ଫାଇଲ୍ କପି କରନ୍ତୁ"}
+{"unnormalised": "", "normalised": "ସହିତ open(output_file_path, 'w', encoding='utf-8') as f_out:", "text": "with open(output_file_path, 'w', encoding='utf-8') as f_out:\n    \nwith open(output_file_path, 'w', encoding='utf-8') as f_out:"}
+{"unnormalised": "", "normalised": "f_out.write(content)", "text": "f_out.write(content)"}
+{"unnormalised": "", "normalised": "ଅନ୍ୟଥା:", "text": "ଅନ୍ୟଥା:"}
+{"unnormalised": "", "normalised": "# ଅଣ-.txt ଫାଇଲଗୁଡ଼ିକୁ ଅପରିବର୍ତ୍ତିତ ଭାବରେ କପି କରନ୍ତୁ", "text": "ଅଣ-.txt ଫାଇଲଗୁଡ଼ିକୁ ଅପରିବର୍ତ୍ତିତ ଭାବରେ କପି କରନ୍ତୁ |"}
+{"unnormalised": "", "normalised": "ପ୍ରୟାସ କରନ୍ତୁ:", "text": "ପ୍ରୟାସ କରନ୍ତୁ:"}
+{"unnormalised": "", "normalised": "ସହିତ open(input_file_path, 'rb') as f_in, open(output_file_path, 'wb') as f_out:", "text": "ସହିତ open(input_file_path, 'rb') as f_in, open(output_file_path, 'wb') as f_out:"}
+{"unnormalised": "", "normalised": "f_out.write(f_in.read())", "text": "f_out.write(f_in.read())"}
+{"unnormalised": "", "normalised": "ବ୍ୟତିକ୍ରମ ସ୍ୱରୂପ ଯଦି Exception ଘଟେ ଯାହାକୁ e କୁହାଯାଏ:", "text": "ଏକ୍ସେପ୍ସନ୍ ଭାବରେ e:"}
+{"unnormalised": "", "normalised": "ପ୍ରିଣ୍ଟ(f\"ଅଣ-txt ଫାଇଲ {input_file_path} କପି କରିବାରେ ତ୍ରୁଟି: {e}\")", "text": "ପ୍ରିଣ୍ଟ(f\"ଅଣ-txt ଫାଇଲ୍ {input_file_path} କପି କରିବାରେ ତ୍ରୁଟି: {e}\")"}
+{"unnormalised": "", "normalised": "unnormalized_files.append(input_file_path)\n                    ଅନ୍ନର୍ମାଲାଇଜ୍ଡ୍_ଫାଇଲ୍ସ.append(ଇନପୁଟ୍_ଫାଇଲ୍_ପାଥ୍)", "text": "ଅନନର୍ମାଲାଇଜଡ୍_ଫାଇଲ୍ସ.ଆପେଣ୍ଡ(ଇନପୁଟ୍_ଫାଇଲ୍_ପାଥ୍)"}
+{"unnormalised": "", "normalised": "ଯଦି ଅସାଧାରଣୀକୃତ ଫାଇଲଗୁଡିକ ଥାଆନ୍ତି:", "text": "ଯଦି ଅଣ-ସାଧାରଣୀକୃତ ଫାଇଲଗୁଡିକ ଥାଆନ୍ତି:"}
+{"unnormalised": "", "normalised": "ପ୍ରିଣ୍ଟ(\"\\nଫାଇଲଗୁଡ଼ିକ ଯାହା ତ୍ରୁଟି ହେତୁ ସମ୍ପୂର୍ଣ୍ଣ ରୂପେ ସ୍ୱାଭାବିକ କିମ୍ବା କପି ହୋଇପାରିଲା ନାହିଁ:\")", "text": "ପ୍ରିଣ୍ଟ(\"\\nଫାଇଲଗୁଡିକ ଯାହା ସମ୍ପୂର୍ଣ୍ଣ ରୂପେ ସ୍ୱାଭାବିକ କିମ୍ବା କପି କରାଯାଇପାରିଲା ନାହିଁ ତ୍ରୁଟି ହେତୁ:\")"}
+{"unnormalised": "", "normalised": "ଅଣ-ସାଧାରଣିକୃତ ଫାଇଲଗୁଡ଼ିକ ପାଇଁ f:", "text": "for f in ଅଣ-ସ୍ୱାଭାବିକୀକୃତ ଫାଇଲ୍‍ଗୁଡ଼ିକରେ:"}
+{"unnormalised": "", "normalised": "ପ୍ରିଣ୍ଟ(f)", "text": "ପ୍ରିଣ୍ଟ(f)"}
+{"unnormalised": "", "normalised": "# Translation:\nଉଦାହରଣ ବ୍ୟବହାର:", "text": "# Translation:\nଉଦାହରଣ ବ୍ୟବହାର:"}
+{"unnormalised": "", "normalised": "# ପ୍ରଦର୍ଶନ ପାଇଁ କିଛି ଡମି ତଥ୍ୟ ସୃଷ୍ଟି କରନ୍ତୁ |", "text": "# ପ୍ରଦର୍ଶନ ପାଇଁ କିଛି ଡମି ତଥ୍ୟ ସୃଷ୍ଟି କରନ୍ତୁ |"}
+{"unnormalised": "", "normalised": "ଯଦି __name__ == \"__main__\":", "text": "ଯଦି __name__ == \"__main__\":"}
+{"unnormalised": "", "normalised": "# ଏକ ଡମି ଡାଟାସେଟ୍ ତିଆରି କରନ୍ତୁ", "text": "ଏକ ଡମି ଡାଟାସେଟ୍ ସୃଷ୍ଟି କରନ୍ତୁ |"}
+{"unnormalised": "", "normalised": "os.makedirs('dataset/subfolder1', exist_ok=True)", "text": "os.makedirs('dataset/subfolder1', exist_ok=True)"}
+{"unnormalised": "", "normalised": "os.makedirs('dataset/subfolder2', exist_ok=True)", "text": "os.makedirs('dataset/subfolder2', exist_ok=True)"}
+{"unnormalised": "", "normalised": "ଓପନ୍('ଡେଟାସେଟ୍/ଫାଇଲ୍୧.txt', 'w') ଆଜ୍ f:", "text": "open('dataset/file2.txt', 'r') as f1:\n    with open('dataset/file3.txt', 'w') as f2:\n        for line in f1:\n            f2.write(line)\n```\n\nସହିତ ଖୋଲା ('dataset/file1.txt', 'w') ଏସ୍ f:\nଖୋଲା ('dataset/file2.txt', 'r') ଏସ୍ f1:\n    ସହିତ ଖୋଲା ('dataset/file3.txt', 'w') ଏସ୍ f2:\n        ପାଇଁ ଧାଡ଼ି ରେ f1:\n            f2.ଲିଖିତ(ଧାଡ଼ି)\n```"}
+{"unnormalised": "", "normalised": "f.write(\"ନାସା ପ୍ରୋଜେକ୍ଟକୁ $20B ପାଣ୍ଠି ମିଳିଲା। ଏହା 10/09/2024 ରେ ଆରମ୍ଭ ହୋଇଥିଲା। ଜିଡିପି ଅଭିବୃଦ୍ଧି ~5% ଥିଲା। ତାଙ୍କୁ 2.5 କେଜି ଚାଉଳ ଦରକାର। $20.50 ହେଉଛି ମୂଲ୍ୟ। A 2+2=4. କଳା/କାରିଗରୀ ଭଲ। QA/Dev ଟିମ୍।\\n\")", "text": "f.write(\"ନାସା ପ୍ରୋଜେକ୍ଟକୁ $20B ଫଣ୍ଡିଂ ମିଳିଥିଲା। ଏହା 10/09/2024 ରେ ଆରମ୍ଭ ହୋଇଥିଲା। GDP ଅଭିବୃଦ୍ଧି ପ୍ରାୟ ~5% ଥିଲା। ତାଙ୍କୁ 2.5କିଗ୍ରା ଚାଉଳ ଦରକାର। $20.50 ହେଉଛି ମୂଲ୍ୟ। A 2+2=4. କଳା/କାରିଗରୀ ଭଲ। QA/Dev ଟିମ୍।\\n\")"}
+{"unnormalised": "", "normalised": "f.write(\"ଏକ ଅବକଳ ∫ x^2 dx ର 0 ରୁ 1 ପର୍ଯ୍ୟନ୍ତ ମୂଲ୍ୟ । ଏହାର ମୂଲ୍ୟ ହେଉଛି πr^2। x^n ଏବଂ x_i ଗୁରୁତ୍ୱପୂର୍ଣ୍ଣ ଅଟେ। ଜନସଂଖ୍ୟାର 3/4 ଅଂଶ। ବାହାରେ 25°C ତାପମାତ୍ରା। ବେଗ 100 କିମି/ଘଣ୍ଟା ଥିଲା। GDP ହେଉଛି 10M। 1/2 କେଜି।\\n\")", "text": "f.write(\"ଏହି ସମାକଳ ∫ x^2 dx ର 0 ରୁ 1 ପର୍ଯ୍ୟନ୍ତ ମୂଲ୍ୟ । ଏହାର ମୂଲ୍ୟ ହେଉଛି πr^2 । x^n ଏବଂ x_i ମହତ୍ତ୍ୱପୂର୍ଣ୍ଣ ଅଟେ । ଜନସଂଖ୍ୟାର 3/4 ଅଂଶ । ବାହାରେ 25°C ଅଛି । ଗତି 100କିମି/ଘଣ୍ଟା ଥିଲା । GDP ହେଉଛି 10M । 1/2 କିଗ୍ରା ।\\n\")"}
+{"unnormalised": "", "normalised": "f.write(\"ବିଶେଷ ସଙ୍କେତ: @ # & * ≠ ≤ ≥. ଏହା 99 ଟି ସମସ୍ୟା ଅଟେ। U.S.A. ମହାନ ଅଟେ। 7ମ ଦିନ। 2024-09-10 ରିପୋର୍ଟ। 10ସେମି, 100ମିଲି। ସେ 5କିମି ଚାଲିଲେ। √9 ତିନି ଅଟେ। କ୍ଷେତ୍ରଫଳ 100ବର୍ଗମିଟର ଅଟେ। ଏହା x^3 ର ଏକ ଉଦାହରଣ ଅଟେ। ତାପମାତ୍ରା 10 ଡିଗ୍ରୀ ଅଟେ। ମୋ କମ୍ପ୍ୟୁଟରରେ 1TB ଷ୍ଟୋରେଜ୍ ଅଛି। ଫ୍ରିକ୍ୱେନ୍ସି 50Hz ଅଟେ।\")", "text": "f.write(\"ବିଶେଷ ସଙ୍କେତ: @ # & * ≠ ≤ ≥. ଏହା ୯୯ ଟି ସମସ୍ୟା ଅଟେ। U.S.A. ବହୁତ ଭଲ। ୭ମ ଦିନ। ୨୦୨୪-୦୯-୧୦ ରିପୋର୍ଟ। ୧୦ସେମି, ୧୦୦ମିଲି। ସେ ୫କିମି ଚାଲିଲେ। √୯ ହେଉଛି ତିନି। କ୍ଷେତ୍ରଫଳ ୧୦୦ ବର୍ଗମିଟର। ଏହା x^3 ର ଏକ ଉଦାହରଣ ଅଟେ। ତାପମାତ୍ରା ୧୦ ଡିଗ୍ରୀ। ମୋ କମ୍ପ୍ୟୁଟରରେ 1TB ଷ୍ଟୋରେଜ୍ ଅଛି। ଫ୍ରିକ୍ୱେନ୍ସି 50Hz ଅଟେ।\")"}
+{"unnormalised": "", "normalised": "ମୁଁ ଭଲ ଅଛି।", "text": ""}
+{"unnormalised": "", "normalised": "ସହିତ open('dataset/subfolder1/file2.txt', 'w') as f:", "text": "ସହିତ open('dataset/subfolder1/file2.txt', 'w') as f:"}
+{"unnormalised": "", "normalised": "f.write(\"ଆଉ ଏକ ପରୀକ୍ଷା: 12345 ଡଲାର୍ | ତାରିଖ ହେଉଛି 01-01-2023 | ଆମକୁ 500 ମି.ଗ୍ରା. ଦରକାର | କୋଣଟି 45° ଅଟେ | ଏହା ସଠିକ୍ ଭାବରେ ସ୍ୱାଭାବିକ ହେବା ଉଚିତ୍ | 9999999999.99 ବିଷୟରେ କ’ଣ?\\n\")", "text": "f.write(\"ଆଉ ଏକ ପରୀକ୍ଷା: ୧୨୩୪୫ ଡଲାର୍। ତାରିଖ ହେଉଛି 01-01-2023। ଆମକୁ ୫୦୦ ମିଗ୍ରା ଆବଶ୍ୟକ। କୋଣ ହେଉଛି 45°। ଏହାକୁ ସଠିକ୍ ଭାବରେ ସ୍ୱାଭାବିକ କରାଯିବା ଉଚିତ୍। ୯୯୯୯୯୯୯୯୯୯.୯୯ ବିଷୟରେ କ’ଣ?\\n\")"}
+{"unnormalised": "", "normalised": "f.write(\"ଏହା ଏକ X-Y-Z ପରୀକ୍ଷା ଅଟେ। ଏହା A.B.C. ଲେଖା ଅଟେ। 200V, 10A, 5KW | x_max ଏବଂ y_min ଗୁରୁତ୍ୱପୂର୍ଣ୍ଣ ଭେରିଏବଲ୍ ଅଟନ୍ତି।\")", "text": "f.write(\"ଏହା ଏକ X-Y-Z ପରୀକ୍ଷା ଅଟେ। ଏହା A.B.C. ଲେଖା ଅଟେ। 200V, 10A, 5KW। x_max ଏବଂ y_min ଗୁରୁତ୍ୱପୂର୍ଣ୍ଣ ଭେରିଏବଲ୍ ଅଟନ୍ତି।\")"}
+{"unnormalised": "", "normalised": "with open('dataset/subfolder2/image.jpg', 'w') as f: # Dummy non-text file", "text": "ସହିତ ଖୋଲା ('dataset/subfolder2/image.jpg', 'w') ଯେପରି f: # ଡମି ଅଣ-ଟେକ୍ସଟ୍ ଫାଇଲ୍"}
+{"unnormalised": "", "normalised": "ଏହା ଏକ ଟେକ୍ସଟ୍ ଫାଇଲ୍ ନୁହେଁ ।", "text": "f.write(\"ଏହା ଏକ ଟେକ୍ସଟ୍ ଫାଇଲ୍ ନୁହେଁ।\")"}
+{"unnormalised": "", "normalised": "ଇନପୁଟ୍ ଫୋଲ୍ଡର୍ = 'dataset'", "text": "ଇନପୁଟ୍‍_ଫୋଲ୍ଡର୍ = 'dataset'"}
+{"unnormalised": "", "normalised": "ଆଉଟପୁଟ୍‌_ଫୋଲ୍ଡର୍‌ = 'ଡାଟାସେଟ୍‌_ନର୍ମାଲାଇଜଡ୍‌'", "text": "output_folder = 'dataset_normalized'"}
+{"unnormalised": "", "normalised": "process_folder(input_folder, output_folder)", "text": "process_folder(input_folder, output_folder)"}
+{"unnormalised": "", "normalised": "ପ୍ରିଣ୍ଟ(f\"\\nନର୍ମାଲାଇଜେସନ୍ ସମ୍ପୂର୍ଣ୍ଣ ହେଲା। ଫଳାଫଳ ପାଇଁ '{output_folder}' ଯାଞ୍ଚ କରନ୍ତୁ।\")", "text": "ପ୍ରିଣ୍ଟ(f\"\\nସାଧାରଣୀକରଣ ସମ୍ପୂର୍ଣ୍ଣ ହେଲା | ଫଳାଫଳ ପାଇଁ '{output_folder}' ଯାଞ୍ଚ କରନ୍ତୁ |\")"}
+{"unnormalised": "", "normalised": "ପ୍ରିଣ୍ଟ(\"ସାଧାରଣ ଫାଇଲ ବିଷୟବସ୍ତୁର ଉଦାହରଣ (file1.txt):\")", "text": "ମୁଦ୍ରଣ କର (\"ସାଧାରଣ ଫାଇଲ ବିଷୟବସ୍ତୁର ଉଦାହରଣ (file1.txt):\")"}
+{"unnormalised": "", "normalised": "ପ୍ରୟାସ କରନ୍ତୁ:", "text": "ପ୍ରୟାସ କରନ୍ତୁ:"}
+{"unnormalised": "", "normalised": "with open(os.path.join(output_folder, 'file1.txt'), 'r', encoding='utf-8') as f:\nଆଉଟପୁଟ୍ ଫୋଲ୍ଡରରେ (output_folder) 'file1.txt' ଫାଇଲ୍ କୁ ଖୋଲିବା ପାଇଁ, ଏହାକୁ 'r' ମୋଡ୍ ରେ ଏବଂ ଏନକୋଡିଂ 'utf-8' ସହିତ f ଭାବରେ ଖୋଲାଯାଉଛି :", "text": "open(os.path.join(output_folder, 'file1.txt'), 'r', encoding='utf-8') as f:"}
+{"unnormalised": "", "normalised": "ପ୍ରିଣ୍ଟ(f.read())", "text": "ପ୍ରିଣ୍ଟ(f.read())"}
+{"unnormalised": "", "normalised": "ବ୍ୟତୀତ FileNotFoundError:", "text": "ବାଦ୍ FileNotFoundError:"}
+{"unnormalised": "", "normalised": "ପ୍ରିଣ୍ଟ(\"ସାଧାରଣ ଫାଇଲ୍1.txt ମିଳିଲା ନାହିଁ।\")", "text": "ମାନକୀୟ କରାଯାଇଥିବା file1.txt ମିଳିଲା ନାହିଁ।"}
+{"unnormalised": "", "normalised": "ମୁଁ ଭଲ ଅଛି। ତୁମେ କେମିତି ଅଛ?", "text": "ମୁଁ ଭଲ ଅଛି। ତୁମେ କେମିତି ଅଛ?"}

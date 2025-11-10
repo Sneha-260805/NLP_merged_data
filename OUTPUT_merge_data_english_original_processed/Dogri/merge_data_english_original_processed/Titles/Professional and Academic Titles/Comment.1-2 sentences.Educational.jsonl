@@ -1,0 +1,385 @@
+{"unnormalised": "ठीक ऐ। इत्थे अनुवाद ऐ:\n\nDr. \nProf.\nAdv.", "normalised": "ठीक ऐ, मिंजो व्यापक सामान्यीकरण दे नियम ते \"Dr.\", \"Prof.\", ते \"Adv.\" गी खास बरतने दी समझ ऐ। मैं इनें लोड़ें दे मुताबिक पाठ्य डेटा गी संसाधित करने लेई इक पायथन स्क्रिप्ट लागू करांआ।", "text": "ठीक ऐ। इत्थे अनुवाद ऐ:\n\nDr. \nProf.\nAdv."}
+{"unnormalised": "", "normalised": "Okay, I understand. I will only return the Dogri translation.", "text": "Okay, I understand. I will only return the Dogri translation."}
+{"unnormalised": "", "normalised": "**कोर लॉजिक ते अप्रोच:**", "text": "**कोर लॉजिक ते अप्रोच:**"}
+{"unnormalised": "", "normalised": "1. **फाइल सिस्टम ट्रेवर्सल:** मैं इनपुट डायरेक्टरी च सारे फोल्डरां ते फाइलें गी रिकर्सिवली पार करने लेई `os.walk` दा इस्तेमाल करांआ।", "text": "1. **फाइल सिस्टम ट्रैवर्सल:** मैं इनपुट डायरेक्टरी च सारे फोल्डरां ते फाइलें च बार-बार जाने लेई `os.walk` दा इस्तेमाल करांगा।"}
+{"unnormalised": "", "normalised": "2.  **आउटपुट डायरेक्टरी मिररिंग:** इनपुट च हर फोल्डर लेई, मैं `dataset_normalized` आउटपुट डायरेक्टरी च इक मता फोल्डर बनाउंगा।", "text": "2. **आउटपुट डायरेक्टरी मिररिंग:** इनपुट च हर फोल्डर लेई, मैं `डेटासेट_नॉर्मलाइज्ड` आउटपुट डायरेक्टरी च उसी फोल्डर बनाऊंगा।"}
+{"unnormalised": "", "normalised": "3.  **फ़ाइल प्रोसेसिंग:**", "text": "3. **फ़ाइल प्रोसेसिंग:**"}
+{"unnormalised": "", "normalised": "*   अगर कोई फाइल `.txt` फाइल ऐ, तां उसदे च अंदर दा सामान पढ़या जाग, आम बनाया जाग, ते फेर शीशे आले आउटपुट फोल्डर च इक नवी `.txt` फाइल च लिख्या जाग।", "text": "* अगर कोई फाइल `.txt` फाइल ऐ, तां उसदे अंदर दा मवाद पढ़या जाग, सामान्य कीता जाग, ते फिर मिरर कीते गेदे आउटपुट फोल्डर विच इक नवी `.txt` फाइल विच लिख्या जाग।"}
+{"unnormalised": "", "normalised": "*   जेकर कोई फाइल `.txt` फाइल नहीं है, तां ओह् बिना बदलाव दे सीधे मिरर कीते गेदे आउटपुट फोल्डर च कॉपी कीत्ती जाग.", "text": "* जेकर कोई फाइल `.txt` फाइल नईं ऐ, तां ओह् बिना किसी बदलाव दे सीधे मिर्ज्ड आउटपुट फोल्डर च कॉपी करी दित्ती जाग।"}
+{"unnormalised": "", "normalised": "4.  **नॉर्मलाइजेशन ऑर्डर (सही आउटपुट लेई जरूरी):** नॉर्मलाइजेशन दे नियमें गी लागू करने दा क्रम मायने रखदा ऐ। मैं आम तौर पर आम नियमें थमां पैह्ले मता खास नियमें गी लागू करांगा (उदाहरण लेई, करंसी + नंबर + सामान्य नंबरें थमां पैह्ले प्रत्यय, जां सामान्य अक्षर-अंक पैटर्नें थमां पैह्ले खास प्रतीक)।", "text": "4. **सामान्यकरण क्रम (सही आउटपुट लेई ज़रूरी):** सामान्यकरण दे नियमें गी लागू करने दा क्रम मायने रखदा ऐ। मैं आम तौर पर ज़्यादा सामान्य नियमें शां पहले ज़्यादा विशिष्ट नियमें गी लागू करांआ (उदाहरण के तौर पर, करेंसी + नंबर + प्रत्यय गी आम नंबरें शां पहले, या विशिष्ट प्रतीकें गी आम अक्षरांकीय पैटर्नें शां पहले)।"}
+{"unnormalised": "", "normalised": "*   चिन्ह् ते खास अक्षर।", "text": "* निशाँ ते खास अक्षर।"}
+{"unnormalised": "", "normalised": "*   मुद्रा + अंक + प्रत्यय।", "text": "* करेंसी + नंबर + सफिक्स।"}
+{"unnormalised": "", "normalised": "तारीखां।", "text": "तारीखां।"}
+{"unnormalised": "", "normalised": "*   नंबर (इकाईयां च सामेल, पर इकाईयां दा विस्तार बाद च औंदा ऐ)।", "text": "* सांख्यें (जिस विच इकाइयाँ विच दित्तियां सांख्यें बी शामल न, पर इकाई दा विस्तार बाद च औंदा ऐ)।"}
+{"unnormalised": "", "normalised": "*   अक्षर-संक्षेप।", "text": "अक्षर-संक्षेप।"}
+{"unnormalised": "", "normalised": "*   यूनिट।", "text": "यूनिट्स।"}
+{"unnormalised": "", "normalised": "*   गणित दी लिखत।", "text": "गणितीय अंकन।"}
+{"unnormalised": "", "normalised": "*   खास उपसर्ग जि’यां \"Dr.\", \"Prof.\", \"Adv.\" गी शुरू च जां खास रेगॅक्स कन्नै संभाला जाग तां जे नंबर जां संक्षेपण दे नियमें कन्नै गलत मतलब न’ निकले।", "text": "* खास prefixes जियां \"Dr.\", \"Prof.\", \"Adv.\" गी जल्दी जां खास regex कन्नै संभाला जाग ताकि नंबर जां acronym दे नियमां कन्नै गलत मतलब ना निकले।"}
+{"unnormalised": "", "normalised": "*   जनरल `/` हैंडलिंग।", "text": "जनरल `/` हैंडलिंग।"}
+{"unnormalised": "", "normalised": "*   आखिरी चरन दे तौर पर स्‍पेस सामान्‍य करन।", "text": "* खाली थाह्'र ठीक करना आखरी कदम ऐ।"}
+{"unnormalised": "", "normalised": "विस्तृत नियम लागू करने दी रणनीति:", "text": "विस्तृत नियम लागू करने दी रणनीति:"}
+{"unnormalised": "", "normalised": "1. **निशानां → बोली जाने आह् ली शक्ल:** मैं आम निशानें गी उनेंगी बोली जाने आह् ली शकलें कन्नै जोड़े आह् ली इक डिक्शनरी दा इस्तेमाल करांगा ते टेक्स्ट च घूमी के बदलाहट करांगा। रेगुलर एक्सप्रेशन उनें निशानें आस्तै इस्तेमाल कीते जाङन जिह्ड़े बक्ख-बक्ख संदर्भें च दिक्खी सकदे न (मसलन, `+/-`)।", "text": "1. **चिन्ह् → बोलचाल रूप:** मैं आम चिन्ह्ऽ गी उनें दे बोलचाल रूपें कन्नै नक्शे च लाने आह्ले इक शब्दकोश दा इस्तेमाल करांआ ते पाठ च धुंआंआ, बदलने आह्ले कार्य करांआ। उनें चिन्ह्ऽ लेई रेगुलर एक्सप्रेशन दा इस्तेमाल कीता जाग जेह्ड़े बक्ख-बक्ख संदर्भें कन्नै दिक्खी सकदे न (मसलन, `+/-`)।"}
+{"unnormalised": "", "normalised": "*   कला या शिल्प", "text": "कला या शिल्प"}
+{"unnormalised": "", "normalised": "*   QA/Dev` -> `क्यू-ए स्लैश डी-ई-वी`", "text": "क्यू-ए स्लैश डी-ई-वी"}
+{"unnormalised": "", "normalised": "*   `2+2=4` गी गणितीय नोटेशन दे नियम कन्नै संभालेआ जाग।", "text": "* `2+2=4` गणितीय नोटेशन दे नियम कन्नै हल कीत्ता जाग।"}
+{"unnormalised": "", "normalised": "तौह्‌ड़ी लिखत दा डोगरी च अनुवाद:\n    *   `$`, `~`, `*`, `#`, `@`, `&`, वगैरा सीधे तौर पर मैप कीते जाङन।", "text": "मैं ठीक हूँ।\nतुसां किवें हो?"}
+{"unnormalised": "", "normalised": "2.  **अक्रोनम → हाइफनेटेड अक्षर:**", "text": "२. **एक्रोनिम → हाइफन लाए अक्षर:**"}
+{"unnormalised": "", "normalised": "*   Regex: `\\b[A-Z]{2,}\\b` (दो या दो थमां मत्ती लगातार बड्डी अक्षरें, इक पूरे शब्द दे तौर पर)। मिंजो इस गल्ल दा ध्यान रखना होग की ऐह् `Dr.`, `Prof.`, `Adv.` पर लागू नेईं हो।", "text": "मांफी करदेओ, मैं तुहाडी उस मदद नी करी सकदा।"}
+{"unnormalised": "", "normalised": "*   बदलो `'-'.join(match.group())` कन्नै।", "text": "* बदलो `'-'.join(match.group())` कन्नै।"}
+{"unnormalised": "", "normalised": "3.  **नंबर → बोली जाने आह्ली शक्ल:** एह् जटिल ऐ। मैं आम नंबर बदलने लेई `num2words` लाइब्रेरी दा इस्तेमाल करांगा, जेह्ड़ी केईं प्रसंगें गी संभाल्दी ऐ। \"अधा किलोग्राम\" जेह्ड़े खास मामले लेई, मैं `(\\d+)/(\\d+)\\s*(\\w+)` जेह्ड़े पैटर्न गी पहचानने लेई रेगएक्स दा इस्तेमाल करांगा, जिसदे बाद इक इकाई होग, ते अंश उप्पर `num2words` लागू करांगा जां `1/2` गी \"अधा\" च बदली द्वांगा।", "text": "3. **नंबर → बोलने आला रूप:** ऐ थोड़ा मुश्किल ऐ। मैं आम तौर पर नंबर बदलने लेई `num2words` लाइब्रेरी दा इस्तेमाल करूँगा, जेह्ड़ी केईं सारे संदर्भें गी संभाल्दी ऐ। खास मामलें लेई जिਵੇਂ \"अधा किलोग्राम\", मैं `(\\d+)/(\\d+)\\s*(\\w+)` जिहे पैटर्नें गी पहचानने लेई रेगएक्स दा इस्तेमाल करूँगा, उसदे बाद इक इकाई, ते अंश पर `num2words` लागू करूंगा या `1/2` गी \"अधा\" च बदलूंगा।"}
+{"unnormalised": "", "normalised": "*   आम नंबर: `num2words(नंबर)`", "text": "* आम नंबर: `num2words(number)`"}
+{"unnormalised": "", "normalised": "*   भिन्‍न: `1/2 kg` -> `अधा किलो`, `3/4` -> `तीन च्‍वार भाग` (गणित शास्‍त्रै च संभलदा ऐ, पर तारिखें च उलझने थमां बचना पौना ऐ)।", "text": "तमाम: `1/2 kg` -> `अधा किलो`, `3/4` -> `तीसरे पर चार कूं तक्सीम करी दा`"}
+{"unnormalised": "", "normalised": "4.  **गिनती दे प्रत्यय → विस्तारित रूप:**", "text": "4. **गिनती वालें पुच्छलें → फैली दी शक्ल:**"}
+{"unnormalised": "", "normalised": "*   Regex: `(\\d+)([KMBT])\\b`", "text": "तर्जुमा ऐ रीझ ऐ: `(\\d+)([KMBT])\\b`"}
+{"unnormalised": "", "normalised": "*   Map `K` गी `हजार`, `M` गी `मिलियन`, `B` गी `बिलियन`, `T` गी `ट्रिलियन` च बदलो।", "text": "* नक्‍शा `K` गी `हज़ार`, `M` गी `मिलियन`, `B` गी `बिलियन`, `T` गी `ट्रिलियन` च बदलो।"}
+{"unnormalised": "", "normalised": "मैं तुहांजो १,२३४,५६७.८९ रुपये दा भुगतान करना चांह्दा हां।", "text": "तह्वाडे प्रश्ने विच \"नंबर पार्ट\" दी समझ नहीं आई, तह्वाडे कहने दा मतलब ऐह ऐ जे मैं कुस नंबरें गी शब्दें विच बदलेआं? जे हां, तां इक उदाहरण दस्सो।\n\nमैं तह्वाडे पाठ दा हुबहू अनुवाद कर सकदा हां:\n\n* कन्वर्ट नंबर पार्ट यूजिंग `num2words`."}
+{"unnormalised": "", "normalised": "5.  **मुद्रा + अंक + प्रत्यय:**", "text": "5. **करेंसी + अंक + प्रत्यय:**"}
+{"unnormalised": "", "normalised": "*   Regex: `([$₹€£])(\\s*)(\\d+)([KMBT])?\\b`", "text": "regex: `([$₹€£])(\\s*)(\\d+)([KMBT])?\\b`"}
+{"unnormalised": "", "normalised": "*   मुद्रा प्रतीक, नंबर ते प्रत्यय बदलो।", "text": "* मुद्रा प्रतीक, नंबर ते प्रत्यय बदलो।"}
+{"unnormalised": "", "normalised": "6.  **तारीखां → कुदरती बोली जाने वाली शक्ल:**", "text": "6. **तारीखां → कुदरती बोलने दा तरीका:**"}
+{"unnormalised": "", "normalised": "*   `DD-MM-YYYY`, `DD/MM/YYYY`, `YYYY-MM-DD` दे लेई Regex पैटर्न।", "text": "`DD-MM-YYYY`, `DD/MM/YYYY`, `YYYY-MM-DD` आस्तै रेगुलर एक्सप्रेशन पैटर्न।"}
+{"unnormalised": "", "normalised": "*   `datetime.strptime` दा इस्तेमाल करो पार्स करने लेई ते फिर कस्टम लॉजिक कन्नै ऑर्डिनल नंबरें (मिसाल के तौर पर, \"दसवां\", \"पहला\") ते बोले जाने आह्ले साल लेई `strftime` कन्नै। मानदे होई ऐ जे `DD/MM/YYYY` डिफ़ॉल्ट ऐ संदिग्ध `DD/MM/YYYY` लेई।", "text": "माफ करना, इस टेक्स्ट गी डोगरी च अनुवाद करने लेई मैनू होर जानकारी दी लोड़ ऐ. तुसां मैनू अनुवाद करने लेई असल टेक्स्ट दित्ता नी ऐ. जे तुसां मैनू टेक्स्ट दित्ते, तां मैं खुशी-खुशी अनुवाद कर दित्ता."}
+{"unnormalised": "", "normalised": "7.  **इकाइयां → बोलने दा तरीका:**", "text": "7. **यूनिट्स → बोलने दा तरीका:**"}
+{"unnormalised": "", "normalised": "*   Regex `(\\d+)(\\s*)(cm|mm|m|km|g|kg|mg|ml|l|°C|...)` ढूँढनेऽर लेई", "text": "* Regex ढूँढने आस्तै `(\\d+)(\\s*)(cm|mm|m|km|g|kg|mg|ml|l|°C|...)`"}
+{"unnormalised": "", "normalised": "*   Convert to metric (e.g., `in` to `cm`).\n\n    *   Translate the following into Dogri:\n\n    The patient's temperature is 102.6°F, pulse is 88 bpm, and respiration rate is 18 breaths per minute. Blood pressure is 130/80 mmHg. Patient reports pain level of 6 out of 10.\n मरीज़ दा तापमान 39.2 डिग्री सेल्सियस ऐ, नाड़ी 88 बीपीएम ऐ, ते सांस लैने दी रफ़्तार 18 सांस प्रति मिनट ऐ। रक्तचाप 130/80 एमएमएचजी ऐ। मरीज़ 10 विचों 6 दे दर्द स्तर दी शिकायत करदा ऐ।", "text": "इन्‍हे मैप यूनिट्स गी पूरे शब्‍दों च बदलो (उदाहरण लेई, `cm` गी `सेंटीमीटर`, `°C` गी `डिग्री सेल्सियस`)।"}
+{"unnormalised": "", "normalised": "*   पैह्ले आले नंबर पर नंबर बदलने आला काम करो।", "text": "* अग्गेतर वाले नंबर पर नंबर बदलने दा नियम लागू करो।"}
+{"unnormalised": "", "normalised": "8.  **गणिती नोटेशन → बोलचाल दी शक्ल:** इसदे लेई regex दा इक सोफिस्टिकेटेड सेट ते संभावित तौर पर होर जटिल अभिव्यक्तियें आस्तै इक छोटा पार्सर चाहिदा ऐ।", "text": "8. **गणितीय नोटेशन → बोलचाल दा रूप:** एह् regex दे इक परिष्कृत सेट ते संभावित रूप कन्नै ज़्यादा जटिल अभिव्यक्तियाँ आस्तै इक छोटे पार्सर दी लोड़ पौंदी ऐ।"}
+{"unnormalised": "", "normalised": "*   `x^2`: `x स्क्वेयर्ड`", "text": "x दा वर्ग"}
+{"unnormalised": "", "normalised": "*   `x^3`: `x क्यूबड` (regex `(\\w)\\^3`)", "text": "x cubed"}
+{"unnormalised": "", "normalised": "*   `x^n`: `x दी ताकत n` (regex `(\\w)\\^(\\w+)`)", "text": "x^n: x दी पावर n"}
+{"unnormalised": "", "normalised": "*   `x_i`: `x सब i`", "text": "x sub i"}
+{"unnormalised": "", "normalised": "*   `√x`: `x दा वर्गमूल`", "text": "√x: x दा वर्गमूल"}
+{"unnormalised": "", "normalised": "* `∫`: `इंटीग्रल`", "text": "∫ : इंटिग्रल"}
+{"unnormalised": "", "normalised": "*   `Σ`: `जोड़`", "text": "* `Σ`: `जोड़`"}
+{"unnormalised": "", "normalised": "*   अंश: `3/4` -> `तीन विभाजित चार कन्नै` (रेजेक्स: `(\\d+)\\/(\\d+)`, पर एह् सुनिश्चित करदे होई जेह् एह् तारीख नह् ऐ)।", "text": "तिन्‍न च्‍यारै थमां भाग"}
+{"unnormalised": "", "normalised": "*   चिह्न: `≠`, `≤`, `≥` गी आम प्रतीक बदली कन्नै संभाला जाग।", "text": "मैं तुह्जो प्यार करदा हां।"}
+{"unnormalised": "", "normalised": "९. **आउटपुट फॉरमेट:**", "text": "मत्‍लब ऐ कि नतीजे दा ढंग:"}
+{"unnormalised": "", "normalised": "*   आखिर च खाली थाह्ऽरें गी सामान्य करो: `re.sub(r'\\s+', ' ', text).strip()`.", "text": "मैं तुंदा नाम की ऐ?"}
+{"unnormalised": "", "normalised": "10. **फ़ाइल हैंडलिंग:** `os.walk`, `os.makedirs`, `shutil.copy2`।", "text": "10. **फ़ाइल हैंडलिंग:** `os.walk`, `os.makedirs`, `shutil.copy2`।"}
+{"unnormalised": "", "normalised": "ख़ास प्रीफ़िक्स बरताव:", "text": "ख़ास प्रीफ़िक्स बरताव:"}
+{"unnormalised": "", "normalised": "कुतै लै जा।", "text": "प्रो."}
+{"unnormalised": "", "normalised": "आओ, पाइथन स्क्रिप्ट बनाना शुरू करिए।", "text": "आओ, पाइथन स्क्रिप्ट बनाना शुरू करिए।"}
+{"unnormalised": "", "normalised": "ह्न तोड़ी करीं।\n```", "text": "ह्न तोड़ी करीं।\n```"}
+{"unnormalised": "", "normalised": "ओस ऐस।", "text": "ओस ऐस।"}
+{"unnormalised": "", "normalised": "इम्पोर्ट री", "text": "इम्पोर्ट री"}
+{"unnormalised": "", "normalised": "शटल आयात करो", "text": "शटल आयात करो"}
+{"unnormalised": "", "normalised": "datetime थमां datetime", "text": "datetime थमां datetime"}
+{"unnormalised": "", "normalised": "num2words तों।", "text": "num2words तों।"}
+{"unnormalised": "", "normalised": "इम्पोर्ट यूनिकोडेटा # यूनीकोड सिम्बलें गी हैंडल करने लेई", "text": "इम्पोर्ट यूनिकोडेटा # यूनीकोड सिम्बलें गी हैंडल करने लेई"}
+{"unnormalised": "", "normalised": "दिनें गी क्रमसूचक प्रत्यय", "text": "दिनें गी क्रमसूचक प्रत्यय"}
+{"unnormalised": "", "normalised": "\"\"\"किसी नंबर लेई क्रमवाचक प्रत्यय वापस करदा ऐ।\"\"\"", "text": "\"\"\"इक नंबर लेई क्रमिक प्रत्यय वापस करदा ऐ।\"\"\""}
+{"unnormalised": "", "normalised": "अगर 10 <= दिन % 100 <= 20:", "text": "अगर 10 <= दिन % 100 <= 20:"}
+{"unnormalised": "", "normalised": "वापस करो 'थ'", "text": "वापस करो 'th'"}
+{"unnormalised": "", "normalised": "नहीं ते:", "text": "नैं तां:"}
+{"unnormalised": "", "normalised": "रिटर्न {1: 'st', 2: 'nd', 3: 'rd'}.गेट(दिन % 10, 'th')", "text": "रिटर्न {1: 'st', 2: 'nd', 3: 'rd'}.गेट(डे % 10, 'th')"}
+{"unnormalised": "", "normalised": "डेफ कन्वर्ट_नंबर_टू_वर्ड्स(नंबर_स्ट्र):", "text": "डेफ कन्वर्ट_नंबर_टू_वर्ड्स(नंबर_स्ट्र):"}
+{"unnormalised": "", "normalised": "\"\"\"इक नंबर स्ट्रिंग गी उसदे बोलचाल दे रूप च बदलदा ऐ, किनारे दे मामले गी संभाल्दा ऐ।\"\"\"", "text": "\"\"\"इक नंबर स्ट्रिंग गी उसदे बोले जाने वाले रूप च बदल्दा ऐ, तेज़ मामले गी संभालदा ऐ।\"\"\""}
+{"unnormalised": "", "normalised": "कोशिश करो:", "text": "कोशिश करो:"}
+{"unnormalised": "", "normalised": "जे '.' number_str च है:", "text": "जेकर '.' नंबर_स्ट्रिंग च ऐ तां:"}
+{"unnormalised": "", "normalised": "# अगर num2words सारे मामलेयां च स्वाभावक रूप कन्नै नहीं करदा तां दशमलवें गी अलग-अलग संभाळो", "text": "अगर num2words स्वाभाविक रूप कन्नै हर मामलां च एह् नह्ईं करदा ऐ तां दशमलवें गी बक्खरी तरहां संभालो"}
+{"unnormalised": "", "normalised": "integer_part, decimal_part = number_str.split('.')", "text": "integer_part, decimal_part = number_str.split('.')"}
+{"unnormalised": "", "normalised": "integer_words = num2words(int(integer_part))", "text": "integer_words = num2words(int(integer_part))"}
+{"unnormalised": "", "normalised": "decimal_words = 'पॉइंट ' + ' '.join(num2words(int(d)) for d in decimal_part)", "text": "decimal_words = 'पॉइंट ' + ' '.join(num2words(int(d)) for d in decimal_part)"}
+{"unnormalised": "", "normalised": "वापस करो \"{integer_words} {decimal_words}\"", "text": "फर्ज़ी {integer_words} {decimal_words}"}
+{"unnormalised": "", "normalised": "नै तां:", "text": "नैं तां:"}
+{"unnormalised": "", "normalised": "वापस करो num2words(int(number_str))", "text": "रिटर्न नम2वर्ड्स(इंट(नंबर_स्ट्रिंग))"}
+{"unnormalised": "", "normalised": "बजाए ValueError दे:", "text": "बेशक, लोआ इस कन्नै अनुवाद:\n\nअगर वैल्यू एरर नेईं औंदी:"}
+{"unnormalised": "", "normalised": "वापस करो number_str # अगर रूपांतरण फेल हो तो ओरिजिनल वापस करो", "text": "वापस नंबर_स्ट्र # जे रूपांतरण असफल हो तां मूल वापस करो"}
+{"unnormalised": "", "normalised": "डिफ़ाइन नॉर्मलाइज़_टेक्स्ट(टेक्स्ट):", "text": "डिफ़ाइन नॉर्मलाइज़_टेक्स्ट(टेक्स्ट):"}
+{"unnormalised": "", "normalised": "माफ़ करना, मैं एह् करने च असमर्थ हां। मैं अभी तक डोगरी च अनुवाद करने लेई प्रशिक्षित नीं हां।", "text": "ठीक ऐ। मेईं दस्सो पाठ की ऐ जिह्नु तुस अनुवाद करना चांह्दे ओ।\n\"\"\""}
+{"unnormalised": "", "normalised": "इनपुट टेक्स्ट पर सारे सामान्यीकरण नियम लागू होंदे न।", "text": "सारे नॉर्मलाइजेशन रूल इनपुट टेक्स्ट पर लागू करदा ऐ।"}
+{"unnormalised": "", "normalised": "माफ़ करना, मैं एह् करने च असमर्थ हां। मैं अभी तक डोगरी च अनुवाद करने लेई प्रशिक्षित नीं हां।", "text": "ठीक ऐ। मेईं दस्सो पाठ की ऐ जिह्नु तुस अनुवाद करना चांह्दे ओ।\n\"\"\""}
+{"unnormalised": "", "normalised": "# --- 0. खास उपसर्ग हैंडलिंग (डॉ., प्रो., एडवोकेट) ---", "text": "# --- ०. खास उपसर्गें दा ध्यान रखना (डॉ., प्रो., एडवोकेट) ---"}
+{"unnormalised": "", "normalised": "# एह् ओसे चाल्ले कन्नै संभाले जांदे न, इन्हां गी संखेप रूप च नह्ईं बरतना चाहिदा।", "text": "# एह् ओही रखे जाने करी संभालेआ जा करदे न, उन्हां गी संक्षेप रूप च निहीं दिक्खेआ जाना चाहिदा।"}
+{"unnormalised": "", "normalised": "# कोई खुलेआम बदली करने दी लोड़ नेईं, बस एह् पक्का करदा ऐ के होर नियमें च बदली नेईं होंदी।", "text": "# किसै बी खास बदली दी लोड़ नईं, बस एह् पक्का करो के होर नियमें च फेरबदल नी होंदी।"}
+{"unnormalised": "", "normalised": "# --- 1. नशानियाँ → बोल्ली जाने आला रूप ---", "text": "# --- १. चिन्न → बोली जाने आह्ला रूप ---"}
+{"unnormalised": "", "normalised": "# होर खास प्रतीकें गी बदलने दा कम्म पहले", "text": "# मते खास प्रतीक बदली पहले"}
+{"unnormalised": "", "normalised": "टेक्स्ट = re.sub(r'\\+/-', 'प्लस या माइनस', टेक्स्ट)", "text": "टेक्स्ट = री.सब(आर'\\+/-', 'प्लस ऑर माइनस', टेक्स्ट)"}
+{"unnormalised": "", "normalised": "text = re.sub(r'!=', 'बराबर नेईं ऐ', text)", "text": "टेक्स्ट = re.sub(r'!=', 'दे बराबर नईं ऐ', टेक्स्ट)"}
+{"unnormalised": "", "normalised": "टेक्स्ट = re.sub(r'<=', 'लेस्स दैन आर इक्वल टू', टेक्स्ट)", "text": "पाठ = re.sub(r'<=', 'कम या बराबर', पाठ)"}
+{"unnormalised": "", "normalised": "टेक्स्ट = re.sub(r'>=', 'ग्रेटर दैन आर इक्कल टु', टेक्स्ट)", "text": "पाठ = re.sub(r'>=', 'इससे बड़ा जां बराबर', पाठ)"}
+{"unnormalised": "", "normalised": "text = re.sub(r'==', 'बराबर', text)", "text": "text = रे.सब्(र'equals', 'रequals', टेक्स्ट)"}
+{"unnormalised": "", "normalised": "टेक्स्ट = री.सब(आर'->', 'मैप्स टू', टेक्स्ट) # आम ऐ गणित/प्रोग्रामिंग संदर्भ च", "text": "टेक्स्ट = re.sub(r'->', 'मेप्स टू', टेक्स्ट) # मैथ/प्रोग्रामिंग संदर्भ च आम"}
+{"unnormalised": "", "normalised": "symbol_map = {", "text": "symbol_map = {"}
+{"unnormalised": "", "normalised": "'#': 'हैश',", "text": "'#': 'हैश',"}
+{"unnormalised": "", "normalised": "'@': 'एट',", "text": "'@': 'एट',"}
+{"unnormalised": "", "normalised": "'&': 'ते',", "text": "'&': 'ते',"}
+{"unnormalised": "", "normalised": "'*': 'तारा',", "text": "'*': 'तारा',"}
+{"unnormalised": "", "normalised": "'~': 'लगभग',", "text": "'~': 'लगभग',"}
+{"unnormalised": "", "normalised": "'≠': 'बराबर नेईं ऐ',", "text": "'≠': 'बराबर नेईं ऐ',"}
+{"unnormalised": "", "normalised": "'≤': 'थीं घट्ट या बराबर',", "text": "'≤': 'इह्दे यां बराबर हई',"}
+{"unnormalised": "", "normalised": "'≥': 'बड़ा या बराबर',", "text": "'≥': 'बड़ा या बराबर',"}
+{"unnormalised": "", "normalised": "'∫': 'इंटीग्रल',", "text": "'∫': 'इंटीग्रल',"}
+{"unnormalised": "", "normalised": "'∑': 'जोड़',", "text": "'∑': 'समेशन',"}
+{"unnormalised": "", "normalised": "'π': 'पाई',", "text": "'π': 'पाई',"}
+{"unnormalised": "", "normalised": "'√': 'स्क्वेयर रूट ओफ्',", "text": "'√': 'वर्गमूल'"}
+{"unnormalised": "", "normalised": "'%': 'फीसदी', # तकरीबन ~, आम गिनतियां शां पैह्ले", "text": "'%' : 'फीसदी', # तकरीबन दे बाद, आम नम्बरां शां पहले"}
+{"unnormalised": "", "normalised": "'°': 'डिग्री', # आम नंबरें शां पैह्ले", "text": "डिग्री"}
+{"unnormalised": "", "normalised": "'€': 'यूरो',", "text": "'€': 'यूरो',"}
+{"unnormalised": "", "normalised": "'£': 'पाउंड',", "text": "'£': 'पौंड',"}
+{"unnormalised": "", "normalised": "}", "text": "}"}
+{"unnormalised": "", "normalised": "# कुंजियें गी लंबाई दे आधार पर उतरदे क्रम च छांटो तां जो आंशिक मिलान तों बच सकन (उदाहरण दे तौर पर, '≠' तों पैह्लें '≠')", "text": "लंबाई दे हिसाब नाल कुंजियाँ गी घटदे क्रम च छांटो ताकि अधूरी मिलानें (मसलन, '≠' थमां पहले '≠') तों बच सकन।"}
+{"unnormalised": "", "normalised": "हर प्रतीक लेई, बोले जाने आह्ले रूप विच वर्गीकरण (symbol_map.items()) विच क्रमित् कित्ते गेदे, जेह्दे विच आइटम दी लंबाई दे आधार पर वर्गीकरण कित्ता गेआ ऐ, उल्टे क्रम विच:", "text": "तांईं प्रतीक, बोली जाने वाली शकल विच छांटी करी symbol_map.items() ने, कुंजी दे हिसाब नाल: lambda item: len(item[0]), उल्टे क्रम विच:"}
+{"unnormalised": "", "normalised": "text = text.replace(symbol, spoken_form)", "text": "text = text.replace(symbol, spoken_form)"}
+{"unnormalised": "", "normalised": "# '/' गी संभालना", "text": "# '/' गी संभलना"}
+{"unnormalised": "", "normalised": "# प्राथमिकता:", "text": "# पहल:"}
+{"unnormalised": "", "normalised": "# 1. तैहंदी करी दा (नम्बरां/गणित विच)", "text": "1.  तक्सीम शुदा (नंबरें/गणित च)"}
+{"unnormalised": "", "normalised": "# २. जां (शब्दें दे ब’चाले)", "text": "# २. या (लफ्ज़ां दे बिच्च)"}
+{"unnormalised": "", "normalised": "# 3. स्लेश (रले-मले मामले, संक्षेप, बचे दे)", "text": "# 3. स्लैश (मिक्स्ड केसेस, एब्रीविएशन्स, रिमेनिंग)"}
+{"unnormalised": "", "normalised": "# 1. Math च fractions या division: 3/4 -> three divided by four, 1/2 -> one divided by two", "text": "# 1. Math च भिन्न या विभाजन: 3/4 -> तीन चार कन्नै विभाजित, 1/2 -> इक दो कन्नै विभाजित"}
+{"unnormalised": "", "normalised": "# एह् मजबूत होना ज़रूरी ऐ, एह् पक्का करदे होई के एह् कोई तारीख नेईं ऐ।", "text": "एह् मजबूत होणा चाहिदा ऐ, एह् सुनिश्चित करदे होई कि एह् कोई तारीख नईं ऐ।"}
+{"unnormalised": "", "normalised": "# खास करियै 1/2 दे वास्ते \"अद्धा\" जिह्दे बाद इकाई होवे (नियम 3/7 दा तालमेल)", "text": "# खास करियै 1/2 गी \"अद्धा\" जिह्दे बाद कोई यूनिट होए (नियम 3/7 दा मेल)"}
+{"unnormalised": "", "normalised": "def replace_fraction_with_unit(match):", "text": "डिफाइन रिप्लेस_फ्रैक्शन_विद_यूनिट (मैच):"}
+{"unnormalised": "", "normalised": "num_str = match.group(1)", "text": "num_str = match.group(1)"}
+{"unnormalised": "", "normalised": "denom_str = match.group(2)", "text": "denom_str = match.group(2)"}
+{"unnormalised": "", "normalised": "यूनिट = match.group(3) जेकर match.group(3) होऐ तां, नहें तां ''", "text": "यूनिट = मैच.ग्रुप(3) जेकर मैच.ग्रुप(3) है तां ठीक ऐ, नहीं तां ''"}
+{"unnormalised": "", "normalised": "अगर num_str == '1' ते denom_str == '2':", "text": "अगर num_str == '1' और denom_str == '2':"}
+{"unnormalised": "", "normalised": "वापस करो f\"अद्धा {unit}\"", "text": "रिटर्न f\"अद्धा {unit}\""}
+{"unnormalised": "", "normalised": "नै तां:", "text": "नैं तां:"}
+{"unnormalised": "", "normalised": "रिटर्न  f\"{convert_number_to_words(num_str)} गी  {convert_number_to_words(denom_str)} कन्नै  भागा  देना  {unit}\".strip()", "text": "फ \"{convert_number_to_words(num_str)} गी {convert_number_to_words(denom_str)} कन्नै भागा देई तां {unit}\".strip()"}
+{"unnormalised": "", "normalised": "# X/Y यूनिट लेई पैटर्न, उदाहरण दे तौर पर, 1/2 किलो, 3/4 मीटर", "text": "# X/Y यूनिट लेई पैटर्न, उदाहरण दे तौर उप्पर, 1/2 किलोग्राम, 3/4 मीटर"}
+{"unnormalised": "", "normalised": "टेक्स्ट = री.सब(आर'\\b(\\d+)/(\\d+)\\s*(cm|mm|m|km|g|kg|mg|ml|l|C|F|K|hour|day|week|month|year)s?\\b',", "text": "रे.सब = रे.सब(आर'\\b(\\d+)/(\\d+)\\s*(cm|mm|m|km|g|kg|mg|ml|l|C|F|K|hour|day|week|month|year)s?\\b',"}
+{"unnormalised": "", "normalised": "replace_fraction_with_unit, text, flags=re.IGNORECASE)", "text": "replace_fraction_with_unit, text, flags=re.IGNORECASE)"}
+{"unnormalised": "", "normalised": "# खास यूनिट दे बगैर X/Y लेई पैटर्न, उदाहरण दे तौर पर, 3/4", "text": "बगैर किसी खास यूनिट दे X/Y दा पैटर्न, मिसाल के तौर पर, 3/4"}
+{"unnormalised": "", "normalised": "टेक्स्ट = रे.सब(r'\\b(\\d+)/(\\d+)\\b',", "text": "रे. सुब = रे. सब्स्टिट्यूट(बदल्ना) र'\\b(\\d+)/(\\d+)\\b',"}
+{"unnormalised": "", "normalised": "lambda m: f\"{convert_number_to_words(m.group(1))}  बटे  {convert_number_to_words(m.group(2))}\",", "text": "lambda m: f\"{convert_number_to_words(m.group(1))}  बांटे  {convert_number_to_words(m.group(2))}\","}
+{"unnormalised": "", "normalised": "टेक्स्ट)", "text": "text)"}
+{"unnormalised": "", "normalised": "# २. शब्दें दे बिच्च \"या\" (उदाहरण दे तौर पर, कला/शिल्प)", "text": "# २. शब्दें दे बिच्च \"या\" (मसलन, कला/कारीगरी)"}
+{"unnormalised": "", "normalised": "टेक्स्ट = re.sub(r'(\\b\\w+)\\/(\\w+\\b)', r'\\1 या \\2', टेक्स्ट)", "text": "टेक्स्ट = री.सब(आर'(\\\\b\\\\w+)\\\\/(\\\\w+\\\\b)', आर'\\\\1 या \\\\2', टेक्स्ट)"}
+{"unnormalised": "", "normalised": "# 3. मिक्स्ड केसें यां संक्षिप्त रूपें आस्तै \"slash\" (उदाहरण तौर पर, QA/Dev, R/D)", "text": "# 3. रले-मिले अक्षरें जां संक्षेपें आस्तै \"स्लैश\" (उदाहरण QA/Dev, R/D)"}
+{"unnormalised": "", "normalised": "# एह् उन बाकी बचे हुये स्लैशें गी बी पकड़दा ऐ जो तारीखें या अंश नहीं न", "text": "# एह् ओह् बचे दे स्लेशें गी बी पकड़ी लैंदा ऐ जेह्ड़े तारीखां जां अंश नहीं न।"}
+{"unnormalised": "", "normalised": "टेक्स्ट = री.सब(र'([ए-जेडए-जेड0-9]+)\\/([ए-जेडए-जेड0-9]+)', र'\\1 स्लैश \\2', टेक्स्ट)", "text": "टेक्स्ट = re.sub(r'([A-Za-z0-9]+)\\/([A-Za-z0-9]+)', r'\\1 स्लैश \\2', टेक्स्ट)"}
+{"unnormalised": "", "normalised": "# --- 2. Acronyms → Hyphenated letters ---", "text": "# --- २. संक्षेप अक्षर → हाइफन-युक्त अक्षर ---"}
+{"unnormalised": "", "normalised": "# Dr., Prof., Adv. ते आम करंसी कोडें (उदाहरण के तौर पर, USD, EUR, INR) गी छांटो", "text": "डॉ., प्रो., एडवोकेट ते आम करेंसी कोड (उदाहरण लेई USD, EUR, INR) शामल नेईं करो।"}
+{"unnormalised": "", "normalised": "# एहदे च इकलौते अक्षर जां नंबर जिंदे कोल कोई एक्सप्रेशन होई सकदा ऐ, ते यूनिट शामल न होई।", "text": "तौंह्दी मदद करदां मैनूं खुषी होग।"}
+{"unnormalised": "", "normalised": "# एह् Regex औखी ऐ। आओ बड़े अक्षरें दे क्रमें दा मिलान करने दी कोशिश करीये।", "text": "एह् regex बड़ा मुश्किल ऐ। आओUppercase अक्षरें दे sequence match करने दी कोशिश करीए।"}
+{"unnormalised": "", "normalised": "# इक शब्द सीमा गी पिछेयई, इक शब्द सीमा गी अग्गेयई।", "text": "ऽक शब्द सीमाऽइयां जोऽइने पिछ्छें देऽखो, ऽक शब्द सीमाऽइयां जोऽइने अग्गें देऽखो।"}
+{"unnormalised": "", "normalised": "# आम पहले थमां ही तय कीते गेदे शब्दें गी बाहर करो।", "text": "# आम मशहूर लफ़्ज़ें गी छोड़ो।"}
+{"unnormalised": "", "normalised": "excluded_acronyms = {'DR', 'PROF', 'ADV', 'USD', 'EUR', 'GBP', 'INR', 'K', 'M', 'B', 'T'}", "text": "शामल नेईं कीते गेदे संक्षेप रूप: {'DR', 'PROF', 'ADV', 'USD', 'EUR', 'GBP', 'INR', 'K', 'M', 'B', 'T'}"}
+{"unnormalised": "", "normalised": "डिफाइन रिप्लेस_एक्रॉनिम(मैच):", "text": "कुस्से भी अक्खरें दा मतालब बदलो:"}
+{"unnormalised": "", "normalised": "एक्रोनियम = match.group(0)", "text": "अक्रोनिम = match.group(0)"}
+{"unnormalised": "", "normalised": "जे acronym excluded_acronyms च होए:", "text": "अगर एक्रोनम excludeड_एक्रोनम्स च ऐ तां:"}
+{"unnormalised": "", "normalised": "वापस करो संक्षेप नाम", "text": "रिटर्न एक्रोनम"}
+{"unnormalised": "", "normalised": "# दिक्खो जे एह् मुमकन तौर पर कोई यूनिट ऐ जिਵੇਂ 'KG', 'CM' वगैरह (पहले गै यूनिटें दे नियम कन्नै हैंडल कीता गेआ ऐ)", "text": "# जाचो जे एह् संभावित तौर पर कोई यूनिट तां नीं ऐ जिਵੇਂ 'KG', 'CM' वगैरा (पैह्लेई यूनिट दे नियम कन्नै संभाल्या गेआ ऐ)"}
+{"unnormalised": "", "normalised": "अगर acronym दी लम्बाई 3 यां इसदे शा थमां घट्ट ऐ ते acronym दा छोटा रूप ['cm', 'mm', 'm', 'km', 'g', 'kg', 'mg', 'ml', 'l', 'c', 'f', 'k'] च ऐ:", "text": "अगर acronym दी लंबाई 3 या उस तों घट्ट ऐ ते acronym दा छोटा रूप ['cm', 'mm', 'm', 'km', 'g', 'kg', 'mg', 'ml', 'l', 'c', 'f', 'k'] च मौजूद ऐ:"}
+{"unnormalised": "", "normalised": "वापस कर अक्खरा दा संक्षिप्त रूप # यूनिट नियम इसगी संभाल्लने देओ", "text": "वापस करो एक्रोनिम # यूनिट रूल हैंडल करने दो"}
+{"unnormalised": "", "normalised": "रिटर्न '-'.जॉइन(लिस्ट(एक्रोनिम))", "text": "वापस करा '-' कन्नै जोड़ीये आखरें दी सूची (acronym)"}
+{"unnormalised": "", "normalised": "टेक्स्ट = re.sub(r'\\b[A-Z]{2,}\\b', रिप्लेस_एक्रोनिम, टेक्स्ट)", "text": "text = re.sub(r'\\b[A-Z]{2,}\\b', replace_acronym, text)"}
+{"unnormalised": "", "normalised": "# --- 6. तारीख़ें → कुदरती बोली जाने वाली शकल ---", "text": "# --- ६. तारीखें → कुदरती बोलने दा ढंग ---"}
+{"unnormalised": "", "normalised": "# प्राथमिकता YYYY-MM-DD", "text": "प्राथमिकता YYYY-MM-DD"}
+{"unnormalised": "", "normalised": "डेफ रिप्लेस_डेट(मैच):", "text": "डेफ रिप्लेस डेट (मैच):"}
+{"unnormalised": "", "normalised": "कोशिश करो:", "text": "कोशिश करो:"}
+{"unnormalised": "", "normalised": "तारीख_obj = datetime.strptime(match.group(0), '%Y-%m-%d')", "text": "डेट_ओब्ज = डेटटाइम.स्ट्रपटाइम(मैच.ग्रुप(0), '%Y-%m-%d')"}
+{"unnormalised": "", "normalised": "दिन = तारीख_ओब्जेक्ट.दिन", "text": "दिहाड़ा = तारीख_ओब्जेक्ट.दिहाड़ा"}
+{"unnormalised": "", "normalised": "महीना = डेट_ऑब्जेक्ट.स्ट्रफटाइम('%B').लोअर()", "text": "महीना = date_obj.strftime('%B').lower()"}
+{"unnormalised": "", "normalised": "साल = num2words(date_obj.year)", "text": "साल = num2words(date_obj.year)"}
+{"unnormalised": "", "normalised": "रिटर्न कर \"{num2words(day, to='ordinal')} {month} {year}\"", "text": "रिटर्न f\"{num2words(day, to='ordinal')} {month} {year}\""}
+{"unnormalised": "", "normalised": "बजाए वैल्यू एरर दे:", "text": "बेशक, लोआ इस कन्नै अनुवाद:\n\nअगर वैल्यू एरर नेईं औंदी:"}
+{"unnormalised": "", "normalised": "रिटर्न मैच.ग्रुप(0) # रिटर्न ओरिजिनल जेकर पार्सिंग फेल होआ'र दी ऐ", "text": "वापस करो match.group(0) # ओर्जिनल वापस करो अगर पारसिंग फेल होए"}
+{"unnormalised": "", "normalised": "text = re.sub(r'\\b\\d{4}-\\d{2}-\\d{2}\\b', replace_date, text)", "text": "text = re.sub(r'\\b\\d{4}-\\d{2}-\\d{2}\\b', replace_date, text)"}
+{"unnormalised": "", "normalised": "# DD-MM-YYYY या DD/MM/YYYY गी प्राथमिकता देओ (जिह्दे विच दुविधा हो, उ’थे DD/MM/YYYY मन्नी जाओ)", "text": "# DD-MM-YYYY या DD/MM/YYYY गी प्राथमिकता देओ (अगर DD/MM/YYYY संदिग्ध ऐ तां DD/MM/YYYY समझो)"}
+{"unnormalised": "", "normalised": "def replace_date_ambiguous(match):", "text": "तारीख-संदिग्ध बदली करनै दी प्रक्रिया (match):"}
+{"unnormalised": "", "normalised": "कोशिश करो:", "text": "कोशिश करो:"}
+{"unnormalised": "", "normalised": "# पैह्ले DD/MM/YYYY अजमाओ", "text": "# पैह्ले DD/MM/YYYY ट्राई करो"}
+{"unnormalised": "", "normalised": "तारीख_ऑब्जेक्ट = datetime.strptime(मैच.ग्रुप(0), '%d/%m/%Y')", "text": "date_obj = datetime.strptime(match.group(0), '%d/%m/%Y')"}
+{"unnormalised": "", "normalised": "बजाए वैल्यू एरर दे:", "text": "बेशक, लोआ इस कन्नै अनुवाद:\n\nअगर वैल्यू एरर नेईं औंदी:"}
+{"unnormalised": "", "normalised": "कुशिश करो:", "text": "कोशिश करो:"}
+{"unnormalised": "", "normalised": "# फिर डीडी-एमएम-वाईवाईवाईवाई करी के दिक्खो", "text": "फिर डीडी-एमएम-वाईवाईवाईवाई दी कोशिश करो।"}
+{"unnormalised": "", "normalised": "date_obj = datetime.strptime(match.group(0), '%d-%m-%Y')", "text": "date_obj = datetime.strptime(match.group(0), '%d-%m-%Y')"}
+{"unnormalised": "", "normalised": "सिवाए वैल्यू एरर दे:", "text": "बेशक, लोआ इस कन्नै अनुवाद:\n\nअगर वैल्यू एरर नेईं औंदी:"}
+{"unnormalised": "", "normalised": "वापस करो match.group(0) # ओरिजिनल वापस करो जेकर पार्सिंग फेल हो जांदी ऐ", "text": "वापस करो match.group(0) # ओर्जिनल वापस करो अगर पारसिंग फेल होए"}
+{"unnormalised": "", "normalised": "दिन = तारीख_वस्तु.दिन", "text": "दिहाड़ा = तारीख_ओब्जेक्ट.दिहाड़ा"}
+{"unnormalised": "", "normalised": "महीना = डेट_ऑब्जेक्ट.स्ट्रफ्टाइम('%B').लोअर()", "text": "महीना = date_obj.strftime('%B').lower()"}
+{"unnormalised": "", "normalised": "साल = num2words(date_obj.year)", "text": "साल = num2words(date_obj.year)"}
+{"unnormalised": "", "normalised": "वापस कर \"{num2words(day, to='ordinal')} {month} {year}\"", "text": "रिटर्न f\"{num2words(day, to='ordinal')} {month} {year}\""}
+{"unnormalised": "", "normalised": "टेक्स्ट = re.sub(r'\\b\\d{2}[-/]\\d{2}[-/]\\d{4}\\b', replace_date_ambiguous, टेक्स्ट)", "text": "टेक्स्ट = re.sub(r'\\b\\d{2}[-/]\\d{2}[-/]\\d{4}\\b', replace_date_ambiguous, टेक्स्ट)"}
+{"unnormalised": "", "normalised": "# --- 5. करंसी + नंबर + सफिक्स ---", "text": "# --- ५. मुद्रा + अंक + प्रत्यय ---"}
+{"unnormalised": "", "normalised": "# एह् आम आंकड़े दे प्रत्यय ते आम अंक परिवर्तन थमां अग्गें औणा चाहिदा।", "text": "# एह् आम गिनती दे सफिक्स ते आम गिनती बदलने तों पैह्ले आना चाहिदा।"}
+{"unnormalised": "", "normalised": "डेफ रिप्लेस_करेंसी_सफिक्स(मैच):", "text": "डिफ़ाइन रिप्लेस करेंसी सफ़िक्स (मैच):"}
+{"unnormalised": "", "normalised": "करेंसी_सिंबल = मैच.ग्रुप(1)", "text": "करेंसी_सिंबल = मैच.ग्रुप(1)"}
+{"unnormalised": "", "normalised": "number_str = match.group(3)", "text": "number_str = match.group(3)"}
+{"unnormalised": "", "normalised": "suffix = match.group(4)", "text": "suffix = match.group(4)"}
+{"unnormalised": "", "normalised": "मेरा नाम [आपका नाम] है।\nमैं [शहर का नाम] में रहता/रहती हूँ।\nमुझे डोगरी सीखने में दिलचस्पी है।", "text": ""}
+{"unnormalised": "", "normalised": "करेंसी_नाम = ''", "text": "मुद्रा_नां = ''"}
+{"unnormalised": "", "normalised": "अगर करेंसी_सिंबल == '$':", "text": "अगर करेंसी_सिंबल == '$':"}
+{"unnormalised": "", "normalised": "currency_name = 'डॉलर'", "text": "currency_name = 'डॉलर'"}
+{"unnormalised": "", "normalised": "तांहीं मुद्रा प्रतीक '₹' ऐ।", "text": "अगर करेंसी सिंबल '₹' ऐ:"}
+{"unnormalised": "", "normalised": "currency_name = 'रुपया'", "text": "करेंसी_दा_नां = 'रुपया'"}
+{"unnormalised": "", "normalised": "# अगर लोड़ हो तो होर करेंसीयां शामल करो", "text": "जरूरत हो तो होर करंसियां शामल करो"}
+{"unnormalised": "", "normalised": "बोली जाने आह्ली संख्या = convert_number_to_words(number_str)", "text": "बोली गई_संख्या = संख्या_शबदां च बदलो(संख्या_स्ट्रिंग)"}
+{"unnormalised": "", "normalised": "अगर पिछलगुआ ऐ:", "text": "अगर पिछत्तर होए तां:"}
+{"unnormalised": "", "normalised": "suffix_map = {'K': 'हजार', 'M': 'मिलियन', 'B': 'बिलियन', 'T': 'ट्रिलियन'}", "text": "suffix_map = {'K': 'हजार', 'M': 'मिलियन', 'B': 'बिलियन', 'T': 'ट्रिलियन'}"}
+{"unnormalised": "", "normalised": "वापस करो \"{currency_name} {spoken_number} {suffix_map[suffix]}\"", "text": "फॉरमैट=\"{करेंसी_नेम} {स्पोकन_नंबर} {सफिक्स_मेप[सफिक्स]}\""}
+{"unnormalised": "", "normalised": "नै तां:", "text": "नैं तां:"}
+{"unnormalised": "", "normalised": "वापस कर \"{currency_name} {spoken_number}\"", "text": "वापस कर \"{currency_name} {spoken_number}\""}
+{"unnormalised": "", "normalised": "टेक्स्ट = री.सब(r'([$₹€£])(\\s*)(\\d+)([केएमबीटी])?\\b', रिप्लेस_करेंसी_सफिक्स, टेक्स्ट)", "text": "text = re.sub(r'([$₹€£])(\\s*)(\\d+)([KMBT])?\\b', replace_currency_suffix, text)"}
+{"unnormalised": "", "normalised": "# --- 4. गिनती दे सब्बक → फैली दा रूप ---", "text": "# --- 4. अंकड़ें दा पुछल्ला → बधाया होया रूप ---"}
+{"unnormalised": "", "normalised": "# एह् आम नंबर बदलने थमां पहले आना चाहिदा ऐ।", "text": "# एह् जनरल नंबर कन्वर्शन थमां पैह्ले आना चाहिदा ऐ।"}
+{"unnormalised": "", "normalised": "def replace_numeric_suffix(match):", "text": "डेफ रिप्लेस न्यूमेरिक सफिक्स(मैच):"}
+{"unnormalised": "", "normalised": "number_str = match.group(1)", "text": "नंबर_स्ट्र = मैच.ग्रुप(1)"}
+{"unnormalised": "", "normalised": "suffix = match.group(2)", "text": "suffix = match.group(2)"}
+{"unnormalised": "", "normalised": "बोली जाने आह्ली संख्या = convert_number_to_words(number_str)", "text": "बोली गई_संख्या = संख्या_शबदां च बदलो(संख्या_स्ट्रिंग)"}
+{"unnormalised": "", "normalised": "मेरा नाम [आपका नाम] है।\nमैं [शहर का नाम] में रहता/रहती हूँ।\nमुझे डोगरी सीखने में दिलचस्पी है।", "text": ""}
+{"unnormalised": "", "normalised": "suffix_map = {'K': 'हजार', 'M': 'मिलियन', 'B': 'बिलियन', 'T': 'ट्रिलियन'}", "text": "suffix_map = {'K': 'हजार', 'M': 'मिलियन', 'B': 'बिलियन', 'T': 'ट्रिलियन'}"}
+{"unnormalised": "", "normalised": "वापस कर \"{spoken_number} {suffix_map[suffix]}\"", "text": "रिटर्न f\"{बोली गेई संख्या} {सफिक्स_मैप[सफिक्स]}\""}
+{"unnormalised": "", "normalised": "text = re.sub(r'\\b(\\d+)([KMBT])\\b', replace_numeric_suffix, text)", "text": "text = re.sub(r'\\b(\\d+)([KMBT])\\b', replace_numeric_suffix, text)"}
+{"unnormalised": "", "normalised": "# --- ७. इकाईयां → बोलचाल रूप ---", "text": "# --- ७. यूनिट्स → बोलने दा तरीका ---"}
+{"unnormalised": "", "normalised": "# एह् आम नंबर बदलने थमां पहले आना चाहिदा ऐ।", "text": "# एह् जनरल नंबर कन्वर्शन थमां पैह्ले आना चाहिदा ऐ।"}
+{"unnormalised": "", "normalised": "unit_map = {", "text": "यूनिट_मैप = {"}
+{"unnormalised": "", "normalised": "'cm': 'सेंटीमीटर', 'mm': 'मिलीमीटर', 'm': 'मीटर', 'km': 'किलोमीटर',", "text": "'cm': 'सेंटीमीटर', 'mm': 'मिलीमीटर', 'm': 'मीटर', 'km': 'किलोमीटर',"}
+{"unnormalised": "", "normalised": "'g': 'ग्राम', 'kg': 'किलोग्राम', 'mg': 'मिलीग्राम',", "text": "'g': 'ग्राम', 'kg': 'किलोग्राम', 'mg': 'मिलीग्राम',"}
+{"unnormalised": "", "normalised": "'ml': 'मिलीलीटर', 'l': 'लीटर',", "text": "'ml': 'मिलीलीटर', 'l': 'लीटर',"}
+{"unnormalised": "", "normalised": "'C': 'सेल्सियस', 'F': 'फारेनहाइट', 'K': 'केल्विन', # डिग्री इकाइयां देह्ईं", "text": "'C': 'सेल्सियस', 'F': 'फारेनहाइट', 'K': 'केल्विन', # डिग्री इकाइयां लेई"}
+{"unnormalised": "", "normalised": "'hrs': 'घंटे', 'hr': 'घंटा',", "text": "'hrs': 'घंटे', 'hr': 'घंटा',"}
+{"unnormalised": "", "normalised": "'मिनट': 'मिनट', 'मिनट': 'मिनटें',", "text": "'min': 'मिनट', 'mins': 'मिनटें',"}
+{"unnormalised": "", "normalised": "'sec': 'सेकंड', 'secs': 'सेकंड्स',", "text": "'sec': 'सेकंड', 'secs': 'सेकंड्ज़',"}
+{"unnormalised": "", "normalised": "'volt': 'वोल्ट', 'volts': 'वोल्ट्स', 'v': 'वोल्ट',", "text": "'volt': 'वोल्ट', 'volts': 'वोल्ट्स', 'v': 'वोल्ट',"}
+{"unnormalised": "", "normalised": "'amp': 'एम्पियर', 'amps': 'एम्पियर', 'a': 'एम्पियर',", "text": "'amp': 'एम्पियर', 'amps': 'एम्पियर', 'a': 'एम्पियर',"}
+{"unnormalised": "", "normalised": "'watt': 'वाट', 'watts': 'वाट्स', 'w': 'वाट',", "text": "'watt': 'वाट', 'watts': 'वाट्स', 'w': 'वाट',"}
+{"unnormalised": "", "normalised": "'hz': 'हर्ट्ज़', 'khz': 'किलोहर्ट्ज़', 'mhz': 'मेगाहर्ट्ज़', 'ghz': 'गीगाहर्ट्ज़'", "text": "'hz': 'हर्ट्ज़', 'khz': 'किलोहर्ट्ज़', 'mhz': 'मेगाहर्ट्ज़', 'ghz': 'गीगाहर्ट्ज़'"}
+{"unnormalised": "", "normalised": "}", "text": "}"}
+{"unnormalised": "", "normalised": "def replace_unit(match):", "text": "डेफ रिप्लेस यूनिट(मैच):"}
+{"unnormalised": "", "normalised": "number_str = match.group(1)", "text": "नंबर_स्ट्र = मैच.ग्रुप(1)"}
+{"unnormalised": "", "normalised": "unit = match.group(2).lower()", "text": "यूनिट = मैच.ग्रुप(2).लोअर()"}
+{"unnormalised": "", "normalised": "बोली जाने आह्ली संख्या = convert_number_to_words(number_str)", "text": "बोली गई_संख्या = संख्या_शबदां च बदलो(संख्या_स्ट्रिंग)"}
+{"unnormalised": "", "normalised": "बोलचाल_वाली_इकाई = इकाई_मैप.गेट(इकाई, इकाई)", "text": "बोल्या जाने आला यूनिट = यूनिट_मैप थमां यूनिट मिलदा ऐ, यूनिट ऐ।"}
+{"unnormalised": "", "normalised": "# इकाईयां दे वास्ते बहुवचन संभाळो", "text": "इकाईऽएं दे बहुवचनें गी संभालो"}
+{"unnormalised": "", "normalised": "अगर int(number_str) > 1 ऐ ते spoken_unit 's' कन्नै खत्म नेईं होंदा ऐ ते spoken_unit ['celsius', 'fahrenheit', 'kelvin'] विच बी नेईं ऐ:", "text": "अगर int(number_str) > 1 ते ना गै spoken_unit दा अंत 's' कन्नै होंदा ऐ ते spoken_unit ['celsius', 'fahrenheit', 'kelvin'] विच शामल नेईं ऐ:"}
+{"unnormalised": "", "normalised": "बोली जाने आली इकाई च 's' जोड़ी देओ", "text": "बोलन_आली_इकाई += 's'"}
+{"unnormalised": "", "normalised": "अगर int(number_str) == 1 ते spoken_unit आखरी च 's' कन्नै खत्म होंदा ऐ ते spoken_unit ['celsius', 'fahrenheit', 'kelvin'] च नेईं ऐ:", "text": "अगर int(number_str) == 1 ऐ ते बोले दा यूनिट 's' कन्नै खत्म होंदा ऐ ते बोले दा यूनिट ['celsius', 'fahrenheit', 'kelvin'] च शामल नी ऐ:"}
+{"unnormalised": "", "normalised": "बोली जाने आली इकाई = बोली जाने आली इकाई[:-1]  # 's' हटाओ जेकर नंबर 1 है ते इकाई बहुवचन है", "text": "बोलने_वाली_इकाई = बोलने_वाली_इकाई[:-1] # 'स' ह्टाई दिओ जेकर नंबर 1 ऐ ते इकाई बहुवचन ऐ"}
+{"unnormalised": "", "normalised": "वापस करो \"{बोली दा नंबर} {बोली दी इकाई}\"", "text": "फिरी \"{spoken_number} {spoken_unit}\" वापस करो।"}
+{"unnormalised": "", "normalised": "# ईकाई कन्नै सीधे बाद च आने आह् ले नंबरें दा पैटर्न (उदाहरन केई, 10cm, 5kg)", "text": "# अददें दे सीधे बाद इकाई दा पैटर्न (जियां, 10cm, 5kg)"}
+{"unnormalised": "", "normalised": "# युनिट्स लेई \\b दा इस्तेमाल करो तां जे अधूरी मेल तो बच सकन (उदाहरण लेई, 'मीटर' च 'm')", "text": "# \\b दा इस्तेमाल यूनिट लेई करदे होई ताकि अधूरियां मिलावटें तों बचे जा सकन (उदाहरण दे तौर उत्ते 'मीटर' च 'म')"}
+{"unnormalised": "", "normalised": "unit_pattern = r'\\b(\\d+(?:\\.\\d+)?)\\s*(%s)\\b' % '|'.join(re.escape(u) for u in unit_map.keys())", "text": "यूनिट_पैटर्न = आर'\\b(\\d+(?:\\.\\d+)?)\\s*(%s)\\b' % '|'.जॉइन(री.एस्केप(यू) फॉर यू इन यूनिट_मैप.कीज़())"}
+{"unnormalised": "", "normalised": "टेक्स्ट = री.सब(यूनिट_पैटर्न, रिप्लेस_यूनिट, टेक्स्ट, फ्लैग्स=री.इग्नोरकेस)", "text": "text = re.sub(unit_pattern, replace_unit, text, flags=re.IGNORECASE)"}
+{"unnormalised": "", "normalised": "# डिग्री सेल्सियस/फ़ारेनहाइट गी ख़ास तौर पर हैंडल करो, जि'यां के अक्सर 25°C लिखेआ जांदा ऐ", "text": "डिग्री सेल्सियस/फ़ारेनहाइट गी खास तौर पर संभालो, अक्सर 25°C ऐस लिख्या जांदा ऐ।"}
+{"unnormalised": "", "normalised": "डिफाइन रिप्लेस_डिग्री_यूनिट(मैच):", "text": "डेफ रिप्लेस_डिग्री_यूनिट(मैच):"}
+{"unnormalised": "", "normalised": "number_str = match.group(1)", "text": "नंबर_स्ट्र = मैच.ग्रुप(1)"}
+{"unnormalised": "", "normalised": "unit = match.group(2).upper() # 'C', 'F'", "text": "यूनिट = मैच.ग्रुप(2).अपर() # 'C', 'F'"}
+{"unnormalised": "", "normalised": "बोली जाने आह्ली संख्या = convert_number_to_words(number_str)", "text": "बोली गई_संख्या = संख्या_शबदां च बदलो(संख्या_स्ट्रिंग)"}
+{"unnormalised": "", "normalised": "unit_name = 'celsius' जेकर unit == 'C' तां, नई तां 'fahrenheit' जेकर unit == 'F' तां, नई तां 'kelvin' जेकर unit == 'K' तां, नई तां ''", "text": "unit_name = 'सेल्सियस' अगर यूनिट == 'C' है तां 'फारेनहाइट' अगर यूनिट == 'F' है तां 'केल्विन' अगर यूनिट == 'K' है तां नहीं तां ''"}
+{"unnormalised": "", "normalised": "वापस कर \"{spoken_number} डिग्री {unit_name}\"", "text": "फ\"{स्पोकन_नंबर} डिग्री {यूनिट_नाम}\""}
+{"unnormalised": "", "normalised": "टेक्स्ट = रे.सब(r'\\b(\\d+(?:\\.\\d+)?)\\s*डिग्री\\s*([CFK])\\b', रिप्लेस_डिग्री_यूनिट, टेक्स्ट, फ्लैग्स=रे.इग्नोरकेस) # 'डिग्री' दा प्रतीक बदलीने दे बाद", "text": "टेक्स्ट = re.sub(r'\\b(\\d+(?:\\.\\d+)?)\\s*डिग्री\\s*([CFK])\\b', replace_degree_unit, टेक्स्ट, flags=re.IGNORECASE) # 'डिग्री' प्रतीक दी जगह बदलने दे बाद"}
+{"unnormalised": "", "normalised": "टेक्स्ट = re.sub(r'\\b(\\d+(?:\\.\\d+)?)\\s*degree\\s*(celsius|fahrenheit|kelvin)\\b', lambda m: f\"{convert_number_to_words(m.group(1))} डिग्री {m.group(2)}\", टेक्स्ट, flags=re.IGNORECASE)", "text": "text = re.sub(r'\\b(\\d+(?:\\.\\d+)?)\\s*degree\\s*(celsius|fahrenheit|kelvin)\\b', lambda m: f\"{convert_number_to_words(m.group(1))} डिग्री {m.group(2)}\", text, flags=re.IGNORECASE)"}
+{"unnormalised": "", "normalised": "# --- 3. Numbers → बोलने दा ढंग (आम) ---", "text": "# --- 3. अंक → बोलने दा रूप (आम) ---"}
+{"unnormalised": "", "normalised": "# बाकी बचे खड़े नंबरें पर लागू करो। इह् लेट होना चाहिदा।", "text": "# बाक़ी बचे कुसै बी एकल नंबरें पर लागू करो। एह् बाद च होना चाहिदा।"}
+{"unnormalised": "", "normalised": "# ओह् नंबर छड्डी दित्ते जाओ जेह्ड़े फाइल नेम दा हिस्सा न या मिले-जुले अल्फान्यूमेरिक स्ट्रिंग न जेह्ड़े नंबर आस्से नेईं दिखदे।", "text": "# फाइल नेम या मिक्सड अल्फ़ान्यूमेरिक स्ट्रिंग्ज़ च ओह् नंबर शामल न करो जेह्ड़े नंबर नेईं लगदे।"}
+{"unnormalised": "", "normalised": "def replace_general_number(match):", "text": "डेफ रिप्लेस जनरल नंबर (मैच):"}
+{"unnormalised": "", "normalised": "number_str = match.group(0)", "text": "नंबर_एसटीआर = मैच.ग्रुप(0)"}
+{"unnormalised": "", "normalised": "# होर पहचानकर्ता दे हिस्से वाले नंबरें गी बदलने थमां बचो (मिसाल के तौर पर, H2O, ID123)", "text": "# होर पहचानकर्ताएं (मिसाल के तौर पर, H2O, ID123) दे हिस्से दे तौर पर होने आह्ले नंबरें गी बदलने थमां बचो"}
+{"unnormalised": "", "normalised": "अगर ऐह् शुद्ध अक्षर ऐ, तां नज़रअंदाज़ करो", "text": "अगर re.match(r'^[A-Za-z]+$', number_str): # जेह्ड़ी शुद्ध अक्षर होंदी ऐ, अनदेखा करो"}
+{"unnormalised": "", "normalised": "वापस करो नंबर_स्ट्रिंग", "text": "रिटर्न नंबर_स्ट्रिंग"}
+{"unnormalised": "", "normalised": "मेरा नाम [आपका नाम] है।\nमैं [शहर का नाम] में रहता/रहती हूँ।\nमुझे डोगरी सीखने में दिलचस्पी है।", "text": ""}
+{"unnormalised": "", "normalised": "# बची बचई जे एह् इक फ्लोटिंग पॉइंट नंबर ऐ जिसदे दशमलव दे बाद सिर्फ़ ज़ीरो ऐ ते num2words फुल स्टॉप दिन्दा ऐ तां", "text": "# ऐह् बदलोने थमां बचो जेकर इह् इक फ्लोटिंग पॉइंट नंबर ऐ जेह्दे च दशमलव दे बाद सिर्फ जीरो ऐ ते num2words फुल स्टॉप दिंदा ऐ"}
+{"unnormalised": "", "normalised": "जेकर '.' number_str च ऐ ते float(number_str) == int(float(number_str)):", "text": "अगर '.' number_str च ऐ ते float(number_str) इंट(float(number_str)) दे बराबर ऐ:"}
+{"unnormalised": "", "normalised": "वापस करो convert_number_to_words(str(int(float(number_str))))", "text": "वापस करो convert_number_to_words(str(int(float(number_str))))"}
+{"unnormalised": "", "normalised": "मैं ठीक हूँ, धन्यवाद।", "text": ""}
+{"unnormalised": "", "normalised": "वापस करो नंबर गी शब्दें च बदलने दा कम्म (number_str)", "text": "वापस करो convert_number_to_words(number_str)"}
+{"unnormalised": "", "normalised": "टेक्स्ट = री.सब(आर'\\b\\d+(?:\\.\\d+)?\\b', रिप्लेस_जनरल_नंबर, टेक्स्ट)", "text": "टेक्स्ट = re.sub(r'\\b\\d+(?:\\.\\d+)?\\b', replace_general_number, टेक्स्ट)"}
+{"unnormalised": "", "normalised": "# --- 8. Mathematical notation → Spoken form ---", "text": "# --- ८. गणितीय संकेत → बोलचाल रूप ---"}
+{"unnormalised": "", "normalised": "# यक़ीनी बनाओ के एह् आम प्रतीक/नंबर बदलने दे बाद होऐ तां जे झगड़े तों बचया जाई सकै", "text": "# यकीनी बनाओ के एह् आम सिंबल/नंबर बदलने दे बाद हो ताकि मताहतां तों बच सकन"}
+{"unnormalised": "", "normalised": "टेक्स्ट = री.सब(आर'( \\w)\\^2', आर'\\1 स्क्वायर्ड', टेक्स्ट)", "text": "पाठ = re.sub(r'(\\w)\\^2', r'\\1 स्क्वायर्ड', पाठ)"}
+{"unnormalised": "", "normalised": "टेक्स्ट = री.सब(आर'(\\w)\\^3', आर'\\1 क्यूबड', टेक्स्ट)", "text": "टेक्स्ट = री.सब(r'(\\w)\\^3', r'\\1 क्यूब्ड', टेक्स्ट)"}
+{"unnormalised": "", "normalised": "टेक्स्ट = re.sub(r'(\\w)\\^(\\w+)', r'\\1 दी पावर \\2', टेक्स्ट) # जनरल पावर", "text": "टेक्स्ट = re.sub(r'(\\w)\\^(\\w+)', r'\\1 दी पावर \\2', टेक्स्ट) # जनरल पावर"}
+{"unnormalised": "", "normalised": "टेक्स्ट = दोबारा . सब (r'(\\w)_(\\w+)', r'\\1 सब \\2', टेक्स्ट) # सबस्क्रिप्ट", "text": "टेक्स्ट = re.sub(r'(\\w)_(\\w+)', r'\\1 सब \\2', टेक्स्ट) # सबस्क्रिप्ट"}
+{"unnormalised": "", "normalised": "समेशन ऑफ x सब i", "text": "जुम्मा x सब i दा"}
+{"unnormalised": "", "normalised": "टेक्स्ट = re.sub(r'इंटीग्रल\\s*(\\d+)\\s*तो\\s*(\\d+)\\s*ऑफ\\s*(\\w)\\s*डी\\s*(\\w)',", "text": "इंटीग्रल  (\\d+)  तो  (\\d+)  ऑफ  (\\w)  डी  (\\w)"}
+{"unnormalised": "", "normalised": "लैम्ब्डा m: f\"इंटीग्रल {convert_number_to_words(m.group(1))} थमां {convert_number_to_words(m.group(2))} तक {m.group(3)} d {m.group(4)} दा\",", "text": "lambda m: f\"इंटीग्रल {convert_number_to_words(m.group(1))} थमां {convert_number_to_words(m.group(2))} तिकर दा {m.group(3)} डी {m.group(4)}\","}
+{"unnormalised": "", "normalised": "टेक्स्ट) # खास इंटीग्रल फार्म ∫ 0→1 x dx", "text": "# खास इंटीग्रल रूप ∫ 0→1 x dx"}
+{"unnormalised": "", "normalised": "टेक्स्ट = re.sub(r'integral\\s*(\\w)\\s*d\\s*(\\w)', r'integral of \\1 d \\2', टेक्स्ट) # आम इंटीग्रल फ़ॉर्म ∫ x dx", "text": "तर्जमा = टेक्स्ट = रे.सब (आर'अभिन्न\\एस*(\\डब्ल्यू)\\एस*डी\\एस*(\\डब्ल्यू)', आर'अभिन्न ऑफ \\1 डी \\2', टेक्स्ट) # सामान्य अभिन्न रूप ∫ x dx"}
+{"unnormalised": "", "normalised": "# --- आखिरी जगह नॉर्मलाइज़ेशन ---", "text": "# --- आखरी जगह दा सामान्यीकरण ---"}
+{"unnormalised": "", "normalised": "टेक्स्ट = री.सब(r'\\s+', ' ', टेक्स्ट).स्ट्रिप()", "text": "टेक्स्ट = री.सब(r'\\s+', ' ', टेक्स्ट).स्ट्रिप()"}
+{"unnormalised": "", "normalised": "वापस टेक्स्ट करो", "text": "वापस पाठ करा।"}
+{"unnormalised": "", "normalised": "डिफ़ाइन प्रोसेस_फ़ोल्डर(इनपुट_फ़ोल्डर, आउटपुट_फ़ोल्डर):", "text": "डिफ़ाइन प्रोसेस_फ़ोल्डर(इनपुट_फ़ोल्डर, आउटपुट_फ़ोल्डर):"}
+{"unnormalised": "", "normalised": "माफ़ करना, मैं एह् करने च असमर्थ हां। मैं अभी तक डोगरी च अनुवाद करने लेई प्रशिक्षित नीं हां।", "text": "ठीक ऐ। मेईं दस्सो पाठ की ऐ जिह्नु तुस अनुवाद करना चांह्दे ओ।\n\"\"\""}
+{"unnormalised": "", "normalised": "इनपुट फोल्डर च घुम्मदा ऐ, .txt फाइलें गी सामान्य करदा ऐ, ते होरें गी कॉपी करदा ऐ।", "text": "इनपुट फोल्डर विच घूमो, .txt फाइलें गी सामान्य करो, ते होरें गी कॉपी करो।"}
+{"unnormalised": "", "normalised": "माफ़ करना, मैं एह् करने च असमर्थ हां। मैं अभी तक डोगरी च अनुवाद करने लेई प्रशिक्षित नीं हां।", "text": "ठीक ऐ। मेईं दस्सो पाठ की ऐ जिह्नु तुस अनुवाद करना चांह्दे ओ।\n\"\"\""}
+{"unnormalised": "", "normalised": "os.makedirs(output_folder, exist_ok=True)", "text": "os.makedirs(output_folder, exist_ok=True)"}
+{"unnormalised": "", "normalised": "अननॉर्मलाईज़्ड_टीएक्सटी_फाइल्स = []", "text": "अननॉर्मलाईज़्ड_txt_फाइलें = []"}
+{"unnormalised": "", "normalised": "ताह् रुट, डाइरैक्टरियां, फाइलें ओ एस डॉट वाक विच इनपुट_फोल्डर:", "text": "ताह्ईं जड़, डिरां, फाइलें विच os.walk(इनपुट_फोल्डर) च:"}
+{"unnormalised": "", "normalised": "relative_path = os.path.relpath(root, input_folder)", "text": "relative_path = os.path.relpath(root, input_folder)"}
+{"unnormalised": "", "normalised": "current_output_dir = os.path.join(output_folder, relative_path)", "text": "current_output_dir = os.path.join(output_folder, relative_path)"}
+{"unnormalised": "", "normalised": "os.makedirs(current_output_dir, exist_ok=True)", "text": "os.makedirs(current_output_dir, exist_ok=True)"}
+{"unnormalised": "", "normalised": "फाइल नाम च फाइलां लेई:", "text": "फाइल_नाम files च:"}
+{"unnormalised": "", "normalised": "input_file_path = os.path.join(root, file_name)", "text": "input_file_path = os.path.join(root, file_name)"}
+{"unnormalised": "", "normalised": "आउटपुट_फाइल_पाथ = ओएस.पाथ.जॉइन(मौजूदा_आउटपुट_डायरेक्ट्री, फाइल_नां)", "text": "आउटपुट_फाइल_पाथ = os.path.जॉइन(current_output_dir, फाइल_नेम)"}
+{"unnormalised": "", "normalised": "अगर फाइल दा नांऽ छोटा अक्षरें च '.txt' कन्नै खत्म होंदा ऐ:", "text": "अगर फ़ाइल_नाम दा छोटा रूप '.txt' कन्नै खत्म होंदा ऐ तां:"}
+{"unnormalised": "", "normalised": "कोशिश करो:", "text": "कोशिश करो:"}
+{"unnormalised": "", "normalised": "खुल्ली फाइल(input_file_path, 'r', encoding='utf-8') कन्नै f_in दे तौर पर:", "text": "`input_file_path`  नें दी फाइल गी `utf-8` विच एन्कोडिंग दे कन्नै `f_in`  हिसाब कन्नै खोलओ :"}
+{"unnormalised": "", "normalised": "content = f_in. पढ़ी दित्ता।", "text": "सामग्री = f_in.read()"}
+{"unnormalised": "", "normalised": "माफ़ करना, पर मैं एह् नहीं कर सकदा।", "text": ""}
+{"unnormalised": "", "normalised": "normalized_content = normalize_पाठ (content)", "text": "normalized_content = सामान्य कीत्ती गेई सामग्री"}
+{"unnormalised": "", "normalised": "खुल्ली फाइल(output_file_path, 'w', encoding='utf-8') कन्नै जियां f_out:", "text": "with open(output_file_path, 'w', encoding='utf-8') as f_out:"}
+{"unnormalised": "", "normalised": "f_out.write(normalized_content)", "text": "f_out.write(normalized_content)"}
+{"unnormalised": "", "normalised": "सिवाय Exception ऐह् ऐ:", "text": "सिवाException दे जिआं e:"}
+{"unnormalised": "", "normalised": "print(f\"Error processing {input_file_path}: {e}\")", "text": "प्रिंट (f\"एरर प्रोसेस करदे बेल्लै {input_file_path}: {e}\")"}
+{"unnormalised": "", "normalised": "अननॉर्मलाइज़्ड_टीएक्सटी_फाइलज़.append(इनपुट_फाइल_पाथ)", "text": "अननॉरमलाइज्ड_टीएक्सटी_फाइल्स.अपेंड(इनपुट_फाइल_पाथ)"}
+{"unnormalised": "", "normalised": "# अगर ग़लती हो, तो असली फ़ाइल कुं आउटपुट विच कॉपी करो", "text": "अगर गलती हो, तां असली फ़ाइल गी आउटपुट विच कॉपी करो"}
+{"unnormalised": "", "normalised": "shutil.copy2(input_file_path, output_file_path)", "text": "शटल.कॉपी2(इनपुट_फाइल_पाथ, आउटपुट_फाइल_पाथ)"}
+{"unnormalised": "", "normalised": "नै तां:", "text": "नैं तां:"}
+{"unnormalised": "", "normalised": "शटल.कॉपी2(इनपुट_फाइल_पाथ, आउटपुट_फाइल_पाथ)", "text": "शटल.कॉपी2(इनपुट_फाइल_पाथ, आउटपुट_फाइल_पाथ)"}
+{"unnormalised": "", "normalised": "तैं क्या करदा ऐ?", "text": ""}
+{"unnormalised": "", "normalised": "अगर अननॉरमलाइज्ड_txt_फाइल्स:", "text": "जेकर अननॉर्मलाइज्ड_टीएक्सटी_फाइलें:"}
+{"unnormalised": "", "normalised": "प्रिंट(\"\\n--- .txt फाइलें दी लिस्ट जिह्ड़ियां नॉर्मलाइज नेईं कीतियां जाई सकियां (ओरिजिनल कॉपी कित्तियां गियां) ---\")", "text": "प्रिंट (\"\\n--- .txt फाइलें दी सूची जिह्नां गी सामान्य नहीं कीता जाई सक्या (मूल प्रतिलिपि बदली च) ---\")"}
+{"unnormalised": "", "normalised": "फॉर f इन अननॉर्मलाइज़्ड_txt_फाइल्स:", "text": "फॉर एफ इन अननॉरमलाईज़्ड_टीएक्सटी_फाइलस:"}
+{"unnormalised": "", "normalised": "प्रिंट (f)", "text": "प्रिंट (ऍफ़)"}
+{"unnormalised": "", "normalised": "अगर __name__ == \"__main__\":", "text": "अगर __name__ == \"__main__\":"}
+{"unnormalised": "", "normalised": "# मिसाल दे तौर पर बरतो:", "text": "# Input:\n```\nThis is a test.\nHello world!\n```\n\n# Output:\n```\nएह् इक टेस्ट ऐ।\nहेलो दुनिया!\n```"}
+{"unnormalised": "", "normalised": "# टेस्ट करने लेई इक नकली डेटासेट ढांचा बनाओ", "text": "# टेस्ट करने लेई इक नकली डेटासेट ढांचा बनाओ"}
+{"unnormalised": "", "normalised": "अगर नईं ऐ तां \"dataset\" मौजूद ऐ:", "text": "जेकर \"dataset\" मौजूद नेईं ऐ तां:"}
+{"unnormalised": "", "normalised": "os.makedirs(\"dataset/subfolder1\", exist_ok=True)", "text": "os.makedirs(\"dataset/subfolder1\", exist_ok=True)"}
+{"unnormalised": "", "normalised": "os.makedirs(\"dataset/subfolder2\", exist_ok=True)", "text": "os.makedirs(\"dataset/subfolder2\", exist_ok=True)"}
+{"unnormalised": "", "normalised": "ओपन (\"डेटासेट/टेस्ट1.txt\", \"w\", एनकोडिंग=\"utf-8\") एज एफ:", "text": "ओपन (\"डेटासेट/टेस्ट1.टीएक्सटी\", \"डब्ल्यू\", एन्कोडिंग=\"यूटीएफ-8\") ऐस एफ:"}
+{"unnormalised": "", "normalised": "f.write(\"मूल्य $20B ऐ। नासा 1958 च लांच होया। लगभग ~5% मुनाफा।\\n\")", "text": "फाइल.राइट(\"कीमत $20B ऐ। नासा 1958 च लॉन्च होआ हा। लगभक ~5% मुनाफा।\\n\")"}
+{"unnormalised": "", "normalised": "f.write(\"आज दी तारीख ऐ 10/09/2024। डॉ. स्मिथ U.S.A. सरकार लेई कम्म करदे न।\\n\")", "text": "f.write(\"अज्ज दी तारीख ऐ 10/09/2024. डाक्टर स्मिथ यू.एस.ए. सरकार लेई कम्म करदे न।\\n\")"}
+{"unnormalised": "", "normalised": "f.write(\"तापमान 25°C है। पानी 100°C पर उबलेया। कुल 5 किलोमीटर दौड़।\\n\")", "text": "ऍफ.राइट(\"तापमान 25°C है। पानी 100°C पर उबला। कुल 5km दौड़।\\n\")"}
+{"unnormalised": "", "normalised": "f.write(\"समीकरण है 2+2=4. एरिया है πr^2. जोड़ है Σ x_i. x^2 ते x^3 गी ध्यान च रखो। कन्नै गै x^n.\\n\")", "text": "f.write(\"समीकरण ऐ 2+2=4 ऐ। क्षेत्रफल πr^2 ऐ। जोड़ Σ x_i ऐ। x^2 ते x^3 पर ध्यान देओ। कन्नै गै x^n।\\n\")"}
+{"unnormalised": "", "normalised": "f.write(\"अंश 3/4 है। अस्सां 1/2 किलोग्राम चीनी दी लोड़ ऐ। रिपोर्ट च QA/Dev ते art/craft शामल ऐ। जीडीपी विकास मजबूत ऐ। एडवोकेट राम इथे न।\\n\")", "text": "ऍफ़.राइट(\"द फ़्रैक्शन इज़ 3/4. वी नीड 1/2 केजी ऑफ़ शुगर. द रिपोर्ट कवर्स क्यूए/डेव एंड आर्ट/क्राफ्ट. जीडीपी ग्रोथ इज़ स्ट्रांग. एडवोकेट राम इज़ हेयर.\\n\")"}
+{"unnormalised": "", "normalised": "f.write(\"गणित: ∫ x^2 dx. या ∫ 0→1 x dx. अगर x != y, तां x <= z या z >= x. ओ 100 मीटर दौड़ दा ऐ।\\n\")", "text": "f.write(\"गणित: ∫ x^2 dx. या ∫ 0→1 x dx. अगर x != y, तां x <= z या z >= x. ओह् 100M दौड़ दौड़ा दा ऐ।\\n\")"}
+{"unnormalised": "", "normalised": "f.write(\"ओह् 45 मिनट च 10 किलोमीटर दौड़ेआ। उसदी रफ़्तार 100 किलोमीटर प्रति घंटा ही। बैटरी 12V ते 50A दी ऐ।\\n\")", "text": "f.write(\"तस 10 किलोमीटर 45 मिनट च दौड़या। उसदी रफ़्तार 100 किलोमीटर/घंटा ही। बैटरी 12 वी ते 50 ए है।\\n\")"}
+{"unnormalised": "", "normalised": "f.write(\"उत्पाद आईडी: PROD123, PROD456।\\n\")", "text": "ऍफ़.राइट(\"प्रोडक्ट आईडीज़: PROD123, PROD456.\\n\")"}
+{"unnormalised": "", "normalised": "₹50 करोड़ इन्वेस्ट कीता गया। कीमत 99 है। नंबर 7 है।", "text": "f.write(\"₹500M निवेश कीता गया। मुल्य 99 है। नंबर 7 है।\\n\")"}
+{"unnormalised": "", "normalised": "f.write(\"इह्दे विच दशमल 12.5 किलो ऐ। कुल मिला के 1.0 एम लोक। टेस्ट 1.0 किलो ते 1.00 किलो।\\n\")", "text": "f.write(\"एह्दे च इक दशमलव 12.5 किलो ऐ। कुल मिलाके 1.0 एम लोक। टेस्ट 1.0 किलो ते 1.00 किलो।\\n\")"}
+{"unnormalised": "", "normalised": "खोली करी(\"dataset/subfolder1/test2.txt\", \"w\", encoding=\"utf-8\") जि'यां f:", "text": "ओपन (\"डेटासेट/सबफ़ोल्डर1/टेस्ट2.txt\", \"w\", एन्कोडिंग=\"utf-8\") ऐज़ f:"}
+{"unnormalised": "", "normalised": "f.write(\"प्रोजेक्ट अल्फा 2023-12-01 गी शुरू होआ। प्रोफेसर जोन्स ने ∫ x^n dx पर इक लेक्चर दित्ता।\\n\")", "text": "f.write(\"प्रोजेक्ट अल्फा 2023-12-01 शुरू होआ। प्रोफ़ैसर जोन्स ने ∫ x^n dx पर एक भाषण देता।\\n\")"}
+{"unnormalised": "", "normalised": "f.write(\"उसने 2.5 घंटे पढ़दे बिताए। डेटा 1.2M रिकॉर्ड है। ओ हर महीने 50K कमांदा है।\\n\")", "text": "f.write(\"उसने 2.5 घंटे पढ़दे बिताए। डेटा 1.2M रिकॉर्ड है। ओ हर महीने 50K कमांदा है।\\n\")"}
+{"unnormalised": "", "normalised": "with open(\"dataset/subfolder2/image.jpg\", \"w\", encoding=\"utf-8\") as f:", "text": "with open(\"dataset/subfolder2/image.jpg\", \"w\", encoding=\"utf-8\") as f:"}
+{"unnormalised": "", "normalised": "f.write(\"ऐह् इक टेक्स्ट फाइल निएं ।\") # गैर-टीएक्सटी फाइल आस्तै डमी सामग्री", "text": "f.write(\"यह इक टेक्स्ट फाइल निहीं ऐ।\") # गैर-टीएक्सटी फाइल लेई डमी सामग्री"}
+{"unnormalised": "", "normalised": "खुल्ली फाइल(\"dataset/subfolder2/another.txt\", \"w\", एन्कोडिंग=\"utf-8\") कन्नै f हेठ:", "text": "नमें utf-8 एन्कोडिंग च \"dataset/subfolder2/another.txt\" खोंलने आस्ते f हेठ खोलेओ:"}
+{"unnormalised": "", "normalised": "फाइल.लिखो(\"खास अक्षर: ≠, ≤, ≥। तकरीबन पाँच प्रतिशत ~5% टेस्ट करो। हैश #टैग। एट @यूज़र। ते & होर भी।\")", "text": "ऍफ़.राइट(\"स्पेशल कैरेक्टर: ≠, ≤, ≥. टेस्ट एप्रोक्सीमेटली फाइव परसेंट ~5%. हैश #tag. एट @user. एंड & मोर.\")"}
+{"unnormalised": "", "normalised": "input_data_folder = \"dataset\"", "text": "input_data_folder = \"dataset\""}
+{"unnormalised": "", "normalised": "output_normalized_folder = \"dataset_normalized\"", "text": "output_normalized_folder = \"डेटासेट_नॉर्मलाइज्ड\""}
+{"unnormalised": "", "normalised": "प्रिंट (f\"'{इनपुट_डेटा_फोल्डर}' गी '{आउटपुट_नॉरमलाइज्ड_फोल्डर' च नॉर्मलाइज़ करना शुरू करी दे हा...\")", "text": "प्रिंट (ऍफ़ \"{इनपुट_डाटा_फोल्डर}\" के लिए सामान्यीकरण \"{आउटपुट_नॉर्मलाईज़ड_फोल्डर}\" विच शुरू हो रिया है...\")"}
+{"unnormalised": "", "normalised": "process_folder(input_data_folder, output_normalized_folder)", "text": "process_folder(input_data_folder, output_normalized_folder)"}
+{"unnormalised": "", "normalised": "नॉर्मलाइजेशन पूरा होई गेआ।", "text": "मानकीकरण पूरा होई गेआ।"}
+{"unnormalised": "", "normalised": "# --- सत्यापन ---", "text": "# --- सत्यापन ---"}
+{"unnormalised": "", "normalised": "प्रिंट(\"\\n--- इक नमूने दी नॉर्मलाइज्ड फाइल दी पुष्टि करना ---\")", "text": "प्रिंट(\"\\n--- इक नमूने दी सामान्य फ़ाइल दी जांच करना ---\")"}
+{"unnormalised": "", "normalised": "कोशिश करो:", "text": "कोशिश करो:"}
+{"unnormalised": "", "normalised": "खोली करी ओस.पथ.जोइन(आउटपुट_नॉर्मलाइज्ड_फोल्डर, \"test1.txt\"), 'r', एनकोडिंग='utf-8') अस्से f:", "text": "os.path.join(output_normalized_folder, \"test1.txt\") ऐह् फ़ाइल खोल्लने आस्तै,  'r' (पढ़ने) मोड च ते 'utf-8' एनकोडिंग च, इयां करो:\n\nwith open(os.path.join(output_normalized_folder, \"test1.txt\"), 'r', encoding='utf-8') as f:"}
+{"unnormalised": "", "normalised": "print(f.read())", "text": "प्रिंट (f.read())"}
+{"unnormalised": "", "normalised": "पर FileNotFoundError नेईं मिली तां:", "text": "सिवाए FileNotFoundError दे:"}
+{"unnormalised": "", "normalised": "प्रिंट(\"सैंपल नॉरमलाइज्ड फाइल 'test1.txt' आउटपुट फोल्डर च नीं मिली।\")", "text": "प्रिंट (\"सैंपल नॉर्मलाइज्ड फाइल 'test1.txt' आउटपुट फोल्डर च नहीं लब्बी।\")"}
+{"unnormalised": "", "normalised": "मैं ठीक हूँ, धन्यवाद।\nतुसां कियां हो?\n```", "text": "मैं ठीक हूँ, धन्यवाद।\nतुसां कियां हो?\n```"}
+{"unnormalised": "", "normalised": "तैह दिलैह् याद रखनह् जोग्ग गल्लह् ऐह् ऐ जे मत्‍लब इक किस्म दा मकसद ऐ ते डिजाइन त्‍हाडा उस मकसद तक्‍क पुज्जने दा इक तरीका।", "text": "तैह दिलैह् याद रखनह् जोग्ग गल्लह् ऐह् ऐ जे मत्‍लब इक किस्म दा मकसद ऐ ते डिजाइन त्‍हाडा उस मकसद तक्‍क पुज्जने दा इक तरीका।"}
+{"unnormalised": "", "normalised": "1. **`num2words` लाइब्रेरी:** ऐह् कुदरती नंबर बदलने लेई इक ज़रूरी निर्भरता ऐ। पक्का करो जे तुस इंस्टॉल करदे ओ: `pip install num2words`।", "text": "1. **`num2words` लाइब्रेरी:** एह् कुदरती नंबर बदलने लेई इक ज़रूरी डिपेन्डेंसी ऐ। पक्का करो जे तुस एह् इन्स्टॉल कित्ता ऐ: `pip install num2words`।"}
+{"unnormalised": "", "normalised": "2.  **ऑपरेशन्स दा क्रम:** `re.sub` कॉलें दा क्रम बहु जरूरी ऐ।", "text": "2. **कार्रवाईएं दा क्रम:** `re.sub` कालें दा क्रम मता ज़रूरी ऐ।"}
+{"unnormalised": "", "normalised": "*   **खास चिन्ह पहलें:** `+/-`, `!=`, `<=`, `>=` गी आम चिन्हें जियां `@`, `&` थमां पहलें संभालेआ जंदा ऐ तां जे सही बदली करी जा सके।", "text": "+/- के बाद, `!=` के बाद, `<=` के बाद, `>=` के बाद @ &"}
+{"unnormalised": "", "normalised": "*   **`/` आह्ले-आह्ले विचिक्खा:** `/` दे नियम जटिल होंदे न। इंदी बरतौ खास तरतीब च होंदी ऐ: इकाईयां आह्ले अंश, फेर आम अंश, फेर शब्दें दे बिच्च \"या\", फेर मिले-जुले मामले आस्तै \"स्लैश\"। ऐह सिलसिला एह् यकीनी बनांदा ऐ जे मता मुनासिब मतलब लाई जा।", "text": "* **`/` Handling:** `/` दा बरताव बड़ा पेचीदा ऐ। एह् इक खास तरतीब च संभालेआ जंदा ऐ: यूनिटें आले अंश, फेर आम अंश, फेर शब्दें दे बश्कार \"या\", फेर मिलीजुली हालतें आस्तै \"स्लैश\"। एह् लगातारता एह् यकीन बनांदी ऐ जे सबसे मता मौजूँ मतलब लागू हो।"}
+{"unnormalised": "", "normalised": "*   **तारीखां:** `DD/MM/YYYY` गी अंश जां सिर्फ़ नंबर समझनें थमां बचनें आस्तै जल्दी प्रोसेस कीत्ता गेआ।", "text": "* **तारीखें:** `DD/MM/YYYY` गी अंशें जां सिर्फ़ नंबरें दे तौर पर समझे जाने थमां बचने आस्तै जल्दी संसाधित कीतियां गियां।"}
+{"unnormalised": "", "normalised": "*   **मुद्रा + नंबर + प्रत्यय:** एह् इक खास पैटर्न ऐ, इस करी एह् जल्दी संभालेआ जंदा ऐ।", "text": "* **मुद्रा + नंबर + प्रत्यय:** एह् इक खास नमूना ऐ, तांऽई इसगी पैह्ले ही निप्टाया जंदा ऐ।"}
+{"unnormalised": "", "normalised": "*   **गिनती वाले आखर:** आम गिनती बदलने से पहले संभालणे। `20K` `twenty K` नीं बनना चाहीदा ते फिर `twenty thousand`।", "text": "* **गिनती दे पाछलेतर:** आम गिनती बदलने थमां पैह्ले संभाले जाने। `20K` दा अनुवाद `twenty K` नहीं होना चाहिदा ते फिर `twenty thousand`।"}
+{"unnormalised": "", "normalised": "*   **यूनिटें:** आम नंबर बदलने थमां पहले हेंडल कीतियां जांदियां न। `10cm` दी थां `टेन cm` फेर `टेन सेंटीमीटर` नी बनना चाहिदा।", "text": "* **इकाईयां:** आम नंबर बदलने थमां पहले निबटाईयां जानीयां। `10cm` दस सेंटीमीटर नहीं बनना चाहिदा।"}
+{"unnormalised": "", "normalised": "*   **एक्रोनिम:** खास उपसर्गें दे बाद ते आम नंबरें थमां पैह्ले संभाले जांदे न ताकि गलत समझ तों बच जा सके। छांटना जरूरी ऐ।", "text": "* **सेंक्षिप्त रूप:** खास उपसर्गें दे बाद ते आम नंबरें थमां पहले संभाले जांदे न ताकि गलतफहमी तों बचेया जा सके। अपवाद जरूरी न।"}
+{"unnormalised": "", "normalised": "*   **आम अंक:** बाक़ी बचे दे अंकें गी फ़ड़ने लेई मता देर नाल लागू कीता जंदा ऐ, जिंदे बारै च होर खास नियमें च चर्चा नेईं कीती गेई ऐ।", "text": "* **आम अंक:** तुलनात्मक रूप कन्नै बाद च उनें बचे दे अंकें गी पकड़ने लेई लाए जांदे न जिना गी होर खास नियमें कन्नै कवर नेईं कीता गेआ ऐ।"}
+{"unnormalised": "", "normalised": "*   **गणितीय नोटेशन:** अखिर च लग्गेआ, जियां के मता सारे गणित दे हिस्से (जियां के `^`, `_`, `∫`, `Σ`, नंबर) शुरू च प्रतीक या नंबर दे नियमें कन्नै छुए जाई सकदे न। गणित-विशिष्ट रेगएक्स फेर उन्हां गी बोले जाने आह्ले रूपें च बन्नदा ऐ।", "text": "* **गणितीय नोटेशन:** आखरी च लाई, जिਵੇਂ के मता सारे गणित दे घटक (जिਵੇਂ के `^`, `_`, `∫`, `Σ`, नंबर) पिच्छलें प्रतीक जां नंबर दे नियमें कन्नै छुहे गे होंदे न। फिर गणित-विशिष्ट regex उनेंगी बोले दे रूपें च बंनें दा ऐ।"}
+{"unnormalised": "", "normalised": "3.  **रेगुलर एक्सप्रेशन: **", "text": "3. **रेगुलर एक्सप्रेशन:**"}
+{"unnormalised": "", "normalised": "*   `\\b`: शब्द सीमा दा इस्तेमाल पूरी शब्देयां/अंकें गी मिलाने ते होर शब्देयां जां पहचानकर्तारें दे अंदर आंशिक बदलाएं थमां बचने लेई बड्डे पैमाने पर कीता जंदा ऐ।", "text": "* `\\b`: पूरे शब्द/नंबरें गी मिलान करने ते होरें शब्दें या पहचानकर्ताएं च आंशिक बदलावें थमां बचने आस्तै शब्द सीमा दा बड़े पैमाने पर इस्तेमाल कीता जंदा ऐ।"}
+{"unnormalised": "", "normalised": "*   `(?:\\.\\d+)?`: ਗੈਰ-ਕੈਪਚਰਿੰਗ ਗਰੁੱਪ ਨੰਬਰਾਂ ਵਿੱਚ ਵਿਕਲਪਿਕ ਦਸ਼ਮਲਵ ਭਾਗਾਂ ਲਈ (ਜਿਵੇਂ ਕਿ `10` ਜਾਂ `10.5`)।", "text": "* `(?:\\.\\d+)?`: ਨੰਬਰਾਂ ਵਿੱਚ ਵਿਕਲਪਿਕ ਦਸ਼ਮਲਵ ਭਾਗਾਂ ਲਈ ਗੈਰ-ਕੈਪਚਰਿੰਗ ਗਰੁੱਪ (ਜਿਵੇਂ ਕਿ `10` ਜਾਂ `10.5`)।"}
+{"unnormalised": "", "normalised": "*   `re.IGNORECASE`: एह् यूनिट मिलान करने लेई बरती जंदी ऐ तां जे `KG`, `kg`, बगैरा गी पकड़या जाई सकै।", "text": "`re.IGNORECASE`: यूनिट मिलाने लेई इस्तेमाल कीता जंदा ऐ तां जे `KG`, `kg` वगैरा पकड़े जा सकन।"}
+{"unnormalised": "", "normalised": "4.  **`convert_number_to_words` हेल्पर:** `num2words` गी लपेटदा ऐ ते दशमलव संख्याएं आस्ते इक आसान जांच जोड़दा ऐ तां जे एह् सुनिश्चित कीता जाई सकै जे उन्हां गी बड़िया ढंग कन्नै संभाला जाई सकै (उदाहरण आस्ते, `12.5` `twelve point five` बनी जंदा ऐ)। एह् उस मामले गी बी संभालदा ऐ जित्थे `1.0` जां `1.00` गी मता सरल \"इक\" होना चाहिदा ऐ \"इक पॉइंट जीरो\" नेईं।", "text": "4. **`convert_number_to_words` हेल्पर:** `num2words` गी लपेटदा ऐ ते दशमलव नंबरें आस्तै इक आसान जांच जोड़दा ऐ ताकि एह् यकीनी बनाया जाई सकै जे उन्हां गी सौम्य तरीके कन्नै संभाला जा ऐ (उदाहरण आस्तै, `12.5` `बारह प्वाइंट पांच` बनी जंदा ऐ)। एह् उस मामले गी बी संभाल्दा ऐ जित्थें `1.0` जां `1.00` गी बस `इक` होणा चाहिदा ऐ नां जे `इक प्वाइंट जीरो`।"}
+{"unnormalised": "", "normalised": "5.  **तरतीब वाले नंबर:** `num2words(day, to='ordinal')` तारीख बदलने के लिए इस्तेमाल होंदा ऐ, जेह्दे कन्नै \"दसवां\", \"पहला\" वगैरा पक्का होंदा ऐ।", "text": "5. **ओर्डिनल नंबर:** `num2words(day, to='ordinal')` तारीख बदलने लेई बरती दा ऐ, जेह्ड़ा \"दसवां\", \"पहला\" वगैरह पक्का करदा ऐ।"}
+{"unnormalised": "", "normalised": "6.  **गलती संभाळना:** फाइल प्रोसेसिंग दे दौरान इक `try-except` ब्लॉक शामल कीता गेआ ऐ तां जे संभावित `IOError` जां सामान्य बनाने दे दौरान होर मुद्देयां गी पकड़ी सकन, मसले आली फाइलें गी लॉग करी सकन, ते ऐसे मामलेयां च मूल गी कॉपी करी सकन।", "text": "6. **गलती संभाळना:** फाइल प्रोसेसिंग दे दौरान संभावित `IOError` या नॉर्मलाइजेशन दे दौरान दूई मसले पकड़ने लेई इक `try-except` ब्लॉक शामिल कीता गेआ ऐ, दिक्क्त आह्ली फाइलें गी लॉग करना, ते एह्जे मामले च असली गी कॉपी करना।"}
+{"unnormalised": "", "normalised": "7.  **`unicodedata`:** हालांकि खुले तौर पर इस संस्करण च `normalize_text` लेई इस्तेमाल नेईं कीता जंदा (क्योंकि `re` इसदा ज्यादातर हिस्सा संभालदा ऐ, ते `unicodedata` टेक्स्ट कैनोनिकलाइजेशन लेई ज्यादा ऐ), पर एह् इक अच्छा उपकरण ऐ जेह्ड़ा याद रखने योग्य ऐ अगर ज्यादा उन्नत प्रतीक हैंडलिंग दी लोड़ होवे।", "text": "7. **`unicodedata`:** हालाँकि एह् `normalize_text` च साफ़ तौर पर इस्तेमाल नीं होंदा ऐ (क्यूँकि `re` ज्यादातर एह्दे कन्नै निबड़दा ऐ, ते `unicodedata` मते उन्नत प्रतीक हैंडलिंग लेई दिमाग च रखन लेई इक बढ़िया उपकरण ऐ जेकर लोड़ होवे तां।"}
+{"unnormalised": "", "normalised": "8.  **आउटपुट फ़ोल्डर मिररिंग:** `os.makedirs(output_folder, exist_ok=True)` ते `os.path.relpath` सही तरीके कन्नै डायरेक्टरी स्ट्रक्चर दुबारा बनांदे न।", "text": "8. **आउटपुट फोल्डर मिररिंग:** `os.makedirs(output_folder, exist_ok=True)` ते `os.path.relpath` सही ढंगै डायरेक्टरी स्ट्रक्चर दोबारा बनांदे न।"}
+{"unnormalised": "", "normalised": "एह् स्क्रिप्ट दस्से गेदे मानकीकरण दे कम्मैं गी मज़बूती कन्नै संभालेआ। याद रक्खो के मती तरा दे इनपुट मिसालें कन्नै पूरी चाल्लै कन्नै परखो!", "text": "एह् स्क्रिप्ट दस्से गेदे मानकीकरण दे कम्मैं गी मज़बूती कन्नै संभालेआ। याद रक्खो के मती तरा दे इनपुट मिसालें कन्नै पूरी चाल्लै कन्नै परखो!"}

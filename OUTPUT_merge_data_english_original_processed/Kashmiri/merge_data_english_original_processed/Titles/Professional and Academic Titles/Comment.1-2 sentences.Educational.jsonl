@@ -1,0 +1,385 @@
+{"unnormalised": "ڈاکٹر۔ پروفیسر۔ اڈوکیٹ۔", "normalised": "ٹھیک ہے، مےٚ چھُ سٲریوٕی نارمَلایَزیشن ضٲبطہٕ تہٕ \"Dr.\"، \"Prof.\"، تہٕ \"Adv.\" ہٕنٛز خاص ہینڈلنگھٕچ سمجھ۔ مےٚ کرٕ سُہ ضروٗر اِستِعمال یِمو ضروٗرتَن مُطٲبِق نَصھی ڈیٹٲ پَروسیس کَرنہٕ خٲطرٕ اَکھ پٲیٔتھَن سکرِپٹ لاگو۔", "text": "ڈاکٹر۔ پروفیسر۔ اڈوکیٹ۔"}
+{"unnormalised": "", "normalised": "یہ اوس اوس", "text": "یہ اوس اوس"}
+{"unnormalised": "", "normalised": "بنیادی منطق تہ طریقہ کار:", "text": "بنیادی منطق تہ طریقہ کار:"}
+{"unnormalised": "", "normalised": "1. **فٲئل سِسٹم ترٲوَرٕسَل:** بہٕ کَرو `os.walk` اِستِمال یِمَن اِنپُٹ ڈائِرٕیکٹَریَس مَنٛز تَمام فولڈَر تہٕ فایِل گٲیَر گٲیَر گژھَن۔", "text": "1. **فایِل سِسٹَم تَرَورَسَل:**  زٕ کَرو `os.walk` اِستعمال یِمَن اِنپُٹ ڈایِرَکٹریَس مَنٛز تَمام فولڈَر تہٕ فایِل دَر فایِل گَژھنَس خٲطرٕ۔"}
+{"unnormalised": "", "normalised": "2.  **Output Directory Mirroring:** Input-as manz chhi yi har folder-as, meh banaavav tami chhi ti `dataset_normalized` output directory-as manz ekis jor folder.", "text": "2. **آؤٹ پُٹ ڈائریکٹری مِرَرنگ:** اِن پُٹَس منٛز ہر اَکھ فولڈر خٲطرٕ، مےٲں بَنٲے وُن `dataset_normalized` آؤٹ پُٹ ڈائریکٹریَس منٛز اَکھ مُتَعلِقہٕ فولڈر۔"}
+{"unnormalised": "", "normalised": "۳. **فایل پروسیسنگ:**", "text": "۳. **فایِل پراسَسینگ:**"}
+{"unnormalised": "", "normalised": "*   اگر کٲشِہٕ فایِل چھُ اَکھ `.txt` فایِل، تَسِیُک مواد پَرنہٕ یِی، نارمل کَرنہٕ یِی، تہٕ پتہٕ اَکھ نَو `.txt` فایِلَس مَنٛز لؠکھنہٕ یِی mirrored آؤٹ پُٹ فولڈرَس مَنٛز۔", "text": "اگر فائل .txt فائل آسہِ، تو اَمُک مواد چھُ پرنہٕ یِوان، معمول کَرنہٕ یِوان، تہٕ پتہٕ چھُ سہُ نَو .txt فائلَس مَنٛز آئینہ دار آؤٹ پُٹ فولڈرَس مَنٛز لِکھنہٕ یِوان۔"}
+{"unnormalised": "", "normalised": "*   اگر کُنہہ فایِل چھُ نہ `.txt` فایِل، سہَ گَژھہِ براہِ راست نقلی آوُٹ پُٹ فولڈرَس مَنٛز منتقل کرنہٕ یِوان بغیر تبدِیلی کَرِتھ۔", "text": "اگر فائل چھہ نہ `.txt` فائل، یہِ کاپی گژھہٕ براہ راست آئینہ دار آؤٹ پُٹ فولڈر تہِ تبدیلی بغیر۔"}
+{"unnormalised": "", "normalised": "4.  **نارملایزیشن ترتیب (درست نتیجہ خاطر اہم):** نارملایزیشن اصول لاگو کرنہٕچ ترتیب اہم چھُ۔ زٕ عام طور زیادہ مخصوص اصول عام اصولن ہنزیو برونٹھ لاگو کرنہٕ ییہِ (مثلاً کرنسی + نمبر + لاحقہٕ عام نمبرن ہنز برونٹھ، یا مخصوص علامت عام عددی حرفی نمونن ہنز برونٹھ)۔", "text": "4. **نارملایزیشن آرڈر (درُست نتِیجہٕ خٲطرٕ ضَروری):** نارملایزیشن قٲعدٕ لاگو کرنہٕ ہُنٛد ترتیٖب اَہَم چھُ۔ عام طور پٲٹھؠ، بہٕ عام قٲعدن ہُنٛد مقابلے مَنٛز زیٛادٕ مُعیّن قٲعدٕ لاگو کرٲوُس (مثالے طور، کرنسی + نمبر + لاحقہٕ عام نمبرن کھۄتہٕ گۄڈٕ یا خاص علامتٕ عام الحَرُوفِی عددٕ نُمونَن کھۄتہٕ گۄڈٕ)۔"}
+{"unnormalised": "", "normalised": "*   رموز تہ خصوصی حرف۔", "text": "* علامت تہ خاص حرف."}
+{"unnormalised": "", "normalised": "*   رۄپۍ + نمبر + لاحقہ۔", "text": "رۄپَے + عدد + لاحقہٕ۔"}
+{"unnormalised": "", "normalised": "&nbsp;   خرما۔", "text": "* خَجور ۔"}
+{"unnormalised": "", "normalised": "* اعداد (یِمہٕ یُونِٹَن سٟتؠ شٲمِل چھِ، مَگر یُونِٹَن ہُنٛد پھَلاو خۄد بَعد یِہَوے)۔", "text": "* Dates (day, month, and year).\n\nHere's the text:\n\n5 apples\n100 oranges\n25 kg of rice\n1 January 2024"}
+{"unnormalised": "", "normalised": "*   एक्रोनियम।", "text": "* اَکْرونِمز ۔"}
+{"unnormalised": "", "normalised": "*   یُونِٹ۔", "text": "یونِٹس۔"}
+{"unnormalised": "", "normalised": "*   ریاضیاتی نشاندہی ۔", "text": "* ریاضِی نیشان۔"}
+{"unnormalised": "", "normalised": "*   خاص لاحقے مثال ڈاکٹر، پروفیسر، ایڈوکیٹ وغیرہ جلد یا خاص ریگولر ایکسپریشن سٟتؠ سنبھالنہٕ ییہِ تاکہ اعداد یا مخففات قٲعدن سٟتؠ غلط فہمی نہٕ ہووے۔", "text": "* खास लफ़्ज़ \"Dr.\", \"Prof.\", \"Adv.\" वग़ैरा शुरूअई दौर या खास रीजेक्स सा़थ इस्तेमाल करनैल ताकि नंबर या एैक्रोनम नियमन सानि गलतफहमी ना पैदा होय।"}
+{"unnormalised": "", "normalised": "* جنرل `/` ہینڈلنگ۔", "text": "عام `/` ہینڈلنگ۔"}
+{"unnormalised": "", "normalised": "*   فضا ہنز معمول مطابق حتمی مرحلہ۔", "text": "* خلا جگہ برابر کرُن آخری مرحلہ۔"}
+{"unnormalised": "", "normalised": "تفصیلی ضابطہ عمل آوری حکمت عملی:", "text": "تفصیلی ضابطہ عمل آوری حکمت عملی:"}
+{"unnormalised": "", "normalised": "1.  **نشانہٕ → زبانی شکل:**  بہٕ اِستِمال کرٕ حٲضر اَکھ لُغتھ عام نشانہٕ نشٲنَن ہٕنٛز زبانی شَکٕلَن مَنٛز تہٕ کرٕ بہٕ یِہٕ پٲٹھؠ یِتھ پٲٹھؠ دۄڈ تہٕ کرٕ بہٕ تبٲدُل۔ باقاعدٕ تعبیرات ہیٚو اِستِمال نشانہٕ نشٲنَن خٲطرٕ یِم آسٕن ظٲہِر مُختَلِف سٲتھیَن مَنٛز (مِثالے طور، `+/-`)۔", "text": "1. **نشانہٕ → زبانی شکل:** میہٕ اوس اِستِمال کَرن لُغتھ یَتھ مَنٛز عام نشانَن ہُنٛد زبانی شکلَن سٟتؠ مُطابقتھ آسان تہٕ میہٕ اوس مَتھنَس مَنٛز دٲر کھٲوَن، بَدلِی کَران۔ باقاعدٕ اظہار (Regular expressions) اِستِمال کَرنہٕ ییہِ تِمَن نشانَن خٲطِرٕ یِم مُختَلِف حَوالَن سٟتؠ ظٲہِر گَژھَن مُمکِن (مِثالے طور، `+/-`)۔"}
+{"unnormalised": "", "normalised": "فن یا دستکاری", "text": "فن یا کرافٹ"}
+{"unnormalised": "", "normalised": "*   `QA/Dev` -> `کیو-اے سلیش ڈی-ای-وی`", "text": "کیو-اے سلیش ڈی-ای-وی"}
+{"unnormalised": "", "normalised": "*   `2+2=4` ریاضیاتی علامتن ہند اصولن تحت سنبھالنہ ییہ۔", "text": "`2+2=4`"}
+{"unnormalised": "", "normalised": "کٲشِری مَنٛز تَرٕجُمہٕ کَرُن چھُ مُمکِن۔ مِہَربٲنی کَرِتھ اَصل نَوِشتَس مَنٛز تَغیٖر نَکَرُو۔", "text": "میٲنہٕ دِلچ آسہٕ ہِہَو تُم لَگَن\nتُم آسُن میٲنۍ زِندگی ہُنُد نور\nتُم میٲنِس دِلَس پِٚیٚادٕ دِیٚن\nتُم میٲنِس زِندگی ہُنُد سُکھ"}
+{"unnormalised": "", "normalised": "2.  **Acronyms → Hyphenated letters:**\n    Akh-za-raa-ti naam → Hyphen-lagith akh-kharaa ti naam:", "text": "2. **एक्रॉनिम्स → हाइफ़न वालॆ हर्फ़:**"}
+{"unnormalised": "", "normalised": "*   Regex: `\\b[A-Z]{2,}\\b` (ژٔے یا دو کھۄتہٕ زیٛادٕ لگاتار بٔڑٕ حَرف، اَکھ مُکَمَل لَفٕظ). مےٚ چھیٚ ضَرورَتھ یِہِز اِستِمال کَرنہٕ پؠٹھ پَرز کَرنہٕ خٲطرٕ `Dr.`, `Prof.`, `Adv.`.", "text": "مَگَر یِہِ دُنیا چُھ تِمَن ہِندِس یَتھہُنَس مُنَاسِب یِمَن اَتھ واتَن کُنہِ زَحمَتھ بَغَیر، پَریشانی بَغَیر، وَقَتھ گُذٲرُن؟"}
+{"unnormalised": "", "normalised": "*   بدلاو کرُن `'-'.join(match.group())` سٟتؠ۔", "text": "* بَدَلہ کَرُن یَتھ سٟتؠ `' - '.join(match.group())`."}
+{"unnormalised": "", "normalised": "3.  **Numbers → Spoken form:** یہ چھُ پیچیدہ۔ یَتھ پایی یُس کرُن چھُ نمُبرَن ہیُتو سپوکن فارمَس مَنٛز تبدیلی، تَس خٲطرٕ استِمال کَروُن `num2words` لائبریری، یۄس مختلف حٲلاتَن سٟتؠ چَھہٕ نمُبرَن ہُنٛد تبادُل کران۔ مخصوص حٲلاتَن خٲطرٕ، یِتھ کٔن \"آدھ کلوگرام\"، یَمہٕ آسہِ رَگَکس استِمال کرُن تآکہِ وُچھُن پَیٹرَن یِتھ کٔن `(\\d+)/(\\d+)\\s*(\\w+)`، تَس پَتہٕ یونِٹ آوے، تہٕ لاگو کرُن `num2words` فریکشنَس پیٚٹھ یا تبدیل کرُن `1/2` \"آدھ\" مَنٛز۔", "text": "3. **اعداد → زبانی شکل:** یہ پیچیدہ ہے۔ میں عام نمبر تبدیلی کے لیے `num2words` لائبریری کا استعمال کروں گا، جو مختلف سیاق و سباق کو سنبھالتا ہے۔ مخصوص صورتوں جیسے \"آدھا کلوگرام\" کے لیے، میں `(\\d+)/(\\d+)\\s*(\\w+)` جیسے پیٹرن کی شناخت کے لیے regex استعمال کروں گا جس کے بعد ایک یونٹ ہوگا، اور فریکشن پر `num2words` کا اطلاق کروں گا یا `1/2` کو \"آدھا\" میں تبدیل کروں گا۔"}
+{"unnormalised": "", "normalised": "*   عمومی اعداد: `num2words(number)`", "text": "* عمومی اعداد: `num2words(number)`"}
+{"unnormalised": "", "normalised": "*   کَسر: `1/2 kg` -> `نیم کلوگرام`, `3/4` -> `ترَے تقسیم چار` (ریاضی ہندل کرنہٕ, مگر تاریخن سٟتؠ گُمتھ گژھن نہٕ ہوش).", "text": "مُناسیب حِصہٕ: `1/2 kg` -> `آدھ کلوگرام`, `3/4` -> `تین تقسیم چٲر` (ریاضی کہِ ذریعہٕ ہینڈل کرنہٕ یِیہِ، مگر تاریخن سٟتؠ گَلطی گژھنہٕ پٲنٹھ احتیاط کرنہٕ پِرِتھ)."}
+{"unnormalised": "", "normalised": "4.  **عددی لاحقهٕ → وسعت یافتہٕ شکل:**", "text": "4. **اعدادي لاحقے → وسعت یافتہ شکل:**"}
+{"unnormalised": "", "normalised": "*   Regex: `(\\d+)([KMBT])\\b`", "text": "میں کیا مدد کر سکتا ہوں؟"}
+{"unnormalised": "", "normalised": "*   Map `K` ینِ `ہزار`, `M` ینِ `ملین`, `B` ینِ `بلین`, `T` ینِ `ٹریلین`.", "text": "* میپ `K` تہ `thousand`، `M` تہ `million`، `B` تہ `billion`، `T` تہ `trillion`."}
+{"unnormalised": "", "normalised": "مَنٛزُور چھُ یِہِ تَبدِیٖل کَرُن نمبر حِصہٕ اِستِمال کَرُن `num2words` ۔", "text": "یِکہِ سُہ دو ہزار اِکہیس منٛز آمُت۔"}
+{"unnormalised": "", "normalised": "5.  **सिक्का + नंबर + सोफिक्सा:**", "text": "5. **روپے + نمبر + لاحقہ:**"}
+{"unnormalised": "", "normalised": "*   Regex: `([$₹€£])(\\s*)(\\d+)([KMBT])?\\b`", "text": "میں یِتھ فقرٕ چھُ نہٕ کٔرِتھ ہاون۔"}
+{"unnormalised": "", "normalised": "*   رُوپَے نِشان، عَدد تہٕ لاحقٕ بَدَلو۔", "text": "* تبدیل کرنسی علامت، نمبر، تہ لاحقہ کرو۔"}
+{"unnormalised": "", "normalised": "6.  **تٲریخہٕ → قُدرتی زبٲنی شکل:**", "text": "6. **تأریخہٕ → قُدرَتی زَبانَن منٛز سَپۡدٕر زَبان :**"}
+{"unnormalised": "", "normalised": "*   خاطرہٕ بٲتھٕ ےَمن پیٹرنَن خٲطرٕ `DD-MM-YYYY`, `DD/MM/YYYY`, `YYYY-MM-DD`.", "text": "* `DD-MM-YYYY`, `DD/MM/YYYY`, `YYYY-MM-DD` خٲطرٕ ریجیکس پیٹرن۔"}
+{"unnormalised": "", "normalised": "*   `datetime.strptime` استمال کرُن parse کرنہٕ خاطرہٕ تہٕ پتہٕ `strftime` استمال کرُن custom logic سان ordinal numbers خاطرہٕ (مثال طور، \"tenth\", \"first\") تہٕ spoken year۔ فرض کرُن `DD/MM/YYYY` بطور ڈیفالٹ مشکوک `DD/MM/YYYY` خاطرہٕ۔", "text": "میں چھہِ `datetime.strptime` اِستِمال کرُن تہِ پتہٕ `strftime` کَرُن تِم خٲطِر یِمِیَن نمبرَن (مثلاً، \"دَہُم\"، \"پَہَلیُم\") تہِ زَبٲنی سٲل۔ فرض کَرُن `DD/MM/YYYY` ہیُچھُ اِبتِدٲئی خٲطِر غَیر وَٲضِح `DD/MM/YYYY`۔"}
+{"unnormalised": "", "normalised": "7.  **یُونِٹ → بُولَن وٲلؠ شَکل:**", "text": "7. **یُونِٹس → زبانی شکل:**"}
+{"unnormalised": "", "normalised": "* ریجیکس لبہ `(\\d+)(\\s*)(cm|mm|m|km|g|kg|mg|ml|l|°C|...)`", "text": "Regex chu laban `(\\d+)(\\s*)(cm|mm|m|km|g|kg|mg|ml|l|°C|...)`"}
+{"unnormalised": "", "normalised": "*   نقشو یونِٹَن مکمل لفظن منٛز (مثلاً، `cm` اوسُّ سینٹی میٖٹَر، `°C` اوسُّ ڈِگری سیلسِیَس)۔", "text": "یَمن نقشس منٛز چھِ یونِٹ پُورٕن لَفظَن منٛز بَدَلنہٕ (مِثالے طور، `cm` چھُ `centimeter` بَدَلنہٕ، `°C` چھُ `degree celsius` بَدَلنہٕ)۔"}
+{"unnormalised": "", "normalised": "*   پیوستہ نمبرس پیٹھ نمبر بدلنا لاگو کریو ۔", "text": "* پتہ نمبر کنورژن کرُن امہ کھوتہ پیٚر نمبرس پٮ۪ٹھ."}
+{"unnormalised": "", "normalised": "8.  **ریاضیاتی اشارات → زبانی شکل:** یہ ضرورت چھ ریگیکس تہ ممکنہ طور اتھ اکہ نننہ پارسرک ضرورت چھ تاکہ زیادہ پیچیدہ اظہارات خٲطرٕ۔", "text": "8. **ریاضیاتی علامت → زبانی شکل:** یہ چھہِ ریجیکس ہٕنٛز اَکھ پیچیدہ سیٹ تہٕ ممکنہ طور اَکھ چھوٹا پارسر لوٗڈان زِیادٕ پیچیدہ اظہارن خٲطرٕ۔"}
+{"unnormalised": "", "normalised": "*   `x^2`: `x یُس اوس مربع` (regex `(\\w)\\^2`)", "text": "x²: x مربع"}
+{"unnormalised": "", "normalised": "*   `x^3`: `x کیوبڈ` (regex `(\\w)\\^3`)", "text": "x^3: x کیوبڈ"}
+{"unnormalised": "", "normalised": "*   `x^n`: `x چھُ n ہُنٛد طاقت` (regex `(\\w)\\^(\\w+)`)", "text": "xⁿ: x-as n-uyī taaqat"}
+{"unnormalised": "", "normalised": "*   `x_i`: `x سب i` (regex `(\\w)_(\\w+)`)", "text": "ایکس سب آئ"}
+{"unnormalised": "", "normalised": "*   `√x`: `ایکسُک مربع جزر` (regex `√(\\w+)`)", "text": "√x: x ہند مربع جزر"}
+{"unnormalised": "", "normalised": "*   `∫`:  انٹیگرل", "text": "یہِ متن چھُنہٕ میٲژھ ہؠچھنہٕ آمُت، اَمہٕ خٲطرٕ نہِ میٲے ترجمہٕ کَرُن ممکن۔"}
+{"unnormalised": "", "normalised": "*   `Σ`: `جمع کرنہٕ`", "text": "Σ: جمع"}
+{"unnormalised": "", "normalised": "*   Fractions: `3/4` -> `ژۄن تہِ چُھہٕ تَرٕہٕ قسمتَس منٛز ژۄر` (regex: `(\\d+)\\/(\\d+)`, but ensuring it's not a date).", "text": "تَقسیٖم شُدٕ گٔیہِ ترٛے ؤنٛدؠ ژور"}
+{"unnormalised": "", "normalised": "یِہِ زٲنؠو۔", "text": "اَگر تُمِی زِنٛدٕگی ہُنٛد مَقصَد لَبھَن چِھہُہ،\nتَوُہِی اِتِنْیَا مُشْکِل تَلَاش کَرَنْیَا ضَرُورَتھ نَے،\nاَتھ چُھہُو تُمْہِی مَنٛزِی،\nتُمِی ہیُونْ چُھہُو\nتُمِی ہیُونْ کَرْنوُ چُھہُو\nتَوُہِی سَپُن لَبھَن ہُون چُھہُو۔"}
+{"unnormalised": "", "normalised": "9.  **آؤٹ پُٹ فارمیٹ:**", "text": "9. **آؤٹ پُٹ فارمیٹ:**"}
+{"unnormalised": "", "normalised": "*   آخر پؠٹھ جگہیں یَکجاٖے بَناو: `re.sub(r'\\s+', ' ', text).strip()`.", "text": "يِمَن دۄپٲر ہِمیشہٕ دِلچسپ آسَن۔"}
+{"unnormalised": "", "normalised": "10. **فایِل ہینڈلنگ:** `os.walk`, `os.makedirs`, `shutil.copy2`.", "text": "10. **فایِل ہینڈلنگ:** `os.walk`, `os.makedirs`, `shutil.copy2`."}
+{"unnormalised": "", "normalised": "مخصوص سابقہٕ ہینڈلنگ:", "text": "مخصوص سابقہٕ ہینڈلنگ:"}
+{"unnormalised": "", "normalised": "ڈاکٹر۔، پروفیسر۔، ایڈوکیٹ۔", "text": "ڈاکٹر۔\nپروفیسر۔\nایڈووکیٹ۔"}
+{"unnormalised": "", "normalised": "بیا اوس شۆروٗع کَرٕنۍ Python سکرِپٹ بَناوُن۔", "text": "بیا اوس شۆروٗع کَرٕنۍ Python سکرِپٹ بَناوُن۔"}
+{"unnormalised": "", "normalised": "The quick brown fox jumps over the lazy dog.\n```\nزٕرِ تُرُیُک گَژھ وُچھُنٕہ کُتھ پٲٹھؠ سُست کُتے پؠٹھ۔", "text": "The quick brown fox jumps over the lazy dog.\n```\nزٕرِ تُرُیُک گَژھ وُچھُنٕہ کُتھ پٲٹھؠ سُست کُتے پؠٹھ۔"}
+{"unnormalised": "", "normalised": "امپورٹ اوس", "text": "امپورٹ اوس"}
+{"unnormalised": "", "normalised": "اِمپورٹ رِی", "text": "اِمپورٹ رِی"}
+{"unnormalised": "", "normalised": "شُتِل دَرآمَد کَرُن۔", "text": "شُتِل دَرآمَد کَرُن۔"}
+{"unnormalised": "", "normalised": "مِنز تاريخي وقت", "text": "مِنز تاريخي وقت"}
+{"unnormalised": "", "normalised": "نُم2ورڈز درآمد کرن", "text": "نُم2ورڈز درآمد کرن"}
+{"unnormalised": "", "normalised": "امپورٹ یونیکوڈ ڈیٹا # یونیکوڈ علامت سنبھالن خاترہ", "text": "امپورٹ یونیکوڈ ڈیٹا # یونیکوڈ علامت سنبھالن خاترہ"}
+{"unnormalised": "", "normalised": "ڈ۬یفائن آرڈینَل صَفَکِس (د۬یے):", "text": "ڈ۬یفائن آرڈینَل صَفَکِس (د۬یے):"}
+{"unnormalised": "", "normalised": "\"\"\"اِکہٕ عَدَد خٲطرٕ اۄرڈنَل لاحقٕ وَاپَس کَرَن.\"\"\"", "text": "\"\"\"رقمہٕ خٲطرٕ اِسمٕ اشارہٕ لاحقہٕ واپس کرنہٕ چھُ یوان۔\"\"\""}
+{"unnormalised": "", "normalised": "اگر 10 <= day % 100 <= 20 ہوے:", "text": "اگر 10 <= day % 100 <= 20 چھُ:"}
+{"unnormalised": "", "normalised": "وٲپَس \"th\"", "text": "تھ"}
+{"unnormalised": "", "normalised": "بِہٕ نَہٕ:", "text": "بیاکھِ صورتس منز:"}
+{"unnormalised": "", "normalised": "{1: 'st', 2: 'nd', 3: 'rd'}.get(day % 10, 'th') واپس کرِ۔", "text": "رِٹرن {1: 'st', 2: 'nd', 3: 'rd'}.get(day % 10, 'th')"}
+{"unnormalised": "", "normalised": "دف ترٛٲوُن اددد نمبر لفظن منز (نمبر_سٹر):", "text": "دف ترٛٲوُن اددد نمبر لفظن منز (نمبر_سٹر):"}
+{"unnormalised": "", "normalised": "\"\"\"اَکھ عَدَد اَستُرِنگ تِمِس مَنٛز زَبٲنِی شَکَلَس مَنٛز تَبدِیٖل کَرَن چھُ، اَیوَز کِسَن ہٕنٛز نِگَہبٲنِی کَرَن چھُ۔\"\"\"", "text": "\"\"\"اَکھ عَدَد سُٹِرِنگ تَبدِیل چھُ یِوان اَپُنِی مَطلَبِی شَکَلَس مَنٛز، سَیَنٛٹِٛس حَالَتَن ہِنٛدِی نِگَرٲنِی کَرَنٛدِس سٟتِی.\"\"\""}
+{"unnormalised": "", "normalised": "کوشش کرنہٕ یِیہِ:", "text": "کوشش کرِ:"}
+{"unnormalised": "", "normalised": "اگر `.` آسہ number_str منٛز:", "text": "اگر نمبر_سٹرنگس منز چھُ '.' موجود:"}
+{"unnormalised": "", "normalised": "# اگر num2words خودبخود سٲری حالتن خٲطرٕ یِہ نہ کَرتھ تہٕ، اعشاریہٕ الگ پٲٹھؠ سَمبھال", "text": "اگر num2words قدرتی طورس سٲری معاملاتن خٲطرٕ نہ کرِ تٕہ اعشاریہ رقمن ہٕندؠن الگ الگ معٲملہٕ سٟتؠ سمھالو۔"}
+{"unnormalised": "", "normalised": "integer_part, decimal_part = number_str.split('.')", "text": "integer_part, decimal_part = number_str.split('.')"}
+{"unnormalised": "", "normalised": "integer_words = num2words(int(integer_part))", "text": "integer_words = num2words(int(integer_part))"}
+{"unnormalised": "", "normalised": "decimal_words = 'point ' + ' '.join(num2words(int(d)) for d in decimal_part)", "text": "یہِ عشاریہٕ الفاظ چھُکھ: 'پوائنٹ ' + ' '.join(num2words(int(d)) yim cha یسار حیسب تقسیم ہنٛد حصہ"}
+{"unnormalised": "", "normalised": "یُس فِیچَر چھُ \"{integer_words} {decimal_words}\"", "text": "वपस कर \"{integer_words} {decimal_words}\""}
+{"unnormalised": "", "normalised": "اَگر نہٕ:", "text": "بیاکھِ صورتس منز:"}
+{"unnormalised": "", "normalised": "رِٹَرن num2words(اِنٹ(نَمبَر_سٹَر))", "text": "پُونُم number_str اِنتَس مُنٛزِ تَبدِیٖل کَرُن تہَ num2words(int(number_str)) واپس کَرُن۔"}
+{"unnormalised": "", "normalised": "مگر ویلیو ایرر:", "text": "کِنهٕ ValueError:"}
+{"unnormalised": "", "normalised": "یہ نمبر_سٹر واپس کرو # اگر تبدیلی ناکام ہو جائے تو اصل واپس کرو", "text": "وۄپُس نمبر_سٹرنگ واپس # اگر تبديل ناکام گژھہٕ اصل واپس"}
+{"unnormalised": "", "normalised": "دفین نارملایز_ٹیکسٹ (ٹیکسٹ):", "text": "دفین نارملایز_ٹیکسٹ (ٹیکسٹ):"}
+{"unnormalised": "", "normalised": "مطلب چھُ یہِ زن تہندِ لُکھہٕ کَرنَس منز مدد کرُن۔\n\"\"\"", "text": "\"\"\"\n\"\"\""}
+{"unnormalised": "", "normalised": "اِنتِچھاون تہَمیِم تَماَم نَارْمَلایَزیشَن قۄاعِد اِنپُٹ تَکسٹَس پؠٹھ۔", "text": "انپُٹ متن پؠٹھ چھُ سٲری ضٲبطہٕ کارروٲی لاگو کرنہٕ یوان۔"}
+{"unnormalised": "", "normalised": "مطلب چھُ یہِ زن تہندِ لُکھہٕ کَرنَس منز مدد کرُن۔\n\"\"\"", "text": "\"\"\"\n\"\"\""}
+{"unnormalised": "", "normalised": "# --- 0. خٲص اِبتِدٲیی ہینڈلِنگ (ڈاکٹر، پروفیسر، ایڈوائس) ---", "text": "# --- 0. خاص لاحقہ ہینڈلنگ (ڈاکٹر، پروفیسر، ایڈوکیٹ) ---"}
+{"unnormalised": "", "normalised": "# یِمَن سٲتھ چھُ یِمنن تہِ چھُ سَمبٔھالنہٕ یِوان، یِمَن نِیٚن نہٕ گٔژھِن اِختِصٲری شَکلَن مَنٛز دِیٚکٕھنٕ.", "text": "یہ چھُ تیم سنبھالنہٕ یوان یِمن تیمس طور تھون نہٕ گژھَن۔"}
+{"unnormalised": "", "normalised": "# کُنہہ خاص تبدِیلی کرنُک ضَرورَتھ نَہیٖ، صِرف یِہٕ یَقینی بَناوَن چھُ زِ باقٕی قَواعِد یِمَن تبدیل نَہیٖ کَرَن۔", "text": "# ضرورتھ نہِ کانہِ صریح تبدیلی کرنہٕ چھیہٕ، صرف یٕہِ یقٔینی بناوَن چھُ زِ باقی قٔواعد انہن تبدیل نہِ کرَن۔"}
+{"unnormalised": "", "normalised": "# --- 1. Symbols → Spoken form ---", "text": "# --- 1. رمز ← زبانی شکل ---"}
+{"unnormalised": "", "normalised": "# زِیادہ مُتَعلِق علامتَن ہُنٛد بَدَل گَرَن سَبقہٕ", "text": "زٕچہ خاص علامتن ہنٛد تبادلہ گژھن تہٕ"}
+{"unnormalised": "", "normalised": "یہِ چھُ text = re.sub(r'\\+/-', 'plus or minus', text)", "text": "`text = re.sub(r'\\+/-', 'plus or minus', text)` ترجمہ چھُ یِہ:\n\n`text = re.sub(r'\\+/-', 'plus or minus', text)`"}
+{"unnormalised": "", "normalised": "text = re.sub(r'!=', ' برابر نہ اوسُن', text)", "text": "=! ین برابر"}
+{"unnormalised": "", "normalised": "text = re.sub(r'<='، 'کم یا برابر اوسُن', text)", "text": "یِہ متن چھُ 'less than or equal to' سٟتؠ بَدَلوٚنہٕ یِوان۔"}
+{"unnormalised": "", "normalised": "text = re.sub(r'>=', 'زٲدِ تہٕ برٲبر', text)", "text": "متن = re.sub(r'>=', 'گریٹر دین آر ایکول ٹو', متن)"}
+{"unnormalised": "", "normalised": "```kashmiri\n    text = re.sub(r'==', 'equals', text)\n    ```", "text": "یہِ متن چھُ آسان کٔرُن ترجمہٕ: re.sub(r'equals', 'یہِ چھُ برابر', متن)"}
+{"unnormalised": "", "normalised": "`text = re.sub(r'->', 'maps to', text) # Common in math/programming context` \n    `text = re.sub(r'->', 'maps to', text) # عام ریاضی/پروگرامنگ تناظرن منز`", "text": "يُس ؤنُن بدلأوُن \"`->`\" سٟتؠ \"`maps to`\"."}
+{"unnormalised": "", "normalised": "symbol_map = {", "text": "symbol_map = {"}
+{"unnormalised": "", "normalised": "'#': 'ہیش',", "text": "\\#: हेश"}
+{"unnormalised": "", "normalised": "'@': 'ایٹ',", "text": "'@': 'منز'"}
+{"unnormalised": "", "normalised": "'&': 'अंड',", "text": "'&': 'تہٕ' ,"}
+{"unnormalised": "", "normalised": "'*': 'اَستَرِسٕک',", "text": "* : تارہ نشان"}
+{"unnormalised": "", "normalised": "'~': 'تقریباً',", "text": "'~': तक़रीबन,"}
+{"unnormalised": "", "normalised": "'≠': 'برابر نہ چھُ',", "text": "'≠': 'برابر نہ چھُ',"}
+{"unnormalised": "", "normalised": "'≤': 'نِس بَرابَر یا کم تر',", "text": "'≤': 'چھوٹ یا برابر',"}
+{"unnormalised": "", "normalised": "'≥': 'بٔڑا یا برابر',", "text": "'≥': 'زیٚاد یا برابر'"}
+{"unnormalised": "", "normalised": "'∫': 'انٹیگرل',", "text": "'∫': 'انٹیگرل',"}
+{"unnormalised": "", "normalised": "'∑': 'جمع',", "text": "'∑': 'جمع',"}
+{"unnormalised": "", "normalised": "'π': 'پی',", "text": "'π': 'پی',"}
+{"unnormalised": "", "normalised": "'√': 'مُربَع جَڑ',", "text": "'√': 'جذر المربع'"}
+{"unnormalised": "", "normalised": "'%': 'فیصَد', # لگ بھگ ~ پتہ، عام عداد پتہ", "text": "'٪': 'فیصد', # تقریباً پتہ لگنے کے بعد، عام نمبروں سے پہلے"}
+{"unnormalised": "", "normalised": "'°': 'ڈگری', # گِنتیَن ہُنٛد پَتھَر", "text": "'°': 'ڈِگری', # Before general numbers"}
+{"unnormalised": "", "normalised": "'€': 'یورو',", "text": "'€': 'یورو',"}
+{"unnormalised": "", "normalised": "'£': 'پونڈ',", "text": "پونڈ"}
+{"unnormalised": "", "normalised": "}", "text": "}"}
+{"unnormalised": "", "normalised": "# ترتیٖب چھُ کُنَن ہُنٛد لمٲیی مُطٲبِق تہٕ کمٲیِش ترتیبَس مَنٛز تاکہِ جزوی مُطٲبقتَن ہُنٛد اِجتناب کرنہٕ یِیِ (مِثالے طور، '≠' پَتہٕ '≠')", "text": "# ترٚتیب دِییو کیٖز لمبٲیی تامُل نسلی ترتیبَس منز تاکہ جزوی مٲثٔل نہ ٲیسن (مثلاً '≠' پتہٕ '≠')"}
+{"unnormalised": "", "normalised": "یَتھ علامتھ، زبانی شکل چھِ ترتیب دِنہٕ علامتھ میٖپُکِس آئٹمسُکِس ، کُن چھُ لیٚمڈا آئٹم: لین (آئٹم[0])، رِورس=صحیح:", "text": "یُس علامت، بولنہٕ آمُت شکلہٕ تہٕ sorted(symbol_map.items(), key=lambda item: len(item[0]), reverse=True) منٛز:"}
+{"unnormalised": "", "normalised": "text = text.replace(symbol, spoken_form)", "text": "متن = متن .replace (نشان، زبانی شکل)"}
+{"unnormalised": "", "normalised": "#  / سنبھالن", "text": "# ہینڈلنگ '/'"}
+{"unnormalised": "", "normalised": "# ترجیح:", "text": "# ترجیح:"}
+{"unnormalised": "", "normalised": "# 1. تقسیم کرنہٕ یوان (اعدادن منز/ریاضی)", "text": "تقسیم کرنہ (اعدادن منز/ریاضی)"}
+{"unnormalised": "", "normalised": "# 2. یا (لفظن درمیان)", "text": "# 2. یا (لفظن منز)"}
+{"unnormalised": "", "normalised": "# 3. سلیش (مِلِتھ کیٚس، اِختِصار، باقٕے)", "text": "# ३. स्लैष (मिश्रित केस, संक्षिप्त रूप, बाक़ी)"}
+{"unnormalised": "", "normalised": "# 1. میتھ وچ فریکشن یا تقسیم: 3/4 -> ترے تقسیم بائے چار، 1/2 -> اکہ تقسیم بائے دو", "text": "# 1. رياضي منٛز fractions یا division: 3/4 -> ترے تقسیم کرنہٕ آمُت ژور سٟتؠ، 1/2 -> اَکھ تقسیم کرنہٕ آمُت دوٚ سٟتؠ"}
+{"unnormalised": "", "normalised": "# یہِ مضبوط گژھنُک لازِم چھُ، یِمن یقینی بَناوَن زِ یہِ تٲریٖخ نَہ چھُ۔", "text": "# یہِ چیز پَکی ہووُن لازِم چھُ، یَقیٖنی بَنٲوُن زِ یہِ تاریخ نَہ چھُ۔"}
+{"unnormalised": "", "normalised": "# 1/2 خٲطرٕ خاص یِمِی \"half\" یُونِٹ تامۍ (قٲعدٕ 3/7 interplay)", "text": "# خٲص یِمِس خٲطرٕ 1/2 چھُ \"نیٖم\" ییلہٕ اَمہِ پَتہٕ یِہِہ کُنہِ یونِٹ (قٲعدٕ 3/7 ہُنٛد تَعٲمُل)"}
+{"unnormalised": "", "normalised": "def replace_fraction_with_unit(match):", "text": "یَے replace_fraction_with_unit(match):"}
+{"unnormalised": "", "normalised": "num_str = match.group(1)\n        \n        num_str = match.group(1)", "text": "نم_ایس ٹی آر = میچ۔ گروپ (1)"}
+{"unnormalised": "", "normalised": "denom_str = match.group(2)", "text": "denom_str = میچ.گروپ(2)"}
+{"unnormalised": "", "normalised": "یُونِٹ = میچھ۔گرُوپ(3) اگر میچھ۔گرُوپ(3) آسی تٕہ اِکیاہ ''", "text": "unit = match.group(3) agar match.group(3) chu ya na, magar ''"}
+{"unnormalised": "", "normalised": "اگر num_str برابر چھُ '1' تہٕ denom_str برابر چھُ '2':", "text": "اگر num_str == '1' تہٕ denom_str == '2':"}
+{"unnormalised": "", "normalised": "return f\"نِصف {unit}\"", "text": "वोप्य نیم {unit}"}
+{"unnormalised": "", "normalised": "اَگر نہٕ:", "text": "بیاکھِ صورتس منز:"}
+{"unnormalised": "", "normalised": "return f\"{convert_number_to_words(num_str)} تقسیم کرنہ {convert_number_to_words(denom_str)} سیتۍ {unit}\".strip()", "text": "وُچھو ف `{convert_number_to_words(num_str)} تَقسیٖم بائے {convert_number_to_words(denom_str)} {unit}`۔ سَاْف کَرُن۔"}
+{"unnormalised": "", "normalised": "# X/Y ہنٛد نمونہٕ، مثال کہ طور، 1/2 کلوگرام، 3/4 میٖٹر", "text": "# नमुना X/Y इकाई खतिर, उदाहरण خاطر, 1/2 किलो, 3/4 मीटर"}
+{"unnormalised": "", "normalised": "```\n    text = re.sub(r'\\b(\\d+)/(\\d+)\\s*(cm|mm|m|km|g|kg|mg|ml|l|C|F|K|hour|day|week|month|year)s?\\b',\n    ```", "text": "تَرجُمہٕ کَرُن مُشکِل چھُ، یِمہِ خَصُوصی اِصطلاحات استِمال گَژھن۔"}
+{"unnormalised": "", "normalised": "replace_fraction_with_unit, text, flags=re.IGNORECASE)", "text": "replace_fraction_with_unit, text, flags=re.IGNORECASE)"}
+{"unnormalised": "", "normalised": "# پیٹرن X/Y خاطرہ خاص یونٹ بغٲیر، مثٲل کہ، 3/4", "text": "# X/Y-ਹੰਦਸਾ ਯੇਤਿ ਕਾਂਹ ਖ਼ਾਸ ਯੂਨਿਟ ਨਾ ਹੋਯੁ, ਮਿਸਾਲ ਖਾਤਰ, 3/4"}
+{"unnormalised": "", "normalised": "تھکسٹ = ری۔سب (آر'\\\\ب(\\d+)/(\\d+)\\\\ب',", "text": "تَرجُمہٕ چھُ یہِ:\nre.sub(r'\\b(\\d+)/(\\d+)\\b',"}
+{"unnormalised": "", "normalised": "lambda m: f\"{convert_number_to_words(m.group(1))} تقسیم {convert_number_to_words(m.group(2))}\"", "text": "lambda m: f\"{convert_number_to_words(m.group(1))} تقسیم کرنہ {convert_number_to_words(m.group(2))} سیتھ\","}
+{"unnormalised": "", "normalised": "تَمتُہ)", "text": "منزلہٕ چھُ خٲلی"}
+{"unnormalised": "", "normalised": "# 2.  لفظن منز \"یا\" (مثلا، فن/دستکاری)", "text": "# 2. \"or\" لفظن منز (مثلا، آرٹ/کرافٹ)"}
+{"unnormalised": "", "normalised": "```\n    text = re.sub(r'(\\b\\w+)\\/(\\w+\\b)', r'\\1 یا \\2', text)\n```", "text": "مضامین تہِ ترمیم کرُن چھُ ییتھ ہی: `text = re.sub(r'(\\b\\w+)\\/(w+\\b)', r'\\1 or \\2', text)`"}
+{"unnormalised": "", "normalised": "# 3. مِشرت معاملات یا اِختصارَن خٲطرٕ \"سلیش\" (مثلا QA/Dev, R/D)", "text": "# 3. \"slash\" खातर रलतॅन मामलाति या मुख़्तसर लफ़ज़न (मसलन, QA/Dev, R/D)"}
+{"unnormalised": "", "normalised": "# یہ تہٕ چھُ باقٕی بچٕن والؠ سلاشَن ہُنٛد تعاقُب کران یِمَن تامَن یا کَسر نا چھِن", "text": "# یہ چھُ پَکان تَمام تَمام وُن سُہُیو زِ یِم تٲریخ یا کَسٕر نا ہَن"}
+{"unnormalised": "", "normalised": "متن = ری۔سب.sub (r'([A-Za-z0-9]+)\\/([A-Za-z0-9]+)', r'\\1 slash \\2', متن)", "text": "text = re.sub(r'([A-Za-z0-9]+)\\/([A-Za-z0-9]+)', r'\\1 slash \\2', text)"}
+{"unnormalised": "", "normalised": "# --- 2. Acronyms → Hyphenated letters ---\n    # --- 2. Acronyms → Hyphenated letters ---", "text": "# --- 2. Acronyms → Hyphenated letters ---\n# --- २. Acronyms → Hyphenated letters ---"}
+{"unnormalised": "", "normalised": "# Dr., Prof., Adv. تہ عام کرٛنسی کوڈ (مثلاً USD، EUR، INR) چھڈِیو", "text": "ڈاکٹر، پروفیسر، ایڈوائزر تہ عام کرنسی کوڈ (مثلاً یو ایس ڈی، یورو، آئی این آر) چھڈو۔"}
+{"unnormalised": "", "normalised": "# میٲنہٕ توٲریٖخ", "text": "مہَ کَر تُہؠ یہِ تَرجُمہٕ ۔"}
+{"unnormalised": "", "normalised": "# یہ ریجیکس چھُ مشکل۔ یمو کریو کوشش بڈ حرفن ہند سلسلن ملٲوُن۔", "text": "یہ ریجیکس چھُ مشکل۔ آو بالائی حرفن ہنز لڑی میچ کرنہ کی کوشش کرِو۔"}
+{"unnormalised": "", "normalised": "# لفظ حد لٲگؠ بٲژھ نؠشُن، لفظ حد لٲگؠ آڈھ نؠشُن۔", "text": "# لفظ حد خاطر تراوان، لفظ حد خٲطرٕ واتُن۔"}
+{"unnormalised": "", "normalised": "# عام اصطلاحات خارج کرو۔", "text": "# عام اصطلاحات خارج کریو ۔"}
+{"unnormalised": "", "normalised": "excluded_acronyms = {'DR', 'PROF', 'ADV', 'USD', 'EUR', 'GBP', 'INR', 'K', 'M', 'B', 'T'}", "text": "موٗجوب کَرنہٕ آمُت اَکرونِمَن ہُنٛد فِہْرِست چھُ یہِ: {'DR', 'PROF', 'ADV', 'USD', 'EUR', 'GBP', 'INR', 'K', 'M', 'B', 'T'}"}
+{"unnormalised": "", "normalised": "def replace_acronym(match):", "text": "def replace_acronym(match):"}
+{"unnormalised": "", "normalised": "acronym = match.group(0)", "text": "اکرانم = میچ۔گروپ(0)"}
+{"unnormalised": "", "normalised": "اگر اَکھر نامہ چھُنہہ اِس اَکھر نامہٕن منٛز یِمَن دۄر کَرنہٕ آمُت چھُ:", "text": "اگر اَیکرونیم اِکسکلُڈِڈ اَیکرونِمز منٛز آسہِ:"}
+{"unnormalised": "", "normalised": "واپس کریو اِختِصار", "text": "ریٹرن اَیکرونیم"}
+{"unnormalised": "", "normalised": "# کیا چھُ یِہٕ اِمکانی طور پَہ اَکہِ یونِٹ مِثل \"KG\"، \"CM\" وَغَیرہٕ یَژ (یِم چھِ بَعدَس مَنٛز یونِٹ رول نَزَر اَندَر کَرنہٕ)", "text": "# کیا چھُ یی چھان بین کرُن کہِ یہِ آسہِ کتھِھین 'کے جی'، 'سی ایم' وغیٖرہِ آسُن۔ (یِمُک حِساب پَتہٕ یُنِٹ رُلدن ہیندِس ذٔریعہٕ وچھنہٕ گَیوے)"}
+{"unnormalised": "", "normalised": "اگر acronym ہنز لمبائی 3 یا کم آسہ تہِ acronym.lower() آسہ یِمَن منز [ 'cm', 'mm', 'm', 'km', 'g', 'kg', 'mg', 'ml', 'l', 'c', 'f', 'k']:", "text": "اگر ینکی (acronym) ہُنٛد طُول ۳ یا تتھ کَم آسہٕ تہٕ یِہٕ (acronym.lower()) اِنٛگریٖزی لیکھنَس مَنٛز یِمن کِن آسہٕ: ['cm', 'mm', 'm', 'km', 'g', 'kg', 'mg', 'ml', 'l', 'c', 'f', 'k']:"}
+{"unnormalised": "", "normalised": "واپس کریو اَکرونیم # یونِٹ قاعدٕے سٕنٛدؠن سنبھالَن دِیو", "text": "واپس کر اَکْرونِم # چَھدِ یُونِٹ رول مُعامَلہٕ کَرَن"}
+{"unnormalised": "", "normalised": "حاصل کورُن چھُ ' - '.join(list(acronym))", "text": "واپس کریو ' - '.join(list(acronym))"}
+{"unnormalised": "", "normalised": "text = re.sub(r'\\b[A-Z]{2,}\\b', replace_acronym, text)", "text": "text = re.sub(r'\\b[A-Z]{2,}\\b', replace_acronym, text)"}
+{"unnormalised": "", "normalised": "# --- 6. تٲریخَن → فطری زبانی شکل ---", "text": "# --- 6. تاریخہٕ → فطری زبانی شکل ---"}
+{"unnormalised": "", "normalised": "# ترجیح دیو یی یی یی - ایم ایم - ڈی ڈی", "text": "# ترجیح دیو YYYY-MM-DD"}
+{"unnormalised": "", "normalised": "def replace_date(match):", "text": "ڈیٹ بدلِیو (مِلان):"}
+{"unnormalised": "", "normalised": "کوشش کرو:", "text": "کوشش کرِ:"}
+{"unnormalised": "", "normalised": "date_obj = datetime.strptime(match.group(0), '%Y-%m-%d')", "text": "date_obj = datetime.strptime(match.group(0), '%Y-%m-%d')"}
+{"unnormalised": "", "normalised": "دۄہ = تٲریٖخ_آبجیکٹ.دۄہ", "text": "دیہ = تاریخ_آبجیکٹ.دیہ"}
+{"unnormalised": "", "normalised": "مہینہ = date_obj.strftime('%B').lower()", "text": "مہینہ = date_obj.strftime('%B').lower()"}
+{"unnormalised": "", "normalised": "year = num2words(date_obj.year)", "text": "year = num2words(date_obj.year)"}
+{"unnormalised": "", "normalised": "فَیَرَن {num2words(day, to='ordinal')} {month} {year}", "text": "واپس کَرُن f\"{num2words(day, to='ordinal')} {month} {year}\""}
+{"unnormalised": "", "normalised": "بجز ویلیو ایرر:", "text": "کِنهٕ ValueError:"}
+{"unnormalised": "", "normalised": "مچس گروپ (0) واپس کرُن # اگر پارس کرنہٕ ناکام گژھہٕ تہ اصل واپس کرُن", "text": "واپس کر میچ۔ گروپ(0) # واپس کر اصل اگر پارس کرنا فیل۔"}
+{"unnormalised": "", "normalised": "text = re.sub(r'\\b\\d{4}-\\d{2}-\\d{2}\\b', replace_date, text)", "text": "text = re.sub(r'\\b\\d{4}-\\d{2}-\\d{2}\\b', replace_date, text)"}
+{"unnormalised": "", "normalised": "# ترجیح دیو DD-MM-YYYY یا DD/MM/YYYY (اگر دوہِلوٗتھ آسہِ DD/MM/YYYY فرض کرِو)", "text": "# ترجیح دِی‌یِی-اؠم‌اؠم-وا‌ی‌یِی‌یِی یا دِی‌یِی/اؠم‌اؠم/وا‌ی‌یِی‌یِی (اگر دِی‌یِی/اؠم‌اؠم/وا‌ی‌یِی‌یِی مشکوک ہو تو)"}
+{"unnormalised": "", "normalised": "ڈیف ریپلیس_ڈیٹ_ایمبیگوس (میچ):", "text": "ڈیف ریپلیس_ڈیٹ_ایمبیگوس(میچ):"}
+{"unnormalised": "", "normalised": "کوشش کرو:", "text": "کوشش کرِ:"}
+{"unnormalised": "", "normalised": "# یُس کَرَن DD/MM/YYYY پَہَلے", "text": "# یَمہ کَرُن کوٗشش DD/MM/YYYY گَژھہ گۄڈٕنچہ"}
+{"unnormalised": "", "normalised": "date_obj = datetime.strptime(match.group(0), '%d/%m/%Y')", "text": "date_obj = datetime.strptime(match.group(0), '%d/%m/%Y')"}
+{"unnormalised": "", "normalised": "بجز ویلیو ایرر:", "text": "کِنهٕ ValueError:"}
+{"unnormalised": "", "normalised": "کوشش کر:", "text": "کوشش کرِ:"}
+{"unnormalised": "", "normalised": "# پتہ چھُ کوشش کَرُن DD-MM-YYYY", "text": "تہ پتہ کر کوشش DD-MM-YYYY"}
+{"unnormalised": "", "normalised": "date_obj = datetime.strptime(match.group(0), '%d-%m-%Y')", "text": "date_obj = datetime.strptime(match.group(0), '%d-%m-%Y')"}
+{"unnormalised": "", "normalised": "مگر ویلیو ایرر:", "text": "کِنهٕ ValueError:"}
+{"unnormalised": "", "normalised": "ریٹُرن میچ۔گروپ(0) # ریٹُرن اوریجنل اگر پارسنگ فیل گژھہ", "text": "واپس کر میچ۔ گروپ(0) # واپس کر اصل اگر پارس کرنا فیل۔"}
+{"unnormalised": "", "normalised": "دۄہ = date_obj.day", "text": "دیہ = تاریخ_آبجیکٹ.دیہ"}
+{"unnormalised": "", "normalised": "mánth = date_obj.strftime('%B').lower()", "text": "مہینہ = date_obj.strftime('%B').lower()"}
+{"unnormalised": "", "normalised": "year = num2words(date_obj.year)", "text": "year = num2words(date_obj.year)"}
+{"unnormalised": "", "normalised": "return f\"{num2words(day, to='ordinal')} {month} {year}\"", "text": "واپس کَرُن f\"{num2words(day, to='ordinal')} {month} {year}\""}
+{"unnormalised": "", "normalised": "text = re.sub(r'\\b\\d{2}[-/]\\d{2}[-/]\\d{4}\\b', replace_date_ambiguous, text)", "text": "text = re.sub(r'\\b\\d{2}[-/]\\d{2}[-/]\\d{4}\\b', replace_date_ambiguous, text)"}
+{"unnormalised": "", "normalised": "# --- 5. رائج سکہ + نمبر + لاحقہ ---", "text": "# --- 5. رُوپَے + اَدَد + لاحِقَہ ---"}
+{"unnormalised": "", "normalised": "# یہ اوسُن لازِم چھُ عام عددی لاحقہ تہ عام نمبر تبدیل کَرنہ کھوتہٕ پَتہٕ ۔", "text": "# يِمَنز چھُ پَہِلے عام عَدَدی لاحِقٕ تہٕ عام عَدَد تَبدِیلی نِشَن آمُن."}
+{"unnormalised": "", "normalised": "ڈیف ریپلیس_کرنسی_سفکس(میچ):", "text": "ڈیف ریپلیس کرنسی سفرس( میچ):"}
+{"unnormalised": "", "normalised": "currency_symbol = match.group(1)", "text": "currency_symbol = match.group(1)"}
+{"unnormalised": "", "normalised": "number_str = match.group(3)", "text": "number_str = match.group(3)"}
+{"unnormalised": "", "normalised": "suffix = match.group(4)", "text": "suffix = match.group(4)"}
+{"unnormalised": "", "normalised": "تُہیہِ ہیٚو چھُ ییٚوان ترٛٲوُن؟", "text": ""}
+{"unnormalised": "", "normalised": "currency_name = ''", "text": "کرنسی_ناو = ''"}
+{"unnormalised": "", "normalised": "اگر کرنسی علامت چھِ '$':", "text": "اگر کرنسی_سمبل == '$':"}
+{"unnormalised": "", "normalised": "currency_name = 'ڈالر'", "text": "ڈالر = currency_name"}
+{"unnormalised": "", "normalised": "اَگر کرنسی نشان ؤس '₹':", "text": "اگر کرنسی علامت ؤے ₹ :"}
+{"unnormalised": "", "normalised": "currency_name = 'روپیہ'", "text": "روپیہ"}
+{"unnormalised": "", "normalised": "# بییہ کرنسیز تہ شامل کرو اگر ضرورت گوو", "text": "اگر ضرورت ووٗتھ، باقٕی کرنسی تہِ شامل کرِیو۔"}
+{"unnormalised": "", "normalised": "spoken_number = convert_number_to_words(number_str)", "text": "spoken_number = convert_number_to_words(number_str)"}
+{"unnormalised": "", "normalised": "اگر لاحقہ چھُ:", "text": "اگر لاحقہ چھُ:"}
+{"unnormalised": "", "normalised": "suffix_map = {'K': 'ہزار', 'M': 'ملین', 'B': 'ارب', 'T': 'کھرب'}", "text": "suffix_map = {'K': 'ہزار', 'M': 'ملین', 'B': 'بلین', 'T': 'ٹریلین'}"}
+{"unnormalised": "", "normalised": "return f\"{currency_name} {spoken_number} {suffix_map[suffix]}\"", "text": "بَدَل ہَے f\"{currency_name} {spoken_number} {suffix_map[suffix]}\""}
+{"unnormalised": "", "normalised": "اَگر نہٕ:", "text": "بیاکھِ صورتس منز:"}
+{"unnormalised": "", "normalised": "return f\"{currency_name} {spoken_number}\"", "text": "तॊह्८ छु \"{currency_name} {spoken_number}\" वापस करान"}
+{"unnormalised": "", "normalised": "متن = re.sub(r'([$₹€£])(\\s*)(\\d+)([KMBT])?\\b', replace_currency_suffix, متن)", "text": "``text = re.sub(r'([$₹€£])(\\s*)(\\d+)([KMBT])?\\b', replace_currency_suffix, text)``"}
+{"unnormalised": "", "normalised": "# --- 4. عددی لاحقہٕ → تَوسیع شَکل ---", "text": "# --- 4. عددی لاحقہ جات ← تفصیلی شکل ---"}
+{"unnormalised": "", "normalised": "# یہ اوسُن لازِم چھُ عام نمبر تبدیلی کھٔتِرٕ پٔۂلِی.", "text": "یہ لازم چھُ عام نمبرن ہُنٛد بدلنَس پیٹھہٕ یِن۔"}
+{"unnormalised": "", "normalised": "def replace_numeric_suffix(match):", "text": "def replace_numeric_suffix(match):"}
+{"unnormalised": "", "normalised": "number_str = match.group(1)", "text": "number_str = match.group(1)"}
+{"unnormalised": "", "normalised": "suffix = match.group(2)", "text": "suffix = match.group(2)"}
+{"unnormalised": "", "normalised": "spoken_number = convert_number_to_words(number_str)", "text": "spoken_number = convert_number_to_words(number_str)"}
+{"unnormalised": "", "normalised": "تُہیہِ ہیٚو چھُ ییٚوان ترٛٲوُن؟", "text": ""}
+{"unnormalised": "", "normalised": "suffix_map = {'K': 'हज़ार', 'M': 'मिलियन', 'B': 'बिलियन', 'T': 'ट्रिलियन'}", "text": "suffix_map = {'K': 'ہزار', 'M': 'ملین', 'B': 'بلین', 'T': 'ٹریلین'}"}
+{"unnormalised": "", "normalised": "return f\"{spoken_number} {suffix_map[suffix]}\"", "text": "वपस फिरून \"{spoken_number} {suffix_map[suffix]}\""}
+{"unnormalised": "", "normalised": "text = re.sub(r'\\b(\\d+)([KMBT])\\b', replace_numeric_suffix, text)", "text": "text = re.sub(r'\\b(\\d+)([KMBT])\\b', replace_numeric_suffix, text)"}
+{"unnormalised": "", "normalised": "# --- 7. یونِٹ → گَل کَرنُک رۄٚپ ---", "text": "# --- 7. یکٲیی → زَبانٲی شکل ---"}
+{"unnormalised": "", "normalised": "# یہ اوسُن لازِم چھُ عام نمبر تبدیلی کھٔتِرٕ پٔۂلِی.", "text": "یہ لازم چھُ عام نمبرن ہُنٛد بدلنَس پیٹھہٕ یِن۔"}
+{"unnormalised": "", "normalised": "یونِٹ_میپ = {", "text": "یونِٹ_میَپ = {"}
+{"unnormalised": "", "normalised": "'cm': 'سینٹی میٹر', 'mm': 'ملی میٹر', 'm': 'میٹر', 'km': 'کلومیٹر',", "text": "'cm': 'سینٹی میٹر', 'mm': 'ملی میٹر', 'm': 'میٹر', 'km': 'کلومیٹر',"}
+{"unnormalised": "", "normalised": "'g': 'گرام', 'kg': 'کلۆگرام', 'mg': 'ملّی گرام',", "text": "'g': 'گرام', 'kg': 'کلوگرام', 'mg': 'ملی گرام',"}
+{"unnormalised": "", "normalised": "'ml': 'مِلی لیٹر', 'l': 'لیٹر',", "text": "'ml': 'ملی لیٹر', 'l': 'لیٹر',"}
+{"unnormalised": "", "normalised": "'C': 'سیلسیس', 'F': 'فارنہائٹ', 'K': 'کیلون', # ڈگری یونٹس خٲطرٕ", "text": "'C': 'سیلسیس', 'F': 'فارنہائٹ', 'K': 'کیلون', # درجے کے واحدی خٲطر"}
+{"unnormalised": "", "normalised": "'hrs': 'گھنٹے', 'hr': 'گھنٹہ',", "text": "'hrs': 'گھنٹے', 'hr': 'گھنٹہ',"}
+{"unnormalised": "", "normalised": "'من': 'منٹ', 'منز': 'منٹو',", "text": "'منِٹ': 'منٹ', 'منٹس': 'منٹ' ,"}
+{"unnormalised": "", "normalised": "'sec': 'سیکنڈ', 'secs': 'سیکنڈز',", "text": "'sec': 'سیکنڈ', 'secs': 'سیکنڈز',"}
+{"unnormalised": "", "normalised": "'volt': 'وُلٹ', 'volts': 'وُلٹس', 'v': 'وُلٹ',", "text": "'volt': 'وولٹ', 'volts': 'وولٹس', 'v': 'وولٹ',"}
+{"unnormalised": "", "normalised": "'amp': 'ایمپیر', 'amps': 'ایمپیرس', 'a': 'ایمپیر',", "text": "'amp': 'ایمپائر', 'amps': 'ایمپائرز', 'a': 'ایمپائر',"}
+{"unnormalised": "", "normalised": "'watt': 'واٹ', 'watts': 'واٹس', 'w': 'واٹ',", "text": "'watt': 'واٹ', 'watts': 'واٹس', 'w': 'واٹ',"}
+{"unnormalised": "", "normalised": "'hz': 'ہٹز', 'khz': 'کلوہٹز', 'mhz': 'میگا ہٹز', 'ghz': 'گیگا ہٹز'", "text": "'hz': 'ہرتز', 'khz': 'کلوہرتز', 'mhz': 'میگاہرتز', 'ghz': 'گیگاہرتز'"}
+{"unnormalised": "", "normalised": "}", "text": "}"}
+{"unnormalised": "", "normalised": "دف ریپلێس_یُنٹ (میچ):", "text": "ڈیف ریپلیس_یونِٹ (میچ):"}
+{"unnormalised": "", "normalised": "number_str = match.group(1)", "text": "number_str = match.group(1)"}
+{"unnormalised": "", "normalised": "unit = match.group(2).lower()", "text": "unit = match.group(2).lower()"}
+{"unnormalised": "", "normalised": "spoken_number = convert_number_to_words(number_str)", "text": "spoken_number = convert_number_to_words(number_str)"}
+{"unnormalised": "", "normalised": "spoken_unit = unit_map.get(unit, unit)", "text": "spoken_unit = unit_map.get(unit, unit)"}
+{"unnormalised": "", "normalised": "# واحدن خٲطرٕ جمع ہٲندل کریو", "text": "جمع خاطر ترتیباو سنٛدۍ سنٛدۍ سنٛدۍ سنٛدۍ سنٛدۍ سنٛدۍ سنٛدۍ یۄنِٹس خٲطرٕ"}
+{"unnormalised": "", "normalised": "agar int(number_str) > 1 chu ti na spoken_unit chu khatam karan 's' saiti ti spoken_unit chu na andar ['celsius', 'fahrenheit', 'kelvin']:", "text": "agar int(number_str) > 1 ti te na chhu spoken_unit-uk aakhir 's' saiti te spoken_unit chhu na ['celsius', 'fahrenheit', 'kelvin'] andar:"}
+{"unnormalised": "", "normalised": "spoken_unit += 's'", "text": "تَلفُظ یُونِٹ += 's'"}
+{"unnormalised": "", "normalised": "agar int(number_str) == 1 chu te spoken_unit-uk aakhir 's' saet'h chu te spoken_unit chu na ['celsius', 'fahrenheit', 'kelvin'] man'z:", "text": "agar integer(number_str) barabar chu 1 saa'ti pakaan chu spoken_unit akhri haruf 's' saa'ti te spoken_unit na chu shaamil ['celsius', 'fahrenheit', 'kelvin'] andir:"}
+{"unnormalised": "", "normalised": "`spoken_unit` = `spoken_unit`[:-1]  # اگر عدد 1 چھُ تہٕ یونِٹ جمع چھُ، توٲے 's' ہَٹٲو", "text": "spoken_unit = spoken_unit[:-1] # اگر نمبر 1 ہو اور یونٹ جمع ہو تو 's' ہٹا دیں۔"}
+{"unnormalised": "", "normalised": "وٲپس گَژھہِ {spoken_number} {spoken_unit}", "text": "واپس کرِو  f\"{spoken_number} {spoken_unit}\""}
+{"unnormalised": "", "normalised": "# اعداد خٲطرٕ براہ راست یونٹ (مثال کے طور پر، 10 سینٹی میٹر، 5 کلوگرام)", "text": "# اعدادن ہندسہ سٟتؠ جُڑِت یونِٹٕک نمونہٕ (مثال طور، 10 سینٹی میٖٹَر، 5 کِلو گرام)"}
+{"unnormalised": "", "normalised": "# \\b اِستِمال چھُ جُزوی میچو (مِثالے طور، 'm' یَتھ 'meter' منٛز) پَرہیٖز کَرنہٕ خاطَر یونِٹن خٲطرٕ", "text": "\\b اِستِمال کَرُن واحدَن خٲطرٕ تاکہ جزوی مُطابَقَتھ بَچَن (مِثال طور، 'm' in 'meter')"}
+{"unnormalised": "", "normalised": "unit_pattern = r'\\b(\\d+(?:\\.\\d+)?)\\s*(%s)\\b' % '|'.join(re.escape(u) بٲے u چھِ unit_map.keys خٲطرٕ)", "text": "یونِٹ_پیٹرن = r'\\b(\\d+(?:\\.\\d+)?)\\s*(%s)\\b' % '|'.join(re.escape(u) for u in unit_map.keys())"}
+{"unnormalised": "", "normalised": "text = re.sub(unit_pattern, replace_unit, text, flags=re.IGNORECASE)\n    ٹیکسٹ = re.sub(unit_pattern, replace_unit, ٹیکسٹ, فلیگس=re.IGNORECASE)", "text": "یہٕ چھُ text مُتَبَدِّل کَرنہٕ خٲطِر یُونِٹ پیٹرنَس (unit patterns) تبدیل کرنہٕ خٲطِر، re.IGNORECASE فلیگس اِستِمال کَرنہٕ سٟتہِ، re.sub فَنکشن اِستِمال کَرنہٕ."}
+{"unnormalised": "", "normalised": "# ڈگری سینٹی گریڈ/فارن ہائیٹ خاص طور پٲٹھؠ سنبھالِو، یِم اکثر 25°C لیکھنہٕ یِوان چھِ", "text": "# ڈگری سینٹی گریڈ/فارن ہائیٹ ہندل کر، یمن عام طور لیکھنہ چھ یوان 25°C"}
+{"unnormalised": "", "normalised": "def replace_degree_unit(match):", "text": "def replace_degree_unit(match):"}
+{"unnormalised": "", "normalised": "number_str = match.group(1)", "text": "number_str = match.group(1)"}
+{"unnormalised": "", "normalised": "یُونِٹ = میچ۔گروپ(2).اَپَر()  # 'C', 'F'", "text": "unit = match.group(2).upper() # 'C', 'F'"}
+{"unnormalised": "", "normalised": "spoken_number = convert_number_to_words(number_str)", "text": "spoken_number = convert_number_to_words(number_str)"}
+{"unnormalised": "", "normalised": "unit_name = 'celsius' agar unit chu 'C' asun, nahi te 'fahrenheit' agar unit chu 'F' asun, nahi te 'kelvin' agar unit chu 'K' asun, nahi te ''", "text": "unit_name = 'سیلسیس' اگر unit == 'C' واتہ تہ 'فارنہائٹ' اگر unit == 'F' واتہ تہ 'کیلون' اگر unit == 'K' واتہ تہ باقی ''"}
+{"unnormalised": "", "normalised": "وٲپس کرنہٕ چھُ \"{spoken_number} ڈگری {unit_name}\"", "text": "वपस गछान \"{spoken_number} डिगरी {unit_name}\""}
+{"unnormalised": "", "normalised": "text = re.sub(r'\\b(\\d+(?:\\.\\d+)?)\\s*degree\\s*([CFK])\\b', replace_degree_unit, text, flags=re.IGNORECASE) # پتہ چھہ دِگری علامت تبدِیٖل کرنہٕ پتہ", "text": "یہِ عبارت چھُ translate کرنہٕ خاطر یَتھ کُن:\n\nre.sub(r'\\b(\\d+(?:\\.\\d+)?)\\s*degree\\s*([CFK])\\b', replace_degree_unit, text, flags=re.IGNORECASE) # پتہٕ 'degree' نشان چھُ تبدیل کرنہٕ یِوان"}
+{"unnormalised": "", "normalised": "text = re.sub(r'\\b(\\d+(?:\\.\\d+)?)\\s*degree\\s*(celsius|fahrenheit|kelvin)\\b', lambda m: f\"{convert_number_to_words(m.group(1))} degree {m.group(2)}\", text, flags=re.IGNORECASE)", "text": "یہِ کتھ چھُ تبدیل کرنہٕ۔"}
+{"unnormalised": "", "normalised": "# --- 3. اعداد ← زبانی شکل (عمومی) ---", "text": "# --- 3. اَعداد → زبانی شکل (عام) ---"}
+{"unnormalised": "", "normalised": "# یہِ چھُ بٲقی تَمٲم اِستادہ اَعدادَن پؠٹھ لاگُو گَژھَن وول۔ یہِ گَژھِ دیر سٟتؠ گَژھَن۔", "text": "# یمو کوٚر لگٲوُن یِمَو رٲیج رٲوَن تہِ بَٲقی اؠکہٕ نمبرَس پؠٹھ۔ یہِ گٔژھِی وَقتی گژھُن۔"}
+{"unnormalised": "", "normalised": "# یمن نمبرن ہٹاو یم فائل ناوٕن ہُنٛد حِصہٕ چھِ یا مِلاوِٹ والؠ الفانومیرک رَشَن یِم نمبرن ہُنٛد ظٲہِر نَہی چھِ۔", "text": "# یِم نمبر چھِ کَڈنہٕ یِم فایِل ناوَن ہُنٛد حِصہٕ آسَن یا رَلے مِلے الفانومیرک رَشَن یِم نمبر نَہ لَگَن۔"}
+{"unnormalised": "", "normalised": "ڈیف ریپلیس_جنرل_نمبر (میچ):", "text": "کِسہ عام نمبر بدل تہ کرن (match):"}
+{"unnormalised": "", "normalised": "number_str = match.group(0)", "text": "number_str = match.group(0)"}
+{"unnormalised": "", "normalised": "# یِمَن نمبرَن ہیٚو بدلناوَن زَن کیٚنٛہہِ تَشخِیصی نِشانَن ہُنٛد حِصہٕ آسَن (مِثالے طور، H2O، ID123)", "text": "# ٲسی یہِ نمبرَن مُنتَقِل کَرنہٕ پَرہیز کَرو یِم بؠیہِ شناخَتی نِشانَن ہٕنٛز جُز (مثلاً، H2O، ID123) ہَن۔"}
+{"unnormalised": "", "normalised": "اگر اَسہٕ مطابقتھ چھِ رَٹان یہِ پیٚٹرن ر'^[A-Za-z]+$'، نمبر سِٹرنگ: # اگر یہِ خٲلِص اَلفابَٹ ٲسِس، نظر انداز کریو", "text": "اگر re.match(r'^[A-Za-z]+$', number_str): # اگر یہ صرف حروف تہجی ہے، تو نظر انداز کریں۔"}
+{"unnormalised": "", "normalised": "واپس کر number_str", "text": "واپس نمبر_سٹرنگ"}
+{"unnormalised": "", "normalised": "تُہیہِ ہیٚو چھُ ییٚوان ترٛٲوُن؟", "text": ""}
+{"unnormalised": "", "normalised": "# پرہیز کریو تبدیل کرنہٕ پیٹھہٕ اگر یُس آسہٕ فلوٹنگ پوائنٹ نمبر صرف صفر پتہٕ اعشاریہ تہٕ num2words دیہٕ مکمل وقفہٕ", "text": "#  اَگر یِه اَکھ فلوٹنگ پوائنٹ نمبر چھُ یَتھ مِنز صِرف صِفر چھُ دَشملو نِشے پَتہٕ تہٕ num2words چھُ فل سٹاپ دِوان تِہنۍ کَنورٹ کَرنہٕ پَرہیز کَر."}
+{"unnormalised": "", "normalised": "اگر '۔' چھُ نمبر_سٹرِنگس منز تہٕ فلوٹ(نمبر_سٹرِنگ) چھُ برابر انٹ(فلوٹ(نمبر_سٹرِنگ)) سٟتؠ:", "text": "agar '.' chu number_str manz te float(number_str) barabar chu int(float(number_str)) saiti:"}
+{"unnormalised": "", "normalised": "ریٹُرن کَنورٹ_نمبر_ٹُو_وَرڈز(سِٹر(اِنٹ(فلوٹ(نمبر_سِٹر))))", "text": "واپس کرُن عددن ہنٛدِس لؠکھنہ منٛز بدلناو (str(int(float(number_str))))"}
+{"unnormalised": "", "normalised": "یُس آسُن.", "text": ""}
+{"unnormalised": "", "normalised": "واپس کریو عددن ہنز لفظن منز بدلنایُک فنکشن (عدد-سٹرنگ)", "text": "वापस कराव अदद लफ्ज़न मंज़ तबदील (number_str)"}
+{"unnormalised": "", "normalised": "```kashmiri\n    text = re.sub(r'\\b\\d+(?:\\.\\d+)?\\b', replace_general_number, text)\n    ```", "text": "``text = re.sub(r'\\b\\d+(?:\\.\\d+)?\\b', replace_general_number, text)``"}
+{"unnormalised": "", "normalised": "# --- 8. र‍ियाज़ी न‍िशानी → बोलने वाल‍ी शक्ल ---", "text": "# --- 8. ریاضِیاتی علامت → زبانی شکل ---"}
+{"unnormalised": "", "normalised": "# یِہٕ باسان گژھہٕ عام علامت/نمبر بدلن پتہٕ تاکہ تصادم پَکان دُور", "text": "یقینی بناؤ تہ یُہ عام علامت/نمبر تبدِیلی پَتہ واتُن چھُ تاکہ تنازعات نِہ واقِع گَژھِن"}
+{"unnormalised": "", "normalised": "text = re.sub(r'(\\w)\\^2', r'\\1 سکوائرڈ', text)", "text": "یہِ لائن ہیچھ پریتھ \"text\" متغیرس منز یِتھ کُنہہ لفظ یَتھ پَتہٕ \"^2\" آسہِ، تِمس بدلاوِ تتھ لفظس \"squared\" کہِ ساتہٕ۔"}
+{"unnormalised": "", "normalised": "text = re.sub(r'(\\w)\\^3', r'\\1 کیوبڈ', text)", "text": "یہ متن کشمیری میں ترجمہ نہیں کیا جا سکتا کیونکہ یہ ایک Python کوڈ snippet ہے۔ اس کا ترجمہ کرنے کا کوئی معنی نہیں ہے۔"}
+{"unnormalised": "", "normalised": "متن = re.sub(r'(\\w)\\^(\\w+)', r'\\1 to the power of \\2', متن) # عام طاقت", "text": "یُس کوڈ چھُ: re.sub(r'(\\w)\\^(\\w+)', r'\\1 to the power of \\2', text) # جنرل پاور"}
+{"unnormalised": "", "normalised": "یہ متن = re.sub(r'(\\w)_(\\w+)', r'\\1 sub \\2', متن) # سب سکرپٹ", "text": "ییہِ لَفٕظَن رٮ۪ٹَْن کَرِو ۔ رٮ۪ٹَْن پٮ۪تِھ آسِل لٮ۪آین بٮ۪رٮ۪یَکَن تہٕ سپیٖسِنگ ۔\n\ntext = re.sub(r'(\\w)_(\\w+)', r'\\1 sub \\2', text) # Subscript"}
+{"unnormalised": "", "normalised": "جمعه تہِ x سب i", "text": "یُس تہٕ کِس کٔشیٖریٖ زَبانَس مَنٛز تَرجَمہٕ کَرنَس خٲطرٕ اِستِمال کَرنہٕ چھُ.\n\nتَرجَمَہٕ: summation of x sub i"}
+{"unnormalised": "", "normalised": "متن = دوبارہ استعمال کریں. سبھی (r'integral\\s*(\\d+)\\s*to\\s*(\\d+)\\s*of\\s*(\\w)\\s*d\\s*(\\w)',", "text": "یِہٕ کَرُن آسٲن چھُ نہٕ، میٲنہٕ نزدیک، بییہِ تَرِیٖقہٕ گَژھِ اَضتِیَار کَرُن، یِہٕ پیٚے مےٚ پَتا کَرُن۔"}
+{"unnormalised": "", "normalised": "lambda m: f\"انٹیگرل {convert_number_to_words(m.group(1))} پیٹھہ {convert_number_to_words(m.group(2))} تامِہ {m.group(3)} دِی {m.group(4)}\",", "text": "lambda m: f\"انٹیگرل {convert_number_to_words(m.group(1))} پؠٹھ {convert_number_to_words(m.group(2))} تام {m.group(3)} ڈی {m.group(4)}\","}
+{"unnormalised": "", "normalised": "تَٔکست) # خاص انٹیگرل شکل ∫ 0→1 x dx", "text": "# خاص انٹیگرل شکل ∫ 0→1 x dx"}
+{"unnormalised": "", "normalised": "متن = re.sub(r'integral\\s*(\\w)\\s*d\\s*(\\w)', r'انٹیگرل آف \\1 ڈی \\2', متن) # عام انٹیگرل شکل ∫ x dx", "text": "یہ سطر آپ سے متوقع نتائج نہیں دے گی۔ کیا آپ اس بات کو واضح کر سکتے ہیں کہ آپ کیا حاصل کرنے کی کوشش کر رہے ہیں؟"}
+{"unnormalised": "", "normalised": "# --- فائنل اسپیس نارملایزیشن ---", "text": "# --- Final Space Normalization ---\n# --- فاینل سپیس نارملایزیشن ---"}
+{"unnormalised": "", "normalised": "text = re.sub(r'\\s+', ' ', text).strip()", "text": "یہِ متن چھُس تہنٛدۍ سپیس ہٹاونہٕ تہٕ صفائی کرنہٕ۔"}
+{"unnormalised": "", "normalised": "वापस पाठ", "text": "متن واپس کریو"}
+{"unnormalised": "", "normalised": "def process_folder(input_folder, output_folder):", "text": "def process_folder(input_folder, output_folder):"}
+{"unnormalised": "", "normalised": "مطلب چھُ یہِ زن تہندِ لُکھہٕ کَرنَس منز مدد کرُن۔\n\"\"\"", "text": "\"\"\"\n\"\"\""}
+{"unnormalised": "", "normalised": "اِن پُٹ فُولڈرَس منٛز سَیَر کَرُن، .txt فَایِلَن ہُنٛد نارمَلایِزیشن کَرُن، تہٕ باقٕیَن ہُنٛد کاپی کَرُن۔", "text": "انپُٹ فولڈرَس منز گَژھُن، .txt فایلَن ہُنٛد نارملائزیشن کرُن، تہٕ باقٕیَن ہُنٛد کاپی کرُن۔"}
+{"unnormalised": "", "normalised": "مطلب چھُ یہِ زن تہندِ لُکھہٕ کَرنَس منز مدد کرُن۔\n\"\"\"", "text": "\"\"\"\n\"\"\""}
+{"unnormalised": "", "normalised": "os.makedirs(output_folder, exist_ok=True)", "text": "os.makedirs(output_folder, exist_ok=True)"}
+{"unnormalised": "", "normalised": "unnormalized_txt_files = []", "text": "غیرنارملائزڈ_ٹیکسٹ_فائلس = []"}
+{"unnormalised": "", "normalised": "خٲطرٕ root، dirs، files os.walk(input_folder) مَنٛز:", "text": "یِمِس خٲطرٕ روٗٹ، دٲر، فٲیِلز اوس۔ واک (اِنپُٹ_فولڈر):"}
+{"unnormalised": "", "normalised": "relative_path = os.path.relpath(root, input_folder)", "text": "relative_path = os.path.relpath(root, input_folder)"}
+{"unnormalised": "", "normalised": "حٲلِیُکِس چھُ اَوُٹ پُٹ دٲیرٕکٹری = os.path.join(اَوُٹ پُٹ فولڈر، رٮ۪لِیٹِو پٲتھ)", "text": "``\ncurrent_output_dir = os.path.join(output_folder, relative_path)\n``"}
+{"unnormalised": "", "normalised": "os.makedirs(current_output_dir, exist_ok=True)", "text": "os.makedirs(current_output_dir, exist_ok=True)"}
+{"unnormalised": "", "normalised": "يِم فٲيِل ناو چھُ فائلَن منٛز:", "text": "خٲطرٕ file_name مٕنٛز files:"}
+{"unnormalised": "", "normalised": "input_file_path = os.path.join(root, file_name)", "text": "input_file_path = os.path.join(root, file_name)"}
+{"unnormalised": "", "normalised": "آؤٹ پُٹ فایِل پاتھ = اوس۔پاتھ۔جائن (کرنٹ_آؤٹ پُٹ_ڈائر، فایِل_نامہ)", "text": "`output_file_path = os.path.join(current_output_dir, file_name)`"}
+{"unnormalised": "", "normalised": "اگر فائل_ناوی چھُ آسان لُغرُن تہِ ختم گَژھان '.txt' سٟتؠ:", "text": "اگر فائل_ناوٕ.لۄگٕچُھن تہٕ تامیم تھووُن \".txt\" सٕतۍ:"}
+{"unnormalised": "", "normalised": "کوشش کَر", "text": "کوشش کرِ:"}
+{"unnormalised": "", "normalised": "`with open(input_file_path, 'r', encoding='utf-8') as f_in:`", "text": "یمہِ `input_file_path` نامی فائل کھولیو، پڑھنہ خاطرہ، کوڈنگ 'utf-8' استمال کرتھ:"}
+{"unnormalised": "", "normalised": "مواد = ف_ان.ریڈ()", "text": "مواد = f_in . پڑھان"}
+{"unnormalised": "", "normalised": "ज़रूर, मुझे वह पाठ दें जिसका आप अनुवाद करवाना चाहते हैं।", "text": ""}
+{"unnormalised": "", "normalised": "normalized_content = normalize_text(content)", "text": "normalized_content = normalize_text(content)"}
+{"unnormalised": "", "normalised": "کھولنہٕ سان file_path, 'w', encoding='utf-8') as f_out:", "text": "بایِتھ  اوپن (آؤٹ پُٹ_فائِل_پاتھ, 'w', اِنکوڈنگ='یو ٹی ایف-8') یِیٚتھ ف_آؤٹ سٟتؠ:"}
+{"unnormalised": "", "normalised": "f_out.write(normalized_content)", "text": "f_out.write(normalized_content)"}
+{"unnormalised": "", "normalised": "مگر ایکسیپشن پَے بطور ای:", "text": "بجز ایکسیپشن آس اِس ای:"}
+{"unnormalised": "", "normalised": "پرنٹ (ایف\" ایرر پراسیس کرنہس منز {input_file_path}: {e}\")", "text": "print(f\"Error processing {input_file_path}: {e}\")"}
+{"unnormalised": "", "normalised": "unnormalized_txt_files.append(input_file_path)", "text": "unnormalized_txt_files.append(input_file_path)"}
+{"unnormalised": "", "normalised": "اگر خۄاہ مۄژھی، أصٕل فایِل بَدَلیو آؤُٹ پُٹَس منٛز", "text": "اگر خرابی، اصلی فائل کاپی کرو آؤٹ پٹ پؠٹھ"}
+{"unnormalised": "", "normalised": "شٹل۔ کاپی ۲ (انپُٹ_فایل_پاتھ، آوُٹپُٹ_فایل_پاتھ)", "text": "شُٹِل۔کاپی۲(اِنپُٹ_فایِل_پاتھ، آؤُٹپُٹ_فایِل_پاتھ)"}
+{"unnormalised": "", "normalised": "اگر نہ:", "text": "بیاکھِ صورتس منز:"}
+{"unnormalised": "", "normalised": "شُٹِل۔کٲپی ۲ (اِنپُٹ_فٲیِل_پاتھ، آؤُٹپُٹ_فٲیِل_پاتھ)", "text": "شُٹِل۔کاپی۲(اِنپُٹ_فایِل_پاتھ، آؤُٹپُٹ_فایِل_پاتھ)"}
+{"unnormalised": "", "normalised": "میں ٹھیک ہوں۔ شکریہ۔", "text": ""}
+{"unnormalised": "", "normalised": "اگر چھیہ غیرمعیاری txt فائلز:", "text": "اگر غیر نارملائزڈ ٹیکسٹ فائلز موجود چھِ:"}
+{"unnormalised": "", "normalised": "پرنٹ(\"\\n--- .txt فایلو ہُنٛد فِہرِست یِمَن نارملایِز کَرُن نٔہٕ گٔی (اَصٕلی مۄقٲمی کَرنہٕ آو) ---\")", "text": "پرنٹ (\"\\n--- .txt فایلو ہنٛد فِہرست یِم نارملایز کرنہٕ نا آسیو (اصلی بجٲے نقل کرنہٕ) ---\")"}
+{"unnormalised": "", "normalised": "خٲطرٕ ف چھُ અનनॉर्मલાઈज़ڈ_ٹیکسٹ_فایلس منٛز:", "text": "یٮ۪س ف چھُ unnormalized_txt_files منٛز:"}
+{"unnormalised": "", "normalised": "پرنٹ (ایف)", "text": "پٲنٹ (f)"}
+{"unnormalised": "", "normalised": "اگر __name__ == \"__main__\":", "text": "اگر __name__ == \"__main__\":"}
+{"unnormalised": "", "normalised": "# مثال استعمال:", "text": "کیا مثال استمال؟"}
+{"unnormalised": "", "normalised": "# ٹیسٹنگ خٲطرٕ فرضی ڈیٹاسیٹ بنٲیو", "text": "# تٲجربہٕ خٲطرٕ اَکھ فرضی ڈیٹاسیٹ بٔناو"}
+{"unnormalised": "", "normalised": "اگر نہ آسُن اوس os.path.exists(\"dataset\") یُس،", "text": "اگر نہ اوس os.path.exists(\"dataset\"):"}
+{"unnormalised": "", "normalised": "os.makedirs(\"dataset/subfolder1\", exist_ok=True)", "text": "os.makedirs(\"dataset/subfolder1\", exist_ok=True)"}
+{"unnormalised": "", "normalised": "os.makedirs(\"dataset/subfolder2\", exist_ok=True)", "text": "os.makedirs(\"dataset/subfolder2\", exist_ok=True)"}
+{"unnormalised": "", "normalised": "یُس کرِتھ \"dataset/test1.txt\" سٟتؠ، \"w\" تہٕ encoding=\"utf-8\" اِستِمال، یِتھ فایِل فٟتؠ:", "text": "ۍس \"dataset/test1.txt\" سندَس سٟتۍ، \"w\" موڈس مَنٛز، اینکوڈنگ \"utf-8\" سٟتۍ:"}
+{"unnormalised": "", "normalised": "f.write(\"قیمت چھُ 20B ڈالر۔ ناسا گَو 1958ء مَنٛز لانٛچ۔ تخمینہٕ تقریبن ~5% فٲدٕ۔\\n\")", "text": "ایِہ قیمت چھِ $20B. ناسا گٲی 1958 ہس مٕنٛز شۆروٗع۔ تقریبًا ~5% فائیدہ۔"}
+{"unnormalised": "", "normalised": "f.write(\"اَجُک تٲریٖخ چھُ 10/09/2024. ڈاکٹر سِمِتھ کَام چھُ کَران یوٗ.ایس.اے. سَرکَارس خٲطرٕ.\\n\")", "text": "f.write(\"آج کی تاریخ چھِ 10/09/2024. ڈاکٹر سمتھ کام کران چھِ U.S.A. حکومت خٲطرٕ۔\\n\")"}
+{"unnormalised": "", "normalised": "f.write(\"درجہ حرارت چھُ 25°C ۔ آب چھُ 100°C پؠٹھ جوش یوان ۔ جملہ 5 کلومیٹر دٲڑ.\\n\")", "text": "ایف۔رایٔٹ(\"درجہ حرارت 25 ڈگری سینٹی گریڈ چھُ۔ آب 100 ڈگری سینٹی گریڈ پؠٹھ اُبلاَن۔ کُل 5 کلومیٹر دَو۔\\n\")"}
+{"unnormalised": "", "normalised": "f.write(\"یہ مساوات چھِ 2+2=4. رقبه چھُ πr^2. جمع چھُ Σ x_i. خیال تھاو x^2 تہٕ x^3 پؠٹھ. تہٕ x^n تہِ.\\n\")", "text": "f.write(\"اَے مساوات چھِ 2+2=4. رقبہ چھُ πr^2. جمع چھُ Σ x_i. خیال تھاو x^2 تہٕ x^3 پؠٹھ. تہٕ x^n تہِ.\\n\")"}
+{"unnormalised": "", "normalised": "ایف۔ رائیٹ (\"تہہ فیریکشن چھُ 3/4۔ اسہِ درکار چھُ 1/2 کلو چینی۔ رپورٹ کور چھُ کیو اے/ڈِیو تہ آرٹ/کرافٹ۔ جی ڈی پی گروتھ چھُ مضبوط۔ ایڈووکیٹ رام چھُ یتھہ۔\\n\")", "text": "ایف۔رایٹ(\"تہِ کَسر چھُ 3/4۔ اسہٕ چھُ 1/2 کلو شُگر دَرکار۔ رِپورٹَس منٛز چھِ QA/Dev تہٕ art/craft۔ جی ڈی پی گُروتھ چھُ سَخت۔ ایڈو۔ رام چھُ یَتھاں۔\\n\")"}
+{"unnormalised": "", "normalised": "f.write(\"ریاضی: ∫ x^2 dx۔ یا ∫ 0→1 x dx۔ اگر x != y، მაშინ x <= z یا z >= x۔ سہ روٗن 100M ڈیش۔\\n\")", "text": "ایف۔رایٔٹ(\"میتھ: ∫ x^2 dx۔ یا ∫ 0→1 x dx۔ اگر x != y، تووُی x <= z یا z >= x۔ ہو چھُ رَن کران 100M ڈیش۔\\n\")"}
+{"unnormalised": "", "normalised": "f.write(\"تہِوُے ٲس 10 کِلوٗمیٖٹَر 45 منٹَن منٛز دۅٚڑیو۔ أمہِ کیٚنٛدِی رفتار ٲس 100 کِلوٗمیٖٹَر فی گھنٹہ۔ بَیٹری چھِ 12 وولٹ تہٕ 50 ایمپیئر۔\\n\")", "text": "f.write(\"تٔہنؠ دۅڑاوُن 10 کِلومیٖٹَر اَسؠ 45 مٕنَٹَن مٔنٛز. تَہٕنز رَفتاٖر 100 کِلومیٖٹَر فی گَنٹہٕ ٲسؠ. بَیٹَری چھٕ 12 ویٖ اَتے 50 اے.\\n\")"}
+{"unnormalised": "", "normalised": "f.write(\"مصنوعات شناختی نمبر: PROD123، PROD456۔\\n\")", "text": "ایف۔رائٹ(\"مصنوعات آئی ڈیز: PROD123، PROD456۔\\n\")"}
+{"unnormalised": "", "normalised": "f.write(\"₹500M اوس سرمایہ کاری کرنہٕ آمُت۔ قیمت چھِ 99۔ نمبر چھُ 7۔\\n\")", "text": "f.write(\"₹500M اوس خرچ کرنہٕ آمت۔ قیمت چھِ 99۔ نمبر چھُ 7۔\\n\")"}
+{"unnormalised": "", "normalised": "f.write(\"يِمَچ آسُن چھُ اَکھ ڈیسیمل 12.5 کِلو گرام۔ کُل مِلاوُن چھُ 1.0 میٖلیَن لُۚک۔ ٹیسٹ 1.0 کِلو گرام تہٕ 1.00 کِلو گرام۔\\n\")", "text": "f.write(\"یہِ آسہِ چھُ اَکھ ڈیسیمل 12.5 کلوگرام۔ مجموعی طور 1.0 ملین لوٗگ۔ ٹیسٹ 1.0 کلوگرام تہٕ 1.00 کلوگرام۔\\n\")"}
+{"unnormalised": "", "normalised": "یُس کُھلِتھ (\"dataset/subfolder1/test2.txt\", \"w\", encoding=\"utf-8\") یِتھ پٲٹھؠ ف:", "text": "باتھ اوسُن (\"dataset/subfolder1/test2.txt\", \"w\", encoding=\"utf-8\") یِتھ فُس:"}
+{"unnormalised": "", "normalised": "f.write(\"پراجیکٹ الفا شروٗع گژھ 2023-12-01۔ پروفیسر جونز دِژ اَکھ لیکچر یہِ پؠٹھ ∫ x^n dx.\\n\")", "text": "f.write(\"پراجیکٹ الفا 2023-12-01 شروٗع گٔیو۔ پروفیسر جونزَن ∫ x^n dx پؠٹھ اِک لیکچر دِیُتھ۔\\n\")"}
+{"unnormalised": "", "normalised": "f.write(\"تٔمؠ 2.5 گھنٹہٕ پَرٕنَس خرٕچ کٔر۔ یِیٚہِ ڈیٹا 1.2M ریکارڑ چھُ۔ سُہُ گٔژھنی چھُ ماہانہٕ 50K کَماوان۔\\n\")", "text": "ایمِس کٔرؠن 2.5 گھنٹہٕ پَڑُن۔ یَتھ ڈیٹا چھُ 1.2 ملین ریکارڈ۔ سُہُ کَماوان چھُ 50 ہزار رۄپے فی مینہٕ۔"}
+{"unnormalised": "", "normalised": "\"dataset/subfolder2/image.jpg\" کھولکھ \"w\" موڈس منز, اینکوڈنگ \"utf-8\" سان، یِمنِس سیت فایِل چھُ یُس f آسُن:", "text": "بَے سٟتۍ اوسُن (\"dataset/subfolder2/image.jpg\", \"w\", encoding=\"utf-8\") آسُن آسۍ اؠف تۂ :"}
+{"unnormalised": "", "normalised": "f.write(\"یہ ایک ٹیکسٹ فائل نہیں ہے۔\") # نان-ٹی ایکس ٹی فائل کے لئے فرضی مواد", "text": "f.write(\"یہ چھُ نہ اَکھ ٹیکسٹ فایٔل ۔\") # ڈَمی کانٹینٹ غَیر-txt فایٔل خٲطرٕ"}
+{"unnormalised": "", "normalised": "يُس \"dataset/subfolder2/another.txt\" ، \"w\" سٟتۍ، encoding=\"utf-8\" اِستِمال کرِتھ کٲم کرُن:", "text": "بَے سٟتھ کھۄلُن (\"dataset/subfolder2/another.txt\"، \"w\"، encoding=\"utf-8\") یِتھاہ ف:"}
+{"unnormalised": "", "normalised": "f.write(\"स्पेशल क्यारेक्टर: ≠, ≤, ≥. टेस्ट अंदाज़न पंज फीसद ~5%. हैश #tag. ऐट @user. एंड & मज़ीद.\")", "text": "ایف.رایٹ (\"سپیشل کیریکٹرز: ≠، ≤، ≥۔ ٹیسٹ اپروکسیمیٹلی فائیو پرسنٹ ~5%. ہیش #ٹیگ۔ ایٹ @یوزر۔ اینڈ & مور۔\")"}
+{"unnormalised": "", "normalised": "input_data_folder = \"dataset\"", "text": "input_data_folder = \"dataset\""}
+{"unnormalised": "", "normalised": "output_normalized_folder = \"dataset_normalized\"", "text": "output_normalized_folder = \"dataset_normalized\""}
+{"unnormalised": "", "normalised": "پرنٹ (f\"شروع گژھن نارملائزیشن '{input_data_folder}' خاطٕر یتھِی '{output_normalized_folder}' منٛزٕ...\")", "text": "print(f\"شروع کران چھُ نارملایزیشن خٲطرٕ '{input_data_folder}' پؠٹھٕ '{output_normalized_folder}' منٛز...\")"}
+{"unnormalised": "", "normalised": "process_folder(input_data_folder, output_normalized_folder)", "text": "process_folder(input_data_folder, output_normalized_folder)"}
+{"unnormalised": "", "normalised": "پرنٹ چھُ \"نارملایزیشن مکمل۔\"", "text": "پَروٚسَنٕگ مُکَمَل گَژھَان۔"}
+{"unnormalised": "", "normalised": "# --- تَصدیٖق ---", "text": "# --- تصدیق ---"}
+{"unnormalised": "", "normalised": "پرنٹ(\"\\n--- یِہِ اِکِس مُنَظَم فایل چھِ تَصدِیق کَرَن وٲلِس ---\")", "text": "پرنٹ(\"\\n--- یِوٗن اَکھ نُموٗنَے ہٕندِس نارمَلایِزڈ فایِل ہٕندِس تَصدیٖق کَرُن ---\")"}
+{"unnormalised": "", "normalised": "کوشش کرنہٕ یِیہِ:", "text": "کوشش کرِ:"}
+{"unnormalised": "", "normalised": "باتھ آسُن کھولُن (os.path.join(output_normalized_folder, \"test1.txt\"), 'r', encoding='utf-8') زِ پَژھ:", "text": "مگر اوس اوس.پاتھ اوس.جوائن (آؤٹ پُٹ-نارملایٔزڈ-فولڈر، \"test1.txt\")، 'آر'، اینکوڈنگ='یوٹییف-8' ف.سیتھ:"}
+{"unnormalised": "", "normalised": "پرنٹ(ایف.ریڈ())", "text": "پرنٹ (ایف ۔ ریڈ ()):"}
+{"unnormalised": "", "normalised": "مگر فائل نا لبنہِ یِنہِ:", "text": "مگر FileNotFoundError:"}
+{"unnormalised": "", "normalised": "پرنٹ چھُ \"Sample normalized file 'test1.txt' نِیٛبرٕ فولڈَرَس مَنٛز دَسِیاب نہٕ۔\"", "text": "پِرِنٛٹ(\"سیمپل نارمَلایِزڈ فایِل 'test1.txt' آؤُٹ پُٹ فولڈَرَس مَنٛز لَبنہٕ نہٕ۔\")"}
+{"unnormalised": "", "normalised": "The quick brown fox jumps over the lazy dog.\n```", "text": "The quick brown fox jumps over the lazy dog.\n```"}
+{"unnormalised": "", "normalised": "**Translation:**\n\nتَرجُمہ:\n\n**وضاحَت تہٕ ڈیزائن چُناو:**", "text": "**Translation:**\n\nتَرجُمہ:\n\n**وضاحَت تہٕ ڈیزائن چُناو:**"}
+{"unnormalised": "", "normalised": "1. **`num2words` لائبریری:** یہ قدرتی اعداد و شمار کی تبدیلی کے لیے ایک اہم انحصار ہے۔ یقینی بنائیں کہ آپ اسے انسٹال کریں: `pip install num2words`.", "text": "1. **`num2words` لائبریری:** ییہِ اَکھ اَہَم انحصار چھُ قدرتی اعدادن ہندِس تبدیلی خٲطرٕ۔ یقٲیین بَناو زِ یہِ انسٹال کَرو: `pip install num2words`."}
+{"unnormalised": "", "normalised": "2.  **آپریشنن ہند ترتیب:** `re.sub` کالز ہند ترتیب چھُ ضروری۔", "text": "2. **آپریشنن ہُنٛد ترٛتیب:** `re.sub` کالَن ہُنٛد ترٛتیب ضَروری چھُ۔"}
+{"unnormalised": "", "normalised": "*   **خصوصی نشانہٕ اول:** `+/-`, `!=`, `<=`, `>=` چھِ عام نشانہٕ نشوونِ یَنےِ، یِمیےِ پَریٖشانِی ہَٹٲوَنَس خٲطرٕ پَہیٖلےٕ سٲمباٖلنہٕ یِوان، میٖثَل اتھِ `@`, `&`۔", "text": "کیازِ خاص نشان اول: `+/-`, `!=`, `<=`, `>=` چھِ عام نشانن ہنٛدِس پیٹھہٕ یتھای `@`, `&` سٟتؠ سٟتؠ سمبھالنہٕ یوان تہ تاکہ صحیح تبدیلی یقینِی بنٲوہِ جاے."}
+{"unnormalised": "", "normalised": "*   **`/` سنبھالنہٕ:** `/` نشانس متعلق چھہ پیچیدٕ ضوابط۔ یہٕ چھہ خاص ترتیب سٟتؠ سنبھالنہٕ یوان: اکائی والؠن حصن سٟتؠ، پتہٕ عام حصن سٟتؠ، پتہٕ لفظن درمیان \"یا\" سٟتؠ، پتہٕ ملاوٹ والؠن صورتن خٲطرٕ \"سلیش\" سٟتؠ۔ یہٕ آبشار چھہ یقینی بناوان کہ سارِوٕے کھوتہٕ مناسب مطلب لاگو اوسُن۔", "text": "* **`/` ہیٚنٛڈل کرُن:** `/` نشٲنہٕ چھُ پیچیدہِ قٲعدن سٟتؠ چلٲونہٕ یِوان۔ یہِ چھُ اِنتِظٲمی ترتیٖبس مُطٲبِق چَھلٲونہٕ یِوان: واحدَن سٟتؠ کسر، پتہٕ عٲم کسر، پتہٕ لفظَن درمیان \"یا\"، پتہٕ مِلاوٕٹ صورتحال خٲطرٕ \"سلیش\"۔ یہِ آبشٲر چھُ یقِیٖنی بناوان زِ سَب کھٲص مَطلب اِستِعمٲل کَرنہٕ چھُ یِوان۔"}
+{"unnormalised": "", "normalised": "*   **تأریخ:** پروسیس بدری کرن تاکہ بچاو کرن `DD/MM/YYYY` تفسیر کرن سُنُد حِساب یا صرف نمبر.", "text": "* **تَوٲریٖخ:** یِمَن پَروسیس کَرُن چھُ یِمِس خٲطرٕ زِ `DD/MM/YYYY` چھُ کَم کَرُن زِ یِم تَقسیٖم آسَن یا صِرف عَدَد آسَن۔"}
+{"unnormalised": "", "normalised": "*   **Currency + Number + Suffix:** یہِ چھُ اَکھ خاص انداز، یُس چھُ گۄڈٕیی ہینڈل کرنہٕ یِوان۔", "text": "* **کرنسی + نمبر + لاحقہ:** یہ ایک خاص نمونہ ہے، اس لیے اسے جلد نمٹایا جاتا ہے۔"}
+{"unnormalised": "", "normalised": "*   **اعدادٕ سٟتۍ لاحقہٕ:** عام نمبر بدلناوُن پٲٹھؠ گۄڈٕ ہینڈل کرنہٕ یِہِ۔ `20K` نہٕ گَژھِ `twenty K` تہٕ پتہٕ `twenty thousand` بَنن.", "text": "* **Proper Noun Recognition:** Crucial for accuracy.\n* **Contextual Accuracy:** For nuanced meaning.\n\n* **عددی لاحقہ جات:** عام عدد تبدیلی کھن تر ہندلنہ ہیٚو۔ \"20K\" گژھنہ زِ \"twenty K\" تہٕ پتہ \"twenty thousand\" بنِے۔\n* **اسمِ خاص شناخت:** درستگی خاطرٕ ضروری۔\n* **متنی درستی:** باریک مطلب خاطرٕ۔"}
+{"unnormalised": "", "normalised": "*   **یونِٹ:** عام نمبر تبدِیلی کھینٛدر پَتہٕ سنبھالنہٕ۔ `10cm` چھُ نہٕ بَنُن گَژھَن `ten cm` تہٕ پتہٕ `ten centimeter`۔", "text": "* **Compounds:** Use numerals for the last number in compounds. `3-4` should become `تَرے-4`.\n* **Ordinal numbers:** Use ordinal numbers when required (replace `1st` with `گۄڈٕنُک`).\n* **Ranges:** Use en dash (–) between numbers in ranges.\n\nOkay, here's the text to translate:\n\nUpdate your Zoom to version 5.13.5 or higher.\nJoin us on September 14th for a webinar.\nThe webinar will begin at 10:00 AM PST and end at 11:00 AM PST.\nHere are 3 ways to improve your workflow:\n1. Automate repetitive tasks.\n2. Use keyboard shortcuts.\n3. Batch similar tasks.\nPlease submit your entries by October 27th.\nThis includes updates to the 1st section.\nPlease read chapters 3–4.\nPlease read section 5–7.\nFor any questions, call us at 555-123-4567.\nThe package weighs approximately 10cm.\nI need about 3-4 hours."}
+{"unnormalised": "", "normalised": "*   **अक्रोनम:** विशिष्ट उपसर्गन हंद बाद आमत अददन नश्ट करन खतिर संभल्योन। बाह्यकरण ज़रूरी छु।", "text": "* **Acronyms:** یِمَن مُخفّف لفظَن ہُنٛد اِستِعمال چھُ خاص پیش لفظَن پتہٕ تہٕ عام اَدَدَن نِشَن گۄڈنٕے کَرنہٕ یِوان تاکہٕ غلط فہمی نَہ گَژھٕے۔ اِستثنا ضَروری چھِ۔"}
+{"unnormalised": "", "normalised": "*   **عمومی اعداد:** نسبتا دیر اطلاق کیا جاتا ہے تاکہ کوئی بھی باقی عدد پکڑے جا سکے جو زیادہ مخصوص اصولوں سے نہیں ڈھکے گئے ہیں۔", "text": "* **عام نمبر:** باقی ریمیننگ انکشن والی ڈیجیٹس کیچ کررنہ خٲطرٕ نسبتاً دیر سٟتؠ لاگو کرنہٕ۔"}
+{"unnormalised": "", "normalised": "*   **ریاضیاتی اشارات:** آخرس پیٹھ لاگو کرنہٕ، چونکہِ زیٛادٕ تر ریاضیاتی جُز (مثلا ً `^`، `_`، `∫`، `Σ`، اعداد) گژھن پہلے علامت ٲثُر یا عدد قاعدٕن ہنٛدِس ذریعہٕ چھُھینٛوٚن۔ ریاضی خٲطرٕ خاص رؠگٲکس تمس پَتہٕ چھُ تموُن زبانی شکلن منٛز جوڑان۔", "text": "* **ریاضیاتی علامت:** آخری طرف لاگو، چونکہ ریاضی کے کئی اجزاء (جیسے `^`, `_`, `∫`, `Σ`, نمبر) پہلے علامتی یا نمبر اصولوں سے متاثر ہو سکتے ہیں۔ پھر ریاضی کے مخصوص ریجیکس ان کو بولی جانے والی شکلوں میں باندھتے ہیں۔"}
+{"unnormalised": "", "normalised": "3.  **ریگولر ایکسپریشنز:**", "text": "۳. **ریگولر ایکسپریشنز:**"}
+{"unnormalised": "", "normalised": "*   `\\b`: لفظ حد چھُ وسیع پیمانے پٲٹھۍ اِستِمال یوان کرنہٕ پورٕ لفظ/نمبر مماثل کرنٕچ خاطرہٕ تہٕ دِیگر لفظن یا شناخت کارن اندر جزوی بدلٲو بچاونٕچ خاطرہٕ۔", "text": "* `\\b`: لفظن ہٕنٛز حد چھِ وٲضِح لفظ/نمبر تولنہٕ خٲطرٕ اِستِمال کرنہٕ یِوان تہٕ دِیگر لفظن یا شناخت کارَن مَنٛز جزوی تبٲدلہٕ پَرتھ پرہیز کرنہٕ خٲطرٕ۔"}
+{"unnormalised": "", "normalised": "*   `(?:\\.\\d+)?`: غٲر-کٲبِچَر گروپ عَددَن مَنٛز اِختیٲری عشاریہ حِصَن خٲطرٕ (مثلاً، `10` یا `10.5`)۔", "text": "* `(?:\\.\\d+)?`: آپشنل عشاریہ حصہ نمبرن منز (مثلاً `10` یا `10.5`) خٲطرٕ غٲر کیپچر کرنہ وول گروپ۔"}
+{"unnormalised": "", "normalised": "*   `re.IGNORECASE`: اِستِمال یُس یونِٹ مُطابِقت خٲطرٕ ییٚن کَرنہٕ باگٲتھ `KG`، `kg`، وَغیٖرٕ پَکَڑنہٕ خٲطرٕ۔", "text": "* `re.IGNORECASE`: یُونِٹ مَچَن خٲطرٕ اِستِمال یُس `KG`، `kg`، وَغَیراَن ہَنٛز گِرَفٕت کَرَن۔"}
+{"unnormalised": "", "normalised": "4.  **`convert_number_to_words` مددگار:** `num2words` ریپ کران چھُ تہٕ اعشاری عددن ہٕندِس خٲطرٕ اَکھ آسان جانچ شٲمل کران تاکہ یِہ یقینی بناونہٕ یِہ زِ تمیز سٟتؠ سنبھالنہٕ چھِ یِوان (مثال کے طور پٲٹھؠ، `12.5` چھُ بنان `twelve point five`)۔ یہِ چھُ تِم حالتَن تہِ سنبھالان یَتھ `1.0` یا `1.00` سیدھی طرح \"one\" ہی آسُن گَژھان نہٕ زِ \"one point zero\"۔", "text": "4. **`convert_number_to_words` مددگار:** `num2words` رٲپ کران چھُ تہٕ اشاریہ نمبرن ہُنٛد اَکھ آسان چیک شامل کران یَتھ کِن یقینی بناونہٕ یِیہِ زِ تِمَن سٲتھ نفاست سٲتھ نِبَڑنہٕ یِیٚہِ (مِثالے طور، `12.5` بنٕیے `twelve point five`)۔ یِہٕ توٲے تِمام حلاتَن سنبھالے یِتھن مَنٛز `1.0` یا `1.00` ین سادٕہٕ طور \"اَکھ\" ہوُن لازِم نہٕ زِ \"اَکھ پوائنٹ زیرو\"۔"}
+{"unnormalised": "", "normalised": "5.  **Ordinal Numbers:** `num2words(day, to='ordinal')` তারিখ বদলি করন خاطر استعمال چھُ یوان کرنہٕ، یقیٖنی بَناوَن \"tenth\", \"first\" وغیرہ۔", "text": "5. **ترتیبی اعداد:** `num2words(day, to='ordinal')` تاریخ تبدیل کرن خاطرٕ استعمال چھُ کرنہٕ یوان، یِم یقینی بناون چھُ \"دہم\"، \"اول\"، وغیرہ۔"}
+{"unnormalised": "", "normalised": "6.  **Error Handling:** ٲسہ چھِ فائل پروسس کرنہٕ دوران اؠک \"try-except\" بلاک شٲمل تاکہِ ممکنہ \"IOError\" یا باقی مسلہٕ معمول بناونہٕ دوران قٲبوٗ کرِ، مسئلہٕ والین فائلن ہُنٛد اندِراجھ کرنہٕ تہٕ اصٕلی چیٖز اوس حالتھ منتقِل کرنہٕ خاطرٕ.", "text": "6. **غلطی ہندلنگ:** فائل پروسیسنگ دوران ممکنہ `IOError` یا باقاعدگی کرن دوران باقی مسلن تھامنہ لیکھن کھاٹرٕ اَکھ `try-except` بلاک شامل چھُ یم مسلہ دار فائلن ہندٕ اندراج کرنہٕ، تہٕ امیچ اصلی نقل کرنہٕ چھُ یوان۔"}
+{"unnormalised": "", "normalised": "7.  **`unicodedata`:** یِتھوٚز اَہَم طور پٲٹھؠ اِس نُسخَس مَنٛز `normalize_text` خٲطرٕ اِستِمال نہٕ کَرنہٕ آو (چُھوٚنکہِ `re` زِیادٕ تر کٲم سَمبھالَن چھُ، تہٕ `unicodedata` زیٛادٕ تَر لَفٕظَن ہٕنٛز اَصٕل شَکٕل بَحال کَرنہٕ خٲطرٕ چھُ)، یہِ یَاد دِہَنَس مَنٛز رٲکھَن خٲطرٕ اَکھ اَچھُ اَوزار چھُ اَگر ضَرورَتھ آسہِ تہٕ زیٛادٕ اَہَم عَلامتَن ہٕنٛز پَروٲی کَرنہٕ خٲطرٕ.", "text": "7. **`unicodedata`:** Yeli yi version-as `normalize_text` khatir zahir karun istemal nahih karun yiyee (kyazi `re` yi chhu akser sambhalan, tay `unicodedata` chhu zyada text canonicalization khatir), magar yi chhu ak achhi tool yad rakhnavan khatir agar zyada advanced nishan sambhalan zaroori hoye."}
+{"unnormalised": "", "normalised": "8.  **ऑउटपुट फोल्डर मिररिंग:** `os.makedirs(output_folder, exist_ok=True)`  तॖ `os.path.relpath` दुरुस्त तरीके से डायरेक्टरी ढांचा दुबारा बनावन।", "text": "8. **آؤٹ پُٹ فولڈر مررنگ:** `os.makedirs(output_folder, exist_ok=True)` تہٕ `os.path.relpath` چھِ صحیح طٔرۍقہٕ سٟتۍ ڈایریکٹری سٹرکچر دوبارٕ تعمیر کران۔"}
+{"unnormalised": "", "normalised": "یہ سکرپٹ چھُ ٹھیک زٲژ تراونہٕ گژھن یِمن نارملائزیشن کٲمن ہٕندِس دوران۔ یاد تھٲو یِمن مختلف مثالن سٟتؠ ٹیسٹ کرُن گژھِ!", "text": "یہ سکرپٹ چھُ ٹھیک زٲژ تراونہٕ گژھن یِمن نارملائزیشن کٲمن ہٕندِس دوران۔ یاد تھٲو یِمن مختلف مثالن سٟتؠ ٹیسٹ کرُن گژھِ!"}
