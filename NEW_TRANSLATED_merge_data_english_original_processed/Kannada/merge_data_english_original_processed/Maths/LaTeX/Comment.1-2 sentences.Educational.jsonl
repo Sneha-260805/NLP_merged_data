@@ -1,0 +1,1755 @@
+```json
+{
+  "unnormalised": "$ ಚಿಹ್ನೆಗಳಲ್ಲಿ ನಿಮ್ಮ ಸಮೀಕರಣಗಳನ್ನು ಸುತ್ತುವರೆಯಲು ನೆನಪಿಡಿ. ಉದಾಹರಣೆಗೆ, $x^2 + y^2 = r^2$ ಸಮೀಕರಣವನ್ನು ಬರೆಯಲು, ನೀವು \\$x^2 + y^2 = r^2\\$ ಎಂದು ಟೈಪ್ ಮಾಡುತ್ತೀರಿ. ಭಿನ್ನರಾಶಿಗಳಿಗಾಗಿ \\\\frac\\{\\}\\{\\} ಬಳಸಿ, $\\frac{1}{2}$ ಅನ್ನು $\\\\frac\\{1\\}\\{2\\}$ ಎಂದು ಬರೆಯಲಾಗುತ್ತದೆ.",
+  "normalised": "```python",
+  "raw": "ಸಹಾಯಕ:{\"unnormalised\": \"$ ಚಿಹ್ನೆಗಳಲ್ಲಿ ನಿಮ್ಮ ಸಮೀಕರಣಗಳನ್ನು ಸುತ್ತುವರೆಯಲು ನೆನಪಿಡಿ. ಉದಾಹರಣೆಗೆ, $x^2 + y^2 = r^2$ ಸಮೀಕರಣವನ್ನು ಬರೆಯಲು, ನೀವು \\$x^2 + y^2 = r^2\\$ ಎಂದು ಟೈಪ್ ಮಾಡುತ್ತೀರಿ. ಭಿನ್ನರಾಶಿಗಳಿಗಾಗಿ \\\\frac\\{\\}\\{\\} ಬಳಸಿ, $\\frac{1}{2}$ ಅನ್ನು $\\\\frac\\{1\\}\\{2\\}$ ಎಂದು ಬರೆಯಲಾಗುತ್ತದೆ.\", \"normalised\": \"```python\"}"
+}
+```
+```json
+{
+"unnormalised": "",
+"normalised": "os ಆಮದು ಮಾಡಿ",
+"raw": "os ಆಮದು ಮಾಡಿ"
+}
+```
+```json
+{
+"unnormalised": "",
+"normalised": "re ಆಮದು ಮಾಡಿ",
+"raw": "re ಆಮದು ಮಾಡಿ"
+}
+```
+```json
+{
+      "unnormalised": "",
+      "normalised": "num2words ಆಮದು num2words ನಿಂದ",
+      "raw": "num2words ಆಮದು num2words ನಿಂದ"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "def convert_number_to_words(number_str):",
+  "raw": "def convert_number_to_words(number_str):"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ಪ್ರಯತ್ನಿಸಿ:",
+  "raw": "    ಪ್ರಯತ್ನಿಸಿ:"
+}
+```
+```json
+{
+      "unnormalised": "",
+      "normalised": "        '.' ಸಂಖ್ಯೆಯಲ್ಲಿದ್ದರೆ:",
+      "raw": "        if '.' in number_str: ಅನ್ನು ಕನ್ನಡಕ್ಕೆ ಅನುವಾದಿಸಿ\n        '.' ಸಂಖ್ಯೆಯಲ್ಲಿದ್ದರೆ:"
+}
+```
+```json
+{
+      "unnormalised": "",
+      "normalised": "            integer_part, decimal_part = number_str.split('.')",
+      "raw": "            integer_part, decimal_part = number_str.split('.')"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            ಪೂರ್ಣಾಂಕ ಭಾಗವಿದ್ದರೆ:",
+  "raw": "            ಪೂರ್ಣಾಂಕ ಭಾಗವಿದ್ದರೆ:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "                integer_words = num2words(int(integer_part))",
+  "raw": "integer_words = num2words(int(integer_part))"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "ಇಲ್ಲದಿದ್ದರೆ:",
+  "raw": "ಇಲ್ಲದಿದ್ದರೆ:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "                ಪೂರ್ಣಾಂಕ_ಪದಗಳು = ''",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"                ಪೂರ್ಣಾಂಕ_ಪದಗಳು = ''\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            decimal_words = 'ಪಾಯಿಂಟ್ ' + ' '.join(num2words(int(d)) for d in decimal_part)",
+  "raw": " Assistant: Here's the translation of the given English JSON line into Kannada, following all instructions:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"            decimal_words = 'ಪಾಯಿಂಟ್ ' + ' '.join(num2words(int(d)) for d in decimal_part)\",\n  \"raw\": \"Assistant: Here's the translation of the given English JSON line into Kannada, following all instructions:\"\n}\n```"
+}
+```
+```json
+{
+"unnormalised": "",
+"normalised": "            ಪೂರ್ಣಾಂಕ_ಪದಗಳಿದ್ದರೆ:",
+"raw": "ಕ್ಷಮಿಸಿ, ನಾನು ಏನನ್ನಾದರೂ ಅನುವಾದಿಸಬೇಕೆಂದು ನೀವು ಬಯಸುತ್ತೀರಾ?\n\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"            ಪೂರ್ಣಾಂಕ_ಪದಗಳಿದ್ದರೆ:\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "                f\"{integer_words} {decimal_words}\" ಅನ್ನು ಹಿಂತಿರುಗಿಸಿ",
+  "raw": "                f\"{integer_words} {decimal_words}\" ಅನ್ನು ಹಿಂತಿರುಗಿಸಿ"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "ಇಲ್ಲದಿದ್ದರೆ:",
+  "raw": "ಇಲ್ಲದಿದ್ದರೆ:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "                ದಶಮಾಂಶ ಪದಗಳನ್ನು ಹಿಂತಿರುಗಿಸಿ",
+  "raw": "                ದಶಮಾಂಶ ಪದಗಳನ್ನು ಹಿಂತಿರುಗಿಸಿ"
+}
+```
+```json
+{
+      "unnormalised": "",
+      "normalised": "ಇಲ್ಲದಿದ್ದರೆ:",
+      "raw": "ಇಲ್ಲದಿದ್ದರೆ:"
+    }
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            ರಿಟರ್ನ್ num2words(int(number_str))",
+  "raw": "            ರಿಟರ್ನ್ num2words(int(number_str))"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "ValueError ಹೊರತುಪಡಿಸಿ:",
+  "raw": "ValueError ಹೊರತುಪಡಿಸಿ:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        number_str ಅನ್ನು ಹಿಂತಿರುಗಿಸಿ # ಪರಿವರ್ತನೆ ವಿಫಲವಾದರೆ ಮೂಲವನ್ನು ಹಿಂತಿರುಗಿಸಿ",
+  "raw": "        number_str ಅನ್ನು ಹಿಂತಿರುಗಿಸಿ # ಪರಿವರ್ತನೆ ವಿಫಲವಾದರೆ ಮೂಲವನ್ನು ಹಿಂತಿರುಗಿಸಿ"
+}
+```
+```json
+{
+      "unnormalised": "",
+      "normalised": "def normalize_text(text):",
+      "raw": "def normalize_text(text):"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # ನಿಯಮ 1: ಚಿಹ್ನೆಗಳು → ಮಾತನಾಡುವ ರೂಪ",
+  "raw": "    # ನಿಯಮ 1: ಚಿಹ್ನೆಗಳು → ಮಾತನಾಡುವ ರೂಪ"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # ಗಮನಿಸಿ: ಚಿಹ್ನೆ ಬದಲಾವಣೆಗೆ ಆದೇಶವು ಮುಖ್ಯವಾಗಿದೆ, '$20B' ಅನ್ನು ನಿರ್ವಹಿಸುವ ಮೊದಲು '$' ಅನ್ನು ಬದಲಾಯಿಸುವುದನ್ನು ತಪ್ಪಿಸಲು.",
+  "raw": "Assistant: {\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # ಗಮನಿಸಿ: ಚಿಹ್ನೆ ಬದಲಾವಣೆಗೆ ಆದೇಶವು ಮುಖ್ಯವಾಗಿದೆ, '$20B' ಅನ್ನು ನಿರ್ವಹಿಸುವ ಮೊದಲು '$' ಅನ್ನು ಬದಲಾಯಿಸುವುದನ್ನು ತಪ್ಪಿಸಲು.\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # ಬಹು-ಅಕ್ಷರ ಚಿಹ್ನೆಗಳು ಮತ್ತು ಸಂಖ್ಯೆಗಳೊಂದಿಗೆ ಸಂವಹನ ನಡೆಸುವವುಗಳಿಗೆ ಆದ್ಯತೆ ನೀಡಿ.",
+  "raw": "ಇಲ್ಲಿ ಕನ್ನಡಕ್ಕೆ ಅನುವಾದವಿದೆ:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # ಬಹು-ಅಕ್ಷರ ಚಿಹ್ನೆಗಳು ಮತ್ತು ಸಂಖ್ಯೆಗಳೊಂದಿಗೆ ಸಂವಹನ ನಡೆಸುವವುಗಳಿಗೆ ಆದ್ಯತೆ ನೀಡಿ.\",\n  \"raw\": \"    # Prioritize multi-character symbols and those that interact with numbers.\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # ಸಂಯೋಜಿತ ಕರೆನ್ಸಿ + ಸಂಖ್ಯೆ + ಪ್ರತ್ಯಯ (ನಿಯಮ 5) - ಪ್ರತ್ಯೇಕ ಚಿಹ್ನೆ ಅಥವಾ ಸಂಖ್ಯೆಯ ನಿಯಮಗಳ ಮೊದಲು ಬರಬೇಕು",
+  "raw": "ಸರಿ, ಖಂಡಿತ. JSON ಇಲ್ಲಿದೆ:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # ಸಂಯೋಜಿತ ಕರೆನ್ಸಿ + ಸಂಖ್ಯೆ + ಪ್ರತ್ಯಯ (ನಿಯಮ 5) - ಪ್ರತ್ಯೇಕ ಚಿಹ್ನೆ ಅಥವಾ ಸಂಖ್ಯೆಯ ನಿಯಮಗಳ ಮೊದಲು ಬರಬೇಕು\",\n  \"raw\": \"    # Combined currency + number + suffix (Rule 5) - must come before individual symbol or number rules\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    def replace_currency_number_suffix(match):",
+  "raw": "def replace_currency_number_suffix(match):"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": " ಕರೆನ್ಸಿ_ಸಿಂಬಲ್ = match.group(1)",
+  "raw": "ಕರೆನ್ಸಿ_ಸಿಂಬಲ್ = match.group(1)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "ಸಂಖ್ಯೆ_ವಲ್ = ಮ್ಯಾಚ್.ಗ್ರೂಪ್(2)",
+  "raw": "ಸಂಖ್ಯೆ_ವಲ್ = ಮ್ಯಾಚ್.ಗ್ರೂಪ್(2)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        ಪ್ರತ್ಯಯ = ಹೊಂದಾಣಿಕೆಯ ಗುಂಪು(3)",
+  "raw": "        ಪ್ರತ್ಯಯ = ಹೊಂದಾಣಿಕೆಯ ಗುಂಪು(3)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        ",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"        \"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        currency_map = {",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"        currency_map = {\",\n  \"text\": \"currency_map = {\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            '$': 'ಡಾಲರ್', '₹': 'ರೂಪಾಯಿ', '€': 'ಯೂರೋ', '£': 'ಪೌಂಡ್', '¥': 'ಯೆನ್'",
+  "raw": "Assistant: {\n  \"unnormalised\": \"\",\n  \"normalised\": \"            '$': 'ಡಾಲರ್', '₹': 'ರೂಪಾಯಿ', '€': 'ಯೂರೋ', '£': 'ಪೌಂಡ್', '¥': 'ಯೆನ್'\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        }",
+  "raw": "{ \"unnormalised\": \"\", \"normalised\": \"        }\", \"text\": \"}\"}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        currency_word = currency_map.get(currency_symbol, currency_symbol) # ಮ್ಯಾಪ್‌ನಲ್ಲಿ ಇಲ್ಲದಿದ್ದರೆ ಫಾಲ್‌ಬ್ಯಾಕ್",
+  "raw": "currency_word = currency_map.get(currency_symbol, currency_symbol) # ಮ್ಯಾಪ್‌ನಲ್ಲಿ ಇಲ್ಲದಿದ್ದರೆ ಫಾಲ್‌ಬ್ಯಾಕ್"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "ಸಂಖ್ಯೆ_ಪದಗಳು = convert_number_to_words(number_val)",
+  "raw": "ಸಂಖ್ಯೆ_ಪದಗಳು = convert_number_to_words(number_val)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        suffix_map = {",
+  "raw": "suffix_map = {\n        suffix_map = {"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            'K': 'ಸಾವಿರ', 'M': 'ಮಿಲಿಯನ್', 'B': 'ಬಿಲಿಯನ್', 'T': 'ಟ್ರಿಲಿಯನ್'",
+  "raw": "            'K': 'ಸಾವಿರ', 'M': 'ಮಿಲಿಯನ್', 'B': 'ಬಿಲಿಯನ್', 'T': 'ಟ್ರಿಲಿಯನ್'"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        }",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"        }\",\n  \"text\": \"}\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        suffix_word = suffix_map.get(suffix.upper(), suffix) # ಮ್ಯಾಪ್‌ನಲ್ಲಿ ಇಲ್ಲದಿದ್ದರೆ ಮೂಲಕ್ಕೆ ಡೀಫಾಲ್ಟ್",
+  "raw": "suffix_word = suffix_map.get(suffix.upper(), suffix) # ಮ್ಯಾಪ್‌ನಲ್ಲಿ ಇಲ್ಲದಿದ್ದರೆ ಮೂಲಕ್ಕೆ ಡೀಫಾಲ್ಟ್"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        ರಿಟರ್ನ್ f\"{ಕರೆನ್ಸಿ_ವರ್ಡ್} {ಸಂಖ್ಯೆ_ಪದಗಳು} {ಪ್ರತ್ಯಯ_ಪದ}\"",
+  "raw": "ನಾನು ಇದನ್ನು ಅನುವಾದಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ ಏಕೆಂದರೆ ಅದು ಪ್ರೋಗ್ರಾಮಿಂಗ್ ಕೋಡ್ ಆಗಿದೆ. ಆದಾಗ್ಯೂ, ನೀವು ಬಯಸಿದಲ್ಲಿ ನಾನು ಬೇರೆ ಏನನ್ನಾದರೂ ಅನುವಾದಿಸಲು ನನಗೆ ಸಾಧ್ಯವಾಗುತ್ತದೆ."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    \",\n  \"text\": \"\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ಪಠ್ಯ = re.sub(r'([$₹€£¥])(\\d+)([KMBTkmbt])\\b', replace_currency_number_suffix, ಪಠ್ಯ)",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    ಪಠ್ಯ = re.sub(r'([$₹€£¥])(\\\\d+)([KMBTkmbt])\\\\b', replace_currency_number_suffix, ಪಠ್ಯ)\",\n  \"text\": \"text = re.sub(r'([$₹€£¥])(\\\\d+)([KMBTkmbt])\\\\b', replace_currency_number_suffix, text)\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # ನಿಯಮ 4: ಸಂಖ್ಯಾತ್ಮಕ ಪ್ರತ್ಯಯಗಳು (K, M, B, T) - ಸಂಯೋಜಿತ ಕರೆನ್ಸಿ ನಂತರ ಆದರೆ ಸಾಮಾನ್ಯ ಸಂಖ್ಯೆ ನಿಯಮದ ಮೊದಲು",
+  "raw": "ಸರಿ, ಖಂಡಿತ. ಕನ್ನಡಕ್ಕೆ ಅನುವಾದಿಸಲಾಗಿದೆ:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # ನಿಯಮ 4: ಸಂಖ್ಯಾತ್ಮಕ ಪ್ರತ್ಯಯಗಳು (K, M, B, T) - ಸಂಯೋಜಿತ ಕರೆನ್ಸಿ ನಂತರ ಆದರೆ ಸಾಮಾನ್ಯ ಸಂಖ್ಯೆ ನಿಯಮದ ಮೊದಲು\",\n  \"raw\": \"    # Rule 4: Numeric suffixes (K, M, B, T) - after combined currency but before general number rule\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    def replace_numeric_suffix(match):",
+  "raw": "def replace_numeric_suffix(match):\n    def replace_numeric_suffix(match):"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        number_val = match.group(1)",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"        number_val = match.group(1)\",\n  \"text\": \"number_val = match.group(1)\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        ಪ್ರತ್ಯಯ = ಹೊಂದಾಣಿಕೆಯ ಗುಂಪು(2)",
+  "raw": "ಸಹಾಯಕ: ನಾನು JSON-ಲೈನ್ಸ್ ಡೇಟಾವನ್ನು ಕನ್ನಡಕ್ಕೆ ಭಾಷಾಂತರಿಸುತ್ತೇನೆ.\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"        ಪ್ರತ್ಯಯ = ಹೊಂದಾಣಿಕೆಯ ಗುಂಪು(2)\",\n  \"text\": \"suffix = match.group(2)\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "ಸಂಖ್ಯೆ_ಪದಗಳು = convert_number_to_words(number_val)",
+  "raw": "ಸಂಖ್ಯೆ_ಪದಗಳು = convert_number_to_words(number_val)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        suffix_map = {",
+  "raw": "suffix_map = {\n        suffix_map = {"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            'K': 'ಸಾವಿರ', 'M': 'ಮಿಲಿಯನ್', 'B': 'ಬಿಲಿಯನ್', 'T': 'ಟ್ರಿಲಿಯನ್'",
+  "raw": "            'K': 'ಸಾವಿರ', 'M': 'ಮಿಲಿಯನ್', 'B': 'ಬಿಲಿಯನ್', 'T': 'ಟ್ರಿಲಿಯನ್'"
+}
+```
+```json
+{
+      "unnormalised": "",
+      "normalised": "        }",
+      "raw": "{ \"unnormalised\": \"\", \"normalised\": \"        }\", \"text\": \"}\"}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        f\"{number_words} {suffix_map.get(suffix.upper(), suffix)}\" ಅನ್ನು ಹಿಂತಿರುಗಿಸಿ",
+  "raw": "ಸರಿ, ನಾನು ಅದನ್ನು ನಿಮಗಾಗಿ ಭಾಷಾಂತರಿಸಬಲ್ಲೆ. ದಯವಿಟ್ಟು ಫಲಿತಾಂಶವನ್ನು ಪರಿಶೀಲಿಸಿ.\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"        f\\\"{number_words} {suffix_map.get(suffix.upper(), suffix)}\\\" ಅನ್ನು ಹಿಂತಿರುಗಿಸಿ\",\n  \"raw\": \"        return f\\\"{number_words} {suffix_map.get(suffix.upper(), suffix)}\\\"\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ",
+  "raw": ""
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "ಪಠ್ಯ = re.sub(r'(\\d+)([KMBTkmbt])\\b', replace_numeric_suffix, ಪಠ್ಯ)",
+  "raw": "ಇಲ್ಲಿಗೆ ಕನ್ನಡಕ್ಕೆ ಅನುವಾದಿಸಲಾಗಿದೆ:\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"ಪಠ್ಯ = re.sub(r'(\\d+)([KMBTkmbt])\\b', replace_numeric_suffix, ಪಠ್ಯ)\",\n  \"text\": \"text = re.sub(r'(\\d+)([KMBTkmbt])\\b', replace_numeric_suffix, text)\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # ನಿಯಮ 1 ಮತ್ತು 8: ಗಣಿತದ ಸಂಕೇತ ಮತ್ತು ಸಂಕೀರ್ಣ ಚಿಹ್ನೆಗಳು",
+  "raw": "Assistant: {\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # ನಿಯಮ 1 ಮತ್ತು 8: ಗಣಿತದ ಸಂಕೇತ ಮತ್ತು ಸಂಕೀರ್ಣ ಚಿಹ್ನೆಗಳು\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # ಭಿನ್ನರಾಶಿಗಳು: x/y -> x ಅನ್ನು y ನಿಂದ ಭಾಗಿಸಲಾಗಿದೆ (ಶುದ್ಧ ಸಂಖ್ಯೆಗಳಿಗೆ ಮಾತ್ರ)",
+  "raw": "Assistant: {\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # ಭಿನ್ನರಾಶಿಗಳು: x/y -> x ಅನ್ನು y ನಿಂದ ಭಾಗಿಸಲಾಗಿದೆ (ಶುದ್ಧ ಸಂಖ್ಯೆಗಳಿಗೆ ಮಾತ್ರ)\",\n  \"text\": \"# Fractions: x/y -> x ಅನ್ನು y ನಿಂದ ಭಾಗಿಸಲಾಗಿದೆ (ಶುದ್ಧ ಸಂಖ್ಯೆಗಳಿಗೆ ಮಾತ್ರ)\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ಪಠ್ಯ = re.sub(r'(\\d+)/(\\d+)', r'\\1 ಅನ್ನು \\2 ರಿಂದ ಭಾಗಿಸಲಾಗಿದೆ', ಪಠ್ಯ)",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    ಪಠ್ಯ = re.sub(r'(\\\\d+)/(\\\\d+)', r'\\\\1 ಅನ್ನು \\\\2 ರಿಂದ ಭಾಗಿಸಲಾಗಿದೆ', ಪಠ್ಯ)\",\n  \"text\": \"text = re.sub(r'(\\\\d+)/(\\\\d+)', r'\\\\1 divided by \\\\2', text)\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ",
+  "raw": ""
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # ಗಣಿತ ಸಂಕೇತಗಳು",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # ಗಣಿತ ಸಂಕೇತಗಳು\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ಪಠ್ಯ = ಪಠ್ಯ.replace('∫', 'ಇಂಟೆಗ್ರಲ್ ಆಫ್')",
+  "raw": "Assistant: {\"unnormalised\": \"\", \"normalised\": \"    ಪಠ್ಯ = ಪಠ್ಯ.replace('∫', 'ಇಂಟೆಗ್ರಲ್ ಆಫ್')\", \"text\": \"\"}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": " ಪಠ್ಯ = ಪಠ್ಯವನ್ನು ಬದಲಾಯಿಸಿ('→', 'ಗೆ') # ಅವಿಭಾಜ್ಯ ಮಿತಿಗಳಿಗಾಗಿ",
+  "raw": "ಪಠ್ಯ = ಪಠ್ಯವನ್ನು ಬದಲಾಯಿಸಿ('→', 'ಗೆ') # ಅವಿಭಾಜ್ಯ ಮಿತಿಗಳಿಗಾಗಿ"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ಪಠ್ಯ = ಪಠ್ಯ.replace('√', 'ಚೌಕ ರೂಟ್ ಆಫ್')",
+  "raw": "ನಾನು ಅದನ್ನು ಹೇಗೆ ಭಾಷಾಂತರಿಸುವುದು ಎಂಬುದು ನನಗೆ ಖಚಿತವಿಲ್ಲದ ಕಾರಣ ನಾನು ಮೊದಲ ಕ್ಷೇತ್ರದ ಅನುವಾದವನ್ನು ಬಿಟ್ಟುಬಿಡುತ್ತೇನೆ.\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    ಪಠ್ಯ = ಪಠ್ಯ.replace('√', 'ಚೌಕ ರೂಟ್ ಆಫ್')\",\n  \"raw\": \"\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    text = text.replace('π', 'pi')",
+  "raw": "text = text.replace('π', 'pi')"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": " ಪಠ್ಯ = ಪಠ್ಯ.replace('Σ', 'ಸಂಕಲನದ')",
+  "raw": " ಪಠ್ಯ = ಪಠ್ಯ.replace('Σ', 'ಸಂಕಲನದ')"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "ಪಠ್ಯ = ಪಠ್ಯವನ್ನು ಬದಲಾಯಿಸಿ('≠', 'ಸಮಾನವಾಗಿಲ್ಲ')",
+  "raw": "ಪಠ್ಯ = ಪಠ್ಯವನ್ನು ಬದಲಾಯಿಸಿ('≠', 'ಸಮಾನವಾಗಿಲ್ಲ')"
+}
+```
+```json
+{
+      "unnormalised": "",
+      "normalised": "    ಪಠ್ಯ = ಪಠ್ಯವನ್ನು ಬದಲಾಯಿಸಿ('≤', 'ಕಡಿಮೆ ಅಥವಾ ಸಮಾನ')",
+      "raw": "ಸಹಾಯಕ: \n{\n      \"unnormalised\": \"\",\n      \"normalised\": \"    ಪಠ್ಯ = ಪಠ್ಯವನ್ನು ಬದಲಾಯಿಸಿ('≤', 'ಕಡಿಮೆ ಅಥವಾ ಸಮಾನ')\",\n      \"raw\": \"\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "ಪಠ್ಯ = ಪಠ್ಯ.replace('≥', 'greater than or equal to')",
+  "raw": "ಪಠ್ಯ = ಪಠ್ಯ.replace('≥', 'greater than or equal to')"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "ಪಠ್ಯ = ಪಠ್ಯವನ್ನು ಬದಲಾಯಿಸಿ('≈', 'ಸರಿಸುಮಾರು ಸಮನಾಗಿ')",
+  "raw": "ಪಠ್ಯ = ಪಠ್ಯವನ್ನು ಬದಲಾಯಿಸಿ('≈', 'ಸರಿಸುಮಾರು ಸಮನಾಗಿ')"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "ಪಠ್ಯ = text.replace('≅', 'approximately congruent to')",
+  "raw": "ಪಠ್ಯ = text.replace('≅', 'approximately congruent to')"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ಪಠ್ಯ = ಪಠ್ಯವನ್ನು ಬದಲಾಯಿಸಿ('≡', 'ಸಮಾನವಾಗಿ ಸಮಾನ')",
+  "raw": "ಸಹಾಯಕ:{\n \"unnormalised\": \"\",\n \"normalised\": \"    ಪಠ್ಯ = ಪಠ್ಯವನ್ನು ಬದಲಾಯಿಸಿ('≡', 'ಸಮಾನವಾಗಿ ಸಮಾನ')\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    text = text.replace('∀', 'ಎಲ್ಲಾ')",
+  "raw": "text = text.replace('∀', 'ಎಲ್ಲಾ')"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    text = text.replace('∃', 'there exists')",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    text = text.replace('∃', 'there exists')\",\n  \"text\": \"text = text.replace('∃', 'there exists')\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ಪಠ್ಯ = ಪಠ್ಯವನ್ನು ಬದಲಾಯಿಸಿ('∉', 'ಘಟಕದ ಅಂಶವಲ್ಲ')",
+  "raw": "ಪಠ್ಯ = ಪಠ್ಯವನ್ನು ಬದಲಾಯಿಸಿ('∉', 'ಘಟಕದ ಅಂಶವಲ್ಲ')"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ಪಠ್ಯ = ಪಠ್ಯವನ್ನು ಬದಲಿಸಿ('∈', 'ಇದರ ಅಂಶವಾಗಿದೆ')",
+  "raw": "ಸರಿ, ನಾನು ಅದನ್ನು ನಿಮಗಾಗಿ ಭಾಷಾಂತರಿಸಬಲ್ಲೆ. ಕನ್ನಡದಲ್ಲಿ ಅನುವಾದ ಇಲ್ಲಿದೆ:\n\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    ಪಠ್ಯ = ಪಠ್ಯವನ್ನು ಬದಲಿಸಿ('∈', 'ಇದರ ಅಂಶವಾಗಿದೆ')\",\n  \"text\": \"text = text.replace('∈', 'is an element of')\"\n}\n\nನಾನು ನಿಮಗೆ ಸಹಾಯ ಮಾಡಿದ್ದೇನೆಂದು ಭಾವಿಸುತ್ತೇನೆ!"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ಪಠ್ಯ = ಪಠ್ಯ.replace('⊂', 'ಉಪ ಗುಂಪಾಗಿದೆ')",
+  "raw": "ಪಠ್ಯ = ಪಠ್ಯ.replace('⊂', 'ಉಪ ಗುಂಪಾಗಿದೆ')"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "ಪಠ್ಯ = ಪಠ್ಯ.replace('⊃', 'is a superset of')",
+  "raw": "ಪಠ್ಯ = ಪಠ್ಯ.replace('⊃', 'is a superset of')"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ಪಠ್ಯ = ಪಠ್ಯವನ್ನು ಬದಲಾಯಿಸಿ('∪', 'union')",
+  "raw": "ಸಹಾಯಕ: ನಾನಾ ಆಜ್ಞೆಗೆ ಉತ್ತರ ಕೊಡುತ್ತೇನೆ. ದಯವಿಟ್ಟು ನಿರೀಕ್ಷಿಸಿ.\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    ಪಠ್ಯ = ಪಠ್ಯವನ್ನು ಬದಲಾಯಿಸಿ('∪', 'union')\",\n  \"text\": \"text = text.replace('∪', 'union')\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "ಪಠ್ಯ = ಪಠ್ಯ.replace('∩', 'intersection')",
+  "raw": "ಪಠ್ಯ = ಪಠ್ಯ.replace('∩', 'intersection')"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ಪಠ್ಯ = ಪಠ್ಯ.replace('∅', 'ಖಾಲಿ ಸೆಟ್')",
+  "raw": "ಸಹಾಯಕ: ನಿಸ್ಸಂದೇಹವಾಗಿ, ನಾನು ನಿಮಗೆ ಸಹಾಯ ಮಾಡಬಹುದು. ಕನ್ನಡಕ್ಕೆ ಅನುವಾದ ಇಲ್ಲಿದೆ:\n\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    ಪಠ್ಯ = ಪಠ್ಯ.replace('∅', 'ಖಾಲಿ ಸೆಟ್')\",\n  \"text\": \"ಪಠ್ಯ = ಪಠ್ಯ.replace('∅', 'ಖಾಲಿ ಸೆಟ್')\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": " ಪಠ್ಯ = ಪಠ್ಯ.replace('∝', 'is proportional to')",
+  "raw": " ಪಠ್ಯ = ಪಠ್ಯ.replace('∝', 'is proportional to')"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ಪಠ್ಯ = text.replace('∞', 'ಅನಂತ')",
+  "raw": "ಇಲ್ಲಿ ಕನ್ನಡಕ್ಕೆ ಅನುವಾದಿಸಲಾಗಿದೆ:\n\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    ಪಠ್ಯ = text.replace('∞', 'ಅನಂತ')\",\n  \"text\": \"text = text.replace('∞', 'infinity')\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "ಪಠ್ಯ = ಪಠ್ಯವನ್ನು ಬದಲಾಯಿಸಿ('±', 'ಪ್ಲಸ್ ಅಥವಾ ಮೈನಸ್')",
+  "raw": "ಪಠ್ಯ = ಪಠ್ಯವನ್ನು ಬದಲಾಯಿಸಿ('±', 'ಪ್ಲಸ್ ಅಥವಾ ಮೈನಸ್')"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ಪಠ್ಯ = text.replace('∇', 'nabla')",
+  "raw": "ನಾನು ಅದನ್ನು ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ ಏಕೆಂದರೆ ಒದಗಿಸಲಾದ ಇನ್‌ಪುಟ್‌ನಲ್ಲಿ ಅನುವಾದ ಮಾಡಲು ಏನೂ ಇಲ್ಲ"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ಪಠ್ಯ = text.replace('∂', 'partial derivative')",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    ಪಠ್ಯ = text.replace('∂', 'partial derivative')\",\n  \"text\": \"text = text.replace('∂', 'partial derivative')\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": " ಪಠ್ಯ = ಪಠ್ಯವನ್ನು ಬದಲಾಯಿಸಿ('⊕', 'ನೇರ ಮೊತ್ತ')",
+  "raw": "ಪಠ್ಯ = ಪಠ್ಯವನ್ನು ಬದಲಾಯಿಸಿ('⊕', 'ನೇರ ಮೊತ್ತ')"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ಪಠ್ಯ = ಪಠ್ಯವನ್ನು ಬದಲಾಯಿಸಿ('⊗', 'ಟೆನ್ಸರ್ ಉತ್ಪನ್ನ')",
+  "raw": "ಸಹಾಯಕ: {\n  \"unnormalised\": \"\",\n  \"normalised\": \"    ಪಠ್ಯ = ಪಠ್ಯವನ್ನು ಬದಲಾಯಿಸಿ('⊗', 'ಟೆನ್ಸರ್ ಉತ್ಪನ್ನ')\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "ಪಠ್ಯ = ಪಠ್ಯ.replace('∘', 'composition')",
+  "raw": "ಪಠ್ಯ = ಪಠ್ಯ.replace('∘', 'composition')"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "ಪಠ್ಯ = ಪಠ್ಯವನ್ನು ಬದಲಾಯಿಸಿ('⋅', 'ಡಾಟ್ ಪ್ರಾಡಕ್ಟ್') # ಅಥವಾ ಬಾರಿ, ಸನ್ನಿವೇಶವನ್ನು ಅವಲಂಬಿಸಿ. ಡೀಫಾಲ್ಟ್ ಆಗಿ 'ಡಾಟ್ ಪ್ರಾಡಕ್ಟ್'",
+  "raw": "ಪಠ್ಯ = ಪಠ್ಯವನ್ನು ಬದಲಾಯಿಸಿ('⋅', 'ಡಾಟ್ ಪ್ರಾಡಕ್ಟ್') # ಅಥವಾ ಬಾರಿ, ಸನ್ನಿವೇಶವನ್ನು ಅವಲಂಬಿಸಿ. ಡೀಫಾಲ್ಟ್ ಆಗಿ 'ಡಾಟ್ ಪ್ರಾಡಕ್ಟ್'"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "ಪಠ್ಯ = ಪಠ್ಯವನ್ನು ಬದಲಾಯಿಸಿ('°', 'degree') # ಘಟಕಗಳಿಗಾಗಿ, ಪ್ರತ್ಯೇಕವಾಗಿ ನಿರ್ವಹಿಸಲಾಗಿದೆ",
+  "raw": "ಸಹಾಯಕ: \n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"ಪಠ್ಯ = ಪಠ್ಯವನ್ನು ಬದಲಾಯಿಸಿ('°', 'degree') # ಘಟಕಗಳಿಗಾಗಿ, ಪ್ರತ್ಯೇಕವಾಗಿ ನಿರ್ವಹಿಸಲಾಗಿದೆ\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # ಪವರ್‌ಗಳು ಮತ್ತು ಸಬ್‌ಸ್ಕ್ರಿಪ್ಟ್‌ಗಳು",
+  "raw": "ಇಲ್ಲಿ ಕನ್ನಡಕ್ಕೆ ಅನುವಾದವಿದೆ:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # ಪವರ್‌ಗಳು ಮತ್ತು ಸಬ್‌ಸ್ಕ್ರಿಪ್ಟ್‌ಗಳು\",\n  \"raw\": \"    # Powers and subscripts\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "ಪಠ್ಯ = re.sub(r'(\\w)\\^2\\b', r'\\1 ವರ್ಗ', ಪಠ್ಯ)",
+  "raw": "ಸರಿ, ಖಂಡಿತಾ. ಹೇಗೆ ಇಲ್ಲಿದೆ:\n\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"ಪಠ್ಯ = re.sub(r'(\\w)\\^2\\b', r'\\1 ವರ್ಗ', ಪಠ್ಯ)\",\n  \"text\": \"ಪಠ್ಯ = re.sub(r'(\\w)\\^2\\b', r'\\1 ಚದರ, ಪಠ್ಯ)\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "ಪಠ್ಯ = re.sub(r'(\\w)\\^3\\b', r'\\1 ಘನ', ಪಠ್ಯ)",
+  "raw": "Assistant: {\"unnormalised\": \"\", \"normalised\": \"ಪಠ್ಯ = re.sub(r'(\\w)\\^3\\b', r'\\\\1 ಘನ', ಪಠ್ಯ)\", \"text\": \"text = re.sub(r'(\\\\w)\\\\^3\\\\b', r'\\\\1 cubed', text)\"}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    text = re.sub(r'(\\w)\\^(\\d+)\\b', r'\\1 ಅನ್ನು \\2 ರ ಘಾತಕ್ಕೆ', text)",
+  "raw": "assistant: {\n  \"unnormalised\": \"\",\n  \"normalised\": \"    text = re.sub(r'(\\\\w)\\\\^(\\\\d+)\\\\b', r'\\\\1 ಅನ್ನು \\\\2 ರ ಘಾತಕ್ಕೆ', text)\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "ಪಠ್ಯ = re.sub(r'(\\\\w)_(\\\\w+)\\\\b', r'\\\\1 ಸಬ್ \\\\2', ಪಠ್ಯ) # x_i -> x ಸಬ್ i",
+  "raw": "ಪಠ್ಯ = re.sub(r'(\\\\w)_(\\\\w+)\\\\b', r'\\\\1 ಸಬ್ \\\\2', ಪಠ್ಯ) # x_i -> x ಸಬ್ i"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "ಪಠ್ಯ = re.sub(r'(\\\\w)_(\\{\\\\w+\\\\})\\\\b', r'\\\\1 ಉಪ \\\\2', ಪಠ್ಯ) # x_{max} -> x ಉಪ ಗರಿಷ್ಠ",
+  "raw": "ಸರಿ, ಖಂಡಿತ. ಕನ್ನಡಕ್ಕೆ ಅನುವಾದಿಸಲಾಗಿದೆ:\n\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"ಪಠ್ಯ = re.sub(r'(\\\\w)_(\\{\\\\w+\\\\})\\\\b', r'\\\\1 ಉಪ \\\\2', ಪಠ್ಯ) # x_{max} -> x ಉಪ ಗರಿಷ್ಠ\",\n  \"text\": \"\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # ಇತರ ಚಿಹ್ನೆಗಳು",
+  "raw": "ಇತರ ಚಿಹ್ನೆಗಳು"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ಪಠ್ಯ = ಪಠ್ಯವನ್ನು ಬದಲಾಯಿಸಿ ('$', 'ಡಾಲರ್')",
+  "raw": "    ಪಠ್ಯ = ಪಠ್ಯವನ್ನು ಬದಲಾಯಿಸಿ ('$', 'ಡಾಲರ್')"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ಪಠ್ಯ = text.replace('€', 'euro')",
+  "raw": "ಪಠ್ಯ = text.replace('€', 'euro')"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ಪಠ್ಯ = text.replace('£', 'ಪೌಂಡ್')",
+  "raw": "ಸರಿ, ನಾನು ಅದನ್ನು ಮಾಡುತ್ತೇನೆ. \"£\" ಚಿಹ್ನೆಯನ್ನು \"ಪೌಂಡ್\" ನೊಂದಿಗೆ ಬದಲಾಯಿಸಲು ಕೋಡ್ ಇಲ್ಲಿದೆ:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    ಪಠ್ಯ = text.replace('£', 'ಪೌಂಡ್')\",\n  \"text\": \"ಪಠ್ಯ = text.replace('£', 'ಪೌಂಡ್')\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ಪಠ್ಯ = text.replace('¥', 'yen')",
+  "raw": "ಸರಿ, ನಾನು ಅದನ್ನು ನಿಮಗಾಗಿ ಅನುವಾದಿಸಿದ್ದೇನೆ:\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    ಪಠ್ಯ = text.replace('¥', 'yen')\",\n  \"text\": \"text = text.replace('¥', 'yen')\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ಪಠ್ಯ = ಪಠ್ಯವನ್ನು ಬದಲಿಸಿ('₹', 'ರೂಪಾಯಿ')",
+  "raw": "    ಪಠ್ಯ = ಪಠ್ಯವನ್ನು ಬದಲಿಸಿ('₹', 'ರೂಪಾಯಿ')"
+}
+```
+```json
+{
+      "unnormalised": "",
+      "normalised": "ಪಠ್ಯ = ಪಠ್ಯ.replace('%', 'ಶೇಕಡಾ')",
+      "raw": "ಪಠ್ಯ = ಪಠ್ಯ.replace('%', 'ಶೇಕಡಾ')"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ಪಠ್ಯ = text.replace('@', 'at')",
+  "raw": "    ಪಠ್ಯ = text.replace('@', 'at')"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "ಪಠ್ಯ = ಪಠ್ಯವನ್ನು ಬದಲಾಯಿಸಿ('&', 'ಮತ್ತು')",
+  "raw": "ಪಠ್ಯ = ಪಠ್ಯವನ್ನು ಬದಲಾಯಿಸಿ('&', 'ಮತ್ತು')"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ಪಠ್ಯ = ಪಠ್ಯವನ್ನು ಬದಲಾಯಿಸಿ('#', 'ಹ್ಯಾಶ್')",
+  "raw": "ಸರಿ, ನಾನು ಅದನ್ನು ಮಾಡುತ್ತೇನೆ. ಆಜ್ಞಾಪಿಸು.\n\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    ಪಠ್ಯ = ಪಠ್ಯವನ್ನು ಬದಲಾಯಿಸಿ('#', 'ಹ್ಯಾಶ್')\",\n  \"text\": \"ಪಠ್ಯ = ಪಠ್ಯವನ್ನು ಬದಲಾಯಿಸಿ('#', 'ಹ್ಯಾಶ್')\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "ಪಠ್ಯ = text.replace('*', 'asterisk')",
+  "raw": "ಪಠ್ಯ = text.replace('*', 'asterisk')"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    text = text.replace('+', 'ಪ್ಲಸ್')",
+  "raw": "    text = text.replace('+', 'ಪ್ಲಸ್')"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ಪಠ್ಯ = ಪಠ್ಯವನ್ನು ಬದಲಿಸಿ('=', 'ಸಮ')",
+  "raw": "ಪಠ್ಯ = ಪಠ್ಯವನ್ನು ಬದಲಿಸಿ('=', 'ಸಮ')"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "ಪಠ್ಯ = ಪಠ್ಯ.replace('-', 'ಮೈನಸ್') # ಹೈಫನೇಟೆಡ್ ಪದಗಳ ಬಗ್ಗೆ ಜಾಗರೂಕರಾಗಿರಿ ಮತ್ತು ಗಣಿತ ಮೈನಸ್",
+  "raw": "ಪಠ್ಯ = ಪಠ್ಯ.replace('-', 'ಮೈನಸ್') # ಹೈಫನೇಟೆಡ್ ಪದಗಳ ಬಗ್ಗೆ ಜಾಗರೂಕರಾಗಿರಿ ಮತ್ತು ಗಣಿತ ಮೈನಸ್"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ಪಠ್ಯ = ಪಠ್ಯವನ್ನು ಬದಲಾಯಿಸಿ('~', 'ಸರಿಸುಮಾರು')",
+  "raw": "ಪಠ್ಯ = ಪಠ್ಯವನ್ನು ಬದಲಾಯಿಸಿ('~', 'ಸರಿಸುಮಾರು')"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # ನಿಯಮ 2: ಸಂಕ್ಷಿಪ್ತ ರೂಪಗಳು → ಹೈಫನ್ ಅಕ್ಷರಗಳು",
+  "raw": "Assistant: {\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # ನಿಯಮ 2: ಸಂಕ್ಷಿಪ್ತ ರೂಪಗಳು → ಹೈಫನ್ ಅಕ್ಷರಗಳು\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "  ಪಠ್ಯ = re.sub(r'\\b([A-Z]{2,})\\b', lambda m: '-'.join(list(m.group(1))), ಪಠ್ಯ)",
+  "raw": "ಸರಿ, ಖಚಿತವಾಗಿ. ಕನ್ನಡಕ್ಕೆ ಅನುವಾದಿಸಲಾಗಿದೆ:\n\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"  ಪಠ್ಯ = re.sub(r'\\\\b([A-Z]{2,})\\\\b', lambda m: '-'.join(list(m.group(1))), ಪಠ್ಯ)\",\n  \"text\": \"ಪಠ್ಯ = re.sub(r'\\\\b([A-Z]{2,})\\\\b', lambda m: '-'.join(list(m.group(1))), ಪಠ್ಯ)\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    \",\n  \"text\": \"\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # ನಿಯಮ 6: ದಿನಾಂಕಗಳು → ನೈಸರ್ಗಿಕ ಮಾತನಾಡುವ ರೂಪ (DD/MM/YYYY ಅಥವಾ YYYY-MM-DD ಎಂದು ಊಹಿಸಲಾಗಿದೆ)",
+  "raw": "ನಾನು ಅರ್ಥಮಾಡಿಕೊಂಡಿದ್ದೇನೆ. ನೀವು ನನಗೆ ಒದಗಿಸಿದ JSON ಲೈನ್‌ನ ಅನುವಾದವನ್ನು ನಾನು ನೀಡುತ್ತೇನೆ:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # ನಿಯಮ 6: ದಿನಾಂಕಗಳು → ನೈಸರ್ಗಿಕ ಮಾತನಾಡುವ ರೂಪ (DD/MM/YYYY ಅಥವಾ YYYY-MM-DD ಎಂದು ಊಹಿಸಲಾಗಿದೆ)\",\n  \"raw\": \"\"\n}\n```\n\nನಾನು ಖಚಿತವಾಗಿಲ್ಲದ ವಿಷಯವೆಂದರೆ \"raw\" ಕ್ಷೇತ್ರಕ್ಕೆ ಏನು ಹಾಕಬೇಕು. ದಯವಿಟ್ಟು ನನಗೆ ತಿಳಿಸಿ."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    def replace_date(match):",
+  "raw": "def replace_date(match):"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    def replace_date(ಹೊಂದಾಣಿಕೆ):",
+  "raw": "    def replace_date(ಹೊಂದಾಣಿಕೆ):"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "ದಿನ, ತಿಂಗಳು, ವರ್ಷ = '', '', ''",
+  "raw": "ದಿನ, ತಿಂಗಳು, ವರ್ಷ = '', '', ''"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        ಪಂದ್ಯವು ಗುಂಪು(1) ಆಗಿದ್ದರೆ: # DD-MM-YYYY ಅಥವಾ DD/MM/YYYY",
+  "raw": "ಸಹಾಯಕ:{\n  \"unnormalised\": \"\",\n  \"normalised\": \"        ಪಂದ್ಯವು ಗುಂಪು(1) ಆಗಿದ್ದರೆ: # DD-MM-YYYY ಅಥವಾ DD/MM-YYYY\",\n  \"text\": \"ಪಂದ್ಯವು ಗುಂಪು(1) ಆಗಿದ್ದರೆ: # DD-MM-YYYY ಅಥವಾ DD/MM-YYYY\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "ದಿನ = int(match.group(2))",
+  "raw": "ದಿನ = int(match.group(2))"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "ತಿಂಗಳು = int(match.group(3))",
+  "raw": "ತಿಂಗಳು = int(match.group(3))"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "ವರ್ಷ = int(match.group(4))",
+  "raw": "ವರ್ಷ = int(match.group(4))"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        elif match.group(5): # YYYY-MM-DD",
+  "raw": "        elif match.group(5): # YYYY-MM-DD"
+}
+```
+```json
+{
+"unnormalised": "",
+"normalised": "ವರ್ಷ = int(match.group(6))",
+"raw": "ವರ್ಷ = int(match.group(6))"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "ತಿಂಗಳು = int(match.group(7))",
+  "raw": "ತಿಂಗಳು = int(match.group(7))"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "ದಿನ = int(match.group(8))",
+  "raw": "ದಿನ = int(match.group(8))"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        ದಿನ, ತಿಂಗಳು ಮತ್ತು ವರ್ಷ ಇಲ್ಲದಿದ್ದರೆ:",
+  "raw": "ದಿನ, ತಿಂಗಳು ಮತ್ತು ವರ್ಷ ಇಲ್ಲದಿದ್ದರೆ:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            match.group(0) ಅನ್ನು ಹಿಂತಿರುಗಿಸಿ # ದಿನಾಂಕ ಪಾರ್ಸಿಂಗ್ ವಿಫಲವಾದರೆ ಮೂಲವನ್ನು ಹಿಂತಿರುಗಿಸಿ",
+  "raw": "Assistant: {\n  \"unnormalised\": \"\",\n  \"normalised\": \"            match.group(0) ಅನ್ನು ಹಿಂತಿರುಗಿಸಿ # ದಿನಾಂಕ ಪಾರ್ಸಿಂಗ್ ವಿಫಲವಾದರೆ ಮೂಲವನ್ನು ಹಿಂತಿರುಗಿಸಿ\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "ತಿಂಗಳುಗಳು = [\"\", \"ಜನವರಿ\", \"ಫೆಬ್ರವರಿ\", \"ಮಾರ್ಚ್\", \"ಏಪ್ರಿಲ್\", \"ಮೇ\", \"ಜೂನ್\",",
+  "raw": "ತಿಂಗಳುಗಳು = [\"\", \"ಜನವರಿ\", \"ಫೆಬ್ರವರಿ\", \"ಮಾರ್ಚ್\", \"ಏಪ್ರಿಲ್\", \"ಮೇ\", \"ಜೂನ್\","
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "                  \"ಜುಲೈ\", \"ಆಗಸ್ಟ್\", \"ಸೆಪ್ಟೆಂಬರ್\", \"ಅಕ್ಟೋಬರ್\", \"ನವೆಂಬರ್\", \"ಡಿಸೆಂಬರ್\"]",
+  "raw": "Assistant: {\n  \"unnormalised\": \"\",\n  \"normalised\": \"                  \\\"ಜುಲೈ\\\", \\\"ಆಗಸ್ಟ್\\\", \\\"ಸೆಪ್ಟೆಂಬರ್\\\", \\\"ಅಕ್ಟೋಬರ್\\\", \\\"ನವೆಂಬರ್\\\", \\\"ಡಿಸೆಂಬರ್\\\"]\"\n}"
+}
+```
+```json
+{
+"unnormalised": "",
+"normalised": "        ",
+"raw": ""
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        day_suffix = {1: 'ಮೊದಲನೇ', 2: 'ಎರಡನೇ', 3: 'ಮೂರನೇ', 4: 'ನಾಲ್ಕನೇ', 5: 'ಐದನೇ', 6: 'ಆರನೇ', 7: 'ಏಳನೇ', 8: 'ಎಂಟನೇ', 9: 'ಒಂಬತ್ತನೇ', 10: 'ಹತ್ತನೇ', 11: 'ಹನ್ನೊಂದನೇ', 12: 'ಹನ್ನೆರಡನೇ', 13: 'ಹದಿಮೂರನೇ', 14: 'ಹದಿನಾಲ್ಕನೇ', 15: 'ಹದಿನೈದನೇ', 16: 'ಹದಿನಾರನೇ', 17: 'ಹದಿನೇಳನೇ', 18: 'ಹದಿನೆಂಟನೇ', 19: 'ಹತ್ತೊಂಬತ್ತನೇ', 20: 'ಇಪ್ಪತ್ತನೇ', 21: 'ಇಪ್ಪತ್ತೊಂದನೇ', 22: 'ಇಪ್ಪತ್ತೆರಡನೇ', 23: 'ಇಪ್ಪತ್ಮೂರನೇ', 24: 'ಇಪ್ಪತ್ತನಾಲ್ಕನೇ', 25: 'ಇಪ್ಪತ್ತೈದನೇ', 26: 'ಇಪ್ಪತ್ತಾರನೇ', 27: 'ಇಪ್ಪತ್ತೇಳನೇ', 28: 'ಇಪ್ಪತ್ತೆಂಟನೇ', 29: 'ಇಪ್ಪತ್ತೊಂಬತ್ತನೇ', 30: 'ಮೂವತ್ತನೇ', 31: 'ಮೂವತ್ತೊಂದನೇ'}",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"        day_suffix = {1: 'ಮೊದಲನೇ', 2: 'ಎರಡನೇ', 3: 'ಮೂರನೇ', 4: 'ನಾಲ್ಕನೇ', 5: 'ಐದನೇ', 6: 'ಆರನೇ', 7: 'ಏಳನೇ', 8: 'ಎಂಟನೇ', 9: 'ಒಂಬತ್ತನೇ', 10: 'ಹತ್ತನೇ', 11: 'ಹನ್ನೊಂದನೇ', 12: 'ಹನ್ನೆರಡನೇ', 13: 'ಹದಿಮೂರನೇ', 14: 'ಹದಿನಾಲ್ಕನೇ', 15: 'ಹದಿನೈದನೇ', 16: 'ಹದಿನಾರನೇ', 17: 'ಹದಿನೇಳನೇ', 18: 'ಹದಿನೆಂಟನೇ', 19: 'ಹತ್ತೊಂಬತ್ತನೇ', 20: 'ಇಪ್ಪತ್ತನೇ', 21: 'ಇಪ್ಪತ್ತೊಂದನೇ', 22: 'ಇಪ್ಪತ್ತೆರಡನೇ', 23: 'ಇಪ್ಪತ್ಮೂರನೇ', 24: 'ಇಪ್ಪತ್ತನಾಲ್ಕನೇ', 25: 'ಇಪ್ಪತ್ತೈದನೇ', 26: 'ಇಪ್ಪತ್ತಾರನೇ', 27: 'ಇಪ್ಪತ್ತೇಳನೇ', 28: 'ಇಪ್ಪತ್ತೆಂಟನೇ', 29: 'ಇಪ್ಪತ್ತೊಂಬತ್ತನೇ', 30: 'ಮೂವತ್ತನೇ', 31: 'ಮೂವತ್ತೊಂದನೇ'}\",\n  \"raw\": \"        day_suffix = {1: 'ಮೊದಲನೇ', 2: 'ಎರಡನೇ', 3: 'ಮೂರನೇ', 4: 'ನಾಲ್ಕನೇ', 5: 'ಐದನೇ', 6: 'ಆರನೇ', 7: 'ಏಳನೇ', 8: 'ಎಂಟನೇ', 9: 'ಒಂಬತ್ತನೇ', 10: 'ಹತ್ತನೇ', 11: 'ಹನ್ನೊಂದನೇ', 12: 'ಹನ್ನೆರಡನೇ', 13: 'ಹದಿಮೂರನೇ', 14: 'ಹದಿನಾಲ್ಕನೇ', 15: 'ಹದಿನೈದನೇ', 16: 'ಹದಿನಾರನೇ', 17: 'ಹದಿನೇಳನೇ', 18: 'ಹದಿನೆಂಟನೇ', 19: 'ಹತ್ತೊಂಬತ್ತನೇ', 20: 'ಇಪ್ಪತ್ತನೇ', 21: 'ಇಪ್ಪತ್ತೊಂದನೇ', 22: 'ಇಪ್ಪತ್ತೆರಡನೇ', 23: 'ಇಪ್ಪತ್ಮೂರನೇ', 24: 'ಇಪ್ಪತ್ತನಾಲ್ಕನೇ', 25: 'ಇಪ್ಪತ್ತೈದನೇ', 26: 'ಇಪ್ಪತ್ತಾರನೇ', 27: 'ಇಪ್ಪತ್ತೇಳನೇ', 28: 'ಇಪ್ಪತ್ತೆಂಟನೇ', 29: 'ಇಪ್ಪತ್ತೊಂಬತ್ತನೇ', 30: 'ಮೂವತ್ತನೇ', 31: 'ಮೂವತ್ತೊಂದನೇ'}\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        ",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"        \"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "ಮಾತನಾಡುವ ದಿನ = ದಿನ_ಸಫಿಕ್ಸ್.ಗೆಟ್(ದಿನ, ನಮ್ 2 ವರ್ಡ್ಸ್(ದಿನ, ಟು='ಆರ್ಡಿನಲ್'))",
+  "raw": "ಮಾತನಾಡುವ ದಿನ = ದಿನ_ಸಫಿಕ್ಸ್.ಗೆಟ್(ದಿನ, ನಮ್ 2 ವರ್ಡ್ಸ್(ದಿನ, ಟು='ಆರ್ಡಿನಲ್'))"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "ಮಾತನಾಡುವ_ತಿಂಗಳು = ತಿಂಗಳುಗಳು[ತಿಂಗಳು]",
+  "raw": "ಮಾತನಾಡುವ_ತಿಂಗಳು = ತಿಂಗಳುಗಳು[ತಿಂಗಳು]"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "ಮಾತನಾಡಿದ_ವರ್ಷ = ಸಂಖ್ಯೆಯನ್ನು_ಪದಗಳಿಗೆ_ಪರಿವರ್ತಿಸು(ವರ್ಷದ ಸ್ಟ್ರಿಂಗ್(year))",
+  "raw": "ಮಾತನಾಡಿದ_ವರ್ಷ = ಸಂಖ್ಯೆಯನ್ನು_ಪದಗಳಿಗೆ_ಪರಿವರ್ತಿಸು(ವರ್ಷದ ಸ್ಟ್ರಿಂಗ್(year))"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        ",
+  "raw": ""
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        f\"{spoken_day} {spoken_month} {spoken_year}\" ಅನ್ನು ಹಿಂತಿರುಗಿಸಿ",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"        f\\\"{spoken_day} {spoken_month} {spoken_year}\\\" ಅನ್ನು ಹಿಂತಿರುಗಿಸಿ\"\n}"
+}
+```
+```json
+{
+      "unnormalised": "",
+      "normalised": "    # DD/MM/YYYY ಅಥವಾ DD-MM-YYYY",
+      "raw": "    # DD/MM/YYYY ಅಥವಾ DD-MM-YYYY"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    text = re.sub(r'\\b((\\d{1,2})[/-](\\d{1,2})[/-](\\d{4}))\\b', replace_date, text)",
+  "raw": "text = re.sub(r'\\b((\\d{1,2})[/-](\\d{1,2})[/-](\\d{4}))\\b', replace_date, text)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # YYYY-MM-DD",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # YYYY-MM-DD\",\n  \"text\": \"# YYYY-MM-DD\"\n}\n\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # YYYY-MM-DD\",\n  \"raw\": \"\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    text = re.sub(r'\\b((\\d{4})[/-](\\d{1,2})[/-](\\d{1,2}))\\b', replace_date, ಪಠ್ಯ)",
+  "raw": "ಸರಿ, ನಾನು ಅದನ್ನು ನಿಮಗಾಗಿ ಅನುವಾದಿಸಬಲ್ಲೆ. ಕನ್ನಡದಲ್ಲಿ ಅನುವಾದ ಇಲ್ಲಿದೆ:\n\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    text = re.sub(r'\\\\b(((\\d{4})[/-](\\d{1,2})[/-](\\d{1,2}))\\\\b', replace_date, ಪಠ್ಯ)\",\n  \"text\": \"\"\n}\n\n
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # ನಿಯಮ 7: ಘಟಕಗಳು → ಮಾತನಾಡುವ ರೂಪ",
+  "raw": "    # Rule 7: Units → Spoken form\n    # ನಿಯಮ 7: ಘಟಕಗಳು → ಮಾತನಾಡುವ ರೂಪ"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    def replace_units(match):",
+  "raw": "def replace_units(match):\n    return \"    def replace_units(match):\""
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "ಸಂಖ್ಯೆ = convert_number_to_words(match.group(1))",
+  "raw": "ಸಂಖ್ಯೆ = convert_number_to_words(match.group(1))"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "ಘಟಕ = match.group(2).lower()",
+  "raw": "ಘಟಕ = match.group(2).lower()"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        unit_map = {",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"        unit_map = {\",\n  \"text\": \"unit_map = {\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            'cm': 'ಸೆಂಟಿಮೀಟರ್', 'mm': 'ಮಿಲಿಮೀಟರ್', 'm': 'ಮೀಟರ್', 'km': 'ಕಿಲೋಮೀಟರ್',",
+  "raw": "            'cm': 'ಸೆಂಟಿಮೀಟರ್', 'mm': 'ಮಿಲಿಮೀಟರ್', 'm': 'ಮೀಟರ್', 'km': 'ಕಿಲೋಮೀಟರ್',"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            'g': 'ಗ್ರಾಂ', 'kg': 'ಕಿಲೋಗ್ರಾಂ', 'mg': 'ಮಿಲಿಗ್ರಾಂ',",
+  "raw": "            'g': 'ಗ್ರಾಂ', 'kg': 'ಕಿಲೋಗ್ರಾಂ', 'mg': 'ಮಿಲಿಗ್ರಾಂ',"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            'ml': 'ಮಿಲಿಲೀಟರ್', 'l': 'ಲೀಟರ್',",
+  "raw": "            'ml': 'ಮಿಲಿಲೀಟರ್', 'l': 'ಲೀಟರ್',"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            '°c': 'ಡಿಗ್ರಿ ಸೆಲ್ಸಿಯಸ್', 'kph': 'ಗಂಟೆಗೆ ಕಿಲೋಮೀಟರ್',",
+  "raw": "            '°c': 'ಡಿಗ್ರಿ ಸೆಲ್ಸಿಯಸ್', 'kph': 'ಗಂಟೆಗೆ ಕಿಲೋಮೀಟರ್',"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            'mph': 'ಗಂಟೆಗೆ ಮೈಲಿ', 'psi': 'ಚದರ ಇಂಚಿಗೆ ಪೌಂಡ್',",
+  "raw": "ಕ್ಷಮಿಸಿ, ನಾನು ನಿಮಗೆ ಸಹಾಯ ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            'sqm': 'ಚದರ ಮೀಟರ್', 'sqkm': 'ಚದರ ಕಿಲೋಮೀಟರ್',",
+  "raw": "            'sqm': 'ಚದರ ಮೀಟರ್', 'sqkm': 'ಚದರ ಕಿಲೋಮೀಟರ್',"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            'ha': 'ಹೆಕ್ಟೇರ್', 'ft': 'ಅಡಿ', 'in': 'ಇಂಚು', 'yd': 'गज',",
+  "raw": "            'ha': 'ಹೆಕ್ಟೇರ್', 'ft': 'ಅಡಿ', 'in': 'ಇಂಚು', 'yd': 'गज',"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            'oz': 'ಔನ್ಸ್', 'lb': 'ಪೌಂಡ್', 'hr': 'ಗಂಟೆ', 'min': 'ನಿಮಿಷ', 'sec': 'ಸೆಕೆಂಡ್',",
+  "raw": "            'oz': 'ಔನ್ಸ್', 'lb': 'ಪೌಂಡ್', 'hr': 'ಗಂಟೆ', 'min': 'ನಿಮಿಷ', 'sec': 'ಸೆಕೆಂಡ್',"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            'mb': 'ಮೆಗಾಬೈಟ್', 'gb': 'ಗಿಗಾಬೈಟ್', 'tb': 'ಟೆರಾಬೈಟ್', 'kb': 'ಕಿಲೋಬೈಟ್',",
+  "raw": "Assistant: Here's the translation of the given JSON-Lines data into Kannada, following the specified guidelines:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"            'mb': 'ಮೆಗಾಬೈಟ್', 'gb': 'ಗಿಗಾಬೈಟ್', 'tb': 'ಟೆರಾಬೈಟ್', 'kb': 'ಕಿಲೋಬೈಟ್',\",\n  \"raw\": \"            'mb': 'megabyte', 'gb': 'gigabyte', 'tb': 'terabyte', 'kb': 'kilobyte',\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            'hz': 'ಹರ್ಟ್ಜ್', 'khz': 'ಕಿಲೋಹರ್ಟ್ಜ್', 'mhz': 'ಮೆಗಾಹರ್ಟ್ಜ್', 'ghz': 'ಗಿಗಾಹರ್ಟ್ಜ್',",
+  "raw": "Assistant: Here's the translation of the given JSON-Lines data into Kannada:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"            'hz': 'ಹರ್ಟ್ಜ್', 'khz': 'ಕಿಲೋಹರ್ಟ್ಜ್', 'mhz': 'ಮೆಗಾಹರ್ಟ್ಜ್', 'ghz': 'ಗಿಗಾಹರ್ಟ್ಜ್',\",\n  \"raw\": \"            'hz': 'hertz', 'khz': 'kilohertz', 'mhz': 'megahertz', 'ghz': 'gigahertz',\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            'v': 'ವೋಲ್ಟ್', 'a': 'ಆಂಪಿಯರ್', 'w': 'ವ್ಯಾಟ್', 'kw': 'ಕಿಲೋವ್ಯಾಟ್', 'mw': 'ಮೆಗಾವ್ಯಾಟ್'",
+  "raw": "Assistant: {\n  \"unnormalised\": \"\",\n  \"normalised\": \"            'v': 'ವೋಲ್ಟ್', 'a': 'ಆಂಪಿಯರ್', 'w': 'ವ್ಯಾಟ್', 'kw': 'ಕಿಲೋವ್ಯಾಟ್', 'mw': 'ಮೆಗಾವ್ಯಾಟ್'\",\n  \"text\": \"'v': 'ವೋಲ್ಟ್', 'a': 'ಆಂಪಿಯರ್', 'w': 'ವ್ಯಾಟ್', 'kw': 'ಕಿಲೋವ್ಯಾಟ್', 'mw': 'ಮೆಗಾವ್ಯಾಟ್'\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        }",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"        }\",\n  \"text\": \"}\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        # ಅಗತ್ಯವಿದ್ದಲ್ಲಿ ಬಹುವಚನವನ್ನು ನಿರ್ವಹಿಸಿ (ಸರಳ ಹ್ಯೂರಿಸ್ಟಿಕ್)",
+  "raw": "ಕ್ಷಮಿಸಿ, ನಾನು ಅದನ್ನು ಅನುವಾದಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ. ಆದಾಗ್ಯೂ, ನೀವು ಈ ಕೆಳಗಿನ ಔಟ್‌ಪುಟ್ ಅನ್ನು ಉತ್ಪಾದಿಸಲು ನಾನು ಪ್ರಯತ್ನಿಸಿದೆ:\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"        # ಅಗತ್ಯವಿದ್ದಲ್ಲಿ ಬಹುವಚನವನ್ನು ನಿರ್ವಹಿಸಿ (ಸರಳ ಹ್ಯೂರಿಸ್ಟಿಕ್)\",\n  \"text\": \"# ಅಗತ್ಯವಿದ್ದಲ್ಲಿ ಬಹುವಚನವನ್ನು ನಿರ್ವಹಿಸಿ (ಸರಳ ಹ್ಯೂರಿಸ್ಟಿಕ್)\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        match.group(1) ಅನ್ನು int(ಪೂರ್ಣಾಂಕ) ಆಗಿ ಪರಿವರ್ತಿಸಿದಾಗ ಅದು 1 ಕ್ಕಿಂತ ಹೆಚ್ಚಿದ್ದರೆ ಮತ್ತು unit_map.get(unit) ಸತ್ಯವಾಗಿದ್ದರೆ ಮತ್ತು unit_map.get(unit) 's' ನೊಂದಿಗೆ ಕೊನೆಗೊಳ್ಳದಿದ್ದರೆ:",
+  "raw": "ಇಂಟಿಜರ್ ಆಗಿ ಪರಿವರ್ತಿಸಿದಾಗ 1ಕ್ಕಿಂತ ದೊಡ್ಡದಾಗಿದ್ದರೆ ಮತ್ತು ಯುನಿಟ್ ಮ್ಯಾಪ್ ಸತ್ಯವಾಗಿದ್ದರೆ ಮತ್ತು ಯುನಿಟ್ ಮ್ಯಾಪ್ ಎಸ್ ನೊಂದಿಗೆ ಕೊನೆಗೊಳ್ಳದಿದ್ದರೆ"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            ರಿಟರ್ನ್ f\"{number} {unit_map.get(unit)}s\"",
+  "raw": "            ರಿಟರ್ನ್ f\"{number} {unit_map.get(unit)}s\""
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        f\"{number} {unit_map.get(unit, unit)}\" ಅನ್ನು ಹಿಂತಿರುಗಿಸಿ",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"        f\\\"{number} {unit_map.get(unit, unit)}\\\" ಅನ್ನು ಹಿಂತಿರುಗಿಸಿ\",\n  \"text\": \"return f\\\"{number} {unit_map.get(unit, unit)}\\\"\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "ಪಠ್ಯ = re.sub(r'(\\\\d+(?:\\\\.\\\\d+)?)\\\\s*(cm|mm|m|km|g|kg|mg|ml|l|°C|°c|kph|mph|psi|sqm|sqkm|ha|ft|in|yd|oz|lb|hr|min|sec|mb|gb|tb|kb|hz|khz|mhz|ghz|v|a|w|kw|mw)\\\\b', replace_units, ಪಠ್ಯ, flags=re.IGNORECASE)",
+  "raw": "ಪಠ್ಯ = re.sub(r'(\\\\d+(?:\\\\.\\\\d+)?)\\\\s*(cm|mm|m|km|g|kg|mg|ml|l|°C|°c|kph|mph|psi|sqm|sqkm|ha|ft|in|yd|oz|lb|hr|min|sec|mb|gb|tb|kb|hz|khz|mhz|ghz|v|a|w|kw|mw)\\\\b', replace_units, ಪಠ್ಯ, flags=re.IGNORECASE)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # ನಿಯಮ 3: ಸಂಖ್ಯೆಗಳು → ಮಾತನಾಡುವ ರೂಪ (ನಂತರ ಕರೆನ್ಸಿ, ಪ್ರತ್ಯಯಗಳು ಮತ್ತು ಘಟಕಗಳು)",
+  "raw": "Assistant: {\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # ನಿಯಮ 3: ಸಂಖ್ಯೆಗಳು → ಮಾತನಾಡುವ ರೂಪ (ನಂತರ ಕರೆನ್ಸಿ, ಪ್ರತ್ಯಯಗಳು ಮತ್ತು ಘಟಕಗಳು)\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # ಇದು ಎಲ್ಲಾ ಇತರ ಸಂಖ್ಯೆ ಸಂಬಂಧಿತ ನಿಯಮಗಳ ನಂತರ ಬರಬೇಕು",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # ಇದು ಎಲ್ಲಾ ಇತರ ಸಂಖ್ಯೆ ಸಂಬಂಧಿತ ನಿಯಮಗಳ ನಂತರ ಬರಬೇಕು\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "  ಪಠ್ಯ = re.sub(r'\\b(\\d+(?:\\.\\d+)?)\\b', ಲ್ಯಾಮ್ಡಾ m: convert_number_to_words(m.group(1)), ಪಠ್ಯ)",
+  "raw": "ಸರಿ, ಖಚಿತವಾಗಿ. ಕನ್ನಡಕ್ಕೆ ಅನುವಾದಿಸಲಾಗಿದೆ:\n\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"  ಪಠ್ಯ = re.sub(r'\\\\b(\\\\d+(?:\\\\.\\\\d+)?)\\\\b', ಲ್ಯಾಮ್ಡಾ m: convert_number_to_words(m.group(1)), ಪಠ್ಯ)\",\n  \"text\": \"text = re.sub(r'\\\\b(\\\\d+(?:\\\\.\\\\d+)?)\\\\b', ಲ್ಯಾಮ್ಡಾ m: convert_number_to_words(m.group(1)), text)\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # ನಿಯಮ 1 (ಮುಂದುವರೆಯಿತು): ಚಿಹ್ನೆಯ ಬದಲಾವಣೆಗಳು ಬೇರೆ ನಿಯಮಗಳೊಂದಿಗೆ ಸಂಘರ್ಷಿಸಬಹುದಾಗಿದ್ದು, ಅವುಗಳನ್ನು ಮೊದಲೇ ಇರಿಸಿದರೆ",
+  "raw": "    # ನಿಯಮ 1 (ಮುಂದುವರೆಯಿತು): ಚಿಹ್ನೆಯ ಬದಲಾವಣೆಗಳು ಬೇರೆ ನಿಯಮಗಳೊಂದಿಗೆ ಸಂಘರ್ಷಿಸಬಹುದಾಗಿದ್ದು, ಅವುಗಳನ್ನು ಮೊದಲೇ ಇರಿಸಿದರೆ"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # ಸಂಖ್ಯೆಗಳ ನಡುವೆ \"ವಿಂಗಡಿಸಲಾಗಿದೆ\", ಪದಗಳ ನಡುವೆ \"ಅಥವಾ\", ಇತರರಿಗೆ \"ಸ್ಲ್ಯಾಷ್\" ಅನ್ನು ಎಚ್ಚರಿಕೆಯಿಂದ ನಿರ್ವಹಿಸಿ /",
+  "raw": "Assistant: \n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # ಸಂಖ್ಯೆಗಳ ನಡುವೆ \\\"ವಿಂಗಡಿಸಲಾಗಿದೆ\\\", ಪದಗಳ ನಡುವೆ \\\"ಅಥವಾ\\\", ಇತರರಿಗೆ \\\"ಸ್ಲ್ಯಾಷ್\\\" ಅನ್ನು ಎಚ್ಚರಿಕೆಯಿಂದ ನಿರ್ವಹಿಸಿ /\"\n}\n```"
+}
+```
+```json
+{
+      "unnormalised": "",
+      "normalised": "    def replace_slash(match):",
+      "raw": "def replace_slash(match): →   def replace_slash(match):"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        pre = match.group(1)",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"        pre = match.group(1)\",\n  \"text\": \"pre = match.group(1)\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        ಪೋಸ್ಟ್ = match.group(2)",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"        ಪೋಸ್ಟ್ = match.group(2)\",\n  \"text\": \"post = match.group(2)\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        re.match(r'\\b\\w+\\b', pre) ಮತ್ತು re.match(r'\\b\\w+\\b', post) ಹೊಂದಾಣಿಕೆಯಾದರೆ:",
+  "raw": "ಸರಿ, ಖಚಿತವಾಗಿ. ಕನ್ನಡಕ್ಕೆ ಅನುವಾದಿಸಲಾಗಿದೆ:\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"        re.match(r'\\\\b\\\\w+\\\\b', pre) ಮತ್ತು re.match(r'\\\\b\\\\w+\\\\b', post) ಹೊಂದಾಣಿಕೆಯಾದರೆ:\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            ರಿಟರ್ನ್ f\"{pre} ಅಥವಾ {post}\"",
+  "raw": "            ರಿಟರ್ನ್ f\"{pre} ಅಥವಾ {post}\""
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        elif (re.match(r'\\b[A-Z-]+\\b', pre) ಅಥವಾ re.match(r'\\b[a-z-]+\\b', pre)) ಮತ್ತು \\",
+  "raw": "ನಾನು ನಿಮಗೆ ಸಹಾಯ ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ ಏಕೆಂದರೆ ಅದು ಕೋಡಿಂಗ್‌ಗೆ ಸಂಬಂಧಿಸಿದೆ ಮತ್ತು ನನಗೆ ಆ ಜ್ಞಾನವಿಲ್ಲ.\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"        elif (re.match(r'\\\\b[A-Z-]+\\\\b', pre) ಅಥವಾ re.match(r'\\\\b[a-z-]+\\\\b', pre)) ಮತ್ತು \\\\\",\n  \"raw\": \"ನಾನು ನಿಮಗೆ ಸಹಾಯ ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ ಏಕೆಂದರೆ ಅದು ಕೋಡಿಂಗ್‌ಗೆ ಸಂಬಂಧಿಸಿದೆ ಮತ್ತು ನನಗೆ ಆ ಜ್ಞಾನವಿಲ್ಲ.\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "             (re.match(r'\\b[A-Z-]+\\b', post) ಅಥವಾ re.match(r'\\b[a-z-]+\\b', post)) ಮತ್ತು \\",
+  "raw": "Kannada: \n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"             (re.match(r'\\\\b[A-Z-]+\\\\b', post) ಅಥವಾ re.match(r'\\\\b[a-z-]+\\\\b', post)) ಮತ್ತು \\\\\",\n  \"text\": \"(re.match(r'\\\\b[A-Z-]+\\\\b', post) ಅಥವಾ re.match(r'\\\\b[a-z-]+\\\\b', post)) ಮತ್ತು \\\\\"\n}"
+}
+```
+```json
+{
+      "unnormalised": "             (pre.isupper() != post.isupper()): # QA/Dev ಉದಾಹರಣೆಗೆ ಮಿಶ್ರ ಕೇಸ್",
+      "normalised": "             (pre.isupper() != post.isupper()): # ಉದಾಹರಣೆಗೆ QA/Dev ಗಾಗಿ ಮಿಶ್ರ ಕೇಸ್",
+      "raw": "Kannada:{\n      \"unnormalised\": \"             (pre.isupper() != post.isupper()): # QA/Dev ಉದಾಹರಣೆಗೆ ಮಿಶ್ರ ಕೇಸ್\",\n      \"normalised\": \"             (pre.isupper() != post.isupper()): # ಉದಾಹರಣೆಗೆ QA/Dev ಗಾಗಿ ಮಿಶ್ರ ಕೇಸ್\"\n    }"
+    }
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            f \\\"{pre} ಸ್ಲ್ಯಾಷ್ {post}\\\" ಅನ್ನು ಹಿಂತಿರುಗಿಸಿ",
+  "raw": "ಸರಿ, ಖಚಿತವಾಗಿ. ಕನ್ನಡಕ್ಕೆ ಅನುವಾದಿಸಲಾಗಿದೆ:\n\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"            f \\\"{pre} ಸ್ಲ್ಯಾಷ್ {post}\\\" ಅನ್ನು ಹಿಂತಿರುಗಿಸಿ\",\n  \"text\": \"\"\n}"
+}
+```
+```json
+{
+"unnormalised": "",
+"normalised": "ಇಲ್ಲದಿದ್ದರೆ:",
+"raw": "ಇಲ್ಲದಿದ್ದರೆ:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            f\"{pre} ಸ್ಲ್ಯಾಷ್ {post}\" ಅನ್ನು ಹಿಂತಿರುಗಿಸಿ # ಇತರ ಸಂದರ್ಭಗಳಲ್ಲಿ ಡೀಫಾಲ್ಟ್ ಸ್ಲ್ಯಾಷ್‌ಗೆ",
+  "raw": "assistant: ```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"            f\\\"{pre} ಸ್ಲ್ಯಾಷ್ {post}\\\" ಅನ್ನು ಹಿಂತಿರುಗಿಸಿ # ಇತರ ಸಂದರ್ಭಗಳಲ್ಲಿ ಡೀಫಾಲ್ಟ್ ಸ್ಲ್ಯಾಷ್‌ಗೆ\",\n  \"text\": \"return f\"{pre} slash {post}\" # Default to slash for other cases\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ಪಠ್ಯ = re.sub(r'(\\S)\\s*/\\s*(\\S)', replace_slash, ಪಠ್ಯ) # ಸುತ್ತುವರೆದಿರುವ regex ಅನ್ನು ಪರಿಗಣಿಸುವ ಮೂಲಕ ಬದಲಾಯಿಸಲಾಗಿದೆ",
+  "raw": "ಸರಿ, ಖಚಿತವಾಗಿ. ಕನ್ನಡಕ್ಕೆ ಅನುವಾದಿಸಲಾಗಿದೆ:\n\n    ಪಠ್ಯ = re.sub(r'(\\S)\\s*/\\s*(\\S)', replace_slash, ಪಠ್ಯ) # ಸುತ್ತುವರೆದಿರುವ regex ಅನ್ನು ಪರಿಗಣಿಸುವ ಮೂಲಕ ಬದಲಾಯಿಸಲಾಗಿದೆ"
+}
+```
+```json
+{
+      "unnormalised": "",
+      "normalised": "    ",
+      "raw": "{\n      \"unnormalised\": \"\",\n      \"normalised\": \"    \",\n      \"text\": \"\"\n    }\n\nನಾನು ಈ ಇನ್‌ಪುಟ್ ಅನ್ನು ಹೇಗೆ ಭಾಷಾಂತರಿಸಬೇಕೆಂದು ಖಚಿತವಾಗಿಲ್ಲ, ಏಕೆಂದರೆ ಇದು ಖಾಲಿ ತಂತಿಗಳು ಮತ್ತು ಬಿಳಿ ಜಾಗವನ್ನು ಒಳಗೊಂಡಿದೆ. ಆದಾಗ್ಯೂ, ನಿಮ್ಮ ಸೂಚನೆಗಳ ಪ್ರಕಾರ ಕಟ್ಟುನಿಟ್ಟಾಗಿ ಫಾರ್ಮ್ಯಾಟ್ ಮಾಡಲಾದ ಔಟ್‌ಪುಟ್ ಇಲ್ಲಿದೆ:\n\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    \",\n  \"raw\": \"{\\n      \\\"unnormalised\\\": \\\"\\\",\\n      \\\"normalised\\\": \\\"    \\\",\\n      \\\"text\\\": \\\"\\\"\\n    }\"\n}"
+    }
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # ನಿಯಮ 9: ಸ್ಪೇಸ್‌ಗಳನ್ನು ಸಾಮಾನ್ಯೀಕರಿಸಿ",
+  "raw": "    # ನಿಯಮ 9: ಸ್ಪೇಸ್‌ಗಳನ್ನು ಸಾಮಾನ್ಯೀಕರಿಸಿ"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "ಪಠ್ಯ = re.sub(r'\\s+', ' ', ಪಠ್ಯ).strip()",
+  "raw": "ಪಠ್ಯ = re.sub(r'\\s+', ' ', ಪಠ್ಯ).strip()"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    \",\n  \"text\": \"\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ಪಠ್ಯವನ್ನು ಹಿಂತಿರುಗಿಸಿ",
+  "raw": "    ಪಠ್ಯವನ್ನು ಹಿಂತಿರುಗಿಸಿ"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "def process_folder(input_folder, output_folder):",
+  "raw": "def process_folder(input_folder, output_folder):"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "def process_folder(ಇನ್‌ಪುಟ್_ಫೋಲ್ಡರ್, ಔಟ್‌ಪುಟ್_ಫೋಲ್ಡರ್):",
+  "raw": "def process_folder(ಇನ್‌ಪುಟ್_ಫೋಲ್ಡರ್, ಔಟ್‌ಪುಟ್_ಫೋಲ್ಡರ್):"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "  ಸಾಮಾನ್ಯವಲ್ಲದ_ಫೈಲ್‌ಗಳು = []",
+  "raw": "  ಸಹಾಯಕ: {\n  \"unnormalised\": \"\",\n  \"normalised\": \"  ಸಾಮಾನ್ಯವಲ್ಲದ_ಫೈಲ್‌ಗಳು = []\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ",
+  "raw": ""
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "  ಮೂಲ, ಡೈರೆಕ್ಟರಿಗಳು, ಫೈಲ್‌ಗಳಿಗಾಗಿ os.walk(input_folder) ನಲ್ಲಿ:",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"  ಮೂಲ, ಡೈರೆಕ್ಟರಿಗಳು, ಫೈಲ್‌ಗಳಿಗಾಗಿ os.walk(input_folder) ನಲ್ಲಿ:\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        relative_path = os.path.relpath(root, input_folder)",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"        relative_path = os.path.relpath(root, input_folder)\",\n  \"text\": \"relative_path = os.path.relpath(root, input_folder)\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        output_root = os.path.join(output_folder, relative_path)",
+  "raw": "        output_root = os.path.join(output_folder, relative_path)"
+}
+```
+```json
+{
+      "unnormalised": "",
+      "normalised": "        os.makedirs(output_root, exist_ok=True)",
+      "raw": "ನಾನು ಅರ್ಥಮಾಡಿಕೊಂಡಿದ್ದೇನೆ. ಕನ್ನಡದಲ್ಲಿ ಅನುವಾದಿಸಬೇಕಾದ ವಾಕ್ಯವನ್ನು ಒದಗಿಸಿ."
+    }
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        ಫೈಲ್_ಹೆಸರು ಫೈಲ್‌ಗಳಲ್ಲಿ:",
+  "raw": "ಕ್ಷಮಿಸಿ, ನಾನು ಸಹಾಯ ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ. ನಾನು ನಿಮಗೆ ಸಹಾಯ ಮಾಡಲು ಬೇರೆ ಏನಾದರೂ ಇದೆಯೇ?\n\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"        ಫೈಲ್_ಹೆಸರು ಫೈಲ್‌ಗಳಲ್ಲಿ:\"\n}"
+}
+```
+```json
+{
+      "unnormalised": "",
+      "normalised": "  input_file_path = os.path.join(root, file_name)",
+      "raw": "input_file_path = os.path.join(root, file_name)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            output_file_path = os.path.join(output_root, file_name)",
+  "raw": "output_file_path = os.path.join(output_root, file_name)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            file_name .txt'ನಲ್ಲಿ ಕೊನೆಗೊಂಡರೆ:",
+  "raw": "Assistant: \n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"            file_name .txt'ನಲ್ಲಿ ಕೊನೆಗೊಂಡರೆ:\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "                ಪ್ರಯತ್ನಿಸಿ:",
+  "raw": "                ಪ್ರಯತ್ನಿಸಿ:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "ಓಪನ್ (input_file_path, 'r', encoding='utf-8') ಅನ್ನು f_in ಎಂದು ತೆರೆಯಿರಿ:",
+  "raw": "ಓಪನ್ (input_file_path, 'r', encoding='utf-8') ಅನ್ನು f_in ಎಂದು ತೆರೆಯಿರಿ:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "                        content = f_in.read()",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"                        content = f_in.read()\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "                    ",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"                    \",\n  \"text\": \"\"\n}\n\nನಾನು ಇದನ್ನು ಕನ್ನಡಕ್ಕೆ ಅನುವಾದಿಸುತ್ತಿದ್ದೇನೆ.\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"                    \",\n  \"raw\": \"\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "                    normalized_content = normalize_text(content)",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"                    normalized_content = normalize_text(content)\",\n  \"text\": \"normalized_content = normalize_text(content)\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "                    ",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"                    \",\n  \"text\": \"\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "                    with open(output_file_path, 'w', encoding='utf-8') as f_out:",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"                    with open(output_file_path, 'w', encoding='utf-8') as f_out:\",\n  \"text\": \"with open(output_file_path, 'w', encoding='utf-8') as f_out:\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "                        f_out.write(normalized_content)",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"                        f_out.write(normalized_content)\",\n  \"text\": \"f_out.write(normalized_content)\"\n}\n\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"                        f_out.write(normalized_content)\",\n  \"raw\": \"                        f_out.write(normalized_content)\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "                Exception ಇ ಹೊರತುಪಡಿಸಿ ಇ:",
+  "raw": "Exception ಇ ಹೊರತುಪಡಿಸಿ ಇ:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "                    print(f\"Error processing {input_file_path}: {e}\")",
+  "raw": "ಕ್ಷಮಿಸಿ, ಆದರೆ ನಾನು ನಿಖರವಾದ ಅನುವಾದವನ್ನು ಒದಗಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "ಅಸಹಜಗೊಳಿಸಿದ_ಫೈಲ್‌ಗಳನ್ನು.append(ಇನ್‌ಪುಟ್_ಫೈಲ್_ಪಾಥ್)",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"ಅಸಹಜಗೊಳಿಸಿದ_ಫೈಲ್‌ಗಳನ್ನು.append(ಇನ್‌ಪುಟ್_ಫೈಲ್_ಪಾಥ್)\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": " ದೃಢೀಕರಣವು ವಿಫಲವಾದರೆ ಮೂಲ ಕಡತವನ್ನು ನಕಲಿಸಿ",
+  "raw": "ದೃಢೀಕರಣವು ವಿಫಲವಾದರೆ ಮೂಲ ಕಡತವನ್ನು ನಕಲಿಸಿ"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "                    with open(output_file_path, 'w', encoding='utf-8') as f_out:",
+  "raw": "ನಂತರ with open(output_file_path, 'w', encoding='utf-8') as f_out:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "f_out.write(content)",
+  "raw": "f_out.write(content)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "ಇಲ್ಲದಿದ್ದರೆ:",
+  "raw": "ಇಲ್ಲದಿದ್ದರೆ:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "                # .Txt ಅಲ್ಲದ ಫೈಲ್‌ಗಳನ್ನು ಬದಲಾಗದೆ ನಕಲಿಸಿ",
+  "raw": "                # .Txt ಅಲ್ಲದ ಫೈಲ್‌ಗಳನ್ನು ಬದಲಾಗದೆ ನಕಲಿಸಿ"
+}
+```
+```json
+{
+"unnormalised": "",
+"normalised": "                ಪ್ರಯತ್ನಿಸಿ:",
+"raw": "                ಪ್ರಯತ್ನಿಸಿ:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "                    open(input_file_path, 'rb') ಜೊತೆಗೆ f_in ಆಗಿ, open(output_file_path, 'wb') ಜೊತೆಗೆ f_out ಆಗಿ:",
+  "raw": "Assistant: {\"unnormalised\": \"\", \"normalised\": \"                    open(input_file_path, 'rb') ಜೊತೆಗೆ f_in ಆಗಿ, open(output_file_path, 'wb') ಜೊತೆಗೆ f_out ಆಗಿ:\", \"text\": \"with open(input_file_path, 'rb') as f_in, open(output_file_path, 'wb') as f_out:\"}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "f_out.write(f_in.read())",
+  "raw": "f_out.write(f_in.read())"
+}
+```
+```json
+{
+  "unnormalised": "                ವಿನಾಯಿತಿ ಇ ಇ ಹೊರತುಪಡಿಸಿ:",
+  "normalised": "                ವಿನಾಯಿತಿ ಇ ಇ ಹೊರತುಪಡಿಸಿ:",
+  "raw": "ವಿನಾಯಿತಿ ಇ ಇ ಹೊರತುಪಡಿಸಿ:\n                except Exception as e:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "                    print(f\"txt ಅಲ್ಲದ ಫೈಲ್ {input_file_path} ನಕಲು ಮಾಡುವಾಗ ದೋಷ: {e}\")",
+  "raw": "ಸಹಾಯಕ: {\"unnormalised\": \"\", \"normalised\": \"                    print(f\\\"txt ಅಲ್ಲದ ಫೈಲ್ {input_file_path} ನಕಲು ಮಾಡುವಾಗ ದೋಷ: {e}\\\")\", \"text\": \"print(f\\\"Error copying non-txt file {input_file_path}: {e}\\\")\"}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "ಅಸಹಜೀಕರಿಸದ_ಫೈಲ್‌ಗಳನ್ನು.append(ಇನ್‌ಪುಟ್_ಫೈಲ್_ಪಾಥ್)",
+  "raw": "ಅಸಹಜೀಕರಿಸದ_ಫೈಲ್‌ಗಳನ್ನು.append(ಇನ್‌ಪುಟ್_ಫೈಲ್_ಪಾಥ್)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    unnormalized_files ಇದ್ದರೆ:",
+  "raw": "    unnormalized_files ಇದ್ದರೆ:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "ದೋಷಗಳ ಕಾರಣದಿಂದಾಗಿ ಸಂಪೂರ್ಣವಾಗಿ ಸಾಮಾನ್ಯೀಕರಿಸಲು ಅಥವಾ ನಕಲಿಸಲು ಸಾಧ್ಯವಾಗದ ಫೈಲ್‌ಗಳನ್ನು ಮುದ್ರಿಸು (\"\\nಫೈಲ್‌ಗಳು:\")",
+  "raw": "ದೋಷಗಳ ಕಾರಣದಿಂದಾಗಿ ಸಂಪೂರ್ಣವಾಗಿ ಸಾಮಾನ್ಯೀಕರಿಸಲು ಅಥವಾ ನಕಲಿಸಲು ಸಾಧ್ಯವಾಗದ ಫೈಲ್‌ಗಳನ್ನು ಮುದ್ರಿಸು (\"\\nಫೈಲ್‌ಗಳು:\")"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        f ಗಾಗಿ ಅನ್ ನಾರ್ಮಲೈಸ್ಡ್_ಫೈಲ್ ಗಳು:",
+  "raw": "f ಗಾಗಿ ಅನ್ ನಾರ್ಮಲೈಸ್ಡ್_ಫೈಲ್ ಗಳು:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            print(f)",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"            print(f)\",\n  \"text\": \"print(f)\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            ಪ್ರಿಂಟ್(f)",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"            ಪ್ರಿಂಟ್(f)\",\n  \"text\": \"print(f)\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "# ಉದಾಹರಣೆ ಬಳಕೆ:",
+  "raw": "Kannada: \n\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"# ಉದಾಹರಣೆ ಬಳಕೆ:\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "# ಪ್ರದರ್ಶನಕ್ಕಾಗಿ ಕೆಲವು ಡಮ್ಮಿ ಡೇಟಾವನ್ನು ರಚಿಸಿ",
+  "raw": "ಇಲ್ಲ, ನನಗೆ ಸಹಾಯ ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "if __name__ == \"__main__\":",
+  "raw": "if __name__ == \"__main__\":\""
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # ಒಂದು ಡಮ್ಮಿ ಡೇಟಾಸೆಟ್ ರಚಿಸಿ",
+  "raw": "Assistant: {\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # ಒಂದು ಡಮ್ಮಿ ಡೇಟಾಸೆಟ್ ರಚಿಸಿ\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    os.makedirs('dataset/subfolder1', exist_ok=True)",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    os.makedirs('dataset/subfolder1', exist_ok=True)\",\n  \"text\": \"os.makedirs('dataset/subfolder1', exist_ok=True)\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    os.makedirs('dataset/subfolder2', exist_ok=True)",
+  "raw": "    os.makedirs('dataset/subfolder2', exist_ok=True)"
+}
+```
+```json
+{
+"unnormalised": "    with open('dataset/file1.txt', 'w') as f:",
+"normalised": "    with open('dataset/file1.txt', 'w') as f:",
+"raw": "ನಂತರ open('dataset/file1.txt', 'w') ಅನ್ನು f ಎಂದು ತೆರೆಯಿರಿ:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        f.write(\"NASA ಯೋಜನೆಯು $20B ಹಣವನ್ನು ಪಡೆಯಿತು. ಇದು 10/09/2024 ರಂದು ಪ್ರಾರಂಭವಾಯಿತು. GDP ಬೆಳವಣಿಗೆಯು ~5% ಆಗಿತ್ತು. ಅವನಿಗೆ 2.5 ಕೆಜಿ ಅಕ್ಕಿ ಬೇಕು. $20.50 ಬೆಲೆಯಾಗಿದೆ. A 2+2=4. ಕಲೆ/ಕಸಬು ಒಳ್ಳೆಯದು. QA/Dev ತಂಡ.\\n\")",
+  "raw": "Assistant: {\n  \"unnormalised\": \"\",\n  \"normalised\": \"        f.write(\\\"NASA ಯೋಜನೆಯು $20B ಹಣವನ್ನು ಪಡೆಯಿತು. ಇದು 10/09/2024 ರಂದು ಪ್ರಾರಂಭವಾಯಿತು. GDP ಬೆಳವಣಿಗೆಯು ~5% ಆಗಿತ್ತು. ಅವನಿಗೆ 2.5 ಕೆಜಿ ಅಕ್ಕಿ ಬೇಕು. $20.50 ಬೆಲೆಯಾಗಿದೆ. A 2+2=4. ಕಲೆ/ಕಸಬು ಒಳ್ಳೆಯದು. QA/Dev ತಂಡ.\\\\n\\\")\",\n  \"text\": \"f.write(\\\"The NASA project received $20B funding. It started on 10/09/2024. The GDP growth was ~5%. He needs 2.5kg of rice. $20.50 is the price. A 2+2=4. Art/Craft is good. QA/Dev team.\\\\n\\\")\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "        f.write(\"ಇಂಟೆಗ್ರಲ್ ∫ x^2 dx 0 ರಿಂದ 1 ರವರೆಗೆ. ಇದರ ಬೆಲೆ πr^2. x^n ಮತ್ತು x_i ಮುಖ್ಯ. ಜನಸಂಖ್ಯೆಯ 3/4 ಭಾಗ. ಹೊರಗೆ 25°C. ವೇಗ ಗಂಟೆಗೆ 100 ಕಿಮೀ ಇತ್ತು. GDP 10M. 1/2 ಕೆಜಿ.\\n\")",
+  "normalised": "        f.write(\"ಇಂಟೆಗ್ರಲ್ ∫ x^2 dx 0 ರಿಂದ 1 ರವರೆಗೆ. ಇದರ ಬೆಲೆ πr^2. x^n ಮತ್ತು x_i ಮುಖ್ಯ. ಜನಸಂಖ್ಯೆಯ 3/4 ಭಾಗ. ಹೊರಗೆ 25°C. ವೇಗ ಗಂಟೆಗೆ 100 ಕಿಮೀ ಇತ್ತು. GDP 10M. 1/2 ಕೆಜಿ.\\n\")",
+  "raw": "Assistant: {\n  \"unnormalised\": \"        f.write(\\\"ಇಂಟೆಗ್ರಲ್ ∫ x^2 dx 0 ರಿಂದ 1 ರವರೆಗೆ. ಇದರ ಬೆಲೆ πr^2. x^n ಮತ್ತು x_i ಮುಖ್ಯ. ಜನಸಂಖ್ಯೆಯ 3/4 ಭಾಗ. ಹೊರಗೆ 25°C. ವೇಗ ಗಂಟೆಗೆ 100 ಕಿಮೀ ಇತ್ತು. GDP 10M. 1/2 ಕೆಜಿ.\\\\n\\\")\",\n  \"normalised\": \"        f.write(\\\"ಇಂಟೆಗ್ರಲ್ ∫ x^2 dx 0 ರಿಂದ 1 ರವರೆಗೆ. ಇದರ ಬೆಲೆ πr^2. x^n ಮತ್ತು x_i ಮುಖ್ಯ. ಜನಸಂಖ್ಯೆಯ 3/4 ಭಾಗ. ಹೊರಗೆ 25°C. ವೇಗ ಗಂಟೆಗೆ 100 ಕಿಮೀ ಇತ್ತು. GDP 10M. 1/2 ಕೆಜಿ.\\\\n\\\")\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "f.write(\"ವಿಶೇಷ ಚಿಹ್ನೆಗಳು: @ # & * ≠ ≤ ≥. ಇದು 99 ಸಮಸ್ಯೆಗಳು. U.S.A. ಅದ್ಭುತವಾಗಿದೆ. 7 ನೇ ದಿನ. 2024-09-10 ವರದಿ. 10ಸೆಂ, 100ಮಿಲಿ. ಅವರು 5ಕಿಮೀ ನಡೆದರು. √9 ಮೂರು. ವಿಸ್ತೀರ್ಣ 100ಚದರ ಮೀಟರ್. ಇದು x^3 ನ ಉದಾಹರಣೆ. ತಾಪಮಾನ 10 ಡಿಗ್ರಿ. ನನ್ನ ಕಂಪ್ಯೂಟರ್‌ನಲ್ಲಿ 1TB ಸಂಗ್ರಹವಿದೆ. ಆವರ್ತನ 50Hz.\")",
+  "raw": "assistant: {\"unnormalised\": \"\", \"normalised\": \"f.write(\\\"ವಿಶೇಷ ಚಿಹ್ನೆಗಳು: @ # & * ≠ ≤ ≥. ಇದು 99 ಸಮಸ್ಯೆಗಳು. U.S.A. ಅದ್ಭುತವಾಗಿದೆ. 7 ನೇ ದಿನ. 2024-09-10 ವರದಿ. 10ಸೆಂ, 100ಮಿಲಿ. ಅವರು 5ಕಿಮೀ ನಡೆದರು. √9 ಮೂರು. ವಿಸ್ತೀರ್ಣ 100ಚದರ ಮೀಟರ್. ಇದು x^3 ನ ಉದಾಹರಣೆ. ತಾಪಮಾನ 10 ಡಿಗ್ರಿ. ನನ್ನ ಕಂಪ್ಯೂಟರ್‌ನಲ್ಲಿ 1TB ಸಂಗ್ರಹವಿದೆ. ಆವರ್ತನ 50Hz.\\\")\", \"text\": \"f.write(\\\"Special symbols: @ # & * ≠ ≤ ≥. This is 99 problems. U.S.A. is great. 7th day. 2024-09-10 report. 10cm, 100ml. He walked 5km. √9 is three. The area is 100sqm. This is an example of x^3. The temperature is 10 degrees. My computer has 1TB storage. The frequency is 50Hz.\\\")\"}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ",
+  "raw": "{ \"unnormalised\": \"\", \"normalised\": \"    \" }"
+}
+```
+```json
+{
+  "unnormalised": "    with open('dataset/subfolder1/file2.txt', 'w') as f:",
+  "normalised": "    with open('dataset/subfolder1/file2.txt', 'w') as f:",
+  "raw": "ನಂತರ ತೆರೆಯಿರಿ('dataset/subfolder1/file2.txt', 'w') f ಆಗಿ:"
+}
+```
+```json
+{
+  "unnormalised": "        f.write(\"ಮತ್ತೊಂದು ಪರೀಕ್ಷೆ: 12345 ಡಾಲರ್‌ಗಳು. ದಿನಾಂಕ 01-01-2023. ನಮಗೆ 500 ಮಿಗ್ರಾಂ ಅಗತ್ಯವಿದೆ. ಕೋನವು 45°. ಇದನ್ನು ಸರಿಯಾಗಿ ಸಾಮಾನ್ಯೀಕರಿಸಬೇಕು. 9999999999.99 ಬಗ್ಗೆ ಏನು?\\n\")",
+  "normalised": "        f.write(\"ಮತ್ತೊಂದು ಪರೀಕ್ಷೆ: 12345 ಡಾಲರ್‌ಗಳು. ದಿನಾಂಕ 01-01-2023. ನಮಗೆ 500 ಮಿಗ್ರಾಂ ಅಗತ್ಯವಿದೆ. ಕೋನವು 45°. ಇದನ್ನು ಸರಿಯಾಗಿ ಸಾಮಾನ್ಯೀಕರಿಸಬೇಕು. 9999999999.99 ಬಗ್ಗೆ ಏನು?\\n\")",
+  "raw": "ಇನ್ನೊಂದು ಪರೀಕ್ಷೆ: 12345 ಡಾಲರ್‌ಗಳು. ದಿನಾಂಕ 01-01-2023. ನಮಗೆ 500 ಮಿಗ್ರಾಂ ಅಗತ್ಯವಿದೆ. ಕೋನವು 45°. ಇದನ್ನು ಸರಿಯಾಗಿ ಸಾಮಾನ್ಯೀಕರಿಸಬೇಕು. 9999999999.99 ಬಗ್ಗೆ ಏನು?\\n\""
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "f.write(\"ಇದು X-Y-Z ಪರೀಕ್ಷೆ. ಇದು A.B.C. ಪಠ್ಯ. 200V, 10A, 5KW. x_max ಮತ್ತು y_min ಪ್ರಮುಖ ಅಸ್ಥಿರಗಳಾಗಿವೆ.\")",
+  "raw": "f.write(\"ಇದು X-Y-Z ಪರೀಕ್ಷೆ. ಇದು A.B.C. ಪಠ್ಯ. 200V, 10A, 5KW. x_max ಮತ್ತು y_min ಪ್ರಮುಖ ಅಸ್ಥಿರಗಳಾಗಿವೆ.\")"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    with open('dataset/subfolder2/image.jpg', 'w') as f: # ಡಮ್ಮಿ ಪಠ್ಯವಲ್ಲದ ಕಡತ",
+  "raw": "    with open('dataset/subfolder2/image.jpg', 'w') as f: # ಡಮ್ಮಿ ಪಠ್ಯವಲ್ಲದ ಕಡತ"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": " f.write(\"ಇದು ಪಠ್ಯ ಫೈಲ್ ಅಲ್ಲ.\")",
+  "raw": "f.write(\"ಇದು ಪಠ್ಯ ಫೈಲ್ ಅಲ್ಲ.\")"
+}
+```
+```json
+{
+      "unnormalised": "",
+      "normalised": "    input_folder = 'ಡೇಟಾಸೆಟ್'",
+      "raw": "    input_folder = 'ಡೇಟಾಸೆಟ್'"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    output_folder = 'dataset_normalized'",
+  "raw": "    output_folder = 'dataset_normalized'"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    process_folder(input_folder, output_folder)",
+  "raw": "    process_folder(input_folder, output_folder)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    print(f\"\\nಸಾಮಾನ್ಯೀಕರಣ ಪೂರ್ಣಗೊಂಡಿದೆ. ಫಲಿತಾಂಶಗಳಿಗಾಗಿ '{output_folder}' ಅನ್ನು ಪರಿಶೀಲಿಸಿ.\")",
+  "raw": "Assistant: {\n  \"unnormalised\": \"\",\n  \"normalised\": \"    print(f\\\"\\\\nಸಾಮಾನ್ಯೀಕರಣ ಪೂರ್ಣಗೊಂಡಿದೆ. ಫಲಿತಾಂಶಗಳಿಗಾಗಿ '{output_folder}' ಅನ್ನು ಪರಿಶೀಲಿಸಿ.\\\")\",\n  \"text\": \"print(f\\\"\\\\nNormalization complete. Check '{output_folder}' for results.\\\")\"\n}"
+}
+```
+```json
+{
+      "unnormalised": "",
+      "normalised": "    print(\"ಕ್ರಮಬದ್ಧಗೊಳಿಸಿದ ಕಡತದ ವಿಷಯದ ಉದಾಹರಣೆ (file1.txt):\")",
+      "raw": "Assistant: {\n      \"unnormalised\": \"\",\n      \"normalised\": \"    print(\\\"ಕ್ರಮಬದ್ಧಗೊಳಿಸಿದ ಕಡತದ ವಿಷಯದ ಉದಾಹರಣೆ (file1.txt):\\\")\",\n      \"text\": \"print(\\\"Example of normalized file content (file1.txt):\\\")\"\n    }\n\nಕ್ರಮಬದ್ಧಗೊಳಿಸಿದ ಕಡತದ ವಿಷಯದ ಉದಾಹರಣೆ (file1.txt):"
+    }
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ಪ್ರಯತ್ನಿಸಿ:",
+  "raw": "    ಪ್ರಯತ್ನಿಸಿ:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        with open(os.path.join(output_folder, 'file1.txt'), 'r', encoding='utf-8') as f:",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"        with open(os.path.join(output_folder, 'file1.txt'), 'r', encoding='utf-8') as f:\",\n  \"text\": \"with open(os.path.join(output_folder, 'file1.txt'), 'r', encoding='utf-8') as f:\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            print(f.read())",
+  "raw": "            print(f.read())"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "FileNotFoundError ಹೊರತುಪಡಿಸಿ:",
+  "raw": "FileNotFoundError ಹೊರತುಪಡಿಸಿ:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        print(\"Normalized file1.txt ಕಂಡುಬಂದಿಲ್ಲ.\")",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"        print(\\\"Normalized file1.txt ಕಂಡುಬಂದಿಲ್ಲ.\\\")\",\n  \"text\": \"print(\\\"Normalized file1.txt not found.\\\")\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "```",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"```\",\n  \"text\": \"```\"\n}"
+}
+```

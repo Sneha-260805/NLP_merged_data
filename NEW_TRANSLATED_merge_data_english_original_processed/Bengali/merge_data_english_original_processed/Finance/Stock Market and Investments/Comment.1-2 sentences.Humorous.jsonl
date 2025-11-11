@@ -1,0 +1,7 @@
+```json
+{
+  "unnormalised": "আরে ভাই, market আজ 500 points up! আমি কি আমার ₹1000 মূল্যের shares বিক্রি করে একজন crorepati হয়ে যাব? Just kidding, তার জন্য আরও 100x rally দরকার!",
+  "normalised": "আরে ভাই, market আজ পাঁচশ points up! আমি কি আমার rupee এক হাজার মূল্যের shares বিক্রি করে একজন crorepati হয়ে যাব? Just kidding, তার জন্য আরও একশ x rally দরকার!",
+  "raw": "আরে ভাই, market আজ 500 points up! আমি কি আমার ₹1000 মূল্যের shares বিক্রি করে একজন crorepati হয়ে যাব? Just kidding, তার জন্য আরও 100x rally দরকার!\n\n{\n  \"unnormalised\": \"আরে ভাই, market আজ 500 points up! আমি কি আমার ₹1000 মূল্যের shares বিক্রি করে একজন crorepati হয়ে যাব? Just kidding, তার জন্য আরও 100x rally দরকার!\",\n  \"normalised\": \"আরে ভাই, market আজ পাঁচশ points up! আমি কি আমার rupee এক হাজার মূল্যের shares বিক্রি করে একজন crorepati হয়ে যাব? Just kidding, তার জন্য আরও একশ x rally দরকার!\"\n}"
+}
+```

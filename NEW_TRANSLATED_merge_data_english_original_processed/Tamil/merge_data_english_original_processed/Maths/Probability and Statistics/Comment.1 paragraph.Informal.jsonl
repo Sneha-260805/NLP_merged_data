@@ -1,0 +1,7 @@
+```json
+{
+  "unnormalised": "Probability toh mere sir ke upar se jata hai, bhai! குறிப்பாக புள்ளிவிவரங்கள். நிஜ வாழ்க்கையில் நான் Bayes' theorem-ஐப் பயன்படுத்த எவ்வளவு வாய்ப்பு உள்ளது? 0.0001% இருக்கலாம்? આજ કાલ toh sab AI/ML kar rahe hai, aur unme bhi ye sab numbers ka khel hai. என் நண்பன் Rohan புள்ளிவிவரங்களைப் பயன்படுத்தி CAT தேர்வில் 99 சதவீத மதிப்பெண் பெற்றான். Excel-ஐப் பயன்படுத்தும் போது, ஏன் நாம் standard deviation-ஐக் கணக்கிட வேண்டும் என்பது புரியவில்லை.",
+  "normalised": "Probability toh mere sir ke upar se jata hai, bhai! குறிப்பாக புள்ளிவிவரங்கள். நிஜ வாழ்க்கையில் நான் Bayes' theorem-ஐப் பயன்படுத்த எவ்வளவு வாய்ப்பு உள்ளது? பூஜ்யம் புள்ளி பூஜ்யம் பூஜ்யம் ஒரு சதவீதம் இருக்கலாம்? આજ કાલ toh sab A-I slash M-L kar rahe hai, aur unme bhi ye sab numbers ka khel hai. என் நண்பன் Rohan புள்ளிவிவரங்களைப் பயன்படுத்தி C-A-T தேர்வில் தொண்ணூற்றி ஒன்பது சதவீத மதிப்பெண் பெற்றான். Excel-ஐப் பயன்படுத்தும் போது, ஏன் நாம் standard deviation-ஐக் கணக்கிட வேண்டும் என்பது புரியவில்லை.",
+  "raw": "Probability toh mere sir ke upar se jata hai, bhai! குறிப்பாக புள்ளிவிவரங்கள். நிஜ வாழ்க்கையில் நான் Bayes' theorem-ஐப் பயன்படுத்த எவ்வளவு வாய்ப்பு உள்ளது? 0.0001% இருக்கலாம்? Aaj kal toh sab AI/ML kar rahe hai, aur unme bhi ye sab numbers ka khel hai. என் நண்பன் Rohan புள்ளிவிவரங்களைப் பயன்படுத்தி CAT தேர்வில் 99 சதவீத மதிப்பெண் பெற்றான். Excel-ஐப் பயன்படுத்தும் போது, ஏன் நாம் standard deviation-ஐக் கணக்கிட வேண்டும் என்பது புரியவில்லை."
+}
+```

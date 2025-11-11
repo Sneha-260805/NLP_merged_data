@@ -1,0 +1,7 @@
+```json
+{
+  "unnormalised": "হে, এইমাত্র আপনার পোস্টটি দেখলাম! বীমার জন্য, ICICI Pru Life iProtect Smart প্ল্যানটি ভালো মনে হচ্ছে, যা ৭৫ বছর বয়স পর্যন্ত কভার করে, এবং প্রিমিয়াম শুরু হয় ₹ 8,000/বছর থেকে। HDFC Life Click 2 Protect Super এর সাথেও তুলনা করুন!",
+  "normalised": "হে, এইমাত্র আপনার পোস্টটি দেখলাম! বীমার জন্য, আই-সি-আই-সি-আই Pru Life iProtect Smart প্ল্যানটি ভালো মনে হচ্ছে, যা পঁচাত্তর বছর বয়স পর্যন্ত কভার করে, এবং প্রিমিয়াম শুরু হয় আট হাজার টাকা প্রতি বছর থেকে। H-D-F-C Life Click দুই Protect Super এর সাথেও তুলনা করুন!",
+  "raw": "হে, এইমাত্র আপনার পোস্টটি দেখলাম! বীমার জন্য, ICICI Pru Life iProtect Smart প্ল্যানটি ভালো মনে হচ্ছে, যা ৭৫ বছর বয়স পর্যন্ত কভার করে, এবং প্রিমিয়াম শুরু হয় ₹ 8,000/বছর থেকে। HDFC Life Click 2 Protect Super এর সাথেও তুলনা করুন!\n{\n  \"unnormalised\": \"হে, এইমাত্র আপনার পোস্টটি দেখলাম! বীমার জন্য, ICICI Pru Life iProtect Smart প্ল্যানটি ভালো মনে হচ্ছে, যা ৭৫ বছর বয়স পর্যন্ত কভার করে, এবং প্রিমিয়াম শুরু হয় ₹ 8,000/বছর থেকে। HDFC Life Click 2 Protect Super এর সাথেও তুলনা করুন!\",\n  \"normalised\": \"হে, এইমাত্র আপনার পোস্টটি দেখলাম! বীমার জন্য, আই-সি-আই-সি-আই Pru Life iProtect Smart প্ল্যানটি ভালো মনে হচ্ছে, যা পঁচাত্তর বছর বয়স পর্যন্ত কভার করে, এবং প্রিমিয়াম শুরু হয় আট হাজার টাকা প্রতি বছর থেকে। H-D-F-C Life Click দুই Protect Super এর সাথেও তুলনা করুন!\",\n  \"text\": \"Hey, just saw your post! For insurance, ICICI Pru Life iProtect Smart plan seems good, covers till age 75, and premiums start from Rs. 8,000/yr. Do compare with HDFC Life Click 2 Protect Super too!\"\n}"
+}
+```

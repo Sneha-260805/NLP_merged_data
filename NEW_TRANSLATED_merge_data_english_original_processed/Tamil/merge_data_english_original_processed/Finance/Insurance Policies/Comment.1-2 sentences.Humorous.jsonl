@@ -1,0 +1,7 @@
+```json
+{
+  "unnormalised": "Arre bhai, Raju vaagaveendaam, avan 30/02/2025 varaikkum thanudaiya baikk kaappeedu ellaavatraiyum moodum endru ninaitthaan! Ithul, *sila* kollgaigal feb mudivil mattumae selubadi aagum, athuvum athu leap varudam illainaa mattumae! Rs. 5000 paazh.",
+  "normalised": "Arre bhai, Raju vaagaveendaam, avan irupatham february irandu aayiram irupathaiynthu varaikkum thanudaiya baikk kaappeedu ellaavatraiyum moodum endru ninaitthaan! Ithul, sila kollgaigal february mudivil mattumae selubadi aagum, athuvum athu leap varudam illainaa mattumae! Rupee aayiram paazh.",
+  "raw": "Arre bhai, Raju vaagaveendaam, avan 30/02/2025 varaikkum thanudaiya baikk kaappeedu ellaavatraiyum moodum endru ninaitthaan! Ithul, *sila* kollgaigal feb mudivil mattumae selubadi aagum, athuvum athu leap varudam illainaa mattumae! Rs. 5000 paazh."
+}
+```

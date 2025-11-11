@@ -1,0 +1,7 @@
+```json
+{
+  "unnormalised": "Arre bhai, Dadar vich oh sabzi mandi? Mol-bhav karo toh tuhannu 20₹/kg vich tamatar mil sakde han, nahi toh oh 35₹ quote karde han! Ate apni change jaanchana na bhulo; oh vendor kayi vaar 10₹ toh ghat vapas karde han.",
+  "normalised": "Arre bhai, Dadar vich oh sabzi mandi? Mol-bhav karo toh tuhannu rupee vee prat kilogram vich tamatar mil sakde han, nahi toh oh rupee painti quote karde han! Ate apni change jaanchana na bhulo; oh vendor kayi vaar rupee das toh ghat vapas karde han.",
+  "raw": "Arre bhai, Dadar vich oh sabzi mandi? Mol-bhav karo toh tuhannu 20₹/kg vich tamatar mil sakde han, nahi toh oh 35₹ quote karde han! Ate apni change jaanchana na bhulo; oh vendor kayi vaar 10₹ toh ghat vapas karde han."
+}
+```

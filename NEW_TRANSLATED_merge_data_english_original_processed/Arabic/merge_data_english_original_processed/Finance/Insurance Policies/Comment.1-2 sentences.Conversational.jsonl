@@ -1,0 +1,7 @@
+```json
+{
+  "unnormalised": "مرحبًا، لقد رأيت منشورك للتو! بالنسبة للتأمين، تبدو خطة ICICI Pru Life iProtect Smart جيدة، وتغطي حتى عمر 75 عامًا، وتبدأ الأقساط من 8,000 روبية سنويًا. قارن أيضًا مع HDFC Life Click 2 Protect Super!",
+  "normalised": "مرحبًا، لقد رأيت منشورك للتو! بالنسبة للتأمين، تبدو خطة I-C-I-C-I Pru Life iProtect Smart جيدة، وتغطي حتى عمر خمسة وسبعين عامًا، وتبدأ الأقساط من ثمانية آلاف روبية في السنة. قارن أيضًا مع H-D-F-C Life Click two Protect Super!",
+  "raw": "مرحبًا! إليك الترجمة:\n\n{\n  \"unnormalised\": \"مرحبًا، لقد رأيت منشورك للتو! بالنسبة للتأمين، تبدو خطة ICICI Pru Life iProtect Smart جيدة، وتغطي حتى عمر 75 عامًا، وتبدأ الأقساط من 8,000 روبية سنويًا. قارن أيضًا مع HDFC Life Click 2 Protect Super!\",\n  \"normalised\": \"مرحبًا، لقد رأيت منشورك للتو! بالنسبة للتأمين، تبدو خطة I-C-I-C-I Pru Life iProtect Smart جيدة، وتغطي حتى عمر خمسة وسبعين عامًا، وتبدأ الأقساط من ثمانية آلاف روبية في السنة. قارن أيضًا مع H-D-F-C Life Click two Protect Super!\",\n  \"text\": \"\"\n}"
+}
+```

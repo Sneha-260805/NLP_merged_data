@@ -1,0 +1,7 @@
+```json
+{
+  "unnormalised": "تذكر تضمين الرمز البريدي الصحيح في نهاية العنوان. على سبيل المثال، \"Plot no. 12, Sector 44, Gurgaon, Haryana, 122001\" هو عنوان عمل مناسب.",
+  "normalised": "تذكر تضمين الرمز البريدي الصحيح في نهاية العنوان. على سبيل المثال، \"Plot number twelve, Sector forty four, Gurgaon, Haryana, one two two zero zero one\" هو عنوان عمل مناسب.",
+  "raw": "تذكر تضمين الرمز البريدي الصحيح في نهاية العنوان. على سبيل المثال، \"Plot no. 12, Sector 44, Gurgaon, Haryana, 122001\" هو عنوان عمل مناسب."
+}
+```

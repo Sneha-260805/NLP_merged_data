@@ -1,0 +1,7 @@
+```json
+{
+  "unnormalised": "हो, म गत महिना \"Hotel Paradise, Gate No. 3 नजिक, IGI Airport, Delhi, 110037\" मा बसेँ। यो एयरपोर्टबाट धेरै टाढा छैन, लगभग 10-15 मिनेट।",
+  "normalised": "हो, म गत महिना \"Hotel Paradise, Gate Number तीन नजिक, I-G-I Airport, Delhi, एक लाख दश हजार सैंतीस\" मा बसेँ। यो एयरपोर्टबाट धेरै टाढा छैन, लगभग दस देखि पन्ध्र मिनेट।",
+  "raw": "हो, म गत महिना \"Hotel Paradise, Gate No. 3 नजिक, IGI Airport, Delhi, 110037\" मा बसेँ। यो एयरपोर्टबाट धेरै टाढा छैन, लगभग 10-15 मिनेट।\n{\n  \"unnormalised\": \"हो, म गत महिना \\\"Hotel Paradise, Gate No. 3 नजिक, IGI Airport, Delhi, 110037\\\" मा बसेँ। यो एयरपोर्टबाट धेरै टाढा छैन, लगभग 10-15 मिनेट।\",\n  \"normalised\": \"हो, म गत महिना \\\"Hotel Paradise, Gate Number तीन नजिक, I-G-I Airport, Delhi, एक लाख दश हजार सैंतीस\\\" मा बसेँ। यो एयरपोर्टबाट धेरै टाढा छैन, लगभग दस देखि पन्ध्र मिनेट।\",\n  \"raw\": \"हो, म गत महिना \\\"Hotel Paradise, Gate No. 3 नजिक, IGI Airport, Delhi, 110037\\\" मा बसेँ। यो एयरपोर्टबाट धेरै टाढा छैन, लगभग 10-15 मिनेट।\"\n}"
+}
+```

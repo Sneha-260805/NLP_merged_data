@@ -1,0 +1,7 @@
+```json
+{
+  "unnormalised": "Arrey bhai, ବିବାହ \"The Grand Plaza, Ballroom A, Andheri (E), Mumbai, 400069\" ରେ ଅଛି? Fancy ଶୁଣାଯାଉଛି! ଆଶାକରେ ସେମାନଙ୍କ ପାଖରେ ଯଥେଷ୍ଟ ପାର୍କିଙ୍ଗ୍ ଥିବ, ୱର୍ନା ପ୍ଲଟ୍ ନମ୍ବର 7 ରେ ଅରାଜକତା ନିଶ୍ଚିତ!",
+  "normalised": "Arrey bhai, ବିବାହ \"The Grand Plaza, Ballroom A, Andheri (E), Mumbai, ଚାରି ଲକ୍ଷ ଅଣସ୍ତରୀ\" ରେ ଅଛି? Fancy ଶୁଣାଯାଉଛି! ଆଶାକରେ ସେମାନଙ୍କ ପାଖରେ ଯଥେଷ୍ଟ ପାର୍କିଙ୍ଗ୍ ଥିବ, ୱର୍ନା ପ୍ଲଟ୍ ନମ୍ବର ସାତ ରେ ଅରାଜକତା ନିଶ୍ଚିତ!",
+  "raw": "Arrey bhai, ବିବାହ \"The Grand Plaza, Ballroom A, Andheri (E), Mumbai, 400069\" ରେ ଅଛି? Fancy ଶୁଣାଯାଉଛି! ଆଶାକରେ ସେମାନଙ୍କ ପାଖରେ ଯଥେଷ୍ଟ ପାର୍କିଙ୍ଗ୍ ଥିବ, ୱର୍ନା ପ୍ଲଟ୍ ନମ୍ବର 7 ରେ ଅରାଜକତା ନିଶ୍ଚିତ!\n{\n  \"unnormalised\": \"Arrey bhai, ବିବାହ \\\"The Grand Plaza, Ballroom A, Andheri (E), Mumbai, 400069\\\" ରେ ଅଛି? Fancy ଶୁଣାଯାଉଛି! ଆଶାକରେ ସେମାନଙ୍କ ପାଖରେ ଯଥେଷ୍ଟ ପାର୍କିଙ୍ଗ୍ ଥିବ, ୱର୍ନା ପ୍ଲଟ୍ ନମ୍ବର 7 ରେ ଅରାଜକତା ନିଶ୍ଚିତ!\",\n  \"normalised\": \"Arrey bhai, ବିବାହ \\\"The Grand Plaza, Ballroom A, Andheri (E), Mumbai, ଚାରି ଲକ୍ଷ ଅଣସ୍ତରୀ\\\" ରେ ଅଛି? Fancy ଶୁଣାଯାଉଛି! ଆଶାକରେ ସେମାନଙ୍କ ପାଖରେ ଯଥେଷ୍ଟ ପାର୍କିଙ୍ଗ୍ ଥିବ, ୱର୍ନା ପ୍ଲଟ୍ ନମ୍ବର ସାତ ରେ ଅରାଜକତା ନିଶ୍ଚିତ!\",\n  \"text\": \"Arrey bhai, ବିବାହ \\\"The Grand Plaza, Ballroom A, Andheri (E), Mumbai, 400069\\\" ରେ ଅଛି? Fancy ଶୁଣାଯାଉଛି! ଆଶାକରେ ସେମାନଙ୍କ ପାଖରେ ଯଥେଷ୍ଟ ପାର୍କିଙ୍ଗ୍ ଥିବ, ୱର୍ନା ପ୍ଲଟ୍ ନମ୍ବର 7 ରେ ଅରାଜକତା ନିଶ୍ଚିତ!\"\n}"
+}
+```

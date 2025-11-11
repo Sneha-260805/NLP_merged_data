@@ -1,0 +1,7 @@
+```json
+{
+  "unnormalised": "22/12/2024 रोजी DEL ते BOM या AI 405 विमानाबद्दल, मला इकोनॉमी क्लाससाठी सामान भत्ता आणि इंदिरा गांधी आंतरराष्ट्रीय विमानतळ, टर्मिनल 3 वरील चेक-इन वेळेची माहिती हवी आहे.",
+  "normalised": "बावीस डिसेंबर दोन हजार चोवीस रोजी डी-ई-एल ते बी-ओ-एम या ए-आय चारशे आणि पाच विमानाबद्दल, मला इकोनॉमी क्लाससाठी सामान भत्ता आणि इंदिरा गांधी आंतरराष्ट्रीय विमानतळ, टर्मिनल तीन वरील चेक-इन वेळेची माहिती हवी आहे.",
+  "raw": " regarding flight AI 405 from DEL to BOM on 22/12/2024, I request information on the baggage allowance for economy class and the check-in time at Indira Gandhi International Airport, Terminal 3.\n{\n  \"unnormalised\": \"22/12/2024 रोजी DEL ते BOM या AI 405 विमानाबद्दल, मला इकोनॉमी क्लाससाठी सामान भत्ता आणि इंदिरा गांधी आंतरराष्ट्रीय विमानतळ, टर्मिनल 3 वरील चेक-इन वेळेची माहिती हवी आहे.\",\n  \"normalised\": \"बावीस डिसेंबर दोन हजार चोवीस रोजी डी-ई-एल ते बी-ओ-एम या ए-आय चारशे आणि पाच विमानाबद्दल, मला इकोनॉमी क्लाससाठी सामान भत्ता आणि इंदिरा गांधी आंतरराष्ट्रीय विमानतळ, टर्मिनल तीन वरील चेक-इन वेळेची माहिती हवी आहे.\",\n  \"text\": \"Regarding flight AI 405 from DEL to BOM on 22/12/2024, I request information on the baggage allowance for economy class and the check-in time at Indira Gandhi International Airport, Terminal 3.\"\n}"
+}
+```

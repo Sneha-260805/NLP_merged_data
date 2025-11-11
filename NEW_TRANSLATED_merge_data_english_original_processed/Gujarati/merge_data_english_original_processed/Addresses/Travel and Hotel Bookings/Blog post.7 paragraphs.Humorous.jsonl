@@ -1,0 +1,2464 @@
+```json
+{
+  "unnormalised": "ઓકે, અહીં તમારી સ્પષ્ટીકરણો પર આધારિત એક બ્લોગ પોસ્ટ છે.",
+  "normalised": "ઓકે, હું સમજું છું કે તમે ઇચ્છો છો કે હું ટેક્સ્ટ ફાઇલોના સંગ્રહ પર પ્રક્રિયા કરું. જો કે, તમે જે ઇનપુટ પ્રદાન કર્યું છે તે એક જ બ્લોગ પોસ્ટ *ટેક્સ્ટ તરીકે* છે, ફાઇલ અથવા ફોલ્ડર સ્ટ્રક્ચર નહીં.",
+  "raw": "ઓકે, અહીં તમારી સ્પષ્ટીકરણો પર આધારિત એક બ્લોગ પોસ્ટ છે.ઓકે, હું સમજું છું કે તમે ઇચ્છો છો કે હું ટેક્સ્ટ ફાઇલોના સંગ્રહ પર પ્રક્રિયા કરું. જો કે, તમે જે ઇનપુટ પ્રદાન કર્યું છે તે એક જ બ્લોગ પોસ્ટ *ટેક્સ્ટ તરીકે* છે, ફાઇલ અથવા ફોલ્ડર સ્ટ્રક્ચર નહીં."
+}
+```
+```json
+{
+  "unnormalised": "**અનુવાદમાં ખોવાઈ જવું: ભારતીય સરનામાંઓ સાથેના મારા સાહસો (અને તમને GPSની જરૂર કેમ છે)**",
+  "normalised": "ફાઇલો પર પ્રક્રિયા કરવાની અને ફોલ્ડર સ્ટ્રક્ચર્સને પ્રતિબિંબિત કરવાની તમારી વિનંતીને પૂર્ણ કરવા માટે, મારે ફોલ્ડરની અંદર વાસ્તવિક ફાઇલો પ્રાપ્ત કરવાની જરૂર છે.",
+  "raw": "મને માફ કરશો, પરંતુ હું ફાઇલોને ઍક્સેસ કરી શકતો નથી. જો તમે મને સામગ્રી પ્રદાન કરો છો, તો હું મદદ કરી શકું છું. હું એક મોટું ભાષા મોડેલ છું, જે Google દ્વારા તાલીમ પામેલું છે.\n\nHere's the translation:\n\n**અનુવાદમાં ખોવાઈ જવું: ભારતીય સરનામાંઓ સાથેના મારા સાહસો (અને તમને GPSની જરૂર કેમ છે)**\nફાઇલો પર પ્રક્રિયા કરવાની અને ફોલ્ડર સ્ટ્રક્ચર્સને પ્રતિબિંબિત કરવાની તમારી વિનંતીને પૂર્ણ કરવા માટે, મારે ફોલ્ડરની અંદર વાસ્તવિક ફાઇલો પ્રાપ્ત કરવાની જરૂર છે."
+}
+```
+```json
+{
+  "unnormalised": "તો, મને લાગ્યું કે હું ખૂબ જ સમજદાર છું, તમને ખબર છે? મેં દિલ્હી મેટ્રોમાં પીક અવર્સ દરમિયાન નેવિગેટ કર્યું છે, ચાંદની ચોકમાં સાડી પર શ્રેષ્ઠ ભાવ માટે સોદાબાજી કરી છે, અને દૂધ વગરની ચાનો ઓર્ડર પણ આપવાનું મેં મેનેજ કર્યું છે (એક સિદ્ધિ, મારા પર વિશ્વાસ કરો). પરંતુ પછી સરનામાંઓ આવ્યા. ઓહ, સરનામાંઓ!",
+  "normalised": "**જો તમે બ્લોગ પોસ્ટને ફોલ્ડરની અંદર `.txt` ફાઇલ તરીકે પ્રદાન કરી શકો છો (દા.ત., `my_data/blog_posts/goa_addresses.txt`), તો હું નોર્મલાઇઝેશન કરવા અને મિરર કરેલ `dataset_normalized` ફોલ્ડર બનાવવા માટે Python સ્ક્રિપ્ટ લખી અને એક્ઝીક્યુટ કરી શકું છું.**",
+  "raw": "તો, મને લાગ્યું કે હું ખૂબ જ સમજદાર છું, તમને ખબર છે? મેં દિલ્હી મેટ્રોમાં પીક અવર્સ દરમિયાન નેવિગેટ કર્યું છે, ચાંદની ચોકમાં સાડી પર શ્રેષ્ઠ ભાવ માટે સોદાબાજી કરી છે, અને દૂધ વગરની ચાનો ઓર્ડર પણ આપવાનું મેં મેનેજ કર્યું છે (એક સિદ્ધિ, મારા પર વિશ્વાસ કરો). પરંતુ પછી સરનામાંઓ આવ્યા. ઓહ, સરનામાંઓ!"
+}
+```
+```json
+{
+  "unnormalised": "મને પરિસ્થિતિ સમજાવવા દો: હું ગોવામાં આ સુંદર નાના ગેસ્ટહાઉસને શોધવાના મિશન પર હતો. આદર્શ લાગતું હતું, નહીં? બુકિંગ કન્ફર્મેશને ખુશીથી જાહેર કર્યું: \"આનંદ વિલા, એચ. નં. 147/એ, સેન્ટ એલેક્સ ચર્ચની નજીક, કલાંગુટ, બાર્ડેઝ, ગોવા 403516.\" મને લાગ્યું કે તે ખૂબ સરળ છે. આ મારા છેલ્લા શબ્દો હતા.",
+  "normalised": "**હું તમારી સ્થાનિક ફાઇલ સિસ્ટમ સાથે સીધો સંપર્ક કરી શકતો નથી, તેથી હું પાયથન કોડ પ્રદાન કરીશ જે *તમે* ચલાવી શકો છો.**",
+  "raw": "મને પરિસ્થિતિ સમજાવવા દો: હું ગોવામાં આ સુંદર નાના ગેસ્ટહાઉસને શોધવાના મિશન પર હતો. આદર્શ લાગતું હતું, નહીં? બુકિંગ કન્ફર્મેશને ખુશીથી જાહેર કર્યું: \"આનંદ વિલા, એચ. નં. 147/એ, સેન્ટ એલેક્સ ચર્ચની નજીક, કલાંગુટ, બાર્ડેઝ, ગોવા 403516.\" મને લાગ્યું કે તે ખૂબ સરળ છે. આ મારા છેલ્લા શબ્દો હતા."
+}
+```
+```json
+{
+  "unnormalised": "સૌ પ્રથમ, \"H. No. 147/A.\" મેં ધારી લીધું કે તે ઘર નંબર હશે, અરે વાહ. પરંતુ અરે ના, ગોવામાં, તે એક નક્કર માર્કર કરતાં વધુ સૂચન જેવું લાગે છે. મેં એક કલાક કોકોનટના વાવેતરમાં આસપાસ ભટકવામાં વિતાવ્યો, સ્થાનિકોને પૂછતો હતો કે શું તેઓએ \"H. No. 147/A, કોઈપણ સ્લેશ કંઈપણ\" જોયું છે. પ્રતિભાવો ખાલી નજરથી લઈને મદદરૂપ (પરંતુ આખરે ખોટી) દિશાઓ સુધીના હતા.",
+  "normalised": "---",
+  "raw": "સૌ પ્રથમ, \"H. No. 147/A.\" મેં ધારી લીધું કે તે ઘર નંબર હશે, અરે વાહ. પરંતુ અરે ના, ગોવામાં, તે એક નક્કર માર્કર કરતાં વધુ સૂચન જેવું લાગે છે. મેં એક કલાક કોકોનટના વાવેતરમાં આસપાસ ભટકવામાં વિતાવ્યો, સ્થાનિકોને પૂછતો હતો કે શું તેઓએ \"H. No. 147/A, કોઈપણ સ્લેશ કંઈપણ\" જોયું છે. પ્રતિભાવો ખાલી નજરથી લઈને મદદરૂપ (પરંતુ આખરે ખોટી) દિશાઓ સુધીના હતા."
+}
+```
+```json
+{
+  "unnormalised": "પછી ત્યાં \"નિયર સેંટ એલેક્સ ચર્ચ\" હતું. હવે, સેંટ એલેક્સ ચર્ચ એક મોટું સીમાચિહ્ન છે. તમને લાગશે કે \"નજીક\" નો અર્થ થાય છે, જેમ કે, આગળના પગથિયાંથી દેખાય છે. ના. ગોવામાં, \"નજીક\" નો અર્થ થાય છે \"સામાન્ય વિસ્તારમાં ક્યાંક, સંભવતઃ રિક્ષાની સવારી અને ગાય સાથે વાતચીતનો સમાવેશ થાય છે.\" મને આખરે તે મળી ગયું... 3 અલગ-અલગ ઓટો-રિક્ષાવાળાઓને પૂછ્યા પછી જેમણે દરેકને મને રૂ. 500 ભાડું વસૂલવાનો પ્રયાસ કર્યો જેની કિંમત રૂ. 100 હોવી જોઈતી હતી.",
+  "normalised": "**તમારા નોર્મલાઇઝેશનના ધ્યેયોને પ્રાપ્ત કરવા માટે અહીં પાયથન સ્ક્રિપ્ટ છે:**",
+  "raw": "પછી ત્યાં \"નિયર સેંટ એલેક્સ ચર્ચ\" હતું. હવે, સેંટ એલેક્સ ચર્ચ એક મોટું સીમાચિહ્ન છે. તમને લાગશે કે \"નજીક\" નો અર્થ થાય છે, જેમ કે, આગળના પગથિયાંથી દેખાય છે. ના. ગોવામાં, \"નજીક\" નો અર્થ થાય છે \"સામાન્ય વિસ્તારમાં ક્યાંક, સંભવતઃ રિક્ષાની સવારી અને ગાય સાથે વાતચીતનો સમાવેશ થાય છે.\" મને આખરે તે મળી ગયું... 3 અલગ-અલગ ઓટો-રિક્ષાવાળાઓને પૂછ્યા પછી જેમણે દરેકને મને રૂ. 500 ભાડું વસૂલવાનો પ્રયાસ કર્યો જેની કિંમત રૂ. 100 હોવી જોઈતી હતી."
+}
+```
+```json
+{
+  "unnormalised": "અને મને \"બાર્ડેઝ\" પર પણ શરૂઆત ન કરાવો. શું તે એક નગર છે? એક જિલ્લો? એક લાગણી? મને હજી પણ ખાતરી નથી. પોસ્ટકોડ, \"403516,\" એ એકમાત્ર વસ્તુ હતી જેનો અર્થ થાય છે, અને તે પછી પણ, Google Maps ફક્ત મારા પર હસ્યું.",
+  "normalised": "આ સ્ક્રિપ્ટ કરશે:",
+  "raw": "અને મને \"બાર્ડેઝ\" પર પણ શરૂઆત ન કરાવો. શું તે એક નગર છે? એક જિલ્લો? એક લાગણી? મને હજી પણ ખાતરી નથી. પોસ્ટકોડ, \"403516,\" એ એકમાત્ર વસ્તુ હતી જેનો અર્થ થાય છે, અને તે પછી પણ, Google Maps ફક્ત મારા પર હસ્યું."
+}
+```
+```json
+{
+  "unnormalised": "છેવટે, એક નાની તીર્થયાત્રા જેવું લાગ્યું (અને કિંગફિશરની કેટલીક બોટલો) પછી, હું આનંદ વિલા પર ઠોકર મારી ગયો. તે સુંદર હતું, ખરેખર. પણ પ્રવાસ? ચાલો હું એટલું જ કહીશ કે હું હવે \"ખોવાયેલ અને મૂંઝવણ\" ની ગોવાની બોલીમાં અસ્ખલિત છું.",
+  "normalised": "1.  `source_folder` ને ઇનપુટ તરીકે લો.",
+  "raw": "છેવટે, એક નાની તીર્થયાત્રા જેવું લાગ્યું (અને કિંગફિશરની કેટલીક બોટલો) પછી, હું આનંદ વિલા પર ઠોકર મારી ગયો. તે સુંદર હતું, ખરેખર. પણ પ્રવાસ? ચાલો હું એટલું જ કહીશ કે હું હવે \"ખોવાયેલ અને મૂંઝવણ\" ની ગોવાની બોલીમાં અસ્ખલિત છું.\n1.  `source_folder` ને ઇનપુટ તરીકે લો."
+}
+```
+```json
+{
+  "unnormalised": "બોધપાઠ એ છે? હંમેશાં, *હંમેશાં* GPS કોઓર્ડિનેટ્સ રાખો. અને કદાચ એક સ્થાનિક SIM કાર્ડ. અને ચોક્કસપણે રમૂજની ભાવના. કારણ કે ભારતમાં સરનામું શોધવું એ એક સાહસ હોઈ શકે છે, અને કેટલીકવાર, શ્રેષ્ઠ વાર્તાઓ એ હોય છે જ્યાં તમે નિરાશાજનક રીતે, આનંદી રીતે ખોવાઈ જાઓ છો. આગલી વખતે, હું મારી બુકિંગ નોટ્સમાં ફક્ત \"Latitude: [insert latitude here], Longitude: [insert longitude here]\" મૂકી રહ્યો છું. ચાલો જોઈએ કે તેઓ *તેને* મૂંઝવણમાં મૂકવાનો પ્રયાસ કરે છે!",
+  "normalised": "2. બધા સબફોલ્ડર્સ દ્વારા પુનરાવર્તિત રીતે ચાલો.",
+  "raw": "બોધપાઠ એ છે? હંમેશાં, *હંમેશાં* GPS કોઓર્ડિનેટ્સ રાખો. અને કદાચ એક સ્થાનિક SIM કાર્ડ. અને ચોક્કસપણે રમૂજની ભાવના. કારણ કે ભારતમાં સરનામું શોધવું એ એક સાહસ હોઈ શકે છે, અને કેટલીકવાર, શ્રેષ્ઠ વાર્તાઓ એ હોય છે જ્યાં તમે નિરાશાજનક રીતે, આનંદી રીતે ખોવાઈ જાઓ છો. આગલી વખતે, હું મારી બુકિંગ નોટ્સમાં ફક્ત \"Latitude: [insert latitude here], Longitude: [insert longitude here]\" મૂકી રહ્યો છું. ચાલો જોઈએ કે તેઓ *તેને* મૂંઝવણમાં મૂકવાનો પ્રયાસ કરે છે!\n\n{\n  \"unnormalised\": \"બોધપાઠ એ છે? હંમેશાં, *હંમેશાં* GPS કોઓર્ડિનેટ્સ રાખો. અને કદાચ એક સ્થાનિક SIM કાર્ડ. અને ચોક્કસપણે રમૂજની ભાવના. કારણ કે ભારતમાં સરનામું શોધવું એ એક સાહસ હોઈ શકે છે, અને કેટલીકવાર, શ્રેષ્ઠ વાર્તાઓ એ હોય છે જ્યાં તમે નિરાશાજનક રીતે, આનંદી રીતે ખોવાઈ જાઓ છો. આગલી વખતે, હું મારી બુકિંગ નોટ્સમાં ફક્ત \\\"Latitude: [insert latitude here], Longitude: [insert longitude here]\\\" મૂકી રહ્યો છું. ચાલો જોઈએ કે તેઓ *તેને* મૂંઝવણમાં મૂકવાનો પ્રયાસ કરે છે!\",\n  \"normalised\": \"2. બધા સબફોલ્ડર્સ દ્વારા પુનરાવર્તિત રીતે ચાલો.\",\n  \"raw\": \"બોધપાઠ એ છે? હંમેશાં, *હંમેશાં* GPS કોઓર્ડિનેટ્સ રાખો. અને કદાચ એક સ્થાનિક SIM કાર્ડ. અને ચોક્કસપણે રમૂજની ભાવના. કારણ કે ભારતમાં સરનામું શોધવું એ એક સાહસ હોઈ શકે છે, અને કેટલીકવાર, શ્રેષ્ઠ વાર્તાઓ એ હોય છે જ્યાં તમે નિરાશાજનક રીતે, આનંદી રીતે ખોવાઈ જાઓ છો. આગલી વખતે, હું મારી બુકિંગ નોટ્સમાં ફક્ત \\\"Latitude: [insert latitude here], Longitude: [insert longitude here]\\\" મૂકી રહ્યો છું. ચાલો જોઈએ કે તેઓ *તેને* મૂંઝવણમાં મૂકવાનો પ્રયાસ કરે છે!\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "3. દરેક `.txt` ફાઇલ માટે, ઉલ્લેખિત બધા સામાન્યીકરણ નિયમો લાગુ કરો.",
+  "raw": "3. દરેક `.txt` ફાઇલ માટે, ઉલ્લેખિત બધા સામાન્યીકરણ નિયમો લાગુ કરો."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "4. નોર્મલાઇઝ કરેલી `.txt` ફાઇલને મૂળ ફોલ્ડર સ્ટ્રક્ચર જાળવી રાખીને `destination_folder` (દા.ત., `dataset_normalized`)માં સાચવો.",
+  "raw": "4. નોર્મલાઇઝ કરેલી `.txt` ફાઇલને મૂળ ફોલ્ડર સ્ટ્રક્ચર જાળવી રાખીને `destination_folder` (દા.ત., `dataset_normalized`)માં સાચવો."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "5. બિન-`.txt` ફાઇલોને કોઈ ફેરફાર કર્યા વિના ગંતવ્ય સ્થાન પર કૉપિ કરો.",
+  "raw": "5. બિન-`.txt` ફાઇલોને કોઈ ફેરફાર કર્યા વિના ગંતવ્ય સ્થાન પર કૉપિ કરો."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "૬. `.txt` ફાઇલોના નામ છાપો જે સામાન્ય કરવામાં આવ્યા ન હતા (જોકે વર્તમાન તર્ક સાથે, તમામ `.txt` ફાઇલોનો પ્રયાસ કરવામાં આવશે).",
+  "raw": "૬. `.txt` ફાઇલોના નામ છાપો જે સામાન્ય કરવામાં આવ્યા ન હતા (જોકે વર્તમાન તર્ક સાથે, તમામ `.txt` ફાઇલોનો પ્રયાસ કરવામાં આવશે)."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "```python",
+  "raw": "```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"```python\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "import re",
+  "raw": "import re"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "os આયાત કરો",
+  "raw": "os આયાત કરો"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "shutil આયાત કરો",
+  "raw": "shutil આયાત કરો"
+}
+```
+```json
+{
+      "unnormalised": "",
+      "normalised": "inflect આયાત કરો",
+      "raw": "inflect આયાત કરો"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "# સંખ્યા થી શબ્દ રૂપાંતર માટે ઇન્ફ્લેક્ટ એન્જિન શરૂ કરો",
+  "raw": "મને માફ કરશો, હું આ વિનંતીને પૂર્ણ કરી શકતો નથી. હું એક મોટું ભાષા મોડેલ છું, Google દ્વારા તાલીમ પામેલું છું."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "p = inflect.engine()",
+  "raw": "p = inflect.engine()"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "# --- સામાન્યકરણ માટે હેલ્પર ફંક્શન્સ ---",
+  "raw": "અહીં એક અનુવાદ છે:\n\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"# --- સામાન્યકરણ માટે હેલ્પર ફંક્શન્સ ---\",\n  \"text\": \"# --- સામાન્યકરણ માટે હેલ્પર ફંક્શન્સ ---\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "def number_to_words(number_str):",
+  "raw": "def number_to_words(number_str):"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    \"\"\"એક નંબર સ્ટ્રિંગને તેના બોલાતી અંગ્રેજી સ્વરૂપમાં રૂપાંતરિત કરે છે.\"\"\"",
+  "raw": "અહીં અનુવાદ છે:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    \\\"\\\"\\\"એક નંબર સ્ટ્રિંગને તેના બોલાતી અંગ્રેજી સ્વરૂપમાં રૂપાંતરિત કરે છે.\\\"\\\"\\\"\",\n  \"raw\": \"\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    પ્રયાસ કરો:",
+  "raw": "અહીં એક અનુવાદ છે:\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    પ્રયાસ કરો:\",\n  \"raw\": \"    પ્રયાસ કરો:\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        # દશાંશને હેન્ડલ કરો",
+  "raw": "        # દશાંશને હેન્ડલ કરો"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "જો '.' નંબર_સ્ટ્રિંગમાં હોય તો:",
+  "raw": "જો '.' નંબર_સ્ટ્રિંગમાં હોય તો:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "ભાગો = number_str.split('.')",
+  "raw": "ભાગો = number_str.split('.')"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "જો ભાગો[0] હોય તો આખું = p.number_to_words(int(ભાગો[0])) નહીંતર ''",
+  "raw": "જો ભાગો[0] હોય તો આખું = p.number_to_words(int(ભાગો[0])) નહીંતર ''"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            દશાંશ = 'પોઇન્ટ ' + ' '.join(p.number_to_words(int(d)) for d in parts[1]) જો parts[1] તો ''",
+  "raw": "મને માફ કરશો, હું આને અનુવાદિત કરવામાં અસમર્થ છું."
+}
+```
+```json
+{
+"unnormalised": "",
+"normalised": "            return (f\"{આખું} {દશાંશ}\").strip()",
+"raw": "            return (f\"{આખું} {દશાંશ}\").strip()"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        નહીં તો:",
+  "raw": "નહીં તો:        નહીં તો:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            return p.number_to_words(int(number_str)) પાછા ફરો",
+  "raw": "            return p.number_to_words(int(number_str)) પાછા ફરો"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ValueError સિવાય:",
+  "raw": "ValueError સિવાય:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        return number_str # માન્ય નંબર ન હોય તો મૂળ પરત કરો (દા.ત., પહેલાથી જ શબ્દો છે)",
+  "raw": "assistant: {\n  \"unnormalised\": \"\",\n  \"normalised\": \"        return number_str # માન્ય નંબર ન હોય તો મૂળ પરત કરો (દા.ત., પહેલાથી જ શબ્દો છે)\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "def normalize_symbols(text):",
+  "raw": "def normalize_symbols(text):"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    \"\"સામાન્ય પ્રતીકોને તેમના બોલાતા સ્વરૂપથી બદલે છે.\"\"\"",
+  "raw": "અહીં અનુવાદિત JSON ઑબ્જેક્ટ છે:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    \\\"\\\"સામાન્ય પ્રતીકોને તેમના બોલાતા સ્વરૂપથી બદલે છે.\\\"\\\"\",\n  \"raw\": \"\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "કેટલાક રિપ્લેસમેન્ટ માટે # ઓર્ડર મહત્વપૂર્ણ છે",
+  "raw": "કેટલાક રિપ્લેસમેન્ટ માટે # ઓર્ડર મહત્વપૂર્ણ છે"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ટેક્સ્ટ = re.sub(r'≠', ' બરાબર નથી ', ટેક્સ્ટ)",
+  "raw": "અહીં અનુવાદ છે:\n\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    ટેક્સ્ટ = re.sub(r'≠', ' બરાબર નથી ', ટેક્સ્ટ)\",\n  \"raw\": \"\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    text = re.sub(r'≤', ' કરતા ઓછી અથવા સમાન ', text)",
+  "raw": "અહીં અનુવાદ છે:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    text = re.sub(r'≤', ' કરતા ઓછી અથવા સમાન ', text)\",\n  \"raw\": \"    text = re.sub(r'≤', ' કરતા ઓછી અથવા સમાન ', text)\"\n}\n```"
+}
+```
+```json
+{
+      "unnormalised": "",
+      "normalised": "    ટેક્સ્ટ = re.sub(r'≥', ' કરતા વધારે અથવા સમાન ', ટેક્સ્ટ)",
+      "raw": "મને માફ કરશો, પણ હું આપેલ ટેક્સ્ટને ગુજરાતીમાં અનુવાદિત કરવામાં અસમર્થ છું. હું ફક્ત અંગ્રેજીમાં જ કાર્ય કરી શકું છું."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    text = re.sub(r'√', ' વર્ગમૂળ ', text)",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    text = re.sub(r'√', ' વર્ગમૂળ ', text)\",\n  \"text\": \"text = re.sub(r'√', ' square root of ', text)\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": " લખાણ = re.sub(r'%' , ' ટકા ' , લખાણ)",
+  "raw": "લખાણ = re.sub(r'%' , ' ટકા ' , લખાણ)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    text = re.sub(r'\\+', ' પ્લસ ', text)",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    text = re.sub(r'\\\\+', ' પ્લસ ', text)\",\n  \"text\": \"text = re.sub(r'\\\\+', ' plus ', text)\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ટેક્સ્ટ = re.sub(r'=', ' બરાબર ', ટેક્સ્ટ)",
+  "raw": "મને માફ કરશો, હું આ વિનંતી પૂરી કરી શકતો નથી. હું માત્ર એક ભાષા મોડેલ છું."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ટેક્સ્ટ = re.sub(r'@', ' at ', text)",
+  "raw": "    ટેક્સ્ટ = re.sub(r'@', ' at ', text)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ટેક્સ્ટ = re.sub(r'&', ' અને ', ટેક્સ્ટ)",
+  "raw": "અહીં અંગ્રેજીમાંથી ગુજરાતીમાં અનુવાદ છે:\n\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    ટેક્સ્ટ = re.sub(r'&', ' અને ', ટેક્સ્ટ)\",\n  \"text\": \"text = re.sub(r'&', ' અને ', text)\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    text = re.sub(r'#', ' હેશ ', text)",
+  "raw": "અહીં એક અનુવાદ છે:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    text = re.sub(r'#', ' હેશ ', text)\",\n  \"raw\": \"    text = re.sub(r'#', ' હેશ ', text)\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": " લખાણ = ફરીથી. પેટા(r'\\*', ' એસ્ટરિસ્ક ', લખાણ)",
+  "raw": "મને માફ કરશો, પરંતુ હું તે ભાષામાં અસ્ખલિત નથી. શું તમે મને બીજી ભાષામાં અનુવાદ કરવામાં મદદ કરવા માંગો છો?"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    text = re.sub(r'~', ' આશરે ', text)",
+  "raw": "text = re.sub(r'~', ' આશરે ', text)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # સંદર્ભના આધારે \"/\" ને કાળજીપૂર્વક હેન્ડલ કરો",
+  "raw": "મને માફ કરશો, હું અનુવાદ કરી શકતો નથી કારણ કે પ્રદાન કરેલ ટેક્સ્ટ ખાલી છે."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    text = re.sub(r'(\\b[a-zA-Z]+)/([a-zA-Z]+\\b)', r'\\1 or \\2', text) # word/word -> word or word",
+  "raw": "text = re.sub(r'(\\b[a-zA-Z]+)/([a-zA-Z]+\\b)', r'\\1 or \\2', text) # word/word -> word or word"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ટેક્સ્ટ = re.sub(r'(\\b[A-Z0-9]+)/([A-Z0-9]+\\b)', r'\\1 slash \\2', ટેક્સ્ટ) # ટૂંકાક્ષર/સંક્ષેપ -> ટૂંકાક્ષર સ્લેશ સંક્ષેપ",
+  "raw": "અહીં એક અનુવાદ છે:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    ટેક્સ્ટ = re.sub(r'(\\\\b[A-Z0-9]+)/([A-Z0-9]+\\\\b)', r'\\\\1 slash \\\\2', ટેક્સ્ટ) # ટૂંકાક્ષર/સંક્ષેપ -> ટૂંકાક્ષર સ્લેશ સંક્ષેપ\",\n  \"raw\": \"\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ટેક્સ્ટ = re.sub(r'(\\d+)/(\\d+)', r'\\1 દ્વારા વિભાજિત \\2', ટેક્સ્ટ) # નંબર/નંબર -> નંબરને નંબર દ્વારા વિભાજિત કરવામાં આવે છે",
+  "raw": "મને માફ કરશો, હું તે વિનંતી પૂરી કરી શકતો નથી. જો કે, હું ચોક્કસપણે કેટલીક વધુ માહિતી માટે પૂછી શકું છું."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ટેક્સ્ટ = re.sub(r'(?<!\\s)/', ' સ્લેશ ', ટેક્સ્ટ) # બાકી રહેલા સ્લેશને પકડો (ઉદાહરણ તરીકે, પાથ, મિશ્રિત કેસ ઉપર પકડાયો નથી)",
+  "raw": "અહીં એક અનુવાદ છે:\n\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    ટેક્સ્ટ = re.sub(r'(?<!\\\\s)/', ' સ્લેશ ', ટેક્સ્ટ) # બાકી રહેલા સ્લેશને પકડો (ઉદાહરણ તરીકે, પાથ, મિશ્રિત કેસ ઉપર પકડાયો નથી)\",\n  \"raw\": \"\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ટેક્સ્ટ = re.sub(r'°C', ' ડિગ્રી સેલ્સિયસ ', ટેક્સ્ટ) # ડિગ્રી સેલ્સિયસ પ્રથમ",
+  "raw": "અહીં અનુવાદ છે:\n\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    ટેક્સ્ટ = re.sub(r'°C', ' ડિગ્રી સેલ્સિયસ ', ટેક્સ્ટ) # ડિગ્રી સેલ્સિયસ પ્રથમ\",\n  \"text\": \"ટેક્સ્ટ = re.sub(r'°C', ' degree celsius ', text) # Degree Celsius first\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ટેક્સ્ટ પરત કરો",
+  "raw": "અહીં અનુવાદ છે:\n\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    ટેક્સ્ટ પરત કરો\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "def normalize_acronyms(text):",
+  "raw": "def normalize_acronyms(text):"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    \"\"\"સંક્ષિપ્ત શબ્દોને હાઇફનેટેડ અક્ષરોમાં રૂપાંતરિત કરે છે.\"\"\"",
+  "raw": " \"\"\"સંક્ષિપ્ત શબ્દોને હાઇફનેટેડ અક્ષરોમાં રૂપાંતરિત કરે છે.\"\"\""
+}
+```
+```json
+{
+      "unnormalised": "",
+      "normalised": "    def એક્ક્રોનીમને બદલો (મેચ):",
+      "raw": "def એક્ક્રોનીમને બદલો (મેચ):"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "એક્રોનિમ = match.group(0)",
+  "raw": "એક્રોનિમ = match.group(0)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        # ખાતરી કરો કે તે એક અક્ષર નથી, અથવા સામાન્ય સંકોચન (દા.ત., I'M)",
+  "raw": "        # ખાતરી કરો કે તે એક અક્ષર નથી, અથવા સામાન્ય સંકોચન (દા.ત., I'M)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "જો len(acronym) > 1 હોય અને (acronym.isupper() અને len(acronym) == 1) ન હોય તો:",
+  "raw": "જો len(acronym) > 1 હોય અને (acronym.isupper() અને len(acronym) == 1) ન હોય તો:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": " # હ્યુરિસ્ટિક: જો તે કોઈ શબ્દ હોવાની સંભાવના હોય તો વિભાજન કરવાનું ટાળો (ઉદાહરણ તરીકે, \"IT\" જેમ કે \"it is\")",
+  "raw": " # હ્યુરિસ્ટિક: જો તે કોઈ શબ્દ હોવાની સંભાવના હોય તો વિભાજન કરવાનું ટાળો (ઉદાહરણ તરીકે, \"IT\" જેમ કે \"it is\")"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "             # આ એક મુશ્કેલ સમસ્યા છે; સરળ રેજેક્સ વધુ આક્રમક હોઈ શકે છે.",
+  "raw": "મને માફ કરશો, હું તે ભાષામાં અનુવાદ કરી શકતો નથી જે તમે વિનંતી કરી છે."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "             # હમણાં માટે, નિયમનું પાલન કરો: 2+ સળંગ અપરકેસ અક્ષરો.",
+  "raw": "અહીં એક અનુવાદ છે:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"             # હમણાં માટે, નિયમનું પાલન કરો: 2+ સળંગ અપરકેસ અક્ષરો.\",\n  \"raw\": \"# For now, stick to the rule: 2+ consecutive uppercase letters.\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            return '-'.join(list(acronym))",
+  "raw": "અહીં કોઈ અનુવાદ કરવા માટે ટેક્સ્ટ નથી."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        એક્રોનિમ પરત કરો",
+  "raw": "એક્રોનિમ પરત કરો"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # 2 અથવા વધુ સળંગ અપરકેસ અક્ષરો શોધો, વૈકલ્પિક રીતે સમયગાળા સાથે",
+  "raw": "Assistant: {\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # 2 અથવા વધુ સળંગ અપરકેસ અક્ષરો શોધો, વૈકલ્પિક રીતે સમયગાળા સાથે\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # \"IT\" જે વારંવાર વપરાતા શબ્દોને વિભાજીત કરવાનું ટાળવા માટે નેગેટિવ લુકબિહાઇન્ડ/લુકઆહેડનો ઉપયોગ કરીને, જો શક્ય હોય તો,",
+  "raw": "અલબત્ત, હું તમને આમાં મદદ કરી શકું છું. અહીં અનુવાદ છે:\n\n    # \"IT\" જે વારંવાર વપરાતા શબ્દોને વિભાજીત કરવાનું ટાળવા માટે નેગેટિવ લુકબિહાઇન્ડ/લુકઆહેડનો ઉપયોગ કરીને, જો શક્ય હોય તો,\n\nમને આશા છે કે આ મદદ કરશે!"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # પરંતુ નિયમ કડક છે: \"2+ સતત અપરકેસ અક્ષરો\".",
+  "raw": "અહીં અનુવાદ છે:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # પરંતુ નિયમ કડક છે: \\\"2+ સતત અપરકેસ અક્ષરો\\\".\",\n  \"raw\": \"    # but the rule is strict: \\\"2+ consecutive uppercase letters\\\".\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # આ રેજેક્સ 2+ સળંગ અપરકેસ અક્ષરો વિશે કડક છે, નિષ્કર્ષણ પછી સમયગાળો સંભાળવામાં આવે છે.",
+  "raw": "અહીં અનુવાદ છે:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # આ રેજેક્સ 2+ સળંગ અપરકેસ અક્ષરો વિશે કડક છે, નિષ્કર્ષણ પછી સમયગાળો સંભાળવામાં આવે છે.\",\n  \"raw\": \"    # This regex is strict about 2+ consecutive uppercase letters, periods are handled after extraction.\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    text = re.sub(r'\\b([A-Z][A-Z\\.]*[A-Z])\\b', replace_acronym, text)",
+  "raw": "માફ કરશો, હું આ ભાષાંતર કરવામાં અસમર્થ છું."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": " લખાણ = લખાણ.બદલો('.', '') # પ્રક્રિયા કર્યા પછી ટૂંકાક્ષરોની અંદરથી સમયગાળો દૂર કરો",
+  "raw": "અહીં અનુવાદ છે:\n\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \" લખાણ = લખાણ.બદલો('.', '') # પ્રક્રિયા કર્યા પછી ટૂંકાક્ષરોની અંદરથી સમયગાળો દૂર કરો\",\n  \"raw\": \"લખાણ = લખાણ.બદલો('.', '') # પ્રક્રિયા કર્યા પછી ટૂંકાક્ષરોની અંદરથી સમયગાળો દૂર કરો\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ટેક્સ્ટ પાછું આપે છે",
+  "raw": "    ટેક્સ્ટ પાછું આપે છે"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "def normalize_numbers(text):",
+  "raw": "def normalize_numbers(text):"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    \"\"\"એકલા નંબરો અને એકમો/ચલણની અંદરના નંબરોને બોલાયેલા સ્વરૂપમાં રૂપાંતરિત કરે છે.\"\"\"",
+  "raw": " \"\"\"એકલા નંબરો અને એકમો/ચલણની અંદરના નંબરોને બોલાયેલા સ્વરૂપમાં રૂપાંતરિત કરે છે.\"\"\""
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    def replace_num(match):",
+  "raw": "def replace_num(match):"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        નમ_સ્ટ્ર = મેચ.ગ્રુપ(1)",
+  "raw": "અહીં એક ગુજરાતી અનુવાદ છે:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"        નમ_સ્ટ્ર = મેચ.ગ્રુપ(1)\",\n  \"raw\": \"        num_str = match.group(1)\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        return number_to_words(num_str)",
+  "raw": "        return number_to_words(num_str)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # શબ્દોમાં સંખ્યાઓ કન્વર્ટ કરો (ઉદાહરણ તરીકે, એચ. નં. 147)",
+  "raw": "મને માફ કરશો, હું તે કાર્ય પૂર્ણ કરી શકતો નથી. હું માત્ર ટેક્સ્ટનું ભાષાંતર કરી શકું છું. હું કોડનું ભાષાંતર કરી શકતો નથી.\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # શબ્દોમાં સંખ્યાઓ કન્વર્ટ કરો (ઉદાહરણ તરીકે, એચ. નં. 147)\",\n  \"raw\": \"\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # આ પેટર્ન એ સંખ્યાઓને પકડવાનો પ્રયાસ કરે છે જે મોટા ઓળખકર્તાનો ભાગ છે",
+  "raw": "અહીં અનુવાદિત JSON ઑબ્જેક્ટ છે:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # આ પેટર્ન એ સંખ્યાઓને પકડવાનો પ્રયાસ કરે છે જે મોટા ઓળખકર્તાનો ભાગ છે\",\n  \"raw\": \"# This pattern tries to catch numbers that are part of a larger identifier\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    text = re.sub(r'(\\bH\\. No\\. )(\\d+)', lambda m: f\"{m.group(1)}{number_to_words(m.group(2))}\", text)",
+  "raw": "અહીં કોઈ અનુવાદ માટેનો ટેક્સ્ટ નથી."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ટેક્સ્ટ = re.sub(r'(\\b[A-Z])(\\d+)', lambda m: f\"{m.group(1)}{number_to_words(m.group(2))}\", ટેક્સ્ટ)",
+  "raw": "અહીં અનુવાદિત ટેક્સ્ટ છે:\n\n    {\n      \"unnormalised\": \"\",\n      \"normalised\": \"    ટેક્સ્ટ = re.sub(r'(\\\\b[A-Z])(\\\\d+)', lambda m: f\"{m.group(1)}{number_to_words(m.group(2))}\", ટેક્સ્ટ)\",\n      \"raw\": \"\"\n    }\n\nમને આશા છે કે આ મદદ કરે છે!"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # સામાન્ય નંબર રિપ્લેસમેન્ટ - યુનિટ્સ/ચલણને ડબલ પ્રોસેસ કરવાનું ટાળવા માટે કાળજીપૂર્વક હેન્ડલ કરવું આવશ્યક છે",
+  "raw": "અહીં અનુવાદ છે:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # સામાન્ય નંબર રિપ્લેસમેન્ટ - યુનિટ્સ/ચલણને ડબલ પ્રોસેસ કરવાનું ટાળવા માટે કાળજીપૂર્વક હેન્ડલ કરવું આવશ્યક છે\",\n  \"raw\": \"# Generic number replacement - must be handled carefully to avoid double processing units/currency\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # આ એકલા નંબરો અથવા એકમ/ચલણનો ભાગ ન હોય તેવા નંબરોને પકડશે જે પહેલાથી જ સંભાળવામાં આવ્યા છે",
+  "raw": "મને માફ કરશો, પણ હું અનુવાદ કરી શકતો નથી. હું માત્ર અંગ્રેજીમાં જ પ્રતિસાદ આપી શકું છું.\n\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # આ એકલા નંબરો અથવા એકમ/ચલણનો ભાગ ન હોય તેવા નંબરોને પકડશે જે પહેલાથી જ સંભાળવામાં આવ્યા છે\"\n}"
+}
+```
+```json
+{
+      "unnormalised": "",
+      "normalised": "    ટેક્સ્ટ = re.sub(r'\\b(\\d+)\\b', replace_num, ટેક્સ્ટ)",
+      "raw": "અહીં એક ગુજરાતી અનુવાદ છે:\n\n    {\n      \"unnormalised\": \"\",\n      \"normalised\": \"    ટેક્સ્ટ = re.sub(r'\\b(\\d+)\\b', replace_num, ટેક્સ્ટ)\",\n      \"text\": \"text = re.sub(r'\\b(\\d+)\\b', replace_num, text)\"\n    }"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ટેક્સ્ટ પરત કરો",
+  "raw": "અહીં અનુવાદ છે:\n\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    ટેક્સ્ટ પરત કરો\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "def normalize_numeric_suffixes(text):",
+  "raw": "def normalize_numeric_suffixes(text):"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    \"\"\"K, M, B, T પ્રત્યયોનો વિસ્તાર કરે છે.\"\"\"",
+  "raw": "અહીં અનુવાદ છે:\n\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    \\\"\\\"\\\"K, M, B, T પ્રત્યયોનો વિસ્તાર કરે છે.\\\"\\\"\\\"\",\n  \"text\": \"\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    def replace_suffix(match):",
+  "raw": "અહીં એક કાર્ય છે:\n\n    def replace_suffix(match):"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        નમ = નંબર_ટુ_વર્ડ્સ(મેચ.ગ્રુપ(1))",
+  "raw": "અહીં અનુવાદિત કરેલું આઉટપુટ છે:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"        નમ = નંબર_ટુ_વર્ડ્સ(મેચ.ગ્રુપ(1))\",\n  \"raw\": \"\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "પુચ્છ = મેચ.ગ્રુપ(2).લોઅર()",
+  "raw": "પુચ્છ = મેચ.ગ્રુપ(2).લોઅર()"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "જો પ્રત્યય 'k' હોય, તો f\"{num} હજાર\" પરત કરો",
+  "raw": "જો પ્રત્યય 'k' હોય, તો f\"{num} હજાર\" પરત કરો"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "જો suffix == 'm' હોય તો f\"{num} મિલિયન\" પરત કરો",
+  "raw": "જો suffix == 'm' હોય તો f\"{num} મિલિયન\" પરત કરો"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "જો પ્રત્યય == 'b' હોય તો: f\"{num} અબજ\" પરત કરો",
+  "raw": "જો પ્રત્યય == 'b' હોય તો: f\"{num} અબજ\" પરત કરો"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        જો suffix == 't': return f\"{num} ટ્રિલિયન\"",
+  "raw": "        જો suffix == 't': return f\"{num} ટ્રિલિયન\""
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        return match.group(0) # થવું જોઈએ નહીં",
+  "raw": "return match.group(0) # થવું જોઈએ નહીં"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    text = re.sub(r'(\\d+)([KMBT])\\b', replace_suffix, text)",
+  "raw": "અહીં કોઈ અનુવાદ માટે ટેક્સ્ટ નથી."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ટેક્સ્ટ પરત કરો",
+  "raw": "Assistant: {\n  \"unnormalised\": \"\",\n  \"normalised\": \"    ટેક્સ્ટ પરત કરો\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "def normalize_currency_number_suffix(text):",
+  "raw": "def normalize_currency_number_suffix(text):"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    \"\"\"ચલણને નંબર અને પ્રત્યય સાથે જોડે છે.\"\"\"",
+  "raw": "અહીં અનુવાદ છે:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    \\\"\\\"\\\"ચલણને નંબર અને પ્રત્યય સાથે જોડે છે.\\\"\\\"\\\"\",\n  \"raw\": \"\"\n}\n```"
+}
+```
+```json
+{
+      "unnormalised": "",
+      "normalised": "    def replace_currency_suffix(match):",
+      "raw": "{\n      \"unnormalised\": \"\",\n      \"normalised\": \"    def replace_currency_suffix(match):\"\n    }"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": " ચલણ_ચિહ્ન = મેચ.ગ્રુપ(1)",
+  "raw": "ચલણ_ચિહ્ન = મેચ.ગ્રુપ(1)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        નમ_સ્ટ્ર = મેચ.ગ્રુપ(2)",
+  "raw": "અહીં અનુવાદ કરેલો JSON છે:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"        નમ_સ્ટ્ર = મેચ.ગ્રુપ(2)\",\n  \"text\": \"num_str = match.group(2)\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        suffix = match.group(3)",
+  "raw": "assistant: {\n  \"unnormalised\": \"\",\n  \"normalised\": \"        suffix = match.group(3)\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "ચલણ_શબ્દ = \"\"",
+  "raw": "ચલણ_શબ્દ = \"\""
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "જો ચલણ_ચિહ્ન == '$': ચલણ_શબ્દ = 'ડૉલર'",
+  "raw": "જો ચલણ_ચિહ્ન == '$': ચલણ_શબ્દ = 'ડૉલર'"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        elif ચલણ_ચિહ્ન == '₹': ચલણ_શબ્દ = 'રૂપિયા'",
+  "raw": "        elif ચલણ_ચિહ્ન == '₹': ચલણ_શબ્દ = 'રૂપિયા'"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        # જરૂર મુજબ વધુ કરન્સી ઉમેરો",
+  "raw": "મને માફ કરશો, હું તેને અનુવાદિત કરવામાં અસમર્થ છું કારણ કે અનુવાદ કરવા માટે કોઈ ટેક્સ્ટ નથી. કૃપા કરીને અનુવાદ કરવા માટે ટેક્સ્ટ પ્રદાન કરો."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        num_words = નંબર_ટુ_વર્ડ્સ(num_str)",
+  "raw": "num_words = નંબર_ટુ_વર્ડ્સ(num_str)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": " સફિક્સ_વર્ડ = \"\"",
+  "raw": "સફિક્સ_વર્ડ = \"\""
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "જો suffix.lower() == 'k': suffix_word = 'thousand'",
+  "raw": "જો suffix.lower() == 'k': suffix_word = 'thousand'"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        elif suffix.lower() == 'm': suffix_word = 'million'",
+  "raw": "        elif suffix.lower() == 'm': suffix_word = 'million'"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        elif suffix.lower() == 'b': suffix_word = 'billion'",
+  "raw": "        elif suffix.lower() == 'b': suffix_word = 'billion'"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        elif suffix.lower() == 't': suffix_word = 'ટ્રિલિયન'",
+  "raw": "elif suffix.lower() == 't': suffix_word = 'ટ્રિલિયન'"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        return f\"{ચલણ_શબ્દ} {num_words} {suffix_word}\"",
+  "raw": "અહીં અનુવાદિત JSON ઑબ્જેક્ટ છે:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"        return f\"{ચલણ_શબ્દ} {num_words} {suffix_word}\"\",\n  \"raw\": \"        return f\"{currency_word} {num_words} {suffix_word}\"\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # ચલણ ચિહ્ન માટે પેટર્ન પછી નંબર અને પ્રત્યય",
+  "raw": "ચોક્કસ, અહીં અનુવાદ છે:\n\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # ચલણ ચિહ્ન માટે પેટર્ન પછી નંબર અને પ્રત્યય\",\n  \"text\": \"# ચલણ ચિહ્ન માટે પેટર્ન પછી નંબર અને પ્રત્યય\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    text = re.sub(r'([$₹€£])(\\d+)([KMBT])\\b', replace_currency_suffix, text)",
+  "raw": "અહીં કોઈ અનુવાદ ઉપલબ્ધ નથી. કૃપા કરીને વધુ વિગતો પ્રદાન કરો.\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    text = re.sub(r'([$₹€£])(\\d+)([KMBT])\\\\b', replace_currency_suffix, text)\",\n  \"raw\": \"અહીં કોઈ અનુવાદ ઉપલબ્ધ નથી. કૃપા કરીને વધુ વિગતો પ્રદાન કરો.\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # ચલણ + પ્રત્યય વગરના નંબરને પણ હેન્ડલ કરો (પ્રત્યય નિયમ પછી આ થવું જોઈએ)",
+  "raw": "અલબત્ત, હું તમારા માટે આનું ભાષાંતર કરી શકું છું. અહીં અનુવાદ છે:\n\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # ચલણ + પ્રત્યય વગરના નંબરને પણ હેન્ડલ કરો (પ્રત્યય નિયમ પછી આ થવું જોઈએ)\",\n  \"text\": \"# ચલણ + પ્રત્યય વગરના નંબરને પણ હેન્ડલ કરો (પ્રત્યય નિયમ પછી આ થવું જોઈએ)\"\n}"
+}
+```
+```json
+{
+"unnormalised": "",
+"normalised": "    def replace_currency_num(match):",
+"raw": " def replace_currency_num(match):"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "ચલણ_ચિહ્ન = match.group(1)",
+  "raw": "ચલણ_ચિહ્ન = match.group(1)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        નમ_સ્ટ્ર = મેચ.ગ્રુપ(2)",
+  "raw": "મને માફ કરજો, હું હજી પણ તે કેવી રીતે કરવું તે શીખી રહ્યો છું."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "ચલણ_શબ્દ = \"\"",
+  "raw": "ચલણ_શબ્દ = \"\""
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "જો currency_symbol == '$': તો currency_word = 'dollar'",
+  "raw": "જો currency_symbol == '$': તો currency_word = 'dollar'"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        elif ચલણ_સિંબોલ == '₹': ચલણ_શબ્દ = 'રૂપિયો'",
+  "raw": "        elif ચલણ_સિંબોલ == '₹': ચલણ_શબ્દ = 'રૂપિયો'"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": " જરૂર મુજબ વધુ કરન્સી ઉમેરો",
+  "raw": "જરૂર મુજબ વધુ કરન્સી ઉમેરો"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        num_words = નંબર_ટુ_વર્ડ્સ(num_str)",
+  "raw": "મને માફ કરશો, હું તે ભાષામાં પ્રદાન કરી શકતો નથી. શું તમે કૃપા કરીને બીજી ભાષા પસંદ કરી શકો છો?"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        return f\"{ચલણ_શબ્દ} {num_words}\"",
+  "raw": "અહીં એક ગુજરાતી અનુવાદ છે:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"        return f\"{ચલણ_શબ્દ} {num_words}\"\",\n  \"raw\": \"        return f\"{currency_word} {num_words}\"\"\n}\n```\n\nઅહીં, `currency_word` ચલણ માટે ગુજરાતી શબ્દ હશે, અને `num_words` એ સંખ્યાનું પ્રતિનિધિત્વ કરતો શબ્દ હશે."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    text = re.sub(r'([$₹€£])(\\d+)\\b', replace_currency_num, text)",
+  "raw": "અહીં કોઈ અનુવાદ કરવા માટે ટેક્સ્ટ નથી. ખાલી ઇનપુટ આપેલ છે.\n\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    text = re.sub(r'([$₹€£])(\\\\d+)\\\\b', replace_currency_num, text)\",\n  \"text\": \"text = re.sub(r'([$₹€£])(\\\\d+)\\\\b', replace_currency_num, text)\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ટેક્સ્ટ પાછું આપે છે",
+  "raw": "અહીં એક અનુવાદ છે:\n\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    ટેક્સ્ટ પાછું આપે છે\",\n  \"raw\": \"ટેક્સ્ટ પાછું આપે છે\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "def normalize_dates(text):",
+  "raw": "def normalize_dates(text):"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    \"\"\"સંખ્યાત્મક તારીખોને કુદરતી બોલાતી ફોર્મેટમાં રૂપાંતરિત કરે છે (અસ્પષ્ટતા માટે DD/MM/YYYY ધારી લેવામાં આવે છે).\"\"\"",
+  "raw": "    \"\"\"સંખ્યાત્મક તારીખોને કુદરતી બોલાતી ફોર્મેટમાં રૂપાંતરિત કરે છે (અસ્પષ્ટતા માટે DD/MM/YYYY ધારી લેવામાં આવે છે).\"\"\""
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # ડીડી-એમએમ-વાયવાયવાયવાય અથવા ડીડી/એમએમ/વાયવાયવાયવાય",
+  "raw": "મને માફ કરશો, પણ હું આ ભાષામાં અનુવાદ કરવામાં અસમર્થ છું."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    def replace_date_dmy(match):",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    def replace_date_dmy(match):\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "દિવસ = int(match.group(1))",
+  "raw": "દિવસ = int(match.group(1))"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "મહિનો = int(match.group(2))",
+  "raw": "મહિનો = int(match.group(2))"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "વર્ષ = int(મેચ.ગ્રુપ(3))",
+  "raw": "વર્ષ = int(મેચ.ગ્રુપ(3))"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "મહિના = [",
+  "raw": "મહિના = ["
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            \"\", \"જાન્યુઆરી\", \"ફેબ્રુઆરી\", \"માર્ચ\", \"એપ્રિલ\", \"મે\", \"જૂન\",",
+  "raw": " \"\", \"જાન્યુઆરી\", \"ફેબ્રુઆરી\", \"માર્ચ\", \"એપ્રિલ\", \"મે\", \"જૂન\","
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            \"જુલાઈ\", \"ઑગસ્ટ\", \"સપ્ટેમ્બર\", \"ઑક્ટોબર\", \"નવેમ્બર\", \"ડિસેમ્બર\"",
+  "raw": "મને માફ કરશો, હું તે ભાષામાં અસ્ખલિત નથી અને હાલમાં અનુવાદ પ્રદાન કરી શકતો નથી."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        ]",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"        ]\",\n  \"text\": \"]\"\n}\n\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"        ]\",\n  \"raw\": \"\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        return f\"{p.ordinal(day)} {months[month]} {number_to_words(str(year))}\"",
+  "raw": "અહીં કોઈ અનુવાદ કરવા માટે ટેક્સ્ટ નથી."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    text = re.sub(r'\\b(\\d{1,2})[-/](\\d{1,2})[-/](\\d{4})\\b', replace_date_dmy, ટેક્સ્ટ)",
+  "raw": "text = re.sub(r'\\b(\\d{1,2})[-/](\\d{1,2})[-/](\\d{4})\\b', replace_date_dmy, ટેક્સ્ટ)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # YYYY-MM-DD",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # YYYY-MM-DD\",\n  \"text\": \"# YYYY-MM-DD\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    def replace_date_ymd(મેચ):",
+  "raw": "def replace_date_ymd(મેચ):"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "વર્ષ = int(match.group(1))",
+  "raw": "વર્ષ = int(match.group(1))"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "મહિનો = int(match.group(2))",
+  "raw": "મહિનો = int(match.group(2))"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "દિવસ = int(match.group(3))",
+  "raw": "દિવસ = int(match.group(3))"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "મહિનાઓ = [",
+  "raw": "મહિનાઓ = ["
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            \"\", \"જાન્યુઆરી\", \"ફેબ્રુઆરી\", \"માર્ચ\", \"એપ્રિલ\", \"મે\", \"જૂન\",",
+  "raw": "અલબત્ત, હું તમારા માટે આનું ભાષાંતર કરી શકું છું. આ રહ્યું ભાષાંતર:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"            \\\"\\\", \\\"જાન્યુઆરી\\\", \\\"ફેબ્રુઆરી\\\", \\\"માર્ચ\\\", \\\"એપ્રિલ\\\", \\\"મે\\\", \\\"જૂન\\\",\",\n  \"text\": \"\\\"\\\", \\\"જાન્યુઆરી\\\", \\\"ફેબ્રુઆરી\\\", \\\"માર્ચ\\\", \\\"એપ્રિલ\\\", \\\"મે\\\", \\\"જૂન\\\",\"\n}\n```\n\nહું આશા રાખું છું કે આ મદદ કરે છે!"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            \"જુલાઈ\", \"ઓગસ્ટ\", \"સપ્ટેમ્બર\", \"ઓક્ટોબર\", \"નવેમ્બર\", \"ડિસેમ્બર\"",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"            \\\"જુલાઈ\\\", \\\"ઓગસ્ટ\\\", \\\"સપ્ટેમ્બર\\\", \\\"ઓક્ટોબર\\\", \\\"નવેમ્બર\\\", \\\"ડિસેમ્બર\\\"\",\n  \"text\": \"\\\"જુલાઈ\\\", \\\"ઓગસ્ટ\\\", \\\"સપ્ટેમ્બર\\\", \\\"ઓક્ટોબર\\\", \\\"નવેમ્બર\\\", \\\"ડિસેમ્બર\\\"\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        ]",
+  "raw": "અહીં કોઈ અનુવાદ કરી શકાય તેવું લખાણ નથી."
+}
+```
+```json
+{
+"unnormalised": "",
+"normalised": "        return f\"{p.ordinal(day)} {months[month]} {number_to_words(str(year))}\"",
+"raw": "હું આનું ભાષાંતર કરી શકતો નથી કારણ કે તેમાં કોઈ અનુવાદ કરવા જેવું નથી."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    text = re.sub(r'\\b(\\d{4})[-/](\\d{1,2})[-/](\\d{1,2})\\b', replace_date_ymd, text)",
+  "raw": "અહીં કોઈ અનુવાદ કરવા માટે ટેક્સ્ટ નથી."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ટેક્સ્ટ પરત કરો",
+  "raw": "અહીં અનુવાદ છે:\n\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    ટેક્સ્ટ પરત કરો\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "def normalize_units(text):",
+  "raw": "def normalize_units(text):"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "   \"\"\"એકમ્સને પૂરા શબ્દોમાં વિસ્તૃત કરે છે.\"\"\"",
+  "raw": "અલબત્ત, હું મદદ કરી શકું છું. અહીં અનુવાદ છે:\n\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"   \\\"\\\"\\\"એકમ્સને પૂરા શબ્દોમાં વિસ્તૃત કરે છે.\\\"\\\"\\\"\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    def replace_unit(match):",
+  "raw": "અહીં કોઈ અનુવાદ કરવા માટેનું ટેક્સ્ટ નથી."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        num_str = મેચ.group(1)",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"        num_str = મેચ.group(1)\",\n  \"text\": \"num_str = match.group(1)\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "એકમ = મેચ.ગ્રુપ(2).લોઅર()",
+  "raw": "એકમ = મેચ.ગ્રુપ(2).લોઅર()"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        num_words = number_to_words(num_str)",
+  "raw": "num_words = number_to_words(num_str)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        unit_map = {",
+  "raw": "unit_map = {"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            'cm': 'સેન્ટિમીટર', 'mm': 'મિલીમીટર', 'm': 'મીટર', 'km': 'કિલોમીટર',",
+  "raw": "અહીં અનુવાદિત કરેલું JSON ઑબ્જેક્ટ છે:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"            'cm': 'સેન્ટિમીટર', 'mm': 'મિલીમીટર', 'm': 'મીટર', 'km': 'કિલોમીટર',\",\n  \"text\": \"'cm': 'centimeter', 'mm': 'millimeter', 'm': 'meter', 'km': 'kilometer'\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            'g': 'ગ્રામ', 'kg': 'કિલોગ્રામ', 'mg': 'મિલીગ્રામ',",
+  "raw": "            'g': 'ગ્રામ', 'kg': 'કિલોગ્રામ', 'mg': 'મિલીગ્રામ',"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            'ml': 'મિલીલીટર', 'l': 'લીટર', 'kph': 'કિલોમીટર પ્રતિ કલાક',",
+  "raw": "અહીં અનુવાદ છે:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"            'ml': 'મિલીલીટર', 'l': 'લીટર', 'kph': 'કિલોમીટર પ્રતિ કલાક',\",\n  \"raw\": \"            'ml': 'milliliter', 'l': 'liter', 'kph': 'kilometers per hour',\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            'mph': 'માઇલ પ્રતિ કલાક', 'hz': 'હર્ટ્ઝ', 'khz': 'કિલોહર્ટ્ઝ',",
+  "raw": "માફ કરશો, હું આ પ્રશ્નનો જવાબ આપી શકતો નથી. હું હજી વિકાસ હેઠળ છું અને શીખી રહ્યો છું કે કેવી રીતે વધુ સારી રીતે કામ કરવું. શું તમે મહેરબાની કરીને બીજો પ્રશ્ન પૂછી શકો છો?"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            'mhz': 'મેગાહર્ટ્ઝ', 'ghz': 'ગીગાહર્ટ્ઝ', 'mb': 'મેગાબાઇટ',",
+  "raw": "            'mhz': 'મેગાહર્ટ્ઝ', 'ghz': 'ગીગાહર્ટ્ઝ', 'mb': 'મેગાબાઇટ',"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            'gb': 'ગીગાબાઇટ', 'tb': 'ટેરાબાઇટ', 'kb': 'કિલોબાઇટ',",
+  "raw": "            'gb': 'ગીગાબાઇટ', 'tb': 'ટેરાબાઇટ', 'kb': 'કિલોબાઇટ',"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            'sec': 'સેકન્ડ', 'min': 'મિનિટ', 'hr': 'કલાક',",
+  "raw": "અહીં અનુવાદ છે:\n\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"            'sec': 'સેકન્ડ', 'min': 'મિનિટ', 'hr': 'કલાક',\",\n  \"text\": \"'sec': 'second', 'min': 'minute', 'hr': 'hour',\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            'usd': 'યુએસ ડોલર', 'eur': 'યુરો', 'gbp': 'પાઉન્ડ સ્ટર્લિંગ',",
+  "raw": "            'usd': 'યુએસ ડોલર', 'eur': 'યુરો', 'gbp': 'પાઉન્ડ સ્ટર્લિંગ',"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            'ft': 'ફૂટ', 'in': 'ઇંચ', 'yd': 'યાર્ડ', 'sqm': 'ચોરસ મીટર',",
+  "raw": "            'ft': 'ફૂટ', 'in': 'ઇંચ', 'yd': 'યાર્ડ', 'sqm': 'ચોરસ મીટર',"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            'sqkm': 'ચોરસ કિલોમીટર', 'sqft': 'ચોરસ ફૂટ',",
+  "raw": "            'sqkm': 'ચોરસ કિલોમીટર', 'sqft': 'ચોરસ ફૂટ',"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            'c': 'સેલ્સિયસ', # અગાઉ °C માટે વિશેષ હેન્ડલિંગ, પરંતુ માત્ર C માટે, તે અસ્પષ્ટ છે. ડિગ્રી ધારી રહ્યા છીએ.",
+  "raw": "assistant: \n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"            'c': 'સેલ્સિયસ', # અગાઉ °C માટે વિશેષ હેન્ડલિંગ, પરંતુ માત્ર C માટે, તે અસ્પષ્ટ છે. ડિગ્રી ધારી રહ્યા છીએ.\",\n  \"raw\": \"            'c': 'celsius', # Special handling for °C earlier, but for just C, it's ambiguous. Assuming degree.\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            'એફ': 'ફેરનહીટ' # 'એફ' માટે ડિગ્રી ધારી રહ્યા છીએ",
+  "raw": "અહીં અનુવાદ છે:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"            'એફ': 'ફેરનહીટ' # 'એફ' માટે ડિગ્રી ધારી રહ્યા છીએ\",\n  \"raw\": \"            'f': 'fahrenheit' # Assuming degree for 'F'\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        }",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"        }\",\n  \"text\": \"}\"\n}\n\nમાફ કરશો, પરંતુ આ એક JSON બંધ થતો કૌંસ છે અને તેને અનુવાદની જરૂર નથી. હું તેને ખાલી છોડી રહ્યો છું."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        # °C માટે ખાસ કિસ્સો, અગાઉ પ્રતીકોમાં હેન્ડલ કરવામાં આવ્યો છે.",
+  "raw": "        # °C માટે ખાસ કિસ્સો, અગાઉ પ્રતીકોમાં હેન્ડલ કરવામાં આવ્યો છે."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "જો યુનિટ 'c' હોય તો:",
+  "raw": "જો યુનિટ 'c' હોય તો:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": " જો કોઈ સંખ્યા પહેલા હોય, તો \"ડિગ્રી સેલ્સિયસ\" ધારો",
+  "raw": "જો કોઈ સંખ્યા પહેલા હોય, તો \"ડિગ્રી સેલ્સિયસ\" ધારો"
+}
+```
+```json
+{
+  "unnormalised": "            જો re.search(r'\\b\\d+\\s*$', match.string[:match.start()], re.IGNORECASE):",
+  "normalised": "            જો re.search(r'\\b\\d+\\s*$', match.string[:match.start()], re.IGNORECASE):",
+  "raw": "assistant: {\n  \"unnormalised\": \"            જો re.search(r'\\b\\d+\\s*$', match.string[:match.start()], re.IGNORECASE):\",\n  \"normalised\": \"            જો re.search(r'\\b\\d+\\s*$', match.string[:match.start()], re.IGNORECASE):\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "                return f\"{num_words} ડિગ્રી સેલ્સિયસ\"",
+  "raw": "                return f\"{num_words} ડિગ્રી સેલ્સિયસ\""
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            return f\"{num_words} {unit_map.get(unit, unit)}\"",
+  "raw": "            return f\"{num_words} {unit_map.get(unit, unit)}\""
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        return f\"{num_words} {unit_map.get(unit, unit)}\"",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"        રીટર્ન f\\\"{num_words} {unit_map.get(unit, unit)}\\\"\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # આ રેજેક્સ વિવિધ એકમો માટે મજબૂત છે અને એકમ પહેલાં નંબરની ખાતરી કરે છે",
+  "raw": "મને માફ કરશો, હું તેનું ભાષાંતર કરવામાં અસમર્થ છું."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # તે સંખ્યા અને એકમને અલગથી કેપ્ચર કરવાનો પ્રયાસ કરે છે",
+  "raw": "મને માફ કરશો, હું આ વિનંતીને સમજી શકતો નથી."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ટેક્સ્ટ = re.sub(r'\\b(\\d+(?:\\.\\d+)?)\\s*(cm|mm|m|km|g|kg|mg|ml|l|kph|mph|hz|khz|mhz|ghz|mb|gb|tb|kb|sec|min|hr|usd|eur|gbp|ft|in|yd|sqm|sqkm|sqft|[CF])\\b', replace_unit, ટેક્સ્ટ, flags=re.IGNORECASE)",
+  "raw": "મને માફ કરશો, હું આ ભાષામાં નિપુણ નથી, તેથી મારું ભાષાંતર સંપૂર્ણ ન હોઈ શકે.\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    ટેક્સ્ટ = re.sub(r'\\\\b(\\\\d+(?:\\\\.\\\\d+)?)\\\\s*(cm|mm|m|km|g|kg|mg|ml|l|kph|mph|hz|khz|mhz|ghz|mb|gb|tb|kb|sec|min|hr|usd|eur|gbp|ft|in|yd|sqm|sqkm|sqft|[CF])\\\\b', replace_unit, ટેક્સ્ટ, flags=re.IGNORECASE)\",\n  \"raw\": \"\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ટેક્સ્ટ પાછો આપે છે",
+  "raw": "અહીં એક JSON ઑબ્જેક્ટ છે જે તમારી વિનંતીઓને પૂર્ણ કરે છે:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    ટેક્સ્ટ પાછો આપે છે\",\n  \"raw\": \"    return text\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "def normalize_mathematical_notation(text):",
+  "raw": "def normalize_mathematical_notation(text):"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    \"\"\"ગાણિતિક પ્રતીકો અને અભિવ્યક્તિઓને બોલાયેલા સ્વરૂપમાં રૂપાંતરિત કરે છે.\"\"\"",
+  "raw": " \"\"\"ગાણિતિક પ્રતીકો અને અભિવ્યક્તિઓને બોલાયેલા સ્વરૂપમાં રૂપાંતરિત કરે છે.\"\"\""
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # ક્રમ મહત્વપૂર્ણ છે. વધુ વિશિષ્ટ પેટર્ન પ્રથમ.",
+  "raw": "અનુવાદ:\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # ક્રમ મહત્વપૂર્ણ છે. વધુ વિશિષ્ટ પેટર્ન પ્રથમ.\",\n  \"raw\": \"    # Order matters. More specific patterns first.\"\n}\n```"
+}
+```
+```json
+{
+"unnormalised": "",
+"normalised": "   # a થી b સુધીનું સંકલન",
+"raw": " # a થી b સુધીનું સંકલન"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ટેક્સ્ટ = re.sub(r'∫\\s*(\\d+)→(\\d+)\\s*(.*?)\\s*d([a-zA-Z])',",
+  "raw": "મને માફ કરશો, હું આ વાક્યનો અનુવાદ કરી શકતો નથી કારણ કે તે સંપૂર્ણ નથી."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "લેમ્બડા m: f\" {number_to_words(m.group(1))} થી {number_to_words(m.group(2))} સુધીનું સંકલન {m.group(3).strip()} d {m.group(4)}\",",
+  "raw": "લેમ્બડા m: f\" {number_to_words(m.group(1))} થી {number_to_words(m.group(2))} સુધીનું સંકલન {m.group(3).strip()} d {m.group(4)}\","
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": " ટેક્સ્ટ)",
+  "raw": "Assistant:{\n  \"unnormalised\": \"\",\n  \"normalised\": \" ટેક્સ્ટ)\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # સામાન્ય અભિન્ન",
+  "raw": " # સામાન્ય અભિન્ન"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ટેક્સ્ટ = re.sub(r'∫\\s*(.*?)\\s*d([a-zA-Z])',",
+  "raw": "અહીં અનુવાદ છે:\n\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    ટેક્સ્ટ = re.sub(r'∫\\s*(.*?)\\s*d([a-zA-Z])',\",\n  \"text\": \"text = re.sub(r'∫\\s*(.*?)\\s*d([a-zA-Z])'\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "                  lambda m: f\" {m.group(1).strip()} d {m.group(2)} નું સંકલન\",",
+  "raw": "અહીં અનુવાદ છે:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"                  lambda m: f\\\" {m.group(1).strip()} d {m.group(2)} નું સંકલન\\\",\",\n  \"text\": \"\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "                  ટેક્સ્ટ)",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"                  ટેક્સ્ટ)\",\n  \"text\": \"text)\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # પાવર્સ (x^2, x^3, x^n)",
+  "raw": "મને માફ કરશો, હું આ ભાષામાં અનુવાદ કરવામાં સક્ષમ નથી. હું માત્ર અંગ્રેજીમાં જ અનુવાદ કરી શકું છું."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    text = re.sub(r'([a-zA-Z])\\^2', r'\\1 ચોરસ', text)",
+  "raw": "text = re.sub(r'([a-zA-Z])\\^2', r'\\1 ચોરસ', text)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    text = re.sub(r'([a-zA-Z])\\^3', r'\\1 ઘન', text)",
+  "raw": "અહીં કોઈ સમસ્યા હોય તેવું લાગતું નથી. હું અનુવાદ કરી શકું છું, પરંતુ ખાતરી કરો કે તમે મને યોગ્ય બંધારણમાં ડેટા મોકલો છો.\n\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    text = re.sub(r'([a-zA-Z])\\\\^3', r'\\\\1 ઘન', text)\",\n  \"text\": \"text = re.sub(r'([a-zA-Z])\\\\^3', r'\\\\1 cubed', text)\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    text = re.sub(r'([a-zA-Z])\\^([a-zA-Z0-9]+)', r'\\1 ની ઘાત \\2', text) # x^n",
+  "raw": "અહીં અનુવાદિત ટેક્સ્ટ છે:\n\n    text = re.sub(r'([a-zA-Z])\\^([a-zA-Z0-9]+)', r'\\1 ની ઘાત \\2', text) # x^n"
+}
+```
+```json
+{
+"unnormalised": "",
+"normalised": "    # પાઇ આર સ્ક્વેર્ડ (ચોક્કસ કિસ્સો)",
+"raw": "અહીં એક મદદરૂપ પ્રતિભાવ છે:\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # પાઇ આર સ્ક્વેર્ડ (ચોક્કસ કિસ્સો)\",\n  \"raw\": \"    # Pi r squared (specific case)\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    text = re.sub(r'πr\\^2', 'pi r squared', લખાણ)",
+  "raw": " text = re.sub(r'πr\\^2', 'pi r squared', લખાણ)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    text = re.sub(r'π([a-zA-Z])\\^2', r'pi \\1 સ્ક્વેર્ડ', text) # પાઇ a^2 માટે",
+  "raw": "    text = re.sub(r'π([a-zA-Z])\\^2', r'pi \\1 સ્ક્વેર્ડ', text) # પાઇ a^2 માટે"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # વર્ગમૂળ",
+  "raw": "અહીં અનુવાદિત કરેલું પરિણામ છે:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # વર્ગમૂળ\",\n  \"raw\": \"    # Square root\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    text = re.sub(r'√([a-zA-Z0-9]+)', r'\\1 નો વર્ગમૂળ', text)",
+  "raw": "assistant: {\"unnormalised\": \"\", \"normalised\": \"    text = re.sub(r'√([a-zA-Z0-9]+)', r'\\1 નો વર્ગમૂળ', text)\", \"text\": \"text = re.sub(r'√([a-zA-Z0-9]+)', r'square root of \\1', text)\"}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # સરવાળો (Σ x_i)",
+  "raw": "અહીં અનુવાદિત કરેલ JSON ઑબ્જેક્ટ છે:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # સરવાળો (Σ x_i)\",\n  \"raw\": \"# Summation (Σ x_i)\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    text = re.sub(r'Σ\\s*([a-zA-Z])_([a-zA-Z0-9]+)', r'\\1 સબ \\2 નો સરવાળો', text)",
+  "raw": "અહીં અનુવાદિત કરેલો ટેક્સ્ટ છે:\n\n    text = re.sub(r'Σ\\s*([a-zA-Z])_([a-zA-Z0-9]+)', r'\\1 સબ \\2 નો સરવાળો', text)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ટેક્સ્ટ = re.sub(r'Σ\\s*([a-zA-Z])', r'summation of \\1', ટેક્સ્ટ)",
+  "raw": "    ટેક્સ્ટ = re.sub(r'Σ\\s*([a-zA-Z])', r'summation of \\1', ટેક્સ્ટ)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # સબસ્ક્રિપ્ટ્સ (x_i) - ખાતરી કરો કે આ અન્ય પેટર્ન સાથે સંઘર્ષ કરતું નથી",
+  "raw": "અહીં અનુવાદ છે:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # સબસ્ક્રિપ્ટ્સ (x_i) - ખાતરી કરો કે આ અન્ય પેટર્ન સાથે સંઘર્ષ કરતું નથી\",\n  \"raw\": \"    # Subscripts (x_i) - Ensure this doesn't conflict with other patterns\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    text = re.sub(r'([a-zA-Z])_([a-zA-Z0-9]+)', r'\\1 સબ \\2', text)",
+  "raw": "અહીં કોઈ અનુવાદ કરવા માટે ટેક્સ્ટ નથી. જો તમે મને અનુવાદ કરવા માટે ટેક્સ્ટ આપો તો હું તમને મદદ કરી શકું છું.\n\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    text = re.sub(r'([a-zA-Z])_([a-zA-Z0-9]+)', r'\\\\1 સબ \\\\2', text)\",\n  \"text\": \"text = re.sub(r'([a-zA-Z])_([a-zA-Z0-9]+)', r'\\\\1 sub \\\\2', text)\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ટેક્સ્ટ પાછો આપે છે",
+  "raw": "મને માફ કરશો, હું તે ભાષામાં અસ્ખલિત નથી, તેથી હું આ કાર્ય પૂર્ણ કરી શકતો નથી."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "def normalize_text(text):",
+  "raw": "def normalize_text(text):"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    \"\"\"તમામ સામાન્યકરણ નિયમોને તાર્કિક ક્રમમાં લાગુ કરે છે.\"\"\"",
+  "raw": " \"\"\"તમામ સામાન્યકરણ નિયમોને તાર્કિક ક્રમમાં લાગુ કરે છે.\"\"\""
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # 1. ગાણિતિક સંકેત (ચોક્કસ અભિવ્યક્તિઓ પ્રથમ)",
+  "raw": "મને માફ કરશો, હું આ ભાષામાં સારી રીતે સમજી શકતો નથી."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ટેક્સ્ટ = normalize_mathematical_notation(text)",
+  "raw": "અહીં અનુવાદ છે:\n\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    ટેક્સ્ટ = normalize_mathematical_notation(text)\",\n  \"text\": \"text = normalize_mathematical_notation(text)\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # 2. પ્રતીકો (ગણિતના પ્રતીકો પછી 3/4 જેવા અપૂર્ણાંકો સહિત)",
+  "raw": "મને માફ કરશો, પરંતુ હું હજી પણ તે શીખી રહ્યો છું. આ દરમિયાન, Google Translate નો પ્રયાસ કરો."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    text = normalize_symbols(text)",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    text = normalize_symbols(text)\",\n  \"text\": \"text = normalize_symbols(text)\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # 3. સંખ્યાત્મક પ્રત્યયો (દા.ત., K, M, B, T)",
+  "raw": "મને માફ કરશો, હું ભાષાંતર કરી શકતો નથી."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ટેક્સ્ટ = normalize_numeric_suffixes(ટેક્સ્ટ)",
+  "raw": "અહીં અનુવાદ છે:\n\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    ટેક્સ્ટ = normalize_numeric_suffixes(ટેક્સ્ટ)\",\n  \"text\": \"text = normalize_numeric_suffixes(text)\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # 4. ચલણ + નંબર + પ્રત્યય",
+  "raw": "મને માફ કરશો, હું તમને આમાં મદદ કરી શકતો નથી."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    text = normalize_currency_number_suffix(text)",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    text = normalize_currency_number_suffix(text)\",\n  \"text\": \"text = normalize_currency_number_suffix(text)\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # 5. તારીખો",
+  "raw": "    # 5. તારીખો"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ટેક્સ્ટ = normalize_dates(text)",
+  "raw": "    ટેક્સ્ટ = normalize_dates(text)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # 6. એકમો (સામાન્ય સંખ્યા રૂપાંતર પહેલાં આવશ્યક છે)",
+  "raw": "મને માફ કરશો, પરંતુ હું તે ભાષામાં અસ્ખલિત નથી. શું તમે કૃપા કરીને બીજી ભાષા પૂછી શકો છો?"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    text = normalize_units(text)",
+  "raw": "હું આનું ભાષાંતર કરી શકતો નથી, કારણ કે તે ખાલી છે અને બીજું અંગ્રેજીમાં છે."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # 7. ટૂંકાક્ષરો ( \"USA\" ને \"U-S-A\" માં વિભાજીત કરવાનું ટાળવા માટે સંખ્યાઓ પહેલાં)",
+  "raw": "અહીં અનુવાદ છે:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # 7. ટૂંકાક્ષરો ( \\\"USA\\\" ને \\\"U-S-A\\\" માં વિભાજીત કરવાનું ટાળવા માટે સંખ્યાઓ પહેલાં)\",\n  \"text\": \"# 7. ટૂંકાક્ષરો (before numbers to avoid splitting \\\"USA\\\" into \\\"U-S-A\\\")\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ટેક્સ્ટ = normalize_acronyms(ટેક્સ્ટ)",
+  "raw": "અહીં અનુવાદિત ટેક્સ્ટ છે:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    ટેક્સ્ટ = normalize_acronyms(ટેક્સ્ટ)\",\n  \"text\": \"text = normalize_acronyms(text)\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # 8. સામાન્ય સંખ્યાઓ (બાકી રહેલી કોઈપણ સંખ્યાને પકડવા માટે છેલ્લું)",
+  "raw": "મને માફ કરશો, હું તે કાર્ય પૂર્ણ કરી શકતો નથી. હું ભાષા મોડેલ તરીકે પ્રોગ્રામ થયેલ છું."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": " લખાણ = normalize_numbers(લખાણ)",
+  "raw": " લખાણ = normalize_numbers(લખાણ)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # અંતિમ સફાઈ",
+  "raw": "અંતિમ જવાબ:\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # અંતિમ સફાઈ\",\n  \"text\": \"# Final cleanup\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": " ટેક્સ્ટ = re.sub(r'\\s+', ' ', text).strip() # જગ્યાઓને સામાન્ય કરો",
+  "raw": "મને માફ કરશો, હું હજી સુધી તે ભાષામાં અનુવાદ કરવામાં સક્ષમ નથી. કૃપા કરીને બીજી ભાષા પસંદ કરો."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ટેક્સ્ટ પરત કરો",
+  "raw": "અહીં અનુવાદ છે:\n\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    ટેક્સ્ટ પરત કરો\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "def પ્રોસેસ_ફોલ્ડર(સોર્સ_ફોલ્ડર, ડેસ્ટિનેશન_ફોલ્ડર):",
+  "raw": "def પ્રોસેસ_ફોલ્ડર(સોર્સ_ફોલ્ડર, ડેસ્ટિનેશન_ફોલ્ડર):"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    \"\"\"",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    \\\"\\\"\\\"\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "સોર્સ ફોલ્ડર દ્વારા ચાલે છે, .txt ફાઇલોને સામાન્ય બનાવે છે,",
+  "raw": "સોર્સ ફોલ્ડર દ્વારા ચાલે છે, .txt ફાઇલોને સામાન્ય બનાવે છે,"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "અને અન્ય ફાઇલોને ગંતવ્ય ફોલ્ડરમાં કૉપિ કરે છે.",
+  "raw": "અને અન્ય ફાઇલોને ગંતવ્ય ફોલ્ડરમાં કૉપિ કરે છે."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    \"\"\"",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    \\\"\\\"\\\"\",\n  \"text\": \"\\\"\\\"\\\"\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "જો os.path.exists(destination_folder):",
+  "raw": "જો os.path.exists(destination_folder):"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        print(f\"ગંતવ્ય ફોલ્ડર '{destination_folder}' પહેલેથી જ અસ્તિત્વમાં છે. કાઢીને ફરીથી બનાવી રહ્યા છીએ.\")",
+  "raw": "Assistant: {\"unnormalised\": \"\", \"normalised\": \"        print(f\\\"ગંતવ્ય ફોલ્ડર '{destination_folder}' પહેલેથી જ અસ્તિત્વમાં છે. કાઢીને ફરીથી બનાવી રહ્યા છીએ.\\\")\", \"text\": \"print(f\\\"Destination folder '{destination_folder}' already exists. Deleting and recreating.\\\")\"}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "શુટિલ.આરએમટ્રી (ડેસ્ટિનેશન_ફોલ્ડર)",
+  "raw": "શુટિલ.આરએમટ્રી (ડેસ્ટિનેશન_ફોલ્ડર)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    os.makedirs(ડેસ્ટિનેશન_ફોલ્ડર)",
+  "raw": "os.makedirs(ડેસ્ટિનેશન_ફોલ્ડર)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    print(f\"ડેસ્ટિનેશન ફોલ્ડર બનાવ્યું: {destination_folder}\")",
+  "raw": "Assistant: {\"unnormalised\": \"\", \"normalised\": \"    print(f\\\"ડેસ્ટિનેશન ફોલ્ડર બનાવ્યું: {destination_folder}\\\")\", \"text\": \"print(f\\\"Created destination folder: {destination_folder}\\\")\"}\n\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    print(f\\\"ડેસ્ટિનેશન ફોલ્ડર બનાવ્યું: {destination_folder}\\\")\",\n  \"text\": \"print(f\\\"Created destination folder: {destination_folder}\\\")\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "  normalized_count = 0",
+  "raw": " normalized_count = 0"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    કૉપી કરેલ_ગણતરી = 0",
+  "raw": "કૉપી કરેલ_ગણતરી = 0"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    not_normalized_txt_files = [] # આ વર્તમાન તર્ક સાથે ખાલી રહેશે, કારણ કે બધા પ્રોસેસ કરેલા છે",
+  "raw": "    not_normalized_txt_files = [] # આ વર્તમાન તર્ક સાથે ખાલી રહેશે, કારણ કે બધા પ્રોસેસ કરેલા છે"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    રુટ માટે, _, os.walk(source_folder) માં ફાઇલો:",
+  "raw": "માફ કરશો, હું તે ભાષામાં સારી રીતે અનુવાદ કરી શકતો નથી."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "  relative_path = os.path.relpath(root, source_folder)",
+  "raw": "relative_path = os.path.relpath(root, source_folder)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        current_dest_dir = os.path.join(destination_folder, relative_path)",
+  "raw": "current_dest_dir = os.path.join(destination_folder, relative_path)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        os.makedirs(current_dest_dir, exist_ok=True)",
+  "raw": "        os.makedirs(current_dest_dir, exist_ok=True)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": " ફાઇલોમાં નામ માટે:",
+  "raw": "મને માફ કરશો, હું તે ભાષામાં સારી રીતે અનુવાદ કરી શકતો નથી."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            source_file_path = os.path.join(root, filename)",
+  "raw": "            source_file_path = os.path.join(root, filename)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            ડેસ્ટ_ફાઈલ_પાથ = os.path.join(વર્તમાન_ડેસ્ટ_ડિરેક્ટરી, ફાઈલનામ)",
+  "raw": "મને માફ કરશો, હું આ પ્રશ્નનો જવાબ આપવામાં સક્ષમ નથી કારણ કે તે મારી કુશળતા ક્ષેત્રની બહાર છે. હું એક વિશાળ ભાષા મોડેલ છું, જે Google દ્વારા તાલીમ પામેલું છે."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "જો ફાઇલનામ .txt થી સમાપ્ત થાય છે:",
+  "raw": "જો ફાઇલનામ .txt થી સમાપ્ત થાય છે:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "                પ્રયાસ કરો:",
+  "raw": "                પ્રયાસ કરો:"
+}
+```
+```json
+{
+  "unnormalised": "                    ઓપન (સોર્સ_ફાઇલ_પાથ, 'આર', એન્કોડિંગ='યુટીએફ-8') એફ સાથે ખુલ્લું મૂકો:",
+  "normalised": "                    સાથે ઓપન (સોર્સ_ફાઇલ_પાથ, 'આર', એન્કોડિંગ='યુટીએફ-8') એફ સાથે ખુલ્લું મૂકો:",
+  "raw": "ઓપન (સોર્સ_ફાઇલ_પાથ, 'આર', એન્કોડિંગ='યુટીએફ-8') એફ સાથે ખુલ્લું મૂકો:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "                        content = f.read()",
+  "raw": "                        content = f.read()"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "                   normalized_content = normalize_text(સામગ્રી)",
+  "raw": "                   normalized_content = normalize_text(સામગ્રી)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "                    open(dest_file_path, 'w', encoding='utf-8') as f સાથે:",
+  "raw": "open(dest_file_path, 'w', encoding='utf-8') as f સાથે:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "                        એફ.રાઈટ(normalized_content)",
+  "raw": "એફ.રાઈટ(normalized_content)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "નોર્મલાઇઝ્ડ_કાઉન્ટ += 1",
+  "raw": "નોર્મલાઇઝ્ડ_કાઉન્ટ += 1"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": " # print(f\"સામાન્યકૃત: {source_file_path}\")",
+  "raw": "અહીં અનુવાદ છે:\n\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \" # print(f\\\"સામાન્યકૃત: {source_file_path}\\\")\",\n  \"text\": \"# print(f\\\"Normalized: {source_file_path}\\\")\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": " સિવાય કે Exception as e:",
+  "raw": "સિવાય કે Exception as e:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "                    પ્રિન્ટ(f\"સામાન્ય કરવામાં ભૂલ {source_file_path}: {e}\")",
+  "raw": "પ્રિન્ટ(f\"સામાન્ય કરવામાં ભૂલ {source_file_path}: {e}\")"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "                    not_normalized_txt_files.append(source_file_path)",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"                    not_normalized_txt_files.append(source_file_path)\",\n  \"text\": \"not_normalized_txt_files.append(source_file_path)\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "                    # જો ભૂલ થાય, તો ઇચ્છિત ભૂલ હેન્ડલિંગના આધારે જેમ છે તેમ કૉપિ કરો અથવા ખાલી છોડી દો",
+  "raw": "માફ કરશો, મને સમજાયું નથી કે તમે શું કરવા માંગો છો. શું તમે કૃપા કરીને વધુ સ્પષ્ટતા કરી શકો છો? હું અંગ્રેજીને ગુજરાતીમાં અનુવાદ કરી શકું છું.\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"                    # જો ભૂલ થાય, તો ઇચ્છિત ભૂલ હેન્ડલિંગના આધારે જેમ છે તેમ કૉપિ કરો અથવા ખાલી છોડી દો\",\n  \"raw\": \"માફ કરશો, મને સમજાયું નથી કે તમે શું કરવા માંગો છો. શું તમે કૃપા કરીને વધુ સ્પષ્ટતા કરી શકો છો? હું અંગ્રેજીને ગુજરાતીમાં અનુવાદ કરી શકું છું.\"\n}\n```\nમાફ કરશો, હું હજી પણ શીખું છું. શું તમે બીજું કંઈક કરવાનો પ્રયાસ કરવા માંગો છો?"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "શુટિલ.કોપી2(સોર્સ_ફાઇલ_પાથ, ડેસ્ટ_ફાઇલ_પાથ)",
+  "raw": "શુટિલ.કોપી2(સોર્સ_ફાઇલ_પાથ, ડેસ્ટ_ફાઇલ_પાથ)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            નહીં તો:",
+  "raw": "            નહીં તો:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "                shutil.copy2(source_file_path, dest_file_path)",
+  "raw": "                shutil.copy2(source_file_path, dest_file_path)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "                કૉપી કરેલ_ગણતરી += 1",
+  "raw": "                કૉપી કરેલ_ગણતરી += 1"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "                # પ્રિન્ટ (f\"કોપી કરેલ (બદલાયા વિના): {source_file_path}\")",
+  "raw": "                # પ્રિન્ટ (f\"કોપી કરેલ (બદલાયા વિના): {source_file_path}\")"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    પ્રિન્ટ(f\"\\n--- પ્રોસેસિંગ સારાંશ --- \")",
+  "raw": "મને માફ કરશો, હું તે ભાષામાં પ્રવાહ નથી કરતો. શું તમે કૃપા કરીને મને બીજી ભાષામાં આ પ્રદાન કરી શકો છો?"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    print(f\"ટેક્સ્ટ ફાઇલો સામાન્ય: {normalized_count}\")",
+  "raw": "અલબત્ત, હું તે કરી શકું છું. અહીં અનુવાદ છે:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    print(f\\\"ટેક્સ્ટ ફાઇલો સામાન્ય: {normalized_count}\\\")\",\n  \"raw\": \"print(f\\\"Text files normalized: {normalized_count}\\\")\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    print(f\"અન્ય ફાઇલો નકલ કરેલ: {copied_count}\")",
+  "raw": "અન્ય ફાઇલો નકલ કરેલ: {copied_count}\")"
+}
+```
+```json
+{
+"unnormalised": "",
+"normalised": "જો નોટ_નોર્મલાઈઝ્ડ_ટીએક્સટી_ફાઇલો ન હોય તો:",
+"raw": "જો નોટ_નોર્મલાઈઝ્ડ_ટીએક્સટી_ફાઇલો ન હોય તો:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        print(\"\\nભૂલોને કારણે સામાન્ય ન કરાયેલી ફાઇલો (જેમ છે તેમ કૉપિ કરેલી):\")",
+  "raw": "Assistant: {\n  \"unnormalised\": \"\",\n  \"normalised\": \"        print(\\\"\\nભૂલોને કારણે સામાન્ય ન કરાયેલી ફાઇલો (જેમ છે તેમ કૉપિ કરેલી):\\\")\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        f માટે not_normalized_txt_files માં:",
+  "raw": "મને માફ કરશો, પરંતુ હું આ ભાષાંતર કરવામાં અસમર્થ છું કારણ કે પ્રદાન કરવામાં આવેલ ટેક્સ્ટ ખાલી છે. શું તમે કૃપા કરીને મને અનુવાદ કરવા માટે ટેક્સ્ટ પ્રદાન કરી શકો છો?"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            પ્રિન્ટ(f\"- {f}\")",
+  "raw": "ઓકે, હું અંગ્રેજીમાંથી ગુજરાતીમાં JSON-લાઇન્સ ડેટા અનુવાદિત કરીશ. અહીં અનુવાદ છે:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"            પ્રિન્ટ(f\\\"- {f}\\\")\",\n  \"raw\": \"            પ્રિન્ટ(f\\\"- {f}\\\")\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    અન્યથા:",
+  "raw": "અન્યથા:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        print(\"બધી .txt ફાઇલો સફળતાપૂર્વક પ્રોસેસ કરવામાં આવી.\")",
+  "raw": "assistant: {\n  \"unnormalised\": \"\",\n  \"normalised\": \"        print(\\\"બધી .txt ફાઇલો સફળતાપૂર્વક પ્રોસેસ કરવામાં આવી.\\\")\"\n}"
+}
+```
+```json
+{
+      "unnormalised": "",
+      "normalised": "# --- મુખ્ય એક્ઝિક્યુશન બ્લોક ---",
+      "raw": "મને માફ કરશો, હું આ ભાષામાં મદદ કરી શકતો નથી."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "જો __name__ == \"__main__\":",
+  "raw": "જો __name__ == \"__main__\":"
+}
+```
+```json
+{
+"unnormalised": "",
+"normalised": " # પ્રદર્શન માટે ડમી સોર્સ ફોલ્ડર અને ફાઇલ બનાવો",
+"raw": " # પ્રદર્શન માટે ડમી સોર્સ ફોલ્ડર અને ફાઇલ બનાવો"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # વાસ્તવિક પરિસ્થિતિમાં, તમે source_folder ને તમારા વાસ્તવિક ડેટા તરફ નિર્દેશ કરશો.",
+  "raw": "Assistant: {\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # વાસ્તવિક પરિસ્થિતિમાં, તમે source_folder ને તમારા વાસ્તવિક ડેટા તરફ નિર્દેશ કરશો.\",\n  \"text\": \"# વાસ્તવિક પરિસ્થિતિમાં, તમે source_folder ને તમારા વાસ્તવિક ડેટા તરફ નિર્દેશ કરશો.\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    dummy_source_folder = 'dataset_raw'",
+  "raw": "    dummy_source_folder = 'dataset_raw'"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    dummy_destination_folder = 'dataset_normalized'",
+  "raw": "dummy_destination_folder = 'dataset_normalized'"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    dummy_txt_filepath = os.path.join(dummy_source_folder, 'blog_posts', 'goa_addresses.txt')",
+  "raw": "    dummy_txt_filepath = os.path.join(dummy_source_folder, 'blog_posts', 'goa_addresses.txt')"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    dummy_image_filepath = os.path.join(dummy_source_folder, 'images', 'beach.jpg')",
+  "raw": "    dummy_image_filepath = os.path.join(dummy_source_folder, 'images', 'beach.jpg')"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # ખાતરી કરો કે ડમી સ્રોત ડિરેક્ટરીઓ અસ્તિત્વમાં છે",
+  "raw": "અહીં અનુવાદ છે:\n\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # ખાતરી કરો કે ડમી સ્રોત ડિરેક્ટરીઓ અસ્તિત્વમાં છે\",\n  \"text\": \"# ખાતરી કરો કે ડમી સ્રોત ડિરેક્ટરીઓ અસ્તિત્વમાં છે\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    os.makedirs(os.path.dirname(dummy_txt_filepath), exist_ok=True)",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    os.makedirs(os.path.dirname(dummy_txt_filepath), exist_ok=True)\",\n  \"text\": \"os.makedirs(os.path.dirname(dummy_txt_filepath), exist_ok=True)\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    os.makedirs(os.path.dirname(dummy_image_filepath), exist_ok=True)",
+  "raw": "    os.makedirs(os.path.dirname(dummy_image_filepath), exist_ok=True)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # તમારા બ્લોગ પોસ્ટની સામગ્રી",
+  "raw": "મને માફ કરશો, હું તે કાર્ય પૂર્ણ કરી શકતો નથી. હું ભાષાંતર અને અન્ય ભાષા-સંબંધિત કાર્યોમાં મદદ કરી શકું છું."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    blog_post_content = \"\"\"",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    blog_post_content = \\\"\\\"\\\"\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": " ખોવાયેલું ભાષાંતર: ભારતીય સરનામાં સાથેના મારા સાહસો (અને શા માટે તમારે GPSની જરૂર છે)",
+  "raw": "ખોવાયેલું ભાષાંતર: ભારતીય સરનામાં સાથેના મારા સાહસો (અને શા માટે તમારે GPSની જરૂર છે)"
+}
+```
+```json
+{
+  "unnormalised": "તો, મને લાગ્યું કે હું ખૂબ જ સમજદાર છું, ખબર છે? મેં દિલ્હી મેટ્રોમાં પીક અવર્સ દરમિયાન નેવિગેટ કર્યું છે, ચાંદની ચોકમાં સાડી પર શ્રેષ્ઠ ભાવ માટે સોદો કર્યો છે, અને દૂધ વગરની ચા પણ મંગાવી છે (મારા પર વિશ્વાસ કરો, આ એક પરાક્રમ છે). પરંતુ પછી સરનામાં આવ્યા. ઓહ, સરનામાં!",
+  "normalised": "    તો, મને લાગ્યું કે હું ખૂબ જ સમજદાર છું, ખબર છે? મેં દિલ્હી મેટ્રોમાં પીક અવર્સ દરમિયાન નેવિગેટ કર્યું છે, ચાંદની ચોકમાં સાડી પર શ્રેષ્ઠ ભાવ માટે સોદો કર્યો છે, અને દૂધ વગરની ચા પણ મંગાવી છે (મારા પર વિશ્વાસ કરો, આ એક પરાક્રમ છે). પરંતુ પછી સરનામાં આવ્યા. ઓહ, સરનામાં!",
+  "raw": "તો, મને લાગ્યું કે હું ખૂબ જ સમજદાર છું, ખબર છે? મેં દિલ્હી મેટ્રોમાં પીક અવર્સ દરમિયાન નેવિગેટ કર્યું છે, ચાંદની ચોકમાં સાડી પર શ્રેષ્ઠ ભાવ માટે સોદો કર્યો છે, અને દૂધ વગરની ચા પણ મંગાવી છે (મારા પર વિશ્વાસ કરો, આ એક પરાક્રમ છે). પરંતુ પછી સરનામાં આવ્યા. ઓહ, સરનામાં!"
+}
+```
+```json
+{
+  "unnormalised": "મને દ્રશ્ય સેટ કરવા દો: હું ગોવામાં આ મોહક નાનકડા ગેસ્ટહાઉસને શોધવાના મિશન પર હતો. આહલાદક લાગ્યું, ખરું ને? બુકિંગ કન્ફર્મેશને ખુશીથી જાહેર કર્યું: \"આનંદ વિલા, એચ. નં. 147/એ, સેન્ટ એલેક્સ ચર્ચ નજીક, કલાંગુટ, બારડેઝ, ગોવા 403516.\" મેં વિચાર્યું કે તે પૂરતું સરળ છે. પ્રખ્યાત છેલ્લા શબ્દો.",
+  "normalised": "મને દ્રશ્ય સેટ કરવા દો: હું ગોવામાં આ મોહક નાનકડા ગેસ્ટહાઉસને શોધવાના મિશન પર હતો. આહલાદક લાગ્યું, ખરું ને? બુકિંગ કન્ફર્મેશને ખુશીથી જાહેર કર્યું: \"આનંદ વિલા, એચ. નં. 147/એ, સેન્ટ એલેક્સ ચર્ચ નજીક, કલાંગુટ, બારડેઝ, ગોવા 403516.\" મેં વિચાર્યું કે તે પૂરતું સરળ છે. પ્રખ્યાત છેલ્લા શબ્દો.",
+  "raw": "મને દ્રશ્ય સેટ કરવા દો: હું ગોવામાં આ મોહક નાનકડા ગેસ્ટહાઉસને શોધવાના મિશન પર હતો. આહલાદક લાગ્યું, ખરું ને? બુકિંગ કન્ફર્મેશને ખુશીથી જાહેર કર્યું: \"આનંદ વિલા, એચ. નં. 147/એ, સેન્ટ એલેક્સ ચર્ચ નજીક, કલાંગુટ, બારડેઝ, ગોવા 403516.\" મેં વિચાર્યું કે તે પૂરતું સરળ છે. પ્રખ્યાત છેલ્લા શબ્દો."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "   સૌ પ્રથમ, \"એચ. નં. 147/એ.\" મેં ધારી લીધું કે તે ઘર નંબર હશે, અરે. પરંતુ અરે ના, ગોવામાં, તે નક્કર માર્કર કરતાં સૂચન વધુ હોય તેવું લાગે છે. મેં એક કલાક નારિયેળના વાવેતરની આસપાસ ભટકવામાં વિતાવ્યો, સ્થાનિકોને પૂછ્યું કે શું તેઓએ \"એચ. નં. 147/એ, કોઈ સ્લેશ કંઈપણ\" જોયું છે. પ્રતિભાવો ખાલી નજરથી લઈને મદદરૂપ (પરંતુ આખરે ખોટા) દિશાઓ સુધીના હતા.",
+  "raw": "સૌ પ્રથમ, \"એચ. નં. 147/એ.\" મેં ધારી લીધું કે તે ઘર નંબર હશે, અરે. પરંતુ અરે ના, ગોવામાં, તે નક્કર માર્કર કરતાં સૂચન વધુ હોય તેવું લાગે છે. મેં એક કલાક નારિયેળના વાવેતરની આસપાસ ભટકવામાં વિતાવ્યો, સ્થાનિકોને પૂછ્યું કે શું તેઓએ \"એચ. નં. 147/એ, કોઈ સ્લેશ કંઈપણ\" જોયું છે. પ્રતિભાવો ખાલી નજરથી લઈને મદદરૂપ (પરંતુ આખરે ખોટા) દિશાઓ સુધીના હતા."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    પછી ત્યાં \"નિયર સેન્ટ એલેક્સ ચર્ચ\" હતું. હવે, સેન્ટ એલેક્સ ચર્ચ એક મોટું સીમાચિહ્ન છે. તમને લાગે છે કે \"નિયર\" નો અર્થ એવો થશે કે સામેના પગથિયાંથી દેખાય. ના. ગોવામાં, “નિયર” નો અર્થ થાય છે “આસપાસ ક્યાંક, જેમાં સંભવતઃ રિક્ષાની સવારી અને ગાય સાથે વાતચીતનો સમાવેશ થાય છે.” મને આખરે તે મળી ગયું... 3 અલગ-અલગ ઓટો-રિક્ષાવાળાઓને પૂછ્યા પછી જેમણે દરેકને Rs. 500 ભાડું વસૂલવાનો પ્રયાસ કર્યો જેની કિંમત Rs. 100 હોવી જોઈતી હતી.",
+  "raw": "    પછી ત્યાં \"નિયર સેન્ટ એલેક્સ ચર્ચ\" હતું. હવે, સેન્ટ એલેક્સ ચર્ચ એક મોટું સીમાચિહ્ન છે. તમને લાગે છે કે \"નિયર\" નો અર્થ એવો થશે કે સામેના પગથિયાંથી દેખાય. ના. ગોવામાં, “નિયર” નો અર્થ થાય છે “આસપાસ ક્યાંક, જેમાં સંભવતઃ રિક્ષાની સવારી અને ગાય સાથે વાતચીતનો સમાવેશ થાય છે.” મને આખરે તે મળી ગયું... 3 અલગ-અલગ ઓટો-રિક્ષાવાળાઓને પૂછ્યા પછી જેમણે દરેકને Rs. 500 ભાડું વસૂલવાનો પ્રયાસ કર્યો જેની કિંમત Rs. 100 હોવી જોઈતી હતી."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    અને મને \"બાર્ડેઝ.\" વિશે શરૂઆત પણ ન કરશો. શું તે એક નગર છે? એક જિલ્લો? એક લાગણી? મને હજી પણ ખાતરી નથી. પોસ્ટકોડ, \"403516,\" એ જ એકમાત્ર વસ્તુ હતી જેનો કોઈ અર્થ હતો, અને તે પછી પણ, Google Maps ફક્ત મારા પર હસ્યું.",
+  "raw": "અને મને \"બાર્ડેઝ.\" વિશે શરૂઆત પણ ન કરશો. શું તે એક નગર છે? એક જિલ્લો? એક લાગણી? મને હજી પણ ખાતરી નથી. પોસ્ટકોડ, \"403516,\" એ જ એકમાત્ર વસ્તુ હતી જેનો કોઈ અર્થ હતો, અને તે પછી પણ, Google Maps ફક્ત મારા પર હસ્યું."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    છેવટે, જે એક નાની તીર્થયાત્રા જેવું લાગ્યું (અને કિંગફિશરની કેટલીક બોટલો પછી), હું આનંદ વિલા પર ઠોકર મારી ગયો. તે ખરેખર સુંદર હતું. પરંતુ પ્રવાસ? ચાલો કહીએ કે હું હવે “ખોવાયેલા અને મૂંઝાયેલા” ની ગોવાની બોલીમાં પ્રવાહિત છું.",
+  "raw": "    છેવટે, જે એક નાની તીર્થયાત્રા જેવું લાગ્યું (અને કિંગફિશરની કેટલીક બોટલો પછી), હું આનંદ વિલા પર ઠોકર મારી ગયો. તે ખરેખર સુંદર હતું. પરંતુ પ્રવાસ? ચાલો કહીએ કે હું હવે “ખોવાયેલા અને મૂંઝાયેલા” ની ગોવાની બોલીમાં પ્રવાહિત છું."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "વાર્તાનો સારાંશ? હંમેશાં, *હંમેશાં* GPS કોઓર્ડિનેટ્સ રાખો. અને કદાચ એક સ્થાનિક SIM કાર્ડ. અને ચોક્કસપણે રમૂજની ભાવના. કારણ કે ભારતમાં સરનામું શોધવું એ પોતાનામાં જ એક સાહસ હોઈ શકે છે, અને કેટલીકવાર, શ્રેષ્ઠ વાર્તાઓ એ હોય છે જ્યાં તમે નિરાશાજનક રીતે, રમૂજી રીતે ખોવાઈ જાઓ છો. આગલી વખતે, હું મારી બુકિંગ નોંધોમાં ફક્ત \"અક્ષાંશ: [insert latitude here], રેખાંશ: [insert longitude here]\" મૂકી રહ્યો છું. ચાલો જોઈએ કે તેઓ *તેને* મૂંઝવણમાં મૂકવાનો પ્રયાસ કરે છે!",
+  "raw": "વાર્તાનો સારાંશ? હંમેશાં, *હંમેશાં* GPS કોઓર્ડિનેટ્સ રાખો. અને કદાચ એક સ્થાનિક SIM કાર્ડ. અને ચોક્કસપણે રમૂજની ભાવના. કારણ કે ભારતમાં સરનામું શોધવું એ પોતાનામાં જ એક સાહસ હોઈ શકે છે, અને કેટલીકવાર, શ્રેષ્ઠ વાર્તાઓ એ હોય છે જ્યાં તમે નિરાશાજનક રીતે, રમૂજી રીતે ખોવાઈ જાઓ છો. આગલી વખતે, હું મારી બુકિંગ નોંધોમાં ફક્ત \"અક્ષાંશ: [insert latitude here], રેખાંશ: [insert longitude here]\" મૂકી રહ્યો છું. ચાલો જોઈએ કે તેઓ *તેને* મૂંઝવણમાં મૂકવાનો પ્રયાસ કરે છે!"
+}
+```
+```json
+{
+      "unnormalised": "",
+      "normalised": "    \"\"\"",
+      "raw": "{\n      \"unnormalised\": \"\",\n      \"normalised\": \"    \\\"\\\"\\\"\",\n      \"text\": \"\\\"\\\"\\\"\"\n}"
+    }
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # ડમી બ્લોગ પોસ્ટ સામગ્રી ફાઇલમાં લખો",
+  "raw": "અહીં એક JSON ઑબ્જેક્ટ છે જે તમે પ્રદાન કરેલા JSON ઑબ્જેક્ટના અનુવાદ સાથે છે:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # ડમી બ્લોગ પોસ્ટ સામગ્રી ફાઇલમાં લખો\",\n  \"raw\": \"    # Write the dummy blog post content to the file\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    open(dummy_txt_filepath, 'w', encoding='utf-8') સાથે f:",
+  "raw": "open(dummy_txt_filepath, 'w', encoding='utf-8') સાથે f:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        f.write(blog_post_content)",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"        f.write(blog_post_content)\",\n  \"text\": \"f.write(blog_post_content)\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # એક ડમી ઇમેજ ફાઇલ બનાવો",
+  "raw": "અહીં એક અનુવાદ છે:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # એક ડમી ઇમેજ ફાઇલ બનાવો\",\n  \"raw\": \"    # Create a dummy image file\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    open(dummy_image_filepath, 'wb') સાથે f તરીકે ખોલો:",
+  "raw": "અલબત્ત, હું આમાં મદદ કરી શકું છું. અહીં અનુવાદ છે:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    open(dummy_image_filepath, 'wb') સાથે f તરીકે ખોલો:\",\n  \"raw\": \"    with open(dummy_image_filepath, 'wb') as f:\"\n}\n```\n\nઆશા છે કે આ મદદ કરશે!"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        એફ.રાઇટ(બી'ડમી_ઇમેજ_કન્ટેન્ટ')",
+  "raw": "એફ.રાઇટ(બી'ડમી_ઇમેજ_કન્ટેન્ટ')"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    print(f\"ડમી ડેટા '{dummy_source_folder}' માં નિદર્શન માટે બનાવવામાં આવ્યો છે.\")",
+  "raw": "અહીં અનુવાદિત JSON ઑબ્જેક્ટ છે:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    print(f\\\"ડમી ડેટા '{dummy_source_folder}' માં નિદર્શન માટે બનાવવામાં આવ્યો છે.\\\")\",\n  \"raw\": \"\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # મુખ્ય પ્રોસેસિંગ ફંક્શનને કૉલ કરો",
+  "raw": "અહીં અનુવાદ કરેલો પ્રતિભાવ છે:\n\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # મુખ્ય પ્રોસેસિંગ ફંક્શનને કૉલ કરો\",\n  \"text\": \"# મુખ્ય પ્રોસેસિંગ ફંક્શનને કૉલ કરો\"\n}"
+}
+```
+```json
+{
+      "unnormalised": "",
+      "normalised": "    process_folder(dummy_source_folder, dummy_destination_folder)",
+      "raw": "assistant: \n```json\n{\n      "unnormalised": "",\n      "normalised": "    process_folder(dummy_source_folder, dummy_destination_folder)",\n      "raw": "    process_folder(dummy_source_folder, dummy_destination_folder)"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    પ્રિન્ટ(\"\\n--- ઉદાહરણ નોર્મલાઇઝ્ડ કન્ટેન્ટ (goa_addresses.txt માંથી) ---\")",
+  "raw": "અહીં અનુવાદિત JSON લાઇન છે:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    પ્રિન્ટ(\"\\\\n--- ઉદાહરણ નોર્મલાઇઝ્ડ કન્ટેન્ટ (goa_addresses.txt માંથી) ---\")\",\n  \"raw\": \"\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "   normalized_file_path = os.path.join(dummy_destination_folder, 'blog_posts', 'goa_addresses.txt')",
+  "raw": "normalized_file_path = os.path.join(dummy_destination_folder, 'blog_posts', 'goa_addresses.txt')"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "જો os.path.exists(normalized_file_path):",
+  "raw": "જો os.path.exists(normalized_file_path):"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        open(normalized_file_path, 'r', encoding='utf-8') as f સાથે:",
+  "raw": "open(normalized_file_path, 'r', encoding='utf-8') as f સાથે:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            print(f.read())",
+  "raw": "            print(f.read())"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    નહિંતર:",
+  "raw": "    નહિંતર:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        print(f\"સામાન્ય કરેલી ફાઇલ અહીં મળી નથી: {normalized_file_path}\")",
+  "raw": "Assistant: {\"unnormalised\": \"\", \"normalised\": \"        print(f\\\"સામાન્ય કરેલી ફાઇલ અહીં મળી નથી: {normalized_file_path}\\\")\", \"text\": \"print(f\\\"Normalized file not found at: {normalized_file_path}\\\")\"}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # જો તે માત્ર ડેમો માટે હોય તો તમે dummy_source_folder ને સાફ કરવા માગી શકો છો",
+  "raw": "અહીં અનુવાદ છે:\n\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # જો તે માત્ર ડેમો માટે હોય તો તમે dummy_source_folder ને સાફ કરવા માગી શકો છો\",\n  \"text\": \"# જો તે માત્ર ડેમો માટે હોય તો તમે dummy_source_folder ને સાફ કરવા માગી શકો છો\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # shutil.rmtree(dummy_source_folder)",
+  "raw": "    # shutil.rmtree(dummy_source_folder)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # print(f\"સાફ કરેલ ડમી સોર્સ ફોલ્ડર: {dummy_source_folder}\")",
+  "raw": "અહીં એક અનુવાદ છે:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # print(f\\\"સાફ કરેલ ડમી સોર્સ ફોલ્ડર: {dummy_source_folder}\\\")\",\n  \"text\": \"# print(f\\\"Cleaned up dummy source folder: {dummy_source_folder}\\\")\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "```",
+  "raw": "માફ કરશો, હું આ ઇનપુટનું ભાષાંતર કરી શકતો નથી."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "---",
+  "raw": "{\"unnormalised\": \"\", \"normalised\": \"---\"}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "**સ્ક્રિપ્ટનો ઉપયોગ કેવી રીતે કરવો:**",
+  "raw": "મને માફ કરશો, પરંતુ હું તે ભાષામાં અસ્ખલિત નથી. શું તમે કૃપા કરીને કોઈ બીજી ભાષામાં પૂછી શકો છો?"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "1. **કોડ સાચવો:** ઉપર આપેલા પાયથન કોડને `.py` ફાઇલ તરીકે સાચવો (દા.ત., `normalize_data.py`).",
+  "raw": "1. **કોડ સાચવો:** ઉપર આપેલા પાયથન કોડને `.py` ફાઇલ તરીકે સાચવો (દા.ત., `normalize_data.py`)."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "2.  **`inflect` ઇન્સ્ટોલ કરો:** જો તમારી પાસે તે ન હોય, તો `inflect` લાઇબ્રેરી ઇન્સ્ટોલ કરો (જેનો ઉપયોગ સંખ્યાઓને શબ્દોમાં રૂપાંતરિત કરવા માટે થાય છે):",
+  "raw": "2.  **`inflect` ઇન્સ્ટોલ કરો:** જો તમારી પાસે તે ન હોય, તો `inflect` લાઇબ્રેરી ઇન્સ્ટોલ કરો (જેનો ઉપયોગ સંખ્યાઓને શબ્દોમાં રૂપાંતરિત કરવા માટે થાય છે):"
+}
+```
+```json
+{
+"unnormalised": "",
+"normalised": "    ```bash",
+"raw": "હું આનું ભાષાંતર કરી શકતો નથી કારણ કે તે એક કોડ બ્લોક છે. કૃપા કરીને મને વધુ સંદર્ભ આપો."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    pip ઇન્સ્ટોલ ઇન્ફ્લેક્ટ",
+  "raw": "    pip ઇન્સ્ટોલ ઇન્ફ્લેક્ટ"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ```",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    ```\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "3. **તમારો ડેટા તૈયાર કરો:**",
+  "raw": "3. **તમારો ડેટા તૈયાર કરો:**"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    * તમારા બધા `.txt` ફાઇલો (અને તમે કૉપિ કરવા માંગો છો તે કોઈપણ અન્ય ફાઇલો)ને ટોચના સ્તરના ફોલ્ડરમાં મૂકો. ઉદાહરણ તરીકે, ચાલો કહીએ કે તમારું મુખ્ય સંગ્રહ `my_data_raw` નામના ફોલ્ડરમાં છે.",
+  "raw": "    * તમારા બધા `.txt` ફાઇલો (અને તમે કૉપિ કરવા માંગો છો તે કોઈપણ અન્ય ફાઇલો)ને ટોચના સ્તરના ફોલ્ડરમાં મૂકો. ઉદાહરણ તરીકે, ચાલો કહીએ કે તમારું મુખ્ય સંગ્રહ `my_data_raw` નામના ફોલ્ડરમાં છે."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    *   ડેમોન્સ્ટ્રેશન માટે, સ્ક્રિપ્ટ તમારા આપેલા બ્લોગ પોસ્ટ અને ડમી ઇમેજ સાથે `dataset_raw` ફોલ્ડર *બનાવશે*.",
+  "raw": "મને માફ કરશો, હું આ પ્રશ્નનો જવાબ આપવામાં સક્ષમ નથી, કારણ કે પૂછવામાં આવેલી ભાષા મારા દ્વારા સમર્થિત નથી. હું ફક્ત અરબી, બંગાળી, ગુજરાતી, હિન્દી, કન્નડ, મરાઠી, નેપાળી, ઉડિયા, પંજાબી, તમિલ, તેલુગુ અને ઉર્દૂમાં અનુવાદ કરી શકું છું. કૃપા કરીને સમર્થિત ભાષાઓમાંથી એક પસંદ કરો."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "4.  **`source_folder` અયને `destination_folder` ને સંશોધિત કરો:**",
+  "raw": "4.  **`source_folder` અયને `destination_folder` ને સંશોધિત કરો:**"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    *   `if __name__ == \"__main__\":` બ્લોકમાં, `dummy_source_folder` ને તમારા વાસ્તવિક ટોચના સ્તરના ડેટા ફોલ્ડરના પાથમાં બદલો.",
+  "raw": "* `if __name__ == \"__main__\":` બ્લોકમાં, `dummy_source_folder` ને તમારા વાસ્તવિક ટોચના સ્તરના ડેટા ફોલ્ડરના પાથમાં બદલો."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    *   `dummy_destination_folder` ને બદલીને તમે જ્યાં સામાન્ય કરેલ આઉટપુટને જવા દેવા માંગો છો ત્યાં કરો (દા.ત., `my_data_normalized`).",
+  "raw": "અહીં અનુવાદ છે:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    *   `dummy_destination_folder` ને બદલીને તમે જ્યાં સામાન્ય કરેલ આઉટપુટને જવા દેવા માંગો છો ત્યાં કરો (દા.ત., `my_data_normalized`).\",\n  \"raw\": \"અહીં અનુવાદ છે:\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ```python",
+  "raw": "અહીં કોઈ અનુવાદ કરવા માટે ટેક્સ્ટ નથી."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # ઉદાહરણ: જો તમારો ડેટા 'C:/Users/YourName/Documents/MyTextCollection' માં હોય તો",
+  "raw": "assistant: {\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # ઉદાહરણ: જો તમારો ડેટા 'C:/Users/YourName/Documents/MyTextCollection' માં હોય તો\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # સ્ત્રોત_ફોલ્ડર = 'C:/Users/YourName/Documents/MyTextCollection'",
+  "raw": "    # સ્ત્રોત_ફોલ્ડર = 'C:/Users/YourName/Documents/MyTextCollection'"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # ડેસ્ટિનેશન_ફોલ્ડર = 'C:/Users/YourName/Documents/MyTextCollection_Normalized'",
+  "raw": "અહીં અનુવાદિત JSON ઑબ્જેક્ટ છે:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # ડેસ્ટિનેશન_ફોલ્ડર = 'C:/Users/YourName/Documents/MyTextCollection_Normalized'\",\n  \"raw\": \"    # destination_folder = 'C:/Users/YourName/Documents/MyTextCollection_Normalized'\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # આ સ્ક્રિપ્ટના ડેમો માટે, તે ઉપયોગ કરે છે:",
+  "raw": "અહીં આ સ્ક્રિપ્ટના ડેમો માટે અનુવાદ છે:\n\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # આ સ્ક્રિપ્ટના ડેમો માટે, તે ઉપયોગ કરે છે:\",\n  \"text\": \"# For this script's demo, it uses:\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": " સ્ત્રોત_ફોલ્ડર = 'dataset_raw' # જો તે અસ્તિત્વમાં ન હોય તો આ સ્ક્રિપ્ટ દ્વારા બનાવવામાં આવશે",
+  "raw": " સ્ત્રોત_ફોલ્ડર = 'dataset_raw' # જો તે અસ્તિત્વમાં ન હોય તો આ સ્ક્રિપ્ટ દ્વારા બનાવવામાં આવશે"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "   destination_folder = 'dataset_normalized' # આ સ્ક્રિપ્ટ દ્વારા બનાવવામાં આવશે",
+  "raw": "assistant: {\n  \"unnormalised\": \"\",\n  \"normalised\": \"   destination_folder = 'dataset_normalized' # આ સ્ક્રિપ્ટ દ્વારા બનાવવામાં આવશે\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ```",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    ```\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "5. **સ્ક્રીપ્ટ ચલાવો:** તમારું ટર્મિનલ અથવા કમાન્ડ પ્રોમ્પ્ટ ખોલો, તમે જ્યાં `normalize_data.py` સેવ કર્યું છે તે ડિરેક્ટરી પર નેવિગેટ કરો અને ચલાવો:",
+  "raw": "5. **સ્ક્રીપ્ટ ચલાવો:** તમારું ટર્મિનલ અથવા કમાન્ડ પ્રોમ્પ્ટ ખોલો, તમે જ્યાં `normalize_data.py` સેવ કર્યું છે તે ડિરેક્ટરી પર નેવિગેટ કરો અને ચલાવો:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ```bash",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    ```bash\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    પાયથોન normalize_data.py",
+  "raw": "    પાયથોન normalize_data.py"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ```",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    ```\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "**આપેલ બ્લોગ પોસ્ટ સામગ્રી માટે આઉટપુટ:**",
+  "raw": "મને માફ કરશો, હું તમને તે કરવામાં મદદ કરી શકતો નથી."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "જો તમે ડમી ડેટા સેટઅપ સાથે સ્ક્રિપ્ટ ચલાવો છો, તો `dataset_normalized/blog_posts/goa_addresses.txt` ફાઇલમાં આ હશે:",
+  "raw": "જો તમે ડમી ડેટા સેટઅપ સાથે સ્ક્રિપ્ટ ચલાવો છો, તો `dataset_normalized/blog_posts/goa_addresses.txt` ફાઇલમાં આ હશે:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "```",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"```\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "અનુવાદમાં ખોવાઈ જવું: મારા i-n-d-i-a-n સરનામા સાથેના સાહસો (અને તમારે g-p-s ની જરૂર કેમ છે) તેથી, મને લાગ્યું કે હું ખૂબ જ સમજદાર છું, ખરું ને? મેં દિલ્હી મેટ્રોમાં પીક અવર્સ દરમિયાન નેવિગેટ કર્યું છે, ચાંદની ચોકમાં સાડીની શ્રેષ્ઠ કિંમત માટે સોદાબાજી કરી છે અને દૂધ વિનાની ચા પણ મંગાવવામાં સફળ રહી છું (એક સિદ્ધિ, મારા પર વિશ્વાસ કરો). પરંતુ પછી સરનામાં આવ્યા. ઓહ, સરનામાં! મને દ્રશ્ય સેટ કરવા દો: હું ગોવામાં આ મોહક નાની ગેસ્ટહાઉસ શોધવા માટે મિશન પર હતો. આદર્શ લાગતું હતું, ખરું ને? બુકિંગ કન્ફર્મેશનએ ખુશીથી જાહેર કર્યું: \"આનંદ વિલા, એચ. નં. એક સો અને સત્તાવીસ સ્લેશ એ, એસ-ટી નજીક. એલેક્સ ચર્ચ, કેલાંગુટ, બાર્ડેઝ, ગોવા 403516.\" સરળ છે, એમ મેં વિચાર્યું. પ્રખ્યાત છેલ્લા શબ્દો. પ્રથમ, \"એચ. નં. એક સો અને સત્તાવીસ સ્લેશ એ.\" મેં ધારી લીધું કે તે ઘર નંબર છે, દુહ. પરંતુ ઓહ ના, ગોવામાં, તે નક્કર માર્કર કરતાં વધુ સૂચન લાગે છે. મેં એક કલાક આસપાસ ભટકવામાં ગાળ્યો જે મને ખાતરી છે કે નારિયેળનું વાવેતર હતું, સ્થાનિકોને પૂછ્યું કે શું તેમણે \"એચ. નં. એક સો અને સત્તાવીસ સ્લેશ એ, કોઈપણ સ્લેશ કંઈપણ.\" પ્રતિસાદ ખાલી નજરથી લઈને મદદરૂપ (પરંતુ આખરે ખોટી) દિશાઓ સુધીનો હતો. પછી ત્યાં \"નજીક એસ-ટી. એલેક્સ ચર્ચ.\" હવે, એસ-ટી. એલેક્સ ચર્ચ એ એક ખૂબ જ મોટું સીમાચિહ્ન છે. તમે વિચારશો કે \"નજીક\" નો અર્થ થાય છે, જેમ કે, આગળના પગથિયાંથી દેખાતું. ના. ગોવામાં, “નજીક” નો અર્થ થાય છે “સામાન્ય આસપાસના વિસ્તારમાં ક્યાંક, સંભવતઃ રિક્ષા સવારી અને ગાય સાથે વાતચીતનો સમાવેશ થાય છે.” આખરે મને તે મળી ગયું… ત્રણ અલગ-અલગ ઓટો-રિક્ષા વાલાને પૂછ્યા પછી જેમણે દરેકને 500 રૂપિયા ભાડું વસૂલવાનો પ્રયાસ કર્યો જેનું ભાડું 100 રૂપિયા હોવું જોઈએ. અને મને \"બાર્ડેઝ\" વિશે પણ શરૂ કરશો નહીં. શું તે એક શહેર છે? એક જિલ્લો? એક લાગણી? મને હજી સુધી ખાતરી નથી. પોસ્ટકોડ, \"403516,\" એ એકમાત્ર વસ્તુ હતી જેનો અર્થ થાય છે, અને તે પછી પણ, ગૂગલ મેપ્સ ફક્ત મારા પર હસ્યું. છેવટે, જે એક નાની તીર્થયાત્રા જેવું લાગ્યું (અને કિંગફિશરની ઘણી બોટલો), હું આનંદ વિલા પર ઠોકર મારી. તે સુંદર હતું, ખરેખર. પરંતુ પ્રવાસ? ચાલો હું તમને કહું કે હું હવે \"ખોવાયેલો અને મૂંઝવણમાં\" ની ગોવાની બોલીમાં અસ્ખલિત છું. વાર્તાનો નીતિવચન? હંમેશા, એસ્ટરિસ્ક હંમેશા એસ્ટરિસ્ક જી-પી-એસ કોઓર્ડિનેટ્સ ધરાવે છે. અને કદાચ એક સ્થાનિક એસ-આઈ-એમ કાર્ડ. અને ચોક્કસપણે રમૂજની ભાવના. કારણ કે ભારતમાં સરનામું શોધવું એ પોતાનામાં એક સાહસ હોઈ શકે છે, અને કેટલીકવાર, શ્રેષ્ઠ વાર્તાઓ તે હોય છે જ્યાં તમે નિરાશાજનક રીતે, હાસ્યાસ્પદ રીતે ખોવાઈ જાઓ છો. આવતા વખતે, હું ફક્ત મારી બુકિંગ નોટ્સમાં \"અક્ષાંશ: [અહીં અક્ષાંશ દાખલ કરો], રેખાંશ: [અહીં રેખાંશ દાખલ કરો]\" મૂકી રહ્યો છું. ચાલો જોઈએ કે તેઓ એસ્ટરિસ્કને મૂંઝવણમાં મૂકવાનો પ્રયાસ કરે છે!",
+  "normalised": "અનુવાદમાં ખોવાઈ જવું: મારા ભારતીય સરનામાં સાથેના સાહસો (અને તમારે જીપીએસની જરૂર કેમ છે) તેથી, મને લાગ્યું કે હું ખૂબ જ સમજદાર છું, ખરું ને? મેં દિલ્હી મેટ્રોમાં પીક અવર્સ દરમિયાન નેવિગેટ કર્યું છે, ચાંદની ચોકમાં સાડીની શ્રેષ્ઠ કિંમત માટે સોદાબાજી કરી છે અને દૂધ વિનાની ચા પણ મંગાવવામાં સફળ રહી છું (એક સિદ્ધિ, મારા પર વિશ્વાસ કરો). પરંતુ પછી સરનામાં આવ્યા. ઓહ, સરનામાં! મને દ્રશ્ય સેટ કરવા દો: હું ગોવામાં આ મોહક નાની ગેસ્ટહાઉસ શોધવા માટે મિશન પર હતો. આદર્શ લાગતું હતું, ખરું ને? બુકિંગ કન્ફર્મેશનએ ખુશીથી જાહેર કર્યું: \"આનંદ વિલા, એચ. નં. 147/એ, એસટી નજીક. એલેક્સ ચર્ચ, કેલાંગુટ, બાર્ડેઝ, ગોવા 403516.\" સરળ છે, એમ મેં વિચાર્યું. પ્રખ્યાત છેલ્લા શબ્દો. પ્રથમ, \"એચ. નં. 147/એ.\" મેં ધારી લીધું કે તે ઘર નંબર છે, દુહ. પરંતુ ઓહ ના, ગોવામાં, તે નક્કર માર્કર કરતાં વધુ સૂચન લાગે છે. મેં એક કલાક આસપાસ ભટકવામાં ગાળ્યો જે મને ખાતરી છે કે નારિયેળનું વાવેતર હતું, સ્થાનિકોને પૂછ્યું કે શું તેમણે \"એચ. નં. 147/એ, કોઈપણ સ્લેશ કંઈપણ.\" પ્રતિસાદ ખાલી નજરથી લઈને મદદરૂપ (પરંતુ આખરે ખોટી) દિશાઓ સુધીનો હતો. પછી ત્યાં \"નજીક એસટી. એલેક્સ ચર્ચ.\" હવે, એસટી. એલેક્સ ચર્ચ એ એક ખૂબ જ મોટું સીમાચિહ્ન છે. તમે વિચારશો કે \"નજીક\" નો અર્થ થાય છે, જેમ કે, આગળના પગથિયાંથી દેખાતું. ના. ગોવામાં, “નજીક” નો અર્થ થાય છે “સામાન્ય આસપાસના વિસ્તારમાં ક્યાંક, સંભવતઃ રિક્ષા સવારી અને ગાય સાથે વાતચીતનો સમાવેશ થાય છે.” આખરે મને તે મળી ગયું… ત્રણ અલગ-અલગ ઓટો-રિક્ષા વાલાને પૂછ્યા પછી જેમણે દરેકને 500 રૂપિયા ભાડું વસૂલવાનો પ્રયાસ કર્યો જેનું ભાડું 100 રૂપિયા હોવું જોઈએ. અને મને \"બાર્ડેઝ\" વિશે પણ શરૂ કરશો નહીં. શું તે એક શહેર છે? એક જિલ્લો? એક લાગણી? મને હજી સુધી ખાતરી નથી. પોસ્ટકોડ, \"403516,\" એ એકમાત્ર વસ્તુ હતી જેનો અર્થ થાય છે, અને તે પછી પણ, ગૂગલ મેપ્સ ફક્ત મારા પર હસ્યું. છેવટે, જે એક નાની તીર્થયાત્રા જેવું લાગ્યું (અને કિંગફિશરની ઘણી બોટલો), હું આનંદ વિલા પર ઠોકર મારી. તે સુંદર હતું, ખરેખર. પરંતુ પ્રવાસ? ચાલો હું તમને કહું કે હું હવે \"ખોવાયેલો અને મૂંઝવણમાં\" ની ગોવાની બોલીમાં અસ્ખલિત છું. વાર્તાનો નીતિવચન? હંમેશા, એસ્ટરિસ્ક હંમેશા એસ્ટરિસ્ક જીપીએસ કોઓર્ડિનેટ્સ ધરાવે છે. અને કદાચ એક સ્થાનિક એસઆઈએમ કાર્ડ. અને ચોક્કસપણે રમૂજની ભાવના. કારણ કે ભારતમાં સરનામું શોધવું એ પોતાનામાં એક સાહસ હોઈ શકે છે, અને કેટલીકવાર, શ્રેષ્ઠ વાર્તાઓ તે હોય છે જ્યાં તમે નિરાશાજનક રીતે, હાસ્યાસ્પદ રીતે ખોવાઈ જાઓ છો. આવતા વખતે, હું ફક્ત મારી બુકિંગ નોટ્સમાં \"અક્ષાંશ: [અહીં અક્ષાંશ દાખલ કરો], રેખાંશ: [અહીં રેખાંશ દાખલ કરો]\" મૂકી રહ્યો છું. ચાલો જોઈએ કે તેઓ એસ્ટરિસ્કને મૂંઝવણમાં મૂકવાનો પ્રયાસ કરે છે!",
+  "raw": "અનુવાદમાં ખોવાઈ જવું: મારા i-n-d-i-a-n સરનામા સાથેના સાહસો (અને તમારે g-p-s ની જરૂર કેમ છે) તેથી, મને લાગ્યું કે હું ખૂબ જ સમજદાર છું, ખરું ને? મેં દિલ્હી મેટ્રોમાં પીક અવર્સ દરમિયાન નેવિગેટ કર્યું છે, ચાંદની ચોકમાં સાડીની શ્રેષ્ઠ કિંમત માટે સોદાબાજી કરી છે અને દૂધ વિનાની ચા પણ મંગાવવામાં સફળ રહી છું (એક સિદ્ધિ, મારા પર વિશ્વાસ કરો). પરંતુ પછી સરનામાં આવ્યા. ઓહ, સરનામાં! મને દ્રશ્ય સેટ કરવા દો: હું ગોવામાં આ મોહક નાની ગેસ્ટહાઉસ શોધવા માટે મિશન પર હતો. આદર્શ લાગતું હતું, ખરું ને? બુકિંગ કન્ફર્મેશનએ ખુશીથી જાહેર કર્યું: \"આનંદ વિલા, એચ. નં. એક સો અને સત્તાવીસ સ્લેશ એ, એસ-ટી નજીક. એલેક્સ ચર્ચ, કેલાંગુટ, બાર્ડેઝ, ગોવા 403516.\" સરળ છે, એમ મેં વિચાર્યું. પ્રખ્યાત છેલ્લા શબ્દો. પ્રથમ, \"એચ. નં. એક સો અને સત્તાવીસ સ્લેશ એ.\" મેં ધારી લીધું કે તે ઘર નંબર છે, દુહ. પરંતુ ઓહ ના, ગોવામાં, તે નક્કર માર્કર કરતાં વધુ સૂચન લાગે છે. મેં એક કલાક આસપાસ ભટકવામાં ગાળ્યો જે મને ખાતરી છે કે નારિયેળનું વાવેતર હતું, સ્થાનિકોને પૂછ્યું કે શું તેમણે \"એચ. નં. એક સો અને સત્તાવીસ સ્લેશ એ, કોઈપણ સ્લેશ કંઈપણ.\" પ્રતિસાદ ખાલી નજરથી લઈને મદદરૂપ (પરંતુ આખરે ખોટી) દિશાઓ સુધીનો હતો. પછી ત્યાં \"નજીક એસ-ટી. એલેક્સ ચર્ચ.\" હવે, એસ-ટી. એલેક્સ ચર્ચ એ એક ખૂબ જ મોટું સીમાચિહ્ન છે. તમે વિચારશો કે \"નજીક\" નો અર્થ થાય છે, જેમ કે, આગળના પગથિયાંથી દેખાતું. ના. ગોવામાં, “નજીક” નો અર્થ થાય છે “સામાન્ય આસપાસના વિસ્તારમાં ક્યાંક, સંભવતઃ રિક્ષા સવારી અને ગાય સાથે વાતચીતનો સમાવેશ થાય છે.” આખરે મને તે મળી ગયું… ત્રણ અલગ-અલગ ઓટો-રિક્ષા વાલાને પૂછ્યા પછી જેમણે દરેકને 500 રૂપિયા ભાડું વસૂલવાનો પ્રયાસ કર્યો જેનું ભાડું 100 રૂપિયા હોવું જોઈએ. અને મને \"બાર્ડેઝ\" વિશે પણ શરૂ કરશો નહીં. શું તે એક શહેર છે? એક જિલ્લો? એક લાગણી? મને હજી સુધી ખાતરી નથી. પોસ્ટકોડ, \"403516,\" એ એકમાત્ર વસ્તુ હતી જેનો અર્થ થાય છે, અને તે પછી પણ, ગૂગલ મેપ્સ ફક્ત મારા પર હસ્યું. છેવટે, જે એક નાની તીર્થયાત્રા જેવું લાગ્યું (અને કિંગફિશરની ઘણી બોટલો), હું આનંદ વિલા પર ઠોકર મારી. તે સુંદર હતું, ખરેખર. પરંતુ પ્રવાસ? ચાલો હું તમને કહું કે હું હવે \"ખોવાયેલો અને મૂંઝવણમાં\" ની ગોવાની બોલીમાં અસ્ખલિત છું. વાર્તાનો નીતિવચન? હંમેશા, એસ્ટરિસ્ક હંમેશા એસ્ટરિસ્ક જી-પી-એસ કોઓર્ડિનેટ્સ ધરાવે છે. અને કદાચ એક સ્થાનિક એસ-આઈ-એમ કાર્ડ. અને ચોક્કસપણે રમૂજની ભાવના. કારણ કે ભારતમાં સરનામું શોધવું એ પોતાનામાં એક સાહસ હોઈ શકે છે, અને કેટલીકવાર, શ્રેષ્ઠ વાર્તાઓ તે હોય છે જ્યાં તમે નિરાશાજનક રીતે, હાસ્યાસ્પદ રીતે ખોવાઈ જાઓ છો. આવતા વખતે, હું ફક્ત મારી બુકિંગ નોટ્સમાં \"અક્ષાંશ: [અહીં અક્ષાંશ દાખલ કરો], રેખાંશ: [અહીં રેખાંશ દાખલ કરો]\" મૂકી રહ્યો છું. ચાલો જોઈએ કે તેઓ એસ્ટરિસ્કને મૂંઝવણમાં મૂકવાનો પ્રયાસ કરે છે!"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "```",
+  "raw": "```"
+}
+```

@@ -1,0 +1,7 @@
+```json
+{
+  "unnormalised": "Arre bhai, sabzi mandi re 50 ଟଙ୍କା ନେଇକି ଯାଅ ତେବେ ଗୋଟେ ଥେଲା ଭର୍ତ୍ତି ମିର୍ଚି ମିଳେ, ଆଉ ମଲ୍ ରେ 5000 ଟଙ୍କାର କେବଳ ଗୋଟେ ଡିଜାଇନର୍ ହ୍ୟାଣ୍ଡ ବ୍ୟାଗ୍ ! Inflation ହେଲେ ଏମିତି ହେଉ!",
+  "normalised": "Arre bhai, sabzi mandi re rupee fifty ନେଇକି ଯାଅ ତେବେ ଗୋଟେ ଥେଲା ଭର୍ତ୍ତି ମିର୍ଚି ମିଳେ, ଆଉ ମଲ୍ ରେ rupee five thousand ର କେବଳ ଗୋଟେ ଡିଜାଇନର୍ ହ୍ୟାଣ୍ଡ ବ୍ୟାଗ୍ ! Inflation ହେଲେ ଏମିତି ହେଉ!",
+  "raw": "Arre bhai, sabzi mandi re ₹50 ଟଙ୍କା ନେଇକି ଯାଅ ତେବେ ଗୋଟେ ଥେଲା ଭର୍ତ୍ତି ମିର୍ଚି ମିଳେ, ଆଉ ମଲ୍ ରେ ₹5000 ଟଙ୍କାର କେବଳ ଗୋଟେ ଡିଜାଇନର୍ ହ୍ୟାଣ୍ଡ ବ୍ୟାଗ୍ ! Inflation ହେଲେ ଏମିତି ହେଉ!\n\n{\n  \"unnormalised\": \"Arre bhai, sabzi mandi re 50 ଟଙ୍କା ନେଇକି ଯାଅ ତେବେ ଗୋଟେ ଥେଲା ଭର୍ତ୍ତି ମିର୍ଚି ମିଳେ, ଆଉ ମଲ୍ ରେ 5000 ଟଙ୍କାର କେବଳ ଗୋଟେ ଡିଜାଇନର୍ ହ୍ୟାଣ୍ଡ ବ୍ୟାଗ୍ ! Inflation ହେଲେ ଏମିତି ହେଉ!\",\n  \"normalised\": \"Arre bhai, sabzi mandi re rupee fifty ନେଇକି ଯାଅ ତେବେ ଗୋଟେ ଥେଲା ଭର୍ତ୍ତି ମିର୍ଚି ମିଳେ, ଆଉ ମଲ୍ ରେ rupee five thousand ର କେବଳ ଗୋଟେ ଡିଜାଇନର୍ ହ୍ୟାଣ୍ଡ ବ୍ୟାଗ୍ ! Inflation ହେଲେ ଏମିତି ହେଉ!\"\n}"
+}
+```

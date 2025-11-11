@@ -1,0 +1,7 @@
+```json
+{
+  "unnormalised": "أرre bhai، سبزي مندي mein ₹50 lekar jaao toh ek thela bharke mirchi milta hai، aur mall mein ₹5000 ka sirf ek designer hand bag! التضخم ho toh aisi ho!",
+  "normalised": "أرre bhai، سبزي مندي mein روبية fifty lekar jaao toh ek thela bharke mirchi milta hai، aur mall mein روبية five thousand ka sirf ek designer hand bag! التضخم ho toh aisi ho!",
+  "raw": "أرre bhai، سبزي مندي mein ₹50 lekar jaao toh ek thela bharke mirchi milta hai، aur mall mein ₹5000 ka sirf ek designer hand bag! التضخم ho toh aisi ho!"
+}
+```

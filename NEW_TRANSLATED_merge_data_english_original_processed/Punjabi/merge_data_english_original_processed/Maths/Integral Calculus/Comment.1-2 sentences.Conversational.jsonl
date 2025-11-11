@@ -1,0 +1,7 @@
+```json
+{
+  "unnormalised": "Arre bhai, integral calculus aukhi aa yaar! Main 3 hrs vargi spend kiti ∫x^2 dx nu 0 ton 1 tak solve karan di koshish kar riha si par phir vi galat ho gaya.",
+  "normalised": "Arre bhai, integral calculus aukhi aa yaar! Main three hours integral of x squared d x nu zero ton one tak solve karan di koshish kar riha si par phir vi galat ho gaya.",
+  "raw": "Arre bhai, integral calculus aukhi aa yaar! Main 3 hrs vargi spend kiti ∫x^2 dx nu 0 ton 1 tak solve karan di koshish kar riha si par phir vi galat ho gaya."
+}
+```

@@ -1,0 +1,2730 @@
+```json
+{
+  "unnormalised": "चिकित्सा पेशेवरों के लिए \"डॉ.\" और प्रोफेसरों के लिए \"प्रो.\" का उपयोग करना याद रखें। भारत में कानूनी संदर्भों में वकीलों के लिए \"एडवोकेट\" का उपयोग करना भी आम है।",
+  "normalised": "ठीक है, मैं व्यापक सामान्यीकरण नियमों और \"डॉ.\", \"प्रो.\", और \"एडवोकेट\" के विशिष्ट संचालन को समझता हूं। मैं इन आवश्यकताओं के अनुसार पाठ्य डेटा को संसाधित करने के लिए एक पायथन स्क्रिप्ट लागू करूंगा।",
+  "raw": "चिकित्सा पेशेवरों के लिए \"डॉ.\" और प्रोफेसरों के लिए \"प्रो.\" का उपयोग करना याद रखें। भारत में कानूनी संदर्भों में वकीलों के लिए \"एडवोकेट\" का उपयोग करना भी आम है। ठीक है, मैं व्यापक सामान्यीकरण नियमों और \"डॉ.\", \"प्रो.\", और \"एडवोकेट\" के विशिष्ट संचालन को समझता हूं। मैं इन आवश्यकताओं के अनुसार पाठ्य डेटा को संसाधित करने के लिए एक पायथन स्क्रिप्ट लागू करूंगा।"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "यहां स्क्रिप्ट प्रत्येक नियम को कैसे संबोधित करेगी, इसका विवरण दिया गया है, इसके बाद पायथन कोड:",
+  "raw": "यहां स्क्रिप्ट प्रत्येक नियम को कैसे संबोधित करेगी, इसका विवरण दिया गया है, इसके बाद पायथन कोड:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "**कोर लॉजिक और दृष्टिकोण:**",
+  "raw": "यहाँ अनुवाद है:\n\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"**कोर लॉजिक और दृष्टिकोण:**\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "1. **फ़ाइल सिस्टम ट्रैवर्सल:** मैं इनपुट निर्देशिका में सभी फ़ोल्डरों और फ़ाइलों के माध्यम से पुनरावर्ती रूप से जाने के लिए `os.walk` का उपयोग करूँगा।",
+  "raw": "1. **फ़ाइल सिस्टम ट्रैवर्सल:** मैं इनपुट निर्देशिका में सभी फ़ोल्डरों और फ़ाइलों के माध्यम से पुनरावर्ती रूप से जाने के लिए `os.walk` का उपयोग करूँगा।"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "2. **आउटपुट निर्देशिका मिररिंग:** इनपुट में प्रत्येक फ़ोल्डर के लिए, मैं `dataset_normalized` आउटपुट निर्देशिका में एक संबंधित फ़ोल्डर बनाऊंगा।",
+  "raw": "2. **आउटपुट निर्देशिका मिररिंग:** इनपुट में प्रत्येक फ़ोल्डर के लिए, मैं `dataset_normalized` आउटपुट निर्देशिका में एक संबंधित फ़ोल्डर बनाऊंगा।"
+}
+```
+```json
+{
+      "unnormalised": "",
+      "normalised": "3. **फ़ाइल प्रोसेसिंग:**",
+      "raw": "3. **फ़ाइल प्रोसेसिंग:**"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    *   यदि कोई फ़ाइल `.txt` फ़ाइल है, तो उसकी सामग्री को पढ़ा, सामान्य किया जाएगा, और फिर मिरर किए गए आउटपुट फ़ोल्डर में एक नई `.txt` फ़ाइल में लिखा जाएगा।",
+  "raw": "Assistant: {\n  \"unnormalised\": \"\",\n  \"normalised\": \"    *   यदि कोई फ़ाइल `.txt` फ़ाइल है, तो उसकी सामग्री को पढ़ा, सामान्य किया जाएगा, और फिर मिरर किए गए आउटपुट फ़ोल्डर में एक नई `.txt` फ़ाइल में लिखा जाएगा।\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    *   यदि कोई फ़ाइल `.txt` फ़ाइल नहीं है, तो इसे बिना किसी बदलाव के सीधे मिरर किए गए आउटपुट फ़ोल्डर में कॉपी कर दिया जाएगा।",
+  "raw": "    *   यदि कोई फ़ाइल `.txt` फ़ाइल नहीं है, तो इसे बिना किसी बदलाव के सीधे मिरर किए गए आउटपुट फ़ोल्डर में कॉपी कर दिया जाएगा।"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "4. **सामान्यीकरण क्रम (सही आउटपुट के लिए महत्वपूर्ण):** सामान्यीकरण नियमों को लागू करने का क्रम मायने रखता है. मैं आम तौर पर अधिक सामान्य नियमों से पहले अधिक विशिष्ट नियम लागू करूंगा (उदाहरण के लिए, सामान्य संख्याओं से पहले मुद्रा + संख्या + प्रत्यय, या सामान्य अक्षरांकीय पैटर्न से पहले विशिष्ट प्रतीक).",
+  "raw": "4. **सामान्यीकरण क्रम (सही आउटपुट के लिए महत्वपूर्ण):** सामान्यीकरण नियमों को लागू करने का क्रम मायने रखता है. मैं आम तौर पर अधिक सामान्य नियमों से पहले अधिक विशिष्ट नियम लागू करूंगा (उदाहरण के लिए, सामान्य संख्याओं से पहले मुद्रा + संख्या + प्रत्यय, या सामान्य अक्षरांकीय पैटर्न से पहले विशिष्ट प्रतीक)."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    *   प्रतीक और विशेष वर्ण।",
+  "raw": "* Symbols and special characters. -> * प्रतीक और विशेष वर्ण।"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    *   मुद्रा + संख्या + प्रत्यय।",
+  "raw": "मुद्रा + संख्या + प्रत्यय।"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    *   तिथियाँ।",
+  "raw": "यहाँ अनुवाद है:\n\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    *   तिथियाँ।\",\n  \"text\": \"* Dates.\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    *   संख्याएँ (इकाइयों में शामिल संख्याएँ भी, लेकिन इकाइयों का विस्तार बाद में होता है)।",
+  "raw": "यहाँ अनुवाद है:\n\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    *   संख्याएँ (इकाइयों में शामिल संख्याएँ भी, लेकिन इकाइयों का विस्तार बाद में होता है)।\",\n  \"text\": \"* Numbers (including those in units, but the units expansion itself comes after).\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    *   संक्षिप्त नाम।",
+  "raw": "    *   संक्षिप्त नाम।"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    *   इकाइयाँ।",
+  "raw": "    *   इकाइयाँ।"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    *   गणितीय नोटेशन।",
+  "raw": "यहाँ हिंदी में अनुवाद है:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    *   गणितीय नोटेशन।\",\n  \"text\": \"* Mathematical notation.\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    *   \"डॉ.\", \"प्रोफेसर.\", \"एडवोकेट.\" जैसे विशेष उपसर्गों को संख्या या परिवर्णी शब्द नियमों द्वारा गलत व्याख्या से बचने के लिए जल्दी या विशिष्ट रेगएक्स के साथ संभाला जाएगा।",
+  "raw": "    *   \"डॉ.\", \"प्रोफेसर.\", \"एडवोकेट.\" जैसे विशेष उपसर्गों को संख्या या परिवर्णी शब्द नियमों द्वारा गलत व्याख्या से बचने के लिए जल्दी या विशिष्ट रेगएक्स के साथ संभाला जाएगा।"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    *   सामान्य `/` हैंडलिंग।",
+  "raw": "    *   सामान्य `/` हैंडलिंग।"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    * अंतिम चरण के रूप में स्पेस नॉर्मलाइजेशन।",
+  "raw": "* अंतिम चरण के रूप में स्पेस नॉर्मलाइजेशन।"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "**विस्तृत नियम कार्यान्वयन रणनीति:**",
+  "raw": "**विस्तृत नियम कार्यान्वयन रणनीति:**"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "1. **प्रतीक → बोले जाने वाले रूप:** मैं सामान्य प्रतीकों को उनके बोले जाने वाले रूपों में मैपिंग करने वाले एक शब्दकोश का उपयोग करूंगा और पाठ के माध्यम से पुनरावृति करूंगा, प्रतिस्थापन कर रहा हूं। नियमित अभिव्यक्तियों का उपयोग उन प्रतीकों के लिए किया जाएगा जो अलग-अलग संदर्भों के साथ दिखाई दे सकते हैं (उदाहरण के लिए, `+/-`)।",
+  "raw": "1. **प्रतीक → बोले जाने वाले रूप:** मैं सामान्य प्रतीकों को उनके बोले जाने वाले रूपों में मैपिंग करने वाले एक शब्दकोश का उपयोग करूंगा और पाठ के माध्यम से पुनरावृति करूंगा, प्रतिस्थापन कर रहा हूं। नियमित अभिव्यक्तियों का उपयोग उन प्रतीकों के लिए किया जाएगा जो अलग-अलग संदर्भों के साथ दिखाई दे सकते हैं (उदाहरण के लिए, `+/-`)।"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    *   `art/craft` -> `art या craft` (regex: `(\\b\\w+)\\/(\\w+\\b)`)",
+  "raw": "    *   `art/craft` -> `art या craft` (regex: `(\\b\\w+)\\/(\\w+\\b)`)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    *   `QA/Dev` -> `Q-A slash D-e-v` (मिश्रित मामले या संक्षिप्तियों के लिए regex `(\\b[A-Z0-9]+)\\/([A-Z0-9]+\\b)`)",
+  "raw": "    *   `QA/Dev` -> `Q-A slash D-e-v` (मिश्रित मामले या संक्षिप्तियों के लिए regex `(\\b[A-Z0-9]+)\\/([A-Z0-9]+\\b)`)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    *   `2+2=4` को गणितीय संकेतन नियम द्वारा संभाला जाएगा।",
+  "raw": "यहाँ अनुवादित JSON ऑब्जेक्ट है:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    *   `2+2=4` को गणितीय संकेतन नियम द्वारा संभाला जाएगा।\",\n  \"raw\": \"    *   `2+2=4` will be handled by the mathematical notation rule.\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    *   `$`, `~`, `*`, `#`, `@`, `&`, आदि को सीधे मैप किया जाएगा।",
+  "raw": "Assistant: {\n  \"unnormalised\": \"\",\n  \"normalised\": \"    *   `$`, `~`, `*`, `#`, `@`, `&`, आदि को सीधे मैप किया जाएगा।\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "2. **संक्षिप्तियों → हाइफ़न वाले अक्षर:**",
+  "raw": "2. **संक्षिप्तियों → हाइफ़न वाले अक्षर:**"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    *   Regex: `\\b[A-Z]{2,}\\b` (दो या अधिक लगातार अपरकेस अक्षर, एक पूरे शब्द के रूप में)। मुझे सावधान रहने की आवश्यकता है कि इसे `Dr.`, `Prof.`, `Adv.` पर लागू न करें।",
+  "raw": "Regex: `\\b[A-Z]{2,}\\b` (दो या अधिक लगातार अपरकेस अक्षर, एक पूरे शब्द के रूप में)। मुझे सावधान रहने की आवश्यकता है कि इसे `Dr.`, `Prof.`, `Adv.` पर लागू न करें।"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    *   इसे `'-'.join(match.group())` से बदलें।",
+  "raw": "* Replace with `'-'.join(match.group())`.\n```\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    *   इसे `'-'.join(match.group())` से बदलें।\",\n  \"text\": \"* Replace with `'-'.join(match.group())`.\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "3. **नंबर → स्पोकन फॉर्म:** यह जटिल है। मैं सामान्य संख्या रूपांतरण के लिए `num2words` लाइब्रेरी का उपयोग करूँगा, जो विभिन्न संदर्भों को संभालती है। \"आधा किलोग्राम\" जैसे विशिष्ट मामलों के लिए, मैं `(\\d+)/(\\d+)\\s*(\\w+)` जैसे पैटर्न की पहचान करने के लिए regex का उपयोग करूँगा, जिसके बाद एक इकाई होगी, और भिन्न पर `num2words` लागू करूँगा या `1/2` को \"आधा\" में बदल दूँगा।",
+  "raw": "3. **नंबर → स्पोकन फॉर्म:** यह जटिल है। मैं सामान्य संख्या रूपांतरण के लिए `num2words` लाइब्रेरी का उपयोग करूँगा, जो विभिन्न संदर्भों को संभालती है। For specific cases like \"half kilogram\", I'll use regex to identify patterns like `(\\d+)/(\\d+)\\s*(\\w+)` followed by a unit, and apply `num2words` to the fraction or convert `1/2` to \"half\"."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    *   सामान्य संख्याएँ: `num2words(number)`",
+  "raw": "सामान्य संख्याएँ: `num2words(number)`"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    * भिन्न: `1/2 किग्रा` -> `आधा किलोग्राम`, `3/4` -> `तीन को चार से विभाजित किया गया` (गणित द्वारा संभाला गया, लेकिन तारीखों के साथ भ्रमित न होने के लिए सावधान रहने की आवश्यकता है)।",
+  "raw": "यहाँ हिंदी में अनुवाद है:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    * भिन्न: `1/2 किग्रा` -> `आधा किलोग्राम`, `3/4` -> `तीन को चार से विभाजित किया गया` (गणित द्वारा संभाला गया, लेकिन तारीखों के साथ भ्रमित न होने के लिए सावधान रहने की आवश्यकता है)।\",\n  \"raw\": \"\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "4. **संख्यात्मक प्रत्यय → विस्तारित रूप:**",
+  "raw": "4. **संख्यात्मक प्रत्यय → विस्तारित रूप:**"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    *   रेगेक्स: `(\\d+)([KMBT])\\b`",
+  "raw": "रेगेक्स: `(\\d+)([KMBT])\\b`"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    *   `K` को `हजार`, `M` को `मिलियन`, `B` को `बिलियन`, `T` को `ट्रिलियन` पर मैप करें।",
+  "raw": "    *   Map `K` to `thousand`, `M` to `million`, `B` to `billion`, `T` to `trillion`."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    *   `num2words` का उपयोग करके संख्या भाग को परिवर्तित करें।",
+  "raw": "यहाँ अनुवाद है:\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    *   `num2words` का उपयोग करके संख्या भाग को परिवर्तित करें।\",\n  \"text\": \"* Convert number part using `num2words`.\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "5. **मुद्रा + संख्या + प्रत्यय:**",
+  "raw": "5. **मुद्रा + संख्या + प्रत्यय:**"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    *   रेगेक्स: `([$₹€£])(\\s*)(\\d+)([KMBT])?\\b`",
+  "raw": "रेगेक्स: `([$₹€£])(\\s*)(\\d+)([KMBT])?\\b`"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    * मुद्रा प्रतीक, संख्या और प्रत्यय परिवर्तित करें।",
+  "raw": "मुद्रा प्रतीक, संख्या और प्रत्यय परिवर्तित करें।"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "6.  **तिथियाँ → प्राकृतिक बोली जाने वाली रूप:**",
+  "raw": "6. **Dates → Natural spoken form:** का अनुवाद है: 6. **तिथियाँ → प्राकृतिक बोली जाने वाली रूप:**"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    *   `DD-MM-YYYY`, `DD/MM/YYYY`, `YYYY-MM-DD` के लिए रेगएक्स पैटर्न।",
+  "raw": "Regex patterns for `DD-MM-YYYY`, `DD/MM/YYYY`, `YYYY-MM-DD` के लिए रेगएक्स पैटर्न।"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    *   पार्स करने के लिए `datetime.strptime` का उपयोग करें और फिर सामान्य संख्याओं (जैसे, \"दसवां\", \"पहला\") और बोले गए वर्ष के लिए कस्टम लॉजिक के साथ `strftime` का उपयोग करें। अस्पष्ट `DD/MM/YYYY` के लिए डिफ़ॉल्ट रूप से `DD/MM/YYYY` मान लें।",
+  "raw": "Assistant: यहां अनुवादित JSON ऑब्जेक्ट है:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    *   पार्स करने के लिए `datetime.strptime` का उपयोग करें और फिर सामान्य संख्याओं (जैसे, \\\"दसवां\\\", \\\"पहला\\\") और बोले गए वर्ष के लिए कस्टम लॉजिक के साथ `strftime` का उपयोग करें। अस्पष्ट `DD/MM/YYYY` के लिए डिफ़ॉल्ट रूप से `DD/MM/YYYY` मान लें।\",\n  \"raw\": \"पार्स करने के लिए `datetime.strptime` का उपयोग करें और फिर सामान्य संख्याओं (जैसे, \\\"दसवां\\\", \\\"पहला\\\") और बोले गए वर्ष के लिए कस्टम लॉजिक के साथ `strftime` का उपयोग करें। अस्पष्ट `DD/MM/YYYY` के लिए डिफ़ॉल्ट रूप से `DD/MM/YYYY` मान लें।\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "7. **इकाइयाँ → कथित रूप:**",
+  "raw": "7. **इकाइयाँ → कथित रूप:**"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    *   `(\\d+)(\\s*)(cm|mm|m|km|g|kg|mg|ml|l|°C|...)` को खोजने के लिए रेगएक्स",
+  "raw": "ज़रूर, मैं इसे ट्रांसलेट कर सकता हूँ। यहां हिंदी में अनुवाद है:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    *   `(\\d+)(\\s*)(cm|mm|m|km|g|kg|mg|ml|l|°C|...)` को खोजने के लिए रेगएक्स\",\n  \"text\": \"* Regex to find `(\\d+)(\\s*)(cm|mm|m|km|g|kg|mg|ml|l|°C|...)`\"\n}\n```\n\nमुझे उम्मीद है कि यह मदद करता है!"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    *   मानचित्र इकाइयों को पूर्ण शब्दों में (उदाहरण के लिए, `cm` से `centimeter`, `°C` से `degree celsius`)।",
+  "raw": "यहाँ अनुवाद है:\n\n    *   मानचित्र इकाइयों को पूर्ण शब्दों में (उदाहरण के लिए, `cm` से `centimeter`, `°C` से `degree celsius`)।"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    *   पहले नंबर पर नंबर रूपांतरण लागू करें।",
+  "raw": "* पहले नंबर पर नंबर रूपांतरण लागू करें।"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "8. **गणितीय नोटेशन → बोले गए रूप:** इसके लिए रेगएक्स का एक परिष्कृत सेट और संभावित रूप से अधिक जटिल अभिव्यक्तियों के लिए एक छोटा पार्सर की आवश्यकता होती है।",
+  "raw": "8. **गणितीय नोटेशन → बोले गए रूप:** इसके लिए रेगएक्स का एक परिष्कृत सेट और संभावित रूप से अधिक जटिल अभिव्यक्तियों के लिए एक छोटा पार्सर की आवश्यकता होती है।"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    *   `x^2`: `x वर्ग` (रेगेक्स `(\\w)\\^2`)",
+  "raw": "    *   `x^2`: `x वर्ग` (रेगेक्स `(\\w)\\^2`)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    *   `x^3`: `x घन` (रेगेक्स `(\\w)\\^3`)",
+  "raw": "* `x^3`: `x घन` (रेगेक्स `(\\w)\\^3`)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    *   `x^n`: `x, n की घात` (रेगेक्स `(\\w)\\^(\\w+)`)",
+  "raw": "* `x^n`: `x, n की घात` (रेगेक्स `(\\w)\\^(\\w+)`)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    *   `x_i`: `x सब i` (regex `(\\w)_(\\w+)`)",
+  "raw": "* `x_i`: `x सब i` (regex `(\\w)_(\\w+)`)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    *   `√x`: `x का वर्गमूल` (regex `√(\\w+)`)",
+  "raw": "*   `√x`: `x का वर्गमूल` (regex `√(\\w+)`)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    *   `∫`: `इंटीग्रल`",
+  "raw": "* `∫`: `इंटीग्रल`"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    *   `Σ`: `जोड़`",
+  "raw": "* `Σ`: `जोड़`"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    * भिन्न: `3/4` -> `तीन को चार से विभाजित किया गया` (रेगेक्स: `(\\d+)\\/(\\d+)`, लेकिन यह सुनिश्चित करना कि यह कोई तारीख नहीं है)।",
+  "raw": "यहाँ अनुवाद है:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    * भिन्न: `3/4` -> `तीन को चार से विभाजित किया गया` (रेगेक्स: `(\\\\d+)\\/(\\\\d+)`, लेकिन यह सुनिश्चित करना कि यह कोई तारीख नहीं है)।\",\n  \"raw\": \"\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    *   प्रतीक: `≠`, `≤`, `≥` को सामान्य प्रतीक प्रतिस्थापन द्वारा संभाला जाएगा।",
+  "raw": "यहाँ हिंदी में अनुवाद है:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    *   प्रतीक: `≠`, `≤`, `≥` को सामान्य प्रतीक प्रतिस्थापन द्वारा संभाला जाएगा।\",\n  \"raw\": \"    *   Symbols: `≠`, `≤`, `≥` will be handled by the general symbol replacement.\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "9. **आउटपुट प्रारूप:**",
+  "raw": "9. **आउटपुट प्रारूप:**"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    *   अंत में रिक्त स्थान सामान्य करें: `re.sub(r'\\s+', ' ', text).strip()`।",
+  "raw": "    *   अंत में रिक्त स्थान सामान्य करें: `re.sub(r'\\s+', ' ', text).strip()`।"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "10. **फ़ाइल हैंडलिंग:** `os.walk`, `os.makedirs`, `shutil.copy2`।",
+  "raw": "10. **फ़ाइल हैंडलिंग:** `os.walk`, `os.makedirs`, `shutil.copy2`।"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "**विशिष्ट उपसर्ग हैंडलिंग:**",
+  "raw": "यहाँ अनुवाद है:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"**विशिष्ट उपसर्ग हैंडलिंग:**\",\n  \"raw\": \"**विशिष्ट उपसर्ग हैंडलिंग:**\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "*   `डॉ.`, `प्रो.`, `एडवो.` को इन सटीक स्ट्रिंग्स की तलाश करके संभाला जाएगा, संभावित रूप से एक पीरियड या स्पेस के साथ, और उन्हें संरक्षित किया जाएगा। यह सामान्य संक्षिप्त शब्द प्रसंस्करण से पहले होना चाहिए।",
+  "raw": "डॉ.", "प्रो.", "एडवो." को इन सटीक स्ट्रिंग्स की तलाश करके संभाला जाएगा, संभावित रूप से एक पीरियड या स्पेस के साथ, और उन्हें संरक्षित किया जाएगा। यह सामान्य संक्षिप्त शब्द प्रसंस्करण से पहले होना चाहिए।"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "चलिए, पायथन स्क्रिप्ट बनाना शुरू करते हैं।",
+  "raw": "चलिए, पायथन स्क्रिप्ट बनाना शुरू करते हैं।"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "```python",
+  "raw": "```python\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"```python\"\n}\n```"
+}
+```
+```json
+{
+      "unnormalised": "",
+      "normalised": "os इम्पोर्ट करें",
+      "raw": "os इम्पोर्ट करें"
+}
+```
+```json
+{
+"unnormalised": "",
+"normalised": "रेगेक्स आयात करें",
+"raw": "रेगेक्स आयात करें"
+}
+```
+```json
+{
+"unnormalised": "",
+"normalised": "shutil आयात करें",
+"raw": "shutil आयात करें"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "datetime से datetime इम्पोर्ट करें",
+  "raw": "datetime से datetime इम्पोर्ट करें"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "num2words इम्पोर्ट num2words से",
+  "raw": "num2words इम्पोर्ट num2words से"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "यूनिकोड वर्णों को संभालने के लिए यूनिकोडडेटा आयात करें",
+  "raw": "यूनिकोड वर्णों को संभालने के लिए यूनिकोडडेटा आयात करें"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "def ordinal_suffix(day):",
+  "raw": "def ordinal_suffix(day):"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    \"\"\"एक संख्या के लिए क्रमवाचक प्रत्यय देता है.\"\"\"",
+  "raw": "    \"\"\"एक संख्या के लिए क्रमवाचक प्रत्यय देता है.\"\"\""
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    अगर 10 <= दिन % 100 <= 20:",
+  "raw": "अगर 10 <= दिन % 100 <= 20:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        'th' वापस करें",
+  "raw": "        'th' वापस करें"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    अन्यथा:",
+  "raw": "अन्यथा:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "वापसी {1: 'st', 2: 'nd', 3: 'rd'}.get(दिन % 10, 'th')",
+  "raw": "वापसी {1: 'st', 2: 'nd', 3: 'rd'}.get(दिन % 10, 'th')"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "def convert_number_to_words(number_str):",
+  "raw": "def convert_number_to_words(number_str):"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    \"\"\"एक संख्या स्ट्रिंग को उसके बोले गए रूप में परिवर्तित करता है, किनारे के मामलों को संभालता है।\"\"\"",
+  "raw": "एक संख्या स्ट्रिंग को उसके बोले गए रूप में परिवर्तित करता है, किनारे के मामलों को संभालता है।\"\"\""
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    प्रयास करें:",
+  "raw": "    प्रयास करें:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        अगर '.' संख्या_स्ट्रिंग में है:",
+  "raw": "अगर '.' संख्या_स्ट्रिंग में है:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            # यदि num2words स्वाभाविक रूप से सभी मामलों के लिए ऐसा नहीं करता है तो दशमलव को अलग से संभालें",
+  "raw": "ज़रूर, मैं JSON ऑब्जेक्ट का अनुवाद कर सकता हूँ। यहाँ हिंदी में अनुवादित JSON ऑब्जेक्ट है:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"            # यदि num2words स्वाभाविक रूप से सभी मामलों के लिए ऐसा नहीं करता है तो दशमलव को अलग से संभालें\",\n  \"raw\": \"\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "इंटीजर_पार्ट, डेसीमल_पार्ट = नंबर_स्ट्रिंग.split('.')",
+  "raw": "इंटीजर_पार्ट, डेसीमल_पार्ट = नंबर_स्ट्रिंग.split('.')"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "इंटीजर_वर्ड्स = num2words(int(integer_part))",
+  "raw": "इंटीजर_वर्ड्स = num2words(int(integer_part))"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            decimal_words = 'पॉइंट ' + ' '.join(num2words(int(d)) for d in decimal_part)",
+  "raw": "assistant: \n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"            decimal_words = 'पॉइंट ' + ' '.join(num2words(int(d)) for d in decimal_part)\",\n  \"text\": \"decimal_words = 'point ' + ' '.join(num2words(int(d)) for d in decimal_part)\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            वापसी f\"{integer_words} {decimal_words}\"",
+  "raw": "            वापसी f\"{integer_words} {decimal_words}\""
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        अन्यथा:",
+  "raw": "अन्यथा:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            return num2words(int(number_str))",
+  "raw": "            return num2words(int(number_str))"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ValueError को छोड़कर:",
+  "raw": "ValueError को छोड़कर:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        वापसी संख्या_स्ट्रिंग # रूपांतरण विफल होने पर मूल वापस करें",
+  "raw": "वापसी संख्या_स्ट्रिंग # रूपांतरण विफल होने पर मूल वापस करें"
+}
+```
+```json
+{
+      "unnormalised": "",
+      "normalised": "def normalize_text(text):",
+      "raw": "def normalize_text(text):"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    \"\"\"",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    \\\"\\\"\\\"\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": " इनपुट टेक्स्ट पर सभी सामान्यीकरण नियम लागू होते हैं।",
+  "raw": " इनपुट टेक्स्ट पर सभी सामान्यीकरण नियम लागू होते हैं।"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    \"\"\"",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    \\\"\\\"\\\"\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # --- 0. स्पेशल प्रीफ़िक्स हैंडलिंग (डॉ., प्रोफ़ेसर, एडव.) ---",
+  "raw": "विशेषज्ञ: ```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # --- 0. स्पेशल प्रीफ़िक्स हैंडलिंग (डॉ., प्रोफ़ेसर, एडव.) ---\",\n  \"raw\": \"    # --- 0. Special Prefix Handling (Dr., Prof., Adv.) ---\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # इन्हें वैसा ही रखकर संभाला जाता है, इन्हें संक्षिप्त रूप नहीं माना जाना चाहिए।",
+  "raw": "Assistant: Here's the translation to Hindi:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # इन्हें वैसा ही रखकर संभाला जाता है, इन्हें संक्षिप्त रूप नहीं माना जाना चाहिए।\",\n  \"raw\": \"\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # किसी स्पष्ट प्रतिस्थापन की आवश्यकता नहीं है, बस यह सुनिश्चित करता है कि अन्य नियम उन्हें संशोधित न करें।",
+  "raw": "किसी स्पष्ट प्रतिस्थापन की आवश्यकता नहीं है, बस यह सुनिश्चित करता है कि अन्य नियम उन्हें संशोधित न करें।"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # --- 1. प्रतीक → कथित रूप ---",
+  "raw": "assistant: {\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # --- 1. प्रतीक → कथित रूप ---\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # अधिक विशिष्ट प्रतीक प्रतिस्थापन पहले",
+  "raw": "यहाँ अनुवादित JSON ऑब्जेक्ट है:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # अधिक विशिष्ट प्रतीक प्रतिस्थापन पहले\",\n  \"raw\": \"# More specific symbol replacements first\"\n}\n```"
+}
+```
+```json
+{
+      "unnormalised": "",
+      "normalised": " पाठ = re.sub(r'\\+/-', 'प्लस या माइनस', पाठ)",
+      "raw": " पाठ = re.sub(r'\\+/-', 'प्लस या माइनस', पाठ)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "टेक्स्ट = re.sub(r'!=', 'बराबर नहीं', टेक्स्ट)",
+  "raw": "टेक्स्ट = re.sub(r'!=', 'बराबर नहीं', टेक्स्ट)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": " पाठ = re.sub(r'<=' , 'से कम या बराबर' , पाठ)",
+  "raw": "पाठ = re.sub(r'<=' , 'से कम या बराबर' , पाठ)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": " पाठ = पुनः .उप(r'>=', 'से अधिक या बराबर', पाठ)",
+  "raw": "पाठ = पुनः .उप(r'>=', 'से अधिक या बराबर', पाठ)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": " पाठ = रे.उप(r'==', 'बराबर', पाठ)",
+  "raw": "पाठ = रे.उप(r'==', 'बराबर', पाठ)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "टेक्स्ट = re.sub(r'->', 'maps to', टेक्स्ट) # गणित/प्रोग्रामिंग संदर्भ में आम",
+  "raw": "टेक्स्ट = re.sub(r'->', 'maps to', टेक्स्ट) # गणित/प्रोग्रामिंग संदर्भ में आम"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    सिंबल_मैप = {",
+  "raw": "सिंबल_मैप = {"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        '#': 'हैश',",
+  "raw": "        '#': 'हैश',"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        '@': 'at',",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"        '@': 'at',\",\n  \"text\": \"'@': 'at',\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        '&': 'और',",
+  "raw": "        '&': 'और',"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        '*': 'तारांकन',",
+  "raw": "        '*': 'तारांकन',"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        '~': 'लगभग',",
+  "raw": "        '~': 'लगभग',"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        '≠': 'बराबर नहीं है',",
+  "raw": "        '≠': 'बराबर नहीं है',"
+}
+```
+```json
+{
+      "unnormalised": "",
+      "normalised": "        '≤': 'से कम या बराबर',",
+      "raw": "सहायक: \n```json\n{\n      \"unnormalised\": \"\",\n      \"normalised\": \"        '≤': 'से कम या बराबर',\",\n      \"raw\": \"        '≤': 'less than or equal to',\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        '≥': 'से अधिक या बराबर',",
+  "raw": "        '≥': 'से अधिक या बराबर',"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        '∫': 'इंटीग्रल',",
+  "raw": "        '∫': 'इंटीग्रल',"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        '∑': 'जोड़',",
+  "raw": "        '∑': 'जोड़',"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        'π': 'पाई',",
+  "raw": "        'π': 'पाई',"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        '√': 'वर्गमूल का',",
+  "raw": "        '√': 'वर्गमूल का',"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        '%': 'प्रतिशत', # लगभग ~ के बाद, सामान्य संख्याओं से पहले",
+  "raw": " '%': 'प्रतिशत', # लगभग ~ के बाद, सामान्य संख्याओं से पहले"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        '°': 'डिग्री', # सामान्य संख्याओं से पहले",
+  "raw": "यहाँ अनुवादित JSON ऑब्जेक्ट है:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"        '°': 'डिग्री', # सामान्य संख्याओं से पहले\",\n  \"raw\": \"        '°': 'degree', # Before general numbers\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        '€': 'यूरो',",
+  "raw": "        '€': 'यूरो',"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        '£': 'पाउंड',",
+  "raw": "        '£': 'पाउंड',"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    }",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    }\",\n  \"text\": \"}\"\n}\n\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    }\",\n  \"raw\": \"\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # आंशिक मिलानों से बचने के लिए कुंजियों को लंबाई के अनुसार अवरोही क्रम में क्रमबद्ध करें (उदाहरण के लिए, '≠' से पहले '≠')",
+  "raw": "    # आंशिक मिलानों से बचने के लिए कुंजियों को लंबाई के अनुसार अवरोही क्रम में क्रमबद्ध करें (उदाहरण के लिए, '≠' से पहले '≠')"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    चिह्न, स्पोकन_फॉर्म के लिए सॉर्ट किए गए(symbol_map.items(), key=lambda item: len(item[0]), reverse=True) में:",
+  "raw": "    चिह्न, स्पोकन_फॉर्म के लिए सॉर्ट किए गए(symbol_map.items(), key=lambda item: len(item[0]), reverse=True) में:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        text = text.replace(symbol, spoken_form)",
+  "raw": "यहाँ कोई इनपुट नहीं है जिसे अनुवादित किया जा सके। हालाँकि, मैं दूसरी पंक्ति का अनुवाद कर सकता हूँ:\n\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"        text = text.replace(symbol, spoken_form)\",\n  \"text\": \"text = text.replace(symbol, spoken_form)\"\n}\n\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"        text = text.replace(symbol, spoken_form)\",\n  \"raw\": \"        text = text.replace(symbol, spoken_form)\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # '/' को संभालना",
+  "raw": "    # '/' को संभालना"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # प्राथमिकता:",
+  "raw": "    # प्राथमिकता:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # 1. विभाजित (संख्याओं/गणित के बीच)",
+  "raw": "यहाँ अनुवाद है:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # 1. विभाजित (संख्याओं/गणित के बीच)\",\n  \"raw\": \"    # 1. Divided by (between numbers/math)\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # 2. या (शब्दों के बीच)",
+  "raw": "# 2. या (शब्दों के बीच)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": " # 3. स्लैश (मिश्रित मामले, संक्षेप, शेष)",
+  "raw": " # 3. स्लैश (मिश्रित मामले, संक्षेप, शेष)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # 1. गणित में भिन्न या भाग: 3/4 -> तीन को चार से विभाजित किया गया, 1/2 -> एक को दो से विभाजित किया गया",
+  "raw": "ज़रूर, मैं आपकी मदद कर सकता हूँ। यहाँ अनुवाद है:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # 1. गणित में भिन्न या भाग: 3/4 -> तीन को चार से विभाजित किया गया, 1/2 -> एक को दो से विभाजित किया गया\",\n  \"text\": \"# 1. Fractions or division in math: 3/4 -> three divided by four, 1/2 -> one divided by two\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # इसे मजबूत होने की आवश्यकता है, यह सुनिश्चित करना कि यह कोई तारीख नहीं है।",
+  "raw": "    # इसे मजबूत होने की आवश्यकता है, यह सुनिश्चित करना कि यह कोई तारीख नहीं है।"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # 1/2 के लिए विशिष्ट रूप से \"आधा\" जब एक इकाई के बाद (नियम 3/7 अंतःक्रिया)",
+  "raw": "यहाँ अनुवादित JSON ऑब्जेक्ट है:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # 1/2 के लिए विशिष्ट रूप से \\\"आधा\\\" जब एक इकाई के बाद (नियम 3/7 अंतःक्रिया)\",\n  \"raw\": \"\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    def replace_fraction_with_unit(match):",
+  "raw": "यहाँ हिंदी में अनुवाद है:\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    def replace_fraction_with_unit(match):\",\n  \"raw\": \"    def replace_fraction_with_unit(match):\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        नम_स्ट्र = मैच.ग्रुप(1)",
+  "raw": "        नम_स्ट्र = मैच.ग्रुप(1)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        डेनोम_स्ट्र = मैच.ग्रुप(2)",
+  "raw": "डेनोम_स्ट्र = मैच.ग्रुप(2)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": " इकाई = मैच.ग्रुप(3) अगर मैच.ग्रुप(3) है तो ''",
+  "raw": " इकाई = मैच.ग्रुप(3) अगर मैच.ग्रुप(3) है तो ''"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        अगर नम_स्ट्रिंग == '1' और डेनोम_स्ट्रिंग == '2':",
+  "raw": "अगर नम_स्ट्रिंग == '1' और डेनोम_स्ट्रिंग == '2':"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            वापसी f\"आधा {unit}\"",
+  "raw": "वापसी f\"आधा {unit}\""
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        अन्यथा:",
+  "raw": "अन्यथा:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            return f\"{convert_number_to_words(num_str)} divided by {convert_number_to_words(denom_str)} {unit}\".strip()",
+  "raw": "            return f\"{convert_number_to_words(num_str)} divided by {convert_number_to_words(denom_str)} {unit}\".strip()"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # एक्स/वाई इकाई के लिए पैटर्न, उदाहरण के लिए, 1/2 किग्रा, 3/4 मीटर",
+  "raw": "    # एक्स/वाई इकाई के लिए पैटर्न, उदाहरण के लिए, 1/2 किग्रा, 3/4 मीटर"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": " पाठ = re.sub(r'\\b(\\d+)/(\\d+)\\s*(cm|mm|m|km|g|kg|mg|ml|l|C|F|K|hour|day|week|month|year)s?\\b',",
+  "raw": "पाठ = re.sub(r'\\b(\\d+)/(\\d+)\\s*(cm|mm|m|km|g|kg|mg|ml|l|C|F|K|hour|day|week|month|year)s?\\b',"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "                  replace_fraction_with_unit, text, flags=re.IGNORECASE)",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"                  replace_fraction_with_unit, text, flags=re.IGNORECASE)\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # विशिष्ट इकाई के बिना X/Y के लिए पैटर्न, उदाहरण के लिए, 3/4",
+  "raw": "    # विशिष्ट इकाई के बिना X/Y के लिए पैटर्न, उदाहरण के लिए, 3/4"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "पाठ = पुनः.उप(r'\\b(\\d+)/(\\d+)\\b',",
+  "raw": "पाठ = पुनः.उप(r'\\b(\\d+)/(\\d+)\\b',"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "                  लैम्ब्डा m: f\"{convert_number_to_words(m.group(1))} को {convert_number_to_words(m.group(2))} से विभाजित किया गया है\",",
+  "raw": "लैम्ब्डा m: f\"{convert_number_to_words(m.group(1))} को {convert_number_to_words(m.group(2))} से विभाजित किया गया है\""
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "पाठ)",
+  "raw": "पाठ)"
+}
+```
+```json
+{
+      "unnormalised": "",
+      "normalised": "    # 2. शब्दों के बीच \"या\" (उदाहरण के लिए, कला/शिल्प)",
+      "raw": " Assistant: Here's the translation of the JSON-lines data from English to Hindi:\n\n```json\n{\n      \"unnormalised\": \"\",\n      \"normalised\": \"    # 2. शब्दों के बीच \\\"या\\\" (उदाहरण के लिए, कला/शिल्प)\",\n      \"raw\": \"\"\n}\n```\n\nI have translated the English text into Hindi, maintaining the original formatting and special characters. The phrase \"or\" has been translated to \"या\" (ya), and the example \"art/craft\" remains as it is, to maintain its context.\n\n"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    टेक्स्ट = re.sub(r'(\\b\\w+)\\/(\\w+\\b)', r'\\1 या \\2', टेक्स्ट)",
+  "raw": "टेक्स्ट = re.sub(r'(\\b\\w+)\\/(\\w+\\b)', r'\\1 या \\2', टेक्स्ट)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": " # 3. मिश्रित मामलों या संक्षिप्तीकरणों के लिए \"slash\" (जैसे, QA/Dev, R/D)",
+  "raw": "मिश्रित मामलों या संक्षिप्तीकरणों के लिए # 3. \"slash\" (जैसे, QA/Dev, R/D)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # यह किसी भी शेष स्लैश को भी पकड़ता है जो तिथियां या अंश नहीं हैं",
+  "raw": "Assistant: ```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # यह किसी भी शेष स्लैश को भी पकड़ता है जो तिथियां या अंश नहीं हैं\",\n  \"raw\": \"    # This also catches any remaining slashes that aren't dates or fractions\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "पाठ = पुनः सब (आर '(ए-जेडए-जेड0-9]+)\/(ए-जेडए-जेड0-9]+)', आर '\\1 स्लैश \\2', पाठ)",
+  "raw": "पाठ = पुनः सब (आर '(ए-जेडए-जेड0-9]+)\/(ए-जेडए-जेड0-9]+)', आर '\\1 स्लैश \\2', पाठ)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # --- 2. संक्षिप्‍त शब्‍द → हाइफ़न वाले अक्षर ---",
+  "raw": "Assistant: {\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # --- 2. संक्षिप्‍त शब्‍द → हाइफ़न वाले अक्षर ---\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # डॉक्टर, प्रोफेसर, एडवोकेट और सामान्य मुद्रा कोड (जैसे, USD, EUR, INR) को शामिल न करें",
+  "raw": "    # डॉक्टर, प्रोफेसर, एडवोकेट और सामान्य मुद्रा कोड (जैसे, USD, EUR, INR) को शामिल न करें"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # इसके अलावा एकल अक्षरों या संख्याओं को भी बाहर करें जो किसी अभिव्यक्ति और इकाइयों का हिस्सा हो सकते हैं।",
+  "raw": "ज़रूर, मैं आपके लिए इसका अनुवाद कर सकता हूँ:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # इसके अलावा एकल अक्षरों या संख्याओं को भी बाहर करें जो किसी अभिव्यक्ति और इकाइयों का हिस्सा हो सकते हैं।\",\n  \"text\": \"# इसके अलावा एकल अक्षरों या संख्याओं को भी बाहर करें जो किसी अभिव्यक्ति और इकाइयों का हिस्सा हो सकते हैं।\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # यह regex मुश्किल है। आइए अपरकेस अक्षरों के क्रमों का मिलान करने का प्रयास करते हैं।",
+  "raw": "    # यह regex मुश्किल है। आइए अपरकेस अक्षरों के क्रमों का मिलान करने का प्रयास करते हैं।"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # एक शब्द सीमा के लिए लुकबिहाइंड, एक शब्द सीमा के लिए लुकहेड।",
+  "raw": "एक शब्द सीमा के लिए लुकबिहाइंड, एक शब्द सीमा के लिए लुकहेड।"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # सामान्य पूर्व-परिभाषित शब्दों को बाहर करें।",
+  "raw": "    # सामान्य पूर्व-परिभाषित शब्दों को बाहर करें।"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    excluded_acronyms = {'DR', 'PROF', 'ADV', 'USD', 'EUR', 'GBP', 'INR', 'K', 'M', 'B', 'T'}",
+  "raw": "    excluded_acronyms = {'DR', 'PROF', 'ADV', 'USD', 'EUR', 'GBP', 'INR', 'K', 'M', 'B', 'T'}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    def रिप्लेस_एक्रोनिम(मैच):",
+  "raw": "def रिप्लेस_एक्रोनिम(मैच):"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        संक्षिप्त नाम = मैच.ग्रुप(0)",
+  "raw": "        संक्षिप्त नाम = मैच.ग्रुप(0)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        यदि परिवर्णी शब्द excluded_acronyms में है:",
+  "raw": "यहाँ अनुवाद है:\n\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"        यदि परिवर्णी शब्द excluded_acronyms में है:\",\n  \"text\": \"\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            एक्रोनिम वापस करें",
+  "raw": "            एक्रोनिम वापस करें"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        # जाँचें कि क्या यह संभावित रूप से 'KG', 'CM' आदि जैसी इकाई है। (जिसे बाद में इकाइयों के नियम द्वारा पहले ही संभाला जा चुका है)",
+  "raw": "        # जाँचें कि क्या यह संभावित रूप से 'KG', 'CM' आदि जैसी इकाई है। (जिसे बाद में इकाइयों के नियम द्वारा पहले ही संभाला जा चुका है)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        यदि len(acronym) <= 3 और acronym.lower() ['cm', 'mm', 'm', 'km', 'g', 'kg', 'mg', 'ml', 'l', 'c', 'f', 'k'] में है:",
+  "raw": "यदि len(acronym) <= 3 और acronym.lower() in ['cm', 'mm', 'm', 'km', 'g', 'kg', 'mg', 'ml', 'l', 'c', 'f', 'k']:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            एक्रोनिम वापस करें # यूनिट नियम को इसे संभालने दें",
+  "raw": "            एक्रोनिम वापस करें # यूनिट नियम को इसे संभालने दें"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "वापसी '-'.join(list(acronym))",
+  "raw": "वापसी '-'.join(list(acronym))"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "पाठ = पुनः.उप(r'\\b[A-Z]{2,}\\b', replace_acronym, पाठ)",
+  "raw": "पाठ = पुनः.उप(r'\\b[A-Z]{2,}\\b', replace_acronym, पाठ)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # --- 6. तिथियाँ → प्राकृतिक बोली जाने वाली रूप ---",
+  "raw": "assistant: {\"unnormalised\": \"\", \"normalised\": \"    # --- 6. तिथियाँ → प्राकृतिक बोली जाने वाली रूप ---\", \"text\": \"# --- 6. Dates → Natural spoken form ---\"}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # YYYY-MM-DD को प्राथमिकता दें",
+  "raw": "    # YYYY-MM-DD को प्राथमिकता दें"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    def replace_date(match):",
+  "raw": "यहाँ 'def replace_date(match):' का अनुवाद है:\n\n    def replace_date(match):"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        प्रयास करें:",
+  "raw": "        प्रयास करें:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            date_obj = datetime.strptime(match.group(0), '%Y-%m-%d')",
+  "raw": "            date_obj = datetime.strptime(match.group(0), '%Y-%m-%d')"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            दिन = डेट_ऑब्ज.दिन",
+  "raw": "            दिन = डेट_ऑब्ज.दिन"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            महीना = date_obj.strftime('%B').lower()",
+  "raw": "            महीना = date_obj.strftime('%B').lower()"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            वर्ष = num2words(date_obj.year)",
+  "raw": "वर्ष = num2words(date_obj.year)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            वापसी f\"{num2words(day, to='ordinal')} {month} {year}\"",
+  "raw": "वापसी f\"{num2words(day, to='ordinal')} {month} {year}\""
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        ValueError को छोड़कर:",
+  "raw": "ValueError को छोड़कर:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            return match.group(0) # यदि पार्सिंग विफल हो जाती है तो मूल लौटाएं",
+  "raw": "assistant: {\n  \"unnormalised\": \"\",\n  \"normalised\": \"            return match.group(0) # यदि पार्सिंग विफल हो जाती है तो मूल लौटाएं\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "टेक्स्ट = re.sub(r'\\b\\d{4}-\\d{2}-\\d{2}\\b', replace_date, टेक्स्ट)",
+  "raw": "टेक्स्ट = re.sub(r'\\b\\d{4}-\\d{2}-\\d{2}\\b', replace_date, टेक्स्ट)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # DD-MM-YYYY या DD/MM/YYYY को प्राथमिकता दें (अस्पष्ट होने पर DD/MM/YYYY मानकर)",
+  "raw": "    # DD-MM-YYYY या DD/MM/YYYY को प्राथमिकता दें (अस्पष्ट होने पर DD/MM/YYYY मानकर)"
+}
+```
+```json
+{
+"unnormalised": "",
+"normalised": "    def replace_date_ambiguous(match):",
+"raw": "    def replace_date_ambiguous(match):"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        प्रयास करें:",
+  "raw": "        प्रयास करें:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            # पहले DD/MM/YYYY आज़माएं",
+  "raw": "            # पहले DD/MM/YYYY आज़माएं"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            डेट_ऑब्ज = datetime.strptime(match.group(0), '%d/%m/%Y')",
+  "raw": "Assistant: ```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"            डेट_ऑब्ज = datetime.strptime(match.group(0), '%d/%m/%Y')\",\n  \"raw\": \"            date_obj = datetime.strptime(match.group(0), '%d/%m/%Y')\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        ValueError को छोड़कर:",
+  "raw": "assistant:\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"        ValueError को छोड़कर:\"\n}"
+}
+```
+```json
+{
+      "unnormalised": "",
+      "normalised": "            प्रयास करें:",
+      "raw": "            प्रयास करें:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "                # फिर DD-MM-YYYY आज़माएं",
+  "raw": "                # फिर DD-MM-YYYY आज़माएं"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "                date_obj = datetime.strptime(match.group(0), '%d-%m-%Y')",
+  "raw": "                date_obj = datetime.strptime(match.group(0), '%d-%m-%Y')"
+}
+```
+```json
+{
+"unnormalised": "",
+"normalised": "            ValueError को छोड़कर:",
+"raw": "ValueError को छोड़कर:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "                return match.group(0) # अगर पार्सिंग विफल हो जाती है तो मूल मान लौटाएं",
+  "raw": "                return match.group(0) # अगर पार्सिंग विफल हो जाती है तो मूल मान लौटाएं"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "दिन = डेट_ऑब्ज.दिन",
+  "raw": "दिन = डेट_ऑब्ज.दिन"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        महीना = डेट_ऑब्ज.स्ट्रफ्टाइम('%B').लोअर()",
+  "raw": "        महीना = डेट_ऑब्ज.स्ट्रफ्टाइम('%B').लोअर()"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "वर्ष = num2words(date_obj.year)",
+  "raw": "वर्ष = num2words(date_obj.year)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        वापसी f\"{num2words(दिन, to='ordinal')} {महीना} {वर्ष}\"",
+  "raw": "assistant:\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"        वापसी f\\\"{num2words(दिन, to='ordinal')}\" {महीना} {वर्ष}\",\n  \"text\": \"return f\"{num2words(day, to='ordinal')} {month} {year}\"\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": " पाठ = re.sub(r'\\b\\d{2}[-/]\\d{2}[-/]\\d{4}\\b', replace_date_ambiguous, पाठ)",
+  "raw": "पाठ = re.sub(r'\\b\\d{2}[-/]\\d{2}[-/]\\d{4}\\b', replace_date_ambiguous, पाठ)"
+}
+```
+```json
+{
+"unnormalised": "",
+"normalised": " # --- 5. मुद्रा + संख्या + प्रत्यय ---",
+"raw": "ज़रूर, मैं JSON लाइन्स डेटा को हिंदी में ट्रांसलेट कर सकता हूँ। यहाँ आपके द्वारा दिए गए लाइन का अनुवाद है:\n\n```json\n{\n \"unnormalised\": \"\",\n \"normalised\": \" # --- 5. मुद्रा + संख्या + प्रत्यय ---\",\n \"raw\": \"# --- 5. Currency + Number + Suffix ---\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # यह सामान्य संख्यात्मक प्रत्यय और सामान्य संख्या रूपांतरण से पहले आना चाहिए।",
+  "raw": "    # यह सामान्य संख्यात्मक प्रत्यय और सामान्य संख्या रूपांतरण से पहले आना चाहिए।"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "def replace_currency_suffix(match):",
+  "raw": "def replace_currency_suffix(match):"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        मुद्रा_प्रतीक = मैच.ग्रुप(1)",
+  "raw": "मुद्रा_प्रतीक = मैच.ग्रुप(1)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        संख्या_स्ट्रिंग = मैच.ग्रुप(3)",
+  "raw": "यहाँ अनुवादित JSON लाइन है:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"        संख्या_स्ट्रिंग = मैच.ग्रुप(3)\",\n  \"raw\": \"        number_str = match.group(3)\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        प्रत्यय = मैच.ग्रुप(4)",
+  "raw": "        प्रत्यय = मैच.ग्रुप(4)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        ",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"        \"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "मुद्रा_नाम = ''",
+  "raw": "मुद्रा_नाम = ''"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        अगर मुद्रा_प्रतीक == '$':",
+  "raw": "अगर मुद्रा_प्रतीक == '$':"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            मुद्रा_नाम = 'डॉलर'",
+  "raw": "मुद्रा_नाम = 'डॉलर'"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        elif currency_symbol == '₹':",
+  "raw": "        elif currency_symbol == '₹':"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            currency_name = 'रुपया'",
+  "raw": "            currency_name = 'रुपया'"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        # यदि आवश्यक हो तो अन्य मुद्राएँ जोड़ें",
+  "raw": "# Add other currencies if needed\n        # यदि आवश्यक हो तो अन्य मुद्राएँ जोड़ें"
+}
+```
+```json
+{
+      "unnormalised": "",
+      "normalised": "बोली जाने वाली_संख्या = कन्वर्ट_नंबर_टू_वर्ड्स(नंबर_स्ट्र)",
+      "raw": "बोली जाने वाली_संख्या = कन्वर्ट_नंबर_टू_वर्ड्स(नंबर_स्ट्र)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        यदि प्रत्यय:",
+  "raw": "यदि प्रत्यय:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            suffix_map = {'K': 'हजार', 'M': 'मिलियन', 'B': 'बिलियन', 'T': 'ट्रिलियन'}",
+  "raw": "suffix_map = {'K': 'हजार', 'M': 'मिलियन', 'B': 'बिलियन', 'T': 'ट्रिलियन'}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            वापसी f\"{मुद्रा_नाम} {बोला_गया_नंबर} {suffix_map[suffix]}\"",
+  "raw": "ज़रूर, यहाँ अनुवादित JSON है:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"            वापसी f\"{मुद्रा_नाम} {बोला_गया_नंबर} {suffix_map[suffix]}\"\",\n  \"raw\": \"            वापसी f\"{मुद्रा_नाम} {बोला_गया_नंबर} {suffix_map[suffix]}\"\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        अन्यथा:",
+  "raw": "अन्यथा:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            वापसी f\"{currency_name} {spoken_number}\"",
+  "raw": "            वापसी f\"{currency_name} {spoken_number}\""
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    टेक्स्ट = re.sub(r'([$₹€£])(\\s*)(\\d+)([KMBT])?\\b', replace_currency_suffix, टेक्स्ट)",
+  "raw": "टेक्स्ट = re.sub(r'([$₹€£])(\\s*)(\\d+)([KMBT])?\\b', replace_currency_suffix, टेक्स्ट)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # --- 4. संख्यात्मक प्रत्यय → विस्तारित रूप ---",
+  "raw": "Assistant: {\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # --- 4. संख्यात्मक प्रत्यय → विस्तारित रूप ---\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # यह सामान्य संख्या रूपांतरण से पहले आना चाहिए।",
+  "raw": "मुझे माफ़ करना, मैं उस अनुरोध को संसाधित नहीं कर सकता। क्या मैं कुछ और आज़मा सकता हूँ?"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    def replace_numeric_suffix(match):",
+  "raw": "def replace_numeric_suffix(match):"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        संख्या_स्ट्रिंग = मैच.ग्रुप(1)",
+  "raw": "यहाँ हिंदी में अनुवाद है:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"        संख्या_स्ट्रिंग = मैच.ग्रुप(1)\",\n  \"raw\": \"        number_str = match.group(1)\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        प्रत्यय = मैच.ग्रुप(2)",
+  "raw": "        प्रत्यय = मैच.ग्रुप(2)"
+}
+```
+```json
+{
+      "unnormalised": "",
+      "normalised": "बोली जाने वाली_संख्या = कन्वर्ट_नंबर_टू_वर्ड्स(नंबर_स्ट्र)",
+      "raw": "बोली जाने वाली_संख्या = कन्वर्ट_नंबर_टू_वर्ड्स(नंबर_स्ट्र)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        ",
+  "raw": "मैं एक बड़े भाषा मॉडल के रूप में, मैं सीधे तौर पर JSON-Lines डेटा को ट्रांसलेट नहीं कर सकता। हालांकि, मैं आपको हिंदी में अनुवाद करने में मदद कर सकता हूं। कृपया उस टेक्स्ट को प्रदान करें जिसे आप अनुवाद करना चाहते हैं।"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        प्रत्यय_मैप = {'K': 'हजार', 'M': 'मिलियन', 'B': 'बिलियन', 'T': 'ट्रिलियन'}",
+  "raw": "        प्रत्यय_मैप = {'K': 'हजार', 'M': 'मिलियन', 'B': 'बिलियन', 'T': 'ट्रिलियन'}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        वापसी f\"{spoken_number} {suffix_map[suffix]}\"",
+  "raw": "सहायक: यहां हिंदी में अनुवाद है:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"        वापसी f\\\"{spoken_number} {suffix_map[suffix]}\\\"\",\n  \"text\": \"return f\\\"{spoken_number} {suffix_map[suffix]}\\\"\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": " पाठ = re.sub(r'\\b(\\d+)([KMBT])\\b', replace_numeric_suffix, text)",
+  "raw": "पाठ = re.sub(r'\\b(\\d+)([KMBT])\\b', replace_numeric_suffix, text)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # --- 7. इकाइयाँ → कथित रूप ---",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # --- 7. इकाइयाँ → कथित रूप ---\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # यह सामान्य संख्या रूपांतरण से पहले आना चाहिए।",
+  "raw": "    # यह सामान्य संख्या रूपांतरण से पहले आना चाहिए।"
+}
+```
+```json
+{
+      "unnormalised": "",
+      "normalised": "    यूनिट_मैप = {",
+      "raw": "यूनिट_मैप = {\n"
+    }
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        'सेमी': 'सेंटीमीटर', 'मिमी': 'मिलीमीटर', 'मी': 'मीटर', 'किमी': 'किलोमीटर',",
+  "raw": "यहाँ अनुवादित JSON ऑब्जेक्ट है:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"        'सेमी': 'सेंटीमीटर', 'मिमी': 'मिलीमीटर', 'मी': 'मीटर', 'किमी': 'किलोमीटर',\",\n  \"raw\": \"        'cm': 'centimeter', 'mm': 'millimeter', 'm': 'meter', 'km': 'kilometer',\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        'g': 'ग्राम', 'kg': 'किलोग्राम', 'mg': 'मिलीग्राम',",
+  "raw": "        'g': 'ग्राम', 'kg': 'किलोग्राम', 'mg': 'मिलीग्राम',"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        'ml': 'मिलीलीटर', 'l': 'लीटर',",
+  "raw": "        'ml': 'मिलीलीटर', 'l': 'लीटर',"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        'C': 'सेल्सियस', 'F': 'फ़ारेनहाइट', 'K': 'केल्विन', # डिग्री इकाइयों के लिए",
+  "raw": "        'C': 'सेल्सियस', 'F': 'फ़ारेनहाइट', 'K': 'केल्विन', # डिग्री इकाइयों के लिए"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        'hrs': 'घंटे', 'hr': 'घंटा',",
+  "raw": "        'hrs': 'घंटे', 'hr': 'घंटा',"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        'min': 'मिनट', 'mins': 'मिनट',",
+  "raw": "        'min': 'मिनट', 'mins': 'मिनट',"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        'सेक': 'सेकंड', 'सेक': 'सेकंड',",
+  "raw": "        'सेक': 'सेकंड', 'सेक': 'सेकंड',"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        'वोल्ट': 'वोल्ट', 'वोल्ट्स': 'वोल्ट्स', 'v': 'वोल्ट',",
+  "raw": "        'वोल्ट': 'वोल्ट', 'वोल्ट्स': 'वोल्ट्स', 'v': 'वोल्ट',"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        'amp': 'एम्पेयर', 'amps': 'एम्पेयर', 'a': 'एम्पेयर',",
+  "raw": "assistant: {\n  \"unnormalised\": \"\",\n  \"normalised\": \" 'amp': 'एम्पेयर', 'amps': 'एम्पेयर', 'a': 'एम्पेयर',\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        'watt': 'वाट', 'watts': 'वाट', 'w': 'वाट',",
+  "raw": "        'watt': 'वाट', 'watts': 'वाट', 'w': 'वाट',"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        'hz': 'हर्ट्ज़', 'khz': 'किलोहर्ट्ज़', 'mhz': 'मेगाहर्ट्ज़', 'ghz': 'गीगाहर्ट्ज़'",
+  "raw": "        'hz': 'हर्ट्ज़', 'khz': 'किलोहर्ट्ज़', 'mhz': 'मेगाहर्ट्ज़', 'ghz': 'गीगाहर्ट्ज़'"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    }",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    }\",\n  \"text\": \"}\"\n}\n\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    }\",\n  \"raw\": \"\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    def रिप्लेस_यूनिट(मिलान):",
+  "raw": "def रिप्लेस_यूनिट(मिलान):"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        नंबर_स्ट्रिंग = मैच.ग्रुप(1)",
+  "raw": "        नंबर_स्ट्रिंग = मैच.ग्रुप(1)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "इकाई = मैच.ग्रुप(2).लोअर()",
+  "raw": "इकाई = मैच.ग्रुप(2).लोअर()"
+}
+```
+```json
+{
+      "unnormalised": "",
+      "normalised": "बोली जाने वाली संख्या = convert_number_to_words(number_str)",
+      "raw": "बोली जाने वाली संख्या = convert_number_to_words(number_str)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        spoken_unit = unit_map.get(unit, unit)",
+  "raw": "assistant: {\"unnormalised\": \"\", \"normalised\": \" spoken_unit = unit_map.get(unit, unit)\"}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        # इकाइयों के लिए बहुवचन संभालें",
+  "raw": "        # इकाइयों के लिए बहुवचन संभालें"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "अगर int(number_str) > 1 और spoken_unit 's' के साथ समाप्त नहीं होता है और spoken_unit ['celsius', 'fahrenheit', 'kelvin'] में नहीं है:",
+  "raw": "अगर int(number_str) > 1 और spoken_unit 's' के साथ समाप्त नहीं होता है और spoken_unit ['celsius', 'fahrenheit', 'kelvin'] में नहीं है:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            spoken_unit += 's'",
+  "raw": "{ \"unnormalised\": \"\", \"normalised\": \" spoken_unit += 's'\", \"text\": \"spoken_unit += 's'\"}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        elif int(number_str) == 1 और spoken_unit 's' से समाप्त होता है और spoken_unit ['celsius', 'fahrenheit', 'kelvin'] में नहीं है:",
+  "raw": "Assistant: {\n  \"unnormalised\": \"\",\n  \"normalised\": \"        elif int(number_str) == 1 और spoken_unit 's' से समाप्त होता है और spoken_unit ['celsius', 'fahrenheit', 'kelvin'] में नहीं है:\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "बोली जाने वाली_इकाई = बोली जाने वाली_इकाई[:-1] # 's' हटाएं यदि संख्या 1 है और इकाई बहुवचन है",
+  "raw": "बोली जाने वाली_इकाई = बोली जाने वाली_इकाई[:-1] # 's' हटाएं यदि संख्या 1 है और इकाई बहुवचन है"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        return f\"{spoken_number} {spoken_unit}\"",
+  "raw": "        return f\"{spoken_number} {spoken_unit}\""
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # संख्याओं के लिए पैटर्न सीधे एक इकाई के बाद (जैसे, 10 सेमी, 5 किग्रा)",
+  "raw": "यहाँ अनुवादित JSON ऑब्जेक्ट है:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # संख्याओं के लिए पैटर्न सीधे एक इकाई के बाद (जैसे, 10 सेमी, 5 किग्रा)\",\n  \"raw\": \"    # Pattern for numbers directly followed by a unit (e.g., 10cm, 5kg)\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # आंशिक मिलान से बचने के लिए इकाइयों के लिए \\b का उपयोग करना (उदाहरण के लिए, 'मीटर' में 'm')",
+  "raw": "    # आंशिक मिलान से बचने के लिए इकाइयों के लिए \\b का उपयोग करना (उदाहरण के लिए, 'मीटर' में 'm')"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    यूनिट_पैटर्न = r'\\b(\\d+(?:\\.\\d+)?)\\s*(%s)\\b' % '|'.join(re.escape(u) for u in unit_map.keys())",
+  "raw": "यहाँ अनुवादित JSON ऑब्जेक्ट है:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    यूनिट_पैटर्न = r'\\\\b(\\\\d+(?:\\\\.\\\\d+)?)\\\\s*(%s)\\\\b' % '|'.join(re.escape(u) for u in unit_map.keys())\",\n  \"raw\": \"    unit_pattern = r'\\\\b(\\\\d+(?:\\\\.\\\\d+)?)\\\\s*(%s)\\\\b' % '|'.join(re.escape(u) for u in unit_map.keys())\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "पाठ = पुनःउप.सब(यूनिट_पैटर्न, रिप्लेस_यूनिट, पाठ, झंडे=पुनःउप.अभिज्ञतामामला)",
+  "raw": "पाठ = पुनःउप.सब(यूनिट_पैटर्न, रिप्लेस_यूनिट, पाठ, झंडे=पुनःउप.अभिज्ञतामामला)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # विशेष रूप से सेल्सियस/फ़ारेनहाइट डिग्री को संभालें, जिसे अक्सर 25°C के रूप में लिखा जाता है",
+  "raw": "विशेष रूप से सेल्सियस/फ़ारेनहाइट डिग्री को संभालें, जिसे अक्सर 25°C के रूप में लिखा जाता है"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    def replace_degree_unit(match):",
+  "raw": "def replace_degree_unit(match):"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        संख्या_स्ट्र = मैच.ग्रुप(1)",
+  "raw": "सहायक: यहां अनुवादित JSON-पंक्ति है:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"        संख्या_स्ट्र = मैच.ग्रुप(1)\",\n  \"raw\": \"        number_str = match.group(1)\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        इकाई = मैच.ग्रुप(2).upper() # 'C', 'F'",
+  "raw": "assistant: {\n  \"unnormalised\": \"\",\n  \"normalised\": \"        इकाई = मैच.ग्रुप(2).upper() # 'C', 'F'\"\n}"
+}
+```
+```json
+{
+      "unnormalised": "",
+      "normalised": "बोली जाने वाली_संख्या = संख्या_स्ट्रिंग को शब्दों में बदलें(संख्या_स्ट्रिंग)",
+      "raw": "बोली जाने वाली_संख्या = संख्या_स्ट्रिंग को शब्दों में बदलें(संख्या_स्ट्रिंग)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "इकाई_नाम = 'सेल्सियस' अगर इकाई == 'C' तो 'फ़ारेनहाइट' अगर इकाई == 'F' तो 'केल्विन' अगर इकाई == 'K' तो ''",
+  "raw": "इकाई_नाम = 'सेल्सियस' अगर इकाई == 'C' तो 'फ़ारेनहाइट' अगर इकाई == 'F' तो 'केल्विन' अगर इकाई == 'K' तो ''"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        रिटर्न एफ\"{spoken_number} डिग्री {unit_name}\"",
+  "raw": "        रिटर्न एफ\"{spoken_number} डिग्री {unit_name}\""
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "पाठ = re.sub(r'\\b(\\d+(?:\\.\\d+)?)\\s*degree\\s*([CFK])\\b', replace_degree_unit, text, flags=re.IGNORECASE) # 'डिग्री' चिन्ह बदलने के बाद",
+  "raw": "पाठ = re.sub(r'\\b(\\d+(?:\\.\\d+)?)\\s*degree\\s*([CFK])\\b', replace_degree_unit, text, flags=re.IGNORECASE) # 'डिग्री' चिन्ह बदलने के बाद"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    टेक्स्ट = re.sub(r'\\b(\\d+(?:\\.\\d+)?)\\s*degree\\s*(celsius|fahrenheit|kelvin)\\b', lambda m: f\"{convert_number_to_words(m.group(1))} डिग्री {m.group(2)}\", टेक्स्ट, flags=re.IGNORECASE)",
+  "raw": "यहां अनुवाद है:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    टेक्स्ट = re.sub(r'\\\\b(\\\\d+(?:\\\\.\\\\d+)?)\\\\s*degree\\\\s*(celsius|fahrenheit|kelvin)\\\\b', lambda m: f\\\"{convert_number_to_words(m.group(1))} डिग्री {m.group(2)}\\\", टेक्स्ट, flags=re.IGNORECASE)\",\n  \"raw\": \"यहां अनुवाद है:    text = re.sub(r'\\\\b(\\\\d+(?:\\\\.\\\\d+)?)\\\\s*degree\\\\s*(celsius|fahrenheit|kelvin)\\\\b', lambda m: f\\\"{convert_number_to_words(m.group(1))} degree {m.group(2)}\\\", text, flags=re.IGNORECASE)\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # --- 3. संख्याएँ → कथित रूप (सामान्य) ---",
+  "raw": "Assistant: {\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # --- 3. संख्याएँ → कथित रूप (सामान्य) ---\",\n  \"text\": \"# --- 3. संख्याएँ → कथित रूप (सामान्य) ---\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # किसी भी शेष स्टैंडअलोन नंबर पर लागू करें। यह देर से होना चाहिए।",
+  "raw": "    # किसी भी शेष स्टैंडअलोन नंबर पर लागू करें। यह देर से होना चाहिए।"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # उन संख्याओं को बाहर करें जो फ़ाइल नामों का हिस्सा हैं या मिश्रित अक्षरांकीय स्ट्रिंग जो संख्याओं की तरह नहीं दिखती हैं।",
+  "raw": "मुझे माफ़ करना, लेकिन मैं आपके अनुरोध को पूरा करने में असमर्थ हूं क्योंकि मुझे केवल एक भाषा से दूसरी भाषा में वाक्यों के अनुवाद के लिए प्रशिक्षित किया गया है। हालाँकि, यदि आपके पास कोई अन्य कार्य है जो मैं कर सकता हूँ, तो मुझे बताने में संकोच न करें।"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    def replace_general_number(match):",
+  "raw": "    def replace_general_number(match):"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        number_str = match.group(0)",
+  "raw": "assistant: ```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"        number_str = match.group(0)\",\n  \"raw\": \"        number_str = match.group(0)\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        # अन्य पहचानकर्ताओं का हिस्सा होने वाली संख्याओं को परिवर्तित करने से बचें (उदाहरण के लिए, H2O, ID123)",
+  "raw": "अन्य पहचानकर्ताओं का हिस्सा होने वाली संख्याओं को परिवर्तित करने से बचें (उदाहरण के लिए, H2O, ID123)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        यदि re.match(r'^[A-Za-z]+$', number_str): # यदि यह शुद्ध अक्षर है, तो अनदेखा करें",
+  "raw": "यदि re.match(r'^[A-Za-z]+$', number_str): # यदि यह शुद्ध अक्षर है, तो अनदेखा करें"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            नंबर_एसटीआर वापस करें",
+  "raw": "            नंबर_एसटीआर वापस करें"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        ",
+  "raw": ""
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        # रूपांतरण से बचें यदि यह दशमलव के बाद केवल शून्य वाली फ्लोटिंग पॉइंट संख्या है और num2words पूर्ण विराम देता है",
+  "raw": "        # रूपांतरण से बचें यदि यह दशमलव के बाद केवल शून्य वाली फ्लोटिंग पॉइंट संख्या है और num2words पूर्ण विराम देता है"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        अगर '.' नंबर_स्ट्रिंग में है और फ्लोट(नंबर_स्ट्रिंग) == इंट(फ्लोट(नंबर_स्ट्रिंग)):",
+  "raw": "अगर '.' नंबर_स्ट्रिंग में है और फ्लोट(नंबर_स्ट्रिंग) == इंट(फ्लोट(नंबर_स्ट्रिंग)):"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            return convert_number_to_words(str(int(float(number_str))))",
+  "raw": "            return convert_number_to_words(str(int(float(number_str))))"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            ",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"            \"\n}"
+}
+```
+```json
+{
+      "unnormalised": "",
+      "normalised": "वापसी convert_number_to_words(number_str)",
+      "raw": "वापसी convert_number_to_words(number_str)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    text = re.sub(r'\\b\\d+(?:\\.\\d+)?\\b', replace_general_number, text)",
+  "raw": "यहाँ कोई अनुवाद आवश्यक नहीं है क्योंकि इनपुट में केवल कोड है।\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    text = re.sub(r'\\\\b\\\\d+(?:\\\\.\\\\d+)?\\\\b', replace_general_number, text)\",\n  \"raw\": \"    text = re.sub(r'\\\\b\\\\d+(?:\\\\.\\\\d+)?\\\\b', replace_general_number, text)\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # --- 8. गणितीय नोटेशन → बोली जाने वाली फॉर्म ---",
+  "raw": "यहाँ अनुवाद है:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    # --- 8. गणितीय नोटेशन → बोली जाने वाली फॉर्म ---\",\n  \"raw\": \"\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # सुनिश्चित करें कि यह सामान्य प्रतीक/संख्या रूपांतरणों के बाद संघर्षों से बचने के लिए होता है",
+  "raw": "    # सुनिश्चित करें कि यह सामान्य प्रतीक/संख्या रूपांतरणों के बाद संघर्षों से बचने के लिए होता है"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    टेक्स्ट = re.sub(r'(\\w)\\^2', r'\\1 स्क्वेयर्ड', टेक्स्ट)",
+  "raw": "यहाँ अनुवादित JSON ऑब्जेक्ट है:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    टेक्स्ट = re.sub(r'(\\w)\\^2', r'\\\\1 स्क्वेयर्ड', टेक्स्ट)\",\n  \"raw\": \"यहाँ अनुवादित JSON ऑब्जेक्ट है:\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": " पाठ = re.sub(r'(\\w)\\^3', r'\\1 घन', पाठ)",
+  "raw": "पाठ = re.sub(r'(\\w)\\^3', r'\\1 घन', पाठ)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": " पाठ = re.sub(r'(\\w)\\^(\\w+)', r'\\1 की घात \\2', पाठ) # सामान्य शक्ति",
+  "raw": " पाठ = re.sub(r'(\\w)\\^(\\w+)', r'\\1 की घात \\2', पाठ) # सामान्य शक्ति"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": " पाठ = पुनः.उप(r'(\\w)_(\\w+)', r'\\1 उप \\2', पाठ) # सबस्क्रिप्ट",
+  "raw": " पाठ = पुनः.उप(r'(\\w)_(\\w+)', r'\\1 उप \\2', पाठ) # सबस्क्रिप्ट"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "टेक्स्ट = re.sub(r'summation\\s*x\\s*sub\\s*i', 'x सब i का योग', टेक्स्ट) # सामान्य योग रूप",
+  "raw": "टेक्स्ट = re.sub(r'summation\\s*x\\s*sub\\s*i', 'x सब i का योग', टेक्स्ट) # सामान्य योग रूप"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "टेक्स्ट = re.sub(r'integral\\s*(\\d+)\\s*to\\s*(\\d+)\\s*of\\s*(\\w)\\s*d\\s*(\\w)',",
+  "raw": "टेक्स्ट = re.sub(r'integral\\s*(\\d+)\\s*to\\s*(\\d+)\\s*of\\s*(\\w)\\s*d\\s*(\\w)',"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "                  लैम्ब्डा m: f\"इंटीग्रल {convert_number_to_words(m.group(1))} से {convert_number_to_words(m.group(2))} तक {m.group(3)} d {m.group(4)} का\",",
+  "raw": "लैम्ब्डा m: f\"इंटीग्रल {convert_number_to_words(m.group(1))} से {convert_number_to_words(m.group(2))} तक {m.group(3)} d {m.group(4)} का\""
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "                  टेक्स्ट) # विशिष्ट इंटीग्रल फॉर्म ∫ 0→1 x dx",
+  "raw": "टेक्स्ट) # विशिष्ट इंटीग्रल फॉर्म ∫ 0→1 x dx"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    टेक्स्ट = re.sub(r'integral\\s*(\\w)\\s*d\\s*(\\w)', r'\\1 d \\2 का इंटीग्रल', टेक्स्ट) # सामान्य इंटीग्रल फॉर्म ∫ x dx",
+  "raw": "यहाँ टेक्स्ट का अनुवाद है:\n\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    टेक्स्ट = re.sub(r'integral\\\\s*(\\\\w)\\\\s*d\\\\s*(\\\\w)', r'\\\\1 d \\\\2 का इंटीग्रल', टेक्स्ट) # सामान्य इंटीग्रल फॉर्म ∫ x dx\",\n  \"text\": \"\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # --- अंतिम स्थान सामान्यीकरण ---",
+  "raw": "    # --- अंतिम स्थान सामान्यीकरण ---"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "पाठ = पुनः.उप(r'\\s+', ' ', पाठ).स्ट्रिप()",
+  "raw": "पाठ = पुनः.उप(r'\\s+', ' ', पाठ).स्ट्रिप()"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    टेक्स्ट लौटाएं",
+  "raw": "यहां अनुवाद है:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    टेक्स्ट लौटाएं\",\n  \"raw\": \"    टेक्स्ट लौटाएं\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "def process_folder(input_folder, output_folder):",
+  "raw": "def process_folder(input_folder, output_folder):"
+}
+```
+```json
+{
+      "unnormalised": "",
+      "normalised": "    \"\"\"",
+      "raw": "{\n      \"unnormalised\": \"\",\n      \"normalised\": \"    \\\"\\\"\\\"\"\n    }"
+    }
+```
+```json
+{
+      "unnormalised": "इनपुट फ़ोल्डर के माध्यम से चलता है, .txt फ़ाइलों को सामान्य करता है, और दूसरों को कॉपी करता है।",
+      "normalised": "इनपुट फ़ोल्डर के माध्यम से चलता है, .txt फ़ाइलों को सामान्य करता है, और दूसरों को कॉपी करता है।",
+      "raw": "इनपुट फ़ोल्डर के माध्यम से चलता है, .txt फ़ाइलों को सामान्य करता है, और दूसरों को कॉपी करता है।"
+    }
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    \"\"\"",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    \\\"\\\"\\\"\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    os.makedirs(आउटपुट_फोल्डर, exist_ok=True)",
+  "raw": "os.makedirs(आउटपुट_फोल्डर, exist_ok=True)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    असामान्यीकृत_txt_files = []",
+  "raw": "असामान्यीकृत_txt_files = []"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "रूट, dirs, files के लिए os.walk(input_folder) में:",
+  "raw": "रूट, dirs, files के लिए os.walk(input_folder) में:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        रिलेटिव_पाथ = os.path.relpath(रूट, इनपुट_फोल्डर)",
+  "raw": "रिलेटिव_पाथ = os.path.relpath(रूट, इनपुट_फोल्डर)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        current_output_dir = os.path.join(output_folder, relative_path)",
+  "raw": "current_output_dir = os.path.join(output_folder, relative_path)"
+}
+```
+```json
+{
+      "unnormalised": "",
+      "normalised": "os.makedirs(current_output_dir, exist_ok=True)",
+      "raw": "os.makedirs(current_output_dir, exist_ok=True)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        फ़ाइल_नाम फ़ाइलों में:",
+  "raw": "        फ़ाइल_नाम फ़ाइलों में:"
+}
+```
+```json
+{
+      "unnormalised": "",
+      "normalised": "            इनपुट_फाइल_पाथ = os.path.join(root, फ़ाइल_नाम)",
+      "raw": "            इनपुट_फाइल_पाथ = os.path.join(root, फ़ाइल_नाम)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            आउटपुट_फाइल_पाथ = os.path.join(current_output_dir, फ़ाइल_नाम)",
+  "raw": "            आउटपुट_फाइल_पाथ = os.path.join(current_output_dir, फ़ाइल_नाम)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            अगर फ़ाइल_नाम.lower().endswith('.txt') है:",
+  "raw": "अगर फ़ाइल_नाम.lower().endswith('.txt') है:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "                प्रयास करें:",
+  "raw": "                प्रयास करें:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "                    with open(input_file_path, 'r', encoding='utf-8') as f_in:",
+  "raw": "                    with open(input_file_path, 'r', encoding='utf-8') as f_in:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "                    with open(input_file_path, 'r', encoding='utf-8') as f_in:",
+  "raw": "                    with open(input_file_path, 'r', encoding='utf-8') as f_in:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "                    with open(input_file_path, 'r', encoding='utf-8') as f_in:",
+  "raw": "                    with open(input_file_path, 'r', encoding='utf-8') as f_in:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "                    with open(input_file_path, 'r', encoding='utf-8') as f_in:",
+  "raw": "                    with open(input_file_path, 'r', encoding='utf-8') as f_in:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "                    with open(input_file_path, 'r', encoding='utf-8') as f_in:",
+  "raw": "                    with open(input_file_path, 'r', encoding='utf-8') as f_in:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "                    open(input_file_path, 'r', encoding='utf-8') को f_in के रूप में खोलें:",
+  "raw": "Assistant: {\n  \"unnormalised\": \"\",\n  \"normalised\": \"                    open(input_file_path, 'r', encoding='utf-8') को f_in के रूप में खोलें:\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "                        कंटेंट = f_in.read()",
+  "raw": "कंटेंट = f_in.read()"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "                    ",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"                    \",\n  \"text\": \"\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "                    normalized_content = normalize_text(content)",
+  "raw": "                    normalized_content = normalize_text(content)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "                    open(output_file_path, 'w', encoding='utf-8') के साथ f_out के रूप में:",
+  "raw": "                    open(output_file_path, 'w', encoding='utf-8') के साथ f_out के रूप में:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "                        f_out.write(normalized_content)",
+  "raw": "assistant:\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"                        f_out.write(normalized_content)\",\n  \"raw\": \"                        f_out.write(normalized_content)\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "                Exception को छोड़कर e:",
+  "raw": "                Exception को छोड़कर e:"
+}
+```
+```json
+{
+      "unnormalised": "",
+      "normalised": "                    print(f\"त्रुटि प्रसंस्करण {input_file_path}: {e}\")",
+      "raw": "                    print(f\"त्रुटि प्रसंस्करण {input_file_path}: {e}\")"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "अनसामान्यीकृत_txt_files.append(input_file_path)",
+  "raw": "अनसामान्यीकृत_txt_files.append(input_file_path)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "                    # यदि कोई त्रुटि है, तो मूल फ़ाइल को आउटपुट में कॉपी करें",
+  "raw": "यहाँ हिंदी अनुवाद है:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"                    # यदि कोई त्रुटि है, तो मूल फ़ाइल को आउटपुट में कॉपी करें\",\n  \"raw\": \"                    # If error, copy the original file to output\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "                    shutil.copy2(input_file_path, output_file_path)",
+  "raw": "shutil.copy2(input_file_path, output_file_path)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            अन्यथा:",
+  "raw": "अन्यथा:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "                shutil.copy2(इनपुट_फ़ाइल_पाथ, आउटपुट_फ़ाइल_पाथ)",
+  "raw": "                shutil.copy2(इनपुट_फ़ाइल_पाथ, आउटपुट_फ़ाइल_पाथ)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    ",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    \"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    अगर अननॉर्मलाइज्ड_टीएक्सटी_फाइलें:",
+  "raw": "अगर अननॉर्मलाइज्ड_टीएक्सटी_फाइलें:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        print(\"\\n--- .txt फ़ाइलों की सूची जिन्हें सामान्य नहीं किया जा सका (इसके बजाय मूल प्रतिलिपि बनाई गई) ---\")",
+  "raw": "assistant: {\"unnormalised\": \"\", \"normalised\": \"        print(\"\\n--- .txt फ़ाइलों की सूची जिन्हें सामान्य नहीं किया जा सका (इसके बजाय मूल प्रतिलिपि बनाई गई) ---\")\"}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        f के लिए जो अननॉर्मलाइज़्ड_txt_फाइलें में है:",
+  "raw": "यहाँ अनुवाद है:\n\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"        f के लिए जो अननॉर्मलाइज़्ड_txt_फाइलें में है:\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            प्रिंट(f)",
+  "raw": "प्रिंट(f)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "यदि __name__ == \"__main__\":",
+  "raw": "यदि __name__ == \"__main__\":"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # उदाहरण उपयोग:",
+  "raw": "    # उदाहरण उपयोग:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # परीक्षण के लिए एक डमी डेटासेट संरचना बनाएं",
+  "raw": "    # परीक्षण के लिए एक डमी डेटासेट संरचना बनाएं"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    अगर os.path.exists(\"dataset\") नहीं है:",
+  "raw": "अगर os.path.exists(\"dataset\") नहीं है:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "os.makedirs(\"dataset/subfolder1\", exist_ok=True)",
+  "raw": "os.makedirs(\"dataset/subfolder1\", exist_ok=True)"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        os.makedirs(\"dataset/subfolder2\", exist_ok=True)",
+  "raw": "        os.makedirs(\"dataset/subfolder2\", exist_ok=True)"
+}
+```
+```json
+{
+      "unnormalised": "",
+      "normalised": "        with open(\"dataset/test1.txt\", \"w\", encoding=\"utf-8\") as f:",
+      "raw": "        with open(\"dataset/test1.txt\", \"w\", encoding=\"utf-8\") as f:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            f.write(\"कीमत $20B है। NASA ने 1958 में लॉन्च किया था। लगभग ~5% लाभ।\\n\")",
+  "raw": "कीमत $20B है। NASA ने 1958 में लॉन्च किया था। लगभग ~5% लाभ।\\n"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            f.write(\"आज की तारीख 10/09/2024 है। डॉ. स्मिथ U.S.A. सरकार के लिए काम करते हैं।\\n\")",
+  "raw": "आज की तारीख 10/09/2024 है। डॉ. स्मिथ U.S.A. सरकार के लिए काम करते हैं।\\n\")"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            f.write(\"तापमान 25°C है। पानी 100°C पर उबलता है। कुल 5 किमी दौड़।\\n\")",
+  "raw": "assistant: {\n  \"unnormalised\": \"\",\n  \"normalised\": \"            f.write(\\\"तापमान 25°C है। पानी 100°C पर उबलता है। कुल 5 किमी दौड़।\\\\n\\\")\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            f.write(\"समीकरण 2+2=4 है। क्षेत्रफल πr^2 है। योग Σ x_i है। x^2 और x^3 पर विचार करें। साथ ही x^n।\\n\")",
+  "raw": "सहायक: निश्चित रूप से, मैं आपके लिए JSON-Lines डेटा का अनुवाद कर सकता हूँ। यहाँ अनुवादित JSON ऑब्जेक्ट है:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"            f.write(\\\"समीकरण 2+2=4 है। क्षेत्रफल πr^2 है। योग Σ x_i है। x^2 और x^3 पर विचार करें। साथ ही x^n।\\\\n\\\")\",\n  \"raw\": \"            f.write(\\\"The equation is 2+2=4. Area is πr^2. Sum is Σ x_i. Consider x^2 and x^3. Also x^n.\\\\n\\\")\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            एफ.राइट(\"अंश 3/4 है। हमें 1/2 किग्रा चीनी की आवश्यकता है। रिपोर्ट में QA/Dev और आर्ट/क्राफ्ट शामिल हैं। जीडीपी विकास मजबूत है। Adv. राम यहाँ हैं।\\n\")",
+  "raw": "assistant: ```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"            एफ.राइट(\\\"अंश 3/4 है। हमें 1/2 किग्रा चीनी की आवश्यकता है। रिपोर्ट में QA/Dev और आर्ट/क्राफ्ट शामिल हैं। जीडीपी विकास मजबूत है। Adv. राम यहाँ हैं।\\\\n\\\")\",\n  \"raw\": \"            f.write(\\\"The fraction is 3/4. We need 1/2 kg of sugar. The report covers QA/Dev and art/craft. GDP growth is strong. Adv. Ram is here.\\\\n\\\")\"\n}\n```\n\nएफ.राइट(\"अंश 3/4 है। हमें 1/2 किग्रा चीनी की आवश्यकता है। रिपोर्ट में QA/Dev और आर्ट/क्राफ्ट शामिल हैं। जीडीपी विकास मजबूत है। Adv. राम यहाँ हैं।\\n\")"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            f.write(\"गणित: ∫ x^2 dx. या ∫ 0→1 x dx. यदि x != y, तो x <= z या z >= x. वह 100M डैश चलाता है।\\n\")",
+  "raw": "            f.write(\"गणित: ∫ x^2 dx. या ∫ 0→1 x dx. यदि x != y, तो x <= z या z >= x. वह 100M डैश चलाता है।\\n\")"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            f.write(\"वह 45 मिनट में 10 किमी दौड़ा। उसकी गति 100 किमी/घंटा थी। बैटरी 12V और 50A है।\\n\")",
+  "raw": "            f.write(\"वह 45 मिनट में 10 किमी दौड़ा। उसकी गति 100 किमी/घंटा थी। बैटरी 12V और 50A है।\\n\")"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            f.write(\"उत्पाद आईडी: PROD123, PROD456.\\n\")",
+  "raw": "assistant: ```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"            f.write(\\\"उत्पाद आईडी: PROD123, PROD456.\\\\n\\\")\",\n  \"text\": \"f.write(\\\"Product IDs: PROD123, PROD456.\\\\n\\\")\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            f.write(\"₹500M का निवेश किया गया था। मूल्य 99 है। संख्या 7 है।\\n\")",
+  "raw": "            f.write(\"₹500M का निवेश किया गया था। मूल्य 99 है। संख्या 7 है।\\n\")"
+}
+```
+```json
+{
+      "unnormalised": "",
+      "normalised": "            f.write(\"इसमें एक दशमलव 12.5 किग्रा है। कुल 1.0 एम लोग। टेस्ट 1.0 किग्रा और 1.00 किग्रा।\\n\")",
+      "raw": "Assistant: {\n      \"unnormalised\": \"\",\n      \"normalised\": \"            f.write(\\\"इसमें एक दशमलव 12.5 किग्रा है। कुल 1.0 एम लोग। टेस्ट 1.0 किग्रा और 1.00 किग्रा।\\\\n\\\")\",\n      \"text\": \"f.write(\\\"This has a decimal 12.5 kg. A total of 1.0 M people. Test 1.0 kg and 1.00 kg.\\\\n\\\")\"\n    }"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        with open(\"dataset/subfolder1/test2.txt\", \"w\", encoding=\"utf-8\") as f:",
+  "raw": "यहाँ कोई अनुवाद करने योग्य पाठ नहीं है."
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            एफ.write(\"प्रोजेक्ट अल्फा 2023-12-01 को शुरू हुआ। प्रो. जोन्स ने ∫ x^n dx पर एक व्याख्यान दिया।\\n\")",
+  "raw": "एफ.write(\"प्रोजेक्ट अल्फा 2023-12-01 को शुरू हुआ। प्रो. जोन्स ने ∫ x^n dx पर एक व्याख्यान दिया।\\n\")"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            एफ.राइट(\"उसने 2.5 घंटे पढ़ाई की। डेटा 1.2M रिकॉर्ड है। वह प्रति माह 50K कमाता है।\\n\")",
+  "raw": "एफ.राइट(\"उसने 2.5 घंटे पढ़ाई की। डेटा 1.2M रिकॉर्ड है। वह प्रति माह 50K कमाता है।\\n\")"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        with open(\"dataset/subfolder2/image.jpg\", \"w\", encoding=\"utf-8\") as f:",
+  "raw": "{\n  \"unnormalised\": \"\",\n  \"normalised\": \"        with open(\\\"dataset/subfolder2/image.jpg\\\", \\\"w\\\", encoding=\\\"utf-8\\\") as f:\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            f.write(\"यह टेक्स्ट फ़ाइल नहीं है।\") # गैर-txt फ़ाइल के लिए डमी सामग्री",
+  "raw": "Assistant: \n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"            f.write(\\\"यह टेक्स्ट फ़ाइल नहीं है।\\\") # गैर-txt फ़ाइल के लिए डमी सामग्री\",\n  \"raw\": \"            f.write(\\\"This is not a text file.\\\") # Dummy content for non-txt file\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        ओपन (\"dataset/subfolder2/another.txt\", \"w\", एन्कोडिंग=\"utf-8\") f के रूप में:",
+  "raw": "सहायक: {\"unnormalised\": \"\", \"normalised\": \"        ओपन (\\\"dataset/subfolder2/another.txt\\\", \\\"w\\\", एन्कोडिंग=\\\"utf-8\\\") f के रूप में:\", \"text\": \"\"}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "            f.write(\"विशेष अक्षर: ≠, ≤, ≥. लगभग पांच प्रतिशत ~5% का परीक्षण करें। हैश #tag. @user पर। और & अधिक।\")",
+  "raw": "विशेष अक्षर: ≠, ≤, ≥. लगभग पांच प्रतिशत ~5% का परीक्षण करें। हैश #tag. @user पर। और & अधिक।"
+}
+```
+```json
+{
+      "unnormalised": "",
+      "normalised": "    इनपुट_डेटा_फ़ोल्डर = \"dataset\"",
+      "raw": "    इनपुट_डेटा_फ़ोल्डर = \"dataset\""
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    output_normalized_folder = \"dataset_normalized\"",
+  "raw": "    output_normalized_folder = \"dataset_normalized\""
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    प्रिंट(f\"'{input_data_folder}' में '{output_normalized_folder}' में सामान्यीकरण शुरू हो रहा है...\")",
+  "raw": "प्रिंट(f\"'{input_data_folder}' में '{output_normalized_folder}' में सामान्यीकरण शुरू हो रहा है...\")"
+}
+```
+```json
+{
+      "unnormalised": "",
+      "normalised": "    process_folder(input_data_folder, output_normalized_folder)",
+      "raw": "assistant:\n{\n      \"unnormalised\": \"\",\n      \"normalised\": \"    process_folder(input_data_folder, output_normalized_folder)\"\n}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    प्रिंट(\"नॉर्मलाइजेशन पूरा हुआ।\")",
+  "raw": "प्रिंट(\"नॉर्मलाइजेशन पूरा हुआ।\")"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    # --- सत्यापन ---",
+  "raw": "    # --- सत्यापन ---"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    प्रिंट(\"\\n--- एक नमूना सामान्यीकृत फ़ाइल सत्यापित करना ---\")",
+  "raw": "प्रिंट(\"\\n--- एक नमूना सामान्यीकृत फ़ाइल सत्यापित करना ---\")"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    प्रयास करें:",
+  "raw": "    प्रयास करें:"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        with open(os.path.join(output_normalized_folder, \"test1.txt\"), 'r', encoding='utf-8') as f:",
+  "raw": "Assistant: {\n  \"unnormalised\": \"\",\n  \"normalised\": \"        with open(os.path.join(output_normalized_folder, \\\"test1.txt\\\"), 'r', encoding='utf-8') as f:\",\n  \"text\": \"with open(os.path.join(output_normalized_folder, \\\"test1.txt\\\"), 'r', encoding='utf-8') as f:\"\n}"
+}
+```
+```json
+{
+      "unnormalised": "",
+      "normalised": "            print(f.read())",
+      "raw": "            print(f.read())"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    FileNotFoundError को छोड़कर:",
+  "raw": "यहाँ अनुवादित JSON ऑब्जेक्ट है:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    FileNotFoundError को छोड़कर:\",\n  \"raw\": \"    except FileNotFoundError:\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "        print(\"नमूना सामान्यीकृत फ़ाइल 'test1.txt' आउटपुट फ़ोल्डर में नहीं मिली\")",
+  "raw": "assistant: {\"unnormalised\": \"\", \"normalised\": \" print(\\\"नमूना सामान्यीकृत फ़ाइल 'test1.txt' आउटपुट फ़ोल्डर में नहीं मिली\\\")\", \"text\": \"print(\\\"Sample normalized file 'test1.txt' not found in output folder.\\\")\"}"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "```",
+  "raw": "```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "**स्पष्टीकरण और डिजाइन विकल्प:**",
+  "raw": "**Explanation and Design Choices:**\n**स्पष्टीकरण और डिजाइन विकल्प:**"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "1. **`num2words` लाइब्रेरी:** यह प्राकृतिक संख्या रूपांतरण के लिए एक महत्वपूर्ण निर्भरता है। सुनिश्चित करें कि आप इसे स्थापित करें: `pip install num2words`।",
+  "raw": "1. **`num2words` लाइब्रेरी:** यह प्राकृतिक संख्या रूपांतरण के लिए एक महत्वपूर्ण निर्भरता है। सुनिश्चित करें कि आप इसे स्थापित करें: `pip install num2words`।"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "2. **ऑपरेशंस का क्रम:** `re.sub` कॉल्स का क्रम महत्वपूर्ण है।",
+  "raw": "2. **ऑपरेशंस का क्रम:** `re.sub` कॉल्स का क्रम महत्वपूर्ण है।"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    *   **विशिष्ट प्रतीकों को पहले:** `+/-`, `!=`, `<=`, `>=` को `@`, `&` जैसे सामान्य प्रतीकों से पहले संभाला जाता है ताकि सही प्रतिस्थापन सुनिश्चित किया जा सके।",
+  "raw": "    *   **विशिष्ट प्रतीकों को पहले:** `+/-`, `!=`, `<=`, `>=` को `@`, `&` जैसे सामान्य प्रतीकों से पहले संभाला जाता है ताकि सही प्रतिस्थापन सुनिश्चित किया जा सके।"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    *   **`/` हैंडलिंग:** `/` प्रतीक के जटिल नियम हैं। इसे एक विशिष्ट क्रम में संभाला जाता है: इकाइयों के साथ भिन्न, फिर सामान्य भिन्न, फिर शब्दों के बीच \"या\", फिर मिश्रित मामलों के लिए \"स्लैश\"। यह झरना सुनिश्चित करता है कि सबसे उपयुक्त अर्थ लागू किया जाए।",
+  "raw": "यहाँ अनुवाद है:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    *   **`/` हैंडलिंग:** `/` प्रतीक के जटिल नियम हैं। इसे एक विशिष्ट क्रम में संभाला जाता है: इकाइयों के साथ भिन्न, फिर सामान्य भिन्न, फिर शब्दों के बीच \\\"या\\\", फिर मिश्रित मामलों के लिए \\\"स्लैश\\\"। यह झरना सुनिश्चित करता है कि सबसे उपयुक्त अर्थ लागू किया जाए।\",\n  \"raw\": \"\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    *   **तिथियाँ:** `DD/MM/YYYY` को भिन्न या केवल संख्या के रूप में व्याख्या किए जाने से बचाने के लिए जल्दी संसाधित किया गया।",
+  "raw": "    *   **तिथियाँ:** `DD/MM/YYYY` को भिन्न या केवल संख्या के रूप में व्याख्या किए जाने से बचाने के लिए जल्दी संसाधित किया गया।"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    *   **मुद्रा + संख्या + प्रत्यय:** यह एक बहुत ही विशिष्ट पैटर्न है, इसलिए इसे जल्दी संभाला जाता है।",
+  "raw": "मुद्रा + संख्या + प्रत्यय: यह एक बहुत ही विशिष्ट पैटर्न है, इसलिए इसे जल्दी संभाला जाता है।"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "* **संख्यात्मक प्रत्यय:** सामान्य संख्या रूपांतरण से पहले संभाला गया। `20K`, `बीस K` और फिर `बीस हजार` नहीं बनना चाहिए।",
+  "raw": "यहाँ अनुवादित JSON ऑब्जेक्ट है:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"* **संख्यात्मक प्रत्यय:** सामान्य संख्या रूपांतरण से पहले संभाला गया। `20K`, `बीस K` और फिर `बीस हजार` नहीं बनना चाहिए।\",\n  \"raw\": \"* **Numeric Suffixes:** Handled before general number conversion. `20K` should not become `twenty K` and then `twenty thousand`.\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    *   **इकाइयाँ:** सामान्य संख्या रूपांतरण से पहले संभाला गया। `10cm` को `दस cm` नहीं बनना चाहिए, फिर `दस सेंटीमीटर`।",
+  "raw": "यहां अनुवादित JSON ऑब्जेक्ट है:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    *   **इकाइयाँ:** सामान्य संख्या रूपांतरण से पहले संभाला गया। `10cm` को `दस cm` नहीं बनना चाहिए, फिर `दस सेंटीमीटर`।\",\n  \"raw\": \"    *   **Units:** Handled before general number conversion. `10cm` should not become `ten cm` then `ten centimeter`.\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    *   **संक्षिप्त रूप:** गलत व्याख्या से बचने के लिए विशेष उपसर्गों के बाद और सामान्य संख्याओं से पहले संभाला जाता है। अपवर्जन महत्वपूर्ण हैं।",
+  "raw": "यहाँ अनुवाद है:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    *   **संक्षिप्त रूप:** गलत व्याख्या से बचने के लिए विशेष उपसर्गों के बाद और सामान्य संख्याओं से पहले संभाला जाता है। अपवर्जन महत्वपूर्ण हैं।\",\n  \"text\": \"* **Acronyms:** Handled after special prefixes and before general numbers to avoid misinterpretation. Exclusions are important.\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    *   **सामान्य संख्याएँ:** अपेक्षाकृत देर से उन शेष अंकों को पकड़ने के लिए लागू किया गया है जिन्हें अधिक विशिष्ट नियमों द्वारा कवर नहीं किया गया है।",
+  "raw": "यहाँ अनुवादित JSON ऑब्जेक्ट है:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    *   **सामान्य संख्याएँ:** अपेक्षाकृत देर से उन शेष अंकों को पकड़ने के लिए लागू किया गया है जिन्हें अधिक विशिष्ट नियमों द्वारा कवर नहीं किया गया है।\",\n  \"raw\": \"    *   **General Numbers:** Applied relatively late to catch any remaining digits that haven't been covered by more specific rules.\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    *   **गणितीय नोटेशन:** अंत की ओर लागू किया गया, क्योंकि कई गणित घटक (जैसे `^`, `_`, `∫`, `Σ`, संख्याएँ) पहले प्रतीक या संख्या नियमों से प्रभावित हो सकते हैं। गणित-विशिष्ट regex फिर उन्हें बोले गए रूपों में बाँधता है।",
+  "raw": "सहायक: यहाँ अनुवादित JSON ऑब्जेक्ट है:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    *   **गणितीय नोटेशन:** अंत की ओर लागू किया गया, क्योंकि कई गणित घटक (जैसे `^`, `_`, `∫`, `Σ`, संख्याएँ) पहले प्रतीक या संख्या नियमों से प्रभावित हो सकते हैं। गणित-विशिष्ट regex फिर उन्हें बोले गए रूपों में बाँधता है।\",\n  \"raw\": \"सहायक: यहाँ अनुवादित JSON ऑब्जेक्ट है:\\n\\n```json\\n{\\n  \\\"unnormalised\\\": \\\"\\\",\\n  \\\"normalised\\\": \\\"    *   **Mathematical Notation:** Applied towards the end, as many math components (like `^\`, `_\`, `∫`, `Σ`, numbers) might have been touched by earlier symbol or number rules. The math-specific regex then ties them into spoken forms.\\\",\\n  \\\"raw\\\": \\\"\\\"\n}\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "3. **नियमित अभिव्यक्तियाँ:**",
+  "raw": "3. **नियमित अभिव्यक्तियाँ:**"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    *   `\\b`: शब्द सीमा का उपयोग व्यापक रूप से पूरे शब्दों/नंबरों का मिलान करने और अन्य शब्दों या पहचानकर्ताओं के भीतर आंशिक प्रतिस्थापनों से बचने के लिए किया जाता है।",
+  "raw": "यहाँ अनुवाद है:\n\n    *   `\\b`: शब्द सीमा का उपयोग व्यापक रूप से पूरे शब्दों/नंबरों का मिलान करने और अन्य शब्दों या पहचानकर्ताओं के भीतर आंशिक प्रतिस्थापनों से बचने के लिए किया जाता है।"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    *   `(?:\\.\\d+)?`: संख्याओं में वैकल्पिक दशमलव भागों के लिए गैर-कैप्चरिंग समूह (उदाहरण के लिए, `10` या `10.5`).",
+  "raw": "यहाँ अनुवाद है:\n\n```json\n{\n  \"unnormalised\": \"\",\n  \"normalised\": \"    *   `(?:\\.\\d+)?`: संख्याओं में वैकल्पिक दशमलव भागों के लिए गैर-कैप्चरिंग समूह (उदाहरण के लिए, `10` या `10.5`).\",\n  \"raw\": \"    *   `(?:\\\\.\\\\d+)?`: Non-capturing group for optional decimal parts in numbers (e.g., `10` or `10.5`).\"\n}\n```"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "    *   `re.IGNORECASE`: `KG`, `kg` आदि को पकड़ने के लिए यूनिट मिलान के लिए उपयोग किया जाता है।",
+  "raw": "    *   `re.IGNORECASE`: `KG`, `kg` आदि को पकड़ने के लिए यूनिट मिलान के लिए उपयोग किया जाता है।"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "4. **`convert_number_to_words` हेल्पर:** `num2words` को रैप करता है और दशमलव संख्याओं के लिए एक सरल जाँच जोड़ता है ताकि यह सुनिश्चित हो सके कि उन्हें आसानी से संभाला जाए (जैसे, `12.5` `twelve point five` हो जाता है)। यह उस स्थिति को भी संभालता है जहाँ `1.0` या `1.00` को केवल \"one\" होना चाहिए न कि \"one point zero\"।",
+  "raw": "4. **`convert_number_to_words` हेल्पर:** `num2words` को रैप करता है और दशमलव संख्याओं के लिए एक सरल जाँच जोड़ता है ताकि यह सुनिश्चित हो सके कि उन्हें आसानी से संभाला जाए (जैसे, `12.5` `twelve point five` हो जाता है)। यह उस स्थिति को भी संभालता है जहाँ `1.0` या `1.00` को केवल \"one\" होना चाहिए न कि \"one point zero\"।"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "5. **क्रमिक संख्याएँ:** `num2words(day, to='ordinal')` का उपयोग तिथि रूपांतरण के लिए किया जाता है, जो \"दसवाँ\", \"पहला\", आदि सुनिश्चित करता है।",
+  "raw": "5. **क्रमिक संख्याएँ:** `num2words(day, to='ordinal')` का उपयोग तिथि रूपांतरण के लिए किया जाता है, जो \"दसवाँ\", \"पहला\", आदि सुनिश्चित करता है।"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "6. **त्रुटि प्रबंधन:** फ़ाइल प्रोसेसिंग के दौरान `try-except` ब्लॉक को संभावित `IOError` या सामान्यीकरण के दौरान अन्य मुद्दों को पकड़ने के लिए शामिल किया गया है, समस्याग्रस्त फ़ाइलों को लॉग इन करना, और ऐसे मामलों में मूल को कॉपी करना।",
+  "raw": "6. **त्रुटि प्रबंधन:** फ़ाइल प्रोसेसिंग के दौरान `try-except` ब्लॉक को संभावित `IOError` या सामान्यीकरण के दौरान अन्य मुद्दों को पकड़ने के लिए शामिल किया गया है, समस्याग्रस्त फ़ाइलों को लॉग इन करना, और ऐसे मामलों में मूल को कॉपी करना।"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "7. **`unicodedata`:** हालाँकि इस संस्करण में `normalize_text` के लिए स्पष्ट रूप से उपयोग नहीं किया गया है (क्योंकि `re` इसका अधिकांश भाग संभालता है, और `unicodedata` टेक्स्ट कैननिकललाइज़ेशन के लिए अधिक है), यदि आवश्यक हो तो अधिक उन्नत प्रतीक प्रबंधन के लिए इसे ध्यान में रखने के लिए एक अच्छा उपकरण है।",
+  "raw": "7. **`unicodedata`:** हालाँकि इस संस्करण में `normalize_text` के लिए स्पष्ट रूप से उपयोग नहीं किया गया है (क्योंकि `re` इसका अधिकांश भाग संभालता है, और `unicodedata` टेक्स्ट कैननिकललाइज़ेशन के लिए अधिक है), यदि आवश्यक हो तो अधिक उन्नत प्रतीक प्रबंधन के लिए इसे ध्यान में रखने के लिए एक अच्छा उपकरण है।"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "8. **आउटपुट फ़ोल्डर मिररिंग:** `os.makedirs(output_folder, exist_ok=True)` और `os.path.relpath` सही ढंग से निर्देशिका संरचना का पुनर्निर्माण करते हैं।",
+  "raw": "8. **आउटपुट फ़ोल्डर मिररिंग:** `os.makedirs(output_folder, exist_ok=True)` और `os.path.relpath` सही ढंग से निर्देशिका संरचना का पुनर्निर्माण करते हैं।"
+}
+```
+```json
+{
+  "unnormalised": "",
+  "normalised": "यह स्क्रिप्ट वर्णित सामान्यीकरण कार्यों को मजबूती से संभालने में सक्षम होनी चाहिए। विभिन्न इनपुट उदाहरणों के साथ इसका अच्छी तरह से परीक्षण करना याद रखें!",
+  "raw": "यह स्क्रिप्ट वर्णित सामान्यीकरण कार्यों को मजबूती से संभालने में सक्षम होनी चाहिए। विभिन्न इनपुट उदाहरणों के साथ इसका अच्छी तरह से परीक्षण करना याद रखें!"
+}
+```
